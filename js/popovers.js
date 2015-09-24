@@ -579,26 +579,6 @@ jQuery(document).ready(function() {
         return $('#content-lvl8').html();
       }
   });
-   $('#popover-lvl9').popover({
-      toggle:'popover',
-      container:'body',
-      trigger:'hover click',
-      placement:'top',
-      html: true,
-      content: function() {
-        return $('#content-lvl9').html();
-      }
-  });
-   $('#popover-lvl10').popover({
-      toggle:'popover',
-      container:'body',
-      trigger:'hover click',
-      placement:'top',
-      html: true,
-      content: function() {
-        return $('#content-lvl10').html();
-      }
-  });
    $('#popover-lvl11').popover({
       toggle:'popover',
       container:'body',
@@ -617,36 +597,6 @@ jQuery(document).ready(function() {
       html: true,
       content: function() {
         return $('#content-lvl12').html();
-      }
-  });
-   $('#popover-lvl13').popover({
-      toggle:'popover',
-      container:'body',
-      trigger:'hover click',
-      placement:'top',
-      html: true,
-      content: function() {
-        return $('#content-lvl13').html();
-      }
-  });
-   $('#popover-lvl14').popover({
-      toggle:'popover',
-      container:'body',
-      trigger:'hover click',
-      placement:'top',
-      html: true,
-      content: function() {
-        return $('#content-lvl14').html();
-      }
-  });
-   $('#popover-lvl15').popover({
-      toggle:'popover',
-      container:'body',
-      trigger:'hover click',
-      placement:'top',
-      html: true,
-      content: function() {
-        return $('#content-lvl15').html();
       }
   });
    $('#popover-lvl16').popover({

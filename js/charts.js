@@ -106,10 +106,11 @@ $(function () {
     xAxis: {
       categories: [
         'Silencer',
+        'Vengeful Spirit',
+        'Invoker',
+        'Outworld Devourer',
         'Centaur Warrunner',
         'Ogre Magi',
-        'Outworld Devourer',
-        'Vengeful Spirit',
         'Treant Protector',
         '<b>Winter Wyvern</b>',
         'Naga Siren'],
@@ -161,13 +162,13 @@ $(function () {
 
     series: [{
       name: 'Intelligence',
-      data: [2.5, 1.6, 2.4, 3.3, 1.75, 1.8, 3.1, 1.95]
+      data: [2.5, 1.75, 4, 3.3, 1.6, 2.4, 1.8, 3.1, 1.95]
     }, {
       name: 'Strength',
-      data: [2.2, 3.8, 3.2, 1.85, 2.6, 3.3, 2.1, 2.3]
+      data: [2.2, 2.6, 1.7, 2.3, 3.8, 3.2, 3.3, 2.1, 2.3]
     }, {
       name: 'Agility',
-      data: [3, 2, 1.55, 2, 2.8, 2, 1.9, 2.75]
+      data: [3, 3.3, 1.9, 2, 2, 1.55, 2, 1.9, 2.75]
     }]
   });
 });
@@ -198,17 +199,18 @@ $(function () {
         'Arc Lightning',
         'Crypt Swarm',
         'Static Remnant',
-        'Lightning Storm',
         'Nether Blast',
         'Timber Chain',
+        'Lightning Storm',
         'Illuminate',
         'Dark Pact',
         '<b>Splinter Blast</b>',
+        'Earthshock',
         'Scream of Pain',
         'Shockwave',
+        'Whirling Death',
         'Ether Shock',
-        'Powershot',
-        'Earthshock'],
+        'Powershot'],
       useHTML: 'true',
       labels: {
         style: {
@@ -249,7 +251,7 @@ $(function () {
     series: [{
       name: 'DPS',
       type: 'column',
-      data: [109.3, 75, 74.3, 65, 59.1, 55, 50, 50, 48.6, 42.9, 42.9, 40, 40, 40]
+      data: [109.3, 75, 74.3, 59.1, 55, 50, 50, 50, 48.6, 48, 42.9, 42.9, 41.7, 40, 40]
     }]
   });
 });
@@ -382,11 +384,11 @@ $(function () {
       name: "Pick Rate",
       colorByPoint: true,
       data: [{
-        name: "4",
-        y: 0.58
-      }, {
         name: "5",
         y: 0.42
+      }, {
+        name: "4",
+        y: 0.58
       }]
     }]
   });
@@ -444,10 +446,10 @@ $(function () {
       colorByPoint: true,
       data: [{
         name: "5",
-        y: 0.35
+        y: 0.42
       }, {
         name: "4",
-        y: 0.22
+        y: 0.15
       }, {
         name: "3",
         y: 0.17

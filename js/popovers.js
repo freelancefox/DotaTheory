@@ -409,14 +409,14 @@ jQuery(document).ready(function() {
         return $('#content-leshrac').html();
       }
   });
-   $('#popover-storm').popover({
+   $('#popover-qop').popover({
       toggle:'popover',
       container:'body',
       trigger:'hover click',
       placement:'top',
       html: true,
       content: function() {
-        return $('#content-storm').html();
+        return $('#content-qop').html();
       }
   });
    $('#popover-lina').popover({

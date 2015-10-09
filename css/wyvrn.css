@@ -10,9 +10,40 @@ body {
   color: #F9F9F9;
 }
 
+#header {
+  background-image: url('../img/corevernheader.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  border-left: 24px solid #B1E3E4;
+  border-right: 24px solid #B1E3E4;
+  height: 320px;
+}
+
+#title {
+  color: #1D3E37;
+  text-shadow: -2px 0 1px #F9F9F9, 0 2px 1px #F9F9F9, 2px 0 1px #F9F9F9, 0 -2px 1px #F9F9F9,
+               -2px -2px 1px #F9F9F9, 2px 2px 1px #F9F9F9, 2px -2px 1px #F9F9F9, -2px 2px 1px #F9F9F9;
+}
+
+#subtitle {
+  font-size: 26px;
+  color: #1D3E37;
+  text-shadow: -1.5px 0 1px #F9F9F9, 0 1.5px 1px #F9F9F9, 1.5px 0 1px #F9F9F9, 0 -1.5px 1px #F9F9F9,
+               -1.5px -1.5px 1px #F9F9F9, 1.5px 1.5px 1px #F9F9F9, 1.5px -1.5px 1px #F9F9F9, -1.5px 1.5px 1px #F9F9F9;
+}
+
 #footer > a {
   color: #F9F9F9;
 }
+
+.center-y {
+  position: relative;
+  top: 75%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 
 h1 {
   margin-top: 0px;
@@ -32,7 +63,7 @@ h2 {
 
 h3 {
   margin-top: 8px;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   color: #1D3E37;
 }
 

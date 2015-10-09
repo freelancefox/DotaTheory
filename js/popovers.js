@@ -289,14 +289,14 @@ jQuery(document).ready(function() {
         return $('#content-pipe').html();
       }
   });
-   $('#popover-veil').popover({
+   $('#popover-solar').popover({
       toggle:'popover',
       container:'body',
       trigger:'hover click',
       placement:'top',
       html: true,
       content: function() {
-        return $('#content-veil').html();
+        return $('#content-solar').html();
       }
   });
    $('#popover-lotus').popover({

@@ -21,15 +21,15 @@ body {
 
 #title {
   color: #1D3E37;
-  text-shadow: -2px 0 1px #F9F9F9, 0 2px 1px #F9F9F9, 2px 0 1px #F9F9F9, 0 -2px 1px #F9F9F9,
-               -2px -2px 1px #F9F9F9, 2px 2px 1px #F9F9F9, 2px -2px 1px #F9F9F9, -2px 2px 1px #F9F9F9;
+  text-shadow: -2px 0 0.5px #F9F9F9, 0 2px 0.5px #F9F9F9, 2px 0 0.5px #F9F9F9, 0 -2px 0.5px #F9F9F9,
+               -2px -2px 0.5px #F9F9F9, 2px 2px 0.5px #F9F9F9, 2px -2px 0.5px #F9F9F9, -2px 2px 0.5px #F9F9F9;
 }
 
 #subtitle {
   font-size: 26px;
   color: #1D3E37;
-  text-shadow: -1.5px 0 1px #F9F9F9, 0 1.5px 1px #F9F9F9, 1.5px 0 1px #F9F9F9, 0 -1.5px 1px #F9F9F9,
-               -1.5px -1.5px 1px #F9F9F9, 1.5px 1.5px 1px #F9F9F9, 1.5px -1.5px 1px #F9F9F9, -1.5px 1.5px 1px #F9F9F9;
+  text-shadow: -1.5px 0 0.5px #F9F9F9, 0 1.5px 0.5px #F9F9F9, 1.5px 0 0.5px #F9F9F9, 0 -1.5px 0.5px #F9F9F9,
+               -1.5px -1.5px 0.5px #F9F9F9, 1.5px 1.5px 0.5px #F9F9F9, 1.5px -1.5px 0.5px #F9F9F9, -1.5px 1.5px 0.5px #F9F9F9;
 }
 
 #footer > a {
@@ -38,7 +38,7 @@ body {
 
 .center-y {
   position: relative;
-  top: 75%;
+  top: 80%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -207,6 +207,13 @@ h4 {
 }
 
 .popover.top .arrow:after {
+  border-top-color: #1D3E37;
+}
+
+.tooltip.top .tooltip-inner {
+  background-color: #1D3E37;
+}
+.tooltip.top .tooltip-arrow {
   border-top-color: #1D3E37;
 }
 

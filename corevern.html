@@ -9,17 +9,17 @@
 </head>
 
 <body>
+  <div id="header" class="row text-center">
+    <div class="center-y">
+      <h1 id="title">COREVERN</h1>
+      <p id="subtitle">Guide to Core Winter Wyvern</p>
+    </div>
+  </div><!--/.header-->
   <div class="container">
-    <div id="header" class="row text-center">
-      <div class="center-y">
-        <h1 id="title">COREVERN</h1>
-        <p id="subtitle">Guide to Core Winter Wyvern</p>
-      </div>
-    </div><!--/.row-->
-    <div class="row text-center" style="padding: 0 24px 24px 24px;">
+    <!--<div class="row text-center" style="padding: 0 24px 24px 24px;">
       <div class="embed-responsive embed-responsive-16by9">
         <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/IUPyYPzZiWM"></iframe>
-      </div><!--/.embed-responsive-->
+      </div><!--/.embed-responsive
     </div><!--/.row-->
     <div class="row text-center">
       <div class="col-md-6">
@@ -28,11 +28,11 @@
           <div class="row">
             <h3>Why Wyvern?</h3>
             <div class="row padded">
-              • Wyvern is overpowered as a hero and yet still underutilized as a pick: no one
-                has played her as a core hero competitevely—not even once. Why could this be?
-                Well it probably has to do with the fact that she's such a good support. Let's
-                start by taking a look at a few of the oft-overlooked reasons why Wyvern makes
-                a good core:<br>
+              • Wyvern is considered by many to be a strong hero and yet is still underutilized
+                as a pick: no one has played her as a core hero competitevely—not even once.
+                Why could this be? It likely has to do with the fact that she's such a strong
+                support. Let's start by taking a look at a couple of the frequently overlooked
+                reasons why Wyvern makes a good core:<br>
             </div><!--/.row-->
             <div class="row padded">
               <h4>Stats</h4>
@@ -41,10 +41,10 @@
               <div id="stats1" style="margin-right: 8px;"></div><div id="stats2"></div><br>
               • Add to her excellent stats <img src="img/winter_wyvern_arctic_burn.png"> Arctic Burn's
                 underrated potential as a right-click damage steroid: not only does it grant
-                Wyvern the <a data-toggle=?tooltip" title="That's 1000—Sniper only gets up to 950">longest attack range</a>
-                in the game, it also grants her the <a data-toggle="tooltip" title="0.1, though her base attack point, 0.25, is behind only IO, Gyro and Sniper">lowest attack point</a>.
+                Wyvern the <a data-toggle="tooltip" title="That's 1000—Sniper only gets up to 950" style="white-space: nowrap;">longest attack range</a>
+                in the game, it also grants her the <a data-toggle="tooltip" title="0.1, though her base attack point, 0.25, is behind only IO, Gyro and Sniper" style="white-space: nowrap;">lowest attack point</a> in the game.
                 Without much farm she can become a potent semi-carry, itemizing
-                to abuse her long range and slows for massive kiting potential.
+                to abuse her long range and slows to effectively kite enemies.
             </div><!--/.row-->
             <div class="row padded" style="padding-top: 8px; padding-bottom: 8px;">
               <h4>Flash Farm</h4>
@@ -66,10 +66,17 @@
                 Winter's Curses <img src="img/winter_wyvern_winters_curse.png">—both
                 long-range spells but which can sometimes be wasted by an
                 underfarmed Wyvern who gets caught out. Having a core Wyvern is
-                like having a farmed Enigma, Beastmaster, Magnus, Batrider, etc:
-                it guarantees you a won teamfight if you get their spells off.
-                She especially excels against BKB carries and physical damage:
-              </div><!--/.row-->
+                similar to having a farmed playmaker like Enigma, Beastmaster,
+                Magnus, Batrider, etc: it guarantees you a won teamfight if you
+                get their spells off.
+            </div><!--/.row-->
+            <div class="row padded" style="padding-top: 8px;">
+              • Wyvern especially excels against BKB carries and physical damage
+                dealers thanks to Winter's Curse and Cold Embrace respectively.
+                As a mid laner, she's suited to pushing lineups that take advantage
+                of her sustain and wave clearing to take towers and eventually high
+                ground before 35:00 minutes.
+            </div><!--/.row-->
             <div class="row padded">
               <div class="col-xs-6">
                 <h4>Best&nbsp;Teammates</h4>
@@ -1330,11 +1337,13 @@
             <div class="row padded" style="padding-top: 8px;">
             • While the most effective role for Wyvern at TI5 was hard support, observe
               in the highlighted rows above that there was also a slight increase in winrate
-              in games where Wyvern outfarmed her offlaner.
+              in games where Wyvern outfarmed her offlaner. After examining the replays for these
+              games I think it's fair to assume that the farm on Wyvern contributed to these
+              victories.
             </div><!--/.row-->
             <h3>The Solution: Versatility</h3>
             <div class="row padded" style="padding-bottom: 8px;">
-            • With such a low winrate, can captains really justify Wyvern as a continued tier-1 
+            • With such a low winrate, can captains really justify Wyvern as a continued tier-1
               pick/ban? Adding core Wyvern to your arsenal gives you the ability to safely draft her early
               without giving away any information about your lanes.<br>
             <h4>Pick Rate by Role</h4>
@@ -1359,5 +1368,10 @@
   <script src="js/popovers.js"></script>
   <script src="js/charts.js"></script>
   <script src="js/wow.min.js"></script>
+  <script>
+    $(document).ready(function() {
+        $('[data-toggle="tooltip"]').tooltip({'placement': 'top'});
+    });
+  </script>
 
 </body>

@@ -197,6 +197,7 @@ $(function () {
     xAxis: {
       categories: [
         'Arc Lightning',
+        'Shadowraze',
         'Crypt Swarm',
         'Static Remnant',
         'Nether Blast',
@@ -251,7 +252,7 @@ $(function () {
     series: [{
       name: 'DPS',
       type: 'column',
-      data: [109.3, 75, 74.3, 59.1, 55, 50, 50, 50, 48.6, 48, 42.9, 42.9, 41.7, 40, 40]
+      data: [109.3, 97.5, 75, 74.3, 59.1, 55, 50, 50, 50, 48.6, 48, 42.9, 42.9, 41.7, 40, 40]
     }]
   });
 });

@@ -609,4 +609,34 @@ jQuery(document).ready(function() {
         return $('#content-lvl16').html();
       }
   });
+   $('#popover-build1').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-build1').html();
+      }
+  });
+   $('#popover-build2').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-build2').html();
+      }
+  });
+   $('#popover-build3').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-build3').html();
+      }
+  });
 });

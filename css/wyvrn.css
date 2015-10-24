@@ -14,8 +14,8 @@ body {
   background-image: url('../img/corevernheader.png');
   background-position: center;
   background-repeat: no-repeat;
-  border-left: 24px solid #B1E3E4;
-  border-right: 24px solid #B1E3E4;
+  //border-left: 24px solid #B1E3E4;
+  //border-right: 24px solid #B1E3E4;
   height: 320px;
 }
 
@@ -261,7 +261,7 @@ h4 {
 
 #skills {
   padding-top: 4px;
-  padding-bottom: 4px;
+  padding-bottom: 0px;
 }
 
 #skills > img {

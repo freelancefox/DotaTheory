@@ -399,14 +399,14 @@ jQuery(document).ready(function() {
         return $('#content-od').html();
       }
   });
-   $('#popover-leshrac').popover({
+   $('#popover-windranger').popover({
       toggle:'popover',
       container:'body',
       trigger:'hover click',
       placement:'top',
       html: true,
       content: function() {
-        return $('#content-leshrac').html();
+        return $('#content-windranger').html();
       }
   });
    $('#popover-qop').popover({

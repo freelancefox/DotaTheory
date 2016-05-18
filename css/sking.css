@@ -60,6 +60,7 @@ a:hover {
   position: relative;
   top: 95%;
   -webkit-transform: translateY(-95%);
+  -moz-transform: translateY(-95%);
   -ms-transform: translateY(-95);
   transform: translateY(-95);
 }
@@ -68,6 +69,7 @@ a:hover {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50);
   -ms-transform: translateY(-50);
   transform: translateY(-50);
 }

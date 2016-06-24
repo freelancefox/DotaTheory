@@ -4,7 +4,7 @@ body {
 }
 
 a {
-  color: #6e4926;
+  //color: #6e4926;
 }
 
 a:hover, a:focus {
@@ -384,6 +384,10 @@ h5 {
   font-size: 1.15em;
 }
 
+#changelog li {
+  text-align: left;
+}
+
 #skills > img {
   margin-top: 4px;
   margin-bottom: 4px;
@@ -409,7 +413,7 @@ h5 {
 }
 
 #hero-box {
-  padding: 60px 0 60px 0;
+  padding: 45px 0;
 }
 
 /*#aaa {
@@ -462,7 +466,7 @@ h5 {
 }
 
 #spacer {
-  height: 40px;
+  height: 60px;
 }
 
 .page-spacer {
@@ -544,3 +548,4 @@ h5 {
 .notes {
   padding-left: 15px;
 }
+

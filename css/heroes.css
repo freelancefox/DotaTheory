@@ -162,8 +162,8 @@ h5 {
 .padded {
   padding-top: 0px;
   padding-bottom: 0px;
-  padding-left: 75px;
-  padding-right: 75px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 #padth {
@@ -532,7 +532,19 @@ h5 {
 
 .col-md-9 {
   padding: 0;
-  border: 18px outset rgba(0,51,102,0.07);
+  //border: 18px outset rgba(0,51,102,0.07);
+}
+
+.cola .col-md-9 {
+  border: 18px outset rgba(0,44,55,0.15);
+}
+
+.colb .col-md-9 {
+  border: 18px outset rgba(36,38,28,0.15);
+}
+
+.colc .col-md-9 {
+  border: 18px outset rgba(12,41,47,0.15);
 }
 
 .ability {

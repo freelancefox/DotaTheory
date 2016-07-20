@@ -16,32 +16,237 @@
       <!--<p id="subtitle">Why you should skill Caustic Finale, and why you should pick Sand King</p>-->
     </div>
   </div><!--/.header-->
-  <div class="container"><br>
-    <!--<div class="row text-center" style="padding: 0 24px 8px 24px;">
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/c95ZpyN2W6Q"></iframe>
-      </div>
-    </div>-->
-    <div class="row text-center">
+  <ul id="tabs" class="nav nav-tabs">
+    <li><a href="#intro" data-toggle="tab">Intro</a></li>
+    <li class="active"><a href="#guide" data-toggle="tab">Guide</a></li>
+    <li><a href="#video" data-toggle="tab">Video</a></li>
+  </ul>
+<div class="container">
+  <div class="tab-content">
+    <div class="tab-pane text-center fade" id="intro">
+      <div class="col-md-6">
+        <div class="section-bg">
+          <h2>Intro</h2>
+          <div class="row">
+            <h3>Disclaimer</h3>
+            <div class="row padded">
+              The intended purpose of this guide is to share how I,
+              the author, personally enjoy playing Sand King. There
+              are many ways to play Sand King, and some people might
+              dislike some of my choices, but I try to clearly note
+              spots where you can diverge to other playstyles, and
+              do talk about the pros and cons of this style versus some
+              of the other builds. Please send any relevant feedback
+              about how I can improve my guide in this regard via
+              Twitter or Reddit (see bottom of page)!
+            </div><!--/.row-->
+            <h3>Before You Start</h3>
+            <div class="row padded">
+              Sand King is a relatively unforgiving hero for newer
+              players, relying on positioning and game sense to make
+              predictive plays and execute difficult teamfight combos.
+              His ultimate is just straight up hard to use. Be sure to practice
+              your basic combos and any jungling patterns you plan to use
+              before playing any live games your first time on Sand King, and
+              for newer players especially be careful with the short range of
+              your main spell, Q.  Last-hitting with Caustic Finale can
+              sometimes be finicky, so practicing this is a good idea as well.
+            </div><!--/.row-->
+          </div><!--/.row-->
+          <h2 style="margin-top: 8px;">Hero Info</h2>
+          <h3>Crixalis, the Sand King</h3>
+          <h4>Dire, Strength</h4>
+          <img src="img/Sand_King.png"></img>
+          <h5 style="color:#292018;padding-top:4px;">Nuker / Initiator / Disabler / Escape / Jungle</h5>
+          <div id="lore" class="row">
+            <div class="row padded">
+              <h4>Description</h4>
+              <p>
+                Sand King is a Strength hero with abilities that requires
+                him to get close to enemies and attack them, but unlike
+                a carry hero does not primarily deal damage by attacking
+                during an engagement. Sand King's main role is to
+                provide lockdown with his signature spell: Burrowstrike.
+                It provides damage and mobility along with a hard stun,
+                all in one package, supplemented by his other spells: Sand
+                Storm to provide jungling ability and a second escape, his
+                ultimate Epicenter to deal tons of magic damage, and his
+                passive Caustic Finale, which allows Sand King to flash
+                farm quicker than most heroes.
+              </p>
+              <h4>Lore</h4>
+              <p>
+                The sands of the Scintillant Waste are alive and sentient--the
+                whole vast desert speaks to itself, thinking thoughts only such a
+                vastness can conceive. But when it needs to find a form to
+                communicate with those of more limited scope, it frees a fragment
+                of itself, and fills a carapace of magic armor formed by the
+                cunning Djinn of Qaldin. This essential identity calls itself
+                Crixalis, meaning 'Soul of the Sand,' but others know it as Sand
+                King.  Sand King takes the form of a huge arachnid, inspired by
+                the Scintillant Waste's small but ubiquitous denizens; and this
+                is a true outward expression of his ferocious nature.  Guardian,
+                warrior, ambassador--Sand King is all of these things,
+                inseparable from the endless desert that gave him life.
+              </p>
+            </div>
+          </div><!--/.row-->
+        </div><!--/.section-bg-->
+      </div><!--/.col-md-6-->
+      <div class="col-md-6">
+        <div class="section-bg">
+          <div id="attributes" class="row">
+            <h2>Attributes</h2>
+            <div id="stats" class="row padded">
+              <p><img src="img/str_p.png"></img> 22 + 2.6</p>
+              <p><img src="img/agi.png"></img> 19 + 2.1</p>
+              <p><img src="img/int.png"></img> 16 + 1.8</p>
+            </div><!--/.row-->
+            <div class="row padded">
+              <div class="col-md-6">
+                <p><b>Movement Speed</b>: 300</p>
+                <p><b>Turn Rate</b>: 0.5</p>
+                <p><b>Attack Range</b>: 150</p>
+                <p><b>Vision</b>: 1800/800</p>
+              </div><!--/.row-->
+              <div class="col-md-6">
+                <p><b>BAT</b>: 1.7</p>
+                <p><b>Base Damage</b>: 25-41</p>
+                <p><b>Base Armor</b>: 0</p>
+                <p><b>Attack Duration</b>: 0.53 + 0.47s</p>
+              </div><!--/.row-->
+            </div><!--/.row-->
+          </div><!--/.row-->
+          <div id="hskills" class="row">
+            <h2>Skills</h2>
+            <div class="row padded" style="padding-top: 8px;">
+              <div class="col-md-4">
+                <img src="img/sandking_burrowstrike.png">
+                <div id="icons" class="row">
+                  <p><img src="img/cd.png"> 11s</p>
+                  <p><img src="img/mana.png"> 110/120/130/140</p>
+                </div>
+              </div><!--/.col-md-4-->
+              <div class="col-md-8">
+                <div class="row">
+                  <h4><b>Q: BURROWSTRIKE</b> target point/unit, magical</h4>
+                  <p class="ability">
+                    Sand King burrows into the ground and tunnels forward,
+                    damaging and stunning enemy units above him as he resurfaces.
+                  </p>
+                  <p><b>Cast Range</b>: 350/450/550/650 (<img src="img/aghs-upgrade.png"> 700/900/1100/1300) </p>
+                  <p><b>Damage</b>: 100/160/220/280</p>
+                  <p><b>Stun Duration</b>: 2.17s</p>
+                </div>
+              </div><!--/.col-md-8-->
+            </div><!--/.row-->
+            <div class="row padded">
+              <div class="col-md-4">
+                <img src="img/sandking_sand_storm.png">
+                <div id="icons" class="row">
+                  <p><img src="img/cd.png"> 34/26/18/10s</p>
+                  <p><img src="img/mana.png"> 60/50/40/30</p>
+                </div>
+              </div><!--/.col-md-4-->
+              <div class="col-md-8">
+                <div class="row">
+                  <h4><b>W: SAND STORM</b> no target, magical</h4>
+                  <p class="ability">
+                    Sand King creates a fearsome sandstorm that damages enemy
+                    units while hiding him from vision. The invisibility
+                    remains for a short duration after the sandstorm ends.
+                  </p>
+                  <p><b>Max Duration</b>: 50s</p>
+                  <p><b>Radius</b>: 525</p>
+                  <p><b>Fade Time</b>: 0s</p>
+                  <p><b>Damage per Second</b>: 25/50/75/100</p>
+                  <p><b>Invisibility Linger Duration</b>: 1.5s</p>
+                </div>
+              </div><!--/.col-md-8-->
+            </div><!--/.row-->
+            <div class="row padded">
+              <div class="col-md-4">
+                <img src="img/sandking_caustic_finale.png" style="padding-bottom:8px;">
+              </div><!--/.col-md-4-->
+              <div class="col-md-8">
+                <div class="row">
+                  <h4><b>E: CAUSTIC FINALE</b> passive, magical</h4>
+                  <p class="ability">
+                    Sand King's attacks inject a venom that causes enemy units
+                    to violently explode when its timer expires, or when the
+                    unit dies, damaging and slowing nearby enemies. Deals half
+                    damage if the timer expires.
+                  </p>
+                  <p><b>Explosion Radius</b>: 400</p>
+                  <p><b>Explosion Damage</b>: 90/130/170/220</p>
+                  <p><b>Passive Proc Duration</b>: 6s</p>
+                  <p><b>Passive Proc Damage</b>: 45/65/85/110</p>
+                  <p><b>Movement Speed Slow</b>: 30%</p>
+                  <p><b>Slow Duration</b>: 3s</p>
+                </div>
+              </div><!--/.col-md-8-->
+            </div><!--/.row-->
+            <div class="row padded">
+              <div class="col-md-4">
+                <img src="img/sandking_epicenter.png">
+                <div id="icons" class="row">
+                  <p><img src="img/cd.png"> 120/110/100s</p>
+                  <p><img src="img/mana.png"> 150/225/300</p>
+                </div>
+              </div><!--/.col-md-4-->
+              <div class="col-md-8">
+                <div class="row">
+                  <h4><b>R: EPICENTER</b> ultimate, no target/channeling, magical</h4>
+                  <p class="ability">
+                    After channeling for 2 seconds, Sand King sends a
+                    disturbance into the earth, causing it to shudder
+                    violently. All enemies caught within range will take damage
+                    and become slowed. Each subsequent pulse increases the
+                    radius of damage dealt.
+                  </p>
+                  <p><b>Channel Time</b>: 2s</p>
+                  <p><b>Pulse Radius</b>: 275+50 per pulse</p>
+                  <p><b>Number of Pulses</b>: 6/8/10</p>
+                  <p><b>Damage per Pulse</b>: 110</p>
+                  <p><b>Attack/Movement Speed Slow</b>: 30%</p>
+                  <p><b>Slow Duration</b>: 3s</p>
+                  <h5 style="color:#292018;"><b><img src="img/aghs-upgrade.png"></img> Aghanim's Upgrade:</b></h5>
+                  <p class="ability">
+                    Doubles the range of Burrowstrike, and applies
+                    Caustic Finale to any enemy heroes affected.
+                  </p>
+                </div>
+              </div><!--/.col-md-8-->
+            </div><!--/.row-->
+          </div><!--/.row-->
+        </div><!--/.section-bg-->
+      </div><!--/.col-md-6-->
+    </div><!--/.intro-->
+    <div class="tab-pane text-center active fade in" id="guide">
       <div class="col-md-6">
         <div class="section-bg">
           <h2>Picking</h2>
           <div class="row" id="picking">
             <h3>Why Sand King?</h3>
             <div id="picks" class="row padded">
-              Sand King is without a doubt one of the most fun heroes to play and
-              watch—plus he has also received nothing but straight buffs for years—but
-              why are most professional players still largely ignoring this hero,
-              and when they do pick him, often not even skilling up his most buffed
-              skill, Caustic Finale? There has even been a streak of Sand King picks
-              in competitive play recently, giving us a glimpse into the playstyle
-              that core Sand King takes on in high level games in the hands of flashy
-              players such as OG.Miracle and LGD.Maybe recently at the StarLadder
-              Invitational LAN, as well as 8 safelane solo Sand King picks in the Manila
-              Major Qualifiers. Despite the variety of builds we've seen, there is no
-              one team taking full advantage of SK's strengths as I think they
-              currently stand. This guide aims to carve out a new, stronger niche
-              for core Sand King, based on these three factors:
+              Sand King is without a doubt one of the most fun heroes to play
+              and watch due play-making—plus he has also received nothing but
+              straight buffs for years—but why, then, are more players not
+              picking him?  There seems to be some confusion amongst players,
+              even pros, about what his strengths are as a hero—not everyone
+              seems to think that his most buffed, and indeed most important
+              spell is his passive, Caustic Finale.  Some pro players still may
+              not pick it up at all, opting to jungle with exclusively Sand
+              Storm.  Along with recent buffs there has been something of a
+              streak of Sand King picks in competitive play recently, giving us
+              a glimpse into the playstyle that core Sand King takes on in high
+              level games in the hands of flashy players such as OG.Miracle and
+              Na'vi Dendi both in the past few months, for example, as well as
+              8 safelane solo Sand King picks in the Manila Major Qualifiers.
+              Despite the variety of builds we've seen, there is no one team
+              taking full advantage of SK's strengths as I think they currently
+              stand.  This guide aims to carve out a new, stronger niche for
+              core Sand King, based on the three following factors:
             </div><!--/.row-->
             <div id="picks" class="row padded">
               <h4 style="margin-top: 8px;"><img src="img/sandking_caustic_finale.png"> Early Kill Potential</h4>
@@ -634,9 +839,9 @@
                         additional active item like Eul's against these heroes, IF
                         they go Linken's Sphere, to quickly pop their Linken's and
                         follow-through with your Burrow combo. Morphling can be
-                        especialyl frustrating to play against because he will
+                        especially frustrating to play against because he will
                         Strength morph his way out of the fight if you don't burst
-                        him, but even in these chases Sand King has the advantage
+                        him, but even in these cases Sand King has the advantage
                         with a lower cooldown mobility spell and Caustic slow, so
                         long as the Morphling doesn't instantly replicate out.
                         Morphling is also low-range enough to be hit will Caustic
@@ -654,8 +859,8 @@
                         Tinker LOVES to hide in trees and use March of the Machines
                         to farm up the lane, then Boots of Travel out without being
                         seen—use this against him by placing wards on the high
-                        cliffs around the outsie of the map ("Tinker wards"), then
-                        lay in wait in some patch of trees for the Tinker to come
+                        cliffs around the outside of the map ("Tinker wards"), then
+                        lie in wait in some patch of trees for the Tinker to come
                         along. Since Tinker players tend to get an Ethereal Blade
                         of their own, late-game Tinker can be especially helpless
                         against a wise Sand King player's ganks, that is unless
@@ -768,8 +973,8 @@
                   </a>
                   <div id="content-alchemist" class="hide">
                     <p>
-                      Alchemist definitely seems like a strong and underutilized
-                      hero these days, but 1v1 against a Sand King he will just look
+                      Alchemist definitely seems like a an underutilized hero
+                      these days, but 1v1 against a Sand King he will just look
                       silly. Picking up a couple Mangos, as prescribed here, to
                       counteract the tick damage from Acid Spray is the only real
                       adjustment you'll need to make against Alchemist, though as
@@ -778,7 +983,7 @@
                       can become quite tanky and hard to burst down, not to mention
                       if he goes Radiance that can interfere with your Blink Dagger,
                       but this give you all the more reason to go for either
-                      Control in the form of a Scythe of Vyse to catch out a tanky
+                      control in the form of a Scythe of Vyse to catch out a tanky
                       Alchemist, or more burst damage in the form of Dagon/Eblade to
                       punish an Alch for not tanking up enough.
                     </p>
@@ -860,7 +1065,7 @@
             <div class="row padded">
               <h4 style="margin: 8px 0 8px 0;">Strong&nbsp;With</h4>
               <div class="col-xs-6">
-                <div class="hero-box-3 center-block" style="padding-bottom: 0px">
+                <div class="hero-box-3 center-block" style="padding-bottom: 0; margin-right: 0;">
                   <a id="popover-buffers" rel="popover" data-title="Buffers">
                     <h5>Buffers</h5>
                   </a>
@@ -931,7 +1136,7 @@
                     </p>
                   </div><!--/.popover-content-->
                 </div><!--/.hero-box-3-->
-                <div class="hero-box-3 center-block">
+                <div class="hero-box-3 center-block" style="margin-right: 0;">
                   <a id="popover-kotl2" rel="popover"
                      data-title="Keeper of the Light">
                     <img src="img/80px-Keeper_of_the_Light.png" width="48">
@@ -988,7 +1193,7 @@
                 </div><!--/.hero-box-3-->
               </div><!--/.col-xs-6-->
               <div class="col-xs-6">
-                <div class="hero-box-3 center-block" style="padding-bottom: 0px">
+                <div class="hero-box-3 center-block" style="padding-bottom: 0; margin-left: 0;">
                   <a id="popover-catch" rel="popover" data-title="Catch/Gankers">
                     <h5>Catch/Gankers</h5>
                   </a>
@@ -1053,7 +1258,7 @@
                     </p>
                   </div><!--/.popover-content-->
                 </div><!--/.hero-box-3-->
-                <div class="hero-box-3 center-block">
+                <div class="hero-box-3 center-block" style="margin-left: 0;">
                   <a id="popover-tiny" rel="popover"
                      data-title="Tiny">
                     <img src="img/80px-Tiny.png" width="48">
@@ -1731,7 +1936,7 @@
           </div><!--/.row-->
           <div class="row padded" style="margin-top: 8px;">
             <div class="col-xs-6">
-              <div class="hero-box-3 center-block" style="padding-bottom: 0px">
+              <div class="hero-box-3 center-block" style="padding-bottom: 0; margin-right: 0;">
                 <a id="popover-badmatch" rel="popover" data-title="Bad Lane Matchups">
                   <h5>Bad Lane Matchups</h5>
                 </a>
@@ -1790,7 +1995,7 @@
                   </p>
                 </div><!--/.popover-content-->
               </div><!--/.hero-box-3-->
-              <div class="hero-box-3 center-block">
+              <div class="hero-box-3 center-block" style="margin-right: 0;">
                 <a id="popover-timbersaw" rel="popover"
                    data-title="Timbersaw">
                   <img src="img/80px-Timbersaw.png" width="48">
@@ -1845,7 +2050,7 @@
               </div><!--/.hero-box-3-->
             </div><!--/.col-xs-6-->
             <div class="col-xs-6">
-              <div class="hero-box-3 center-block" style="padding-bottom: 0px">
+              <div class="hero-box-3 center-block" style="padding-bottom: 0; margin-left: 0;">
                 <a id="popover-harass" rel="popover" data-title="Ranged Lane Harass">
                   <h5>Ranged Lane Harass</h5>
                 </a>
@@ -1909,7 +2114,7 @@
                   </p>
                 </div><!--/.popover-content-->
               </div><!--/.hero-box-3-->
-              <div class="hero-box-3 center-block">
+              <div class="hero-box-3 center-block" style="margin-left: 0;">
                 <a id="popover-sniper" rel="popover"
                    data-title="Sniper">
                   <img src="img/80px-Sniper.png" width="48">
@@ -3185,7 +3390,7 @@
               </div><!--/.col-xs-3-->
             </div><!--/.row-->
             <div class="row">
-              <div class="col-xs-6 connect-6">
+              <div class="col-xs-6 connect-6-dotted">
               </div><!--/.connect-6-->
             </div><!--/.row-->
             <div class="row">
@@ -3254,7 +3459,7 @@
               </div><!--/.col-xs-3-->
             </div><!--/.row-->
             <div class="row">
-              <div class="col-xs-6 connect-6">
+              <div class="col-xs-6 connect-6-dotted">
               </div><!--/.connect-6-->
             </div><!--/.row-->
             <div class="row">
@@ -3307,7 +3512,7 @@
               </div><!--/.col-xs-2-->
             </div><!--/.row-->
             <div class="row">
-              <div class="col-xs-6 connect-6">
+              <div class="col-xs-6 connect-6-dotted">
               </div><!--/.connect-6-->
             </div><!--/.row-->
             <div class="row">
@@ -3325,16 +3530,26 @@
                     <img src="img/40px-Aghanim's_Scepter_icon.png">
                   </a>
                   <div id="content-aghanims" class="hide">
+                    <p>COST: 4200</p>
+                    <p><img src="img/40px-Point_Booster_icon.png"></img>+<img src="img/40px-Ogre_Club_icon.png"></img>+<img src="img/40px-Staff_of_Wizardry_icon.png"></img>+<img src="img/40px-Blade_of_Alacrity_icon.png"></img></p>
+                    <p>+10 all attributes</p>
+                    <p>+175 health (<i>375 total</i>)</p>
+                    <p>+175 mana (<i>295 total</i>)</p>
+                    <p>Increases Burrowstrike range to 700/900/1100/1300</p>
                     <p>
-                      You're probably thinking "Whoa whoa, Aether AFTER Aghanim's? Why
-                      get the more expensive item first?". Well, when it comes to range
-                      extension on Sand King, Aghanim's does a WHOLE lot more for you.
-                      Anyone who would ever think of getting Aether Lens first, before
-                      even Blink is missing the point of the item entirely, as it has its
-                      greatest effect after you have multiple targeted spells (plus items, such as your Blink)
-                      versus the early game, where you have only one (Burrow). Aghanim's makes SK
-                      perhaps <i>the</i> single strongest initiator because of his
-                      instant AOE stun (actually 2000 speed, and 3000 with Aghs, but close enough).
+                      You're probably thinking "Whoa whoa, Aether AFTER
+                      Aghanim's? Why get the more expensive item first?". Well,
+                      when it comes to range extension on Sand King, Aghanim's
+                      does a WHOLE lot more for you.  Anyone who would ever
+                      think of getting Aether Lens first, before even Blink is
+                      missing the point of the item entirely, as it has its
+                      greatest effect after you have multiple targeted spells
+                      (plus items, such as your Blink) versus the early game,
+                      where you have only one (Burrow). Aghanim's makes SK
+                      perhaps <i>the</i> single strongest initiator because of
+                      his instant AoE stun (actually 2000 speed, and 3000 with
+                      Aghs, but close enough). Aghanim's actually <i>doubles</i>
+                      your Burrow range, while Aether gives only a 30% increase.
                     </p>
                     <div class="popover-footer text-center">
                       <div class="popover-timing">Target item timing: 30:00-35:00</div>
@@ -3353,6 +3568,12 @@
                     <img src="img/40px-Aether_Lens_icon.png">
                   </a>
                   <div id="content-aether" class="hide">
+                    <p>COST: 2300</p>
+                    <p><img src="img/40px-Energy_Booster_icon.png"></img>+<img src="img/40px-Ring_of_Health_icon.png"></img>+<img src="img/40px-Recipe_Scroll_icon.png"></img></p>
+                    <p>+250 mana</p>
+                    <p>+8 health regen</p>
+                    <p>+5% spell damage</p>
+                    <p>+200 spell/item cast range</p>
                     <p>
                       Aether Lens is a fantastic item for anyone with initiation or
                       nuking duties, and Sand King is no exception—he has both.
@@ -3381,6 +3602,12 @@
                     <img src="img/40px-Dagon_1_icon.png">
                   </a>
                   <div id="content-dagon" class="hide">
+                    <p>COST: 2720</p>
+                    <p><img src="img/40px-Staff_of_Wizardry_icon.png"></img>+<img src="img/40px-Null_Talisman_icon.png"></img>+<img src="img/40px-Recipe_Scroll_icon.png"></img></p>
+                    <p>+3 strength/agility</p>
+                    <p>+16 intelligence (<i>+192 mana</i>)</p>
+                    <p>+9 damage (<i>12 total</i>)</p>
+                    <p>400 magic damage / 600 cast range <img src="img/cd.png"></img> 35s <img src="img/mana.png"></img> 180</p>
                     <p>
                       Sand King's function on a team can vary slightly depending
                       on your allies, but, in general, besides your responsibility
@@ -3915,6 +4142,42 @@
                     <td id="padless">12:25</td>
                     <td id="padless">W</td>
                   </tr>
+                  <tr class="active2">
+                    <td id="padless">Na'vi</td>
+                    <td id="padless">Dendi</td>
+                    <td id="padless">Ad Finem</td>
+                    <td id="padless">2</td>
+                    <td id="padless">Mid</td>
+                    <td id="padless">9:03</td>
+                    <td id="padless">W</td>
+                  </tr>
+                  <tr class="active2">
+                    <td id="padless">Na'vi</td>
+                    <td id="padless">General</td>
+                    <td id="padless">Ad Finem</td>
+                    <td id="padless">3</td>
+                    <td id="padless">Off</td>
+                    <td id="padless">8:56</td>
+                    <td id="padless">W</td>
+                  </tr>
+                  <tr class="active2">
+                    <td id="padless">Na'vi</td>
+                    <td id="padless">General</td>
+                    <td id="padless">Fnatic</td>
+                    <td id="padless">3</td>
+                    <td id="padless">Off</td>
+                    <td id="padless">11:47</td>
+                    <td id="padless">W</td>
+                  </tr>
+                  <tr>
+                    <td id="padless">Na'vi</td>
+                    <td id="padless">General</td>
+                    <td id="padless">Liquid</td>
+                    <td id="padless">3</td>
+                    <td id="padless">Off</td>
+                    <td id="padless">14:33</td>
+                    <td id="padless">L</td>
+                  </tr>
                 </tbody>
               </table>
             </div>
@@ -3976,11 +4239,22 @@
           </div><!--/.row-->
         </div><!--/.section-bg-->
       </div><!--/.col-md-6-->
-    </div><!--/.row-->
-    <div id="footer" class="row text-center">
-      by <a href="https://www.reddit.com/user/freelance_fox/">/u/freelance_fox</a> • <a href="http://www.twitter.com/freelancedota">@freelancedota</a> • Last Updated 6/22/16
-    </div><!--/.row-->
-  </div><!-- /.container -->
+    </div><!--/.tab-pane-->
+    <div class="tab-pane text-center fade" id="video">
+      <div class="section-bg">
+        <p style="color:#f9f9f9;">Just a placeholder, real video coming soon! Updates on Twitter</p>
+        <div class="row text-center" style="padding: 0 24px 8px 24px;">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/c95ZpyN2W6Q"></iframe>
+          </div>
+        </div>
+      </div><!--/.section-bg-->
+    </div><!--/.video-->
+  </div><!--/.tab-content-->
+</div><!-- /.container -->
+<div id="footer" class="row text-center">
+  by <a href="https://www.reddit.com/user/freelance_fox/">/u/freelance_fox</a> • <a href="http://www.twitter.com/freelancedota">@freelancedota</a> • Last Updated 7/20/16
+</div><!--/.footer-->
 
   <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
   <script src="http://code.highcharts.com/highcharts.js"></script>
@@ -3994,5 +4268,9 @@
         $('[data-toggle="tooltip"]').tooltip({'placement': 'top'});
     });
   </script>
-
+  <script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $('#tabs').tab();
+    });
+  </script>
 </body>

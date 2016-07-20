@@ -98,6 +98,20 @@ h3 {
   font-size: 21px;
 }
 
+#attributes, #hskills {
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.15em;
+}
+
+#attributes > h3,
+#hskills > h3 {
+  background-color: #292018;
+  border: 2px solid #DCB158;
+  color: #F9F9F9;
+  font-size: 28px;
+}
+
 h4 {
   margin: 4px 0 4px 0;
   color: #292018;
@@ -131,13 +145,17 @@ h5 {
   padding: 0px;
 }
 
+#builds > tr > td {
+  padding: 0px;
+}
+
 .table {
   margin-bottom: 12px;
   background-color: rgba(255,255,255,0.175);
 }
 
 .active {
-  background-color: rgba(255,255,255,0.30);
+  //background-color: rgba(255,255,255,0.30);
 }
 
 .active2 {
@@ -146,6 +164,11 @@ h5 {
 
 .connect-6 {
   border-right: 3px solid #292018;
+  height: 20px;
+}
+
+.connect-6-dotted {
+  border-right: 3px dotted #292018;
   height: 20px;
 }
 
@@ -333,7 +356,6 @@ h5 {
   margin: auto;
 }
 
-
 #skills {
   padding-top: 0px;
   padding-bottom: 0px;
@@ -410,4 +432,95 @@ h5 {
 
 #extension > div {
   padding: 0;
+}
+
+#intro, #guide, #video {
+  padding-top: 20px;
+}
+
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+  background-color: #292018;
+  font-weight: bold;
+  border: 4px solid #292018;
+  box-shadow:
+    inset 0 0 0 4px #dcb158;
+  color: #f9f9f9;
+  cursor: pointer;
+}
+
+.nav-tabs > li > a:focus,
+.nav-tabs > li > a:hover {
+  background-color: #292018;
+  font-weight: bold;
+  border: 4px solid #9D7343;
+  box-shadow:
+    inset 0 0 0 4px #dcb158;
+  color: #f9f9f9;
+  cursor: pointer;
+}
+
+.nav-tabs > li.active > a {
+  background-color: #292018;
+  color: #f9f9f9;
+  border: 4px solid #292018;
+}
+
+.nav-tabs > li > a {
+  width: 96px;
+  border: 4px solid #9D7343;
+  border-radius: 0 0 4px 4px;
+  background-color: #9D7343;
+  color: #292018;
+  font-size: 18px;
+  padding: 4px;
+}
+
+.nav-tabs > li {
+  float: none;
+  display: inline-block;
+  *display: inline; /*IE7*/
+  *zoom:1; /*IE7*/
+}
+
+.nav-tabs {
+  text-align: center;
+  border-bottom: 0;
+  //border-top: 4px solid #292018;
+}
+
+#icons {
+  padding: 8px;
+}
+
+#stats {
+  padding-top: 8px;
+}
+
+#stats > p {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.ability {
+  padding: 0 30px 0 30px;
+  font-size: 14px;
+}
+
+.notes > ul {
+  font-size: 14px;
+  font-style: italic;
+  padding: 0 30px 0 30px;
+}
+
+.notes {
+  padding-left: 15px;
+}
+
+#hskills .col-md-4 {
+  padding: 0;
+}
+
+#hskills .col-md-4 > img {
+  margin-top: 24px;
 }

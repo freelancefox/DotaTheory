@@ -389,6 +389,16 @@ jQuery(document).ready(function() {
         return $('#content-kotl').html();
       }
   });
+   $('#popover-dazzle2').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-dazzle2').html();
+      }
+  });
    $('#popover-dazzle').popover({
       toggle:'popover',
       container:'body',
@@ -769,6 +779,16 @@ jQuery(document).ready(function() {
         return $('#content-shadowdemon2').html();
       }
   });
+   $('#popover-kunkka').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-kunkka').html();
+      }
+  });
    $('#popover-zeus').popover({
       toggle:'popover',
       container:'body',
@@ -1009,6 +1029,26 @@ jQuery(document).ready(function() {
         return $('#content-oracle').html();
       }
   });
+   $('#popover-razor').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-razor').html();
+      }
+  });
+   $('#popover-necro').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-necro').html();
+      }
+  });
    $('#popover-viper').popover({
       toggle:'popover',
       container:'body',
@@ -1129,14 +1169,14 @@ jQuery(document).ready(function() {
         return $('#content-juggernaut').html();
       }
   });
-   $('#popover-sf').popover({
+   $('#popover-pudge').popover({
       toggle:'popover',
       container:'body',
       trigger:'hover click',
       placement:'top',
       html: true,
       content: function() {
-        return $('#content-sf').html();
+        return $('#content-pudge').html();
       }
   });
    $('#popover-lvl1').popover({
@@ -1677,6 +1717,76 @@ jQuery(document).ready(function() {
       html: true,
       content: function() {
         return $('#content-build5').html();
+      }
+  });
+   $('#popover-build6').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-build6').html();
+      }
+  });
+   $('#popover-build7').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-build7').html();
+      }
+  });
+   $('#popover-build8').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-build8').html();
+      }
+  });
+   $('#popover-build9').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-build9').html();
+      }
+  });
+   $('#popover-build10').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-build10').html();
+      }
+  });
+   $('#popover-build11').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-build11').html();
+      }
+  });
+   $('#popover-build12').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-build12').html();
       }
   });
    $('#popover-urn').popover({

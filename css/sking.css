@@ -182,6 +182,10 @@ h5 {
   height: 10px;
 }
 
+.dotted-bottom {
+  border-bottom: 2px dashed #292018;
+}
+
 .arrow-down {
   width: 0;
   height: 0;
@@ -544,4 +548,8 @@ h5 {
 
 tbody tr:hover {
   cursor: pointer;
+}
+
+.col-xs-offset-2-5 {
+  margin-left: 20.83333333333%;
 }

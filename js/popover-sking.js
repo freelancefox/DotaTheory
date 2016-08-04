@@ -789,6 +789,16 @@ jQuery(document).ready(function() {
         return $('#content-kunkka').html();
       }
   });
+   $('#popover-kunkka2').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-kunkka2').html();
+      }
+  });
    $('#popover-zeus').popover({
       toggle:'popover',
       container:'body',
@@ -887,6 +897,16 @@ jQuery(document).ready(function() {
       html: true,
       content: function() {
         return $('#content-antimage').html();
+      }
+  });
+   $('#popover-bristle').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-bristle').html();
       }
   });
    $('#popover-centaur').popover({
@@ -1987,6 +2007,16 @@ jQuery(document).ready(function() {
       html: true,
       content: function() {
         return $('#content-combobreakers').html();
+      }
+  });
+   $('#popover-magres').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-magres').html();
       }
   });
    $('#popover-tank').popover({

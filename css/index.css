@@ -1,0 +1,56 @@
+body {
+  background-color: #000;
+}
+
+h1 {
+  min-height: 92px;
+  padding: 32px 80px;
+  font-size: 2.4em;
+  padding-bottom: 24px;
+}
+
+a {
+  color: rgba(255,255,255,0.5);
+}
+
+.highlight-panels > li > a {
+  width: 100%;
+  height: 100%;
+  font-size: 1.5em;
+  padding: 32px 80px;
+  display: block;
+}
+
+a:hover, a:focus {
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+}
+
+ul { padding: 0; margin: 0; }
+
+.highlight-panels {
+  width: 100%;
+}
+
+.highlight-panels li {
+  min-height: 96px;
+  display: block;
+}
+
+.highlight-panels li a:hover,
+.highlight-panels li a:focus {
+  background-color: rgba(255,255,255,0.3);
+}
+
+#sking {
+  background-image: url('../img/header.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#corevern {
+  background-color: #B1E3E4;
+  background-image: url('../img/corevernheader.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}

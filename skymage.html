@@ -2,19 +2,2602 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Nicely Stung!</title>
+  <title>From the Ghastly Eyrie I can see to the ends of the world, and from this vantage point I declare with utter certainty that this one is in the bag!</title>
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/animate.min.css">
   <link rel="stylesheet" href="css/skymage.css">
 </head>
 
 <body>
+  <div id="header" class="row text-center">
+    <div class="position-header">
+      <p id="title">How to Train Your Dragonus:</p>
+      <h1 id="subtitle">Core Skywrath</h1>
+    </div>
+  </div><!--/.header-->
+  <ul id="tabs" class="nav nav-tabs">
+    <li><a href="#intro" data-toggle="tab">Intro</a></li>
+    <li class="active"><a href="#guide" data-toggle="tab">Guide</a></li>
+    <li><a href="#video" data-toggle="tab">Video</a></li>
+  </ul>
+<div class="container">
+  <div class="tab-content">
+    <div class="tab-pane text-center fade" id="intro">
+      <div class="col-md-6">
+        <div class="section-bg">
+          <h2>Intro</h2>
+          <div class="row">
 
+          </div><!--/.row-->
+          <h2 style="margin-top: 8px;">Hero Info</h2>
+          <h3>Crixalis, the Sand King</h3>
+          <h4>Dire, Strength</h4>
+          <img src="img/Sand_King.png"></img>
+          <h5 style="color:#292018;padding-top:4px;">Nuker / Initiator / Disabler / Escape / Jungle</h5>
+          <div id="lore" class="row">
+            <div class="row padded">
+              <h4>Description</h4>
+              <p>
+                Sand King is a Strength hero with abilities that requires
+                him to get close to enemies and attack them, but unlike
+                a carry hero does not primarily deal damage by attacking
+                during an engagement. Sand King's main role is to
+                provide lockdown with his signature spell: Burrowstrike.
+                It provides damage and mobility along with a hard stun,
+                all in one package, supplemented by his other spells: Sand
+                Storm to provide jungling ability and a second escape, his
+                ultimate Epicenter to deal tons of magic damage, and his
+                passive Caustic Finale, which allows Sand King to flash
+                farm quicker than most heroes.
+              </p>
+              <h4>Lore</h4>
+              <p>
+                The sands of the Scintillant Waste are alive and sentient--the
+                whole vast desert speaks to itself, thinking thoughts only such a
+                vastness can conceive. But when it needs to find a form to
+                communicate with those of more limited scope, it frees a fragment
+                of itself, and fills a carapace of magic armor formed by the
+                cunning Djinn of Qaldin. This essential identity calls itself
+                Crixalis, meaning 'Soul of the Sand,' but others know it as Sand
+                King.  Sand King takes the form of a huge arachnid, inspired by
+                the Scintillant Waste's small but ubiquitous denizens; and this
+                is a true outward expression of his ferocious nature.  Guardian,
+                warrior, ambassador--Sand King is all of these things,
+                inseparable from the endless desert that gave him life.
+              </p>
+            </div>
+          </div><!--/.row-->
+          <div id="attributes" class="row">
+            <h2>Attributes</h2>
+            <div id="stats" class="row padded">
+              <p><img src="img/str_p.png"></img> 22 + 2.6</p>
+              <p><img src="img/agi.png"></img> 19 + 2.1</p>
+              <p><img src="img/int.png"></img> 16 + 1.8</p>
+            </div><!--/.row-->
+            <div class="row padded">
+              <div class="col-md-6">
+                <p><b>Movement Speed</b>: 300</p>
+                <p><b>Turn Rate</b>: 0.5</p>
+                <p><b>Attack Range</b>: 150</p>
+                <p><b>Vision</b>: 1800/800</p>
+              </div><!--/.row-->
+              <div class="col-md-6">
+                <p><b>BAT</b>: 1.7</p>
+                <p><b>Base Damage</b>: 25-41</p>
+                <p><b>Base Armor</b>: 0</p>
+                <p><b>Attack Duration</b>: 0.53 + 0.47s</p>
+              </div><!--/.row-->
+            </div><!--/.row-->
+          </div><!--/.row-->
+        </div><!--/.section-bg-->
+      </div><!--/.col-md-6-->
+      <div class="col-md-6">
+        <div class="section-bg">
+          <div id="hskills" class="row">
+            <h2>Skills</h2>
+            <div class="row padded" style="padding-top: 8px;">
+              <div class="col-md-4">
+                <img src="img/sandking_burrowstrike.png">
+                <div id="icons" class="row">
+                  <p><img src="img/cd.png"> 11s</p>
+                  <p><img src="img/mana.png"> 110/120/130/140</p>
+                </div>
+              </div><!--/.col-md-4-->
+              <div class="col-md-8">
+                <div class="row">
+                  <h4><b>Q: BURROWSTRIKE</b> target point/unit, magical</h4>
+                  <p class="ability">
+                    Sand King burrows into the ground and tunnels forward,
+                    damaging and stunning enemy units above him as he resurfaces.
+                  </p>
+                  <p><b>Cast Range</b>: 350/450/550/650 (<img src="img/aghs-upgrade.png"> 700/900/1100/1300) </p>
+                  <p><b>Damage</b>: 100/160/220/280</p>
+                  <p><b>Stun Duration</b>: 2.17s</p>
+                </div>
+              </div><!--/.col-md-8-->
+            </div><!--/.row-->
+            <div class="row padded">
+              <div class="col-md-4">
+                <img src="img/sandking_sand_storm.png">
+                <div id="icons" class="row">
+                  <p><img src="img/cd.png"> 34/26/18/10s</p>
+                  <p><img src="img/mana.png"> 60/50/40/30</p>
+                </div>
+              </div><!--/.col-md-4-->
+              <div class="col-md-8">
+                <div class="row">
+                  <h4><b>W: SAND STORM</b> no target, magical</h4>
+                  <p class="ability">
+                    Sand King creates a fearsome sandstorm that damages enemy
+                    units while hiding him from vision. The invisibility
+                    remains for a short duration after the sandstorm ends.
+                  </p>
+                  <p><b>Max Duration</b>: 50s</p>
+                  <p><b>Radius</b>: 525</p>
+                  <p><b>Fade Time</b>: 0s</p>
+                  <p><b>Damage per Second</b>: 25/50/75/100</p>
+                  <p><b>Invisibility Linger Duration</b>: 1.5s</p>
+                </div>
+              </div><!--/.col-md-8-->
+            </div><!--/.row-->
+            <div class="row padded">
+              <div class="col-md-4">
+                <img src="img/sandking_caustic_finale.png" style="padding-bottom:8px;">
+              </div><!--/.col-md-4-->
+              <div class="col-md-8">
+                <div class="row">
+                  <h4><b>E: CAUSTIC FINALE</b> passive, magical</h4>
+                  <p class="ability">
+                    Sand King's attacks inject a venom that causes enemy units
+                    to violently explode when its timer expires, or when the
+                    unit dies, damaging and slowing nearby enemies. Deals half
+                    damage if the timer expires.
+                  </p>
+                  <p><b>Explosion Radius</b>: 400</p>
+                  <p><b>Explosion Damage</b>: 90/130/170/220</p>
+                  <p><b>Passive Proc Duration</b>: 6s</p>
+                  <p><b>Passive Proc Damage</b>: 45/65/85/110</p>
+                  <p><b>Movement Speed Slow</b>: 30%</p>
+                  <p><b>Slow Duration</b>: 3s</p>
+                </div>
+              </div><!--/.col-md-8-->
+            </div><!--/.row-->
+            <div class="row padded">
+              <div class="col-md-4">
+                <img src="img/sandking_epicenter.png">
+                <div id="icons" class="row">
+                  <p><img src="img/cd.png"> 120/110/100s</p>
+                  <p><img src="img/mana.png"> 150/225/300</p>
+                </div>
+              </div><!--/.col-md-4-->
+              <div class="col-md-8">
+                <div class="row">
+                  <h4><b>R: EPICENTER</b> ultimate, no target/channeling, magical</h4>
+                  <p class="ability">
+                    After channeling for 2 seconds, Sand King sends a
+                    disturbance into the earth, causing it to shudder
+                    violently. All enemies caught within range will take damage
+                    and become slowed. Each subsequent pulse increases the
+                    radius of damage dealt.
+                  </p>
+                  <p><b>Channel Time</b>: 2s</p>
+                  <p><b>Pulse Radius</b>: 275+50 per pulse</p>
+                  <p><b>Number of Pulses</b>: 6/8/10</p>
+                  <p><b>Damage per Pulse</b>: 110</p>
+                  <p><b>Attack/Movement Speed Slow</b>: 30%</p>
+                  <p><b>Slow Duration</b>: 3s</p>
+                  <h5 style="color:#292018;"><b><img src="img/aghs-upgrade.png"></img> Aghanim's Upgrade:</b></h5>
+                  <p class="ability">
+                    Doubles the range of Burrowstrike, and applies
+                    Caustic Finale to any enemy heroes affected.
+                  </p>
+                </div>
+              </div><!--/.col-md-8-->
+            </div><!--/.row-->
+          </div><!--/.row-->
+        </div><!--/.section-bg-->
+      </div><!--/.col-md-6-->
+    </div><!--/.intro-->
+    <div class="tab-pane text-center active fade in" id="guide">
+      <div class="col-md-6">
+        <div class="section-bg">
+          <h2>Picking</h2>
+          <div class="row" id="picking">
+            <h3>Why Sand King?</h3>
+            <div id="picks" class="row padded">
 
-
+            </div><!--/.row-->
+          </div><!--/.row-->
+          <div class="row">
+            <h3>Synergy & Counters</h3>
+            <div id="picks" class="row padded">
+              <p>
+                Sand King is highly versatile with regards to which role and
+                lane he goes, but he's still a hero you want to avoid picking
+                early if you can because he's somewhat counterable. Consult
+                the following list of hero interactions during your drafts for
+                some idea of how each matchup works, but keep in mind that some
+                categories on this list refer to 1v1 matchups while others
+                are just general notes (hover over the section title for more info).
+              </p>
+              <div class="col-xs-8 col-xs-offset-2" id="synergy">
+                <h4 style="margin: 0 0 8px 0;">Strong&nbsp;Versus</h4>
+                <div class="row">
+                  <div class="hero-box-3 center-block" style="padding-bottom: 0px">
+                  <a id="popover-minions" rel="popover" data-title="Minion Pushers">
+                    <h5>Minion Pushers</h5>
+                  </a>
+                  <div id="content-minions" class="hide">
+                    <p>
+                      SK excels against these heroes, primarily in lane but
+                      also when using his combo, because the extra enemy
+                      minions allow CF to be procced multiple times, granting
+                      extra damage and also some free CS.
+                    </p>
+                  </div><!--/.popover-content-->
+                    <a id="popover-natures" rel="popover"
+                       data-title="Nature's Prophet">
+                      <img src="img/80px-Nature's_Prophet.png" width="48">
+                    </a>
+                    <div id="content-natures" class="hide">
+                      <p>
+                        Although Furion (Nature's Prophet) himself is pretty
+                        squishy, the primary reason why he's weak to SK is his
+                        Treants. These are the potentially most numerous summon,
+                        sometimes in hordes due to the NP Aghanim's upgrade. As with
+                        any hero in this category, either counter Prophet in lane
+                        by following him if he tries to relocate permanently, or
+                        potentially disrupt his jungle as a support SK by making
+                        early rotations. Playing SK in these matchups is like playing
+                        Earthshaker and using Echo Slam—if you see Furion surrounded
+                        by his creeps, you can easily take him down—sometimes using
+                        just Burrowstrike and a Caustic attack or two.
+                      </p>
+                    </div><!--/.popover-content-->
+                    <a id="popover-enchantress" rel="popover"
+                       data-title="Enchantress">
+                      <img src="img/80px-Enchantress.png" width="48">
+                    </a>
+                    <div id="content-enchantress" class="hide">
+                      <p>
+                        Enchantress is a walking oxymoron—her low health
+                        means she is especially susceptible to magic burst like
+                        Epicenter, BUT she's also perhaps the most resilient
+                        jungler there is.  Enchantress is extremely difficult
+                        to catch or kill during the early game because of her
+                        high movement speed and Untouchable—thus it is not
+                        recommended to attempt roaming against any competent
+                        Enchantress player.  Instead, the best way to play this
+                        matchup is as a core, in lane. An early level 6,
+                        whether laning against Enchantress or not, since the
+                        1v1 matchup isn't as particularly strong here for the
+                        SK, means an early Epicenter, which means dead Bambi.
+                        Early on Enchantress is especially susceptible to magic
+                        burst since her Strength is the lowest in the game. As
+                        a greedy jungler, SK can potentially punish Enchantress
+                        by farming his team's jungle first, and then rotating
+                        to counter-gank the offlane or roaming Enchantress, but
+                        this style of play is definitely most risky against an
+                        Enchantress compared to other junglers.
+                      </p>
+                    </div><!--/.popover-content-->
+                    <a id="popover-broodmother" rel="popover"
+                       data-title="Broodmother">
+                      <img src="img/80px-Broodmother.png" width="48">
+                    </a>
+                    <div id="content-broodmother" class="hide">
+                      <p>
+                        This is the #1 clearest situation to pick a Sand King.
+                        Many tiny spiders means SK can farm up a storm, shut
+                        down the weaker Arachnid in lane, and potentially
+                        snowball out of control. The key is finding the lane
+                        against Broodmother—and watch out for Web tricks!
+                        Look at the draft and predict the way Brood would
+                        normally lane, then guess which lane she would go to if
+                        trying to avoid you. The answer may sometimes be mid or
+                        your team's safelane! Whatever you do, REMEMBER the
+                        ONLY reason to pick SK against Brood is the lane matchup.
+                        If you treat the matchup this way you'll be much more
+                        successful, as Sand King lineups tend
+                        to run out of steam unless another core takes over
+                        or the wombo-combo teamfight is unstoppable. Brood
+                        will often simply beat out the SK's team unless you can
+                        feed on her early game, snowballing into her team's
+                        base and taking high ground by a somewhat reasonable
+                        time (30:00-40:00 minutes).
+                      </p>
+                    </div><!--/.popover-content-->
+                  </div><!--/.hero-box-3-->
+                  <div class="hero-box-3 center-block">
+                    <a id="popover-enigma" rel="popover"
+                       data-title="Enigma">
+                      <img src="img/80px-Enigma.png" width="48">
+                    </a>
+                    <div id="content-enigma" class="hide">
+                      <p>
+                        Enigma is one of the easiest junglers to counter-jungle
+                        because he's at his most fragile during the early game—before
+                        he can pick up any Mekansm or other armor items,
+                        and while his Eidolons are still weak. A boots-first
+                        roaming SK can hope to find a pick-off roaming into the
+                        Enigma's jungle early game, while a smart core SK can
+                        carry an early TP scroll starting around 4 minutes and
+                        usually TP to help any lane where Enigma ganks at level 6,
+                        hopefully surprising Enigma and stopping Black Hole
+                        prematurely. Once again, remember how useful Smoke can
+                        be here, especially in pubs where most Smokes will go
+                        unused.
+                      </p>
+                    </div><!--/.popover-content-->
+                    <a id="popover-chen" rel="popover"
+                       data-title="Chen">
+                      <img src="img/80px-Chen.png" width="48">
+                    </a>
+                    <div id="content-chen" class="hide">
+                      <p>
+                        Roaming support Sand King may be effective at shutting
+                        down a Chen who's trying to farm his jungle or gank
+                        mid, but a core SK can also make short work of an
+                        overzealous Chen surrounded by his flock. Remember that
+                        a 50g Smoke will make or break these rotations
+                        generally—the enemy might have wards you know! As a
+                        core SK, you should never have a problem escaping the
+                        Chen when he ganks you, so long as you don't get
+                        silenced somehow or get caught without either Burrow or
+                        Sand Storm.
+                      </p>
+                    </div><!--/.popover-content-->
+                    <a id="popover-beastmaster" rel="popover"
+                       data-title="Beastmaster">
+                      <img src="img/80px-Beastmaster.png" width="48">
+                    </a>
+                    <div id="content-beastmaster" class="hide">
+                      <p>
+                        1v1, this lane is definitely a close contest for CS
+                        until SK hits level 3, or maybe even level 2 if he gets
+                        aggressive on Beastmaster under a creep wave
+                        successfully—but the matchup tends to favor Sand King
+                        overall because in late-game teamfights, he can always
+                        afford to hang back and wait for the Beastmaster to go
+                        in first. Hawk vision can definitely make life hard for
+                        a clumsy SK caught in the trees, but always remember in
+                        such situations that a little purple puff of some Smoke
+                        of Deceit can make the whole play work for only 50g. If
+                        you play AROUND the Beastmaster, he'll be the one
+                        getting hunted.
+                      </p>
+                    </div><!--/.popover-content-->
+                  </div><!--/.hero-box-3-->
+                </div><!--/.row-->
+                <div class="row" style="margin-top: 8px;">
+                  <div class="hero-box-4 center-block">
+                    <a id="popover-illu" rel="popover" data-title="Illusion Heroes">
+                      <h5>Illusion Heroes</h5>
+                    </a>
+                    <div id="content-illu" class="hide">
+                      <p>
+                        Caustic Finale treats Illusions as heroes—in case you
+                        didn't know. This allows Sand King and Caustic Finale,
+                        especially with Aghanim's Scepter, can dominate and
+                        potentially shut illusion heroes down before they even
+                        come online. If CK or PL have a Heart and/or Skadi,
+                        Caustic Finale isn't going to even come close to
+                        killing them, but with Aghanim's allowing your
+                        Burrowstrike to place the full 220 damage CF proc on
+                        any enemy illusion, you can definitely do lots of
+                        damage to these enemy heroes during the early- to
+                        mid-game, and still insta-gib any squishy heroes
+                        standing near their swarm of carry illusions late-game.
+                      </p>
+                    </div><!--/.popover-content-->
+                    <a id="popover-terrorblade" rel="popover"
+                       data-title="Terrorblade">
+                      <img src="img/80px-Terrorblade.png" width="48">
+                    </a>
+                    <div id="content-terrorblade" class="hide">
+                      <p>
+                        As the other lowest health hero in the game—tied with
+                        Enchantress—Terrorblade is both an easy lane opponent
+                        for Sand King to kill, and a fun hero to use Aghanim's
+                        + Burrow against. Try to save Sand Storm for the end of
+                        your combo so that you can't be targeted by Sunder.
+                      </p>
+                    </div><!--/.popover-content-->
+                    <a id="popover-phantomlancer" rel="popover"
+                       data-title="Phantom Lancer">
+                      <img src="img/80px-Phantom_Lancer.png" width="48">
+                    </a>
+                    <div id="content-phantomlancer" class="hide">
+                      <p>
+                        While most heroes will get wrecked in lane by the
+                        potential Spirit Lance spam, Sand King excels in that
+                        he can level Sand Storm early to dodge Lances. Making
+                        this adjustment lowers your kill potential in the 1v1
+                        lane at lower levels, but definitely increases your
+                        survivability. Grabbing an Aghanim's before PL tanks up
+                        means PL will fear you, perhaps relying on solely
+                        pushing with illusions, so vision is always key to
+                        these matchups.
+                      </p>
+                    </div><!--/.popover-content-->
+                    <a id="popover-nagasiren" rel="popover"
+                       data-title="Naga Siren">
+                      <img src="img/80px-Naga_Siren.png" width="48">
+                    </a>
+                    <div id="content-nagasiren" class="hide">
+                      <p>
+                        Naga's Song of the Siren is not really slow enough to
+                        interrupt, so the best play against this fishy pushing
+                        lady is to hide in the trees and channel Epicenter such
+                        that when she ends her singing, you can Blink in and
+                        stop her team from TPing out instantly or interrupt
+                        their carefully orchestrated teamfight. In lane, just
+                        be careful not to get netted by Naga after blowing both
+                        Sand Storm and Burrow.
+                      </p>
+                    </div><!--/.popover-content-->
+                    <a id="popover-ck" rel="popover"
+                       data-title="Chaos Knight">
+                      <img src="img/80px-Chaos_Knight.png" width="48">
+                    </a>
+                    <div id="content-ck" class="hide">
+                      <p>
+                        CK is a scary opponent in lane, especially because he often
+                        brings an IO or other support with him, but in a somewhat
+                        fair 1v1 Sand King can definitely still manhandle this
+                        tanky brute. Against a lane with supports, hang back and
+                        level Sand Storm early enough to escape their aggression,
+                        as it will also let you fall back to the jungle. With
+                        a decent Aghanim's timing Sand King will usually destroy
+                        the CK throughout the mid-to-late game, but after fully
+                        tanking up CK may just be too strong for SK to take down
+                        without items like Veil and Shiva's.
+                      </p>
+                    </div><!--/.popover-content-->
+                  </div><!--/.hero-box-4-->
+                </div><!--/.row-->
+                <div class="row" style="margin-top: 8px;">
+                  <div class="hero-box-5 center-block" style="padding-bottom: 0px">
+                    <a id="popover-squishy" rel="popover" data-title="Squishy/Slow Supports">
+                      <h5>Squishy/Slow Supports</h5>
+                    </a>
+                    <div id="content-squishy" class="hide">
+                      <p>
+                        SK excels against heroes with low strength both because
+                        he wants kills from each use of Epicenter, but also
+                        because each kill gives him more damage from CF, so
+                        targeting a squishy enemy in a clump of other enemies
+                        can sometimes lead to kills you wouldn't get otherwise.
+                      </p>
+                    </div><!--/.popover-content-->
+                    <a id="popover-cm" rel="popover"
+                       data-title="Crystal Maiden">
+                      <img src="img/80px-Crystal_Maiden.png" width="48">
+                    </a>
+                    <div id="content-cm" class="hide">
+                      <p>
+                        Poor squishy CM can't get a break from pretty much
+                        anyone, but the Scintillant Sands are indeed swifter
+                        than the Wolves of Icewrack—significantly enough that
+                        even without Boots, a Sand King at 300 speed should be
+                        able to burrow on and kill a CM at level 2 with just
+                        Caustic and Burrow level 1. This goes for most of the
+                        heroes in this section, though many of the others have
+                        mitigating factors like mobility.
+                      </p>
+                    </div><!--/.popover-content-->
+                    <a id="popover-mirana" rel="popover"
+                       data-title="Mirana">
+                      <img src="img/80px-Mirana.png" width="48">
+                    </a>
+                    <div id="content-mirana" class="hide">
+                      <p>
+                        If you know that Mirana has Leap leveled, you'll need a
+                        teammate to make any kills happen here—but if she goes
+                        for a more aggressive skill build, core or support
+                        Miranas who wander into your lane must beware. As usual
+                        at levels 2-3 with Caustic and Burrow, you can easily
+                        get a pickoff on squishy heroes of any kind.
+                      </p>
+                    </div><!--/.popover-content-->
+                    <a id="popover-lich" rel="popover"
+                       data-title="Lich">
+                      <img src="img/80px-Lich.png" width="48">
+                    </a>
+                    <div id="content-lich" class="hide">
+                      <p>
+                        Lich has Frost Armor to discourage you potentially, and
+                        he does present a challenge by dragging the lane back
+                        towards his tower with Sacrifice—but Lich isn't a very
+                        strong hero stats-wise.  A couple of Burrow combos and
+                        he's dead for sure, just be patient.
+                      </p>
+                    </div><!--/.popover-content-->
+                    <a id="popover-lion" rel="popover"
+                       data-title="Lion">
+                      <img src="img/80px-Lion.png" width="48">
+                    </a>
+                    <div id="content-lion" class="hide">
+                      <p>
+                        Lion has lots of annoying ways he counters you as an
+                        SK—the instant Hex to catch you out when you Blink in,
+                        the AoE Earth Spike to knock you out of Sand Storm, and
+                        the Mana Drain to zone you out—but he'll always be
+                        squishy and slow.  Take advantage. Keep wards on your
+                        flanks so as to limit his roaming potential, and
+                        whatever lane you're in you'll be fine.
+                      </p>
+                    </div><!--/.popover-content-->
+                    <a id="popover-kotl" rel="popover"
+                       data-title="Keeper of the Light">
+                      <img src="img/80px-Keeper_of_the_Light.png" width="48">
+                    </a>
+                    <div id="content-kotl" class="hide">
+                      <p>
+                        The old man does great things for Sand King when
+                        they're on the same team—but as opponents Sand King
+                        gets to enjoy feeding on him AND his horse, because
+                        KotL is especially squishy and vulnerable to burst
+                        damage, even with the Mek build.  A smart KotL player
+                        might itemize Pipe of Insight to combat the SK, but
+                        outside of this situation you'll find an enemy KotL as
+                        mostly free food.
+                      </p>
+                    </div><!--/.popover-content-->
+                  </div><!--/.hero-box-5-->
+                  <div class="hero-box-5 center-block">
+                    <a id="popover-aa" rel="popover"
+                       data-title="Ancient Apparition">
+                      <img src="img/80px-Ancient_Apparition.png" width="48">
+                    </a>
+                    <div id="content-aa" class="hide">
+                      <p>
+                        AA is also a wonderful hero to have on your team as an
+                        SK, but as enemies you'll only really have to contend
+                        with getting scouted out by Ice Vortex or maybe having
+                        your Blink disabled by his ultimate. In lane, AA has
+                        pretty much no way to stop you, so feel free to walk
+                        up and give him a tap—just beware of the Cold Feet plus
+                        follow-up if you dive in with Burrowstrike.
+                      </p>
+                    </div><!--/.popover-content-->
+                    <a id="popover-bounty" rel="popover"
+                       data-title="Bounty Hunter">
+                      <img src="img/80px-Bounty_Hunter.png" width="48">
+                    </a>
+                    <div id="content-bounty" class="hide">
+                      <p>
+                        Another squishy AGI support, another free meal right?
+                        Just be aware that Bounty Hunter would love to
+                        counter-jungle you and sap your experience should you
+                        go for such a build, so definitely try to put SK in a
+                        core role in this matchup.  No one likes to have their
+                        jungling contested, not the least of which is you.
+                      </p>
+                    </div><!--/.popover-content-->
+                    <a id="popover-shadowdemon" rel="popover"
+                       data-title="Shadow Demon">
+                      <img src="img/80px-Shadow_Demon.png" width="48">
+                    </a>
+                    <div id="content-shadowdemon" class="hide">
+                      <p>
+                        Shadow who? Oh right the third one. He's still in the
+                        game, and a reminder that he's still squishy. Don't let
+                        him do the initiating on you with Disruption, or else
+                        things might get sticky quick, forcing you to Burrow
+                        away rather than into his creeps for a kill.
+                      </p>
+                    </div><!--/.popover-content-->
+                    <a id="popover-rhasta" rel="popover"
+                       data-title="Shadow Shaman">
+                      <img src="img/80px-Shadow_Shaman.png" width="48">
+                    </a>
+                    <div id="content-rhasta" class="hide">
+                      <p>
+                        Just like Lion this slow support offers at least one
+                        major way to thwart you, which is the instant Hex, but
+                        regardless you'll find he's slow enough that—should he
+                        wander near the creeps in your lane or into the jungle
+                        without full HP, he might be the King's next finale.
+                      </p>
+                    </div><!--/.popover-content-->
+                    <a id="popover-dazzle" rel="popover"
+                       data-title="Dazzle">
+                      <img src="img/80px-Dazzle.png" width="48">
+                    </a>
+                    <div id="content-dazzle" class="hide">
+                      <p>
+                        Ganking Dazzle 101: If he's alone, save your stun until
+                        he uses Grave into TP scroll. If he's with a partner,
+                        try to fake him out into wasting the Shallow Grave on
+                        whoever you're planning to kill second. Dazzle has
+                        nothing he can do if you push his lane either, so
+                        consider aggressively diving combined with a point in
+                        Sand Storm to escape.
+                      </p>
+                    </div><!--/.popover-content-->
+                  </div><!--/.hero-box-5-->
+                </div><!--/.row-->
+                <div class="row" style="margin-top: 8px;">
+                  <div class="hero-box-4 center-block" style="padding-bottom: 0px">
+                    <a id="popover-slippery" rel="popover" data-title="Slippery Heroes">
+                      <h5>Slippery Heroes</h5>
+                    </a>
+                    <div id="content-slippery" class="hide">
+                      <p>
+                        SK is one of the best heroes at catching heroes with
+                        escapes because Burrowstrike is practically instant,
+                        catching these heroes out before they can use their
+                        spells to escape. One important note is that SK can
+                        basically replace Puck in many drafts because of this
+                        capacity—although his stun is slightly shorter in
+                        duration than Puck's Silence, Sand King offers more
+                        magical damage.
+                      </p>
+                    </div><!--/.popover-content-->
+                    <a id="popover-slark" rel="popover"
+                       data-title="Slark">
+                      <img src="img/80px-Slark.png" width="48">
+                    </a>
+                    <div id="content-slark" class="hide">
+                      <p>
+                        Slark is a tough nut to crack once he hits level 6 and
+                        can just slither away from you whenever he wants,
+                        but pre-6 especially Slark is not that difficult
+                        to lane against, plus the passive nature of Caustic
+                        makes it uneconomical for Slark to use his Dark Pact
+                        on Caustic should you find yourself able to harass
+                        him with it. Stunning this little fish down and
+                        bursting him at level 5 should be pretty darned easy,
+                        plus even in the late-game you should be quick
+                        enough to catch a Slark player with Blink into Burrow
+                        before he can Dark Pact. Consider Blinking on top of
+                        the Slark player to minimize his time to react if
+                        you're having trouble catching one in your game.
+                      </p>
+                    </div><!--/.popover-content-->
+                    <a id="popover-weaver" rel="popover"
+                       data-title="Weaver">
+                      <img src="img/80px-Weaver.png" width="48">
+                    </a>
+                    <div id="content-weaver" class="hide">
+                      <p>
+                        Weaver is so squishy that you will nearly always be
+                        able to squash him before Time Lapse comes out. This is
+                        a good situation where the aggressive item build can be
+                        excellent, as heroes like Weaver are especially
+                        vulnerable to being bursted down during the 2.17s
+                        window of Burrowstrike's stun. In lane, Weaver is
+                        short-ranged once again, making him weak to Caustic and
+                        proving for a second time that Crixalis is the king
+                        bug hero hunter.
+                      </p>
+                    </div><!--/.popover-content-->
+                    <a id="popover-storm" rel="popover"
+                       data-title="Storm Spirit">
+                      <img src="img/80px-Storm_Spirit.png" width="48">
+                    </a>
+                    <div id="content-storm" class="hide">
+                      <p>
+                        Burrowstrike is not a long enough duration stun to
+                        catch out and kill a hero like Storm Spirit with SO
+                        much mobility—but you can be the one fast enough to
+                        catch him, even with just Burrowstrike. Getting an
+                        additional Eul's Scepter or Scythe of Vyse means you
+                        can instantly Cyclone or Sheep, channel Epicenter, and
+                        chain into your own stun. In lane, remember that Storm
+                        Spirit is short-ranged, and thus is quite susceptible
+                        to Caustic harass—especially when he goes in for a
+                        Remnant.
+                      </p>
+                    </div><!--/.popover-content-->
+                    <a id="popover-qop" rel="popover"
+                       data-title="Queen of Pain">
+                      <img src="img/80px-Queen_of_Pain.png" width="48">
+                    </a>
+                    <div id="content-qop" class="hide">
+                      <p>
+                        Queen of Pain is not necessarily squishy per se, but she
+                        is elusive enough to warrant counter-picking AND, unlike
+                        Anti-Mage, she must turn before her Blink animation goes
+                        off, leaving a Sand King who Blinks in enough time to
+                        catch her out with his 2000 speed projectile. Her high
+                        burst AoE damage may at some point be used to try and
+                        coerce you into leaving Sand Storm, so keep in mind
+                        that against heroes like QoP you must always keep an eye
+                        on your health to make sure you're not making a suicidal
+                        Burrow stun into the center of a teamfight. Sometimes
+                        with Aghs this play can work out, since you'll also have
+                        Caustic damage to play with without exposing yourself to
+                        any small arms fire while you sting people, but playing
+                        against magic burst heroes like QoP requires discipline
+                        that even some pro Sand King players lack. Don't throw
+                        your life away unless it's to actually FINISH OFF the
+                        whole fight.
+                      </p>
+                    </div><!--/.popover-content-->
+                  </div><!--/.hero-box-4-->
+                  <div class="hero-box-4 center-block">
+                    <a id="popover-meepo" rel="popover"
+                       data-title="Meepo">
+                      <img src="img/80px-Meepo.png" width="48">
+                    </a>
+                    <div id="content-meepo" class="hide">
+                      <p>
+                        Each Meepo clone does count separately as far as Caustic
+                        Finale is concerned, but since you'll only be able to proc
+                        the active death Finale burst once for Meepo this matchup
+                        is not quite as favorable as the illusion-based heroes.
+                        Attacking multiple Meepos just to apply the Caustic debuff
+                        and deal multiple passive AoE procs is still a viable
+                        strategy here though, so never discount the lane matchup
+                        1v1 or even 1v2 without a strong zoning support. Meepo
+                        may still try to Earthbind and Poof you down once he hits
+                        level 4-5, but this is an easy enough situation to escape
+                        if you save Burrowstrike or simply don't let him bind you
+                        under his creep wave.
+                      </p>
+                    </div><!--/.popover-content-->
+                    <a id="popover-morphling" rel="popover"
+                       data-title="Morphling">
+                      <img src="img/80px-Morphling.png" width="48">
+                    </a>
+                    <div id="content-morphling" class="hide">
+                      <p>
+                        While not covered under the Weaver section, let it be said
+                        here that Linken's Sphere carries like Weaver and Morphling
+                        can be quite annoying for a core SK because Linken's will
+                        always block Burrowstrike, even if it's not hero-targeted.
+                        Bearing this in mind, it may be prudent to pick-up an
+                        additional active item like Eul's against these heroes, IF
+                        they go Linken's Sphere, to quickly pop their Linken's and
+                        follow-through with your Burrow combo. Morphling can be
+                        especially frustrating to play against because he will
+                        Strength morph his way out of the fight if you don't burst
+                        him, but even in these cases Sand King has the advantage
+                        with a lower cooldown mobility spell and Caustic slow, so
+                        long as the Morphling doesn't instantly replicate out.
+                        Morphling is also low-range enough to be hit will Caustic
+                        while going in for last hits himself, so for all intents
+                        and purposes you can treat the Morphling 1v1 matchup as
+                        favorably as you would the matchup with a melee hero.
+                      </p>
+                    </div><!--/.popover-content-->
+                    <a id="popover-tinker" rel="popover"
+                       data-title="Tinker">
+                      <img src="img/80px-Tinker.png" width="48">
+                    </a>
+                    <div id="content-tinker" class="hide">
+                      <p>
+                        Tinker LOVES to hide in trees and use March of the Machines
+                        to farm up the lane, then Boots of Travel out without being
+                        seen—use this against him by placing wards on the high
+                        cliffs around the outside of the map ("Tinker wards"), then
+                        lie in wait in some patch of trees for the Tinker to come
+                        along. Since Tinker players tend to get an Ethereal Blade
+                        of their own, late-game Tinker can be especially helpless
+                        against a wise Sand King player's ganks, that is unless
+                        the Tinker is forced to go BKB or Linken's. Either way
+                        lane matchups against a Tinker 1v1 are not that unfavorable,
+                        just watch for the Lasers right as you go for last-hits.
+                        These plays are opportunities for you to dive in with Burrow
+                        if you already have Caustic on a creep or two and aren't
+                        too low on health, but consider avoiding the 1v1 altogether
+                        if there's a more suitable ranged laner on your team.
+                      </p>
+                    </div><!--/.popover-content-->
+                    <a id="popover-puck" rel="popover"
+                       data-title="Puck">
+                      <img src="img/80px-Puck.png" width="48">
+                    </a>
+                    <div id="content-puck" class="hide">
+                      <p>
+                        Puck is probably tied for the hardest on this list to
+                        catch because a good Puck can Phase out if your Burrowstrike
+                        instantly—even faster than the 2000 speed on the
+                        Burrow's spike projectile, especially if they know you're
+                        coming. Plan on counter-initiating on the Puck rather
+                        than trying to catch him—and in lane, avoid this 1v1
+                        matchup unless you know you'll have support rotations
+                        to help finish Puck off.
+                      </p>
+                    </div><!--/.popover-content-->
+                  </div><!--/.hero-box-4-->
+                </div><!--/.row-->
+              </div><!--/.col-xs-8-->
+            </div><!--/.row-->
+            <div class="row padded" style="margin-top: 8px;">
+              <div class="col-xs-8 col-xs-offset-2">
+                <div class="hero-box-5 center-block" style="padding-bottom: 0px">
+                  <a id="popover-melee" rel="popover" data-title="Melee 1v1 Lanes">
+                    <h5>Easy 1v1 Lanes</h5>
+                  </a>
+                  <div id="content-melee" class="hide">
+                    <p>
+                      SK wins a 1v1 lane against most any hero with less than
+                      400 range, if he goes for the Caustic build. This list
+                      highlights just a few of the heroes you can successfully
+                      lane against with the CF build, but just about any melee
+                      hero will do.
+                    </p>
+                  </div><!--/.popover-content-->
+                  <a id="popover-sven" rel="popover"
+                     data-title="Sven">
+                    <img src="img/80px-Sven.png" width="48">
+                  </a>
+                  <div id="content-sven" class="hide">
+                    <p>
+                      Sven is one of the classic melee heroes that Sand King
+                      crushes in lane, forcing him to back away from the creeps
+                      or risk taking Caustic harassment and Burrow burst damage.
+                      You may end up wanting a Eul's/Eblade/Shiva's Guard to
+                      mitigate Sven's extreme physical damage later in the game,
+                      but hopefully if you get this lane 1v1, or even 1v2 with
+                      some weak support, you can likely snowball off the lane
+                      while simultaneously denying Sven tons of farm.
+                    </p>
+                  </div><!--/.popover-content-->
+                  <a id="popover-dk" rel="popover"
+                     data-title="Dragon Knight">
+                    <img src="img/80px-Dragon_Knight.png" width="48">
+                  </a>
+                  <div id="content-dk" class="hide">
+                    <p>
+                      Dragon Knight is definitely one of the toughest heroes to kill
+                      1v1 thanks to his large health pool, health regeneration,
+                      and instant stun to disengage with, but you should always
+                      keep in mind that the armor from DK's passive and the damage
+                      reduction from his Breathe Fire have NO effect on your magic
+                      damage. Early in the game this means the lane is easily a kill
+                      lane for the SK, although DK should be able to last hit somewhat
+                      safely and harass you back some. Late-game if the DK starts
+                      to really tank up with a Pipe or BKB things can get rocky,
+                      but hopefully if you end up in this 1v1 you won't let him
+                      get that far along, or you'll punish him by running down
+                      his charges and keeping up the pace by pushing out waves
+                      and teamfighting constantly with the Octarine build.
+                    </p>
+                  </div><!--/.popover-content-->
+                  <a id="popover-slardar" rel="popover"
+                     data-title="Slardar">
+                    <img src="img/80px-Slardar.png" width="48">
+                  </a>
+                  <div id="content-slardar" class="hide">
+                    <p>
+                      This has got to be one of the very easiest lanes for
+                      Sand King to CS in and kill, but Slardar does have
+                      plenty of counterplay potential of his own making this
+                      nowhere near the safest 1v1 matchup. Slardar's Crush
+                      means he can stun you out of Sand Storm (plus see you
+                      during it with his ultimate), and Sprint lets him
+                      chase YOU down if you choose to run (if you have Blink
+                      and he doesn't you'll get away, but if you both do
+                      Slardar can pretty much always catch you, which is rare
+                      for Sand King). Either way, the bonus damage Slardar
+                      takes from Sprint does mean that he's an easy enough
+                      hero to burst down later on in the game, just be aware
+                      of any BKB or Pipe of Insight pickups that would throw
+                      you off.
+                    </p>
+                  </div><!--/.popover-content-->
+                  <a id="popover-alchemist" rel="popover"
+                     data-title="Alchemist">
+                    <img src="img/80px-Alchemist.png" width="48">
+                  </a>
+                  <div id="content-alchemist" class="hide">
+                    <p>
+                      Alchemist definitely seems like a an underutilized hero
+                      these days, but 1v1 against a Sand King he will just look
+                      silly. Picking up a couple Mangos, as prescribed here, to
+                      counteract the tick damage from Acid Spray is the only real
+                      adjustment you'll need to make against Alchemist, though as
+                      always if you can get his rune at minute 0 he'll be somewhat
+                      crippled (temporarily). Later on in the game Alchemist
+                      can become quite tanky and hard to burst down, not to mention
+                      if he goes Radiance that can interfere with your Blink Dagger,
+                      but this give you all the more reason to go for either
+                      control in the form of a Scythe of Vyse to catch out a tanky
+                      Alchemist, or more burst damage in the form of Dagon/Eblade to
+                      punish an Alch for not tanking up enough.
+                    </p>
+                  </div><!--/.popover-content-->
+                  <a id="popover-timbersaw" rel="popover"
+                     data-title="Timbersaw">
+                    <img src="img/80px-Timbersaw.png" width="48">
+                  </a>
+                  <div id="content-timbersaw" class="hide">
+                    <p>
+                      Timber was massively buffed in recent patches and
+                      also excels against all Strength heroes. In a 1v1
+                      lane you'll be close enough for easy Whirling
+                      Death harass from him. Timbersaw's bonus armor
+                      from the newly buffed Reactive Armor may not
+                      help against you much, but the mobility from Timber
+                      Chain means he's always going to be quite tough
+                      to solo-kill without landing an Epicenter.
+                    </p>
+                  </div><!--/.popover-content-->
+                </div><!--/.hero-box-5-->
+                <div class="hero-box-5 center-block">
+                  <a id="popover-pa" rel="popover"
+                     data-title="Phantom Assassin">
+                    <img src="img/80px-Phantom_Assassin.png" width="48">
+                  </a>
+                  <div id="content-pa" class="hide">
+                    <p>
+                      PA is a bit harder than most to shut down completely since
+                      she can potentially Blink herself away and keep CSing
+                      with her long-range Dagger, BUT she's definitely squishy
+                      and slow enough to kill 1v1. A Sand King pick would surely
+                      be enough to force PA into an early BKB, but if not you can
+                      literally just keep solo-killing her over and over with
+                      Epicenter (although do be mindful of baits if you're playing
+                      against smarter opponents).
+                    </p>
+                  </div><!--/.popover-content-->
+                  <a id="popover-ursa" rel="popover"
+                     data-title="Ursa">
+                    <img src="img/80px-Ursa.png" width="48">
+                  </a>
+                  <div id="content-ursa" class="hide">
+                    <p>
+                      Ursa is a fun hero to kite around with Caustic and Sand Storm,
+                      moreso than just about any other. Controlling this big
+                      loveable bear in fights is quite easy until he gets
+                      a BKB or Linken's Sphere, so just always keep an eye on his
+                      items to anticipate what he's got coming out, and always
+                      be the one doing the Blinking onto him, rather than the other
+                      way around. You can still escape if he does jump you,
+                      but eventually a good Ursa player will itemize Abyssal or
+                      Sheepstick to catch you or their other target out (same
+                      with Clinkz).
+                    </p>
+                  </div><!--/.popover-content-->
+                  <a id="popover-fv2" rel="popover"
+                     data-title="Faceless Void">
+                    <img src="img/80px-Faceless_Void.png" width="48">
+                  </a>
+                  <div id="content-fv2" class="hide">
+                    <p>
+                      Despite the fact that this lane is winnable for the
+                      Sand King, Faceless still has a large advantage in
+                      that he can Time Walk out of any harass damage you
+                      do, which will nearly always be in a tight burst
+                      that he can neatly walk off. Later on he can potentially
+                      catch you with Chronosphere as you go in for Burrow,
+                      so always try to wait out the Chronosphere if you can
+                      when teamfighting.
+                    </p>
+                  </div><!--/.popover-content-->
+                  <a id="popover-lycan" rel="popover"
+                     data-title="Lycanthrope">
+                    <img src="img/80px-Lycan.png" width="48">
+                  </a>
+                  <div id="content-lycan" class="hide">
+                    <p>
+                      This big bad wolf can't do much to you besides nip at you
+                      with his pets, so focus them down as long as you're able
+                      to and consider using Burrow + Caustic to burst them through
+                      their magic resistance once you hit level 4-5. With the mounds
+                      of CS you should be getting in this 1v1 you can almost certainly
+                      get an early enough Blink to make your first Epicenter count
+                      and start finding pickoffs, but Lycan himself may not
+                      be the best target as he's quite tanky, and once he starts
+                      running under ult form you won't be able to catch him. Not
+                      without Aghanim's Scepter and some favorable terrain anyway.
+                    </p>
+                  </div><!--/.popover-content-->
+                  <a id="popover-juggernaut" rel="popover"
+                     data-title="Juggernaut">
+                    <img src="img/80px-Juggernaut.png" width="48">
+                  </a>
+                  <div id="content-juggernaut" class="hide">
+                    <p>
+                      The ability of Juggernaut to spin and kill you
+                      while you're dududu'ing in Sand Storm, or trying
+                      to go for the Burrow+Epi in, is pretty game-breaking,
+                      just like Lifestealer. While Jugg may not always
+                      be tanky enough to survive Epicenter if you catch
+                      him out, he will be able to survive if you don't chain
+                      him down thanks to Omnislash, so let's not find out
+                      unless you're absolutely sure (a silence like Skywrath
+                      on your team would help). 1v1 you can bully him out of
+                      lane, and he'll have a hard time denying your CS without
+                      taking heavy Caustic damage, but ultimately you will
+                      take over this lane, just be careful.
+                    </p>
+                  </div><!--/.popover-content-->
+                </div><!--/.hero-box-5-->
+              </div><!--/.col-xs-6-->
+            </div><!--/.row-->
+            <div class="row padded">
+              <h4 style="margin: 8px 0 8px 0;">Strong&nbsp;With</h4>
+              <div class="col-xs-6">
+                <div class="hero-box-3 center-block" style="padding-bottom: 0; margin-right: 0;">
+                  <a id="popover-buffers" rel="popover" data-title="Buffers">
+                    <h5>Buffers</h5>
+                  </a>
+                  <div id="content-buffers" class="hide">
+                    <p>
+                      All of these heroes improve SK's ability to function in
+                      teamfights especially, although some do make good lane
+                      partners. Consider picking these heroes generically
+                      early as a setup for some nuker, and combine SK with
+                      one or two meta picks.
+                    </p>
+                  </div><!--/.popover-content-->
+                  <a id="popover-omni" rel="popover"
+                     data-title="Omniknight">
+                    <img src="img/80px-Omniknight.png" width="48">
+                  </a>
+                  <div id="content-omni" class="hide">
+                    <p>
+                      While the obvious synergy here is simply Repel to allow
+                      Sand King to skip BKB himself, the same could be said about
+                      literally any other core hero that's item slot limitted.
+                      In this case Omni makes a great partner for Sand King because
+                      he always puts his body into the middle of the fight, and
+                      tossing out that Purify onto a Burrow and/or Epicenter
+                      is often all you need to take down a tanky opponent as the
+                      Sand King. Finding a laning situation to make use of this
+                      combo is definitely a challenge, but the best is actually
+                      just a dual offlane against some melee carry and weaker
+                      support, for example Spectre/Dazzle or Sven/Lion. 2v2,
+                      SK and Omni are nearly as deadly of a duo as Omni and Tusk.
+                    </p>
+                  </div><!--/.popover-content-->
+                  <a id="popover-eldertitan" rel="popover"
+                     data-title="Elder Titan">
+                    <img src="img/80px-Elder_Titan.png" width="48">
+                  </a>
+                  <div id="content-eldertitan" class="hide">
+                    <p>
+                      Elder Titan is seeing something of a resurgance this patch,
+                      but he's always been simply the best addition to a magic
+                      damage stack strategy. 80% magic resistance reduction is
+                      the strongest tool of its kind for nuking down clumps of enemies,
+                      and you can imagine how strong the wombo from a lineup
+                      with 2-3 of these heroes to buff up SK can be. The Elder
+                      Titan Echo Stomp into Burrow+Epicenter is much easier to
+                      pull off than Titan's own Earth Splitter combo, and is rivaled
+                      only by Naga Siren for its ability to set up a perfect Epi.
+                    </p>
+                  </div><!--/.popover-content-->
+                  <a id="popover-aa2" rel="popover"
+                     data-title="Ancient Apparition">
+                    <img src="img/80px-Ancient_Apparition.png" width="48">
+                  </a>
+                  <div id="content-aa2" class="hide">
+                    <p>
+                      As a teammate, Ancient Apparition is one of the best
+                      magic damage amplification heroes there is. His ultimate
+                      lets you instagib crowds of enemies, with enough coordination,
+                      while Ice Vortex is the perfect accompaniment for your
+                      casual Blink+Burrow amplification needs. Best of all,
+                      now that Cold Feet has received several direct buffs in a
+                      row you can now reasonably max it first while laning with
+                      a partner like Sand King, as you can spam it and zone
+                      your enemies with the threat of a followup Burrow once
+                      the Cold Feet cooldown gets low enough (down to 7s at
+                      level 4!). AA is also a great candidate for an early
+                      Veil, which is something SK loves from his supports.
+                    </p>
+                  </div><!--/.popover-content-->
+                </div><!--/.hero-box-3-->
+                <div class="hero-box-3 center-block" style="margin-right: 0;">
+                  <a id="popover-kotl2" rel="popover"
+                     data-title="Keeper of the Light">
+                    <img src="img/80px-Keeper_of_the_Light.png" width="48">
+                  </a>
+                  <div id="content-kotl2" class="hide">
+                    <p>
+                      This is my personal favorite combo with SK, not really because
+                      of the mana from Chakra but from the cooldown reduction.
+                      Casting Chakra on SK while he's channeling Epicenter allows
+                      the SK to perform a near-double Burrowstrike, down to a 5
+                      second cooldown or 3 with Octarine. The Octarine+Chakra
+                      double Burrow gives Sand King 4.34 seconds of lockdown with a
+                      ~1 second gap after the first stun duration ends, before
+                      you can cast the second one. Recall and Blinding Light
+                      can both also be useful for a KotL to help out his Sand King,
+                      to rejoin a push across the map before BoTs or to knock
+                      escaping enemies back into your Epicenter.
+                    </p>
+                  </div><!--/.popover-content-->
+                  <a id="popover-undying" rel="popover"
+                     data-title="Undying">
+                    <img src="img/80px-Undying.png" width="48">
+                  </a>
+                  <div id="content-undying" class="hide">
+                    <p>
+                      Undying is a bit of an awkward hero to lane on the same team
+                      as Sand King these days. Since Undying traditionally excels
+                      in such situations, your best bet may be to put Sand King solo
+                      safelane while offensive tri-laning with the Undying, who can
+                      not only make short work of the enemy's three heroes with his
+                      Tombstone Zombies, but also later on will amplify up his opponents
+                      with his ultimate, Flesh Golem, so that when Sand King eventually
+                      rotates for a gank he can deal even more damage.
+                    </p>
+                  </div><!--/.popover-content-->
+                  <a id="popover-bloodseeker" rel="popover"
+                     data-title="Bloodseeker">
+                    <img src="img/80px-Bloodseeker.png" width="48">
+                  </a>
+                  <div id="content-bloodseeker" class="hide">
+                    <p>
+                      Bloodseeker is perhaps the most underutilized damage buffing hero
+                      on this list, and is also one who has great synergy with Sand King.
+                      Since you'll like go into Sand Storm or scoot out with a Force Staff
+                      after getting off your Epicenter during the fight, Sand King is
+                      actually a fairly safe hero to just cast Blood Rage on directly,
+                      allowing him to potentially heal up from any creeps or heroes he
+                      finishes off with Epicenter and Burrow when he goes in. The real
+                      question here is how to lane Bloodseeker and Sand King on the same
+                      team—all I have here is theories, but I'd say that putting
+                      Bloodseeker either in the jungle or as another core can both work.
+                    </p>
+                  </div><!--/.popover-content-->
+                </div><!--/.hero-box-3-->
+              </div><!--/.col-xs-6-->
+              <div class="col-xs-6">
+                <div class="hero-box-3 center-block" style="padding-bottom: 0; margin-left: 0;">
+                  <a id="popover-catch" rel="popover" data-title="Catch/Gankers">
+                    <h5>Catch/Gankers</h5>
+                  </a>
+                  <div id="content-catch" class="hide">
+                    <p>
+                      As mobility tools for Sand King, heroes like Tusk, Tiny
+                      and IO provide loads of utility—but keep in mind that
+                      all three of these modes of transportation cancel Epicenter
+                      channeling. The other heroes in this category offer unique
+                      synergy to be used in combination with blinking, ganking
+                      Sand King.
+                    </p>
+                  </div><!--/.popover-content-->
+                  <a id="popover-tusk" rel="popover"
+                     data-title="Tusk">
+                    <img src="img/80px-Tusk.png" width="48">
+                  </a>
+                  <div id="content-tusk" class="hide">
+                    <p>
+                      This is one of the most fun lane combos there is—Snowball
+                      into Burrowstrike is a nearly guaranteed catch (blinking
+                      heroes can probably escape, or a self-banish like Puck),
+                      and the amount of damage these two hefty brawlers put out
+                      during the combined stun durations will nearly always result
+                      in a kill the first few times you use it. Later on, the potency
+                      of this combo falls off because you can't Snowball while
+                      channeling Epicenter (it cancels Epi), so you should mostly
+                      rely on the lane combination of these two heroes (likely
+                      in your offlane) to snowball and win the game.
+                    </p>
+                  </div><!--/.popover-content-->
+                  <a id="popover-invoker" rel="popover"
+                     data-title="Invoker">
+                    <img src="img/80px-Invoker.png" width="48">
+                  </a>
+                  <div id="content-invoker" class="hide">
+                    <p>
+                      This one is probably less obvious, but Burrowstrike is
+                      the perfect duration for Invoker to get a Sun Strike off,
+                      allowing your potentially mid Invoker to participate in
+                      kills in his own safe or off-lane starting pretty early on.
+                      Later on, the potential of a long-range Tornado catch into
+                      Epicenter blink combo is really devestating in sloppy
+                      jungle fights and skirmishes, making this a scrappy combo
+                      of heroes apt for early game rotations. Even as a support
+                      SK can make this combo work pretty effectively.
+                    </p>
+                  </div><!--/.popover-content-->
+                  <a id="popover-mirana2" rel="popover"
+                     data-title="Mirana">
+                    <img src="img/80px-Mirana.png" width="48">
+                  </a>
+                  <div id="content-mirana2" class="hide">
+                    <p>
+                      Simple enough—Burrow into Arrow makes a pretty good hit and run
+                      ganking combination, and once Mirana gets her ultimate you'll be
+                      able to gank as a team, or just as a duo, very effectively.
+                      The laning possiblities between these two heroes are so
+                      open that you can also safely pick them together early,
+                      so long as you're able to flip them both to a support
+                      if needed.
+                    </p>
+                  </div><!--/.popover-content-->
+                </div><!--/.hero-box-3-->
+                <div class="hero-box-3 center-block" style="margin-left: 0;">
+                  <a id="popover-tiny" rel="popover"
+                     data-title="Tiny">
+                    <img src="img/80px-Tiny.png" width="48">
+                  </a>
+                  <div id="content-tiny" class="hide">
+                    <p>
+                      This craggy guy makes an excellent teammate because
+                      of his ability to toss you in for a Burrow stun, but it
+                      is rather hard to fit both Tiny and Sand King on the
+                      same team. Some teams have experimented with some
+                      weird offlane or support Tinys, but really I think
+                      the best way to make these heroes work together is
+                      something like a mid Tiny+IO, or a safelane Tiny.
+                      Keep in mind once again though that Tossing your
+                      teammate Sand King will cancel Epicenter channeling,
+                      so wait until he's done if you want to try for that.
+                    </p>
+                  </div><!--/.popover-content-->
+                  <a id="popover-skywrath" rel="popover"
+                     data-title="Skywrath Mage">
+                    <img src="img/80px-Skywrath_Mage.png" width="48">
+                  </a>
+                  <div id="content-skywrath" class="hide">
+                    <p>
+                      Besides the more obvious synergy of Skywrath's
+                      Ancient Seal into Burrow/Epi to buff your magical
+                      damage—you'll also find that Concussive Shot makes
+                      a great setup slow for Sand King to catch out enemies
+                      at low levels, especially at level 1 when roaming
+                      into your enemy's jungle as 5. Once Skywrath hits level
+                      6, the ability to drop Mystic Flare on top of a casual
+                      Blink+Burrow turns this ganking duo into a seriously
+                      scary one-two punch.
+                    </p>
+                  </div><!--/.popover-content-->
+                  <a id="popover-io" rel="popover"
+                     data-title="IO">
+                    <img src="img/80px-Io.png" width="48">
+                  </a>
+                  <div id="content-io" class="hide">
+                    <p>
+                      Again the first thing to note here is that Relocating
+                      while Sand King is channeling Epicenter will result in a
+                      canceled ult, BUT the ability to Relocate stun anyone
+                      on the map, plus all the bonus movement speed and damage
+                      reduction from Tether to help keep Sand King alive, makes
+                      this combo a fairly potent one well into the mid-game. The
+                      best part about it is that you don't need to lane them
+                      together, and can utilize Sand King's naturally strong laning
+                      capabilities to afford IO's lane support to a more important
+                      hero like your team's hard carry.
+                    </p>
+                  </div><!--/.popover-content-->
+                </div><!--/.hero-box-3-->
+              </div><!--/.col-xs-6-->
+            </div><!--/.row-->
+            <div class="row" style="margin-top: 8px;">
+              <div class="hero-box-4 center-block" style="padding-bottom: 0px">
+                <a id="popover-wombo" rel="popover" data-title="Wombo/Teamfight">
+                  <h5>Wombo/Teamfight</h5>
+                </a>
+                <div id="content-wombo" class="hide">
+                  <p>
+                    Of all the combinations with Sand King and his Epicenter,
+                    wombo combo is often the most obvious. Keep in mind that
+                    putting all your team's eggs in one basket by relying on
+                    a large number of long-cooldown ultimates is risky.
+                    Losing one teamfight can mean a long period of crippled
+                    engagements while waiting for cooldowns to come back up.
+                  </p>
+                </div><!--/.popover-content-->
+                <a id="popover-darkseer2" rel="popover"
+                   data-title="Dark Seer">
+                  <img src="img/80px-Dark_Seer.png" width="48">
+                </a>
+                <div id="content-darkseer2" class="hide">
+                  <p>
+                    Miss someone with your Burrow? Catch them before they scurry
+                    away with a Vacuum! This is one of the deadliest combo picks
+                    with ANY teamfight ultimate, and Sand King is no exception.
+                    The ability to clean up enemies with huge Epicenters, plus
+                    elevate a simple Burrow into a ravage on the whole other team,
+                    makes this simple synergy invaluable. You can also make
+                    use of Surge plus Ion Shell onto Sand King in lane, which is
+                    often something your enemies won't expect but which can happen
+                    with either a smoke rotation or a jungle DS/SK.
+                  </p>
+                </div><!--/.popover-content-->
+                <a id="popover-tidehunter" rel="popover"
+                   data-title="Tidehunter">
+                  <img src="img/80px-Tidehunter.png" width="48">
+                </a>
+                <div id="content-tidehunter" class="hide">
+                  <p>
+                    As a teammate, Tidehunter makes one of the best setups
+                    for your Epicenter channeling, since if you time it right
+                    the enemies will be stationary as you line up the perfect
+                    Burrowstrike to chain after the Ravage. Offlane Tidehunter
+                    and safelane SK is a fairly flat combo that can be punished
+                    if you reveal it too early in the draft, so try to hide at
+                    least one of these picks until 5th (as with most of the
+                    heroes in the wombo section).
+                  </p>
+                </div><!--/.popover-content-->
+                <a id="popover-enigma2" rel="popover"
+                   data-title="Enigma">
+                  <img src="img/80px-Enigma.png" width="48">
+                </a>
+                <div id="content-enigma2" class="hide">
+                  <p>
+                    Enigma is a significantly faster jungler than Sand King,
+                    plus he's the perfect hero to grab an early Mek instead
+                    of a Blink, allowing your team to push and group up earlier
+                    and allowing SK to do the initiating. While this combo is
+                    somewhat punishable in the draft, you may be able to actually
+                    throw your opponent off by picking these two ambiguous heroes
+                    early and laning them in a unique configuration, or if your
+                    enemy overreacts and plays a style they're not comfortable
+                    with. Opponents will definitely be scared if they see Enigma
+                    and SK early during the draft, so you should at least be
+                    aware of this before you grab them together.
+                  </p>
+                </div><!--/.popover-content-->
+                <a id="popover-warlock" rel="popover"
+                   data-title="Warlock">
+                  <img src="img/80px-Warlock.png" width="48">
+                </a>
+                <div id="content-warlock" class="hide">
+                  <p>
+                    A long-range AoE initiator like Warlock is the perfect setup
+                    for your majesty's carefully crafted Epicenter. Warlock is
+                    viable as a support these days and can certainly zone out an
+                    enemy if your core SK gets an unfavorable lane matchup, but
+                    even as a core Warlock makes a good companion for Sand King.
+                    The utter devestation of Fatal Bonds into Epicenter is enough
+                    to make an entire team crumble on its own.
+                  </p>
+                </div><!--/.popover-content-->
+              </div><!--/.hero-box-4-->
+              <div class="hero-box-4 center-block">
+                <a id="popover-magnus" rel="popover"
+                   data-title="Magnus">
+                  <img src="img/80px-Magnus.png" width="48">
+                </a>
+                <div id="content-magnus" class="hide">
+                  <p>
+                    Magnus is a lot like Tidehunter in that you'll definitely
+                    benefit from his setup if he gets an ult off—the difference
+                    here is that Magnus's initiation is generally much less
+                    reliable than Tidehunter's (somewhat on par with your own
+                    as an SK really). The nice thing here is that Magnus being
+                    generally a mid hero means you'll be able to either safe-
+                    or off-lane your team's SK.
+                  </p>
+                </div><!--/.popover-content-->
+                <a id="popover-disruptor" rel="popover"
+                   data-title="Disruptor">
+                  <img src="img/80px-Disruptor.png" width="48">
+                </a>
+                <div id="content-disruptor" class="hide">
+                  <p>
+                    Holding potentially multiple members of the enemy team still
+                    with a Kinetic Field and, potentially, Static Field makes your
+                    life WAY easy as Sand King. Although there's no direct damage
+                    amplification from Disruptor, he does enough magic damage on his
+                    own that you can really warrant a Veil maybe even first item
+                    on Disruptor when there's an SK on your team.
+                  </p>
+                </div><!--/.popover-content-->
+                <a id="popover-fv" rel="popover"
+                   data-title="Faceless Void">
+                  <img src="img/80px-Faceless_Void.png" width="48">
+                </a>
+                <div id="content-fv" class="hide">
+                  <p>
+                    As teammates, SK and Faceless really make a powerful duo—Epicenter
+                    can deal its damage even if you blink into the Chronosphere,
+                    allowing you to potentially followup with a Burrow stun while
+                    your enemies are Time Dilated. Other than Zeus and Skywrath there
+                    are few magic damage dealers that pair as well with Void as SK
+                    does, although having them both on the same team implies that one
+                    of them will most likely be safelane. If you can run a support
+                    Sand King that also works especially well here, as the new FV
+                    really enjoys finding his farm early and may need to rotate around
+                    to find a decent lane. SK has the same finicky needs as a core and
+                    so may not make the most reliable partner to grab early in a draft.
+                  </p>
+                </div><!--/.popover-content-->
+                <a id="popover-phoenix" rel="popover"
+                   data-title="Phoenix">
+                  <img src="img/80px-Phoenix.png" width="48">
+                </a>
+                <div id="content-phoenix" class="hide">
+                  <p>
+                    Phoenix is a fun combo to run with Sand King, but their synergy
+                    is a bit difficult to take advantage of. The most common play
+                    by far will be Sand King blinking in to Burrow stun an enemy that's
+                    trying to take down the Supernova, but more effectively you would
+                    combine SK and Phoenix with someone like a Treant to ensure that
+                    the Phoenix ult goes off first, then put the Epicenter damage
+                    on top of the the Supernova stun to let SK do the cleanup. A
+                    support Phoenix or even an offlane one with a mid or safelane
+                    SK can really result in powerful earlygame teamfights for you,
+                    assuming that your lanes go as you would hope. If they don't,
+                    that's where some strong support picks come in, to reassure these
+                    more utilitarian cores don't falter against a snowballing enemy
+                    team with potential hard-er carries.
+                  </p>
+                </div><!--/.popover-content-->
+              </div><!--/.hero-box-4-->
+            </div><!--/.row-->
+            <div class="row" style="margin-top: 8px;">
+              <div class="hero-box-5 center-block" style="padding-bottom: 0px">
+                <a id="popover-dualstun" rel="popover" data-title="Dual Stun Lanes">
+                  <h5>Strong Lane Combos</h5>
+                </a>
+                <div id="content-dualstun" class="hide">
+                  <p>
+                    Any hero that can hold an enemy in place while you close
+                    the gap for a Burrowstrike is fair game to be a lane partner
+                    with you—these listed here are just some of the classics,
+                    as well as some new alternatives.
+                  </p>
+                </div><!--/.popover-content-->
+                <a id="popover-rubick" rel="popover"
+                   data-title="Rubick">
+                  <img src="img/80px-Rubick.png" width="48">
+                </a>
+                <div id="content-rubick" class="hide">
+                  <p>
+                    Rubick makes a strong teammate for Sand King because of the
+                    ease of a lift setup into Epi+Burrow, just be careful where
+                    you set the enemy hero down! Don't throw them out of Burrow
+                    or Epi. Picking the Rubick as a team looking to grab SK also
+                    serves the additional purpose of taking one of his counters
+                    off the table.
+                  </p>
+                </div><!--/.popover-content-->
+                <a id="popover-lina" rel="popover"
+                   data-title="Lina">
+                  <img src="img/80px-Lina.png" width="48">
+                </a>
+                <div id="content-lina" class="hide">
+                  <p>
+                    While much less straightforward to execute than the other
+                    lane combos mentioned in this section, this is a classic
+                    one that works best when the Sand King is the one initiating.
+                    As either a support roamer or just a lane partner doing some
+                    sneaking around, try popping out from behind some trees as
+                    SK and Burrow stunning your lane opponents, allowing Lina
+                    the time to follow up with her LSA. The extreme amount of
+                    magic burst betweeen these two should be able to level all
+                    but the absolute tankiest opponents (BKBs can be a problem
+                    too obviously). Picking this much magic damage, especially
+                    early on in the draft, can leave your team open to being
+                    countered, so be prepared to be creative with your laning
+                    to salvage your early game if you do.
+                  </p>
+                </div><!--/.popover-content-->
+                <a id="popover-sven2" rel="popover"
+                   data-title="Sven">
+                  <img src="img/80px-Sven.png" width="48">
+                </a>
+                <div id="content-sven2" class="hide">
+                  <p>
+                    Sven's Storm Hammer is simply one of the best stuns to follow
+                    up on. Not only is it easy to hit, but it does enough damage
+                    to soften weaker enemies up for a potential Caustic Finale,
+                    maybe adding enough damage to turn a difficult gank into an easy
+                    one. Sven's Cleave allows him to make short work of Burrow-stunned
+                    targets later on, so consider pairing the two with another
+                    synergistic hero like Dark Seer to really emphasize your combo's
+                    strength at all stages in the game.
+                  </p>
+                </div><!--/.popover-content-->
+                <a id="popover-lich2" rel="popover"
+                   data-title="Lich">
+                  <img src="img/80px-Lich.png" width="48">
+                </a>
+                <div id="content-lich2" class="hide">
+                  <p>
+                    The slow from Frost Blast is easily enough to catch a fleeing enemy
+                    during the early game, usually, but if not there's always the
+                    fact that you're probably destroying the enemy on experience
+                    with a Lich on your team—especially if he's in your lane as an SK.
+                    Lich would be a fairly decent candidate to get an early Veil to
+                    support his SK as well, although this is certainly not a common
+                    pickup by any means.
+                  </p>
+                </div><!--/.popover-content-->
+                <a id="popover-dazzle2" rel="popover"
+                   data-title="Dazzle">
+                  <img src="img/80px-Dazzle.png" width="48">
+                </a>
+                <div id="content-dazzle2" class="hide">
+                  <p>
+                    This combo has been proven so potent that I had to add it
+                    immediately—Na'vi has shown specifically that offlane SK with
+                    Dazzle is a very potent kill-lane, and one that's both safe
+                    thanks to the heals and Shallow Grave to keep things from going
+                    South too quickly, and which will often be underestimated,
+                    leading to a kill. The slow from Poison Touch could be nice,
+                    but the Shallow Grave to save your Sand King diving under tower
+                    is just too strong to pass up. Toss out that Shadow Wave heal
+                    after SK goes diving in to proc caustic on a wave of creeps,
+                    and practically anyone will go down (even a 10 armor Terrorblade).
+                  </p>
+                </div><!--/.popover-content-->
+              </div><!--/.hero-box-5-->
+              <div class="hero-box-5 center-block">
+                <a id="popover-oracle" rel="popover"
+                   data-title="Oracle">
+                  <img src="img/80px-Oracle.png" width="48">
+                </a>
+                <div id="content-oracle" class="hide">
+                  <p>
+                    This is another easy to execute lane combo—just Fortune's
+                    End long enough for your SK to walk up and stun. It's
+                    actually a strong enough combo that the two heroes can
+                    roam together as supports if they have suitable targets
+                    to find, although a simple roaming Oracle on top of
+                    your core farming Sand King works too. Taking Oracle
+                    out of the pool against your Sand King is always helpful
+                    too, as his Fate's Edict can completely turn around
+                    an Epicenter gank.
+                  </p>
+                </div><!--/.popover-content-->
+                <a id="popover-wk" rel="popover"
+                   data-title="Wraith King">
+                  <img src="img/80px-Wraith_King.png" width="48">
+                </a>
+                <div id="content-wk" class="hide">
+                  <p>
+                    When it comes to carries with ranged stuns that can set up
+                    for a Burrowstrike, Wraith King is about as good as it gets.
+                    His unique flavor isn't particularly helpful to a Sand King,
+                    but the chaos caused by his respawning and potentially silly
+                    Aghanim's upgrade can make him a formidable teammate for SK
+                    as well as a decent lane partner. Jungling your SK and then
+                    roaming to the Wraith King's lane can work, as well as
+                    farming the SK and having a roaming WK to stun into the lane,
+                    probably from Smoke.
+                  </p>
+                </div><!--/.popover-content-->
+                <a id="popover-vengeful" rel="popover"
+                   data-title="Vengeful Spirit">
+                  <img src="img/80px-Vengeful_Spirit.png" width="48">
+                </a>
+                <div id="content-vengeful" class="hide">
+                  <p>
+                    Venge can use Magic Missile to set up for Burrowstrike.
+                    That's about the extent of the synergy, besides swap
+                    saving the Sand King or swapping an enemy into Epicenter,
+                    but that means that like the other heroes on this list
+                    Venge makes a good support (and rarely carry) to pair with
+                    Sand King when it comes to Captain's Mode. The lack of
+                    any strong synergy means this is a combo you would probably
+                    roam them together early and then turn SK into a static
+                    jungler or laner, because neither one of these heroes
+                    can carry on their own or together, and thus they cannot
+                    afford to both be cores on the same team.
+                  </p>
+                </div><!--/.popover-content-->
+                <a id="popover-shadowdemon2" rel="popover"
+                   data-title="Shadow Demon">
+                  <img src="img/80px-Shadow_Demon.png" width="48">
+                </a>
+                <div id="content-shadowdemon2" class="hide">
+                  <p>
+                    Shadow... Disruption. What I'm talking about here is using
+                    Disruption, and potentially Soul Catcher, to gank people.
+                    They make a decent roaming support duo or lane partners,
+                    but do keep in mind that their synergy starts to really
+                    fall apart after the early-mid game when teamfights start
+                    to become messier. It's hard to use Disruption to set up
+                    for an Epicenter unless you're getting clean initiations,
+                    so potentially save this combo for a late-draft pocket
+                    pick.
+                  </p>
+                </div><!--/.popover-content-->
+                <a id="popover-kunkka" rel="popover"
+                   data-title="Kunkka">
+                  <img src="img/80px-Kunkka.png" width="48">
+                </a>
+                <div id="content-kunkka" class="hide">
+                  <p>
+                    Also useful as a counter to Sand King with his Coco's Rum,
+                    Kunkka is a stellar combo hero with Sand King, especially
+                    together in a dual- or tri-lane getting kills. X-Marks is
+                    an incredible ability to catch opponents out, so a support
+                    Kunkka maxing it first can make your team's Sand King's
+                    life incredibly easy. X-Marks into Burrow and/or Torrent
+                    is already ~4 seconds of disable, and of course that all
+                    that Kunkka AoE damage can be used to proc Caustic. Later
+                    on in the game, the wombo-combo of a simple Boat plus
+                    Torrent onto a Burrow+Epi is enough to win the fight on
+                    its own.
+                  </p>
+                </div><!--/.popover-content-->
+              </div><!--/.hero-box-5-->
+            </div><!--/.row-->
+          </div><!--/.row-->
+          <div class="row">
+            <div class="col-xs-8 col-xs-offset-2">
+              <h4 style="margin: 8px 0 8px 0;">Weak&nbsp;Versus</h4>
+              <div class="row">
+                <div class="hero-box-3 center-block" style="padding-bottom: 0px">
+                  <a id="popover-combobreakers" rel="popover" data-title="Combo Breakers">
+                    <h5>Combo Breakers</h5>
+                  </a>
+                  <div id="content-combobreakers" class="hide">
+                    <p>
+                      These heroes all offer a way to stop you from completing th
+                      Blink → Epicenter combo, with varying degrees of reliability.
+                      In all cases you want to avoid getting counter-picked by
+                      these heroes, so save your Sand King pick as late as you
+                      possibly can unless you're prepared to ban the heroes listed
+                      here that you cannot counter.
+                    </p>
+                  </div><!--/.popover-content-->
+                  <a id="popover-zeus" rel="popover"
+                     data-title="Zeus">
+                    <img src="img/80px-Zeus.png" width="48">
+                  </a>
+                  <div id="content-zeus" class="hide">
+                    <p>
+                      Zeus is the most obvious counter to Sand King there is, as you
+                      can pretty much always outplay the SK player by sitting back
+                      and disabling his Blink with Thundergod's Wrath—that is until
+                      you get a BKB. This matchup is the clearest one of all to pick
+                      yourself up a Black King Bar, so plan to itemize defensively
+                      if you do get counter-picked.
+                    </p>
+                  </div><!--/.popover-content-->
+                  <a id="popover-pugna" rel="popover"
+                     data-title="Pugna">
+                    <img src="img/80px-Pugna.png" width="48">
+                  </a>
+                  <div id="content-pugna" class="hide">
+                    <p>
+                      His Nether Ward is one of the easiest ways to get your Blink
+                      disabled, plus Pugna is excellent at bursting you down after
+                      you've jumped in, so always be wary of the potential blasts
+                      and Life Drains. Pugna may be squishy, and a bad Pugna player
+                      may get himself killed by going ethereal at the wrong moment,
+                      but a good Pugna player can ruin your day just like any
+                      other hero that's primarily a spellcaster.
+                    </p>
+                  </div><!--/.popover-content-->
+                  <a id="popover-spectre" rel="popover"
+                     data-title="Spectre">
+                    <img src="img/80px-Spectre.png" width="48">
+                  </a>
+                  <div id="content-spectre" class="hide">
+                    <p>
+                      Not only is Spectre tanky and capable of canceling your Blink
+                      Dagger with her global ultimate Haunt, but she also redirects
+                      a portion of your Epicenter damage back onto your own team,
+                      which is not good. Bursting down a Spectre often means killing
+                      yourself for someone more fragile like Sand King, but if you do
+                      manage to follow this guide and pick-up the Octarine Core early
+                      you'll find that the spell lifesteal will help you equalize
+                      the Dispersion damage nicely.
+                    </p>
+                  </div><!--/.popover-content-->
+                </div><!--/.hero-box-3-->
+                <div class="hero-box-3 center-block">
+                  <a id="popover-silencer" rel="popover"
+                     data-title="Silencer">
+                    <img src="img/80px-Silencer.png" width="48">
+                  </a>
+                  <div id="content-silencer" class="hide">
+                    <p>
+                      There's no other hero that can actually just cancel
+                      your Epicenter channeling from across the map, which
+                      is why you'll often see Silencer picked directly to
+                      counter other channeling heroes like Enigma as well
+                      as wombo-combo teamfight lineups in general. If you
+                      do find yourself counter-picked by a Silencer, definitely
+                      consider going greedy in the jungle and letting someone
+                      else take a lane. You may also want to consider
+                      itemizing defensively, as Eul's and BKB will both help
+                      you remove Global Silence (although only BKB can prevent
+                      your channeling from being interrupted).
+                    </p>
+                  </div><!--/.popover-content-->
+                  <a id="popover-venomancer" rel="popover"
+                     data-title="Venomancer">
+                    <img src="img/80px-Venomancer.png" width="48">
+                  </a>
+                  <div id="content-venomancer" class="hide">
+                    <p>
+                      Veno is incredibly annoying for any Blink initiator and SK
+                      is no exception—any one of his three poisons will disable
+                      your Blink, plus Veno's Wards are great at scouting you out
+                      and getting that poison on you. In lane Sand King needs tons
+                      of regen to make this matchup bearable, but Veno is squishy
+                      and slow enough to make your kill potential at levels 5-7
+                      decent. Just don't feed before then!
+                    </p>
+                  </div><!--/.popover-content-->
+                  <a id="popover-clockwerk" rel="popover"
+                     data-title="Clockwerk">
+                    <img src="img/80px-Clockwerk.png" width="48">
+                  </a>
+                  <div id="content-clockwerk" class="hide">
+                    <p>
+                      Clockwerk is one of the best heroes at catching Sand King
+                      out, both with Flare to reveal him in trees plus cancel his
+                      Blink Dagger, and also Cogs to knock you out of Sand Storm
+                      and burn some mana. Just overall not a fun hero to play against,
+                      even if you're capable of out-CSing him 1v1.
+                    </p>
+                  </div><!--/.popover-content-->
+                </div><!--/.hero-box-3-->
+              </div><!--/.row-->
+            </div><!--/.col-xs-8-->
+          </div><!--/.row-->
+          <div class="row padded" style="margin-top: 8px;">
+            <div class="col-xs-5">
+              <div class="hero-box-2 center-block" style="padding-bottom: 0; margin-right: 0;">
+                <a id="popover-tank" rel="popover" data-title="Tanks">
+                  <h5>Tanks</h5>
+                </a>
+                <div id="content-tank" class="hide">
+                  <p>
+                    These are all the heroest that Sand King will have a hard
+                    time killing with Epicenter, mostly through skills and
+                    raw health points. You want to avoid picking Sand King
+                    as a damage dealer into lineups with these heroes.
+                  </p>
+                </div><!--/.popover-content-->
+                <a id="popover-abaddon" rel="popover"
+                   data-title="Abaddon">
+                  <img src="img/80px-Abaddon.png" width="48">
+                </a>
+                <div id="content-abaddon" class="hide">
+                  <p>
+                    Abaddon is annoying for just about any hero to burst down,
+                    and Sand King is no exception. He can save allies and ruin
+                    your day by shielding off one of your stuns on a crucial
+                    hero, so make sure you and your team handle him somehow
+                    during these fights. A Eul's Scepter is one especially
+                    good way for Sand King to thwart the Abaddon when he attempts
+                    to heal up from your Epi.
+                  </p>
+                </div><!--/.popover-content-->
+                <a id="popover-centaur" rel="popover"
+                   data-title="Centaur Warrunner">
+                  <img src="img/80px-Centaur_Warrunner.png" width="48">
+                </a>
+                <div id="content-centaur" class="hide">
+                  <p>
+                    Centaur is the only hero on this list without some form
+                    of built in magic protection (although he may frequently
+                    go Hood/Pipe), but by all means Centaur is tanky enough
+                    to last through your Epicenter, in most cases. Avoid picking
+                    a Sand King into teams with multiple tanky heroes like these
+                    especially.
+                  </p>
+                </div><!--/.popover-content-->
+              </div><!--/.hero-box-2-->
+              <div class="hero-box-2 center-block" style="margin-right: 0;">
+                <a id="popover-kunkka2" rel="popover"
+                   data-title="Kunkka">
+                  <img src="img/80px-Kunkka.png" width="48">
+                </a>
+                <div id="content-kunkka2" class="hide">
+                  <p>
+                    Similar to how Kunkka can counter Faceless Void and
+                    other wombo combo heroes like Dark Seer, Tidehunter, etc
+                    by just throwing his Boat at the right time to block 50%
+                    of your damage, against your favorite scorpion Admiral
+                    Kunkka can be both especially annoying to lane against
+                    AND annoying to teamfight into. Blocking your Epicenter
+                    might be devastating a handful of times later in the game
+                    during teamfights, but Torrent to knock you out of Sand
+                    Storm and Tidebringer harass will pretty much always make
+                    Kunkka one of the more annoying supports for you to go
+                    against, not to mention Kunkka as a support if you're
+                    trying to offlane and he goes X-Marks. Avoid it!
+                  </p>
+                </div><!--/.popover-content-->
+                <a id="popover-bristle" rel="popover"
+                   data-title="Bristleback">
+                  <img src="img/80px-Bristleback.png" width="48">
+                </a>
+                <div id="content-bristle" class="hide">
+                  <p>
+                    Both by sheer health and through damage resistance when he
+                    turns his back, Bristle's kit makes him resistant to Sand
+                    King's damage. But add on a few defensive items like
+                    Mek/Pipe/BKB and add in the hundreds of damage from your
+                    own Epicenter reflecting off of his quills... and you're
+                    gonna have a bad time. Bristle isn't a specific strong lane
+                    counter to SK, but you will want to avoid picking Sand King
+                    into a team that will be fighting around Bristle as much
+                    as you can!
+                  </p>
+                </div><!--/.popover-content-->
+              </div><!--/.hero-box-2-->
+            </div><!--/.col-xs-5-->
+            <div class="col-xs-7">
+              <div class="hero-box-4 center-block" style="padding-bottom: 0; margin-left: 0;">
+                <a id="popover-magres" rel="popover" data-title="Magic Resistance">
+                  <h5>Magic Resistance</h5>
+                </a>
+                <div id="content-magres" class="hide">
+                  <p>
+                    There are the heroes that either completely or partially
+                    resist magic, and some of them can also give that buff
+                    to their allies. In general when these opponents are on
+                    the enemy team you should only pick Sand King for his
+                    stunning abilities, not his damage, but depending on
+                    the matchup, sometimes these counters are more impactful
+                    than others (depending on the timings and goals of your
+                    lineups).
+                  </p>
+                </div><!--/.popover-content-->
+                <a id="popover-omni2" rel="popover"
+                   data-title="Omniknight">
+                  <img src="img/80px-Omniknight.png" width="48">
+                </a>
+                <div id="content-omni2" class="hide">
+                  <p>
+                    Repel may be great for you with an Omni on your team, but on the
+                    opponent's team Omni means failed ganks left and right, as well as
+                    severely hampered teamfights. Omni can luckily only keep Repel
+                    up on one hero at a time though, so if you really have to play
+                    SK against one you'll be able to hopefully switch targets during
+                    fights such that you come out on top. Avoid wasting your big spells
+                    on Repeled targets and you'll be fine!
+                  </p>
+                </div><!--/.popover-content-->
+                <a id="popover-rubick2" rel="popover"
+                   data-title="Rubick">
+                  <img src="img/80px-Rubick.png" width="48">
+                </a>
+                <div id="content-rubick2" class="hide">
+                  <p>
+                    Rubick, along with the several other heroes listed below, can
+                    on very rare occasions ruin your Epicenter initiaton by snatching
+                    you (or in some of the cases below, hexing or silencing you) instantly,
+                    before you can even get the Burrowstrike off but after blinking in.
+                    These kinds of superhuman feats are actually performed by simple
+                    shift-queuing of commands usually, but still you must be wary
+                    of these outplay potentials, as well as the potential for Rubick
+                    to nab one of your spells. None of them is one you particularly
+                    want to give Rubick, but Sand Storm is most definitely the one
+                    you're most okay handing over, so always try to use that after
+                    your initiations if you don't catch Rubick himself. All of
+                    this discussion and we have to of course mention Rubick's aura,
+                    which is actually perhaps the number one reason why Rubick sucks
+                    to play against as SK. Being that level 1 Null Field was recently
+                    buffed to 10% magic resistance, you certainly want to control
+                    the Rubick pick after you've grabbed Sand King, if you can.
+                  </p>
+                  <div class="popover-footer">
+                      <div class="popover-timing">See also:
+                        <img src="img/80px-Skywrath_Mage.png" width="48">
+                        <img src="img/80px-Lion.png" width="48">
+                        <img src="img/80px-Shadow_Shaman.png" width="48"></div>
+                    </div>
+                </div><!--/.popover-content-->
+                <a id="popover-lifestealer" rel="popover"
+                   data-title="Lifestealer">
+                  <img src="img/80px-Lifestealer.png" width="48">
+                </a>
+                <div id="content-lifestealer" class="hide">
+                  <p>
+                    It should be pretty plain to see, but Rage is stupidly
+                    good way for a melee carry like Lifestealer to avoid
+                    all of your Epicenter damage, and potentially even the
+                    Burrow stun if you aren't on point with your shift-queuing.
+                    In lane the SK should actually dominate a 1v1 matchup with
+                    Lifestealer where CS is concerned, but you'll have far less
+                    kill potential than against other melee laners and be in
+                    some danger should the Lifestealer get support rotations.
+                    A good Lifestealer player won't be afraid to dive you early
+                    on, thanks to his Rage.
+                  </p>
+                </div><!--/.popover-content-->
+                <a id="popover-ember" rel="popover"
+                   data-title="Ember Spirit">
+                  <img src="img/80px-Ember_Spirit.png" width="48">
+                </a>
+                <div id="content-ember" class="hide">
+                  <p>
+                    Ember is definitely a slippery split pusher capable of
+                    getting caught by your average SK player, BUT thanks to
+                    Flame Guard you'll nearly always find the solo-kill much
+                    harder than other similar heroes. If Ember for some reason
+                    doesn't have the Flame Guard up, and/or you get an aggressive
+                    burst item like Dagon, you can definitely pick off the
+                    otherwise somewhat fragile Ember Spirit. Sand King does
+                    have the choice of picking up a Eul's to dispel his Flame
+                    Guard, but this combo may simply fail if the Ember has
+                    a remnant up that he can leap out to. Not to mention
+                    Ember can also respond to you with Linken's or BKB to
+                    try and stop your initiations, or even Skadi to tank
+                    through them instead.
+                  </p>
+                </div><!--/.popover-content-->
+              </div><!--/.hero-box-4-->
+              <div class="hero-box-4 center-block" style="margin-left:0">
+                <a id="popover-pudge" rel="popover"
+                   data-title="Pudge">
+                  <img src="img/80px-Pudge.png" width="48">
+                </a>
+                <div id="content-pudge" class="hide">
+                  <p>
+                    Pudge is just an annoying hero overall, but his innate
+                    magic resistance and ability to scale infinitely into a
+                    long game where you may be struggling to pump out enough
+                    damage is disturbing. As a Sand King, I would really LOVE
+                    to avoid playing against Pudges altogether, but the 1v1
+                    lane matchup really shouldn't be that bad. Avoid getting
+                    hooked out of Sand Storm or caught out by some kind of
+                    surprise magic resistance and you'll be fine. Later on,
+                    after Pudge has something like a Blink, you'll have to be
+                    clever and also control the other team's vision to maintain
+                    the advantage in this matchup during chaotic mid-game
+                    teamfights.
+                  </p>
+                </div><!--/.popover-content-->
+                <a id="popover-oracle2" rel="popover"
+                   data-title="Oracle">
+                  <img src="img/80px-Oracle.png" width="48">
+                </a>
+                <div id="content-oracle2" class="hide">
+                  <p>
+                    Oracle's Fate's Edict is the perfect way to save someone
+                    from Epicenter. If you see him on the enemy team, you're
+                    either going to need a way to catch out the Oracle reliably,
+                    like a vision advantage, or you'll want to avoid picking
+                    magic burst like Sand King.
+                  </p>
+                </div><!--/.popover-content-->
+                <a id="popover-huskar" rel="popover"
+                   data-title="Huskar">
+                  <img src="img/80px-Huskar.png" width="48">
+                </a>
+                <div id="content-huskar" class="hide">
+                  <p>
+                    Huskar is pretty hard for anyone using mostly magic
+                    damage to burst down, but Sand King does have the advantage
+                    of being able to escape from most sticky situations if Huskar
+                    starts to get Burning Spear stacks on you. Avoid wasting your
+                    ult on a solo Huskar and you'll be fine, but if you really
+                    have to kill Huskar with magic damage then a source of Break
+                    would be nice (an ally with Silver Edge is the best choice,
+                    as Scythe of Vyse no longer disables passives).
+                  </p>
+                </div><!--/.popover-content-->
+                <a id="popover-antimage" rel="popover"
+                   data-title="Anti-Mage">
+                  <img src="img/80px-Anti-Mage.png" width="48">
+                </a>
+                <div id="content-antimage" class="hide">
+                  <p>
+                    While a Sand King is quite ideal for hunting down and catching
+                    the Anti-Mage, with even one point in his Spell Shield you'll
+                    find that Anti-Mage is quite an annoying target to take down.
+                    For this reason I still don't recommend this matchup if you
+                    can avoid it, even though Sand King can be great at catching
+                    out a ratting AM. At the end of the day it comes down to your
+                    confidence that the Sand King will snowball off of heroes
+                    besides the Anti-Mage. The 1v1 matchup between the two is easy
+                    to get last-hits but potentially dangerous due to AM's mana-drain
+                    the fact that he has an escape to bait you with, plus Anti-Mage
+                    often gets help from his supports.
+                  </p>
+                </div><!--/.popover-content-->
+              </div><!--/.hero-box-4-->
+            </div><!--/.col-xs-7-->
+          </div><!--/.row-->
+          <div class="row padded" style="margin-top: 8px;">
+            <div class="col-xs-5">
+              <div class="hero-box-2 center-block" style="padding-bottom: 0; margin-right: 0;">
+                <a id="popover-badmatch" rel="popover" data-title="Bad Lane Matchups">
+                  <h5>Tough 1v1 Lanes</h5>
+                </a>
+                <div id="content-badmatch" class="hide">
+                  <p>
+                    These are some assorted melee heroes that give you a hard time
+                    as SK—not that you're necessarily destined to lose the lane
+                    against them, but you will have a harder time than usual.
+                  </p>
+                </div><!--/.popover-content-->
+                <a id="popover-tidehunter2" rel="popover"
+                   data-title="Tidehunter">
+                  <img src="img/80px-Tidehunter.png" width="48">
+                </a>
+                <div id="content-tidehunter2" class="hide">
+                  <p>
+                    Despite the farming utility of Caustic and Burrow both,
+                    Tidehunter's ability to reduce your attack damage is
+                    unparalleled, and in a 1v1 matchup Tidehunter with
+                    Kraken Shell and Anchor Smash will certainly come out
+                    on top of you in CS. Your wave clearing abilities are
+                    somewhat equal if he maxes E, so it's up to the Tidehunter
+                    player play smartly and not take free Caustic harass when
+                    you go in for your last-hits.
+                  </p>
+                </div><!--/.popover-content-->
+                <a id="popover-darkseer" rel="popover"
+                   data-title="Dark Seer">
+                  <img src="img/80px-Dark_Seer.png" width="48">
+                </a>
+                <div id="content-darkseer" class="hide">
+                  <p>
+                    Dark Seer is annoying for any melee hero to lane against
+                    because he'll definitely force you to invest in additional
+                    regen or an item like Tranquil Boots, BUT he's also
+                    quite simple to catch and kill, and can't do a darned thing
+                    to contest your CS without putting himself in danger. For
+                    this reason your best bet in this lane is to just grin
+                    and bear the Ion Shell harassment, leveling perhaps
+                    4-0-3 and taking Epicenter at level 8 once you get Blink
+                    so as to maximize your chance to catch the pointy bugger.
+                  </p>
+                </div><!--/.popover-content-->
+              </div><!--/.hero-box-2-->
+              <div class="hero-box-2 center-block" style="margin-right: 0;">
+                <a id="popover-nyx" rel="popover"
+                   data-title="Nyx Assassin">
+                  <img src="img/80px-Nyx_Assassin.png" width="48">
+                </a>
+                <div id="content-nyx" class="hide">
+                  <p>
+                    With two ways to knock you out of Sand Storm, as well as a
+                    manaburn that will completely wreck your day, even with
+                    Mangos, Nyx is not an opponent you really want to lane
+                    against. You can certainly CS and potentially kill him if he
+                    gets overzealous, but his kit is well-suited to outplays
+                    and harassment, so watch out. Even in the side lane this
+                    matchup may call for a Bottle.
+                  </p>
+                </div><!--/.popover-content-->
+                <a id="popover-axe" rel="popover"
+                   data-title="Axe">
+                  <img src="img/80px-Axe.png" width="48">
+                </a>
+                <div id="content-axe" class="hide">
+                  <p>
+                    Axe would love nothing more than to stand in one of your
+                    Sand Storms spinning as he takes minuscule damage—dealing
+                    pure damage to you in the meantime. His love of Blademail
+                    is troubling as well, as this item can singularly wreck
+                    a magic damage dealer like yourself who prefers to forego
+                    defensive items when possible. Axe's Call obviously
+                    throws a major complication in the way of any initiation
+                    you might go for, so just avoid picking an SK into Axe
+                    unless you think you'll be able to get fed in some other
+                    1v1 lane.
+                  </p>
+                </div><!--/.popover-content-->
+              </div><!--/.hero-box-2-->
+            </div><!--/.col-xs-5-->
+            <div class="col-xs-7">
+              <div class="hero-box-4 center-block" style="padding-bottom: 0; margin-left: 0;">
+                <a id="popover-harass" rel="popover" data-title="Ranged Lane Harass">
+                  <h5>Ranged Lane Harass</h5>
+                </a>
+                <div id="content-harass" class="hide">
+                  <p>
+                    Like just about any melee laner, Sand King hates getting
+                    harassed by ranged opponents, especially strong ranged
+                    1v1 matchups like the ones listed here. These are the
+                    kind of 1v1 matchups you want to avoid if at all possible,
+                    although some of them may be winnable with enough regen
+                    and defensive itemization (Stout Shield at least). This
+                    list is not exhaustive by any means though, so beware
+                    of just about any ranged hero not listed anywhere here.
+                  </p>
+                </div><!--/.popover-content-->
+                <a id="popover-clinkz" rel="popover"
+                   data-title="Clinkz">
+                  <img src="img/80px-Clinkz.png" width="48">
+                </a>
+                <div id="content-clinkz" class="hide">
+                  <p>
+                    Clinkz is highly frustrating as the Sand King because
+                    you won't be able to burst him down before he goes invis
+                    and escapes—most likely. Even if you play this matchup
+                    cautiously it's unlikely you'll be able to stop the Clinkz
+                    from out-CSing you, and you'll likely take loads of free
+                    orb harass from the Clinkz too.
+                  </p>
+                </div><!--/.popover-content-->
+                <a id="popover-drow" rel="popover"
+                   data-title="Drow Ranger">
+                  <img src="img/80px-Drow_Ranger.png" width="48">
+                </a>
+                <div id="content-drow" class="hide">
+                  <p>
+                    Drow is annoying to lane against especially because of
+                    the threat her silence Gust provides. It can knock you
+                    out of Sand Storm for one thing, but the possibility
+                    of a quick and unexpected Gust forcing you to Burrow
+                    away before you even know whether there's follow-up
+                    is a very real and present threat, even 1v1. You
+                    do not want to get silenced especially early on in the
+                    game before you get up an item like Blink, Force, BKB or
+                    Eul's that might let you escape these situations.
+                  </p>
+                </div><!--/.popover-content-->
+                <a id="popover-necro" rel="popover"
+                   data-title="Necrophos">
+                  <img src="img/80px-Necrophos.png" width="48">
+                </a>
+                <div id="content-necro" class="hide">
+                  <p>
+                    Besides Necrophos' two annoying passives that will make
+                    the lane about as miserable for you as anything, there's
+                    also Necrophos's tendency to tank up, build defensive items
+                    like Mek/Pipe, and ability to catch you out with his ult.
+                    His ranged harassment and overall lane presence makes him
+                    one of the worst heroes to 1v1 mid or in a side-lane.
+                  </p>
+                </div><!--/.popover-content-->
+                <a id="popover-viper" rel="popover"
+                   data-title="Viper">
+                  <img src="img/80px-Viper.png" width="48">
+                </a>
+                <div id="content-viper" class="hide">
+                  <p>
+                    Viper is definitely a target you'll struggle to focus down
+                    as Sand King—thanks largely to the magic resistance from
+                    Viper's Corrosive Skin—but there are always moments when
+                    you'll be able to catch the immobile Viper out. This is a
+                    very difficult 1v1 matchup for any melee hero like SK, and
+                    mid-lane especially you'll find it's better suited to a
+                    ranged playmaker like Puck.
+                  </p>
+                </div><!--/.popover-content-->
+              </div><!--/.hero-box-4-->
+              <div class="hero-box-4 center-block" style="margin-left: 0;">
+                <a id="popover-sniper" rel="popover"
+                   data-title="Sniper">
+                  <img src="img/80px-Sniper.png" width="48">
+                </a>
+                <div id="content-sniper" class="hide">
+                  <p>
+                    Similar to Shadow Fiend, you'll find that Sniper is a difficult
+                    opponent to shut down or kill in lane thanks to their long range,
+                    BUT you can always kill them if you somehow catch them. Avoiding
+                    the 1v1 matchup here is once again probably a good idea,
+                    although some kind of 2v1 shenanigans like Tiny+SK here could be
+                    great fun to feed on a glass cannon like Sniper.
+                  </p>
+                </div><!--/.popover-content-->
+                <a id="popover-dp" rel="popover"
+                   data-title="Death Prophet">
+                  <img src="img/80px-Death_Prophet.png" width="48">
+                </a>
+                <div id="content-dp" class="hide">
+                  <p>
+                    Not only is Death Prophet going to harass you out of lane
+                    with Siphon plus right-clicks, but she also has her Silence
+                    to potentially ruin Sand Storm if you ever need to go for
+                    that play. Basically this matchup should be a cat-and-mouse
+                    game to see who takes Sand Storm/Silence first, but you
+                    have a much lower chance of coming out on top thanks to
+                    DP's similar flash-farming capabilities and strong
+                    early-to-mid game presence with Exorcism. Just avoid this
+                    lane matchup if you can.
+                  </p>
+                </div><!--/.popover-content-->
+                <a id="popover-windranger" rel="popover"
+                   data-title="Windranger">
+                  <img src="img/80px-Windranger.png" width="48">
+                </a>
+                <div id="content-windranger" class="hide">
+                  <p>
+                    Windranger is just about the strongest ranged laner there is,
+                    so don't try to 1v1 her unless you've got supports with a
+                    plan to take her down. She's got plenty of kill potential on
+                    you, including a way to stun you out of Sand Storm with
+                    Shackleshot, so don't trifle with this ginger ranger unless
+                    it's an absolute must.
+                  </p>
+                </div><!--/.popover-content-->
+                <a id="popover-razor" rel="popover"
+                   data-title="Razor">
+                  <img src="img/80px-Razor.png" width="48">
+                </a>
+                <div id="content-razor" class="hide">
+                  <p>
+                    Razor's passive grants him magic resistance and a purge to
+                    hamper your chasing, so in general, when fighting a Razor,
+                    go for his teammates first. If you can kite him away from
+                    the main fight on your own without taking too much ultimate
+                    damage perhaps it wouldn't be so bad to initate on him, but
+                    otherwise when there's a Razor in the game, keep in mind
+                    that his Static Link and general strong lane presence
+                    would make him one of the best lane counters to SK there is.
+                    Your only real hope against Razor is to hope his supports
+                    don't provide detection so that you can escape with Sand
+                    Storm at least a time or two.
+                  </p>
+                </div><!--/.popover-content-->
+              </div><!--/.hero-box-4-->
+            </div><!--/.col-xs-7-->
+          </div><!--/.row-->
+          <h2 style="margin: 8px 0 4px 0;">Skilling</h2>
+          <div id="skills" class="row padded">
+            <h3>One King, Many Builds</h3>
+            <p style="margin: 4px 0 8px 0;">
+              All these builds are some variant of 4-2-4-2. What matters is
+              what order you get those skills in. In general, always max
+              Burrowstrike first and Caustic Finale second.
+            </p>
+            <h4>Lane King</h4>
+            <p>
+              For free farm lanes where you most likely won't be ganked, and
+              won't need to jungle or escape a gank early on, this build provides
+              the best combination of lane presence, gank potential and safety.
+              Skipping Sand Storm at level 8 and taking Caustic over Burrowstrike
+              would provide more damage at levels 5-9, but you're only able to
+              utilize that bonus Caustic damage situationally.
+            </p>
+            <img class="border" src="img/sandking_caustic_finale.png" id="popover-lvl1" rel="popover" data-title="Level 1"> →
+              <div id="content-lvl1" class="hide">
+                <p>
+                  This is the most aggressive skill build, foregoing early points
+                  in Sand Storm to focus on winning the lane, so naturally at
+                  level 1 you should abuse your Stout and/or Quelling Blade to
+                  to get off Caustic harass on your opponent. If for some reason
+                  you're not in a 1v1 lane, keep in mind that you can always
+                  do small camps with level 1 Caustic, but this only benefits
+                  you if you're in your own safelane of course.
+                </p>
+              </div><!--/.popover-content-->
+            <img class="border" src="img/sandking_burrowstrike.png" id="popover-lvl2" rel="popover" data-title="Level 2"> →
+              <div id="content-lvl2" class="hide">
+                <p>
+                  Once you have both Burrow and Caustic, you're a kill threat.
+                  Generally at level 2 you'll only be able to kill a very inexperienced
+                  opponent, but with support gank rotations you can possibly pick
+                  off your lane opponent (a hero like Witch Doctor, Skywrath, etc
+                  makes a good gank partner, someone with damage and CC). At this
+                  point you should only use Burrow for damage on your opponent,
+                  not to farm, unless of course you're mid and looking to push
+                  the wave before going for a rune. Your damage spike at level
+                  3 means you'll want to save your mana for then.
+                </p>
+              </div><!--/.popover-content-->
+            <img class="border" src="img/sandking_caustic_finale.png" id="popover-lvl3" rel="popover" data-title="Level 3"> →
+              <div id="content-lvl3" class="hide">
+                <p>
+                  Unlike the build in the chart above, which shows Q-E-Q, I would
+                  actually recommend this E-Q-E build if you're looking for maximum
+                  kill potential. The lower cost of level 1 Burrowstrike, plus
+                  the higher max burst damage of Level 2 Caustic over Level 2 Burrow
+                  (if you look at the chart above carefully, you'll see that Caustic
+                  provides more absolute damage since you can proc it on a whole creep
+                  wave).
+                </p>
+              </div><!--/.popover-content-->
+            <img class="border" src="img/sandking_burrowstrike.png" id="popover-lvl4" rel="popover" data-title="Level 4"> →
+              <div id="content-lvl4" class="hide">
+                <p>
+                  For max kill potential once you start looking for ganks, take
+                  Burrow at levels 4, 5 and 7. It gives you the most range early on
+                  in the game, which is usually the factor holding back your kills—
+                  not damage.
+                </p>
+              </div><!--/.popover-content-->
+            <img class="border" src="img/sandking_burrowstrike.png" id="popover-lvl5" rel="popover" data-title="Level 5"> →
+              <div id="content-lvl5" class="hide">
+                <p>
+                  Level 5 is one of your peaks against your lane partner, as you'll
+                  find that it's a common time for you to get a kill in a lane that
+                  you've been slowly taking over. By this point you can clear a
+                  creep wave and most medium jungle camps with Burrow and one or two
+                  Caustic procs. If you can get this off on your opponent once or twice,
+                  they should either be dead or completely zoned out.
+                </p>
+              </div><!--/.popover-content-->
+            <img class="border" src="img/sandking_epicenter.png" id="popover-lvl6" rel="popover" data-title="Level 6"> →
+              <div id="content-lvl6" class="hide">
+                <p>
+                  Not every build here recommends Epicenter at level 6, and that's
+                  because without a Blink Dagger you'll always have a hard time using
+                  it. The best way to use an Epicenter without Blink is NOT to clear
+                  stacks, no no you must set a trap. Hide in trees (use that Quelling
+                  Blade!), wait for someone squishy to walk by (you deal ~600 damage
+                  plus any Caustic procs you can find, after reductions), then Epi
+                  in the trees and Burrow out onto them. This move only works in
+                  the early game before people have mobility or defensive items, so
+                  take advantage if you can. The combined slows from Caustic and Epi
+                  can make even a fast hero significantly slowed as they escape, just
+                  avoid using this combo on a Blink hero like Anti-Mage or QoP unless
+                  you brought some stun-lock.
+                </p>
+              </div><!--/.popover-content-->
+            <img class="border" src="img/sandking_burrowstrike.png" id="popover-lvl7" rel="popover" data-title="Level 7"> →
+              <div id="content-lvl7" class="hide">
+                <p>
+                  With max Burrow you can safely roam looking for pick-offs, but
+                  more likely you'll be getting close to Blink Dagger money at this
+                  point, and if so you'll want to find an empty lane and farm away.
+                  Obviously if you had points in Sand Storm you could alternatively
+                  jungle, but keep in mind that this point of this particular build
+                  is to be in a lane, getting all the last hits and zoning out any
+                  enemies who are dumb enough to stand near you. You're the KING
+                  of this lane, so make sure that all other 9 players know it.
+                </p>
+              </div><!--/.popover-content-->
+            <img class="border" src="img/sandking_sand_storm.png" id="popover-lvl8" rel="popover" data-title="Level 8"> →
+              <div id="content-lvl8" class="hide">
+                <p>
+                  What's this? A point in SAND STORM? Why would we want that? Well
+                  if you haven't deviated from this lunatic guide yet then I might
+                  as well give you an explanation: it's to escape. At this point,
+                  level 8, you should almost certainly be getting your Blink, and
+                  now is the moment when you'll need Sand Storm not as a jungling
+                  tool but as an escape. After you Blink deep into the enemy team
+                  a time or two without Sand Storm, you'll stop going 4-0-4-1 or
+                  whatever it was Moo did one DC game recently. The extra damage
+                  from Caustic is amazing, and costs no mana, but you do need
+                  Sand Storm by around the time you have Blink.
+                </p>
+              </div><!--/.popover-content-->
+            <img class="border" src="img/sandking_caustic_finale.png" id="popover-lvl9" rel="popover" data-title="Level 9"> →
+              <div id="content-lvl9" class="hide">
+                <p>
+                  More Caustic means both faster jungling and more kill potential,
+                  so snap it up. Lane creeps are easy to blow up with one Burrow
+                  at this point, but the magic resistance and higher health pools
+                  of jungle creeps means it's way more efficient to utilize just
+                  W and E when jungling, if you decide to. With one point in Sand
+                  Storm you can certainly do any camp or stack you want to, but
+                  you'll have to stand there and take some damage while you apply
+                  Caustic if you want to do any stacked jungle camps.
+                </p>
+              </div><!--/.popover-content-->
+            <img class="border" src="img/sandking_caustic_finale.png" id="popover-lvl10" rel="popover" data-title="Level 10"> →
+              <div id="content-lvl10" class="hide">
+                <p>
+                  At level 10 you're nearing your absolute peak power, so feel
+                  free to be aggressive. If you're following this item build closely
+                  you'll also be getting Boots of Travel in here somewhere, giving
+                  you unparalleled map mobility and the ability to show up at
+                  every fight. Hint: you should. Sand King as a core hero is an
+                  investment that has to pay off for his team, especially if it's
+                  safelane or mid, and showing up at fights is the first step
+                  to that.
+                </p>
+              </div><!--/.popover-content-->
+            <img class="border" src="img/sandking_epicenter.png" id="popover-lvl11" rel="popover" data-title="Level 11"> →
+              <div id="content-lvl11" class="hide">
+                <p>
+                  Level 2 Epicenter isn't a huge boost in damage over level 1, but it
+                  is noticeable enough and it comes just as you max out Caustic Finale
+                  as well, giving you your peak magical damage relative to most other
+                  cores. This is when you and your teammates want to group up, look
+                  for objectives like tier 2 towers and Roshan, and look to take
+                  control of the map using Epi to outright win key fights.
+                </p>
+              </div><!--/.popover-content-->
+            <img class="border" src="img/sandking_sand_storm.png" id="popover-lvl12" rel="popover" data-title="Level 12"> ...
+              <div id="content-lvl12" class="hide">
+                <p>
+                  The skill build from this point onward is pretty self-explanatory,
+                  as additional points in Sand Storm will give you somewhat respectable
+                  added damage in fights but more important a nice, short cooldown escape.
+                  With max Sand Storm and Octarine you can use that sucker to disjoint
+                  projectiles every 7.5 seconds, making you one of the most elusive
+                  heroes of this kind in the game (right behind Puck).
+                </p>
+              </div><!--/.popover-content-->
+          </div><!--/.row-->
+          <div id="skills" class="row padded">
+            <h4>Dodge a Gank</h4>
+            <p>
+              For contested lanes or games with roaming enemy supports. Be prepared
+              to take Sandstorm earlier than level 4, so long as you're 1-1-2 at lvl 4.
+              Delay Epicenter until you get a Blink Dagger, unless there's a nearby
+              enemy squishy enough to surprise and kill with a pre-blink Epi.
+            </p>
+            <img class="border" src="img/sandking_caustic_finale.png" id="popover-lvl1-2" rel="popover" data-title="Level 1"> →
+              <div id="content-lvl1-2" class="hide">
+                <p>
+                  While the mechanics of this build don't differ much from the Lane
+                  King build, being flexible with your first point in Sand Storm does
+                  mean you also have the ability to jungle slightly earlier. Especially
+                  as a mid-lane Sand King this can pay off if you're able to burst
+                  down creep waves and then go stack for yourself, or have a support
+                  to stack for you.
+                </p>
+              </div><!--/.popover-content-->
+            <img class="border" src="img/sandking_burrowstrike.png" id="popover-lvl2-2" rel="popover" data-title="Level 2"> →
+              <div id="content-lvl2-2" class="hide">
+                <p>
+                  In the offlane or midlane you may find yourself getting ganked
+                  even as early as level 1. Usually if you're 1v1 in the safelane
+                  you can use your map awareness to detect any enemy rotations
+                  coming your way, but in the midlane and offlane specifically
+                  you're much more likely to be within range of an enemy support
+                  rotation pre-level 4. Taking Sand Storm as early as level 2
+                  will likely work out fine if you absolutely have to do it, but
+                  your kill potential compared to the Lane King build is drastically
+                  reduced if you are forced to compromise like this. With adequate
+                  Observer Wards and missing calls you should be able to just back
+                  off any time an enemy support goes missing (assuming they could kill
+                  you of course), allowing you to safely just take Sand Storm a little
+                  later such as at level 4.
+                </p>
+              </div><!--/.popover-content-->
+            <img class="border" src="img/sandking_caustic_finale.png" id="popover-lvl3-2" rel="popover" data-title="Level 3"> →
+              <div id="content-lvl3-2" class="hide">
+                <p>
+                  When it comes to burst damage at level 3, 1-0-2 is definitely the
+                  strongest you can get. 1-1-1 is a perfectly acceptable build though,
+                  and works in practically any situation. Just keep in mind that
+                  the extremely long cooldown of level 1 Sand Storm means that
+                  a smart opponent will make you waste it before the actual gank
+                  shows up, so you actually stand more to lose by taking Sand Storm
+                  and wasting it than by simply holding a skill point until you
+                  absolutely need it or simply investing in more harassment/farming
+                  with Caustic.
+                </p>
+              </div><!--/.popover-content-->
+            <img class="border" src="img/sandking_sand_storm.png" id="popover-lvl4-2" rel="popover" data-title="Level 4"> →
+              <div id="content-lvl4-2" class="hide">
+                <p>
+                  With 1-1-2 you become a somewhat reliable ganker and jungler
+                  besides your ability to lane aggressively, which means that if
+                  you're in the offlane and not enjoying yourself you can leave!
+                  Go find a gank on the enemy mid (use a Smoke!) or hit up that
+                  convenient new sidelane creep camp if you aren't getting much
+                  in lane somehow (for example, you're up against a trilane).
+                </p>
+              </div><!--/.popover-content-->
+            <img class="border" src="img/sandking_burrowstrike.png" id="popover-lvl5-2" rel="popover" data-title="Level 5"> →
+              <div id="content-lvl5-2" class="hide">
+                <p>
+                  At this point you want to return to your regularly scheduled
+                  programming by maxing Burrowstrike. Level 5 with 2-1-2 is
+                  nowhere near as strong as 3-0-2 or 2-0-3, but you'll find
+                  that you can likely still harass your opponent out of lane
+                  with a couple Burrow+Caustic combos. Especially if you're
+                  offlaning against the enemy's hard carry, don't be afraid
+                  to dump your remaining regen into some dangerous dives just
+                  to disrupt their farm at this point, especially if you aren't
+                  being bothered by the enemy supports enough to feel like you
+                  need to save that Sand Storm cooldown.
+                </p>
+              </div><!--/.popover-content-->
+            <img class="border" src="img/sandking_burrowstrike.png" id="popover-lvl6-2" rel="popover" data-title="Level 6"> →
+              <div id="content-lvl6-2" class="hide">
+                <p>
+                  Why would you want to skip Epicenter at level 6? Well, most of
+                  the time it's because you aren't going to be able to kill anyone
+                  with it anyway. As a rather long cooldown ultimate, however, the
+                  usual school of thought is that you want to use it as many times
+                  as you can throughout the game, so it's really up to you to decide
+                  if a level 6 gank with Epicenter but no Blink is going to work.
+                  If you do opt to skip it here, you're essentially committing to
+                  staying in lane until you finish Blink and get level 8.
+                </p>
+              </div><!--/.popover-content-->
+            <img class="border" src="img/sandking_burrowstrike.png" id="popover-lvl7-2" rel="popover" data-title="Level 7"> →
+              <div id="content-lvl7-2" class="hide">
+                <p>
+                  The main reason to max Burrowstrike is that you really want
+                  that maximum cast range, but the damage is nice too. With
+                  4-1-2-0 at level 7 you offer close to the maximum burst damage
+                  possible without using Epicenter, plus with your Sand Storm you
+                  actually have a way to survive any gank you go for, but in general
+                  this build is about static laning and flash-farming with some
+                  degree of safety. If you somehow end up getting Blink at level 7,
+                  before you get a skill point for Epicenter, you can still rotate
+                  around looking for ganks, but it also may be worth considering
+                  using your Level 1 Sand Storm and Caustic to jungle up one more
+                  level quietly so as to not reveal your Blink before you have Epi.
+                </p>
+              </div><!--/.popover-content-->
+            <img class="border" src="img/sandking_epicenter.png" id="popover-lvl8-2" rel="popover" data-title="Level 8"> →
+              <div id="content-lvl8-2" class="hide">
+                <p>
+                  It's pretty much always a good idea to pick up a Smoke of Deceit
+                  to send out on the courier with your Blink Dagger. Your first rotation
+                  is definitely the most important moment of the game for a Sand King,
+                  as it will set the tempo for your farming for the next 10 minutes
+                  and gives you an idea of what kind of itemization you want to go for.
+                  If you find that the first gank fails because your opponents are tanky,
+                  you may want to go straight into a Veil or Dagon. If you die because
+                  of enemy support rotations, you may want a Force Staff or Eul's next.
+                  If you succeed in killing 1 or 2 major targets and everything goes
+                  according to plan, Boots of Travel are the next purchase because they
+                  allow you to keep the pressure up AND find farm all over the map.
+                </p>
+              </div><!--/.popover-content-->
+            <img class="border" src="img/sandking_caustic_finale.png" id="popover-lvl9-2" rel="popover" data-title="Level 9"> →
+              <div id="content-lvl9-2" class="hide">
+                <p>
+                  After your first rotation you might even already have reached
+                  level 9 if you were successful, but either way you now most likely
+                  want to return to the lane you came from and keep farming. If you
+                  see easy pickoffs across the map or both teams are doing lots
+                  of fighting you likely want to be there instead, but as a Core Sand
+                  King keeping up your farm is what sets you apart from a support,
+                  and you'll farm considerably faster in lane than in the jungle.
+                  Just make sure to keep a vigilant eye on the mini-map at this point,
+                  as the fact that your lanes will have most likely collapsed means
+                  that supports and gankers will be roaming potentially anywhere and
+                  everywhere looking for opportunities to kill oblivious heroes
+                  standing in lane.
+                </p>
+              </div><!--/.popover-content-->
+            <img class="border" src="img/sandking_caustic_finale.png" id="popover-lvl10-2" rel="popover" data-title="Level 10"> →
+              <div id="content-lvl10-2" class="hide">
+                <p>
+                  Now that you have max Caustic, farming is that much easier
+                  plus you stand to deal an absolute truckload of damage with your
+                  Epicenter. Always keep in mind that you can potentially sting
+                  a few creeps with Caustic after you Blink in and before
+                  Burrow-stunning if there are no BKBs or heroes with mobility/defensive
+                  spells that you're trying to target. The slow from Epicenter
+                  helps with this too, just make sure you don't let anyone get
+                  away before Epicenter pulses explode those creeps for you!
+                </p>
+              </div><!--/.popover-content-->
+            <img class="border" src="img/sandking_epicenter.png" id="popover-lvl11-2" rel="popover" data-title="Level 11"> →
+              <div id="content-lvl11-2" class="hide">
+                <p>
+                  With level 2 Epicenter and maxed Caustic by level 11, this build
+                  completely maximizes your damage potential at this point. Level 11
+                  is an excellent timing for your first few aggressive pushes as a
+                  team, taking perhaps any tier 1/2 towers that might be in your way
+                  and Roshan. One good tip here in general is that Sand King is even
+                  better at counter-initiating than initiating, so when you're playing
+                  around an objective you can almost always afford to hang back, possibly
+                  in the trees, looking for the perfect moment to strike. Be patient
+                  with your first few Epicenters and you will be rewarded with an
+                  unstoppable snowball.
+                </p>
+              </div><!--/.popover-content-->
+            <img class="border" src="img/sandking_sand_storm.png" id="popover-lvl12-2" rel="popover" data-title="Level 12"> ...
+              <div id="content-lvl12-2" class="hide">
+                <p>
+                  The second point of Sand Storm and on are not really going to be
+                  used for farming the jungle at this point so much as to allow you
+                  to escape during teamfights and deal slightly more damage if you
+                  get the chance to Sand Storm on top of your Epi. Ultimately the
+                  damage from Sand Storm is slightly easier to get off in a teamfight
+                  than that of Caustic, but you're much more likely to be able to
+                  tap some creeps and casually catch enemy heroes with Caustic damage
+                  in early game teamfights, which tend to be less chaotic and easier
+                  to escape.
+                </p>
+              </div><!--/.popover-content-->
+          </div><!--/.row-->
+        </div><!--/.section-bg-->
+      </div><!--/.col-md-6-->
+      <div class="col-md-6">
+        <div class="section-bg">
+          <h2>Building</h2>
+          <div id="picks" class="row" style="padding: 0px 40px;">
+            
+          </div><!--/.row-->
+          <h2 style="margin-top: 4px;">Laning</h2>
+          <div class="row" style="padding-top: 8px; margin: 0 3% 0 3%;">
+            <h3 style="margin-top: 0;">Which Lane?</h3>
+            <p id="lanes">
+              Here are all of the recent professional Sand King LAN games,
+              which (almost) all happen to be core SK picks:<br>
+            </p>
+            <h4 style="margin: 8px 0;">Recent Pro Sand King Picks</h4>
+          </div><!--/.row-->
+        </div><!--/.section-bg-->
+      </div><!--/.col-md-6-->
+    </div><!--/.tab-pane-->
+    <div class="tab-pane text-center fade" id="video">
+      <div class="section-bg">
+        <p style="color:#f9f9f9;">Coming soon! Updates on Twitter</p>
+        <!--<div class="row text-center" style="padding: 0 24px 8px 24px;">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/c95ZpyN2W6Q"></iframe>
+          </div>
+        </div>-->
+      </div><!--/.section-bg-->
+    </div><!--/.video-->
+  </div><!--/.tab-content-->
+</div><!-- /.container -->
 
 <div id="footer" class="row text-center">
-  by <a href="https://www.reddit.com/user/freelance_fox/">/u/freelance_fox</a> • <a href="http://www.twitter.com/freelancedota">@freelancedota</a> • Last Updated 7/27/16
+  by <a href="https://www.reddit.com/user/freelance_fox/">/u/freelance_fox</a> • <a href="http://www.twitter.com/freelancedota">@freelancedota</a> • Last Updated 9/11/16
 </div><!--/.footer-->
 
   <script src="http://code.jquery.com/jquery-1.10.2.js"></script>

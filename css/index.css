@@ -42,10 +42,27 @@ ul { padding: 0; margin: 0; }
   background-color: rgba(255,255,255,0.3);
 }
 
+#skymage {
+  background-image: url('../img/skymage-header.png');
+  background-position: 50% 30%;
+  background-repeat: no-repeat;
+  background-color: #F8E8F5;
+}
+
+#skymage a {
+  color: rgba(35, 62, 75, 0.8);
+}
+
+#skymage a:hover,
+#skymage a:focus {
+  color: rgba(255, 255, 255, 0.8);
+}
+
 #sking {
   background-image: url('../img/header.png');
-  background-position: center;
+  background-position: 50% 33%;
   background-repeat: no-repeat;
+  background-color: #B18961;
 }
 
 #corevern {
@@ -54,3 +71,13 @@ ul { padding: 0; margin: 0; }
   background-position: center;
   background-repeat: no-repeat;
 }
+
+#corevern a {
+  color: rgba(48, 74, 70, 0.8);
+}
+
+#corevern a:hover,
+#corevern a:focus {
+  color: rgba(255, 255, 255, 0.8);
+}
+

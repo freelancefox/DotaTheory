@@ -146,7 +146,11 @@ h5 {
 }
 
 #builds > tr > td {
-  padding: 0px;
+  padding: 0;
+}
+
+tr:hover, tr:focus {
+  font-weight: bold;
 }
 
 .table {
@@ -432,6 +436,13 @@ h5 {
   display: inline-block;
 }
 
+#winratebars {
+  width: 90%;
+  height: 420px;
+  margin: 12px 0 4px 0;
+  display: inline-block;
+}
+
 #blast {
   width: 85%;
   height: 220px;
@@ -552,4 +563,10 @@ tbody tr:hover {
 
 .col-xs-offset-2-5 {
   margin-left: 20.83333333333%;
+}
+
+#tablehide:hover,
+#tablehide:focus {
+  font-weight: bold;
+  cursor: pointer;
 }

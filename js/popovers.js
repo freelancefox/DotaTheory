@@ -43,17 +43,47 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'top',
+      placement:'left',
       html: true,
       content: function() {
         return $('#content-sagesmask').html();
+      }
+  });
+   $('#popover-windlace').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'left',
+      html: true,
+      content: function() {
+        return $('#content-windlace').html();
+      }
+  });
+   $('#popover-blight').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'left',
+      html: true,
+      content: function() {
+        return $('#content-blight').html();
+      }
+  });
+   $('#popover-aghs').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'left',
+      html: true,
+      content: function() {
+        return $('#content-aghs').html();
       }
   });
    $('#popover-oov').popover({
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'top',
+      placement:'left',
       html: true,
       content: function() {
         return $('#content-oov').html();
@@ -63,7 +93,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'bottom',
+      placement:'left',
       html: true,
       content: function() {
         return $('#content-treads').html();
@@ -73,7 +103,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'bottom',
+      placement:'left',
       html: true,
       content: function() {
         return $('#content-phase').html();
@@ -133,20 +163,40 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'top',
+      placement:'left',
       html: true,
       content: function() {
         return $('#content-bots').html();
+      }
+  });
+   $('#popover-bots2').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'left',
+      html: true,
+      content: function() {
+        return $('#content-bots2').html();
       }
   });
    $('#popover-orchid').popover({
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'top',
+      placement:'left',
       html: true,
       content: function() {
         return $('#content-orchid').html();
+      }
+  });
+   $('#popover-bloodthorn').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'left',
+      html: true,
+      content: function() {
+        return $('#content-bloodthorn').html();
       }
   });
    $('#popover-necrobook').popover({
@@ -163,7 +213,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'top',
+      placement:'left',
       html: true,
       content: function() {
         return $('#content-refresher').html();
@@ -173,7 +223,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'top',
+      placement:'left',
       html: true,
       content: function() {
         return $('#content-blink').html();
@@ -183,7 +233,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'top',
+      placement:'left',
       html: true,
       content: function() {
         return $('#content-sheepstick').html();
@@ -199,11 +249,21 @@ jQuery(document).ready(function() {
         return $('#content-bkb').html();
       }
   });
+   $('#popover-desolator').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'left',
+      html: true,
+      content: function() {
+        return $('#content-desolator').html();
+      }
+  });
    $('#popover-daedalus').popover({
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'top',
+      placement:'left',
       html: true,
       content: function() {
         return $('#content-daedalus').html();
@@ -213,7 +273,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'top',
+      placement:'left',
       html: true,
       content: function() {
         return $('#content-mkb').html();
@@ -223,7 +283,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'top',
+      placement:'left',
       html: true,
       content: function() {
         return $('#content-moonshard').html();
@@ -233,7 +293,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'top',
+      placement:'left',
       html: true,
       content: function() {
         return $('#content-assault').html();
@@ -243,7 +303,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'top',
+      placement:'left',
       html: true,
       content: function() {
         return $('#content-mjollnir').html();
@@ -253,7 +313,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'top',
+      placement:'left',
       html: true,
       content: function() {
         return $('#content-skadi').html();
@@ -263,10 +323,30 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'top',
+      placement:'left',
       html: true,
       content: function() {
         return $('#content-glimmer').html();
+      }
+  });
+   $('#popover-dragon').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'left',
+      html: true,
+      content: function() {
+        return $('#content-dragon').html();
+      }
+  });
+   $('#popover-drum').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'left',
+      html: true,
+      content: function() {
+        return $('#content-drum').html();
       }
   });
    $('#popover-force').popover({
@@ -277,6 +357,16 @@ jQuery(document).ready(function() {
       html: true,
       content: function() {
         return $('#content-force').html();
+      }
+  });
+   $('#popover-hurricane').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'left',
+      html: true,
+      content: function() {
+        return $('#content-hurricane').html();
       }
   });
    $('#popover-pipe').popover({
@@ -293,7 +383,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'top',
+      placement:'left',
       html: true,
       content: function() {
         return $('#content-solar').html();
@@ -303,7 +393,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'top',
+      placement:'left',
       html: true,
       content: function() {
         return $('#content-lotus').html();
@@ -313,7 +403,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'top',
+      placement:'left',
       html: true,
       content: function() {
         return $('#content-linkens').html();
@@ -637,6 +727,26 @@ jQuery(document).ready(function() {
       html: true,
       content: function() {
         return $('#content-build3').html();
+      }
+  });
+   $('#popover-build4').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-build4').html();
+      }
+  });
+   $('#popover-build5').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-build5').html();
       }
   });
 });

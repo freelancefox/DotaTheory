@@ -533,6 +533,205 @@ $(function () {
   });
 });
 $(function () {
+  $('#winratebars').highcharts({
+
+    chart: {
+      type: 'column',
+      backgroundColor:'rgba(255,255,255,0.175)'
+    },
+
+    title: {
+      text: 'Sand King Winrate by Team & Role @ TI6 Main Event',
+      style: {
+        margin:'8px',
+        color:'#1D3E37',
+        fontSize:'15px',
+        fontWeight:'bold'
+      }
+    },
+
+    legend: {
+      enabled: true,
+      layout: 'horizontal',
+      align: 'center',
+      padding: 0,
+      floating: false,
+      itemStyle: {
+        fontSize: '9px',
+        fontWeight: 'normal'
+      }
+    },
+
+    xAxis: {
+      title: {
+        text: 'Role'
+      },
+      categories: ['1', '2', '3', '4', '5'],
+      labels: {
+        style: {
+          fontSize:'0.8em'
+        }
+      }
+    },
+
+    yAxis: {
+      allowDecimals: false,
+      min: -500,
+      max: 500,
+      tickInterval: 100,
+      title: {
+        text: 'Game Length in Minutes'
+      },
+      stackLabels: {
+        enabled: true,
+        formatter: function() {
+          var pct = 0;
+          var nct = 0;
+          var series = this.axis.series;
+
+          for (var i in series){
+            if (series[i].yData[this.x] > 0) { pct += 1; }
+            else { nct += 1; }
+          }
+          if (!this.isNegative) { return pct + " wins"; }
+          else { return nct + " losses"; }
+        },
+        style: {
+          fontSize:'0.65em',
+          color:'#1D3E37'
+        }
+      }
+    },
+
+    tooltip: {
+      headerFormat: '<b>{point.x}-pos SK by {series.name} {point.playername}:</b><br/>',
+      pointFormat: '{point.y} minute game vs. {point.opponent}<br><b>Blink Timing:</b> {point.blinktiming}'
+    },
+
+    credits: {
+      enabled: false
+    },
+
+    plotOptions: {
+      column: {
+        cursor: 'pointer',
+        stacking: 'normal',
+        dataLabels: {
+          enabled: false,
+          color:'#1D3E37'
+        },
+        point: {
+          events: {
+            click: function() { window.open(this.url); }
+          }
+        }
+      }
+    },
+
+    series: [{
+      name: 'Liquid',
+      color: '#6EB1DB',
+      data: [0, 0, {
+        playername: 'MinD_ControL',
+        y: -54.28,
+        opponent: 'Newbee',
+        blinktiming: '12:41',
+        url: 'http://www.dotabuff.com/matches/2562303634'
+      }, 0, 0]
+    }, {
+      name: 'Liquid',
+      linkedTo: ':previous',
+      color: '#6EB1DB',
+      data: [0, 0, {
+        playername: 'MinD_ControL',
+        y: 17.32,
+        opponent: 'Newbee',
+        blinktiming: '13:16',
+        url: 'http://www.dotabuff.com/matches/2562388622'
+      }, 0, 0]
+    }, {
+      name: 'Liquid',
+      linkedTo: ':previous',
+      color: '#6EB1DB',
+      data: [0, 0, {
+        playername: 'MinD_ControL',
+        y: -40.17,
+        opponent: 'Fnatic',
+        blinktiming: '16:08',
+        url: 'http://www.dotabuff.com/matches/2564485350'
+      }, 0, 0]
+    }, {
+      name: 'EHOME',
+      color: '#414141',
+      data: [0, 0, {
+        playername: 'Old EleveN',
+        y: 39.95,
+        opponent: 'MVP.Phoenix',
+        blinktiming: '12:31',
+        url: 'http://www.dotabuff.com/matches/2549498173'
+      }, 0, 0]
+    }, {
+      name: 'EHOME',
+      linkedTo: ':previous',
+      color: '#414141',
+      data: [0, 0, {
+        playername: 'Old EleveN',
+        y: 45.92,
+        opponent: 'Secret',
+        blinktiming: '12:31',
+        url: 'http://www.dotabuff.com/matches/2549431849'
+      }, 0, 0]
+    }, {
+      name: 'EHOME',
+      linkedTo: ':previous',
+      color: '#414141',
+      data: [0, 0, {
+        playername: 'Old EleveN',
+        y: 49.87,
+        opponent: 'Liquid',
+        blinktiming: '11:55',
+        url: 'http://www.dotabuff.com/matches/2547593329'
+      }, 0, 0]
+    }, {
+      name: 'EHOME',
+      linkedTo: ':previous',
+      color: '#414141',
+      data: [0, 0, {
+        playername: 'Old EleveN',
+        y: 36.88,
+        opponent: 'Alliance',
+        blinktiming: '9:10',
+        url: 'http://www.dotabuff.com/matches/2560069057'
+      }, 0, 0]
+    }, {
+      name: 'EHOME',
+      linkedTo: ':previous',
+      color: '#414141',
+      data: [0, 0, {
+        playername: 'Old EleveN',
+        y: 36.33,
+        opponent: 'Alliance',
+        blinktiming: '14:52',
+        url: 'http://www.dotabuff.com/matches/2559987699'
+      }, 0, 0]
+    }, {
+      name: 'EHOME',
+      linkedTo: ':previous',
+      color: '#414141',
+      data: [0, 0, {
+        playername: 'Old EleveN',
+        y: -45.43,
+        opponent: 'DC',
+        blinktiming: '11:30',
+        url: 'http://www.dotabuff.com/matches/2551542175'
+      }, 0, 0]
+    }
+
+
+    ]
+  });
+});
+$(function () {
   $('#blast2').highcharts({
 
     chart: {

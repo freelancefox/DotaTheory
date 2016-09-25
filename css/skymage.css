@@ -544,6 +544,10 @@ h5 {
   padding: 0;
 }
 
+#hskills .col-md-8 {
+  margin-top: 18px;
+}
+
 #hskills .col-md-4 > img {
   margin-top: 24px;
 }

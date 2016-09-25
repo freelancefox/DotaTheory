@@ -16,7 +16,7 @@ $(function () {
       text: 'Initiation Range',
       style: {
         margin:'8px',
-        color:'#1D3E37',
+        color:'#292018',
         fontSize:'15px',
         fontWeight:'bold'
       }
@@ -63,7 +63,7 @@ $(function () {
         enabled: true,
         style: {
           fontSize:'0.75em',
-          color:'#1D3E37'
+          color:'#292018'
         }
       }
     },
@@ -82,7 +82,7 @@ $(function () {
         stacking: 'normal',
         dataLabels: {
           enabled: true,
-          color:'#1D3E37'
+          color:'#292018'
         }
       }
     },
@@ -108,7 +108,7 @@ $(function () {
       text: 'Uptime',
       style: {
         margin:'8px',
-        color:'#1D3E37',
+        color:'#292018',
         fontSize:'15px',
         fontWeight:'bold'
       }
@@ -156,7 +156,7 @@ $(function () {
         enabled: true,
         style: {
           fontSize:'0.75em',
-          color:'#1D3E37'
+          color:'#292018'
         }
       }
     },
@@ -175,7 +175,7 @@ $(function () {
         stacking: 'normal',
         dataLabels: {
           enabled: true,
-          color:'#1D3E37'
+          color:'#292018'
         }
       }
     },
@@ -204,7 +204,7 @@ $(function () {
       text: 'Total Damage Output',
       style: {
         margin:'8px',
-        color:'#1D3E37',
+        color:'#292018',
         fontSize:'15px',
         fontWeight:'bold'
       }
@@ -256,7 +256,7 @@ $(function () {
         enabled: true,
         style: {
           fontSize:'0.75em',
-          color:'#1D3E37'
+          color:'#292018'
         }
       }
     },
@@ -275,7 +275,7 @@ $(function () {
         stacking: 'normal',
         dataLabels: {
           enabled: true,
-          color:'#1D3E37'
+          color:'#292018'
         }
       },
       series: {
@@ -317,7 +317,7 @@ $(function () {
       margin: 0,
       text: 'DPS Increase per Item',
       style: {
-        color:'#1D3E37',
+        color:'#292018',
         fontSize:'15px',
         fontWeight:'bold'
       }
@@ -411,7 +411,7 @@ $(function () {
       column: {
         dataLabels: {
           enabled: true,
-          color:'#1D3E37'
+          color:'#292018'
         }
       }
     },
@@ -447,7 +447,7 @@ $(function () {
       text: 'Burrow + Caustic Damage per Level',
       style: {
         margin:'8px',
-        color:'#1D3E37',
+        color:'#292018',
         fontSize:'15px',
         fontWeight:'bold'
       }
@@ -476,7 +476,7 @@ $(function () {
       max: '900',
       style: {
         fontSize:'0.75em',
-        color:'#1D3E37'
+        color:'#292018'
       },
       title: {
         text: null
@@ -541,16 +541,17 @@ $(function () {
     },
 
     title: {
-      text: 'Sand King Winrate by Team & Role @ TI6 Main Event',
+      text: 'Sand King Winrate by Team & Role at TI6',
       style: {
         margin:'8px',
-        color:'#1D3E37',
+        color:'#292018',
         fontSize:'15px',
         fontWeight:'bold'
       }
     },
 
     legend: {
+      color:'#292018',
       enabled: true,
       layout: 'horizontal',
       align: 'center',
@@ -564,7 +565,10 @@ $(function () {
 
     xAxis: {
       title: {
-        text: 'Role'
+        text: 'Role',
+        style: {
+          color:'#292018'
+        }
       },
       categories: ['1', '2', '3', '4', '5'],
       labels: {
@@ -576,11 +580,14 @@ $(function () {
 
     yAxis: {
       allowDecimals: false,
-      min: -500,
-      max: 500,
+      min: -400,
+      max: 800,
       tickInterval: 100,
       title: {
-        text: 'Game Length in Minutes'
+        text: 'Game Length in Minutes',
+        style: {
+          color:'#292018'
+        }
       },
       stackLabels: {
         enabled: true,
@@ -591,21 +598,21 @@ $(function () {
 
           for (var i in series){
             if (series[i].yData[this.x] > 0) { pct += 1; }
-            else { nct += 1; }
+            else if (series[i].yData[this.x] < 0) { nct += 1; }
           }
           if (!this.isNegative) { return pct + " wins"; }
           else { return nct + " losses"; }
         },
         style: {
           fontSize:'0.65em',
-          color:'#1D3E37'
+          color:'#292018'
         }
       }
     },
 
     tooltip: {
-      headerFormat: '<b>{point.x}-pos SK by {series.name} {point.playername}:</b><br/>',
-      pointFormat: '{point.y} minute game vs. {point.opponent}<br><b>Blink Timing:</b> {point.blinktiming}'
+      headerFormat: '<b>{point.x}-pos SK by {series.name}',
+      pointFormat: '.{point.playername}:</b><br/> {point.y} minute game vs. {point.opponent}<br><b>Blink Timing:</b> {point.blinktiming}'
     },
 
     credits: {
@@ -618,7 +625,7 @@ $(function () {
         stacking: 'normal',
         dataLabels: {
           enabled: false,
-          color:'#1D3E37'
+          color:'#292018'
         },
         point: {
           events: {
@@ -725,8 +732,229 @@ $(function () {
         blinktiming: '11:30',
         url: 'http://www.dotabuff.com/matches/2551542175'
       }, 0, 0]
+    }, {
+      name: 'EHOME',
+      linkedTo: ':previous',
+      color: '#414141',
+      data: [0, 0, {
+        playername: 'Old EleveN',
+        y: -31.87,
+        opponent: 'DC',
+        blinktiming: '15:30',
+        url: 'http://www.dotabuff.com/matches/2564619977'
+      }, 0, 0]
+    }, {
+      name: 'Na\'vi',
+      color: '#FFF200',
+      data: [0, 0, {
+        playername: 'General',
+        y: 34.08,
+        opponent: 'Wings',
+        blinktiming: '20:54',
+        url: 'http://www.dotabuff.com/matches/2551023876'
+      }, 0, 0]
+    }, {
+      name: 'Na\'vi',
+      linkedTo: ':previous',
+      color: '#FFF200',
+      data: [0, 0, {
+        playername: 'General',
+        y: 15.47,
+        opponent: 'Wings',
+        blinktiming: '12:48',
+        url: 'http://www.dotabuff.com/matches/2550962469'
+      }, 0, 0]
+    }, {
+      name: 'Wings',
+      color: '#d4d0d4',
+      data: [0, 0, {
+        playername: 'Faith_bian',
+        y: 23.90,
+        opponent: 'LGD',
+        blinktiming: '10:17',
+        url: 'http://www.dotabuff.com/matches/2551226728'
+      }, 0, {
+        playername: 'iceice',
+        y: 40.67,
+        opponent: 'DC',
+        blinktiming: '22:04',
+        url: 'http://www.dotabuff.com/matches/2569470828'
+      }]
+    }, {
+      name: 'Wings',
+      linkedTo: ':previous',
+      color: '#d4d0d4',
+      data: [0, 0, {
+        playername: 'Faith_bian',
+        y: 20.58,
+        opponent: 'LGD',
+        blinktiming: '14:09',
+        url: 'http://www.dotabuff.com/matches/2551167223'
+      }, 0, {
+        playername: 'iceice',
+        y: 34.88,
+        opponent: 'EG',
+        blinktiming: '18:11',
+        url: 'http://www.dotabuff.com/matches/2546938575'
+      }]
+    }, {
+      name: 'DC',
+      color: '#242054',
+      data: [0, 0, {
+        playername: 'Moo',
+        y: 48.80,
+        opponent: 'VG.R',
+        blinktiming: '16:28',
+        url: 'http://www.dotabuff.com/matches/2549312032'
+      }, {
+        playername: 'Misery',
+        y: 45.48,
+        opponent: 'Wings',
+        blinktiming: '23:32',
+        url: 'http://www.dotabuff.com/matches/2569531910'
+      }, 0]
+    }, {
+      name: 'DC',
+      linkedTo: ':previous',
+      color: '#242054',
+      data: [0, 0, {
+        playername: 'Moo',
+        y: 54.65,
+        opponent: 'Complexity',
+        blinktiming: '10:40',
+        url: 'http://www.dotabuff.com/matches/2468766885'
+      }, {
+        playername: 'Misery',
+        y: 28.23,
+        opponent: 'TNC',
+        blinktiming: '15:37',
+        url: 'http://www.dotabuff.com/matches/2564408925'
+      }, 0]
+    }, {
+      name: 'Escape',
+      color: '#E7853E',
+      data: [0, 0, {
+        playername: 'KheZzu',
+        y: 76.95,
+        opponent: 'Alliance',
+        blinktiming: '8:44',
+        url: 'http://www.dotabuff.com/matches/2550971502'
+      }, 0, 0]
+    }, {
+      name: 'Execration',
+      color: '#887868',
+      data: [0, 0, {
+        playername: 'RR',
+        y: -18.80,
+        opponent: 'Escape',
+        blinktiming: '14:27',
+        url: 'http://www.dotabuff.com/matches/2545445798'
+      }, 0, 0]
+    }, {
+      name: 'Execration',
+      linkedTo: ':previous',
+      color: '#887868',
+      data: [0, 0, {
+        playername: 'RR',
+        y: 23.55,
+        opponent: 'Complexity',
+        blinktiming: '11:01',
+        url: 'http://www.dotabuff.com/matches/2545251072'
+      }, 0, 0]
+    }, {
+      name: 'Secret',
+      color: '#000000',
+      data: [0, 0, {
+        playername: 'Bulba',
+        y: 61.50,
+        opponent: 'DC',
+        blinktiming: '14:21',
+        url: 'http://www.dotabuff.com/matches/2549658092'
+      }, 0, 0]
+    }, {
+      name: 'Secret',
+      color: '#000000',
+      linkedTo: ':previous',
+      data: [0, 0, {
+        playername: 'Bulba',
+        y: 29.88,
+        opponent: 'MVP.Phoenix',
+        blinktiming: '11:30',
+        url: 'http://www.dotabuff.com/matches/2547598732'
+      }, 0, 0]
+    }, {
+      name: 'Secret',
+      color: '#000000',
+      linkedTo: ':previous',
+      data: [0, 0, {
+        playername: 'Bulba',
+        y: 35.38,
+        opponent: 'VG.R',
+        blinktiming: '13:32',
+        url: 'http://www.dotabuff.com/matches/2547405264'
+      }, 0, 0]
+    }, {
+      name: 'EG',
+      color: '#2E6797',
+      data: [0, {
+        playername: 'Sumail',
+        y: -38.43,
+        opponent: 'Wings',
+        blinktiming: '11:30',
+        url: 'http://www.dotabuff.com/matches/2566725198'
+      }, 0, 0, 0]
+    }, {
+      name: 'TNC',
+      color: '#FF5300',
+      data: [0, {
+        playername: 'kuku',
+        y: -35.38,
+        opponent: 'Alliance',
+        blinktiming: '15:13',
+        url: 'http://www.dotabuff.com/matches/2546935618'
+      }, 0, 0, 0]
+    }, {
+      name: 'Fnatic',
+      color: '#F39E2D',
+      data: [0, 0, {
+        playername: 'Ohaiyo',
+        y: 47.52,
+        opponent: 'MVP.Phoenix',
+        blinktiming: '10:09',
+        url: 'http://www.dotabuff.com/matches/2566482748'
+      }, 0, 0]
+    }, {
+      name: 'Fnatic',
+      color: '#F39E2D',
+      linkedTo: ':previous',
+      data: [0, 0, {
+        playername: 'Ohaiyo',
+        y: 54.87,
+        opponent: 'Liquid',
+        blinktiming: '11:52',
+        url: 'http://www.dotabuff.com/matches/2564547149'
+      }, 0, 0]
+    }, {
+      name: 'Newbee',
+      color: '#1F88C9',
+      data: [0, 0, {
+        playername: 'kpii',
+        y: -70.70,
+        opponent: 'EG',
+        blinktiming: '12:28',
+        url: 'http://www.dotabuff.com/matches/2560226228'
+      }, 0, 0]
+    }, {
+      name: 'Complexity',
+      color: '#DD2631',
+      data: [0, 0, {
+        playername: 'Swindlez',
+        y: -26.93,
+        opponent: 'Execration',
+        blinktiming: '11:17',
+        url: 'http://www.dotabuff.com/matches/2545299883'
+      }, 0, 0]
     }
-
 
     ]
   });
@@ -743,7 +971,7 @@ $(function () {
       text: 'Top AoE Nukes by DPS',
       style: {
         margin:'8px',
-        color:'#1D3E37',
+        color:'#292018',
         fontSize:'15px',
         fontWeight:'bold'
       }
@@ -784,7 +1012,7 @@ $(function () {
       max: '110',
       style: {
         fontSize:'0.75em',
-        color:'#1D3E37'
+        color:'#292018'
       },
       title: {
         text: null
@@ -827,7 +1055,7 @@ $(function () {
       text: 'Top AoE Nukes by DPS',
       style: {
         margin:'8px',
-        color:'#1D3E37',
+        color:'#292018',
         fontSize:'15px',
         fontWeight:'bold'
       }
@@ -868,7 +1096,7 @@ $(function () {
       max: '110',
       style: {
         fontSize:'0.75em',
-        color:'#1D3E37'
+        color:'#292018'
       },
       title: {
         text: null
@@ -911,7 +1139,7 @@ $(function () {
       text: 'Top AoE Nukes by DPS',
       style: {
         margin:'8px',
-        color:'#1D3E37',
+        color:'#292018',
         fontSize:'15px',
         fontWeight:'bold'
       }
@@ -952,7 +1180,7 @@ $(function () {
       max: '110',
       style: {
         fontSize:'0.75em',
-        color:'#1D3E37'
+        color:'#292018'
       },
       title: {
         text: null
@@ -995,7 +1223,7 @@ $(function () {
       text: 'BKB-piercing Disable Ranges',
       style: {
         margin:'8px',
-        color:'#1D3E37',
+        color:'#292018',
         fontSize:'15px',
         fontWeight:'bold'
       }
@@ -1030,7 +1258,7 @@ $(function () {
       max: '3000',
       style: {
         fontSize:'0.75em',
-        color:'#1D3E37'
+        color:'#292018'
       },
       title: {
         text: null
@@ -1086,7 +1314,7 @@ $(function () {
       text: 'TI5',
       style: {
         margin:'4px',
-        color:'#1D3E37',
+        color:'#292018',
         fontSize:'15px',
         fontWeight:'bold'
       }
@@ -1147,7 +1375,7 @@ $(function () {
       text: 'Predicted',
       style: {
         margin:'4px',
-        color:'#1D3E37',
+        color:'#292018',
         fontSize:'15px',
         fontWeight:'bold'
       }

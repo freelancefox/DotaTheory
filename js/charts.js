@@ -3,14 +3,15 @@ $(function () {
 
     chart: {
       type: 'column',
+      marginBottom: 80,
       backgroundColor:'rgba(255,255,255,0.175)'
     },
 
 
     title: {
       text: 'Total Base Stats',
+      margin: 0,
       style: {
-        margin:'8px',
         color:'#1D3E37',
         fontSize:'15px',
         fontWeight:'bold'
@@ -23,9 +24,11 @@ $(function () {
         'Outworld Devourer',
         'Bane',
         'Meepo',
+        'Silencer',
         'Bloodseeker',
         'Leshrac',
         '<b>Winter Wyvern</b>',
+        'Storm Spirit',
         'Riki'],
       labels: {
         style: {
@@ -68,6 +71,7 @@ $(function () {
         stacking: 'normal',
         dataLabels: {
           enabled: true,
+          fontSize:'0.75em',
           color:'#1D3E37'
         }
       }
@@ -75,13 +79,13 @@ $(function () {
 
     series: [{
       name: 'Intelligence',
-      data: [21, 26, 22, 20, 18, 26, 25, 14]
+      data: [21, 26, 22, 20, 27, 18, 26, 25, 24, 14]
     }, {
       name: 'Strength',
-      data: [21, 19, 22, 23, 23, 16, 24, 17]
+      data: [21, 19, 22, 23, 17, 23, 16, 24, 19, 17]
     }, {
       name: 'Agility',
-      data: [29, 24, 22, 23, 24, 23, 16, 34]
+      data: [29, 24, 22, 23, 22, 24, 23, 16, 22, 34]
     }]
   });
 });
@@ -90,13 +94,14 @@ $(function () {
 
     chart: {
       type: 'column',
+      marginBottom: 80,
       backgroundColor:'rgba(255,255,255,0.175)'
     },
 
     title: {
       text: 'Total Stat Growths',
+      margin: 0,
       style: {
-        margin:'8px',
         color:'#1D3E37',
         fontSize:'15px',
         fontWeight:'bold'
@@ -106,14 +111,18 @@ $(function () {
     xAxis: {
       categories: [
         'Silencer',
-        'Vengeful Spirit',
-        'Invoker',
-        'Outworld Devourer',
         'Centaur Warrunner',
+        'Invoker',
+        'Vengeful Spirit',
+        'Luna',
+        'Naga Siren',
+        'Morphling',
         'Ogre Magi',
         'Treant Protector',
         '<b>Winter Wyvern</b>',
-        'Naga Siren'],
+        'Bloodseeker',
+        'Magnus',
+        'Outworld Devourer'],
       labels: {
         style: {
           fontSize:'0.8em'
@@ -155,6 +164,7 @@ $(function () {
         stacking: 'normal',
         dataLabels: {
           enabled: true,
+          fontSize:'0.75em',
           color:'#1D3E37'
         }
       }
@@ -162,13 +172,13 @@ $(function () {
 
     series: [{
       name: 'Intelligence',
-      data: [2.5, 1.75, 4, 3.3, 1.6, 2.4, 1.8, 3.1, 1.95]
+      data: [2.5, 1.6, 4, 1.5, 1.85, 1.95, 1.5, 2.4, 1.8, 3.1, 1.7, 1.65, 2.7]
     }, {
       name: 'Strength',
-      data: [2.2, 2.6, 1.7, 2.3, 3.8, 3.2, 3.3, 2.1, 2.3]
+      data: [2.2, 4, 1.7, 2.6, 2.2, 2.5, 2, 3.2, 3.3, 2.1, 2.4, 2.9, 2.3]
     }, {
       name: 'Agility',
-      data: [3, 3.3, 1.9, 2, 2, 1.55, 2, 1.9, 2.75]
+      data: [3, 2, 1.9, 3.3, 3.3, 2.75, 3.7, 1.55, 2, 1.9, 3, 2.5, 2]
     }]
   });
 });
@@ -177,13 +187,14 @@ $(function () {
 
     chart: {
       type: 'column',
+      marginBottom: 80,
       backgroundColor:'rgba(255,255,255,0.175)'
     },
 
     title: {
       text: 'Top AoE Nukes by DPS',
+      margin: 0,
       style: {
-        margin:'8px',
         color:'#1D3E37',
         fontSize:'15px',
         fontWeight:'bold'
@@ -196,11 +207,12 @@ $(function () {
 
     xAxis: {
       categories: [
-        'Arc Lightning',
         'Shadowraze',
-        'Crypt Swarm',
+        'Arc Lightning',
         'Static Remnant',
         'Nether Blast',
+        'Crypt Swarm',
+        'Anchor Smash',
         'Timber Chain',
         'Lightning Storm',
         'Illuminate',
@@ -211,7 +223,8 @@ $(function () {
         'Shockwave',
         'Whirling Death',
         'Ether Shock',
-        'Powershot'],
+        'Powershot',
+        'Dragon Slave'],
       useHTML: 'true',
       labels: {
         style: {
@@ -234,8 +247,12 @@ $(function () {
 
     tooltip: {
       formatter: function () {
-        return '<b>' + this.x + '</b><br/>' +
-          this.series.name + ': ' + this.y;
+        return '<b>' + this.x + '<br>' +
+          this.point.hero + '</b><br/>' +
+          this.series.name + ': ' + this.y +
+          '<br/>Damage: ' + this.point.damage +
+          '<br/>Cooldown: ' + this.point.cooldown +
+          '<br/>Manacost: ' + this.point.manacost;
       }
     },
 
@@ -252,7 +269,133 @@ $(function () {
     series: [{
       name: 'DPS',
       type: 'column',
-      data: [109.3, 97.5, 75, 74.3, 59.1, 55, 50, 50, 50, 48.6, 48, 42.9, 42.9, 41.7, 40, 40]
+      data: [{y: 97.5,
+              color: '#450500',
+              hero: 'Shadow Fiend',
+              damage: '325*3',
+              cooldown: 10,
+              manacost: '90*3'
+             },
+             {y: 90.6,
+              color: '#C3FAFC',
+              hero: 'Zeus',
+              damage: 145,
+              cooldown: 1.6,
+              manacost: 80
+             },
+
+             {y: 74.3,
+              color: '#2470A7',
+              hero: 'Storm Spirit',
+              damage: 260,
+              cooldown: 3.5,
+              manacost: 100
+             },
+             {y: 65,
+              color: '#AFC932',
+              hero: 'Pugna',
+              damage: 325,
+              cooldown: 5,
+              manacost: 145
+             },
+             {y: 60,
+              color: '#85E2AC',
+              hero: 'Death Prophet',
+              damage: 300,
+              cooldown: 5,
+              manacost: 165
+             },
+             {y: 56.25,
+              color: '#568A7C',
+              hero: 'Tidehunter',
+              damage: 225,
+              cooldown: 4,
+              manacost: 60
+             },
+             {y: 55,
+              color: '#7A4B18',
+              hero: 'Timbersaw',
+              damage: 220,
+              cooldown: 4,
+              manacost: 90
+             },
+             {y: 50,
+              color: '#FF36FF',
+              hero: 'Leshrac',
+              damage: 200,
+              cooldown: 4,
+              manacost: 120
+             },
+             {y: 50,
+              color: '#FEFDE1',
+              hero: 'Keeper of the Light',
+              damage: 500,
+              cooldown: 10,
+              manacost: 180
+             },
+             {y: 50,
+              color: '#144661',
+              hero: 'Slark',
+              damage: 300,
+              cooldown: 6,
+              manacost: 40
+             },
+             {y: 48.6,
+              color: '#76E1FD',
+              hero: 'Winter Wyvern',
+              damage: 340,
+              cooldown: 7,
+              manacost: 150
+             },
+             {y: 48,
+              color: '#FDE00B',
+              hero: 'Ursa',
+              damage: 240,
+              cooldown: 5,
+              manacost: 75
+             },
+             {y: 42.9,
+              color: '#E55D77',
+              hero: 'Queen of Pain',
+              damage: 300,
+              cooldown: 7,
+              manacost: 140
+             },
+             {y: 42.9,
+              color: '#099ECA',
+              hero: 'Magnus',
+              damage: 300,
+              cooldown: 7,
+              manacost: 90
+             },
+             {y: 41.7,
+              color: '#7A4B18',
+              hero: 'Timbersaw',
+              damage: 250,
+              cooldown: 6,
+              manacost: 70
+             },
+             {y: 40,
+              color: '#F3B515',
+              hero: 'Shadow Shaman',
+              damage: 320,
+              cooldown: 8,
+              manacost: 160
+             },
+             {y: 40,
+              color: '#45815D',
+              hero: 'Windranger',
+              damage: 360,
+              cooldown: 9,
+              manacost: 120
+             },
+             {y: 40,
+              color: '#F49F35',
+              hero: 'Lina',
+              damage: 320,
+              cooldown: 8,
+              manacost: 145
+             }]
     }]
   });
 });

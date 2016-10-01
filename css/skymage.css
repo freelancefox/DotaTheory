@@ -4,13 +4,20 @@ body {
   color: #191919;
 }
 
-a {
-  color: #6e4926;
-}
-
-a:hover {
+a { color: #9BC1DF; }
+a:focus, a:hover {
   text-decoration: none;
-  color: #f9f9f9;
+  color: #233E4B;
+}
+.btn-default:hover a,
+.btn-default:focus a {
+  color: #233E4B;
+}
+.btn-default:hover,
+.btn-default:focus {
+  color: #233E4B;
+  background-color: rgba(255,255,255,0.35);
+  text-decoration: none;
 }
 
 #footer {
@@ -52,10 +59,6 @@ a:hover {
   color: #F9F9F9;
   text-shadow: 2px 2px 0 #233e4b;
   font-weight: 500;
-}
-
-#footer > a {
-  color: #9bc1df;
 }
 
 .position-header {
@@ -389,7 +392,6 @@ h5 {
 #skills > img {
   margin-top: 8px;
   margin-bottom: 8px;
-  height: 40px;
   width: 40px;
 }
 
@@ -434,24 +436,6 @@ h5 {
   display: inline-block;
 }
 
-#blast {
-  width: 85%;
-  height: 220px;
-  margin: 12px auto 12px auto;
-}
-
-#curse {
-  width: 85%;
-  height: 180px;
-  margin: 8px auto;
-}
-
-#current, #predicted {
-  width: 40%;
-  height: 130px;
-  margin: 0 auto 8px auto;
-  display: inline-block;
-}
 
 #extension > div {
   padding: 0;
@@ -545,7 +529,7 @@ h5 {
 }
 
 #hskills .col-md-8 {
-  margin-top: 18px;
+  margin-top: 12px;
 }
 
 #hskills .col-md-4 > img {
@@ -559,3 +543,29 @@ tbody tr:hover {
 .col-xs-offset-2-5 {
   margin-left: 20.83333333333%;
 }
+
+#navigation {
+  padding: 8px 30px 0 30px;
+}
+
+.navbar-default {
+  background-color: rgba(255,255,255,00);
+  padding: 0;
+  border: 0;
+}
+
+.btn-default {
+  background-color: rgba(255,255,255,0.35);
+  border: 0;
+  font-weight: 500;
+}
+
+.btn-default:active:hover,
+.btn-default:hover,
+.btn-default:active {
+  background-color: rgba(255,255,255,0.35);
+}
+
+.btn:active:focus,
+.btn:focus { outline: 0; }
+

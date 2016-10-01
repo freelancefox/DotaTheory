@@ -9,6 +9,18 @@
 </head>
 
 <body>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div id="navigation" class="row text-center">
+    <button class="btn btn-default pull-left header-hide">
+      <a href="index.html">< INDEX</a>
+    </button>
+    <button class="btn btn-default pull-right">
+      <a id="top">^ TOP</a>
+    </button>
+  </div><!--/.row-->
+</nav>
+
+  <!--<div id="top-spacer"></div>-->
   <div id="header" class="row text-center">
     <div class="position-header">
       <h1 id="title">COREVERN</h1>
@@ -16,18 +28,258 @@
       <!--<p>Updated for 6.89!</p>-->
     </div>
   </div><!--/.header-->
-  <div class="container">
-    <div class="row text-center" style="padding: 0 24px 8px 24px;">
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/c95ZpyN2W6Q"></iframe>
-      </div><!--/.embed-responsive-->
-    </div><!--/.row-->
-    <div class="row text-center">
+  <ul id="tabs" class="nav nav-tabs">
+    <li><a href="#intro" data-toggle="tab">Intro</a></li>
+    <li class="active"><a href="#guide" data-toggle="tab">Guide</a></li>
+    <li><a href="#video" data-toggle="tab">Video</a></li>
+  </ul>
+<div class="container">
+  <div class="tab-content">
+    <div class="tab-pane text-center fade" id="intro">
+      <div class="col-md-6">
+        <div class="section-bg">
+          <h2>Intro</h2>
+          <div class="row">
+            <h3 style="padding: 4px 0 8px 0;">About</h3>
+            <div class="row padded">
+              This page chronicles my attempts to utilize Winter Wyvern as
+              as core hero—an idea that I think has merit competitively
+              because it would give the hero a new edge in drafting. While
+              she may never be stronger as a core than as a support, I think
+              there will definitely be a point, whether through meta
+              shifts, new item builds, or buffs/reworks, where Wyvern will
+              be used as a core commonly. Maybe that time is now. I aim to
+              constantly update this guide as Wyvern and the meta change.
+              If there's one thing to remember here: don't try to shoehorn
+              a Corevern into just any lineup! Half the effectiveness of Corevern
+              is its drafting possibilities, including surprising your
+              opponents and picking insane cheese strategies like Drow, Troll
+              Warlord, Bloodseeker, etc.
+            </div><!--/.row-->
+            <h3 style="padding: 8px 0;">For New Players</h3>
+            <div class="row padded" style="padding-bottom: 4px;">
+              Wyvern herself is a somewhat tough hero to learn—her E and ultimate
+              are both unforgiving spells—but the upsides of the hero, especially
+              as a core, are vast. I would highly recommend learning to play the
+              hero traditionally (as a support) first. Once you have a couple games
+              of that under your belt, picking up Corevern is a lot more like
+              learning to play any regular mid hero with a long ranged attack, a
+              bit like Sniper, Shadow Fiend, etc. If you're looking to offlane with
+              her, playing offlane Wyvern is a bit like offlane Phantom Assassin or
+              Rubick (which both really aren't a thing, but those are the closest:
+              use a spell to CS at range while staying barely in experience range).
+            </div><!--/.row-->
+          </div><!--/.row-->
+          <h2 style="margin-top: 8px;">Hero Info</h2>
+          <h3>Auroth, the Winter Wyvern</h3>
+          <h4>Radiant, Intelligence</h4>
+          <img src="img/Winter_Wyvern.png"></img>
+          <h5 style="color:#304A46;padding-top:4px;">Support / Disabler / Nuker</h5>
+          <div id="lore" class="row padded">
+            <h4>Description</h4>
+            <p>
+              Auroth the Winter Wyvern is primarily played as a support, but
+              thanks to her versatile kit—utility, spell damage, and even physical
+              damage with some items—she can really fill any role the team needs.
+              She really doesn't <i>need</i> items to play an effective, though
+              sacrificial, 5-position support, but with proper itemization can
+              become a fearsome damage dealer from any other role. Plus she has
+              the longest attack range in the game and a very long range on her
+              spells as well: Her Q, Arctic Burn, is a temporary steroid that's
+              that long attack range, burns away enemy health and provides a
+              free Eye of Skadi-like slow effect, combined with flying movement
+              like Batrider's Firefly (though with no flying vision). Her nuke,
+              Splinter Blast, is costly and cannot damage a lone enemy, but offers
+              among the best damage and lowest cooldown of any AoE nuke in the
+              game. Wyvern's next spell is her heal, Cold Embrace, providing
+              a save against physical damage while healing up your ally but
+              preventing them from acting or moving. Finally her ultimate,
+              Winter's Curse, is perhaps the least important but highest
+              skill-cap spell in her kit, allowing a strong Wyvern player to
+              shine by finding clutch saves, kills, and setups. It freezes
+              one enemy while making any nearby allies kill their teammate—the
+              catch being that it also blocks damage from your own team. With
+              careful spell usage and a clever gameplan, you might find Wyvern
+              is a hero well-suited to both aggressive supporting AND defensive
+              aggressing.
+            </p>
+            <h4>Lore</h4>
+            <p>
+              Like many great poets, Auroth just wants time to write, but the
+              Winter Wyvern's life is full of interruptions. The epics of the
+              Eldwurms have a long and colorful history, but some fear that the
+              remaining dragon scholars are not as prolific as they once were,
+              with few lines added to the Eldwurm Eddas since the last age of
+              greatness.  Auroth laments: "We forget that there is more to life
+              than triumph and dominion over enemies. We must also live our
+              lives in the pursuit of creative expression." She embarks on
+              research expeditions, collecting books for inspiration. But all
+              this research can be terribly distracting, and she spends less
+              time writing than she should.  Although she knows she should be
+              lurking in her lair, adding to the Eddas, she finds herself
+              engaged in epic battles against powerful enemies. She loots
+              castles, raids ancient libraries...  and if she happens to heap
+              glory on herself in the process, she tells herself that it's
+              merely a side effect of her research. The fact is, while her
+              skill and power on the battlefield are legendary, her scholarly
+              travails have thus far hardly been the stuff of literary acclaim.
+              But she is not content to stand as a protagonist of heroic lore.
+              She wishes also to create it.
+            </p>
+          </div><!--/.row-->
+        </div><!--/.section-bg-->
+      </div><!--/.col-md-6-->
+      <div class="col-md-6">
+        <div class="section-bg">
+          <h2>Attributes</h2>
+          <div id="attributes" class="row">
+            <div id="stats" class="row padded">
+              <p><img src="img/str.png"></img> 24 + 2.1</p>
+              <p><img src="img/agi.png"></img> 16 + 1.9</p>
+              <p><img src="img/int_p.png"></img> 25 + 3.1</p>
+            </div><!--/.row-->
+            <div class="row padded">
+              <div class="col-md-6">
+                <p><b>Movement Speed</b>: 285</p>
+                <p><b>Turn Rate</b>: 0.4</p>
+                <p><b>Attack Range</b>: 425</p>
+                <p><b>Projectile Speed</b>: 700</p>
+                <p><b>Vision</b>: 1800/800</p>
+              </div><!--/.row-->
+              <div class="col-md-6">
+                <p><b>BAT</b>: 1.7</p>
+                <p><b>Base Damage</b>: 13-20 (38-45 at lvl 1)</p>
+                <p><b>Base Armor</b>: -1 (1.29 at lvl 1)</p>
+                <p><b>Attack Duration</b>: 0.25 + 0.8s</p>
+                <p><b>Cast Duration</b>: 0.3s</p>
+              </div><!--/.row-->
+            </div><!--/.row-->
+          </div><!--/.row-->
+          <h2>Skills</h2>
+          <div id="hskills" class="row">
+            <div class="row padded" style="padding-top: 8px;">
+              <div class="col-md-4">
+                <img src="img/winter_wyvern_arctic_burn.png">
+                <div id="icons" class="row">
+                  <p><img src="img/cd.png"> 50/40/30/20s</p>
+                  <p><img src="img/mana.png"> 120/110/100/90</p>
+                </div>
+              </div><!--/.col-md-4-->
+              <div class="col-md-8">
+                <div class="row">
+                  <h4><b>Q: ARCTIC BURN</b> no target, magical</h4>
+                  <p class="ability">
+                    Winter Wyvern soars upon an arctic wind, temporarily
+                    granting her unobstructed movement, increased night
+                    vision, bonus attack range, a reduced attack point
+                    and increased projectile speed, and applies a debuff
+                    to enemies you attack that slows them and damages them
+                    for a percentage of their current health. The debuff
+                    may only be applied to a target once.
+                  </p>
+                  <p><b>Cast Animation</b>: instant</p>
+                  <p><b>Duration</b>: 6s</p>
+                  <p><b>Bonus Attack Range</b>: 275/375/475/575</p>
+                  <p><b>Bonus Projectile Speed</b>: 500</p>
+                  <p><b>Bonus Night Vision</b>: 400</p>
+                  <p><b>Burn Damage</b>: 8% current health per second</p>
+                  <p><b>Burn Debuff Duration</b>: 5s</p>
+                  <p><b>Move Speed Slow</b>: 19/26/33/40%</p>
+                  <h5 style="color:#304A46;"><b><img src="img/aghs-upgrade.png"></img> Aghanim's Upgrade:</b></h5>
+                  <p class="ability">
+                    Becomes a toggle spell, but costs an additional
+                    40 <img src="img/mana.png"> per second. Reapplying
+                    the debuff now refreshes the debuff's duration.
+                  </p>
+                </div>
+              </div><!--/.col-md-8-->
+            </div><!--/.row-->
+            <div class="row padded">
+              <div class="col-md-4">
+                <img src="img/winter_wyvern_splinter_blast.png">
+                <div id="icons" class="row">
+                  <p><img src="img/cd.png"> 7s</p>
+                  <p><img src="img/mana.png"> 120/130/140/150</p>
+                </div>
+              </div><!--/.col-md-4-->
+              <div class="col-md-8">
+                <div class="row">
+                  <h4><b>W: SPLINTER BLAST</b> target enemy, magical</h4>
+                  <p class="ability">
+                    Launches a blast of ice that deals damage to enemies
+                    around the target, but not the target itself. The secondary
+                    projectiles are slow, but may not be disjointed, and
+                    apply a movespeed slow to enemies they strike.
+                  </p>
+                  <p><b>Cast Animation</b>: 0.3 + 1.17s</p>
+                  <p><b>Cast Range</b>: 1200</p>
+                  <p><b>Splinter Radius</b>: 500</p>
+                  <p><b>Damage</b>: 100/180/260/340</p>
+                  <p><b>Move Speed Slow</b>: 25%</p>
+                  <p><b>Slow Duration</b>: 4s</p>
+                </div>
+              </div><!--/.col-md-8-->
+            </div><!--/.row-->
+            <div class="row padded">
+              <div class="col-md-4">
+                <img src="img/winter_wyvern_cold_embrace.png" style="padding-bottom:8px;">
+                <div id="icons" class="row">
+                  <p><img src="img/cd.png"> 24/21/18/15s</p>
+                  <p><img src="img/mana.png"> 75</p>
+                </div>
+              </div><!--/.col-md-4-->
+              <div class="col-md-8">
+                <div class="row">
+                  <h4><b>E: COLD EMBRACE</b> target ally</h4>
+                  <p class="ability">
+                    Encases an ally within a block of ice, freezing them solid
+                    while healing a base amount as well as a perentage of
+                    their maximum health each second. The ice block protects
+                    the target from all physical damage.
+                  </p>
+                  <p><b>Cast Animation</b>: 0.3 + 0.63s</p>
+                  <p><b>Cast Range</b>: 1000</p>
+                  <p><b>Heal</b>: 20 + 3/4/5/6% per second</p>
+                  <p><b>Duration</b>: 4s</p>
+                </div>
+              </div><!--/.col-md-8-->
+            </div><!--/.row-->
+            <div class="row padded">
+              <div class="col-md-4">
+                <img src="img/winter_wyvern_winters_curse.png">
+                <div id="icons" class="row">
+                  <p><img src="img/cd.png"> 80s
+                  <p><img src="img/mana.png"> 250</p>
+                </div>
+              </div><!--/.col-md-4-->
+              <div class="col-md-8">
+                <div class="row">
+                  <h4><b>R: WINTER'S CURSE</b> ultimate, target enemy</h4>
+                  <p class="ability">
+                    Winter Wyvern freezes an enemy in place while striking those
+                    nearby with a maddening curse which causes them to attack
+                    their frozen ally with increased attack speed. The frozen
+                    ally and those cursed to attack their ally are immune to ALL
+                    damage from enemies for the Curse's duration.
+                  </p>
+                  <p><b>Cast Animation</b>: 0.3 + 1.37s</p>
+                  <p><b>Cast Range</b>: 800</p>
+                  <p><b>Curse Radius</b>: 500</p>
+                  <p><b>Curse Attack Speed Bonus</b>: 70</p>
+                  <p><b>Curse Duration</b>: 3.25/4/4.75s</p>
+                </div>
+              </div><!--/.col-md-8-->
+            </div><!--/.row-->
+          </div><!--/.hskills-->
+        </div><!--/.section-bg-->
+      </div><!--/.col-md-6-->
+    </div><!--/.intro-->
+    <div class="tab-pane text-center active fade in" id="guide">
       <div class="col-md-6">
         <div class="section-bg">
           <h2>Picking</h2>
           <div class="row">
-            <h3>Why Wyvern?</h3>
+            <h3 style="margin:8px 0;">Why Wyvern?</h3>
             <div class="row padded">
               • Wyvern is considered by many to be a strong hero and yet is still underutilized
                 as a pick: no one has played her as a core hero competitevely—not even once.
@@ -37,11 +289,13 @@
             </div><!--/.row-->
             <div class="row padded">
               <h4><img src="img/winter_wyvern_arctic_burn.png"> Raw Stats</h4>
-              • Wyvern has among the best stats in the game, with the fourth highest total stats
-                at level 1 and the sixth highest total stat gain per level:<br>
-              <div id="stats1" style="margin-right: 8px;"></div><div id="stats2"></div><br>
-              • Add to her excellent stats the underrated potential of Arctic Burn  
-                as a right-click damage steroid: not only does it grant Wyvern the 
+              • Wyvern has among the best stats in the game: out of 112 heroes, she's
+                tied for sixth highest total stats at level 1 and also tied for the
+                ninth highest total stat gain per level:<br>
+              <div id="stats1"></div>
+              <div id="stats2"></div>
+              • Add to her excellent stats the underrated potential of Arctic Burn
+                as a right-click damage steroid: not only does it grant Wyvern the
                 <a data-toggle="tooltip" title="That's 1000—Sniper only gets up to 950" style="white-space: nowrap;">longest attack range</a>
                 in the game, it also grants her the <a data-toggle="tooltip" title="0.1, though her base attack point, 0.25, is behind only IO, Gyro and Sniper" style="white-space: nowrap;">lowest attack point</a> in the game.
                 With the right items she can become a potent semi-carry, focusing on attack speed
@@ -63,27 +317,27 @@
             <div class="row padded">
               <h4><img src="img/winter_wyvern_cold_embrace.png"> Control <img src="img/winter_wyvern_winters_curse.png"></h4>
               • A farmed Wyvern guarantees that you'll have clutch Cold Embraces and
-                
-                Winter's Curses —both
-                long-range spells but which can sometimes be wasted by an
-                underfarmed Wyvern who gets caught out. This build focuses on
-                positioning items to make sure that never happens.
+                Winter's Curses—both long-range spells but which can sometimes be
+                wasted by an underfarmed Wyvern who gets caught out. This build
+                focuses on positioning items to make sure that never happens.
             </div><!--/.row-->
             <div class="row padded" style="padding-top: 8px;">
-              • Core Wyvern functions similarly to playmakers like Enigma, Beastmaster,
-                Magnus, Batrider, etc when played as a core: one hero with enough control
-                to guarantee a won teamfight if you get their spells off at the right moment.
-                Wyvern's niche is that she also offers all that AND a heal, both to
-                sustain herself in lane and to save allies.
+              • When played as a Core, Wyvern functions similarly to ranged damage dealers
+                like Drow, Sniper, Windranger and OD, hanging back in fights and itemizing
+                for mobility to aid in their positioning, but Wyvern's niche is that she
+                offers all that, a BKB-piercing control spell AND a heal, both to sustain
+                herself in lane and to save allies. Wyvern is well-rounded but you need to
+                fill in the gaps in her kit with items—the thing missing from support
+                Wyvern, which sets Corevern apart, is damage items.
             </div><!--/.row-->
           </div><!--/.row-->
           <div class="row">
-            <h3>Synergy & Counters</h3>
+            <h3 style="margin:8px 0;">Synergy & Counters</h3>
             <div class="row padded">
               <div class="col-xs-6">
                 <h4>Best&nbsp;Teammates</h4>
                 <div class="row">
-                  <div class="item-box-3 center-block" style="padding-bottom: 0px">
+                  <div class="hero-box-3 center-block" style="padding-bottom: 0px">
                     <a id="popover-darkseer" rel="popover"
                        data-title="Dark Seer">
                       <img src="img/80px-Dark_Seer.png" width="48">
@@ -135,8 +389,8 @@
                         to waste some bans and letting you get the support of your choice.
                       </p>
                     </div><!--/.popover-content-->
-                  </div><!--/.item-box-3-->
-                  <div class="item-box-3 center-block">
+                  </div><!--/.hero-box-3-->
+                  <div class="hero-box-3 center-block">
                     <a id="popover-phoenix" rel="popover"
                        data-title="Phoenix">
                       <img src="img/80px-Phoenix.png" width="48">
@@ -188,13 +442,13 @@
                         nicely with the aforementioned Drow combo too.
                       </p>
                     </div><!--/.popover-content-->
-                  </div><!--/.item-box-3-->
+                  </div><!--/.hero-box-3-->
                 </div><!--/.row-->
               </div><!--/.col-xs-6-->
               <div class="col-xs-6">
                 <h4>Worst&nbsp;Matchups</h4>
                 <div class="row">
-                  <div class="item-box-3 center-block" style="padding-bottom: 0px">
+                  <div class="hero-box-3 center-block" style="padding-bottom: 0px">
                     <a id="popover-viper" rel="popover"
                        data-title="Viper">
                       <img src="img/80px-Viper.png" width="48">
@@ -251,8 +505,8 @@
                         wave under his tower around the 1:50...3:50...etc mark.
                       </p>
                     </div><!--/.popover-content-->
-                  </div><!--/.item-box-3-->
-                  <div class="item-box-3 center-block">
+                  </div><!--/.hero-box-3-->
+                  <div class="hero-box-3 center-block">
                     <a id="popover-windranger" rel="popover"
                        data-title="Windranger">
                       <img src="img/80px-windranger.png" width="48">
@@ -305,7 +559,7 @@
                         a Lina on the enemy team will always make your life harder as a Wyvern.
                       </p>
                     </div><!--/.popover-content-->
-                  </div><!--/.item-box-3-->
+                  </div><!--/.hero-box-3-->
                 </div><!--/.row-->
               </div><!--/.col-xs-6-->
             </div><!--/.row-->
@@ -314,7 +568,7 @@
             <div class="col-xs-6 col-xs-offset-3">
               <h4>Strong&nbsp;Against</h4>
               <div class="row">
-                <div class="item-box-3 center-block" style="padding-bottom: 0px">
+                <div class="hero-box-3 center-block" style="padding-bottom: 0px">
                   <a id="popover-meepo" rel="popover"
                      data-title="Meepo">
                     <img src="img/80px-Meepo.png" width="48">
@@ -367,8 +621,8 @@
                         still gets Cursed.
                     </p>
                   </div><!--/.popover-content-->
-                </div><!--/.item-box-3-->
-                <div class="item-box-3 center-block">
+                </div><!--/.hero-box-3-->
+                <div class="hero-box-3 center-block">
                   <a id="popover-sniper" rel="popover"
                      data-title="Sniper">
                     <img src="img/80px-Sniper.png" width="48">
@@ -421,7 +675,7 @@
                         an SF mid unless already at a skill disadvantage.
                     </p>
                   </div><!--/.popover-content-->
-                </div><!--/.item-box-3-->
+                </div><!--/.hero-box-3-->
               </div><!--/.row-->
             </div><!--/.col-xs-6-->
           </div><!--/.row-->
@@ -584,45 +838,200 @@
         <div class="section-bg">
           <h2>Building</h2>
           <div class="row" style="padding: 0px 40px;">
-            <div class="col-xs-4 col-xs-offset-4" style="padding: 0px;">
-              <h3>Core</h3>
+            <h3 style="margin:8px 0;">Starting</h3>
+            <div class="row">
+              <div class="item-box-2 center-block" style="display: inline-block; margin-bottom: 8px;">
+                <a id="popover-tango" rel="popover"
+                   data-title="Tango">
+                  <h5>Standard</h5>
+                  <img src="img/40px-Tango_icon.png">
+                  <img src="img/40px-Null_Talisman_icon.png">
+                </a>
+                <div id="content-tango" class="hide">
+                  <p>
+                    As a mid-laner, just one set of tangos will keep you healed up
+                    until your Soul Ring arrives. Sometimes as an offlaner
+                    you may need additional regen in the first 5 minutes.
+                  </p>
+                </div><!--/.popover-content-->
+              </div><!--/.item-box-2--> or
+              <div class="item-box-3 center-block" style="display: inline-block; margin-bottom: 8px;">
+                <a id="popover-tango" rel="popover"
+                   data-title="Tango">
+                  <h5>Defensive</h5>
+                  <img src="img/40px-Faerie_Fire_icon.png">
+                  <img src="img/40px-Enchanted_Mango_icon.png">
+                  <img src="img/40px-Ring_of_Regen_icon.png">
+                </a>
+                <div id="content-tango" class="hide">
+                  <p>
+                    As a mid-laner, just one set of tangos will keep you healed up
+                    until your Soul Ring arrives. Sometimes as an offlaner
+                    you may need additional regen in the first 5 minutes.
+                  </p>
+                </div><!--/.popover-content-->
+              </div><!--/.item-box-3--> or
+              <div class="item-box-3 center-block" style="display: inline-block; margin-bottom: 8px;">
+                <a id="popover-tango" rel="popover"
+                   data-title="Tango">
+                  <h5>Aggressive</h5>
+                  <img src="img/40px-Faerie_Fire_icon.png">
+                  <img src="img/40px-Tango_icon.png">
+                  <img src="img/40px-Blades_of_Attack_icon.png">
+                </a>
+                <div id="content-tango" class="hide">
+                  <p>
+                    As a mid-laner, just one set of tangos will keep you healed up
+                    until your Soul Ring arrives. Sometimes as an offlaner
+                    you may need additional regen in the first 5 minutes.
+                  </p>
+                </div><!--/.popover-content-->
+              </div><!--/.item-box-3-->
+            </div><!--/.row-->
+          </div><!--/.row-->
+          <div class="row">
+            <div class="col-xs-4" style="padding: 0px;">
+              <div class="spacer" style="height: 576px;"></div>
+              <h4>Support</h4>
               <div class="row">
-                <div class="item-box-2 center-block">
-                  <a id="popover-tango" rel="popover"
-                     data-title="Tango">
-                    <img src="img/40px-Tango_icon.png">
+                <div class="item-box-1 center-block" style="padding-bottom: 0px">
+                  <a id="popover-glimmer" rel="popover"
+                     data-title="Glimmer Cape">
+                    <img src="img/40px-Glimmer_Cape_icon.png">
                   </a>
-                  <div id="content-tango" class="hide">
+                  <div id="content-glimmer" class="hide">
                     <p>
-                      As a mid-laner, just one set of tangos will keep you healed up
-                      until your Soul Ring arrives. Sometimes as an offlaner
-                      you may need additional regen in the first 5 minutes.
+                      Like all the other support items listed here, Glimmer Cape
+                      falls into the category of "items Wyvern would prefer not to buy".
+                      While she can make better use of it than perhaps any other hero,
+                      it doesn't do much for her damage output—the side of the hero we're
+                      interested in with this build. Get Glimmer if your team needs it,
+                      not as a default choice.
                     </p>
+                    <div class="popover-footer text-center">
+                      <div class="popover-timing">Target item timing: 20:00-30:00</div>
+                    </div><!--/.popover-footer-->
                   </div><!--/.popover-content-->
-                  <a id="popover-nulltalisman" rel="popover"
-                     data-title="Null Talisman">
-                    <img src="img/40px-Null_Talisman_icon.png">
-                  </a>
-                  <div id="content-nulltalisman" class="hide">
-                    <p>
-                      The most important thing for laning Wyvern to consider is
-                      her pathetic damage at level 1. A starting Null Talisman
-                      is a worthwhile investment if you'll be trying to last-hit
-                      in lane at all.
-                    </p>
-                  </div><!--/.popover-content-->
-                </div><!--/.item-box-2-->
+                </div><!--/.item-box-1-->
               </div><!--/.row-->
               <div class="row">
-                <div class="col-xs-6 connect-6">
-                </div><!--/.connect-6-->
+                <div class="item-box-1 center-block" style="padding-bottom: 0px">
+                  <a id="popover-solar" rel="popover"
+                     data-title="Solar Crest">
+                    <img src="img/40px-Solar_Crest_icon.png">
+                  </a>
+                  <div id="content-solar" class="hide">
+                    <p>
+                      While not absolutely core on Wyvern, Solar Crest is the only
+                      option she has for evasion, helps burst down enemies during
+                      Winter's Curse, and further increases your ability to frustrate
+                      physical damage carries. If you get behind especially Medallion
+                      of Courage is a good early survivability item, so consider turning
+                      one of those extra Sage's Masks you grabbed into a Medallion and
+                      eventually a Crest if you fall short of farm for an Orchid, for
+                      example.
+                    </p>
+                    <div class="popover-footer text-center">
+                      <div class="popover-timing">Target item timing: 20:00-30:00</div>
+                    </div><!--/.popover-footer-->
+                  </div><!--/.popover-content-->
+                </div><!--/.item-box-1-->
               </div><!--/.row-->
+              <div class="row">
+                <div class="item-box-1 center-block">
+                  <a id="popover-lotus" rel="popover"
+                     data-title="Lotus Orb">
+                    <img src="img/40px-Lotus_Orb_icon.png">
+                  </a>
+                  <div id="content-lotus" class="hide">
+                    <p>
+                      Once again Wyvern makes an excellent Lotus carrier because she
+                      intends to stay out of the fight, and will thus be positioned
+                      to cast it on allies. The ability to dispel debuffs is highly
+                      underrated and can be seriously fight-winning on its own.
+                    </p>
+                    <div class="popover-footer text-center">
+                      <div class="popover-timing">Target item timing: 30:00-40:00</div>
+                    </div><!--/.popover-footer-->
+                  </div><!--/.popover-content-->
+                </div><!--/.item-box-1-->
+              </div><!--/.row-->
+              <h4>Control</h4>
+              <div class="row">
+                <div class="item-box-1 center-block" style="padding-bottom: 0px">
+                  <a id="popover-sheepstick" rel="popover"
+                     data-title="Scythe of Vyse">
+                    <img src="img/40px-Scythe_of_Vyse_icon.png">
+                  </a>
+                  <div id="content-sheepstick" class="hide">
+                    <p>
+                      By far the most potent disable you can get from an item, Scythe aka
+                      <i>Sheepstick</i> is the gold-standard for teamfight control.
+                      If you end up needing more disable than Refresher+Curse alone
+                      can throw down, this is your next stop, but the high cost
+                      of Sheepstick's components means it's not an easy item to rush.
+                    </p>
+                    <div class="popover-footer text-center">
+                      <div class="popover-timing">Target item timing: 30:00-40:00</div>
+                    </div><!--/.popover-footer-->
+                  </div><!--/.popover-content-->
+                </div><!--/.item-box-1-->
+              </div><!--/.row-->
+              <div class="row">
+                <div class="item-box-1 center-block" style="padding-bottom: 0px">
+                  <a id="popover-bkb" rel="popover"
+                     data-title="Black King Bar">
+                    <img src="img/40px-Black_King_Bar_icon.png">
+                  </a>
+                  <div id="content-bkb" class="hide">
+                    <p>
+                      While BKB may not be a particularly fun item, it's particularly
+                      gratifying to use on Wyvern because Wyvern can exert so much control
+                      while being immune to magic herself. If the enemy has particularly
+                      nasty silences or otherwise BKB-removable disables, then BKB is
+                      the only way to power through and keep your team going.
+                    </p>
+                    <div class="popover-footer text-center">
+                      <div class="popover-timing">Target item timing: 30:00-40:00</div>
+                    </div><!--/.popover-footer-->
+                  </div><!--/.popover-content-->
+                </div><!--/.item-box-1-->
+              </div><!--/.row-->
+              <div class="row">
+                <div class="item-box-1 center-block">
+                  <a id="popover-refresher" rel="popover"
+                     data-title="Refresher Orb">
+                    <img src="img/40px-Refresher_Orb_icon.png">
+                  </a>
+                  <div id="content-refresher" class="hide">
+                    <p>
+                      This is it. Refresher is the single best item on Wyvern. Double
+                      Winter's Curse is nearly guaranteed to win a teamfight on its own,
+                      especially in games with farmed enemy physical damage cores. You
+                      should default to Refresher AND turn to it when all else fails,
+                      especially because it combos so well with other beneficial active
+                      items like Blink, Sheepstick, BKB, etc. The huge amount of mana regen
+                      it provides is yet another reason why Refresher is an attractive
+                      early pickup on Wyvern—moreso than perhaps nearly any hero in
+                      the game.
+                    </p>
+                    <div class="popover-footer text-center">
+                      <div class="popover-timing">Target item timing: 30:00-40:00</div>
+                    </div><!--/.popover-footer-->
+                  </div><!--/.popover-content-->
+                </div><!--/.item-box-1-->
+              </div><!--/.row-->
+            </div><!--/.col-xs-4-->
+            <div class="col-xs-4" style="padding: 0px;">
+              <div class="spacer" style="height: 4px;"></div>
               <div class="row">
                 <div class="col-xs-10 col-xs-offset-1 horiz-dashed">
                 </div><!--/.horiz-dashed-->
               </div><!--/.row-->
+              <div class="spacer" style="height: 4px;"></div>
+              <h3>Core</h3>
               <div class="row">
-                <div class="col-xs-6 connect-6">
+                <div class="col-xs-6 connect-3">
                 </div><!--/.connect-6-->
               </div><!--/.row-->
               <div class="row">
@@ -672,6 +1081,54 @@
                 </div><!--/.connect-6-->
               </div><!--/.row-->
               <div class="row">
+                <div class="item-box-4 center-block" style="display:inline-block;">
+                  <a id="popover-sagesmask" rel="popover"
+                     data-title="Sage's Mask">
+                    <h5>Choose Two:</h5>
+                    <img src="img/40px-Sage's_Mask_icon.png">
+                    <img src="img/40px-Sage's_Mask_icon.png">
+                  </a>
+                  <div id="content-sagesmask" class="hide">
+                    <p>
+                      Picking up 1-2 extra Sage's Masks can really help with your early-game
+                      mana management—plus they can be used to build several other useful
+                      items (especially if you're going Orchid later). If your game starts to
+                      look bad, going for some of these small, incremental items can help you
+                      claw your way back into the game.
+                    </p>
+                    <div class="popover-footer text-center">
+                      <div class="popover-timing">Builds into:
+                        <img src="img/40px-Urn_of_Shadows_icon.png">
+                        <img src="img/40px-Medallion_of_Courage_icon.png">
+                        <img src="img/40px-Oblivion_Staff_icon.png">
+                      </div><!--/.popover-timing-->
+                    </div><!--/.popover-footer-->
+                  </div><!--/.popover-content-->
+                  <a id="popover-raindrop" rel="popover"
+                     data-title="Infused Raindrops">
+                    <img src="img/40px-Infused_Raindrops_icon.png">
+                  </a>
+                  <div id="content-raindrop" class="hide">
+                    <p>
+                      
+                    </p>
+                  </div><!--/.popover-content-->
+                  <a id="popover-wand" rel="popover"
+                     data-title="Magic Wand">
+                    <img src="img/40px-Magic_Wand_icon.png">
+                  </a>
+                  <div id="content-wand" class="hide">
+                    <p>
+                      
+                    </p>
+                  </div><!--/.popover-content-->
+                </div><!--/.item-box-4-->
+              </div><!--/.row-->
+              <div class="row">
+                <div class="col-xs-6 connect-6">
+                </div><!--/.connect-6-->
+              </div><!--/.row-->
+              <div class="row">
                 <div class="item-box-1 center-block">
                   <a id="popover-maelstrom" rel="popover"
                      data-title="Maelstrom">
@@ -696,7 +1153,19 @@
                 </div><!--/.connect-6-->
               </div><!--/.row-->
               <div class="row">
-                <div class="item-box-1 center-block">
+                <div class="item-box-4 center-block">
+                  <a id="popover-damage" rel="popover" data-title="Buffers">
+                    <h5>Choose One:</h5>
+                  </a>
+                  <div id="content-damage" class="hide">
+                    <p>
+                      All of these heroes improve SK's ability to function in
+                      teamfights especially, although some do make good lane
+                      partners. Consider picking these heroes generically
+                      early as a setup for some nuker, and combine SK with
+                      one or two meta picks.
+                    </p>
+                  </div><!--/.popover-content-->
                   <a id="popover-dragon" rel="popover"
                      data-title="Dragon Lance">
                     <img src="img/40px-Dragon_Lance_icon.png">
@@ -716,7 +1185,58 @@
                       <div class="popover-timing">Target item timing: 20:00-30:00</div>
                     </div><!--/.popover-footer-->
                   </div><!--/.popover-content-->
-                </div><!--/.item-box-1-->
+                  <a id="popover-mom" rel="popover"
+                     data-title="Mask of Madness">
+                    <img src="img/40px-Mask_of_Madness_icon.png">
+                  </a>
+                  <div id="content-mom" class="hide">
+                    <p>
+                      Wyvern may be squishy, but with 800+ range on her whole
+                      kit she really shouldn't be getting hit. Mask of Madness
+                      is not only an extremely efficient source of attack
+                      speed—granting an additional 3-5 attacks during Arctic
+                      Burn—but it's also a useful source of movement speed,
+                      which stack with your next core item...
+                    </p>
+                    <div class="popover-footer text-center">
+                      <div class="popover-timing">Target item timing: 15:00-19:00</div>
+                    </div><!--/.popover-footer-->
+                  </div><!--/.popover-content-->
+                  <a id="popover-drum" rel="popover"
+                     data-title="Drum of Endurance">
+                    <img src="img/40px-Drum_of_Endurance_icon.png">
+                  </a>
+                  <div id="content-drum" class="hide">
+                    <p>
+                      Force Staff probably won't be used to initiate much, but it <i>can</i>
+                      certainly be used to save allies whom you have Cold Embraced. Your role
+                      as a Corevern is a playmaker, and any item like Force Staff that can
+                      help you accomplish that is fair game.
+                    </p>
+                    <div class="popover-footer text-center">
+                      <div class="popover-timing">Target item timing: 20:00-30:00</div>
+                    </div><!--/.popover-footer-->
+                  </div><!--/.popover-content-->
+                  <a id="popover-crystalys" rel="popover"
+                     data-title="Crystalys">
+                    <img src="img/40px-Crystalys_icon.png">
+                  </a>
+                  <div id="content-crystalys" class="hide">
+                    <p>
+                      Blink can be an extremely key item for getting off those clutch Curses
+                      and Cold Embraces—but in games where you aren't having trouble getting
+                      off your spells or getting caught out, it can be preferable to continue
+                      straight into more damage or utility items instead. Blink is never a
+                      bad idea, however, especially if you can save your own life with it
+                      even once by blinking out of a bad situation. Be sure to make the most
+                      of your blink reveal by catching your enemies out with a big surprise
+                      initiation.
+                    </p>
+                    <div class="popover-footer text-center">
+                      <div class="popover-timing">Target item timing: 20:00-30:00</div>
+                    </div><!--/.popover-footer-->
+                  </div><!--/.popover-content-->
+                </div><!--/.item-box-4-->
               </div><!--/.row-->
               <div class="row">
                 <div class="col-xs-6 connect-6">
@@ -745,64 +1265,24 @@
                 </div><!--/.item-box-1-->
               </div><!--/.row-->
               <div class="row">
-                <div class="col-xs-6 connect-6">
+                <div class="col-xs-6 connect-3">
+                </div><!--/.connect-6-->
+              </div><!--/.row-->
+              <h3>Extension</h3>
+              <div class="row">
+                <div class="col-xs-6 connect-3">
                 </div><!--/.connect-6-->
               </div><!--/.row-->
               <div class="row">
-                <div class="item-box-1 center-block">
-                  <a id="popover-blink" rel="popover"
-                     data-title="Blink Dagger">
-                    <img src="img/40px-Blink_Dagger_icon.png">
+                <div class="item-box-3 center-block" style="width:144px;">
+                  <a id="popover-exten" rel="popover" data-title="Buffers">
+                    <h5>In no particular order:</h5>
                   </a>
-                  <div id="content-blink" class="hide">
+                  <div id="content-exten" class="hide">
                     <p>
-                      Blink can be an extremely key item for getting off those clutch Curses
-                      and Cold Embraces—but in games where you aren't having trouble getting
-                      off your spells or getting caught out, it can be preferable to continue
-                      straight into more damage or utility items instead. Blink is never a
-                      bad idea, however, especially if you can save your own life with it
-                      even once by blinking out of a bad situation. Be sure to make the most
-                      of your blink reveal by catching your enemies out with a big surprise
-                      initiation.
+                      
                     </p>
-                    <div class="popover-footer text-center">
-                      <div class="popover-timing">Target item timing: 20:00-30:00</div>
-                    </div><!--/.popover-footer-->
                   </div><!--/.popover-content-->
-                </div><!--/.item-box-1-->
-              </div><!--/.row-->
-              <div class="row">
-                <div class="col-xs-6 connect-6">
-                </div><!--/.connect-6-->
-              </div><!--/.row-->
-              <div class="row">
-                <div class="item-box-1 center-block">
-                  <a id="popover-orchid" rel="popover"
-                     data-title="Orchid Malevolence">
-                    <img src="img/40px-Orchid_Malevolence_icon.png">
-                  </a>
-                  <div id="content-orchid" class="hide">
-                    <p>
-                      Orchid is the best intelligence and damage-dealing item Wyvern
-                      can get, plus the silence effectively doubles her lockdown.
-                      Threaten a gank with Orchid, then Winter's Curse everyone
-                      when their friends show up to counter-initiate! Use Orchid to
-                      force out an enemy BKB/Eul's/Manta, then lock them down with Curse!
-                      The applications are endless. Especially good against any hero with
-                      an escape.
-                    </p>
-                    <div class="popover-footer text-center">
-                      <div class="popover-timing">Target item timing: 27:00-35:00</div>
-                    </div><!--/.popover-footer-->
-                  </div><!--/.popover-content-->
-                </div><!--/.item-box-1-->
-              </div><!--/.row-->
-              <div class="row">
-                <div class="col-xs-6 connect-6">
-                </div><!--/.connect-6-->
-              </div><!--/.row-->
-              <div class="row">
-                <div class="item-box-1 center-block">
                   <a id="popover-hurricane" rel="popover"
                      data-title="Hurricane Pike">
                     <img src="img/40px-Hurricane_Pike_icon.png">
@@ -823,7 +1303,44 @@
                       <div class="popover-timing">Target item timing: 30:00-40:00</div>
                     </div><!--/.popover-footer-->
                   </div><!--/.popover-content-->
-                </div><!--/.item-box-1-->
+                  <a id="popover-orchid" rel="popover"
+                     data-title="Orchid Malevolence">
+                    <img src="img/40px-Orchid_Malevolence_icon.png">
+                  </a>
+                  <div id="content-orchid" class="hide">
+                    <p>
+                      Orchid is the best intelligence and damage-dealing item Wyvern
+                      can get, plus the silence effectively doubles her lockdown.
+                      Threaten a gank with Orchid, then Winter's Curse everyone
+                      when their friends show up to counter-initiate! Use Orchid to
+                      force out an enemy BKB/Eul's/Manta, then lock them down with Curse!
+                      The applications are endless. Especially good against any hero with
+                      an escape.
+                    </p>
+                    <div class="popover-footer text-center">
+                      <div class="popover-timing">Target item timing: 27:00-35:00</div>
+                    </div><!--/.popover-footer-->
+                  </div><!--/.popover-content-->
+                  <a id="popover-blink" rel="popover"
+                     data-title="Blink Dagger">
+                    <img src="img/40px-Blink_Dagger_icon.png">
+                  </a>
+                  <div id="content-blink" class="hide">
+                    <p>
+                      Blink can be an extremely key item for getting off those clutch Curses
+                      and Cold Embraces—but in games where you aren't having trouble getting
+                      off your spells or getting caught out, it can be preferable to continue
+                      straight into more damage or utility items instead. Blink is never a
+                      bad idea, however, especially if you can save your own life with it
+                      even once by blinking out of a bad situation. Be sure to make the most
+                      of your blink reveal by catching your enemies out with a big surprise
+                      initiation.
+                    </p>
+                    <div class="popover-footer text-center">
+                      <div class="popover-timing">Target item timing: 20:00-30:00</div>
+                    </div><!--/.popover-footer-->
+                  </div><!--/.popover-content-->
+                </div><!--/.item-box-4-->
               </div><!--/.row-->
               <div class="row">
                 <div class="col-xs-6 connect-6">
@@ -878,7 +1395,12 @@
                 </div><!--/.item-box-1-->
               </div><!--/.row-->
               <div class="row">
-                <div class="col-xs-6 connect-6">
+                <div class="col-xs-6 connect-3">
+                </div><!--/.connect-6-->
+              </div><!--/.row-->
+              <h3>Luxury</h3>
+              <div class="row">
+                <div class="col-xs-6 connect-3">
                 </div><!--/.connect-6-->
               </div><!--/.row-->
               <div class="row">
@@ -958,8 +1480,9 @@
               </div><!--/.row-->
             </div><!--/.col-xs-4-->
             <div class="col-xs-4" style="padding: 0px;">
-              <div class="spacer" style="height: 16px;"></div>
+              <div class="spacer" style="height: 20px;"></div>
               <h3>Situational</h3>
+              <div class="spacer" style="height: 8px;"></div>
               <div class="row">
                 <div class="item-box-2 center-block">
                   <a id="popover-blight" rel="popover"
@@ -1000,28 +1523,9 @@
                   </div><!--/.popover-content-->
                 </div><!--/.item-box-2-->
               </div><!--/.row-->
+              <div class="spacer" style="height: 12px;"></div>
               <div class="row">
-                <div class="item-box-2 center-block" style="padding-top: 0px;">
-                  <a id="popover-sagesmask" rel="popover"
-                     data-title="Sage's Mask">
-                    <img src="img/40px-Sage's_Mask_icon.png">
-                  </a>
-                  <div id="content-sagesmask" class="hide">
-                    <p>
-                      Picking up 1-2 extra Sage's Masks can really help with your early-game
-                      mana management—plus they can be used to build several other useful
-                      items (especially if you're going Orchid later). If your game starts to
-                      look bad, going for some of these small, incremental items can help you
-                      claw your way back into the game.
-                    </p>
-                    <div class="popover-footer text-center">
-                      <div class="popover-timing">Builds into:
-                        <img src="img/40px-Urn_of_Shadows_icon.png">
-                        <img src="img/40px-Medallion_of_Courage_icon.png">
-                        <img src="img/40px-Oblivion_Staff_icon.png">
-                      </div><!--/.popover-timing-->
-                    </div><!--/.popover-footer-->
-                  </div><!--/.popover-content-->
+                <div class="item-box-1 center-block">
                   <a id="popover-windlace" rel="popover"
                      data-title="Wind Lace">
                     <img src="img/40px-Wind_Lace_icon.png">
@@ -1043,7 +1547,7 @@
                   </div><!--/.popover-content-->
                 </div><!--/.item-box-1-->
               </div><!--/.row-->
-              <div class="spacer" style="height: 16px;"></div>
+              <div class="spacer" style="height: 12px;"></div>
               <div class="row">
                 <div class="item-box-2 center-block">
                   <a id="popover-phase" rel="popover"
@@ -1073,110 +1577,7 @@
                   </div><!--/.popover-content-->
                 </div><!--/.item-box-2-->
               </div><!--/.row-->
-              <div class="spacer" style="height: 16px;"></div>
-              <div class="row">
-                <div class="item-box-2 center-block">
-                  <a id="popover-mom" rel="popover"
-                     data-title="Mask of Madness">
-                    <img src="img/40px-Mask_of_Madness_icon.png">
-                  </a>
-                  <div id="content-mom" class="hide">
-                    <p>
-                      Wyvern may be squishy, but with 800+ range on her whole
-                      kit she really shouldn't be getting hit. Mask of Madness
-                      is not only an extremely efficient source of attack
-                      speed—granting an additional 3-5 attacks during Arctic
-                      Burn—but it's also a useful source of movement speed,
-                      which stack with your next core item...
-                    </p>
-                    <div class="popover-footer text-center">
-                      <div class="popover-timing">Target item timing: 15:00-19:00</div>
-                    </div><!--/.popover-footer-->
-                  </div><!--/.popover-content-->
-                  <a id="popover-drum" rel="popover"
-                     data-title="Drum of Endurance">
-                    <img src="img/40px-Drum_of_Endurance_icon.png">
-                  </a>
-                  <div id="content-drum" class="hide">
-                    <p>
-                      Force Staff probably won't be used to initiate much, but it <i>can</i>
-                      certainly be used to save allies whom you have Cold Embraced. Your role
-                      as a Corevern is a playmaker, and any item like Force Staff that can
-                      help you accomplish that is fair game.
-                    </p>
-                    <div class="popover-footer text-center">
-                      <div class="popover-timing">Target item timing: 20:00-30:00</div>
-                    </div><!--/.popover-footer-->
-                  </div><!--/.popover-content-->
-                </div><!--/.item-box-2-->
-              </div><!--/.row-->
-              <div class="spacer" style="height: 16px;"></div>
-              <h3 style="margin-bottom: 4px;">Extension</h3>
-              <h4>Utility</h4>
-              <div class="row">
-                <div class="item-box-1 center-block" style="padding-bottom: 0px">
-                  <a id="popover-sheepstick" rel="popover"
-                     data-title="Scythe of Vyse">
-                    <img src="img/40px-Scythe_of_Vyse_icon.png">
-                  </a>
-                  <div id="content-sheepstick" class="hide">
-                    <p>
-                      By far the most potent disable you can get from an item, Scythe aka
-                      <i>Sheepstick</i> is the gold-standard for teamfight control.
-                      If you end up needing more disable than Refresher+Curse alone
-                      can throw down, this is your next stop, but the high cost
-                      of Sheepstick's components means it's not an easy item to rush.
-                    </p>
-                    <div class="popover-footer text-center">
-                      <div class="popover-timing">Target item timing: 30:00-40:00</div>
-                    </div><!--/.popover-footer-->
-                  </div><!--/.popover-content-->
-                </div><!--/.item-box-1-->
-              </div><!--/.row-->
-              <div class="row">
-                <div class="item-box-1 center-block" style="padding-bottom: 0px">
-                  <a id="popover-bkb" rel="popover"
-                     data-title="Black King Bar">
-                    <img src="img/40px-Black_King_Bar_icon.png">
-                  </a>
-                  <div id="content-bkb" class="hide">
-                    <p>
-                      While BKB may not be a particularly fun item, it's particularly
-                      gratifying to use on Wyvern because Wyvern can exert so much control
-                      while being immune to magic herself. If the enemy has particularly
-                      nasty silences or otherwise BKB-removable disables, then BKB is
-                      the only way to power through and keep your team going.
-                    </p>
-                    <div class="popover-footer text-center">
-                      <div class="popover-timing">Target item timing: 30:00-40:00</div>
-                    </div><!--/.popover-footer-->
-                  </div><!--/.popover-content-->
-                </div><!--/.item-box-1-->
-              </div><!--/.row-->
-              <div class="row">
-                <div class="item-box-1 center-block">
-                  <a id="popover-refresher" rel="popover"
-                     data-title="Refresher Orb">
-                    <img src="img/40px-Refresher_Orb_icon.png">
-                  </a>
-                  <div id="content-refresher" class="hide">
-                    <p>
-                      This is it. Refresher is the single best item on Wyvern. Double
-                      Winter's Curse is nearly guaranteed to win a teamfight on its own,
-                      especially in games with farmed enemy physical damage cores. You
-                      should default to Refresher AND turn to it when all else fails,
-                      especially because it combos so well with other beneficial active
-                      items like Blink, Sheepstick, BKB, etc. The huge amount of mana regen
-                      it provides is yet another reason why Refresher is an attractive
-                      early pickup on Wyvern—moreso than perhaps nearly any hero in
-                      the game.
-                    </p>
-                    <div class="popover-footer text-center">
-                      <div class="popover-timing">Target item timing: 30:00-40:00</div>
-                    </div><!--/.popover-footer-->
-                  </div><!--/.popover-content-->
-                </div><!--/.item-box-1-->
-              </div><!--/.row-->
+              <div class="spacer" style="height: 374px;"></div>
               <h4>Damage</h4>
               <div class="row">
                 <div class="item-box-1 center-block" style="padding-bottom: 0px">
@@ -1304,70 +1705,6 @@
                   </div><!--/.popover-content-->
                 </div><!--/.item-box-1-->
               </div><!--/.row-->
-              <h4>Support</h4>
-              <div class="row">
-                <div class="item-box-1 center-block" style="padding-bottom: 0px">
-                  <a id="popover-glimmer" rel="popover"
-                     data-title="Glimmer Cape">
-                    <img src="img/40px-Glimmer_Cape_icon.png">
-                  </a>
-                  <div id="content-glimmer" class="hide">
-                    <p>
-                      Like all the other support items listed here, Glimmer Cape
-                      falls into the category of "items Wyvern would prefer not to buy".
-                      While she can make better use of it than perhaps any other hero,
-                      it doesn't do much for her damage output—the side of the hero we're
-                      interested in with this build. Get Glimmer if your team needs it,
-                      not as a default choice.
-                    </p>
-                    <div class="popover-footer text-center">
-                      <div class="popover-timing">Target item timing: 20:00-30:00</div>
-                    </div><!--/.popover-footer-->
-                  </div><!--/.popover-content-->
-                </div><!--/.item-box-1-->
-              </div><!--/.row-->
-              <div class="row">
-                <div class="item-box-1 center-block" style="padding-bottom: 0px">
-                  <a id="popover-solar" rel="popover"
-                     data-title="Solar Crest">
-                    <img src="img/40px-Solar_Crest_icon.png">
-                  </a>
-                  <div id="content-solar" class="hide">
-                    <p>
-                      While not absolutely core on Wyvern, Solar Crest is the only
-                      option she has for evasion, helps burst down enemies during
-                      Winter's Curse, and further increases your ability to frustrate
-                      physical damage carries. If you get behind especially Medallion
-                      of Courage is a good early survivability item, so consider turning
-                      one of those extra Sage's Masks you grabbed into a Medallion and
-                      eventually a Crest if you fall short of farm for an Orchid, for
-                      example.
-                    </p>
-                    <div class="popover-footer text-center">
-                      <div class="popover-timing">Target item timing: 20:00-30:00</div>
-                    </div><!--/.popover-footer-->
-                  </div><!--/.popover-content-->
-                </div><!--/.item-box-1-->
-              </div><!--/.row-->
-              <div class="row">
-                <div class="item-box-1 center-block">
-                  <a id="popover-lotus" rel="popover"
-                     data-title="Lotus Orb">
-                    <img src="img/40px-Lotus_Orb_icon.png">
-                  </a>
-                  <div id="content-lotus" class="hide">
-                    <p>
-                      Once again Wyvern makes an excellent Lotus carrier because she
-                      intends to stay out of the fight, and will thus be positioned
-                      to cast it on allies. The ability to dispel debuffs is highly
-                      underrated and can be seriously fight-winning on its own.
-                    </p>
-                    <div class="popover-footer text-center">
-                      <div class="popover-timing">Target item timing: 30:00-40:00</div>
-                    </div><!--/.popover-footer-->
-                  </div><!--/.popover-content-->
-                </div><!--/.item-box-1-->
-              </div><!--/.row-->
 
             </div><!--/.col-xs-4-->
           </div><!--/.row-->
@@ -1377,7 +1714,7 @@
               <div id="build" class="row">
                 <div class="item-row">
                   <h5>Aggressive Carry</h5>
-                  <span><img src="img/40px-Null_Talisman_icon.png"> <img src="img/40px-Tango_icon.png"> →</span>
+                  <img src="img/40px-Null_Talisman_icon.png"> <img src="img/40px-Tango_icon.png"> →</span>
                   <span><img src="img/40px-Soul_Ring_icon.png"> →</span>
                   <span><img src="img/40px-Boots_of_Speed_icon.png"> →</span>
                   <span><img src="img/40px-Maelstrom_icon.png"> →</span>
@@ -1541,115 +1878,122 @@
               </p>
             </div><!--/.popover-content-->
           </div><!--/.row-->
-          <h2>Laning</h2>
-          <div class="row padded">
-            <h3>Don't be a Statistic</h3>
-            • Despite her powerful skillset, Wyvern has fared relatively poorly at recent
-              professional LAN events, including an abysmal 25% (1-3) at ESL One New York
-              and a slightly better (but still bad for a top tier pick) 55% (5-4) at the
-              MLG World Finals LAN.<br>
+        </div><!--/.row-->
+        <h2>Laning</h2>
+        <div class="row padded">
+          <h3 style="margin:8px 0;">Don't be a Statistic</h3>
+          • Despite her powerful skillset, Wyvern has fared relatively poorly at recent
+            professional LAN events, including an abysmal 25% (1-3) at ESL One New York
+            and a slightly better (but still bad for a top tier pick) 55% (5-4) at the
+            MLG World Finals LAN.<br>
+        </div><!--/.row-->
+        <div class="row padded" style="padding-top: 8px;">
+          • Wyvern performed quite poorly at the most recent The International, sporting a
+            winrate of only 38% at the TI5 main event. EG (4-2) and EHOME (6-2) had the
+            best records with the hero.<br>
+          <h4>TI5 Winrate by Farm Priority</h4>
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead>
+                <tr style="background-color: #304A46; color: #F9F9F9;">
+                  <th id="padth" class="text-center">Role</th>
+                  <th id="padth" class="text-center">Farm</th>
+                  <th id="padth" class="text-center">Games</th>
+                  <th id="padth" class="text-center">Wins</th>
+                  <th id="padth" class="text-center">Losses</th>
+                  <th id="padth" class="text-center">Winrate</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="active2">
+                  <td id="padless">4</td>
+                  <td id="padless">3</td>
+                  <td id="padless">3</td>
+                  <td id="padless">1</td>
+                  <td id="padless">2</td>
+                  <td id="padless">.33</td>
+                </tr>
+                <tr>
+                  <td id="padless">4</td>
+                  <td id="padless">4</td>
+                  <td id="padless">22</td>
+                  <td id="padless">5</td>
+                  <td id="padless">17</td>
+                  <td id="padless">.22</td>
+                </tr>
+                <tr>
+                  <td id="padless">4</td>
+                  <td id="padless">5</td>
+                  <td id="padless">5</td>
+                  <td id="padless">2</td>
+                  <td id="padless">3</td>
+                  <td id="padless">.40</td>
+                </tr>
+                <tr class="active2">
+                  <td id="padless">5</td>
+                  <td id="padless">3</td>
+                  <td id="padless">4</td>
+                  <td id="padless">2</td>
+                  <td id="padless">2</td>
+                  <td id="padless">.50</td>
+                </tr>
+                <tr>
+                  <td id="padless">5</td>
+                  <td id="padless">4</td>
+                  <td id="padless">7</td>
+                  <td id="padless">3</td>
+                  <td id="padless">4</td>
+                  <td id="padless">.42</td>
+                </tr>
+                <tr>
+                  <td id="padless">5</td>
+                  <td id="padless">5</td>
+                  <td id="padless">11</td>
+                  <td id="padless">7</td>
+                  <td id="padless">4</td>
+                  <td id="padless">.63</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          • Since it's still the biggest tournament played in recent months, I want to take a
+            look at her stats from TI5. The above table shows Wyvern's winrate at TI5 in
+            relation to both player role (position on the team roster) and farm priority
+            (end game ranking by net worth, 1-5).
           </div><!--/.row-->
           <div class="row padded" style="padding-top: 8px;">
-            • Wyvern performed quite poorly at the most recent The International, sporting a
-              winrate of only 38% at the TI5 main event. EG (4-2) and EHOME (6-2) had the
-              best records with the hero.<br>
-            <h4>TI5 Winrate by Farm Priority</h4>
-            <div class="table-responsive">
-              <table class="table table-bordered">
-                <thead>
-                  <tr style="background-color: #304A46; color: #F9F9F9;">
-                    <th id="padth" class="text-center">Role</th>
-                    <th id="padth" class="text-center">Farm</th>
-                    <th id="padth" class="text-center">Games</th>
-                    <th id="padth" class="text-center">Wins</th>
-                    <th id="padth" class="text-center">Losses</th>
-                    <th id="padth" class="text-center">Winrate</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="active2">
-                    <td id="padless">4</td>
-                    <td id="padless">3</td>
-                    <td id="padless">3</td>
-                    <td id="padless">1</td>
-                    <td id="padless">2</td>
-                    <td id="padless">.33</td>
-                  </tr>
-                  <tr>
-                    <td id="padless">4</td>
-                    <td id="padless">4</td>
-                    <td id="padless">22</td>
-                    <td id="padless">5</td>
-                    <td id="padless">17</td>
-                    <td id="padless">.22</td>
-                  </tr>
-                  <tr>
-                    <td id="padless">4</td>
-                    <td id="padless">5</td>
-                    <td id="padless">5</td>
-                    <td id="padless">2</td>
-                    <td id="padless">3</td>
-                    <td id="padless">.40</td>
-                  </tr>
-                  <tr class="active2">
-                    <td id="padless">5</td>
-                    <td id="padless">3</td>
-                    <td id="padless">4</td>
-                    <td id="padless">2</td>
-                    <td id="padless">2</td>
-                    <td id="padless">.50</td>
-                  </tr>
-                  <tr>
-                    <td id="padless">5</td>
-                    <td id="padless">4</td>
-                    <td id="padless">7</td>
-                    <td id="padless">3</td>
-                    <td id="padless">4</td>
-                    <td id="padless">.42</td>
-                  </tr>
-                  <tr>
-                    <td id="padless">5</td>
-                    <td id="padless">5</td>
-                    <td id="padless">11</td>
-                    <td id="padless">7</td>
-                    <td id="padless">4</td>
-                    <td id="padless">.63</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            • Since it's still the biggest tournament played in recent months, I want to take a
-              look at her stats from TI5. The above table shows Wyvern's winrate at TI5 in
-              relation to both player role (position on the team roster) and farm priority
-              (end game ranking by net worth, 1-5).
-            </div><!--/.row-->
-            <div class="row padded" style="padding-top: 8px;">
-            • While the highest winrate role for Wyvern at TI5 was hard support, observe
-              in the highlighted rows above that there was also a slight increase in winrate
-              in games where Wyvern outfarmed her offlaner. While the sample size here is still
-              too small to conclude that this is statistically significant, from looking at the
-              replays I think it's fair to assume that the farm on Wyvern contributed to these
-              victories, usually because these were games that ended in a game-winning Wyvern
-              Refresher.
-            </div><!--/.row-->
-            <h3>The Solution: Versatility</h3>
-            <div class="row padded" style="padding-bottom: 8px;">
-            • With such a low winrate, can captains really justify Wyvern as a continued tier-1
-              pick/ban? Adding core Wyvern to your arsenal gives you the ability to safely draft
-              her early without giving away any information about your lanes.<br>
-            <h4>Pick Rate by Role</h4>
-            <div id="current" style="margin-right: 8px;"></div><div id="predicted"></div><br>
-            • As players start to realize just how versatile Wyvern can be, I predict she will
-              see play on every role, from offlane to carry. She remains a strong 5-position,
-              but with her combination of reliable early farming into late-game teamfight control,
-              many former greedy support-Wyvern players will transition into playing her as a core.
+          • While the highest winrate role for Wyvern at TI5 was hard support, observe
+            in the highlighted rows above that there was also a slight increase in winrate
+            in games where Wyvern outfarmed her offlaner. While the sample size here is still
+            too small to conclude that this is statistically significant, from looking at the
+            replays I think it's fair to assume that the farm on Wyvern contributed to these
+            victories, usually because these were games that ended in a game-winning Wyvern
+            Refresher.
           </div><!--/.row-->
+          <h3>The Solution: Versatility</h3>
+          <div class="row padded" style="padding-bottom: 8px;">
+          • With such a low winrate, can captains really justify Wyvern as a continued tier-1
+            pick/ban? Adding core Wyvern to your arsenal gives you the ability to safely draft
+            her early without giving away any information about your lanes.<br>
+          <h4>Pick Rate by Role</h4>
+          <div id="current" style="margin-right: 8px;"></div><div id="predicted"></div><br>
+          • As players start to realize just how versatile Wyvern can be, I predict she will
+            see play on every role, from offlane to carry. She remains a strong 5-position,
+            but with her combination of reliable early farming into late-game teamfight control,
+            many former greedy support-Wyvern players will transition into playing her as a core.
+        </div><!--/.row-->
         </div><!--/.section-bg-->
       </div><!--/.col-xs-6-->
-    </div><!--/.row-->
-  </div><!-- /.container -->
+    </div><!--/.guide-->
+    <div class="tab-pane text-center fade" id="video">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/c95ZpyN2W6Q"></iframe>
+      </div><!--/.embed-responsive-->
+    </div><!--/.video-->
+  </div><!--/.tab-content-->
+</div><!-- /.container -->
 <div id="footer" class="row text-center">
-  by <a href="https://www.reddit.com/user/freelance_fox/">/u/freelance_fox</a> • <a href="http://www.twitter.com/freelancedota">@freelancedota</a> • Last Updated 9/13/2016
+  by <a href="https://www.reddit.com/user/freelance_fox/">/u/freelance_fox</a> • <a href="http://www.twitter.com/freelancedota">@freelancedota</a> • Last Updated 10/1/2016
 </div><!--/.row-->
 
   <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
@@ -1661,7 +2005,31 @@
   <script src="js/wow.min.js"></script>
   <script>
     $(document).ready(function() {
-        $('[data-toggle="tooltip"]').tooltip({'placement': 'top'});
+      $('[data-toggle="tooltip"]').tooltip({'placement': 'top'});
+    });
+    jQuery(document).ready(function ($) {
+      $('#tabs').tab();
+    });
+    $(document).ready(function()
+    {
+      $(window).scroll(function()
+      {
+        if ($(window).scrollTop() >= 50) {
+          $('.header-hide').css('display', 'none');
+        }
+        if ($(window).scrollTop() < 50) {
+          $('.header-hide').css('display', 'block');
+        }
+      });
+    });
+    $(document).ready(function()
+    {
+      $('#top').click(function()
+      {
+        $('body').animate({
+            scrollTop: 0
+          }, 400);
+      });
     });
   </script>
 

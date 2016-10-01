@@ -9,6 +9,17 @@
 </head>
 
 <body>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div id="navigation" class="row text-center">
+    <button class="btn btn-default pull-left header-hide">
+      <a href="index.html">< INDEX</a>
+    </button>
+    <button class="btn btn-default pull-right">
+      <a id="top">^ TOP</a>
+    </button>
+  </div><!--/.row-->
+</nav>
+
   <div id="header" class="row text-center">
     <div class="position-header">
       <h1 id="title">NICELY STUNG!</h1>
@@ -19,7 +30,7 @@
   <ul id="tabs" class="nav nav-tabs">
     <li><a href="#intro" data-toggle="tab">Intro</a></li>
     <li class="active"><a href="#guide" data-toggle="tab">Guide</a></li>
-    <li><a href="#video" data-toggle="tab">Video</a></li>
+    <!--<li><a href="#video" data-toggle="tab">Video</a></li>-->
   </ul>
 <div class="container">
   <div class="tab-content">
@@ -1710,8 +1721,8 @@
                     an incredible ability to catch opponents out, so a support
                     Kunkka maxing it first can make your team's Sand King's
                     life incredibly easy. X-Marks into Burrow and/or Torrent
-                    is already ~4 seconds of disable, and of course that all
-                    that Kunkka AoE damage can be used to proc Caustic. Later
+                    is already ~4 seconds of disable, and of course all that
+                    Kunkka AoE damage can be used to proc Caustic. Later
                     on in the game, the wombo-combo of a simple Boat plus
                     Torrent onto a Burrow+Epi is enough to win the fight on
                     its own.
@@ -1730,7 +1741,7 @@
                   </a>
                   <div id="content-combobreakers" class="hide">
                     <p>
-                      These heroes all offer a way to stop you from completing th
+                      These heroes all offer a way to stop you from completing the
                       Blink → Epicenter combo, with varying degrees of reliability.
                       In all cases you want to avoid getting counter-picked by
                       these heroes, so save your Sand King pick as late as you
@@ -4450,7 +4461,7 @@
             </p>
           </div><!--/.row-->
           <div id="winratebars"></div>
-          <div class="row" style="padding-top: 8px; margin: 0 3% 0 3%;">
+          <div class="row" style="margin: 0 3% 0 3%;">
             <h4 id="tablehide" style="margin: 8px 0;">↓ Table of Pro Sand King Picks Pre-TI6 ↓</h4>
             <div id="recentpicks" class="table-responsive" style="display: none;">
               <table class="table table-bordered">
@@ -4802,7 +4813,7 @@
   </div><!--/.tab-content-->
 </div><!-- /.container -->
 <div id="footer" class="row text-center">
-  by <a href="https://www.reddit.com/user/freelance_fox/">/u/freelance_fox</a> • <a href="http://www.twitter.com/freelancedota">@freelancedota</a> • Last Updated 9/13/16
+  by <a href="https://www.reddit.com/user/freelance_fox/">/u/freelance_fox</a> • <a href="http://www.twitter.com/freelancedota">@freelancedota</a> • Last Updated 10/1/16
 </div><!--/.footer-->
 
   <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
@@ -4814,12 +4825,33 @@
   <script src="js/wow.min.js"></script>
   <script>
     $(document).ready(function() {
-        $('[data-toggle="tooltip"]').tooltip({'placement': 'top'});
+      $('[data-toggle="tooltip"]').tooltip({'placement': 'top'});
     });
   </script>
   <script type="text/javascript">
     jQuery(document).ready(function ($) {
-        $('#tabs').tab();
+      $('#tabs').tab();
+    });
+    $(document).ready(function()
+    {
+      $(window).scroll(function()
+      {
+        if ($(window).scrollTop() >= 50) {
+          $('.header-hide').css('display', 'none');
+        }
+        if ($(window).scrollTop() < 50) {
+          $('.header-hide').css('display', 'block');
+        }
+      });
+    });
+    $(document).ready(function()
+    {
+      $('#top').click(function()
+      {
+        $('body').animate({
+            scrollTop: 0
+          }, 400);
+      });
     });
     $(document).ready(function() {
       $('tbody tr').click(function() {

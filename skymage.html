@@ -9,6 +9,17 @@
 </head>
 
 <body>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div id="navigation" class="row text-center">
+    <button class="btn btn-default pull-left header-hide">
+      <a href="index.html">< INDEX</a>
+    </button>
+    <button class="btn btn-default pull-right">
+      <a id="top">^ TOP</a>
+    </button>
+  </div><!--/.row-->
+</nav>
+
   <div id="header" class="row text-center">
     <div class="position-header">
       <p id="title" style="margin-bottom:0;">How to Train Your Dragonus:</p>
@@ -18,7 +29,7 @@
   <ul id="tabs" class="nav nav-tabs">
     <li><a href="#intro" data-toggle="tab">Intro</a></li>
     <li class="active"><a href="#guide" data-toggle="tab">Guide</a></li>
-    <li><a href="#video" data-toggle="tab">Video</a></li>
+    <!--<li><a href="#video" data-toggle="tab">Video</a></li>-->
   </ul>
 <div class="container">
   <div class="tab-content">
@@ -27,7 +38,31 @@
         <div class="section-bg">
           <h2>Intro</h2>
           <div class="row">
-
+            <h3>About</h3>
+            <div class="row padded">
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+            </div><!--/.row-->
+            <h3>For New Players</h3>
+            <div class="row padded">
+              
+              
+              
+              
+              
+              
+              
+              
+              
+            </div><!--/.row-->
           </div><!--/.row-->
           <h2 style="margin-top: 8px;">Hero Info</h2>
           <h3>Dragonus, the Skywrath Mage</h3>
@@ -78,9 +113,9 @@
           <div id="attributes" class="row">
             <h2>Attributes</h2>
             <div id="stats" class="row padded">
-              <p><img src="img/str_p.png"></img> 19 + 1.5</p>
+              <p><img src="img/str.png"></img> 19 + 1.5</p>
               <p><img src="img/agi.png"></img> 13 + 0.8</p>
-              <p><img src="img/int.png"></img> 27 + 3.6</p>
+              <p><img src="img/int_p.png"></img> 27 + 3.6</p>
             </div><!--/.row-->
             <div class="row padded">
               <div class="col-md-6">
@@ -427,7 +462,7 @@
                 <div class="row" style="margin-top: 8px;">
                   <div class="hero-box-5 center-block" style="padding-bottom: 0px">
                     <a id="popover-squishy" rel="popover" data-title="Squishy/Slow Supports">
-                      <h5>Squishy/Weak Laners</h5>
+                      <h5>Slow/Weak Laners</h5>
                     </a>
                     <div id="content-squishy" class="hide">
                       <p>
@@ -1067,7 +1102,7 @@
                   </p>
                 </div><!--/.popover-content-->
                 <a id="popover-dualstun" rel="popover" data-title="Dual Stun Lanes">
-                  <h5>Strong Lane Combos</h5>
+                  <h5>Flare Combos</h5>
                 </a>
                 <div id="content-dualstun" class="hide">
                   <p>
@@ -3204,7 +3239,7 @@
 </div><!-- /.container -->
 
 <div id="footer" class="row text-center">
-  by <a href="https://www.reddit.com/user/freelance_fox/">/u/freelance_fox</a> • <a href="http://www.twitter.com/freelancedota">@freelancedota</a> • Last Updated 9/11/16
+  by <a href="https://www.reddit.com/user/freelance_fox/">/u/freelance_fox</a> • <a href="http://www.twitter.com/freelancedota">@freelancedota</a> • Last Updated 10/1/16
 </div><!--/.footer-->
 
   <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
@@ -3216,12 +3251,33 @@
   <script src="js/wow.min.js"></script>
   <script>
     $(document).ready(function() {
-        $('[data-toggle="tooltip"]').tooltip({'placement': 'top'});
+      $('[data-toggle="tooltip"]').tooltip({'placement': 'top'});
     });
   </script>
   <script type="text/javascript">
     jQuery(document).ready(function ($) {
-        $('#tabs').tab();
+      $('#tabs').tab();
+    });
+    $(document).ready(function()
+    {
+      $('#top').click(function()
+      {
+        $('body').animate({
+            scrollTop: 0
+          }, 400);
+      });
+    });
+    $(document).ready(function()
+    {
+      $(window).scroll(function()
+      {
+        if ($(window).scrollTop() >= 50) {
+          $('.header-hide').css('display', 'none');
+        }
+        if ($(window).scrollTop() < 50) {
+          $('.header-hide').css('display', 'block');
+        }
+      });
     });
     $(document).ready(function() {
       $('tbody tr').click(function() {

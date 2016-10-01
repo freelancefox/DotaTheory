@@ -3,13 +3,20 @@ body {
   color: #191919;
 }
 
-a {
-  color: #6e4926;
-}
-
-a:hover {
+a { color: #dcb158; }
+a:focus, a:hover {
   text-decoration: none;
-  color: #f9f9f9;
+  color: #292018;
+}
+.btn-default:hover a,
+.btn-default:focus a {
+  color: #292018;
+}
+.btn-default:hover,
+.btn-default:focus {
+  color: #292018;
+  background-color: rgba(157,115,67,0.35);
+  text-decoration: none;
 }
 
 #footer {
@@ -50,10 +57,6 @@ a:hover {
   font-size: 36px;
   color: #F9F9F9;
   text-shadow: 2px 2px 0 #292018;
-}
-
-#footer > a {
-  color: #F9F9F9;
 }
 
 .position-header {
@@ -554,7 +557,7 @@ tr:hover, tr:focus {
 }
 
 #hskills .col-md-8 {
-  margin-top: 18px;
+  margin-top: 12px;
 }
 
 #hskills .col-md-4 > img {
@@ -574,3 +577,29 @@ tbody tr:hover {
   font-weight: bold;
   cursor: pointer;
 }
+
+#navigation {
+  padding: 8px 30px 0 30px;
+}
+
+.navbar-default {
+  background-color: rgba(255,255,255,00);
+  padding: 0;
+  border: 0;
+}
+
+.btn-default {
+  background-color: rgba(157,115,67,0.35);
+  border: 0;
+  font-weight: 500;
+}
+
+.btn-default:active:hover,
+.btn-default:hover,
+.btn-default:active {
+  background-color: rgba(157,115,67,0.35);
+}
+
+.btn:active:focus,
+.btn:focus { outline: 0; }
+

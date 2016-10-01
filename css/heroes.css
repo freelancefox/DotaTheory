@@ -3,11 +3,23 @@ body {
   color: #191919;
 }
 
-a {
-  //color: #6e4926;
+a { color: #333333; }
+a:focus, a:hover {
+  text-decoration: none;
+  color: #333333;
 }
-
-a:hover, a:focus {
+.btn-default a { color: #f9f9f9; }
+.btn-default a:focus, a:hover {
+  text-decoration: none;
+  color: #333333;
+}
+.btn-default:hover a,
+.btn-default:focus a {
+  color: #333333;
+}
+.btn-default:hover,
+.btn-default:focus {
+  background-color: rgba(255,255,255,0.35);
   text-decoration: none;
 }
 
@@ -162,8 +174,8 @@ h5 {
 .padded {
   padding-top: 0px;
   padding-bottom: 0px;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 #padth {
@@ -534,15 +546,18 @@ h5 {
   //border: 18px outset rgba(0,51,102,0.07);
 }
 
-.cola .col-md-9 {
+.cola > .row {
+  margin: 0 5%;
   border: 18px outset rgba(0,44,55,0.15);
 }
 
-.colb .col-md-9 {
+.colb > .row {
+  margin: 0 5%;
   border: 18px outset rgba(36,38,28,0.15);
 }
 
-.colc .col-md-9 {
+.colc > .row {
+  margin: 0 5%;
   border: 18px outset rgba(12,41,47,0.15);
 }
 
@@ -559,4 +574,21 @@ h5 {
 .notes {
   padding-left: 15px;
 }
+
+.btn-default {
+  background-color: rgba(255,255,255,0.35);
+  border: 0;
+  font-weight: 500;
+  padding: 6px;
+  margin: 8px 15px;
+}
+
+.btn-default:active:hover,
+.btn-default:hover,
+.btn-default:active {
+  background-color: rgba(255,255,255,0.35);
+}
+
+.btn:active:focus,
+.btn:focus { outline: 0; }
 

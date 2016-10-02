@@ -14,7 +14,7 @@
     <button class="btn btn-default pull-left header-hide">
       <a href="index.html">< INDEX</a>
     </button>
-    <button class="btn btn-default pull-right">
+    <button class="btn btn-default pull-right hide-top" style="display: none;">
       <a id="top">^ TOP</a>
     </button>
   </div><!--/.row-->
@@ -3273,9 +3273,11 @@
       {
         if ($(window).scrollTop() >= 50) {
           $('.header-hide').css('display', 'none');
+          $('.hide-top').css('display', 'block');
         }
         if ($(window).scrollTop() < 50) {
           $('.header-hide').css('display', 'block');
+          $('.hide-top').css('display', 'none');
         }
       });
     });

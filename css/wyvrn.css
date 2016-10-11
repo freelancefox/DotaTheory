@@ -181,6 +181,13 @@ h5 {
   width: 160px;
 }
 
+.hero-box-2 {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #1D3E37;
+  width: 112px;
+}
+
 .item-box-4 {
   padding-top: 4px;
   padding-bottom: 4px;
@@ -481,3 +488,11 @@ h5 {
 
 .btn:active:focus,
 .btn:focus { outline: 0; }
+
+.starting {
+  outline: 1px solid #22dd33;
+}
+
+.sixslot {
+  outline: 1px solid #2233cc;
+}

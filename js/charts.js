@@ -183,6 +183,96 @@ $(function () {
   });
 });
 $(function () {
+  $('#stats3').highcharts({
+
+    chart: {
+      type: 'column',
+      marginBottom: 80,
+      backgroundColor:'rgba(255,255,255,0.175)'
+    },
+
+    title: {
+      text: 'Total Stats at Level 25',
+      margin: 0,
+      style: {
+        color:'#1D3E37',
+        fontSize:'15px',
+        fontWeight:'bold'
+      }
+    },
+
+    xAxis: {
+      categories: [
+        'Silencer',
+        'Naga Siren',
+        'Outworld Devourer',
+        'Vengeful Spirit',
+        'Centaur Warrunner',
+        '<b>Winter Wyvern</b>',
+        'Bloodseeker',
+        'Dazzle',
+        'Invoker',
+        'Treant Protector'],
+      labels: {
+        style: {
+          fontSize:'0.8em'
+        }
+      }
+    },
+
+    yAxis: {
+      allowDecimals: false,
+      min: 0,
+      tickInterval: 25,
+      title: {
+        text: null
+      },
+      stackLabels: {
+        enabled: true,
+        style: {
+          fontSize:'0.75em',
+          color:'#1D3E37'
+        }
+      }
+    },
+
+    tooltip: {
+      headerFormat: '<b>{point.x}</b><br/>',
+      pointFormat: 'Total base {series.name} at lvl 25: {point.y}<br/>Total: {point.stackTotal}'
+    },
+
+    credits: {
+      enabled: false
+    },
+
+    legend: {
+      enabled: false
+    },
+
+    plotOptions: {
+      column: {
+        stacking: 'normal',
+        dataLabels: {
+          enabled: true,
+          fontSize:'0.75em',
+          color:'#1D3E37'
+        }
+      }
+    },
+
+    series: [{
+      name: 'Intelligence',
+      data: [87, 69, 90.8, 49, 53.4, 99.4, 58.8, 108.6, 112, 60.2]
+    }, {
+      name: 'Strength',
+      data: [69.8, 81, 74.2, 80.4, 119, 74.4, 80.6, 60.4, 57.8, 104.2]
+    }, {
+      name: 'Agility',
+      data: [94, 87, 72, 106.2, 63, 61.6, 96, 61.8, 59.6, 63]
+    }]
+  });
+});
+$(function () {
   $('#blast').highcharts({
 
     chart: {
@@ -252,7 +342,7 @@ $(function () {
           this.series.name + ': ' + this.y +
           '<br/>Damage: ' + this.point.damage +
           '<br/>Cooldown: ' + this.point.cooldown +
-          '<br/>Manacost: ' + this.point.manacost;
+          's<br/>Manacost: ' + this.point.manacost;
       }
     },
 
@@ -605,5 +695,416 @@ $(function () {
         y: 0.01
       }]
     }]
+  });
+});
+$(function () {
+  $('#winratebars').highcharts({
+
+    chart: {
+      type: 'column',
+      backgroundColor:'rgba(255,255,255,0.175)'
+    },
+
+    title: {
+      text: 'Wyvern Winrate by Role & Farm at TI6',
+      style: {
+        margin:'8px',
+        color:'#1D3E37',
+        fontSize:'15px',
+        fontWeight:'bold'
+      }
+    },
+
+    legend: {
+      color:'#1D3E37',
+      enabled: true,
+      layout: 'horizontal',
+      align: 'center',
+      padding: 0,
+      floating: false,
+      itemStyle: {
+        fontSize: '12px',
+        fontWeight: 'normal'
+      }
+    },
+
+    xAxis: {
+      title: {
+        text: 'Position vs Farm',
+        style: {
+          color:'#1D3E37'
+        }
+      },
+      categories: ['4', '5'],
+      labels: {
+        style: {
+          fontSize:'0.8em'
+        }
+      }
+    },
+
+    yAxis: {
+      allowDecimals: false,
+      min: -250,
+      max: 650,
+      tickInterval: 100,
+      title: {
+        text: 'Game Length in Minutes',
+        style: {
+          color:'#1D3E37'
+        }
+      },
+      stackLabels: {
+        enabled: true,
+        formatter: function() {
+          var pct = [0, 0];
+          var nct = [0, 0];
+          var series = this.axis.series;
+
+          for (var i in series){
+            if (series[i].yData[this.x] > 0) {
+              if (series[i].stackKey == 'column4') { pct[0] += 1; }
+              else if (series[i].stackKey == 'column5') { pct[1] += 1; }
+            }
+            else if (series[i].yData[this.x] < 0) {
+              if (series[i].stackKey == 'column4') { nct[0] += 1; }
+              else if (series[i].stackKey == 'column5') { nct[1] += 1; }
+            }
+          }
+          if (!this.isNegative) {
+            if (this.stack == '4') { return pct[0] + " wins"; }
+            else if (this.stack == '5') { return pct[1] + " wins"; }
+          }
+          else {
+            if (this.stack == '4') { return nct[0] + " losses"; }
+            else if (this.stack == '5') { return nct[1] + " losses"; }
+          }
+        },
+        style: {
+          fontSize:'0.65em',
+          color:'#1D3E37'
+        }
+      }
+    },
+
+    tooltip: {
+      headerFormat: '<b>{point.x}-pos WW by {series.name}',
+      pointFormat: '.{point.playername}:</b><br/> {point.y} minute game vs. {point.opponent}<br><b>Gold Per Minute:</b> {point.gpm}<br><b>% of Team\'s Net Worth:</b> {point.percentnw}'
+    },
+
+    credits: {
+      enabled: false
+    },
+
+    plotOptions: {
+      column: {
+        cursor: 'pointer',
+        stacking: 'normal',
+        dataLabels: {
+          enabled: false,
+          color:'#1D3E37'
+        },
+        point: {
+          events: {
+            click: function() { window.open(this.url); }
+          }
+        }
+      }
+    },
+
+    series: [{
+      name: 'EG',
+      color: '#2E6797',
+      stack: '4',
+      data: [0, {
+        playername: 'ppd',
+        y: -23.77,
+        opponent: 'Wings',
+        gpm: 248,
+        percentnw: '14.3%',
+        url: 'http://www.dotabuff.com/matches/2566800064'
+      }]
+    }, {
+      name: 'EG',
+      color: '#2E6797',
+      linkedTo: ':previous',
+      stack: '5',
+      data: [0, {
+        playername: 'ppd',
+        y: 31.07,
+        opponent: 'Newbee',
+        gpm: 240,
+        percentnw: '11.6%',
+        url: 'http://www.dotabuff.com/matches/2560158271'
+      }]
+    }, {
+      name: 'EG',
+      color: '#2E6797',
+      linkedTo: ':previous',
+      stack: '5',
+      data: [0, {
+        playername: 'ppd',
+        y: 72.1,
+        opponent: 'TNC',
+        gpm: 275,
+        percentnw: '12.6%',
+        url: 'http://www.dotabuff.com/matches/2549111670'
+      }]
+    }, {
+      name: 'EG',
+      color: '#2E6797',
+      linkedTo: ':previous',
+      stack: '4',
+      data: [0, {
+        playername: 'ppd',
+        y: 15.45,
+        opponent: 'VB',
+        gpm: 255,
+        percentnw: '13.2%',
+        url: 'http://www.dotabuff.com/matches/2461672415'
+      }]
+    }, {
+      name: 'EHOME',
+      color: '#414141',
+      stack: '5',
+      data: [0, {
+        playername: 'Fenrir',
+        y: 38.58,
+        opponent: 'VG.R',
+        gpm: 303,
+        percentnw: '13%',
+        url: 'http://www.dotabuff.com/matches/2469469364'
+      }]
+    }, {
+      name: 'Na\'vi',
+      color: '#FFF200',
+      stack: '5',
+      data: [0, {
+        playername: 'Sonneiko',
+        y: -35.12,
+        opponent: 'TNC',
+        gpm: 314,
+        percentnw: '15.2%',
+        url: 'http://www.dotabuff.com/matches/2547331853'
+      }]
+    }, {
+      name: 'DC',
+      color: '#242054',
+      stack: '5',
+      data: [0, {
+        playername: 'Saksa',
+        y: -45.48,
+        opponent: 'Wings',
+        gpm: 305,
+        percentnw: '16.5%',
+        url: 'http://www.dotabuff.com/matches/2569531910'
+      }]
+    }, {
+      name: 'DC',
+      color: '#242054',
+      linkedTo: ':previous',
+      stack: '4',
+      data: [0, {
+        playername: 'Saksa',
+        y: 28.23,
+        opponent: 'TNC',
+        gpm: 408,
+        percentnw: '15.5%',
+        url: 'http://www.dotabuff.com/matches/2564408925'
+      }]
+    }, {
+      name: 'DC',
+      color: '#242054',
+      linkedTo: ':previous',
+      stack: '5',
+      data: [0, {
+        playername: 'Saksa',
+        y: 56.8,
+        opponent: 'LGD',
+        gpm: 316,
+        percentnw: '12.9%',
+        url: 'http://www.dotabuff.com/matches/2560502724'
+      }]
+    }, {
+      name: 'DC',
+      color: '#242054',
+      linkedTo: ':previous',
+      stack: '5',
+      data: [0, {
+        playername: 'Saksa',
+        y: 27.22,
+        opponent: 'Complexity',
+        gpm: 483,
+        percentnw: '17.5%',
+        url: 'http://www.dotabuff.com/matches/2468728087'
+      }]
+    }, {
+      name: 'DC',
+      color: '#242054',
+      linkedTo: ':previous',
+      stack: '5',
+      data: [0, {
+        playername: 'Saksa',
+        y: 28.97,
+        opponent: 'Complexity',
+        gpm: 315,
+        percentnw: '13.1%',
+        url: 'http://www.dotabuff.com/matches/2468689041'
+      }]
+    }, {
+      name: 'DC',
+      color: '#242054',
+      linkedTo: ':previous',
+      stack: '5',
+      data: [0, {
+        playername: 'Saksa',
+        y: 29.77,
+        opponent: 'Complexity',
+        gpm: 386,
+        percentnw: '15.3%',
+        url: 'http://www.dotabuff.com/matches/2468492567'
+      }]
+    }, {
+      name: 'DC',
+      color: '#242054',
+      linkedTo: ':previous',
+      stack: '5',
+      data: [0, {
+        playername: 'Saksa',
+        y: 22.42,
+        opponent: 'FDL',
+        gpm: 260,
+        percentnw: '11.7%',
+        url: 'http://www.dotabuff.com/matches/2464111444'
+      }]
+    }, {
+      name: 'Escape',
+      color: '#E7853E',
+      stack: '5',
+      data: [0, {
+        playername: 'Synderen',
+        y: 71.75,
+        opponent: 'Alliance',
+        gpm: 299,
+        percentnw: '12.1%',
+        url: 'http://www.dotabuff.com/matches/2550971502'
+      }]
+    }, {
+      name: 'Escape',
+      color: '#E7853E',
+      linkedTo: ':previous',
+      stack: '5',
+      data: [0, {
+        playername: 'Synderen',
+        y: -33.13,
+        opponent: 'Ad Finem',
+        gpm: 175,
+        percentnw: '11.7%',
+        url: 'http://www.dotabuff.com/matches/2550971502'
+      }]
+    }, {
+      name: 'Escape',
+      color: '#E7853E',
+      linkedTo: ':previous',
+      stack: '5',
+      data: [0, {
+        playername: 'Synderen',
+        y: 48.67,
+        opponent: 'Fantastic 5',
+        gpm: 234,
+        percentnw: '10.4%',
+        url: 'http://www.dotabuff.com/matches/2550971502'
+      }]
+    }, {
+      name: 'Escape',
+      color: '#E7853E',
+      linkedTo: ':previous',
+      stack: '5',
+      data: [0, {
+        playername: 'Synderen',
+        y: -34.37,
+        opponent: 'Alliance',
+        gpm: 250,
+        percentnw: '15.1%',
+        url: 'http://www.dotabuff.com/matches/2550971502'
+      }]
+    }, {
+      name: 'Secret',
+      color: '#000000',
+      stack: '5',
+      data: [0, {
+        playername: 'PieLieDie',
+        y: 76.8,
+        opponent: 'Empire',
+        gpm: 276,
+        percentnw: '13.2%',
+        url: 'http://www.dotabuff.com/matches/2463855212'
+      }]
+    }, {
+      name: 'Secret',
+      color: '#000000',
+      linkedTo: ':previous',
+      stack: '5',
+      data: [0, {
+        playername: 'PieLieDie',
+        y: 71.27,
+        opponent: 'Escape',
+        gpm: 297,
+        percentnw: '13.3%',
+        url: 'http://www.dotabuff.com/matches/2464172585'
+      }]
+    }, {
+      name: 'LGD',
+      color: '#b2b2b2',
+      stack: '4',
+      data: [{
+        playername: 'mmy',
+        y: 69.73,
+        opponent: 'Secret',
+        gpm: 272,
+        percentnw: '11.5%',
+        url: 'http://www.dotabuff.com/matches/2558387942'
+      }, 0]
+    }, {
+      name: 'Complexity',
+      color: '#DD2631',
+      stack: '4',
+      data: [{
+        playername: 'Zfreek',
+        y: -63.0,
+        opponent: 'DC',
+        gpm: 268,
+        percentnw: '12.4%',
+        url: 'http://www.dotabuff.com/matches/2468922471'
+      }, 0]
+    }, {
+      name: 'Complexity',
+      color: '#DD2631',
+      linkedTo: ':previous',
+      stack: '5',
+      data: [0, {
+        playername: 'Handsken',
+        y: -31.3,
+        opponent: 'DC',
+        gpm: 224,
+        percentnw: '13.3%',
+        url: 'http://www.dotabuff.com/matches/2468440492'
+      }]
+    }, {
+      name: 'Complexity',
+      color: '#DD2631',
+      linkedTo: ':previous',
+      stack: '5',
+      data: [0, {
+        playername: 'Handsken',
+        y: 28.3,
+        opponent: 'FDL',
+        gpm: 324,
+        percentnw: '12.7%',
+        url: 'http://www.dotabuff.com/matches/2466075858'
+      }]
+    }
+
+    ]
   });
 });

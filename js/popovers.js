@@ -879,6 +879,26 @@ jQuery(document).ready(function() {
         return $('#content-cw').html();
       }
   });
+   $('#popover-alch').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-alch').html();
+      }
+  });
+   $('#popover-magnus2').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-magnus2').html();
+      }
+  });
    $('#popover-magnus').popover({
       toggle:'popover',
       container:'body',
@@ -1599,14 +1619,14 @@ jQuery(document).ready(function() {
         return $('#content-clumped').html();
       }
   });
-   $('#popover-weak').popover({
+   $('#popover-melee').popover({
       toggle:'popover',
       container:'body',
       trigger:'hover click',
       placement:'top',
       html: true,
       content: function() {
-        return $('#content-weak').html();
+        return $('#content-melee').html();
       }
   });
    $('#popover-auras').popover({

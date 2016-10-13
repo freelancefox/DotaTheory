@@ -1809,14 +1809,14 @@ jQuery(document).ready(function() {
         return $('#content-build12').html();
       }
   });
-   $('#popover-urn').popover({
+   $('#popover-raindrops').popover({
       toggle:'popover',
       container:'body',
       trigger:'hover click',
       placement:'left',
       html: true,
       content: function() {
-        return $('#content-urn').html();
+        return $('#content-raindrops').html();
       }
   });
    $('#popover-bottle').popover({
@@ -1827,6 +1827,16 @@ jQuery(document).ready(function() {
       html: true,
       content: function() {
         return $('#content-bottle').html();
+      }
+  });
+   $('#popover-pms').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'left',
+      html: true,
+      content: function() {
+        return $('#content-pms').html();
       }
   });
    $('#popover-wand').popover({

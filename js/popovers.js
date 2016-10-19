@@ -579,14 +579,14 @@ jQuery(document).ready(function() {
         return $('#content-qop').html();
       }
   });
-   $('#popover-lina2').popover({
+   $('#popover-disruptor').popover({
       toggle:'popover',
       container:'body',
       trigger:'hover click',
       placement:'top',
       html: true,
       content: function() {
-        return $('#content-lina').html();
+        return $('#content-disruptor').html();
       }
   });
    $('#popover-lina').popover({
@@ -1209,6 +1209,156 @@ jQuery(document).ready(function() {
         return $('#content-sf').html();
       }
   });
+   $('#popover-lvl0-3').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-lvl1-3').html();
+      }
+  });
+   $('#popover-lvl2-3').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-lvl2-3').html();
+      }
+  });
+   $('#popover-lvl3-3').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-lvl3-3').html();
+      }
+  });
+   $('#popover-lvl4-3').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-lvl4-3').html();
+      }
+  });
+   $('#popover-lvl5-3').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-lvl5-3').html();
+      }
+  });
+   $('#popover-lvl6-3').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-lvl6-3').html();
+      }
+  });
+   $('#popover-lvl7-3').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-lvl7-3').html();
+      }
+  });
+   $('#popover-lvl8-3').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-lvl8-3').html();
+      }
+  });
+   $('#popover-lvl9-3').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-lvl9-3').html();
+      }
+  });
+   $('#popover-lvl10-3').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-lvl10-3').html();
+      }
+  });
+   $('#popover-lvl11-3').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-lvl11-3').html();
+      }
+  });
+   $('#popover-lvl12-3').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-lvl12-3').html();
+      }
+  });
+   $('#popover-lvl13-3').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-lvl13-3').html();
+      }
+  });
+   $('#popover-lvl14-3').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-lvl14-3').html();
+      }
+  });
+   $('#popover-lvl16-3').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-lvl16-3').html();
+      }
+  });
    $('#popover-lvl1-2').popover({
       toggle:'popover',
       container:'body',
@@ -1356,7 +1506,7 @@ jQuery(document).ready(function() {
       placement:'top',
       html: true,
       content: function() {
-        return $('#content-lvl16').html();
+        return $('#content-lvl16-2').html();
       }
   });
    $('#popover-lvl1').popover({

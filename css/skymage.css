@@ -27,6 +27,13 @@ a:focus, a:hover {
   color: #233E4B;
 }
 
+@media (min-width: 1920px)
+{
+  #header {
+    background-size: 100%;
+  }
+}
+
 #header {
   background-image: url('../img/skymage-header.png');
   background-position: center;

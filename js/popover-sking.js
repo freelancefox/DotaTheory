@@ -1829,6 +1829,16 @@ jQuery(document).ready(function() {
         return $('#content-bottle').html();
       }
   });
+   $('#popover-oov').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'left',
+      html: true,
+      content: function() {
+        return $('#content-oov').html();
+      }
+  });
    $('#popover-pms').popover({
       toggle:'popover',
       container:'body',

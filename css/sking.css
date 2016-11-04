@@ -26,6 +26,13 @@ a:focus, a:hover {
   color: #F9F9F9;
 }
 
+@media (min-width: 1920px)
+{
+  #header {
+    background-size: 100%;
+  }
+}
+
 #header {
   background-image: url('../img/header.png');
   background-position: center;

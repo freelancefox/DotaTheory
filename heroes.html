@@ -191,17 +191,19 @@
                   <p class="ability">
                     Proteus attaches a small piece of itself to the target ally
                     in the form of a Polyp, providing the host ally with a base
-                    amount of bonus health that regenerates over time. The
-                    Polyp remains until killed or until its host's next attack,
-                    at which point all remaining Polyp health is added to the
-                    host's next auto-attack as bonus magical damage.
+                    amount of bonus health that regenerates until reaching
+                    full. The Polyp remains for a duration, until killed or
+                    until its host attacks, at which point all remaining
+                    Polyp health is added to the host's auto-attack as bonus
+                    magical damage.
                   </p>
                   <p><b>Cast Range</b>: 800</p>
                   <p><b>Polyp Base Health</b>: 50/75/100/125</p>
                   <p><b>Polyp Regen Rate</b>: 5/10/20/25 hp/s</p>
-                  <p><b>Full Charge Duration</b>: 20/15/10/10s</p>
+                  <p><b>Duration For Max Charge</b>: 20/15/10/10s</p>
                   <p><b>Max Polyp Health/Damage</b>: 150/225/300/375</p>
                   <p><b>Max Polyps per Hero</b>: 1</p>
+                  <p><b>Polyp Duration</b>: 50s</p>
                 </div>
                 <div class="row notes">
                   <h5>Notes:</h5>
@@ -210,13 +212,30 @@
                       Polyps do not stack with each other. Casting a second
                       Polyp on an ally has no effect (unless the Polyp's health
                       was at less than its base health, at which point the new
-                      polyp will override) but still puts the spell on
+                      Polyp will override) but still puts the spell on
                       cooldown.
+                    </li>
+                    <li>
+                      At level 1, Proteus can place up to 2 Polyps on allies
+                      and use them to deal maximum damage during a 12 second
+                      window where they're both fully charged. With level 2,
+                      3 and 4 Polyp this increases to 3 max Polyps in an 8s
+                      window, 4 max Polyps in a 13s window, and 5 max Polyps
+                      in a 12s window respectively.
+                    <li>
+                      With level 3 ultimate, Proteus can extend this window up
+                      to ~21s, although the Polyps lose their ability to regenerate
+                      health upon reaching full capacity.
                     </li>
                     <li>
                       Polyps are indicated visually by an additional light blue
                       health bar over the target, as well as the model of a
                       Polyp hovering above the target.
+                    </li>
+                    <li>
+                      Polyp damage does not work on buildings, though the buff
+                      and damage are expended anyway if the host attacks a
+                      structure.
                     </li>
                   </ul>
                 </div>
@@ -294,7 +313,18 @@
             <h3 id="cl1b" type="button" data-toggle="collapse"
                 data-target="#cl1">↓ Changelog ↓</h3>
             <div id="cl1" class="row padded collapse">
-              <p id="AAA">v2.2 (May 2016):</p>
+              <p id="AAA">v2.5 (Nov 2016):</p>
+              <ul>
+                <li>
+                  Update Polyp mechanics after gameplay testing: Polyp now
+                  has a max duration of 50 seconds, leading to a maximum
+                  window for Polyp's damage to take effect, in effect limiting
+                  you to 2/3/4/5 possible max Polyps at a time. Polyps also
+                  now stop regening upon reaching full HP. Polyp bonus damage
+                  explicitly does not affect buildings.
+                </li>
+              </ul>
+              <p>v2.2 (May 2016):</p>
               <ul>
                 <li>
                   Added Aghanim's Scepter: Allows Rarefaction to affect allied Ultimates, and doubles the aura radius.
@@ -353,9 +383,10 @@
                   Reverted experimental Jet changes, and increased Jet
                   distance from 250/300/350/400 to 240/360/480/600
                 </li>
-<li>
-Increased Rarefaction bonus damage taken from 20% to 40%,
-and added scaling aura radius from 900 to 900/1200/1500.</li>
+                <li>
+                  Increased Rarefaction bonus damage taken from 20% to 40%,
+                  and added scaling aura radius from 900 to 900/1200/1500.
+                </li>
               </ul>
               <p id="aAA">v1.21 (Sept 2013):</p>
               <ul>
@@ -866,6 +897,11 @@ and added scaling aura radius from 900 to 900/1200/1500.</li>
                       When the sprite is initially thrown out, leaves behind a
                       trail of water as it flies to the target location.
                     </li>
+                    <li>
+                      There may only be one Sprite at a time. Throwing a new Sprite
+                      while an existing Sprite is out causes the older the despawn,
+                      but the trail will linger.
+                    </li>
                   </ul>
                 </div>
               </div><!--/.col-md-9-->
@@ -875,7 +911,7 @@ and added scaling aura radius from 900 to 900/1200/1500.</li>
                 <img src="img/place.png">
                 <div id="icons" class="row">
                   <p><img src="img/cd.png"> 20/16/12/8s</p>
-                  <p><img src="img/mana.png"> 180/220/260/300</p>
+                  <p><img src="img/mana.png"> 135/180/225/270</p>
                 </div>
               </div><!--/.col-md-3-->
               <div class="col-md-9">
@@ -896,7 +932,7 @@ and added scaling aura radius from 900 to 900/1200/1500.</li>
                   <h5>Notes:</h5>
                   <ul>
                     <li>
-                      Mana Wave always has a net manacost of 90/100/110/120,
+                      Mana Wave always has a net manacost of 45/60/75/90,
                       but may only be cast when Merinth has the full amount
                       of mana available.
                     </li>
@@ -904,6 +940,9 @@ and added scaling aura radius from 900 to 900/1200/1500.</li>
                       The wave expands at a speed of 300 units per second to its
                       max radius, then remains at its full radius for 0.33s before
                       receding. The total effect duration is 2.33/2.66/3.0/3.33s.
+                      May effect each target once while they are in the area, so
+                      allies with full mana or enemies with no mana will be effected
+                      if they're in the wave when their status changes.
                     </li>
                   </ul>
                 </div>

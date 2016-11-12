@@ -231,7 +231,7 @@ h5 {
 }
 
 .border {
-  border: 4px solid #1D3E37;
+  outline: 4px solid #1D3E37;
 }
 
 .item-row {
@@ -328,9 +328,9 @@ h5 {
 }
 
 #skills > img {
-  margin-top: 4px;
+  margin-top: 8px;
   margin-bottom: 4px;
-  width: 48px;
+  width: 40px;
 }
 
 #stats1 {

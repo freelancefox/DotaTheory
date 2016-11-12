@@ -293,7 +293,7 @@ tr:hover, tr:focus {
 }
 
 .border {
-  border: 4px solid #292018;
+  outline: 4px solid #292018;
 }
 
 .item-row {
@@ -399,10 +399,9 @@ tr:hover, tr:focus {
 }
 
 #skills > img {
-  margin-top: 4px;
+  margin-top: 8px;
   margin-bottom: 4px;
-  height: 48px;
-  width: 48px;
+  width: 40px;
 }
 
 #skills > h4 {

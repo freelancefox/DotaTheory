@@ -588,7 +588,7 @@ h5 {
 
 .cold > .row {
   margin: 0 5%;
-  border: 18px outset rgba(110,213,207,0.25);
+  border: 18px outset rgba(33,116,136,0.15);
 }
 
 .ability {

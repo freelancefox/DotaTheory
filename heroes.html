@@ -13,13 +13,16 @@
   <button class="btn btn-default pull-left header-hide" style="margin-top:12px; padding:10px;">
     <a href="index">< INDEX</a>
   </button>
-  <div class="container" style="padding: 0;">
+  <button class="btn btn-default pull-right hide-top" style="display: none;">
+    <a id="top">^ TOP</a>
+  </button>
+  <div id="controls" class="container" style="padding: 0;">
     <div class="row text-center header-hide">
       <h1>Custom Heroes Index</h1>
     </div><!--/.row-->
     <div id="navigation" class="row text-center">
       <div class="jumpb" >
-        <a id="cccx" href="#merinth" onclick="this.click()"><<</a>
+        <a id="dddx" href="#arcturyx" onclick="this.click()"><<</a>
       </div>
       <div class="panel-group" id="accordionTwo">
         <div class="panel panel-default">
@@ -33,6 +36,7 @@
               <a id="aaax" href="#proteus" class="list-group-item"><img src="img/Intelligence_symbol.png" height="24" width="24"> Proteus, the Kraken Spawn</a>
               <a id="bbbx" href="#antares" class="list-group-item"><img src="img/Agility_symbol.png" height="24" width="24"> Antares, the Stag Archer</a>
               <a id="cccx" href="#merinth" class="list-group-item"><img src="img/Intelligence_symbol.png" height="24" width="24"> Sulliver, the Merinth Tracker</a>
+              <a id="dddx" href="#arcturyx" class="list-group-item"><img src="img/Agility_symbol.png" height="24" width="24"> Arcturyx, the Warbird</a>
             </div>
           </div>
         </div>
@@ -155,7 +159,7 @@
             <h3 class="h3a">Skills</h3>
             <div class="row padded">
               <div class="col-md-3">
-                <img src="img/proteus_razorwind.png">
+                <img class="img-responsive" src="img/proteus_razorwind.png">
                 <div id="icons" class="row">
                   <p><img src="img/cd.png"> 6/5.5/5/4.5s</p>
                   <p><img src="img/mana.png"> 90/100/110/120</p>
@@ -179,7 +183,7 @@
             </div><!--/.row-->
             <div id="aaA" class="row padded">
               <div class="col-md-3">
-                <img src="img/proteus_polyp.png">
+                <img class="img-responsive" src="img/proteus_polyp.png">
                 <div id="icons" class="row">
                   <p><img src="img/cd.png"> 13/11/9/7s</p>
                   <p><img src="img/mana.png"> 80/70/60/50</p>
@@ -243,7 +247,7 @@
             </div><!--/.row-->
             <div class="row padded">
               <div class="col-md-3">
-                <img src="img/proteus_jet.png">
+                <img class="img-responsive" src="img/proteus_jet.png">
                 <div id="icons" class="row">
                   <p><img src="img/cd.png"> 6/5/4/3s</p>
                   <p><img src="img/mana.png"> 20/30/40/50</p>
@@ -268,7 +272,7 @@
             </div><!--/.row-->
             <div class="row padded">
               <div class="col-md-3">
-                <img src="img/proteus_rarefaction.png">
+                <img class="img-responsive" src="img/proteus_rarefaction.png">
                 <div id="icons" class="row">
                   <p><img src="img/cd.png"> 2s</p>
                   <p><img src="img/mana.png"> 0</p>
@@ -602,7 +606,7 @@
             <h3 class="h3b">Skills</h3>
             <div class="row padded">
               <div class="col-md-3">
-                <img src="img/place.png">
+                <img class="img-responsive" src="img/place.png">
                 <div id="icons" class="row">
                   <p><img src="img/cd.png"> 8/7/6/5s</p>
                   <p><img src="img/mana.png"> 30/45/60/75</p>
@@ -638,7 +642,7 @@
             </div><!--/.row-->
             <div class="row padded">
               <div class="col-md-3">
-                <img src="img/place.png">
+                <img class="img-responsive" src="img/place.png">
                 <div id="icons" class="row">
                   <p><img src="img/cd.png"> 14s</p>
                   <p><img src="img/mana.png"> 55/95/135/175</p>
@@ -663,7 +667,7 @@
             </div><!--/.row-->
             <div class="row padded">
               <div class="col-md-3">
-                <img src="img/place.png">
+                <img class="img-responsive" src="img/place.png">
                 <div id="icons" class="row">
                   <p><img src="img/cd.png"> 30/25/20/15s</p>
                   <p><img src="img/mana.png"> 150/160/170/180</p>
@@ -684,11 +688,11 @@
                   </p>
                   <p><b>Cast Time</b>: instant</p>
                   <p><b>Plateau Radius</b>: 150/175/200/225</p>
-                  <p><b>Plateau Max Duration</b>: 6/7/8/9s</p>
+                  <p><b>Plateau Max Duration</b>: 4.5/6/7.5/9s</p>
                   <p><b>Plateau Damage</b>: 15/18/21/24 per second</p>
                   <p><b>Collapse Damage</b>: 15/18/21/24 per second</p>
-                  <p id="bbB"><b>Max Collapse Damage</b>: 90/126/168/216</p>
-                  <p><b>Total Max Damage</b>: 180/252/336/432</p>
+                  <p id="bbB"><b>Max Collapse Damage</b>: 67.5/108/157.5/216</p>
+                  <p><b>Total Max Damage</b>: 135/216/315/432</p>
                   <p><b>Collapse Damage Radius</b>: 225/250/275/300</p>
                 </div>
                 <div class="row notes">
@@ -718,7 +722,7 @@
             </div><!--/.row-->
             <div class="row padded">
               <div class="col-md-3">
-                <img src="img/place.png">
+                <img class="img-responsive" src="img/place.png">
                 <div id="icons" class="row">
                 </div>
               </div><!--/.col-md-3-->
@@ -758,7 +762,45 @@
           <div id="changelog" class="row">
             <h3 id="cl2b" type="button" data-toggle="collapse" data-target="#cl2">↓ Changelog ↓</h3>
             <div id="cl2" class="row padded collapse">
-              
+              <p id="bBB">v2.1 (June 2016):</p>
+              <ul>
+                <li>
+                  Eruption duration reduced from 6/7/8/9s to 4.5/6/7.5/9s,
+                  rescaling the total max damage from 180/252/336/432 to
+                  135/216/315/432.
+                </li>
+              <p>
+              <p>v2.0 (June 2016):</p>
+              <li>
+                  Sidewinder damage increased from 100/140/180/220 +
+                  10/20/30/40 per unit or hero to 100/150/200/250 + 20/30/40/50
+                  per unit and 10/15/20/25 per unit.
+                </li>
+                <li>
+                  Seismic Impact renamed to Cliff Jump, changes to auto-trigger
+                  near cliffs/terrain when toggled on. Added damage, reduced
+                  stun duration, cooldown, and manacost.
+                </li>
+                <li>
+                  Eruption now a normal skill E, Kinetic Shroud is now the
+                  ultimate Kinetic Charge.
+                </li>
+              </ul>
+              <p>v1.1 (July 2015):</p>
+              <ul>
+                <li>
+                  Updated bio & Kinetic Shroud description
+                </li>
+                <li>
+                  Posted to <a href="https://www.reddit.com/r/DotaConcepts/comments/3c0nvf/contest_antares_the_stag_archer/">/r/dotaconcepts</a> elevation contest
+                </li>
+              </ul>
+              <p>v1.0 (April 2015):</p>
+              <ul>
+                <li>
+                  Posted to <a href="https://www.reddit.com/r/DotaConcepts/comments/31gc2o/hero_antares_the_stag_archer/">/r/dotaconcepts</a>
+                </li>
+              </ul>
             </div><!--/.row-->
           </div><!--/.row-->
         </div><!--/.section-bg-->
@@ -862,10 +904,10 @@
             <h3 class="h3c">Skills</h3>
             <div class="row padded">
               <div class="col-md-3">
-                <img src="img/place.png">
+                <img class="img-responsive" src="img/place.png">
                 <div id="icons" class="row">
                   <p><img src="img/cd.png"> 9/7/5/3s</p>
-                  <p><img src="img/mana.png"> 100</p>
+                  <p><img src="img/mana.png"> 70/80/90/100</p>
                 </div>
               </div><!--/.col-md-3-->
               <div class="col-md-9">
@@ -908,10 +950,10 @@
             </div><!--/.row-->
             <div id="ccC" class="row padded">
               <div class="col-md-3">
-                <img src="img/place.png">
+                <img class="img-responsive" src="img/place.png">
                 <div id="icons" class="row">
                   <p><img src="img/cd.png"> 20/16/12/8s</p>
-                  <p><img src="img/mana.png"> 135/180/225/270</p>
+                  <p><img src="img/mana.png"> 135/180/225/270 (<img src="img/aghs-upgrade.png"></img> 0)</p>
                 </div>
               </div><!--/.col-md-3-->
               <div class="col-md-9">
@@ -927,6 +969,11 @@
                   <p><b>Wave Radius</b>: 600/700/800/900</p>
                   <p><b>Wave Speed</b>: 300</p>
                   <p><b>Mana per Wave</b>: 90/120/150/180</p>
+                  <h5><b><img src="img/aghs-upgrade.png"></img> Aghanim's Upgrade:</b></h5>
+                  <p class="ability">
+                    Mana Wave costs no mana, and burns 50% more mana from
+                    enemies (135/180/225/270).
+                  </p>
                 </div>
                 <div class="row notes">
                   <h5>Notes:</h5>
@@ -950,7 +997,7 @@
             </div><!--/.row-->
             <div class="row padded">
               <div class="col-md-3">
-                <img src="img/place.png">
+                <img class="img-responsive" src="img/place.png">
                 <div id="icons" class="row">
                   <p><img src="img/cd.png"> 14/13/12/11s</p>
                   <p><img src="img/mana.png"> 60/90/120/150</p>
@@ -984,7 +1031,7 @@
             </div><!--/.row-->
             <div class="row padded">
               <div class="col-md-3">
-                <img src="img/place.png">
+                <img class="img-responsive" src="img/place.png">
               </div><!--/.col-md-3-->
               <div class="col-md-9">
                 <div class="row">
@@ -1010,7 +1057,30 @@
           <div id="changelog" class="row">
             <h3 id="cl3b" type="button" data-toggle="collapse" data-target="#cl3">↓ Changelog ↓</h3>
             <div id="cl3" class="row padded collapse">
-
+              <p id="cCC">v1.1 (June 2016):</p>
+              <ul>
+                <li>
+                  Water Sprite manacost from 100 to 70/80/90/100
+                </li>
+                <li>
+                  Added Aghanim's Scepter: Mana Wave now costs no mana, and
+                  burns 50% more mana from enemies (135/180/225/270)
+                </li>
+                <li>
+                  Reduced Mana Wave cooldown from 180/220/260/300 to
+                  135/180/225/270 (net manacost from 90/100/120/130 to
+                  45/60/75/90)
+                </li>
+                <li>
+                  Increased Water Sprite cooldown from 9/6/3/0s to 9/7/5/3s
+                </li>
+              </ul>
+              <p>v1.0 (April 2015):</p>
+              <ul>
+                <li>
+                  Posted to <a href="https://www.reddit.com/r/DotaConcepts/comments/31gghw/hero_sulliver_the_merinth_tracker/">/r/dotaconcepts</a>
+                </li>
+              </ul>
             </div><!--/.row-->
           </div><!--/.row-->
         </div><!--/.section-bg-->
@@ -1019,8 +1089,309 @@
   </div><!--/.container-->
 </div><!--/.row_ccc-->
 
+<div class="row page-spacer">
+  <div class="container">
+    <a name="arcturyx"></a>
+    <div id="spacer"></div>
+    <div id="hero-box" class="row text-center">
+      <div class="col-md-10 col-md-offset-1">
+        <div class="section-bg bgd">
+          <h2 class="h2d">Arcturyx, the Warbird</h2>
+          <h3>Radiant, Agility</h3>
+          <h4>Carry / Nuker</h4>
+          <img id="ddd" src="img/portrait.png"></img>
+          <div id="lore" class="row">
+            <div class="row padded">
+              <h4>Description</h4>
+              <p>
+                Arcturyx is a new breed of agility carry, similar to others
+                who rely on magic damage but eschewing physical damage nearly
+                entirely in the form of two main nukes that rely on stats and
+                deal pure damage in the form of Railgun and Broadside respectively.
+                His kit also offers a supportive mobility skill, Arc Boost, which
+                lets Arcturyx make dangerous dives of his own. His ultimate,
+                Prismatic Wings, ties it all together by reflecting enemy spells
+                and attacks while active, turning Arcturyx's health and mana pools
+                into a giant Armlet-like battery that discharges and must then
+                recharge.
+              </p>
+            </div>
+            <h3 id="l4b" type="button" data-toggle="collapse"
+                data-target="#l4">↓ Background Info ↓</h3>
+            <div id="l4" class="row padded collapse">
+              <p><i>"These memories are not my own. I must know—why?"</i></p>
+              <p><i>"When they told me I was a prodigy... I didn't think they meant at killing."</i></p>
+              <h4>Lore</h4>
+              <p>
+                Arcturyx was once a test subject in a secret Keen-folk weapons
+                program. One day he woke up with amnesia, grafted to a machine
+                and reborn as a sentient bird with firearms and futuristic
+                military technology that deflects magic.
+              </p>
+              <p>
+                Arcturyx's life was difficult from day one. He woke up on a
+                burned battlefield, fallen from a passing airship—perhaps. Or,
+                barely escaped from some far away mad scientist's coop. Or a
+                weapon for some mad king. Either way, Arcturyx now longed for a
+                roost, and decided to fly North.  Arcturyx flew over the
+                Wailing Mountains, finding no suitable homestead there in the
+                high craggy peaks, and so banked upward and into the clouds.
+                Rising up to the levels of the highest snow-capped peaks,
+                Arcturyx turned the corner around a hazy bank of ice clouds
+                when all of a sudden a shot rang out in the distance.  Quickly
+                he soared toward the sound's source, when all of a sudden came
+                into view the ramparts of a distant walled fortress, looming
+                above a sheer drop some thousands of feet into the clouds
+                below. Arcturyx peered through the clouds to where he spied
+                some sort of engagement happening in the air above it.
+              </p>
+              <p>
+                Zooming his view closer, Arcturyx identified what looked like
+                several birds with similar armaments to his own: cannons and
+                the like, encircling and attacking a convoy of airships
+                protected by a flock of Buzz Copters. As Arcturyx approached
+                quickly he realized he should enter the fray, but then paused.
+                He couldn't even remember who these other birds were, or
+                whether those ships they were attacking held innocent civilians
+                or untold treasures!
+              </p>
+              <p>
+                Arcturyx sailed past the sortie a first time, then caught a
+                draft and banked upward above the fracas. He peered down and
+                wondered whether he was meant to be fighting those copters.
+                Arcturyx certainly didn't want to any more. He wanted
+                desperately to fight his own enemies, and find out who made
+                him. He banked back towards the fortress and went looking for
+                its owner. Though he found no resolution there in the fortress
+                that day, Arcturyx would go on to recover scraps of his old
+                life, thoughts reoccuring to him as dreams or flashes at odd
+                moments. He was a boy once. He remembered the lab where they
+                eventually bade him into a machine to fuse with the weapons
+                system, and fragments of the experiments they put him through.
+                Now he wants answers even more than before, the question is
+                what he'll have to do to find them.
+              </p>
+              <h4>Appearance</h4>
+              <p>
+                A biomechanical bird brought to life by a mad scientist. Huge
+                steel-plated wings with crackling pads of energy that provide
+                lift, and project a holographic field while Arcturyx's ultimate
+                is active. Two main cannons on either shoulder remain at a 45
+                degree angle to be used for firing Broadside cannon rounds to
+                either side, and to fire its primary Railgun Arcturyx elongates
+                its tail and opens its beak. Arc Boosted targets gain a trail
+                of spiraling particles as they whoosh forward.  Arcturyx's
+                colorful plumage is not made from actual feathers but from
+                yellow and magenta sparks as the wind and enemy attacks deflect
+                off of his advanced armor respectively.
+              </p>
+            </div><!--/.row-->
+          </div><!--/.row-->
+          <div id="attributes" class="row">
+            <h3 class="h3d">Attributes</h3>
+            <div id="stats" class="row padded">
+              <p><img src="img/str.png"></img> 20 + 1.8</p>
+              <p><img src="img/agi_p.png"></img> 25 + 2.3</p>
+              <p><img src="img/int.png"></img> 18 + 1.8</p>
+            </div><!--/.row-->
+            <div class="row padded">
+              <div class="col-md-6">
+                <p><b>Movement Speed</b>: 290</p>
+                <p><b>Turn Rate</b>: 0.6</p>
+                <p><b>Attack Range</b>: 600</p>
+                <p><b>Projectile Speed</b>: 800</p>
+                <p><b>Vision</b>: 1800/800</p>
+              </div><!--/.row-->
+              <div class="col-md-6">
+                <p><b>BAT</b>: 1.8</p>
+                <p><b>Base Damage</b>: 28-30</p>
+                <p><b>Base Armor</b>: 1.0</p>
+                <p><b>Attack Duration</b>: 0.5 + 0.4s</p>
+                <p><b>Cast Duration</b>: 0.45 + 0.3s</p>
+              </div><!--/.row-->
+            </div><!--/.row-->
+          </div><!--/.row-->
+          <div id="skills" class="row cold">
+            <h3 class="h3d">Skills</h3>
+            <div class="row padded">
+              <div class="col-md-3">
+                <img class="img-responsive" src="img/place.png">
+                <div id="icons" class="row">
+                  <p><img src="img/cd.png"> 44/33/22/11s</p>
+                  <p><img src="img/mana.png"> 45/55/65/75</p>
+                </div>
+              </div><!--/.col-md-3-->
+              <div class="col-md-9">
+                <div class="row">
+                  <h4><b>Q: ARC BOOST</b> target ally</h4>
+                  <p class="ability">
+                    At the cost of reducing their turnrate to 0 initially,
+                    grants the target a fixed velocity, even while disabled,
+                    and gives the target damage reduction as well as the
+                    ability to cast spells without turning (within 90 degrees).
+                    Targets regain their turnrate slowly over the Boost's
+                    duration, and also slows enemies within a small radius.
+                  </p>
+                  <p><b>Cast Range</b>: 500</p>
+                  <p><b>Boost Duration</b>: 3s</p>
+                  <p><b>Boost Damage Reduction</b>: 10/20/30/40%</p>
+                  <p><b>Boost Movement Speed</b>: 200/250/300/350</p>
+                  <p><b>Boost Travel Distance</b>: 600/750/900/1050</p>
+                  <p><b>Boost Turn Rate</b>: 0.0 + 0.1 per 0.25s</p>
+                  <p><b>Slow</b>: 15/25/35/45%</p>
+                  <p><b>Slow Radius</b>: 500</p>
+                </div>
+                <div class="row notes">
+                  <h5>Notes:</h5>
+                  <ul>
+                    <li>
+                      Allies effected by Arc Boost will only stop moving if
+                      stunned or ensnared again after Boost has been cast. May
+                      be cast on an ally who is stunned to force them to move
+                      while stunned, though does not remove any negative status
+                      effects.
+                    </li>
+                    <li>
+                      Heroes under the effect of Arc Boost no longer use their
+                      standard cast animation, but use a modified animation
+                      with a duration of 0.15s and no backswing.
+                    </li>
+                  </ul>
+                </div>
+              </div><!--/.col-md-9-->
+            </div><!--/.row-->
+            <div id="ddD" class="row padded">
+              <div class="col-md-3">
+                <img class="img-responsive" src="img/place.png">
+                <div id="icons" class="row">
+                  <p><img src="img/cd.png"> 18/15/12/9s</p>
+                  <p><img src="img/mana.png"> 115/110/105/100</p>
+                </div>
+              </div><!--/.col-md-3-->
+              <div class="col-md-9">
+                <div class="row">
+                  <h4><b>W: RAILGUN</b> no target, magical</h4>
+                  <p class="ability">
+                    Fires an instant beam of energy in the direction Arcturyx
+                    is facing, scaling in damage, beam width and beam length
+                    based on Arcturyx's agility, strength and intelligence
+                    respectively.
+                  </p>
+                  <p><b>Cast Time</b>: instant</p>
+                  <p><b>Damage Formula</b>: 50/80/110/140 + (1.0/1.5/2.0/2.5 * AGI)</p>
+                  <p><b>Width Formula</b>: 75 + (0.5/1.0/1.5/2.0 * STR)</p>
+                  <p><b>Length Formula</b>: 500 + (4/6/8/10 * INT)</p>
+                </div>
+              </div><!--/.col-md-9-->
+            </div><!--/.row-->
+            <div class="row padded">
+              <div class="col-md-3">
+                <img class="img-responsive" src="img/place.png">
+                <div id="icons" class="row">
+                  <p><img src="img/cd.png"> 17/16/15/14s</p>
+                  <p><img src="img/mana.png"> 75/100/125/150</p>
+                </div>
+              </div><!--/.col-md-3-->
+              <div class="col-md-9">
+                <div class="row">
+                  <h4><b>E: BROADSIDE</b> vector target, pure</h4>
+                  <p class="ability">
+                    Unleashes five cannon shots that deal pure damage at the target
+                    area in a line , drawn by a vector. The first shot hits at
+                    the start of the line, and the remaining shots follow at a
+                    regular interval along the straight vector line the player draws.
+                  </p>
+                  <p><b>Cast Range</b>: 800</p>
+                  <p><b>Vector Line Length</b>: 600 (Shot Spacing: 150)</p>
+                  <p><b>Broadside Duration</b>: 1.6s</p>
+                  <p><b>Number of Cannon Shots</b>: 5 (Shot Interval: 0.4s per shot, first fires instantly)</p>
+                  <p><b>Cannon Shot Radius</b>: 110 (may hit up to 1455 away)</p>
+                  <p><b>Cannon Shot Speed</b>: 1500</p>
+                  <p><b>Cannon Shot Damage</b>: 40/60/80/100</p>
+                </div>
+              </div><!--/.col-md-9-->
+            </div><!--/.row-->
+            <div class="row padded">
+              <div class="col-md-3">
+                <img class="img-responsive" src="img/place.png">
+                <div id="icons" class="row">
+                  <p><img src="img/cd.png"> 75/50/25s</p>
+                  <p><img src="img/mana.png"> 80</p>
+                </div>
+              </div><!--/.col-md-3-->
+              <div class="col-md-9">
+                <div class="row">
+                  <h4><b>R: PRISMATIC WINGS</b> ultimate, no target</h4>
+                  <p class="ability">
+                    When first activated, Arcturyx temporarily reroutes more
+                    energy to reactive defenses, returning enemy attacks with
+                    one of his own, as well as blocking and returning a portion
+                    of damage from enemy spells. Drains health and mana while
+                    the active shields are on, up to a max duration or until
+                    the spell is activated again. When the active shields go
+                    down Arcturyx must recharge to regain normal function and
+                    Arcturyx drops to the ground, reducing turnrate and
+                    movespeed to zero but regaining health and mana at an
+                    increased rate. Arcturyx remains this way until he reaches
+                    full health again or max duration is reached, though he may
+                    still maneuver with Arc Boost.
+                  </p>
+                  <p><b>Discharge Health/Mana Drain</b>: 8/6/4% per second while
+                                                         shield is active</p>
+                  <p><b>Charge Health/Mana Regain</b>: 8/10/12% per second while
+                                        shield recharhes/in immobile form</p>
+                  <p><b>Max Charge/Discharge Duration</b>: 10s</p>
+                  <p><b>Return Attack Damage</b>: 60/80/100%</p>
+                  <p><b>Spell Damage Blocked/Reflected</b>: 30/40/50%</p>
+                </div>
+                <div class="row notes">
+                  <h5>Notes:</h5>
+                  <ul>
+                    <li>
+                      Prematurely ending Prismatic Wings while Arc Boosted will
+                      override the Boost and make you stationary, but casting
+                      Arc Boost while recharging/immobile will properly grant
+                      you movement speed and turn speed.
+                    </li>
+                    <li>
+                      The health drain from Prismatic Shields cannot be fatal
+                      to Arcturyx. Ending the active spell effect early causes
+                      the remainder of the 80/60/40% total health and mana
+                      costs to be drained instantly.
+                    </li>
+                  </ul>
+                </div>
+              </div><!--/.col-md-9-->
+            </div><!--/.row-->
+          </div><!--/.row-->
+          <div id="changelog" class="row">
+            <h3 id="cl4b" type="button" data-toggle="collapse" data-target="#cl4">↓ Changelog ↓</h3>
+            <div id="cl4" class="row padded collapse">
+              <p id="dDD">v1.1 (Dec 2016):</p>
+              <ul>
+                <li>
+                  Posted to <a href="heroes#arcturyx">@freelanceDota</a>
+                </li>
+                <li>
+                  Added 
+                </li>
+              </ul>
+              <p>v1.0 (April 2015):</p>
+              <ul>
+                <li>
+                  Posted to <a href="https://forums.playdota.com/threads/arcturyx-%E2%80%94-the-warbird-agi-radiant.1163/">PlayDota</a>
+                </li>
+              </ul>
+            </div><!--/.row-->
+          </div><!--/.row-->
+        </div><!--/.section-bg-->
+      </div><!--/.col-md-6-->
+    </div><!--/.row-->
+  </div><!--/.container-->
+</div><!--/.row_ddd-->
+
 <div id="footer" class="row text-center">
-  by <a href="https://www.reddit.com/user/freelance_fox/">/u/freelance_fox</a> • <a href="http://www.twitter.com/freelancedota">@freelancedota</a> • Last Updated 10/13/16
+  by <a href="https://www.reddit.com/user/freelance_fox/">/u/freelance_fox</a> • <a href="http://www.twitter.com/freelancedota">@freelancedota</a> • Last Updated 12/3/16
 </div><!--/.row-->
 
 <script src="http://code.jquery.com/jquery-1.12.2.js"></script>
@@ -1033,65 +1404,68 @@
 <script>
 $(document).ready(function()
 {
-  $(window).scroll(function()
+  $(document).ready(function()
   {
-    if ($(window).scrollTop() >= 50) {
-      $('.header-hide').css('display', 'none');
-    }
-    if ($(window).scrollTop() < 50) {
-      $('.header-hide').css('display', 'block');
-    }
+    $(window).scroll(function()
+    {
+      if ($(window).scrollTop() >= 50) {
+        $('.header-hide').css('display', 'none');
+        $('.hide-top').css('display', 'block');
+      }
+      if ($(window).scrollTop() < 50) {
+        $('.header-hide').css('display', 'block');
+        $('.hide-top').css('display', 'none');
+      }
+    });
+  });
+  $(document).ready(function()
+  {
+    $('#top').click(function()
+    {
+      $('body').animate({
+          scrollTop: 0
+        }, 400);
+    });
   });
   $("#aaa,#aaA,#aAA,#AAA").bind("inview", function(event, visible) {
     if (visible == true) {
       document.body.style.backgroundColor = '#1d5081';
-      //$('.body').animate({backgroundColor: '#1d5081'}, 1200);
-      //$('.jumpb a').attr('id','cccx');
-      //$('.jumpn a').attr('id','bbbx');
-      $('.jumpb a').attr('href','#merinth');
+      $('.jumpb a').attr('href','#arcturyx');
       $('.jumpn a').attr('href','#antares');
     }
   });
   $("#bbb,#bbB,#bBB,#BBB").bind("inview", function(event, visible) {
     if (visible == true) {
       document.body.style.backgroundColor = '#0C4637';
-      //$('.body').animate({backgroundColor: '#0C4637'}, 1200);
-      //$('.jumpb a').attr('id','aaax');
-      //$('.jumpn a').attr('id','cccx');
       $('.jumpb a').attr('href','#proteus');
       $('.jumpn a').attr('href','#merinth');
     }
   });
-  $("#ccc,#ccC,#cCC,#CCC").bind("inview", function(event, visible) {
-    if (visible == true) {
-      document.body.style.backgroundColor = '#00817D';
-      //$('.body').animate({backgroundColor: '#00817D'}, 1200);
-      //$('.jumpb a').attr('id','bbbx');
-      //$('.jumpn a').attr('id','aaax');
-      $('.jumpb a').attr('href','#antares');
+$("#ccc,#ccC,#cCC,#CCC").bind("inview", function(event, visible) {
+  if (visible == true) {
+    document.body.style.backgroundColor = '#00817D';
+    $('.jumpb a').attr('href','#antares');
+    $('.jumpn a').attr('href','#arcturyx');
+  }
+});
+$("#ddd,#ddD,#dDD,#DDD").bind("inview", function(event, visible) {
+  if (visible == true) {
+      document.body.style.backgroundColor = '#C4ED62';
+      $('.jumpb a').attr('href','#merinth');
       $('.jumpn a').attr('href','#proteus');
     }
   });
   $("#aaax").click(function() {
     document.body.style.backgroundColor = '#1d5081';
-    //$('.jumpb a').attr('id','cccx');
-    //$('.jumpn a').attr('id','bbbx');
-    //$('.jumpb a').attr('href','#merinth');
-    //$('.jumpn a').attr('href','#antares');
   });
   $("#bbbx").click(function() {
     document.body.style.backgroundColor = '#0C4637';
-    //$('.jumpb a').attr('id','aaax');
-    //$('.jumpn a').attr('id','cccx');
-    //$('.jumpb a').attr('href','#antares');
-    //$('.jumpn a').attr('href','#merinth');
   });
   $("#cccx").click(function() {
     document.body.style.backgroundColor = '#00817D';
-    //$('.jumpb a').attr('id','bbbx');
-    //$('.jumpn a').attr('id','aaax');
-    //$('.jumpb a').attr('href','#antares');
-    //$('.jumpn a').attr('href','#proteus');
+  });
+  $("#dddx").click(function() {
+    document.body.style.backgroundColor = '#C4ED62';
   });
   $('#index').click(function() {
     if ($(this).text() === '↓ Heroes ↓') {
@@ -1125,6 +1499,14 @@ $(document).ready(function()
         $(this).text('↓ Background Info ↓');
     }
   });
+  $('#l4b').click(function() {
+    if ($(this).text() === '↓ Background Info ↓') {
+         $(this).text('↑ Background Info ↑');
+    }
+    else {
+        $(this).text('↓ Background Info ↓');
+    }
+  });
   $('#cl1b').click(function() {
     if ($(this).text() === '↓ Changelog ↓') {
          $(this).text('↑ Changelog ↑');
@@ -1142,6 +1524,14 @@ $(document).ready(function()
     }
   });
   $('#cl3b').click(function() {
+    if ($(this).text() === '↓ Changelog ↓') {
+         $(this).text('↑ Changelog ↑');
+    }
+    else {
+        $(this).text('↓ Changelog ↓');
+    }
+  });
+  $('#cl4b').click(function() {
     if ($(this).text() === '↓ Changelog ↓') {
          $(this).text('↑ Changelog ↑');
     }

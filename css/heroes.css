@@ -3,7 +3,7 @@ body {
   color: #191919;
 }
 
-a { color: #333333; }
+a { color: rgba(25,25,25,0.6); }
 a:focus, a:hover {
   text-decoration: none;
   color: #333333;
@@ -27,7 +27,7 @@ a:focus, a:hover {
   padding: 12px 0;
   height: 48px;
   font-size: 1.0em;
-  color: #F9F9F9;
+  color: #292018;
 }
 
 #header {
@@ -64,8 +64,13 @@ a:focus, a:hover {
 }
 
 #footer > a {
-  color: #F9F9F9;
+  color: rgba(25,25,25,0.6);
 }
+
+#footer > a:hover {
+  color: rgb(25,25,25);
+}
+
 
 .position-header {
   position: relative;
@@ -135,6 +140,18 @@ h2 {
   color: #F9F9F9;
 }
 
+.h2d {
+  background-color: #123341;
+  border: 4px solid #AB3CA2;
+  color: #F9F9F9;
+}
+
+.h3d {
+  background-color: #123341;
+  border: 2px solid #AB3CA2;
+  color: #F9F9F9;
+}
+
 h3 {
   margin-top: 12px;
   margin-bottom: 12px;
@@ -169,6 +186,10 @@ h5 {
 
 .bgc {
   background-color: #00B8B2;
+}
+
+.bgd {
+  background-color: rgba(204,255,155,0.75);
 }
 
 .padded {
@@ -516,15 +537,19 @@ h5 {
   padding: 6px 0 0 0;
 }
 
+#controls {
+  max-width: 60%;
+}
+
 #index:hover, .jumpb:hover, .jumpn:hover {
   font-weight: bold;
 }
 
-#cl1b:hover, #cl2b:hover, #cl3b:hover {
+#cl1b:hover, #cl2b:hover, #cl3b:hover, #cl4b:hover {
   font-weight: bold;
 }
 
-#l1b:hover, #l2b:hover, #l3b:hover {
+#l1b:hover, #l2b:hover, #l3b:hover, #l4b:hover {
   font-weight: bold;
 }
 
@@ -559,6 +584,11 @@ h5 {
 .colc > .row {
   margin: 0 5%;
   border: 18px outset rgba(12,41,47,0.15);
+}
+
+.cold > .row {
+  margin: 0 5%;
+  border: 18px outset rgba(110,213,207,0.25);
 }
 
 .ability {

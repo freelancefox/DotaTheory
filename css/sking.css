@@ -315,6 +315,7 @@ tr:hover, tr:focus {
   padding: 0;
   background-color: #292018;
   border-radius: 0px;
+  min-width: 28%;
   max-width: 28%;
   text-align: center;
 }
@@ -609,3 +610,16 @@ tbody tr:hover {
 .btn:active:focus,
 .btn:focus { outline: 0; }
 
+#popover-control {
+  margin-top: -4px;
+  margin-bottom: 4px;
+}
+
+#popover-control a:hover,
+#popover-control a:focus,
+#popover-control a.active,
+#popover-control a:active {
+  box-shadow: none;
+  background-color: #D6D7DD;
+  color: #191919;
+}

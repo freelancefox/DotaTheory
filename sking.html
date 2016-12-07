@@ -3740,50 +3740,60 @@
                        data-title="Octarine Core">
                       <img src="img/40px-Octarine_Core_icon.png">
                     </a>
-                    <div id="content-octarine" class="hide">
-                      <p>COST: 5900</p>
-                      <p><img src="img/40px-Soul_Booster_icon.png"></img>+<img src="img/40px-Mystic_Staff_icon.png"></p>
-                      <p>+25 intelligence</p>
-                      <p>+425 health</p>
-                      <p>+425 mana (<i>725 total</i>)</p>
-                      <p>+50% mana regeneration</p>
-                      <p>Reduces cooldowns by 25%</p>
-                      <p>Spell Lifesteal 25% from heroes/5% from creeps</p>
-                      <p>
-                        You can totally follow this guide and ignore my recommendation
-                        to get Octarine first, but you should really try it at least once.
-                        The only other hero who you could really get Octarine this early
-                        on seems to be Death Prophet, but why? Naga and sometimes
-                        Alchemist like the item for their Illusion/Radiance shenanigans,
-                        but when it comes to spellcasters like SK and DP, it seems to me
-                        that an early Octarine makes the most sense on heroes with both
-                        multiple short cooldown spells AND a long-cooldown ultimate that
-                        they absolutely RELY on. Exorcism is the sole ability that allows
-                        Death Prophet to be scary in teamfights and to take objectives,
-                        and for Sand King I think Epicenter is an easy comparison. Sand
-                        King with an early Octarine increases BOTH the tempo at which he
-                        takes major engagements AND uses his stun/escapes in fights, which
-                        is far more noticeable on Sand King than on a hero like Zeus, for
-                        example, who still does plenty of damage with his Q/W alone and
-                        doesn't have a flash-farming mechanism like DP/SK do to help
-                        them get their Octarine faster. It's a lot like heroes such as
-                        Invoker, Queen of Pain, and Rubick who get Aghanim's Scepter
-                        early because it gives Cooldown Reduction—Octarine just happens
-                        to be beneficial enough to Sand King that he can rush it to fill
-                        that same role. Lastly, if you look at the charts below you'll
-                        see that the Damage Per Second increase from Octarine is roughly
-                        equal to that of Veil (25% more damage vs 25% more spell casts,
-                        therefore Veil is slightly stronger before you have active
-                        items like Eblade while Octarine is slightly stronger after you
-                        have active items), with the key difference being that you can
-                        benefit fully from a Veil of Discord on your ally, but obviously
-                        can't have someone else build Octarine for you. This item makes
-                        core Sand King work in a way that seemed startlingly strong the
-                        first time I tried it, and I think you'll find the same thing too.
-                      </p>
-                      <div class="popover-footer text-center">
-                        <div class="popover-timing">Target item timing: 25:00-30:00</div>
-                      </div><!--/.popover-footer-->
+                    <div id="content-octarine" class="hide tabs">
+                      <div id="popover-control" class="row nav nav-tabs">
+                        <a class="btn" href=".stats-octarine" data-toggle="tab" data-hover="tab">Item Stats</a></btn>
+                        <a class="btn" href=".comm-octarine" data-toggle="tab" data-hover="tab">Commentary</a></btn>
+                      </div><!--/.row-->
+                      <div class="tab-content">
+                        <div class="tab-pane text-center fade stats-octarine">
+                          <p>COST: 5900</p>
+                          <p><img src="img/40px-Soul_Booster_icon.png"></img>+<img src="img/40px-Mystic_Staff_icon.png"></p>
+                          <p>+25 intelligence</p>
+                          <p>+425 health</p>
+                          <p>+425 mana (<i>725 total</i>)</p>
+                          <p>+50% mana regeneration</p>
+                          <p>Reduces cooldowns by 25%</p>
+                          <p>Spell Lifesteal 25% from heroes/5% from creeps</p>
+                        </div><!--/.tab-pane-->
+                        <div class="tab-pane active text-center fade in comm-octarine">
+                          <p>
+                            You can totally follow this guide and ignore my recommendation
+                            to get Octarine first, but you should really try it at least once.
+                            The only other hero who you could really get Octarine this early
+                            on seems to be Death Prophet, but why? Naga and sometimes
+                            Alchemist like the item for their Illusion/Radiance shenanigans,
+                            but when it comes to spellcasters like SK and DP, it seems to me
+                            that an early Octarine makes the most sense on heroes with both
+                            multiple short cooldown spells AND a long-cooldown ultimate that
+                            they absolutely RELY on. Exorcism is the sole ability that allows
+                            Death Prophet to be scary in teamfights and to take objectives,
+                            and for Sand King I think Epicenter is an easy comparison. Sand
+                            King with an early Octarine increases BOTH the tempo at which he
+                            takes major engagements AND uses his stun/escapes in fights, which
+                            is far more noticeable on Sand King than on a hero like Zeus, for
+                            example, who still does plenty of damage with his Q/W alone and
+                            doesn't have a flash-farming mechanism like DP/SK do to help
+                            them get their Octarine faster. It's a lot like heroes such as
+                            Invoker, Queen of Pain, and Rubick who get Aghanim's Scepter
+                            early because it gives Cooldown Reduction—Octarine just happens
+                            to be beneficial enough to Sand King that he can rush it to fill
+                            that same role. Lastly, if you look at the charts below you'll
+                            see that the Damage Per Second increase from Octarine is roughly
+                            equal to that of Veil (25% more damage vs 25% more spell casts,
+                            therefore Veil is slightly stronger before you have active
+                            items like Eblade while Octarine is slightly stronger after you
+                            have active items), with the key difference being that you can
+                            benefit fully from a Veil of Discord on your ally, but obviously
+                            can't have someone else build Octarine for you. This item makes
+                            core Sand King work in a way that seemed startlingly strong the
+                            first time I tried it, and I think you'll find the same thing too.
+                          </p>
+                          <div class="popover-footer text-center">
+                            <div class="popover-timing">Target item timing: 25:00-30:00</div>
+                          </div><!--/.popover-footer-->
+                        </div><!--/.tab-pane-->
+                      </div><!--/.tab-content-->
                     </div><!--/.popover-content-->
                   </div><!--/.item-box-1-->
                 </div><!--/.row-->
@@ -4876,6 +4886,7 @@
   <script src="http://code.highcharts.com/highcharts.js"></script>
   <script src="js/bootstrap.js"></script>
   <script src="js/bootstrap-popover.js"></script>
+  <script src="js/bootstrap-hover-tabs.js"></script>
   <script src="js/popover-sking.js"></script>
   <script src="js/chart-sking.js"></script>
   <script src="js/wow.min.js"></script>

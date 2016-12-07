@@ -21,9 +21,9 @@
       <h1>Custom Heroes Index</h1>
     </div><!--/.row-->
     <div id="navigation" class="row text-center">
-      <div class="jumpb" >
-        <a id="dddx" href="#arcturyx" onclick="this.click()"><<</a>
-      </div>
+      <a id="dddx" class="jumpb" href="#arcturyx" onclick="this.click()">
+        <div><<</div>
+      </a>
       <div class="panel-group" id="accordionTwo">
         <div class="panel panel-default">
           <div class="panel-heading">
@@ -41,9 +41,9 @@
           </div>
         </div>
       </div>
-      <div class="jumpn">
-        <a id="bbbx" href="#antares" onclick="this.click()">>></a>
-      </div>
+      <a id="bbbx" class="jumpn" href="#antares" onclick="this.click()">
+        <div>>></div>
+      </a>
     </div><!--/.row-->
   </div><!-- /.container-->
 </nav>
@@ -1123,10 +1123,11 @@
               <p><i>"When they told me I was a prodigy... I didn't think they meant at killing."</i></p>
               <h4>Lore</h4>
               <p>
-                Arcturyx was once a test subject in a secret Keen-folk weapons
-                program. One day he woke up with amnesia, grafted to a machine
-                and reborn as a sentient bird with firearms and futuristic
-                military technology that deflects magic.
+                Before he became Arcturyx, he was once a test subject in a
+                secret Keen-folk weapons program, recruited as a child for
+                displaying psychic abilities.  One day he woke up with amnesia,
+                grafted to a machine and reborn as a sentient bird with
+                firearms and futuristic military technology that deflects magic.
               </p>
               <p>
                 Arcturyx's life was difficult from day one. He woke up on a
@@ -1156,8 +1157,8 @@
                 or untold treasures!
               </p>
               <p>
-                Arcturyx sailed past the sortie a first time, then caught a
-                draft and banked upward above the fracas. He peered down and
+                Arcturyx sailed past the sortie a first time, then caught an
+                updraft and banked upward above the fracas. He peered down and
                 wondered whether he was meant to be fighting those copters.
                 Arcturyx certainly didn't want to any more. He wanted
                 desperately to fight his own enemies, and find out who made
@@ -1168,7 +1169,7 @@
                 moments. He was a boy once. He remembered the lab where they
                 eventually bade him into a machine to fuse with the weapons
                 system, and fragments of the experiments they put him through.
-                Now he wants answers even more than before, the question is
+                Now he wants answers even more than before—the question is
                 what he'll have to do to find them.
               </p>
               <h4>Appearance</h4>
@@ -1179,11 +1180,12 @@
                 is active. Two main cannons on either shoulder remain at a 45
                 degree angle to be used for firing Broadside cannon rounds to
                 either side, and to fire its primary Railgun Arcturyx elongates
-                its tail and opens its beak. Arc Boosted targets gain a trail
-                of spiraling particles as they whoosh forward.  Arcturyx's
+                its tail and opens its beak. Auto-attacks are yellow bolts of
+                energy thrown from its wings-tips. Arc Boosted targets gain a trail
+                of spiraling particles as they whoosh forward. Arcturyx's
                 colorful plumage is not made from actual feathers but from
                 yellow and magenta sparks as the wind and enemy attacks deflect
-                off of his advanced armor respectively.
+                off of his advanced armor.
               </p>
             </div><!--/.row-->
           </div><!--/.row-->
@@ -1383,7 +1385,7 @@
                   Posted to <a href="heroes#arcturyx">@freelanceDota</a>
                 </li>
                 <li>
-                  Added 
+                  Updated bio, Broadside skill description and mechanics.
                 </li>
               </ul>
               <p>v1.0 (April 2015):</p>
@@ -1440,29 +1442,29 @@ $(document).ready(function()
   $("#aaa,#aaA,#aAA,#AAA").bind("inview", function(event, visible) {
     if (visible == true) {
       document.body.style.backgroundColor = '#1d5081';
-      $('.jumpb a').attr('href','#arcturyx');
-      $('.jumpn a').attr('href','#antares');
+      $('.jumpb').attr('href','#arcturyx');
+      $('.jumpn').attr('href','#antares');
     }
   });
   $("#bbb,#bbB,#bBB,#BBB").bind("inview", function(event, visible) {
     if (visible == true) {
       document.body.style.backgroundColor = '#0C4637';
-      $('.jumpb a').attr('href','#proteus');
-      $('.jumpn a').attr('href','#merinth');
+      $('.jumpb').attr('href','#proteus');
+      $('.jumpn').attr('href','#merinth');
     }
   });
 $("#ccc,#ccC,#cCC,#CCC").bind("inview", function(event, visible) {
   if (visible == true) {
     document.body.style.backgroundColor = '#00817D';
-    $('.jumpb a').attr('href','#antares');
-    $('.jumpn a').attr('href','#arcturyx');
+    $('.jumpb').attr('href','#antares');
+    $('.jumpn').attr('href','#arcturyx');
   }
 });
 $("#ddd,#ddD,#dDD,#DDD").bind("inview", function(event, visible) {
   if (visible == true) {
       document.body.style.backgroundColor = '#C4ED62';
-      $('.jumpb a').attr('href','#merinth');
-      $('.jumpn a').attr('href','#proteus');
+      $('.jumpb').attr('href','#merinth');
+      $('.jumpn').attr('href','#proteus');
     }
   });
   $("#aaax").click(function() {

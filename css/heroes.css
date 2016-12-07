@@ -622,3 +622,8 @@ h5 {
 .btn:active:focus,
 .btn:focus { outline: 0; }
 
+#l1b:hover, #l2b:hover, #l3b:hover, #l4b:hover,
+#cl1b:hover, #cl2b:hover, #cl3b:hover, #cl4b:hover {
+  cursor: pointer;
+}
+

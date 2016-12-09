@@ -420,11 +420,8 @@ h5 {
   text-align: left;
 }
 
-#skills > img {
-  margin-top: 4px;
-  margin-bottom: 4px;
-  height: 48px;
-  width: 48px;
+#skills .img-responsive {
+  margin: 16px auto 4px auto;
 }
 
 #skills > h4 {
@@ -560,10 +557,6 @@ h5 {
 
 #icons {
   padding-top: 8px;
-}
-
-.col-md-3 {
-  margin-top: 18px;
 }
 
 .col-md-9 {

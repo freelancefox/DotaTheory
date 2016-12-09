@@ -4,24 +4,36 @@ body {
 }
 
 a { color: rgba(25,25,25,0.6); }
+
 a:focus, a:hover {
   text-decoration: none;
   color: #333333;
 }
-.btn-default a { color: #f9f9f9; }
-.btn-default a:focus, a:hover {
+
+.btn-default:focus,
+.btn-default:hover {
   text-decoration: none;
-  color: #333333;
+  color: #f9f9f9;
+  background-color: rgba(255,255,255,0.5);
+  text-decoration: none;
 }
-.btn-default:hover a,
-.btn-default:focus a {
-  color: #333333;
-}
-.btn-default:hover,
-.btn-default:focus {
+
+.btn-default {
   background-color: rgba(255,255,255,0.35);
-  text-decoration: none;
+  border: 0;
+  font-weight: 500;
+  padding: 6px;
+  margin: 8px 15px;
+  mix-blend-mode: color;
 }
+
+.btn-default:active:hover,
+.btn-default:active {
+  background-color: rgba(255,255,255,0.35);
+}
+
+.btn:active:focus,
+.btn:focus { outline: 0; }
 
 #footer {
   padding: 12px 0;
@@ -597,23 +609,6 @@ h5 {
 .notes {
   padding-left: 15px;
 }
-
-.btn-default {
-  background-color: rgba(255,255,255,0.35);
-  border: 0;
-  font-weight: 500;
-  padding: 6px;
-  margin: 8px 15px;
-}
-
-.btn-default:active:hover,
-.btn-default:hover,
-.btn-default:active {
-  background-color: rgba(255,255,255,0.35);
-}
-
-.btn:active:focus,
-.btn:focus { outline: 0; }
 
 #l1b:hover, #l2b:hover, #l3b:hover, #l4b:hover,
 #cl1b:hover, #cl2b:hover, #cl3b:hover, #cl4b:hover {

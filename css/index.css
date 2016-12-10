@@ -34,6 +34,12 @@ a {
   }
 }
 
+@media (max-width: 440px) {
+  .highlight-panels li {
+    height: 180px;
+  }
+}
+
 #forumnav li.active a:hover,
 #forumnav li.active a:focus,
 #forumnav li a:hover,
@@ -47,6 +53,17 @@ ul { padding: 0; margin: 0; }
 
 .highlight-panels {
   width: 100%;
+}
+
+.highlight-panels li a:hover img {
+  opacity: 0.5;
+  filter: alpha(opacity=50); // <=IE8
+}
+
+.highlight-panels img {
+  width: 24px;
+  padding-bottom: 4px;
+  border-radius: 12px;
 }
 
 .highlight-panels li {
@@ -223,6 +240,11 @@ ul { padding: 0; margin: 0; }
   padding-bottom: 16px;
 }
 
+#forumnav > ul,
+#forumnav > div {
+  display: inline-block;
+}
+
 #controls {
   height: 48px;
 }
@@ -264,10 +286,21 @@ ul { padding: 0; margin: 0; }
 
 .dropdown-menu {
   background-color: rgba(127,127,127,0.87);
+  max-height: 640px;
+}
+
+.dropdown-menu#scroll {
+  overflow-y: scroll;
 }
 
 .dropdown-menu > li > a {
   color: #f9f9f9;
 }
 
+.new-btn {
+  margin-right: 48px;
+}
 
+.new-btn .btn {
+  font-size: 36px;
+}

@@ -436,6 +436,10 @@ h5 {
   margin: 16px auto 4px auto;
 }
 
+#skills .img {
+  margin: 8px auto 4px auto;
+}
+
 #skills > h4 {
   margin: 8px 0 8px 0;
 }

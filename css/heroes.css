@@ -204,6 +204,26 @@ h5 {
   background-color: rgba(204,255,155,0.75);
 }
 
+.paddedsm .text-left {
+  margin-left: 5%;
+}
+
+@media (max-width: 992px) {
+  .paddedsm {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .paddedsm .text-left {
+    text-align: center;
+    margin-left: 0;
+  }
+  .paddedsm .img {
+    padding-left: 0 !important;
+  }
+}
+
 .padded {
   padding-top: 0px;
   padding-bottom: 0px;
@@ -437,7 +457,8 @@ h5 {
 }
 
 #skills .img {
-  margin: 8px auto 4px auto;
+  margin: 8px auto 8px auto;
+  padding-left: 33%;
 }
 
 #skills > h4 {
@@ -575,9 +596,9 @@ h5 {
   padding-top: 8px;
 }
 
+.col-md-3,
 .col-md-9 {
   padding: 0;
-  //border: 18px outset rgba(0,51,102,0.07);
 }
 
 .cola > .row {

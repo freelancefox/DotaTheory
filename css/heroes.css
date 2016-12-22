@@ -603,22 +603,22 @@ h5 {
 
 .cola > .row {
   margin: 0 5%;
-  border: 18px outset rgba(0,44,55,0.15);
+  border: 16px outset rgba(0,44,55,0.15);
 }
 
 .colb > .row {
   margin: 0 5%;
-  border: 18px outset rgba(36,38,28,0.15);
+  border: 16px outset rgba(36,38,28,0.15);
 }
 
 .colc > .row {
   margin: 0 5%;
-  border: 18px outset rgba(12,41,47,0.15);
+  border: 16px outset rgba(12,41,47,0.15);
 }
 
 .cold > .row {
   margin: 0 5%;
-  border: 18px outset rgba(33,116,136,0.15);
+  border: 16px outset rgba(33,116,136,0.15);
 }
 
 .ability {

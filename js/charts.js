@@ -110,12 +110,13 @@ $(function () {
 
     xAxis: {
       categories: [
+        'Invoker',
         'Silencer',
         'Centaur Warrunner',
-        'Invoker',
         'Vengeful Spirit',
         'Luna',
         'Naga Siren',
+        'Monkey King',
         'Morphling',
         'Ogre Magi',
         'Treant Protector',
@@ -172,13 +173,13 @@ $(function () {
 
     series: [{
       name: 'Intelligence',
-      data: [2.5, 1.6, 4, 1.5, 1.85, 1.95, 1.5, 2.4, 1.8, 3.1, 1.7, 1.65, 2.7]
+      data: [4, 2.5, 1.6, 1.5, 1.85, 2, 1.8, 1.5, 2.4, 1.8, 3.1, 1.7, 1.65, 2.7]
     }, {
       name: 'Strength',
-      data: [2.2, 4, 1.7, 2.6, 2.2, 2.5, 2, 3.2, 3.3, 2.1, 2.4, 2.9, 2.3]
+      data: [1.9, 2.2, 4, 2.6, 2.2, 2.5, 2.2, 2, 3.2, 3.3, 2.1, 2.4, 2.9, 2.3]
     }, {
       name: 'Agility',
-      data: [3, 2, 1.9, 3.3, 3.3, 2.75, 3.7, 1.55, 2, 1.9, 3, 2.5, 2]
+      data: [1.9, 3, 2, 3.3, 3.3, 2.75, 3.2, 3.7, 1.55, 2, 1.9, 3, 2.5, 2]
     }]
   });
 });
@@ -210,8 +211,9 @@ $(function () {
         'Centaur Warrunner',
         '<b>Winter Wyvern</b>',
         'Bloodseeker',
-        'Dazzle',
         'Invoker',
+        'Monkey King',
+        'Dazzle',
         'Treant Protector'],
       labels: {
         style: {
@@ -262,13 +264,13 @@ $(function () {
 
     series: [{
       name: 'Intelligence',
-      data: [87, 69, 90.8, 49, 53.4, 99.4, 58.8, 108.6, 112, 60.2]
+      data: [87, 69, 90.8, 49, 53.4, 99.4, 58.8, 112, 63.2, 108.6, 60.2]
     }, {
       name: 'Strength',
-      data: [69.8, 81, 74.2, 80.4, 119, 74.4, 80.6, 60.4, 57.8, 104.2]
+      data: [69.8, 81, 74.2, 80.4, 119, 74.4, 80.6, 62.6, 70.8, 60.4, 104.2]
     }, {
       name: 'Agility',
-      data: [94, 87, 72, 106.2, 63, 61.6, 96, 61.8, 59.6, 63]
+      data: [94, 87, 72, 106.2, 63, 61.6, 96, 59.6, 98.8, 61.8, 63]
     }]
   });
 });
@@ -282,7 +284,7 @@ $(function () {
     },
 
     title: {
-      text: 'Top AoE Nukes by DPS',
+      text: 'Top AoE Nukes by DPS (excluding talents)',
       margin: 0,
       style: {
         color:'#1D3E37',
@@ -309,11 +311,11 @@ $(function () {
         'Dark Pact',
         '<b>Splinter Blast</b>',
         'Earthshock',
+        'Powershot',
         'Scream of Pain',
         'Shockwave',
         'Whirling Death',
         'Ether Shock',
-        'Powershot',
         'Dragon Slave'],
       useHTML: 'true',
       labels: {
@@ -444,6 +446,13 @@ $(function () {
               cooldown: 5,
               manacost: 75
              },
+             {y: 46.67,
+              color: '#45815D',
+              hero: 'Windranger',
+              damage: 420,
+              cooldown: 9,
+              manacost: 120
+             },
              {y: 42.9,
               color: '#E55D77',
               hero: 'Queen of Pain',
@@ -471,13 +480,6 @@ $(function () {
               damage: 320,
               cooldown: 8,
               manacost: 160
-             },
-             {y: 40,
-              color: '#45815D',
-              hero: 'Windranger',
-              damage: 360,
-              cooldown: 9,
-              manacost: 120
              },
              {y: 40,
               color: '#F49F35',

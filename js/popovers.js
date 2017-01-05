@@ -9,6 +9,26 @@ jQuery(document).ready(function() {
         return $('#content-soulring').html();
       }
   });
+   $('#popover-urn').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-urn').html();
+      }
+  });
+   $('#popover-medallion').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-medallion').html();
+      }
+  });
    $('#popover-boots').popover({
       toggle:'popover',
       container:'body',
@@ -29,14 +49,14 @@ jQuery(document).ready(function() {
         return $('#content-tango').html();
       }
   });
-   $('#popover-nulltalisman').popover({
+   $('#popover-rush').popover({
       toggle:'popover',
       container:'body',
       trigger:'hover click',
       placement:'right',
       html: true,
       content: function() {
-        return $('#content-nulltalisman').html();
+        return $('#content-rush').html();
       }
   });
    $('#popover-sagesmask').popover({
@@ -149,6 +169,16 @@ jQuery(document).ready(function() {
         return $('#content-maelstrom').html();
       }
   });
+   $('#popover-midas').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'left',
+      html: true,
+      content: function() {
+        return $('#content-midas').html();
+      }
+  });
    $('#popover-mom').popover({
       toggle:'popover',
       container:'body',
@@ -183,7 +213,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'left',
+      placement:'top',
       html: true,
       content: function() {
         return $('#content-orchid').html();
@@ -223,7 +253,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'left',
+      placement:'top',
       html: true,
       content: function() {
         return $('#content-blink').html();
@@ -339,6 +369,26 @@ jQuery(document).ready(function() {
         return $('#content-dragon').html();
       }
   });
+   $('#popover-bottle').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'left',
+      html: true,
+      content: function() {
+        return $('#content-bottle').html();
+      }
+  });
+   $('#popover-aquila').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'left',
+      html: true,
+      content: function() {
+        return $('#content-aquila').html();
+      }
+  });
    $('#popover-raindrop').popover({
       toggle:'popover',
       container:'body',
@@ -429,11 +479,21 @@ jQuery(document).ready(function() {
         return $('#content-lotus').html();
       }
   });
-   $('#popover-linkens').popover({
+   $('#popover-voidstone').popover({
       toggle:'popover',
       container:'body',
       trigger:'hover click',
       placement:'left',
+      html: true,
+      content: function() {
+        return $('#content-voidstone').html();
+      }
+  });
+   $('#popover-linkens').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
       html: true,
       content: function() {
         return $('#content-linkens').html();
@@ -1349,6 +1409,16 @@ jQuery(document).ready(function() {
         return $('#content-lvl14-3').html();
       }
   });
+   $('#popover-lvl15-3').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-lvl15-3').html();
+      }
+  });
    $('#popover-lvl16-3').popover({
       toggle:'popover',
       container:'body',
@@ -1357,6 +1427,36 @@ jQuery(document).ready(function() {
       html: true,
       content: function() {
         return $('#content-lvl16-3').html();
+      }
+  });
+   $('#popover-lvl18-3').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-lvl18-3').html();
+      }
+  });
+   $('#popover-lvl20-3').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-lvl20-3').html();
+      }
+  });
+   $('#popover-lvl25-3').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-lvl25-3').html();
       }
   });
    $('#popover-lvl1-2').popover({
@@ -1499,6 +1599,16 @@ jQuery(document).ready(function() {
         return $('#content-lvl14-2').html();
       }
   });
+   $('#popover-lvl15-2').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-lvl15-2').html();
+      }
+  });
    $('#popover-lvl16-2').popover({
       toggle:'popover',
       container:'body',
@@ -1507,6 +1617,36 @@ jQuery(document).ready(function() {
       html: true,
       content: function() {
         return $('#content-lvl16-2').html();
+      }
+  });
+   $('#popover-lvl18-2').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-lvl18-2').html();
+      }
+  });
+   $('#popover-lvl20-2').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-lvl20-2').html();
+      }
+  });
+   $('#popover-lvl25-2').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-lvl25-2').html();
       }
   });
    $('#popover-lvl1').popover({
@@ -1649,6 +1789,16 @@ jQuery(document).ready(function() {
         return $('#content-lvl14').html();
       }
   });
+   $('#popover-lvl15').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-lvl15').html();
+      }
+  });
    $('#popover-lvl16').popover({
       toggle:'popover',
       container:'body',
@@ -1657,6 +1807,36 @@ jQuery(document).ready(function() {
       html: true,
       content: function() {
         return $('#content-lvl16').html();
+      }
+  });
+   $('#popover-lvl18').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-lvl18').html();
+      }
+  });
+   $('#popover-lvl20').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-lvl20').html();
+      }
+  });
+   $('#popover-lvl25').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top',
+      html: true,
+      content: function() {
+        return $('#content-lvl25').html();
       }
   });
    $('#popover-build1').popover({

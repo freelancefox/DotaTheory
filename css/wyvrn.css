@@ -111,6 +111,26 @@ h5 {
   padding: 8px;
 }
 
+.paddedsm .text-left {
+  margin-left: 5%;
+}
+
+@media (max-width: 992px) {
+  .paddedsm {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .paddedsm .text-left {
+    text-align: center;
+    margin-left: 0;
+  }
+  .paddedsm .img {
+    padding-left: 0 !important;
+  }
+}
+
 .padded {
   padding-top: 0px;
   padding-bottom: 0px;
@@ -220,11 +240,12 @@ h5 {
   height: 40px;
 }
 
-#popover-build1, #popover-build2, #popover-build3 {
-  text-align: center;
+a[id^="popover-build"] {
+  width: 100%;
+  height: 99px;
 }
 
-#build {
+.build {
   text-align: center;
   display: inline-block;
   max-width: 80%;
@@ -242,6 +263,7 @@ h5 {
   color: #F9F9F9;
   width: auto;
   max-width: 600px;
+  box-shadow: 2px 2px #7FB8B9;
 }
 
 .item-row > img, .item-row > span > img {
@@ -250,6 +272,7 @@ h5 {
 }
 
 .popover {
+  max-width: 480px;
   padding: 0;
   background-color: #1D3E37;
   border-radius: 0px;
@@ -291,6 +314,7 @@ h5 {
   padding-bottom: 0px;
   border: 0px;
   font-size: 13px;
+  text-align: center;
 }
 
 .popover.bottom .arrow:after {
@@ -312,6 +336,7 @@ h5 {
 .tooltip.top .tooltip-inner {
   background-color: #1D3E37;
 }
+
 .tooltip.top .tooltip-arrow {
   border-top-color: #1D3E37;
 }
@@ -320,6 +345,33 @@ h5 {
   .container {
     width: 75%;
   }
+}
+
+@media (max-width: 1320px) and (min-width: 992px), (max-width: 520px) {
+  #prio-offset {
+    margin-left: 4.333333333%;
+    margin-right: 4%;
+  }
+  #supp {
+    padding-left: 20%;
+  }
+}
+
+#prio {
+  margin: 20px 5% 8px 0;
+  border: 8px outset rgba(48,74,70,0.15);
+  background-color: rgba(255,255,255,0.175);
+  min-width: 140px;
+}
+
+#prio h4 {
+  padding-bottom: 4px;
+  font-weight: bold;
+}
+
+#picks, #lanes {
+  max-width: 640px;
+  margin: auto;
 }
 
 #skills {
@@ -465,16 +517,35 @@ h5 {
   padding-left: 15px;
 }
 
-#hskills .col-md-4 {
-  padding: 0;
+#hskills .col-md-3 {
+  padding: 0 0 0 8px;
 }
 
-#hskills .col-md-8 {
-  margin-top: 12px;
+#hskills .col-md-9 {
+  padding-right: 8px;
+  margin-top: 8px;
 }
 
-#hskills .col-md-4 > img {
+#hskills .col-md-3 > img {
   margin-top: 24px;
+}
+
+#hskills > .row {
+    margin: 0 8%;
+  border: 16px outset rgba(48,74,70,0.15);
+}
+
+#hskills .img-responsive {
+  margin: 16px auto 4px auto;
+}
+
+#hskills .img {
+  margin: 8px auto 8px auto;
+  padding-left: 33%;
+}
+
+#hskills > h4 {
+  margin: 8px 0 8px 0;
 }
 
 #navigation {
@@ -509,3 +580,52 @@ h5 {
 .sixslot {
   outline: 1px solid #2233cc;
 }
+
+.goldmarkL {
+  margin: -32px 0 0 25%;
+  width: 85%;
+  border-bottom: 2px dashed rgba(48,74,70,0.85);
+  bottom: 0;
+  color: #1D3E37;
+}
+
+.goldmarkR {
+  margin: -32px 12% 0 -12%;
+  width: 85%;
+  border-bottom: 2px dashed rgba(48,74,70,0.85);
+  bottom: 0;
+  color: #1D3E37;
+}
+
+@media (max-width: 1828px) {
+  .goldmarkR {
+    margin-top: -56px;
+  }
+}
+
+#popover-control {
+  margin-top: -4px;
+  margin-bottom: 4px;
+}
+
+#popover-control a:hover {
+  box-shadow: none;
+  background-color: #D6D7DD;
+  color: #191919 !important;
+}
+
+#popover-control a.active,
+#popover-control a:active,
+#popover-control a:focus {
+  box-shadow: none;
+  color: #7FB8B9;
+}
+
+.main {
+  background-color: rgba(255,255,255,0.175);
+}
+
+
+
+
+

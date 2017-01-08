@@ -95,7 +95,7 @@ h4 {
   font-size: 18px;
 }
 
-h4 img {
+#picking h4 img {
   height: 36px;
   width: 36px;
 }
@@ -599,7 +599,7 @@ a[id^="popover-build"] {
 
 @media (max-width: 1828px) {
   .goldmarkR {
-    margin-top: -56px;
+    margin-top: -32px;
   }
 }
 

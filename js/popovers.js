@@ -59,14 +59,14 @@ jQuery(document).ready(function() {
         return $('#content-rush').html();
       }
   });
-   $('#popover-sagesmask').popover({
+   $('#popover-sages').popover({
       toggle:'popover',
       container:'body',
       trigger:'hover click',
       placement:'left',
       html: true,
       content: function() {
-        return $('#content-sagesmask').html();
+        return $('#content-sages').html();
       }
   });
    $('#popover-windlace').popover({
@@ -1269,7 +1269,7 @@ jQuery(document).ready(function() {
         return $('#content-sf').html();
       }
   });
-   $('#popover-lvl0-3').popover({
+   $('#popover-lvl1-3').popover({
       toggle:'popover',
       container:'body',
       trigger:'hover click',

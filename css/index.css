@@ -7,8 +7,8 @@ body {
 h1 {
   min-height: 92px;
   padding: 32px 80px;
+  margin: 12px 0 0 0;
   font-size: 2.4em;
-  padding-bottom: 24px;
 }
 
 a {
@@ -74,6 +74,17 @@ ul { padding: 0; margin: 0; }
 .highlight-panels li a:hover,
 .highlight-panels li a:focus {
   background-color: rgba(255,255,255,0.3);
+}
+
+.type {
+  font-size: 14px;
+  color: #333;
+  display: inline-block;
+}
+
+.highlight-panels#forum b {
+  font-variant: small-caps;
+  letter-spacing: 1.2px;
 }
 
 #skymage {
@@ -186,15 +197,20 @@ ul { padding: 0; margin: 0; }
   background-color: rgba(255,255,255,0.18);
 }
 
-#forum {
+#forumnav #forumbtn {
+  font-size: 27px;
+  padding: 2px 12px;
+}
+
+#forumbtn {
   font-variant: small-caps;
   letter-spacing: 1.2px;
   font-size: 0.6em;
   background-color: rgba(255,255,255,0.3);
 }
 
-#forum:hover,
-#forum:focus {
+#forumbtn:hover,
+#forumbtn:focus {
   background-color: rgba(255,255,255,0.5);
   color: rgba(255,255,255,0.8);
 }
@@ -237,7 +253,7 @@ ul { padding: 0; margin: 0; }
 }
 
 #forumnav {
-  padding-bottom: 16px;
+  margin: 0 0 16px 0;
 }
 
 #forumnav > ul,
@@ -246,7 +262,7 @@ ul { padding: 0; margin: 0; }
 }
 
 #controls {
-  height: 48px;
+  margin: 16px 0;
 }
 
 @media (max-width: 840px) {
@@ -284,6 +300,17 @@ ul { padding: 0; margin: 0; }
   color: rgba(255,255,255,0.8);
 }
 
+.modal-dialog {
+  width: 60vw;
+}
+
+@media (max-width: 840px) {
+  .modal-dialog {
+    width: 85vw;
+  }
+}
+
+.modal-content,
 .dropdown-menu {
   background-color: rgba(127,127,127,0.87);
   max-height: 640px;
@@ -297,10 +324,15 @@ ul { padding: 0; margin: 0; }
   color: #f9f9f9;
 }
 
+.rules-btn {
+  margin-left: 48px;
+}
+
 .new-btn {
   margin-right: 48px;
 }
 
+.rules-btn .btn,
 .new-btn .btn {
   font-size: 36px;
 }

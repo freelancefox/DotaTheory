@@ -708,7 +708,7 @@ $(function () {
     },
 
     title: {
-      text: 'Wyvern Winrate by Role & Farm at TI6',
+      text: 'Wyvern Winrate by Role & Net Worth @ TI6 & Boston Major',
       style: {
         margin:'8px',
         color:'#1D3E37',
@@ -732,7 +732,7 @@ $(function () {
 
     xAxis: {
       title: {
-        text: 'Position vs Farm',
+        text: 'Position vs Net Worth',
         style: {
           color:'#1D3E37'
         }
@@ -747,7 +747,7 @@ $(function () {
 
     yAxis: {
       allowDecimals: false,
-      min: -250,
+      min: -350,
       max: 650,
       tickInterval: 100,
       title: {
@@ -759,27 +759,31 @@ $(function () {
       stackLabels: {
         enabled: true,
         formatter: function() {
-          var pct = [0, 0];
-          var nct = [0, 0];
+          var pct = [0, 0, 0];
+          var nct = [0, 0, 0];
           var series = this.axis.series;
 
           for (var i in series){
             if (series[i].yData[this.x] > 0) {
-              if (series[i].stackKey == 'column4') { pct[0] += 1; }
-              else if (series[i].stackKey == 'column5') { pct[1] += 1; }
+              if (series[i].stackKey == 'column3') { pct[0] += 1; }
+              else if (series[i].stackKey == 'column4') { pct[1] += 1; }
+              else if (series[i].stackKey == 'column5') { pct[2] += 1; }
             }
             else if (series[i].yData[this.x] < 0) {
-              if (series[i].stackKey == 'column4') { nct[0] += 1; }
-              else if (series[i].stackKey == 'column5') { nct[1] += 1; }
+              if (series[i].stackKey == 'column3') { nct[0] += 1; }
+              else if (series[i].stackKey == 'column4') { nct[1] += 1; }
+              else if (series[i].stackKey == 'column5') { nct[2] += 1; }
             }
           }
           if (!this.isNegative) {
-            if (this.stack == '4') { return pct[0] + " wins"; }
-            else if (this.stack == '5') { return pct[1] + " wins"; }
+            if (this.stack == '3') { return pct[0] + " wins"; }
+            else if (this.stack == '4') { return pct[1] + " wins"; }
+            else if (this.stack == '5') { return pct[2] + " wins"; }
           }
           else {
-            if (this.stack == '4') { return nct[0] + " losses"; }
-            else if (this.stack == '5') { return nct[1] + " losses"; }
+            if (this.stack == '3') { return nct[0] + " losses"; }
+            else if (this.stack == '4') { return nct[1] + " losses"; }
+            else if (this.stack == '5') { return nct[2] + " losses"; }
           }
         },
         style: {
@@ -815,6 +819,18 @@ $(function () {
     },
 
     series: [{
+      name: 'Newbee',
+      color: '#38A1E2',
+      stack: '3',
+      data: [{
+        playername: 'kaka',
+        y: -61.57,
+        opponent: 'VP',
+        gpm: 354,
+        percentnw: '18.2%',
+        url: 'https://www.dotabuff.com/matches/2820818740'
+      }, 0]
+    }, {
       name: 'EG',
       color: '#2E6797',
       stack: '4',
@@ -888,6 +904,19 @@ $(function () {
         gpm: 314,
         percentnw: '15.2%',
         url: 'http://www.dotabuff.com/matches/2547331853'
+      }]
+    }, {
+      name: 'Na\'vi',
+      color: '#FFF200',
+      linkedTo: ':previous',
+      stack: '5',
+      data: [0, {
+        playername: 'Sonneiko',
+        y: -44.05,
+        opponent: 'Alliance',
+        gpm: 250,
+        percentnw: '8.7%',
+        url: 'https://www.dotabuff.com/matches/2737734106'
       }]
     }, {
       name: 'DC',
@@ -980,6 +1009,19 @@ $(function () {
         url: 'http://www.dotabuff.com/matches/2464111444'
       }]
     }, {
+      name: 'DC',
+      color: '#242054',
+      linkedTo: ':previous',
+      stack: '4',
+      data: [0, {
+        playername: 'Saksa',
+        y: 35.77,
+        opponent: 'WG.Unity',
+        gpm: 363,
+        percentnw: '11.8%',
+        url: 'https://www.dotabuff.com/matches/2820936252'
+      }]
+    }, {
       name: 'Escape',
       color: '#E7853E',
       stack: '5',
@@ -1068,6 +1110,19 @@ $(function () {
         url: 'http://www.dotabuff.com/matches/2558387942'
       }, 0]
     }, {
+      name: 'LGD',
+      color: '#b2b2b2',
+      linkedTo: ':previous',
+      stack: '5',
+      data: [0, {
+        playername: 'Victoria',
+        y: -26.68,
+        opponent: 'IG.Vitality',
+        gpm: 164,
+        percentnw: '9.1%',
+        url: 'http://www.dotabuff.com/matches/2558387942'
+      }]
+    }, {
       name: 'Complexity',
       color: '#DD2631',
       stack: '4',
@@ -1104,6 +1159,19 @@ $(function () {
         gpm: 324,
         percentnw: '12.7%',
         url: 'http://www.dotabuff.com/matches/2466075858'
+      }]
+    }, {
+      name: 'Complexity',
+      color: '#DD2631',
+      linkedTo: ':previous',
+      stack: '5',
+      data: [0, {
+        playername: 'Swindlez',
+        y: -24.8,
+        opponent: 'WG.Unity',
+        gpm: 235,
+        percentnw: '10.8%',
+        url: 'https://www.dotabuff.com/matches/2829773792'
       }]
     }
 

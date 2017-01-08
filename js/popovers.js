@@ -1272,7 +1272,7 @@ jQuery(document).ready(function() {
    $('#popover-lvl1-3').popover({
       toggle:'popover',
       container:'body',
-      trigger:'hover click',
+      trigger:'hover',
       placement:'top',
       html: true,
       content: function() {
@@ -1282,7 +1282,7 @@ jQuery(document).ready(function() {
    $('#popover-lvl2-3').popover({
       toggle:'popover',
       container:'body',
-      trigger:'hover click',
+      trigger:'hover',
       placement:'top',
       html: true,
       content: function() {
@@ -1292,7 +1292,7 @@ jQuery(document).ready(function() {
    $('#popover-lvl3-3').popover({
       toggle:'popover',
       container:'body',
-      trigger:'hover click',
+      trigger:'hover',
       placement:'top',
       html: true,
       content: function() {
@@ -1302,7 +1302,7 @@ jQuery(document).ready(function() {
    $('#popover-lvl4-3').popover({
       toggle:'popover',
       container:'body',
-      trigger:'hover click',
+      trigger:'hover',
       placement:'top',
       html: true,
       content: function() {
@@ -1312,7 +1312,7 @@ jQuery(document).ready(function() {
    $('#popover-lvl5-3').popover({
       toggle:'popover',
       container:'body',
-      trigger:'hover click',
+      trigger:'hover',
       placement:'top',
       html: true,
       content: function() {
@@ -1332,7 +1332,7 @@ jQuery(document).ready(function() {
    $('#popover-lvl7-3').popover({
       toggle:'popover',
       container:'body',
-      trigger:'hover click',
+      trigger:'hover',
       placement:'top',
       html: true,
       content: function() {
@@ -1342,7 +1342,7 @@ jQuery(document).ready(function() {
    $('#popover-lvl8-3').popover({
       toggle:'popover',
       container:'body',
-      trigger:'hover click',
+      trigger:'hover',
       placement:'top',
       html: true,
       content: function() {
@@ -1352,7 +1352,7 @@ jQuery(document).ready(function() {
    $('#popover-lvl9-3').popover({
       toggle:'popover',
       container:'body',
-      trigger:'hover click',
+      trigger:'hover',
       placement:'top',
       html: true,
       content: function() {
@@ -1362,7 +1362,7 @@ jQuery(document).ready(function() {
    $('#popover-lvl10-3').popover({
       toggle:'popover',
       container:'body',
-      trigger:'hover click',
+      trigger:'hover',
       placement:'top',
       html: true,
       content: function() {
@@ -1372,7 +1372,7 @@ jQuery(document).ready(function() {
    $('#popover-lvl11-3').popover({
       toggle:'popover',
       container:'body',
-      trigger:'hover click',
+      trigger:'hover',
       placement:'top',
       html: true,
       content: function() {
@@ -1382,7 +1382,7 @@ jQuery(document).ready(function() {
    $('#popover-lvl12-3').popover({
       toggle:'popover',
       container:'body',
-      trigger:'hover click',
+      trigger:'hover',
       placement:'top',
       html: true,
       content: function() {
@@ -1392,7 +1392,7 @@ jQuery(document).ready(function() {
    $('#popover-lvl13-3').popover({
       toggle:'popover',
       container:'body',
-      trigger:'hover click',
+      trigger:'hover',
       placement:'top',
       html: true,
       content: function() {
@@ -1402,7 +1402,7 @@ jQuery(document).ready(function() {
    $('#popover-lvl14-3').popover({
       toggle:'popover',
       container:'body',
-      trigger:'hover click',
+      trigger:'hover',
       placement:'top',
       html: true,
       content: function() {
@@ -1412,7 +1412,7 @@ jQuery(document).ready(function() {
    $('#popover-lvl15-3').popover({
       toggle:'popover',
       container:'body',
-      trigger:'hover click',
+      trigger:'hover',
       placement:'top',
       html: true,
       content: function() {
@@ -1422,7 +1422,7 @@ jQuery(document).ready(function() {
    $('#popover-lvl16-3').popover({
       toggle:'popover',
       container:'body',
-      trigger:'hover click',
+      trigger:'hover',
       placement:'top',
       html: true,
       content: function() {
@@ -1432,7 +1432,7 @@ jQuery(document).ready(function() {
    $('#popover-lvl18-3').popover({
       toggle:'popover',
       container:'body',
-      trigger:'hover click',
+      trigger:'hover',
       placement:'top',
       html: true,
       content: function() {
@@ -1442,7 +1442,7 @@ jQuery(document).ready(function() {
    $('#popover-lvl20-3').popover({
       toggle:'popover',
       container:'body',
-      trigger:'hover click',
+      trigger:'hover',
       placement:'top',
       html: true,
       content: function() {
@@ -1452,7 +1452,7 @@ jQuery(document).ready(function() {
    $('#popover-lvl25-3').popover({
       toggle:'popover',
       container:'body',
-      trigger:'hover click',
+      trigger:'hover',
       placement:'top',
       html: true,
       content: function() {
@@ -1462,7 +1462,7 @@ jQuery(document).ready(function() {
    $('#popover-lvl1-2').popover({
       toggle:'popover',
       container:'body',
-      trigger:'hover click',
+      trigger:'hover',
       placement:'top',
       html: true,
       content: function() {
@@ -1472,7 +1472,7 @@ jQuery(document).ready(function() {
    $('#popover-lvl2-2').popover({
       toggle:'popover',
       container:'body',
-      trigger:'hover click',
+      trigger:'hover',
       placement:'top',
       html: true,
       content: function() {
@@ -1482,7 +1482,7 @@ jQuery(document).ready(function() {
    $('#popover-lvl3-2').popover({
       toggle:'popover',
       container:'body',
-      trigger:'hover click',
+      trigger:'hover',
       placement:'top',
       html: true,
       content: function() {
@@ -1492,7 +1492,7 @@ jQuery(document).ready(function() {
    $('#popover-lvl4-2').popover({
       toggle:'popover',
       container:'body',
-      trigger:'hover click',
+      trigger:'hover',
       placement:'top',
       html: true,
       content: function() {
@@ -1502,7 +1502,7 @@ jQuery(document).ready(function() {
    $('#popover-lvl5-2').popover({
       toggle:'popover',
       container:'body',
-      trigger:'hover click',
+      trigger:'hover',
       placement:'top',
       html: true,
       content: function() {
@@ -1522,7 +1522,7 @@ jQuery(document).ready(function() {
    $('#popover-lvl7-2').popover({
       toggle:'popover',
       container:'body',
-      trigger:'hover click',
+      trigger:'hover',
       placement:'top',
       html: true,
       content: function() {
@@ -1532,7 +1532,7 @@ jQuery(document).ready(function() {
    $('#popover-lvl8-2').popover({
       toggle:'popover',
       container:'body',
-      trigger:'hover click',
+      trigger:'hover',
       placement:'top',
       html: true,
       content: function() {
@@ -1542,7 +1542,7 @@ jQuery(document).ready(function() {
    $('#popover-lvl9-2').popover({
       toggle:'popover',
       container:'body',
-      trigger:'hover click',
+      trigger:'hover',
       placement:'top',
       html: true,
       content: function() {
@@ -1552,7 +1552,7 @@ jQuery(document).ready(function() {
    $('#popover-lvl10-2').popover({
       toggle:'popover',
       container:'body',
-      trigger:'hover click',
+      trigger:'hover',
       placement:'top',
       html: true,
       content: function() {
@@ -1562,7 +1562,7 @@ jQuery(document).ready(function() {
    $('#popover-lvl11-2').popover({
       toggle:'popover',
       container:'body',
-      trigger:'hover click',
+      trigger:'hover',
       placement:'top',
       html: true,
       content: function() {
@@ -1572,7 +1572,7 @@ jQuery(document).ready(function() {
    $('#popover-lvl12-2').popover({
       toggle:'popover',
       container:'body',
-      trigger:'hover click',
+      trigger:'hover',
       placement:'top',
       html: true,
       content: function() {
@@ -1582,7 +1582,7 @@ jQuery(document).ready(function() {
    $('#popover-lvl13-2').popover({
       toggle:'popover',
       container:'body',
-      trigger:'hover click',
+      trigger:'hover',
       placement:'top',
       html: true,
       content: function() {
@@ -1592,7 +1592,7 @@ jQuery(document).ready(function() {
    $('#popover-lvl14-2').popover({
       toggle:'popover',
       container:'body',
-      trigger:'hover click',
+      trigger:'hover',
       placement:'top',
       html: true,
       content: function() {
@@ -1602,7 +1602,7 @@ jQuery(document).ready(function() {
    $('#popover-lvl15-2').popover({
       toggle:'popover',
       container:'body',
-      trigger:'hover click',
+      trigger:'hover',
       placement:'top',
       html: true,
       content: function() {
@@ -1612,7 +1612,7 @@ jQuery(document).ready(function() {
    $('#popover-lvl16-2').popover({
       toggle:'popover',
       container:'body',
-      trigger:'hover click',
+      trigger:'hover',
       placement:'top',
       html: true,
       content: function() {
@@ -1622,7 +1622,7 @@ jQuery(document).ready(function() {
    $('#popover-lvl18-2').popover({
       toggle:'popover',
       container:'body',
-      trigger:'hover click',
+      trigger:'hover',
       placement:'top',
       html: true,
       content: function() {
@@ -1632,7 +1632,7 @@ jQuery(document).ready(function() {
    $('#popover-lvl20-2').popover({
       toggle:'popover',
       container:'body',
-      trigger:'hover click',
+      trigger:'hover',
       placement:'top',
       html: true,
       content: function() {
@@ -1642,7 +1642,7 @@ jQuery(document).ready(function() {
    $('#popover-lvl25-2').popover({
       toggle:'popover',
       container:'body',
-      trigger:'hover click',
+      trigger:'hover',
       placement:'top',
       html: true,
       content: function() {
@@ -1782,7 +1782,7 @@ jQuery(document).ready(function() {
    $('#popover-lvl14').popover({
       toggle:'popover',
       container:'body',
-      trigger:'hover click',
+      trigger:'hover',
       placement:'top',
       html: true,
       content: function() {

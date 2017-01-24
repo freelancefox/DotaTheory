@@ -112,6 +112,10 @@ ul { padding: 0; margin: 0; }
   background-color: #B18961;
 }
 
+#items {
+  background-color: #20242E;
+}
+
 #corevern {
   background-color: #B1E3E4;
   background-image: url('../img/corevernheader.png');

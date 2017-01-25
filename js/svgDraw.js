@@ -127,42 +127,181 @@ $(document).ready(function() {
     hideAll();
 });
 
-$("#belt, #club, #halberd, #gjalla").hover(function() {
+$("#str").on("click", function() {
+    $("#str").hide();
+    $("#strp").show(150);
+    $("#path1").show(150);
+    $("#path4").show(150);
+    $("#path7").show(150);
+    $("#path10").show(150);
+    $("#path11").show(150);
+    $("#path12").show(150);
+    $("#path13").show(150);
+    $("#path14").show(150);
+    $("#path28").show(150);
+    $("#path29").show(150);
+    $("#path30").show(150);
+    $("#path32").show(150);
+    $("#path33").show(150);
+    $("#path34").show(150);
+});
+$("#strp").on("click", function() {
+    $("#strp").hide();
+    $("#str").show(150);
+    $("#path1").hide();
+    $("#path4").hide();
+    $("#path7").hide();
+    $("#path10").hide();
+    $("#path11").hide();
+    $("#path12").hide();
+    $("#path13").hide();
+    $("#path14").hide();
+    $("#path28").hide();
+    $("#path29").hide();
+    $("#path30").hide();
+    $("#path32").hide();
+    $("#path33").hide();
+    $("#path34").hide();
+});
+
+$("#int").on("click", function() {
+    $("#int").hide();
+    $("#intp").show(150);
+    $("#path2").show(150);
+    $("#path5").show(150);
+    $("#path8").show(150);
+    $("#path15").show(150);
+    $("#path16").show(150);
+    $("#path17").show(150);
+    $("#path18").show(150);
+    $("#path19").show(150);
+    $("#path25").show(150);
+    $("#path30").show(150);
+    $("#path31").show(150);
+    $("#path35").show(150);
+    $("#path36").show(150);
+    $("#path37").show(150);
+    $("#path41").show(150);
+});
+$("#intp").on("click", function() {
+    $("#intp").hide();
+    $("#int").show(150);
+    $("#path2").hide();
+    $("#path5").hide();
+    $("#path8").hide();
+    $("#path15").hide();
+    $("#path16").hide();
+    $("#path17").hide();
+    $("#path18").hide();
+    $("#path19").hide();
+    $("#path25").hide();
+    $("#path30").hide();
+    $("#path31").hide();
+    $("#path35").hide();
+    $("#path36").hide();
+    $("#path37").hide();
+    $("#path41").hide();
+});
+
+$("#agi").on("click", function() {
+    $("#agi").hide();
+    $("#agip").show(150);
+    $("#path3").show(150);
+    $("#path6").show(150);
+    $("#path9").show(150);
+    $("#path20").show(150);
+    $("#path21").show(150);
+    $("#path22").show(150);
+    $("#path23").show(150);
+    $("#path26").show(150);
+    $("#path27").show(150);
+    $("#path29").show(150);
+    $("#path31").show(150);
+    $("#path38").show(150);
+    $("#path39").show(150);
+    $("#path40").show(150);
+});
+$("#agip").on("click", function() {
+    $("#agip").hide();
+    $("#agi").show(150);
+    $("#path3").hide();
+    $("#path6").hide();
+    $("#path9").hide();
+    $("#path20").hide();
+    $("#path21").hide();
+    $("#path22").hide();
+    $("#path23").hide();
+    $("#path26").hide();
+    $("#path27").hide();
+    $("#path30").hide();
+    $("#path31").hide();
+    $("#path38").hide();
+    $("#path39").hide();
+    $("#path40").hide();
+});
+
+$("#belt, #club").hover(function() {
+    $("#path1").show(150);
+    $("#path4").show(150);
+  }, function() {
+    $("#path1").hide();
+    $("#path4").hide();
+});
+
+$("#halberd").hover(function() {
     $("#path1").show(150);
     $("#path4").show(150);
     $("#path10").show(150);
-    $("#path11").show(150);
   }, function() {
     $("#path1").hide();
     $("#path4").hide();
     $("#path10").hide();
+});
+
+$("#gjalla").hover(function() {
+    $("#path1").show(150);
+    $("#path4").show(150);
+    $("#path11").show(150);
+  }, function() {
+    $("#path1").hide();
+    $("#path4").hide();
     $("#path11").hide();
 });
 
 $("#sange").hover(function() {
     $("#path1").show(150);
     $("#path4").show(150);
+    $("#path10").show(150);
+    $("#path11").show(150);
     $("#path12").show(150);
     $("#path13").show(150);
     $("#path14").show(150);
   }, function() {
     $("#path1").hide();
     $("#path4").hide();
+    $("#path10").hide();
+    $("#path11").hide();
     $("#path12").hide();
     $("#path13").hide();
     $("#path14").hide();
 });
 
-$("#robe, #staff, #spellblade").hover(function() {
+$("#robe, #staff").hover(function() {
+    $("#path2").show(150);
+    $("#path5").show(150);
+  }, function() {
+    $("#path2").hide();
+    $("#path5").hide();
+});
+
+$("#spellblade").hover(function() {
     $("#path2").show(150);
     $("#path5").show(150);
     $("#path15").show(150);
-    $("#path16").show(150);
   }, function() {
     $("#path2").hide();
     $("#path5").hide();
     $("#path15").hide();
-    $("#path16").hide();
 });
 
 $("#seraph").hover(function() {
@@ -180,26 +319,46 @@ $("#seraph").hover(function() {
 $("#lucen").hover(function() {
     $("#path2").show(150);
     $("#path5").show(150);
+    $("#path15").show(150);
+    $("#path16").show(150);
     $("#path17").show(150);
     $("#path18").show(150);
     $("#path19").show(150);
   }, function() {
     $("#path2").hide();
     $("#path5").hide();
+    $("#path15").hide();
+    $("#path16").hide();
     $("#path17").hide();
     $("#path18").hide();
     $("#path19").hide();
 });
 
-$("#band, #blade, #manta, #hayabusa").hover(function() {
+$("#band, #blade").hover(function() {
+    $("#path3").show(150);
+    $("#path6").show(150);
+  }, function() {
+    $("#path3").hide();
+    $("#path6").hide();
+});
+
+$("#manta").hover(function() {
     $("#path3").show(150);
     $("#path6").show(150);
     $("#path20").show(150);
-    $("#path21").show(150);
   }, function() {
     $("#path3").hide();
     $("#path6").hide();
     $("#path20").hide();
+});
+
+$("#hayabusa").hover(function() {
+    $("#path3").show(150);
+    $("#path6").show(150);
+    $("#path21").show(150);
+  }, function() {
+    $("#path3").hide();
+    $("#path6").hide();
     $("#path21").hide();
 });
 
@@ -209,12 +368,16 @@ $("#yasha").hover(function() {
     $("#path17").show(150);
     $("#path18").show(150);
     $("#path19").show(150);
+    $("#path20").show(150);
+    $("#path21").show(150);
   }, function() {
     $("#path3").hide();
     $("#path6").hide();
     $("#path17").hide();
     $("#path18").hide();
     $("#path19").hide();
+    $("#path20").hide();
+    $("#path21").hide();
 });
 
 $("#trio").hover(function() {
@@ -307,7 +470,7 @@ $("#wyrmslayer").hover(function() {
     $("#path28").hide();
 });
 
-$("#reaver, #heart, #satanic, #pauldron").hover(function() {
+$("#reaver").hover(function() {
     $("#path32").show(150);
     $("#path33").show(150);
     $("#path34").show(150);
@@ -317,7 +480,25 @@ $("#reaver, #heart, #satanic, #pauldron").hover(function() {
     $("#path34").hide();
 });
 
-$("#mystic, #sheep, #shiva, #ocore").hover(function() {
+$("#heart").hover(function() {
+    $("#path32").show(150);
+  }, function() {
+    $("#path32").hide();
+});
+
+$("#satanic").hover(function() {
+    $("#path33").show(150);
+  }, function() {
+    $("#path33").hide();
+});
+
+$("#pauldron").hover(function() {
+    $("#path34").show(150);
+  }, function() {
+    $("#path34").hide();
+});
+
+$("#mystic").hover(function() {
     $("#path35").show(150);
     $("#path36").show(150);
     $("#path37").show(150);
@@ -327,13 +508,49 @@ $("#mystic, #sheep, #shiva, #ocore").hover(function() {
     $("#path37").hide();
 });
 
-$("#eagle, #butterfly, #eblade, #wkb").hover(function() {
+$("#sheep").hover(function() {
+    $("#path35").show(150);
+  }, function() {
+    $("#path35").hide();
+});
+
+$("#shiva").hover(function() {
+    $("#path36").show(150);
+  }, function() {
+    $("#path36").hide();
+});
+
+$("#ocore").hover(function() {
+    $("#path37").show(150);
+  }, function() {
+    $("#path37").hide();
+});
+
+$("#eagle").hover(function() {
     $("#path38").show(150);
     $("#path39").show(150);
     $("#path40").show(150);
   }, function() {
     $("#path38").hide();
     $("#path39").hide();
+    $("#path40").hide();
+});
+
+$("#butterfly").hover(function() {
+    $("#path38").show(150);
+  }, function() {
+    $("#path38").hide();
+});
+
+$("#eblade").hover(function() {
+    $("#path39").show(150);
+  }, function() {
+    $("#path39").hide();
+});
+
+$("#wkb").hover(function() {
+    $("#path40").show(150);
+  }, function() {
     $("#path40").hide();
 });
 

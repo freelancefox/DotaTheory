@@ -34,7 +34,16 @@ h1 {
   height: 20px;
 }
 
+#nav {
+  padding-right: 10%;
+}
+
+#str, #int, #agi {
+  display: inline-block;
+}
+
 #key {
+  display: inline-block;
   padding-bottom: 12px;
 }
 
@@ -206,5 +215,14 @@ a:focus, a:hover {
   .container {
     margin-top: 48px;
   }
+}
+
+#str:hover, #int:hover, #agi:hover,
+#strp:hover, #intp:hover, #agip:hover {
+  cursor: pointer;
+}
+
+#strp, #intp, #agip {
+  display: none;
 }
 

@@ -3,7 +3,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'top auto',
+      placement:'left auto',
       html: true,
       content: function() {
         return $('#content-echo').html();
@@ -123,7 +123,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'left auto',
+      placement:'right auto',
       html: true,
       content: function() {
         return $('#content-sange').html();
@@ -143,7 +143,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'right auto',
+      placement:'left auto',
       html: true,
       content: function() {
         return $('#content-yasha').html();
@@ -253,7 +253,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'bottom auto',
+      placement:'bottom',
       html: true,
       content: function() {
         return $('#content-snl').html();
@@ -273,7 +273,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'bottom auto',
+      placement:'right auto',
       html: true,
       content: function() {
         return $('#content-trio').html();
@@ -283,7 +283,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'top auto',
+      placement:'right auto',
       html: true,
       content: function() {
         return $('#content-heart').html();
@@ -293,7 +293,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'top auto',
+      placement:'right auto',
       html: true,
       content: function() {
         return $('#content-satanic').html();
@@ -303,7 +303,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'top auto',
+      placement:'right auto',
       html: true,
       content: function() {
         return $('#content-pauldron').html();
@@ -313,7 +313,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'top auto',
+      placement:'left auto',
       html: true,
       content: function() {
         return $('#content-sheep').html();
@@ -323,7 +323,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'top auto',
+      placement:'left auto',
       html: true,
       content: function() {
         return $('#content-shiva').html();
@@ -333,7 +333,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'top auto',
+      placement:'right auto',
       html: true,
       content: function() {
         return $('#content-ocore').html();
@@ -343,7 +343,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'top auto',
+      placement:'left auto',
       html: true,
       content: function() {
         return $('#content-butterfly').html();
@@ -353,7 +353,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'top auto',
+      placement:'left auto',
       html: true,
       content: function() {
         return $('#content-eblade').html();
@@ -363,7 +363,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'top auto',
+      placement:'left auto',
       html: true,
       content: function() {
         return $('#content-wkb').html();
@@ -373,7 +373,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'top auto',
+      placement:'bottom',
       html: true,
       content: function() {
         return $('#content-wyrmslayer').html();
@@ -383,7 +383,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'top auto',
+      placement:'bottom',
       html: true,
       content: function() {
         return $('#content-pike').html();

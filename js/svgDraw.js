@@ -129,7 +129,7 @@ $(document).ready(function() {
 
 $("#str").on("click", function() {
     $("#str").hide();
-    $("#strp").show(150);
+    $("#strp").show();
     $("#path1").show(150);
     $("#path4").show(150);
     $("#path7").show(150);
@@ -147,7 +147,7 @@ $("#str").on("click", function() {
 });
 $("#strp").on("click", function() {
     $("#strp").hide();
-    $("#str").show(150);
+    $("#str").show();
     $("#path1").hide();
     $("#path4").hide();
     $("#path7").hide();
@@ -166,7 +166,7 @@ $("#strp").on("click", function() {
 
 $("#int").on("click", function() {
     $("#int").hide();
-    $("#intp").show(150);
+    $("#intp").show();
     $("#path2").show(150);
     $("#path5").show(150);
     $("#path8").show(150);
@@ -185,7 +185,7 @@ $("#int").on("click", function() {
 });
 $("#intp").on("click", function() {
     $("#intp").hide();
-    $("#int").show(150);
+    $("#int").show();
     $("#path2").hide();
     $("#path5").hide();
     $("#path8").hide();
@@ -205,7 +205,7 @@ $("#intp").on("click", function() {
 
 $("#agi").on("click", function() {
     $("#agi").hide();
-    $("#agip").show(150);
+    $("#agip").show();
     $("#path3").show(150);
     $("#path6").show(150);
     $("#path9").show(150);
@@ -223,7 +223,7 @@ $("#agi").on("click", function() {
 });
 $("#agip").on("click", function() {
     $("#agip").hide();
-    $("#agi").show(150);
+    $("#agi").show();
     $("#path3").hide();
     $("#path6").hide();
     $("#path9").hide();

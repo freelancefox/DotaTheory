@@ -83,7 +83,6 @@ a:focus, a:hover {
   color: rgb(25,25,25);
 }
 
-
 .position-header {
   position: relative;
   top: 95%;
@@ -164,6 +163,18 @@ h2 {
   color: #F9F9F9;
 }
 
+.h2e {
+  background-color: #42100E;
+  border: 4px solid #FF9C00;
+  color: #F9F9F9;
+}
+
+.h3e {
+  background-color: #42100E;
+  border: 2px solid #FF9C00;
+  color: #F9F9F9;
+}
+
 h3 {
   margin-top: 12px;
   margin-bottom: 12px;
@@ -202,6 +213,10 @@ h5 {
 
 .bgd {
   background-color: rgba(204,255,155,0.75);
+}
+
+.bge {
+  background-color: rgba(255,220,164,0.25);
 }
 
 .paddedsm .text-left {
@@ -579,11 +594,11 @@ h5 {
   font-weight: bold;
 }
 
-#cl1b:hover, #cl2b:hover, #cl3b:hover, #cl4b:hover {
+#cl1b:hover, #cl2b:hover, #cl3b:hover, #cl4b:hover, #cl5b:hover {
   font-weight: bold;
 }
 
-#l1b:hover, #l2b:hover, #l3b:hover, #l4b:hover {
+#l1b:hover, #l2b:hover, #l3b:hover, #l4b:hover, #l5b:hover {
   font-weight: bold;
 }
 
@@ -621,6 +636,11 @@ h5 {
   border: 16px outset rgba(33,116,136,0.15);
 }
 
+.cole > .row {
+  margin: 0 5%;
+  border: 16px outset rgba(66,16,14,0.15);
+}
+
 .ability {
   padding: 0 30px 0 30px;
 }
@@ -635,8 +655,8 @@ h5 {
   padding-left: 15px;
 }
 
-#l1b:hover, #l2b:hover, #l3b:hover, #l4b:hover,
-#cl1b:hover, #cl2b:hover, #cl3b:hover, #cl4b:hover {
+#l1b:hover, #l2b:hover, #l3b:hover, #l4b:hover, #l5b:hover,
+#cl1b:hover, #cl2b:hover, #cl3b:hover, #cl4b:hover, #cl5b:hover {
   cursor: pointer;
 }
 

@@ -365,19 +365,19 @@ $("#hayabusa").hover(function() {
 $("#yasha").hover(function() {
     $("#path3").show(150);
     $("#path6").show(150);
-    $("#path17").show(150);
-    $("#path18").show(150);
-    $("#path19").show(150);
     $("#path20").show(150);
     $("#path21").show(150);
+    $("#path22").show(150);
+    $("#path23").show(150);
+    $("#path24").show(150);
   }, function() {
     $("#path3").hide();
     $("#path6").hide();
-    $("#path17").hide();
-    $("#path18").hide();
-    $("#path19").hide();
     $("#path20").hide();
     $("#path21").hide();
+    $("#path22").hide();
+    $("#path23").hide();
+    $("#path24").hide();
 });
 
 $("#trio").hover(function() {

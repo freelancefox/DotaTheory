@@ -233,6 +233,7 @@ $("#agip").on("click", function() {
     $("#path23").hide();
     $("#path26").hide();
     $("#path27").hide();
+    $("#path29").hide();
     $("#path30").hide();
     $("#path31").hide();
     $("#path38").hide();

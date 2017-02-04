@@ -414,19 +414,19 @@ $("#lny").hover(function() {
     $("#path23").hide();
 });
 
-$("#gauntlets").hover(function() {
+$("#gauntlets, #urn").hover(function() {
     $("#path7").show(150);
   }, function() {
     $("#path7").hide();
 });
 
-$("#mantle").hover(function() {
+$("#mantle, #frost").hover(function() {
     $("#path8").show(150);
   }, function() {
     $("#path8").hide();
 });
 
-$("#slippers").hover(function() {
+$("#slippers, #pms").hover(function() {
     $("#path9").show(150);
   }, function() {
     $("#path9").hide();

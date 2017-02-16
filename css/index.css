@@ -11,6 +11,12 @@ h1 {
   font-size: 2.4em;
 }
 
+#slimh1 {
+  padding: 20px 80px 0 80px;
+  min-height: 42px;
+  height: 42px !important;
+}
+
 a {
   color: rgba(255,255,255,0.5);
 }
@@ -87,9 +93,17 @@ ul { padding: 0; margin: 0; }
   letter-spacing: 1.2px;
 }
 
+#heroes {
+  background-image: url('../img/heroes5.png');
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-color: #000000;
+}
+
 #skymage {
   background-image: url('../img/skymage-header.png');
-  background-size: 100%;
+  background-size: cover;
   background-position: 50% 30%;
   background-repeat: no-repeat;
   background-color: #F8E8F5;
@@ -106,7 +120,7 @@ ul { padding: 0; margin: 0; }
 
 #sking {
   background-image: url('../img/header.png');
-  background-size: 100%;
+  background-size: cover;
   background-position: 50% 33%;
   background-repeat: no-repeat;
   background-color: #B18961;
@@ -265,11 +279,15 @@ ul { padding: 0; margin: 0; }
   display: inline-block;
 }
 
+#controlsslim,
 #controls {
   margin: 16px 0;
 }
 
 @media (max-width: 840px) {
+  #controls {
+    margin: 8px 0;
+  },
   #controls {
     height: 72px;
   }

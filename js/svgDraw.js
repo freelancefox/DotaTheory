@@ -119,15 +119,12 @@ function hideAll() {
     $("[id^=path]").hide();
 }
 
-$(document).ready(function() {
+$(window).on("load", function() {
     // reset svg each time
     $("#svg").attr("height", "0");
     $("#svg").attr("width", "0");
     connectAll();
     hideAll();
-    $("#svg").attr("height", "0");
-    $("#svg").attr("width", "0");
-    connectAll();
 });
 
 $("#str").on("click", function() {

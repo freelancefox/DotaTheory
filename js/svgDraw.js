@@ -125,6 +125,9 @@ $(document).ready(function() {
     $("#svg").attr("width", "0");
     connectAll();
     hideAll();
+    $("#svg").attr("height", "0");
+    $("#svg").attr("width", "0");
+    connectAll();
 });
 
 $("#str").on("click", function() {

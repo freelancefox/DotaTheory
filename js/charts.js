@@ -112,16 +112,15 @@ $(function () {
       categories: [
         'Invoker',
         'Silencer',
-        'Centaur Warrunner',
+        'Monkey King',
         'Vengeful Spirit',
         'Luna',
         'Naga Siren',
-        'Monkey King',
-        'Morphling',
-        'Ogre Magi',
+        'Centaur Warrunner',
         'Treant Protector',
         '<b>Winter Wyvern</b>',
         'Bloodseeker',
+        'Arc Warden',
         'Magnus',
         'Outworld Devourer'],
       labels: {
@@ -173,13 +172,13 @@ $(function () {
 
     series: [{
       name: 'Intelligence',
-      data: [4, 2.5, 1.6, 1.5, 1.85, 2, 1.8, 1.5, 2.4, 1.8, 3.1, 1.7, 1.65, 2.7]
+      data: [4, 2.5, 1.8, 1.5, 1.85, 2, 1.6, 1.8, 3.1, 1.7, 2.6, 1.65, 2.7]
     }, {
       name: 'Strength',
-      data: [1.9, 2.2, 4, 2.6, 2.2, 2.5, 2.2, 2, 3.2, 3.3, 2.1, 2.4, 2.9, 2.3]
+      data: [1.9, 2.2, 2.5, 2.6, 2.2, 2.5, 4, 3.3, 2.1, 2.4, 2.7, 2.9, 2.3]
     }, {
       name: 'Agility',
-      data: [1.9, 3, 2, 3.3, 3.3, 2.75, 3.2, 3.7, 1.55, 2, 1.9, 3, 2.5, 2]
+      data: [1.9, 3, 3.2, 3.3, 3.3, 2.75, 1.6, 2, 1.9, 3, 1.8, 2.5, 2]
     }]
   });
 });
@@ -205,6 +204,7 @@ $(function () {
     xAxis: {
       categories: [
         'Silencer',
+        'Monkey King',
         'Naga Siren',
         'Outworld Devourer',
         'Vengeful Spirit',
@@ -212,7 +212,6 @@ $(function () {
         '<b>Winter Wyvern</b>',
         'Bloodseeker',
         'Invoker',
-        'Monkey King',
         'Dazzle',
         'Treant Protector'],
       labels: {
@@ -264,13 +263,13 @@ $(function () {
 
     series: [{
       name: 'Intelligence',
-      data: [87, 69, 90.8, 49, 53.4, 99.4, 58.8, 112, 63.2, 108.6, 60.2]
+      data: [87, 63, 69, 90.8, 49, 53.4, 99.4, 58.8, 112, 108.6, 60.2]
     }, {
       name: 'Strength',
-      data: [69.8, 81, 74.2, 80.4, 119, 74.4, 80.6, 62.6, 70.8, 60.4, 104.2]
+      data: [69.8, 99, 81, 74.2, 80.4, 119, 74.4, 80.6, 62.6, 60.4, 104.2]
     }, {
       name: 'Agility',
-      data: [94, 87, 72, 106.2, 63, 61.6, 96, 59.6, 98.8, 61.8, 63]
+      data: [94, 78, 87, 72, 106.2, 63, 61.6, 96, 59.6, 61.8, 63]
     }]
   });
 });

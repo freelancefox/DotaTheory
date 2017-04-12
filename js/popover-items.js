@@ -96,7 +96,7 @@ jQuery(document).ready(function() {
       placement:'top auto',
       html: true,
       content: function() {
-        return $('#content-staff').html();
+        return $('#content-club').html();
       }
   });
    $('#staff').popover({

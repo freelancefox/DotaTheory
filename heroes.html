@@ -276,7 +276,7 @@
                   <p class="ability">
                     Propels Proteus a short distance forward using its water
                     jets. Proteus's survival instincts are so strong that it
-                    may cast Jet even while stunned, silenced, hexed, or
+                    may cast Jet even while stunned, silenced, rooted, or
                     otherwise affected by any spell which restricts movement.
                     Jet may only be fully disabled by applying a break effect
                     on Proteus.
@@ -1130,8 +1130,9 @@
                   <h5>Notes:</h5>
                   <ul>
                     <li>
-                      May not benefit from any movement speed bonuses while
-                      Hydroplaning, but is effected by slows as normal.
+                      May not go above the listed movement speed while active,
+                      but benefits from any movement speed bonuses is affected
+                      by slows as normal.
                     </li>
                   </ul>
                 </div>
@@ -1339,8 +1340,8 @@
                   <p><b>Cast Range</b>: 500</p>
                   <p><b>Boost Duration</b>: 3s</p>
                   <p><b>Boost Damage Reduction</b>: 10/20/30/40%</p>
-                  <p><b>Boost Movement Speed</b>: 200/250/300/350</p>
-                  <p><b>Boost Travel Distance</b>: 600/750/900/1050</p>
+                  <p><b>Boost Movement Speed</b>: Ally's movespeed OR 200/250/300/350</p>
+                  <p><b>Boost Minimum Travel Distance</b>: 600/750/900/1050</p>
                   <p><b>Boost Turn Rate</b>: 0.0 + 0.1 per 0.33s</p>
                   <p><b>Slow</b>: 15/25/35/45%</p>
                   <p><b>Slow Radius</b>: 500</p>
@@ -1350,10 +1351,10 @@
                   <ul>
                     <li>
                       Allies effected by Arc Boost will only stop moving if
-                      stunned or ensnared again after Boost has been cast. May
-                      be cast on an ally who is stunned to force them to move
-                      while stunned, though does not remove any negative status
-                      effects.
+                      stunned or ensnared again after Boost has been cast, but
+                      may not stop themselves otherwise. May be cast on an
+                      ally who is stunned to force them to move while stunned,
+                      though does not remove any negative status effects.
                     </li>
                     <li>
                       Heroes under the effect of Arc Boost no longer use their
@@ -1487,7 +1488,16 @@
           <div id="changelog" class="row">
             <h3 id="cl4b" type="button" data-toggle="collapse" data-target="#cl4">↓ Changelog ↓</h3>
             <div id="cl4" class="row padded collapse">
-              <p id="dDD">v1.1 (Dec 2016):</p>
+              <p id="dDD">v1.2 (Mar 2017):</p>
+              <ul>
+                <li>
+                  Arc Boost now allows allies to go at their movement speed
+                  if they are not disabled, allowing them to go further than
+                  the previous spell range. The langauge about not being able
+                  to manually stop has been clarified.
+                </li>
+              </ul>
+              <p>v1.1 (Dec 2016):</p>
               <ul>
                 <li>
                   Added Talents
@@ -1708,6 +1718,12 @@
                     <li>
                       Using an item still puts it on cooldown for the normal
                       duration; only the other copies of an item are effected.
+                    </li>
+                    <li>
+                      A second copy of boots will increase the flat base
+                      movespeed bonus, but not allow multiple pairs to stack.
+                      Any other type of item gains a x1.2/1.4/1.6/1.8 stat bonus
+                      for each copy of an item after the first copy.
                     </li>
                   </ul>
                 </div>

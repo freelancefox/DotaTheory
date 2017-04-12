@@ -531,7 +531,7 @@ a[id^="popover-build"] {
 }
 
 #hskills > .row {
-    margin: 0 8%;
+  margin: 0 8%;
   border: 16px outset rgba(48,74,70,0.15);
 }
 

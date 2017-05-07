@@ -113,6 +113,10 @@ function connectAll() {
     connectElements($("#svg"), $("#path41"), $("#force"),  $("#seraph"));
     //connectElements($("#svg"), $("#path42"), $("#lny"),  $("#trio"));
     //connectElements($("#svg"), $("#path43"), $("#lny"),  $("#trio"));
+    connectElements($("#svg"), $("#path44"), $("#staff"),  $("#force"));
+    connectElements($("#svg"), $("#path45"), $("#band"),  $("#dlance"));
+    connectElements($("#svg"), $("#path46"), $("#club"),  $("#dlance"));
+    connectElements($("#svg"), $("#path47"), $("#club"),  $("#echo"));
 }
 
 function hideAll() {
@@ -144,6 +148,7 @@ $("#str").on("click", function() {
     $("#path32").show(150);
     $("#path33").show(150);
     $("#path34").show(150);
+    $("#path47").show(150);
 });
 $("#strp").on("click", function() {
     $("#strp").hide();
@@ -162,6 +167,7 @@ $("#strp").on("click", function() {
     $("#path32").hide();
     $("#path33").hide();
     $("#path34").hide();
+    $("#path47").hide();
 });
 
 $("#int").on("click", function() {
@@ -182,6 +188,7 @@ $("#int").on("click", function() {
     $("#path36").show(150);
     $("#path37").show(150);
     $("#path41").show(150);
+    $("#path44").show(150);
 });
 $("#intp").on("click", function() {
     $("#intp").hide();
@@ -201,6 +208,7 @@ $("#intp").on("click", function() {
     $("#path36").hide();
     $("#path37").hide();
     $("#path41").hide();
+    $("#path44").hide();
 });
 
 $("#agi").on("click", function() {
@@ -220,6 +228,8 @@ $("#agi").on("click", function() {
     $("#path38").show(150);
     $("#path39").show(150);
     $("#path40").show(150);
+    $("#path45").show(150);
+    $("#path46").show(150);
 });
 $("#agip").on("click", function() {
     $("#agip").hide();
@@ -239,14 +249,24 @@ $("#agip").on("click", function() {
     $("#path38").hide();
     $("#path39").hide();
     $("#path40").hide();
+    $("#path45").hide();
+    $("#path46").hide();
 });
 
-$("#belt, #club").hover(function() {
+$("#belt").hover(function() {
     $("#path1").show(150);
-    $("#path4").show(150);
   }, function() {
     $("#path1").hide();
+});
+
+$("#club").hover(function() {
+    $("#path4").show(150);
+    $("#path46").show(150);
+    $("#path47").show(150);
+  }, function() {
     $("#path4").hide();
+    $("#path46").hide();
+    $("#path47").hide();
 });
 
 $("#halberd").hover(function() {
@@ -287,12 +307,18 @@ $("#sange").hover(function() {
     $("#path14").hide();
 });
 
-$("#robe, #staff").hover(function() {
+$("#robe").hover(function() {
     $("#path2").show(150);
-    $("#path5").show(150);
   }, function() {
     $("#path2").hide();
+});
+
+$("#staff").hover(function() {
+    $("#path5").show(150);
+    $("#path44").show(150);
+  }, function() {
     $("#path5").hide();
+    $("#path44").hide();
 });
 
 $("#spellblade").hover(function() {
@@ -335,11 +361,17 @@ $("#lucen").hover(function() {
     $("#path19").hide();
 });
 
-$("#band, #blade").hover(function() {
+$("#band").hover(function() {
     $("#path3").show(150);
-    $("#path6").show(150);
+    $("#path45").show(150);
   }, function() {
     $("#path3").hide();
+    $("#path45").hide();
+});
+
+$("#blade").hover(function() {
+    $("#path6").show(150);
+  }, function() {
     $("#path6").hide();
 });
 
@@ -436,9 +468,13 @@ $("#slippers, #pms").hover(function() {
 $("#dlance").hover(function() {
     $("#path26").show(150);
     $("#path27").show(150);
+    $("#path45").show(150);
+    $("#path46").show(150);
   }, function() {
     $("#path26").hide();
     $("#path27").hide();
+    $("#path45").hide();
+    $("#path46").hide();
 });
 
 $("#pike").hover(function() {
@@ -451,16 +487,20 @@ $("#pike").hover(function() {
 
 $("#echo").hover(function() {
     $("#path28").show(150);
+    $("#path47").show(150);
   }, function() {
     $("#path28").hide();
+    $("#path47").hide();
 });
 
 $("#force").hover(function() {
     $("#path25").show(150);
     $("#path41").show(150);
+    $("#path44").show(150);
   }, function() {
     $("#path25").hide();
     $("#path41").hide();
+    $("#path44").hide();
 });
 
 $("#wyrmslayer").hover(function() {

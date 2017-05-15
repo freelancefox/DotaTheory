@@ -2027,13 +2027,13 @@
                   <p><b>Deathroot Duration</b>: indefinite</p>
                   <p><b>Deathroot Health</b>: 75/200/325/450</p>
                   <p><b>Deathroot Armor</b>: 0</p>
-                  <p><b>Deathroot Fade Time</b>: 0.6/0.4/0.2/0s</p>
+                  <p><b>Deathroot Fade Delay</b>: 0.4s</p>
                   <p><b>Deathroot Lifesteal</b>: 50/75/100/125%</p>
-                  <p><b>Deathroot Attack Range</b>: 250/350/450/550</p>
+                  <p><b>Deathroot Attack Range</b>: 550</p>
                   <p><b>Deathroot Projectile Speed</b>: 1600</p>
                   <p><b>Deathroot Base Damage</b>: 35/50/65/80</p>
                   <p><b>Deathroot Damage Per Hit</b>: +7/10/13/16</p>
-                  <p><b>Deathroot Damage Reset Duration</b>: 60/120/180/240s</p>
+                  <p><b>Deathroot Damage Reset Duration</b>: 180s</p>
                   <p><b>Deathroot BAT</b>: 1.0</p>
                   <p><b>Deathroot Damage Type</b>: piercing</p>
                   <p><b>Deathroot Bounty</b>: 20-24</p>
@@ -2067,6 +2067,17 @@
                   <p><b>Sapling Aura Radius</b>: 450</p>
                   <p><b>Sapling Activate Radius</b>: 150</p>
                   <p><b>Max Sapling Limit</b>: 8/12/16/20 (<img style="padding-left: 2px;" src="img/aghs-upgrade.png"></img> 40)</p>
+                </div>
+                <div class="row notes">
+                  <h5>Notes:</h5>
+                  <ul>
+                    <li>
+                      The health regen aura for Saplings within 150 units of
+                      each other do not stack. This makes the effective max
+                      health regen limit from saplings 16/24/32/40 hp/s with
+                      perfect placement.
+                    </li>
+                  </ul>
                 </div>
               </div><!--/.col-md-9-->
             </div><!--/.row-->
@@ -2182,11 +2193,14 @@
                   </p>
                   <p><b>Great Tree Growth Time</b>: 1.25s</p>
                   <p><b>Great Tree Health</b>: 200/300/400% of Sylph's max health</p>
+                  <p><b>Great Tree Armor</b>: 14</p>
                   <p><b>Great Tree Vision</b>: 1100/1350/1500</p>
                   <p><b>Great Tree Attack Range</b>: 600/700/800</p>
-                  <p><b>Great Tree Damage</b>: 100/175/250</p>
+                  <p><b>Great Tree Projectile Speed</b>: 1600</p>
+                  <p><b>Great Tree Damage</b>: 100-110/175-185/250-260</p>
                   <p><b>Great Tree Lifesteal</b>: 150%</p>
                   <p><b>Great Tree BAT</b>: 1.0</p>
+                  <p><b>Great Tree Damage Type</b>: siege</p>
                   <p><b>Great Tree Bounty</b>: 200</p>
                   <p><b>Great Tree Experience</b>: 75</p>
                   <h5><b><img src="img/aghs-upgrade.png"></img> Aghanim's Upgrade:</b></h5>
@@ -2258,6 +2272,17 @@
                 </li>
                 <li>
                   Reduced Great Tree health from 200/400/600% to 200/300/400%
+                </li>
+                <li>
+                  Added Great Tree damage range, damage type, armor and
+                  projectile speed
+                </li>
+                <li>
+                  Affixed Deathroot fade delay to 0.4s, damage reset time to
+                  180s, and attack range to 550 units
+                </li>
+                <li>
+                  Added Tree Sapling health regen aura stack limit mechanic
                 </li>
               </ul>
               <p>v1.2:</p>

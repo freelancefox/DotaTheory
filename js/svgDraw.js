@@ -1,4 +1,4 @@
-//helper functions, it turned out chrome doesn't support Math.sgn() 
+//helper functions, it turned out chrome doesn't support Math.sgn(
 function signum(x) {
     return (x < 0) ? -1 : 1;
 }
@@ -32,7 +32,7 @@ function drawPath(svg, path, startX, startY, endX, endY) {
     path.attr("d",  "M"  + startX + " " + startY +
                     " V" + (startY + delta) +
                     " A" + delta + " " +  delta + " 0 0 " + arc1 + " " + (startX + delta*signum(deltaX)) + " " + (startY + 2*delta) +
-                    " H" + (endX - delta*signum(deltaX)) + 
+                    " H" + (endX - delta*signum(deltaX)) +
                     " A" + delta + " " +  delta + " 0 0 " + arc2 + " " + endX + " " + (startY + 3*delta) +
                     " V" + endY );
 }
@@ -76,7 +76,7 @@ function connectAll() {
     connectElements($("#svg"), $("#path4"), $("#club"),  $("#sange"));
     connectElements($("#svg"), $("#path5"), $("#staff"), $("#lucen"));
     connectElements($("#svg"), $("#path6"), $("#blade"), $("#yasha"));
-    connectElements($("#svg"), $("#path7"), $("#gauntlets"),  $("#urn"));
+    connectElements($("#svg"), $("#path7"), $("#gauntlets"),  $("#woodsman"));
     connectElements($("#svg"), $("#path8"), $("#mantle"),  $("#frost"));
     connectElements($("#svg"), $("#path9"), $("#slippers"),  $("#pms"));
     connectElements($("#svg"), $("#path10"), $("#sange"),  $("#halberd"));
@@ -117,6 +117,17 @@ function connectAll() {
     connectElements($("#svg"), $("#path45"), $("#band"),  $("#dlance"));
     connectElements($("#svg"), $("#path46"), $("#club"),  $("#dlance"));
     connectElements($("#svg"), $("#path47"), $("#club"),  $("#echo"));
+    connectElements($("#svg"), $("#path48"), $("#staff"),  $("#atos"));
+    connectElements($("#svg"), $("#path49"), $("#staff"),  $("#dagon"));
+    connectElements($("#svg"), $("#path50"), $("#gauntlets"),  $("#bracer"));
+    connectElements($("#svg"), $("#path51"), $("#bracer"),  $("#drum"));
+    connectElements($("#svg"), $("#path52"), $("#bracer"),  $("#atos"));
+    connectElements($("#svg"), $("#path53"), $("#mantle"),  $("#null"));
+    connectElements($("#svg"), $("#path54"), $("#null"),  $("#dagon"));
+    connectElements($("#svg"), $("#path55"), $("#null"),  $("#veil"));
+    connectElements($("#svg"), $("#path56"), $("#slippers"),  $("#wraith"));
+    connectElements($("#svg"), $("#path57"), $("#wraith"),  $("#aquila"));
+    connectElements($("#svg"), $("#path58"), $("#wraith"),  $("#squire"));
 }
 
 function hideAll() {
@@ -149,6 +160,9 @@ $("#str").on("click", function() {
     $("#path33").show(150);
     $("#path34").show(150);
     $("#path47").show(150);
+    $("#path50").show(150);
+    $("#path51").show(150);
+    $("#path52").show(150);
 });
 $("#strp").on("click", function() {
     $("#strp").hide();
@@ -168,6 +182,9 @@ $("#strp").on("click", function() {
     $("#path33").hide();
     $("#path34").hide();
     $("#path47").hide();
+    $("#path50").hide();
+    $("#path51").hide();
+    $("#path52").hide();
 });
 
 $("#int").on("click", function() {
@@ -189,6 +206,11 @@ $("#int").on("click", function() {
     $("#path37").show(150);
     $("#path41").show(150);
     $("#path44").show(150);
+    $("#path48").show(150);
+    $("#path49").show(150);
+    $("#path53").show(150);
+    $("#path54").show(150);
+    $("#path55").show(150);
 });
 $("#intp").on("click", function() {
     $("#intp").hide();
@@ -209,6 +231,11 @@ $("#intp").on("click", function() {
     $("#path37").hide();
     $("#path41").hide();
     $("#path44").hide();
+    $("#path48").hide();
+    $("#path49").hide();
+    $("#path53").hide();
+    $("#path54").hide();
+    $("#path55").hide();
 });
 
 $("#agi").on("click", function() {
@@ -230,6 +257,9 @@ $("#agi").on("click", function() {
     $("#path40").show(150);
     $("#path45").show(150);
     $("#path46").show(150);
+    $("#path56").show(150);
+    $("#path57").show(150);
+    $("#path58").show(150);
 });
 $("#agip").on("click", function() {
     $("#agip").hide();
@@ -251,6 +281,9 @@ $("#agip").on("click", function() {
     $("#path40").hide();
     $("#path45").hide();
     $("#path46").hide();
+    $("#path56").hide();
+    $("#path57").hide();
+    $("#path57").hide();
 });
 
 $("#belt").hover(function() {
@@ -316,9 +349,13 @@ $("#robe").hover(function() {
 $("#staff").hover(function() {
     $("#path5").show(150);
     $("#path44").show(150);
+    $("#path48").show(150);
+    $("#path49").show(150);
   }, function() {
     $("#path5").hide();
     $("#path44").hide();
+    $("#path48").hide();
+    $("#path49").hide();
 });
 
 $("#spellblade").hover(function() {
@@ -447,22 +484,116 @@ $("#lny").hover(function() {
     $("#path23").hide();
 });
 
-$("#gauntlets, #urn").hover(function() {
+$("#gauntlets").hover(function() {
+    $("#path7").show(150);
+    $("#path50").show(150);
+  }, function() {
+    $("#path7").hide();
+    $("#path50").hide();
+});
+
+$("#woodsman").hover(function() {
     $("#path7").show(150);
   }, function() {
     $("#path7").hide();
 });
 
-$("#mantle, #frost").hover(function() {
+$("#mantle").hover(function() {
+    $("#path8").show(150);
+    $("#path53").show(150);
+  }, function() {
+    $("#path8").hide();
+    $("#path53").hide();
+});
+
+$("#frost").hover(function() {
     $("#path8").show(150);
   }, function() {
     $("#path8").hide();
 });
 
-$("#slippers, #pms").hover(function() {
+$("#slippers").hover(function() {
+    $("#path9").show(150);
+    $("#path56").show(150);
+  }, function() {
+    $("#path9").hide();
+    $("#path56").hide();
+});
+
+$("#pms").hover(function() {
     $("#path9").show(150);
   }, function() {
     $("#path9").hide();
+});
+
+$("#bracer").hover(function() {
+    $("#path50").show(150);
+    $("#path51").show(150);
+    $("#path52").show(150);
+  }, function() {
+    $("#path50").hide();
+    $("#path51").hide();
+    $("#path52").hide();
+});
+
+$("#drum").hover(function() {
+    $("#path51").show(150);
+  }, function() {
+    $("#path51").hide();
+});
+
+$("#atos").hover(function() {
+    $("#path48").show(150);
+    $("#path52").show(150);
+  }, function() {
+    $("#path48").hide();
+    $("#path52").hide();
+});
+
+$("#null").hover(function() {
+    $("#path53").show(150);
+    $("#path54").show(150);
+    $("#path55").show(150);
+  }, function() {
+    $("#path53").hide();
+    $("#path54").hide();
+    $("#path55").hide();
+});
+
+$("#dagon").hover(function() {
+    $("#path49").show(150);
+    $("#path54").show(150);
+  }, function() {
+    $("#path49").hide();
+    $("#path54").hide();
+});
+
+$("#veil").hover(function() {
+    $("#path55").show(150);
+  }, function() {
+    $("#path55").hide();
+});
+
+$("#wraith").hover(function() {
+    $("#path56").show(150);
+    $("#path57").show(150);
+    $("#path58").show(150);
+  }, function() {
+    $("#path56").hide();
+    $("#path57").hide();
+    $("#path58").hide();
+});
+
+$("#aquila").hover(function() {
+    $("#path57").show(150);
+  }, function() {
+    $("#path57").hide();
+});
+
+$("#squire").hover(function() {
+    $("#path58").show(150);
+  }, function() {
+    $("#path58").hide();
 });
 
 $("#dlance").hover(function() {

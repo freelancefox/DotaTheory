@@ -389,14 +389,14 @@ jQuery(document).ready(function() {
         return $('#content-pike').html();
       }
   });
-   $('#urn').popover({
+   $('#woodsman').popover({
       toggle:'popover',
       container:'body',
       trigger:'hover click',
       placement:'bottom auto',
       html: true,
       content: function() {
-        return $('#content-urn').html();
+        return $('#content-woodsman').html();
       }
   });
    $('#frost').popover({
@@ -417,6 +417,96 @@ jQuery(document).ready(function() {
       html: true,
       content: function() {
         return $('#content-pms').html();
+      }
+  });
+   $('#bracer').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'right auto',
+      html: true,
+      content: function() {
+        return $('#content-bracer').html();
+      }
+  });
+   $('#null').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'right auto',
+      html: true,
+      content: function() {
+        return $('#content-null').html();
+      }
+  });
+   $('#wraith').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'right auto',
+      html: true,
+      content: function() {
+        return $('#content-wraith').html();
+      }
+  });
+   $('#drum').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'right auto',
+      html: true,
+      content: function() {
+        return $('#content-drum').html();
+      }
+  });
+   $('#atos').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'right auto',
+      html: true,
+      content: function() {
+        return $('#content-atos').html();
+      }
+  });
+   $('#dagon').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'right auto',
+      html: true,
+      content: function() {
+        return $('#content-dagon').html();
+      }
+  });
+   $('#veil').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'right auto',
+      html: true,
+      content: function() {
+        return $('#content-veil').html();
+      }
+  });
+   $('#aquila').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'right auto',
+      html: true,
+      content: function() {
+        return $('#content-aquila').html();
+      }
+  });
+   $('#squire').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'right auto',
+      html: true,
+      content: function() {
+        return $('#content-squire').html();
       }
   });
 });

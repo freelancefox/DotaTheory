@@ -1,14 +1,15 @@
 body {
   background-color: #000;
   overflow-x: hidden;
-  color: rgba(255,255,255,0.3);
+  color: rgba(255,255,255,0.45);
 }
 
 h1 {
   min-height: 92px;
-  padding: 32px 80px;
+  padding: 20px 80px 0 80px;
   margin: 12px 0 0 0;
   font-size: 2.4em;
+  color: rgba(255,255,255,0.3);
 }
 
 #slimh1 {
@@ -17,8 +18,22 @@ h1 {
   height: 42px !important;
 }
 
+h2 {
+  padding-top: 12px;
+}
+
+h3 {
+  margin: 16px 0;
+}
+
 a {
-  color: rgba(255,255,255,0.5);
+  color: rgba(255,255,255,0.6);
+}
+
+@media (max-width: 558px) {
+  .highlight-panels > li > a {
+    padding: 32px 16px !important;
+  }
 }
 
 .highlight-panels > li > a {
@@ -56,6 +71,10 @@ a:hover, a:focus {
 }
 
 ul { padding: 0; margin: 0; }
+
+.col-xs-offset-1-5 {
+  margin-left: 12.5%;
+}
 
 .highlight-panels {
   width: 100%;
@@ -101,6 +120,26 @@ ul { padding: 0; margin: 0; }
   background-color: #000000;
 }
 
+#proteus {
+  background-color: #1d5081;
+}
+
+#antares {
+  background-color: #0C4637;
+}
+
+#merinth {
+  background-color: #00817D;
+}
+
+#arcturyx {
+  background-color: #c3da58;
+}
+
+#goldwing {
+  background-color: #5E2328;
+}
+
 #skymage {
   background-image: url('../img/skymage-header.png');
   background-size: cover;
@@ -124,6 +163,18 @@ ul { padding: 0; margin: 0; }
   background-position: 50% 33%;
   background-repeat: no-repeat;
   background-color: #B18961;
+}
+
+#herosynergy {
+  background-color: #202C2F;
+}
+
+#metareport {
+  background-color: #29202E;
+}
+
+#talents {
+  background-color: #292929;
 }
 
 #items {
@@ -164,7 +215,7 @@ ul { padding: 0; margin: 0; }
 }
 
 #footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   padding: 12px 0 0 0;
   height: 76px;
@@ -210,13 +261,20 @@ ul { padding: 0; margin: 0; }
   font-size: 16px;
 }
 
-#twitter, #reddit {
+#twitter, #reddit,
+#patreon, #discord {
   padding: 10px 15px;
   background-color: rgba(255,255,255,0.18);
 }
 
+#whatsthis {
+  margin-left: 48px;
+  padding: 6 8px;
+  background-color: rgba(255,255,255,0.3);
+}
+
 #forumnav #forumbtn {
-  font-size: 27px;
+  font-size: 24px;
   padding: 2px 12px;
 }
 
@@ -227,12 +285,18 @@ ul { padding: 0; margin: 0; }
   background-color: rgba(255,255,255,0.3);
 }
 
+#whatsthis:hover,
+#whatsthis:focus,
 #forumbtn:hover,
 #forumbtn:focus {
   background-color: rgba(255,255,255,0.5);
   color: rgba(255,255,255,0.8);
 }
 
+#patreon:hover,
+#patreon:focus,
+#discord:hover,
+#discord:focus,
 #twitter:hover,
 #twitter:focus,
 #reddit:hover,
@@ -279,7 +343,11 @@ ul { padding: 0; margin: 0; }
   display: inline-block;
 }
 
-#controlsslim,
+#controlsslim {
+  margin: 16px 0 12px 0;
+  padding: 4px 0;
+}
+
 #controls {
   margin: 16px 0;
 }
@@ -348,13 +416,25 @@ ul { padding: 0; margin: 0; }
 
 .rules-btn {
   margin-left: 48px;
+  padding: 4px 0;
 }
 
 .new-btn {
   margin-right: 48px;
+  padding: 4px 0;
 }
 
 .rules-btn .btn,
 .new-btn .btn {
   font-size: 36px;
+}
+
+.spacer {
+  height: 76px;
+}
+
+#about {
+  width: 42%;
+  min-width: 540px;
+  margin: 0 auto;
 }

@@ -9,101 +9,137 @@
 </head>
 
 <body>
-  <h1>Index of <a href="index">@freelancedota</a>&nbsp;Projects<a href="post"><btn id="forumbtn" class="pull-right btn hide" >Forum ➜</btn></a></h1>
+  <h1 id="slimh1"><a href="index">@freelancedota</a>&nbsp;Index<a href="#comingsoon"><btn id="forumbtn" class="pull-right btn" >Forum ➜</btn></a></h1>
   <div class="tab-content">
     <div class="tab-pane active fade in" id="content">
+      <div id="controlsslim" class="row">
+        <div class="col-xs-4 col-xs-offset-4 text-center">
+          <div class="filterlabel">Post Type</div>
+          <div class="filterbtn">
+            <div class="btn-group">
+              <button type="button" class="btn dropdown-toggle" id="postType" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                All <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a id="all" href="">All</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a id="edu" href="">Educational</a></li>
+                <li><a id="meta" href="">Competitive Meta</a></li>
+                <li><a id="guide" href="">Guides</a></li>
+                <li><a id="custom" href="">Custom Concepts</a></li>
+                <li><a id="announce" href="">Blog Posts</a></li>
+              </ul>
+            </div>
+          </div><!--/filterbtn-->
+        </div><!--/concept-type-filter-->
+      </div><!--/controls-->
       <ul class="highlight-panels">
-        <li id="skymage"><a <!--href="skymage"--><div class="type">COMING SOON:</div> <img class="hide" src="img/40px-Phase_Boots_icon.png"></img> <b> How to Train Your Dragonus:</b> Core Skywrath<div class="pull-right">by freelancefox</div></a>
-        <li id="talents"><a <!--href="talents"--><div class="type">COMING SOON:</div> <b>Hero Talents Visualized</b><div class="pull-right">by freelancefox</div></a>
-        <li id="items"><a href="items"><div class="type" style="color:#999999;">NEW:</div><b> 7.02 Custom Item Concepts</b></a>
-        <li id="corevern"> <a href="corevern"><div class="type"></div> <img class="hide" src="img/40px-Maelstrom_icon.png"></img> <b>Corevern:</b> Core Winter Wyvern<div class="pull-right">by freelancefox</div></a>
-        <li id="heroes"><a href="heroes"><div class="type"></div><b> Custom Heroes Index</b></a>
-        <li id="sking"> <a href="sking"><div class="type">UNDER CONSTRUCTION:</div> <img class="hide" src="img/40px-Octarine_Core_icon.png"></img> <b>Nicely Stung!:</b> Guide to Caustic Sand King<div class="pull-right">by freelancefox</div></a>
-        <li class="hide" id="heroes"><a href="hc101"><div class="type">NEW:</div><b> Hero Concepts 101:</b> Your First Hero<div class="pull-right">by freelancefox</div></a>
-        <li class="hide"> <a href="http://esportscasts.com">Top-Secret WIP project #2: <b>ESportsCasts</b></a>
+        <li class="edu" id="herosynergy"><a <!--href="herosynergy"--><div class="type" style="color:#999999;">COMING SOON:</div> <b>Hero Synergy Index</b></a>
+        <li class="meta" id="metareport"><a <!--href="metareport"--><div class="type" style="color:#999999;">COMING SOON:</div> <b>Competitive Meta Report</b></a>
+        <li class="guide" id="skymage"><a <!--href="skymage"--><div class="type">COMING SOON:</div> <img class="hide" src="img/40px-Phase_Boots_icon.png"></img> <b> How to Train Your Dragonus:</b> Core Skywrath<div class="pull-right">by freelancefox</div></a>
+        <li class="edu" id="talents"><a <!--href="talents"--><div class="type" style="color:#999999;">COMING SOON:</div> <b>Hero Talents Visualized</b></a>
+        <li class="custom" id="items"><a href="items"><div class="type" style="color:#999999;">NEW:</div> <b>Custom Item Concepts</b></a>
+        <li class="custom" id="heroes"><a href="heroes"><div class="type" style="color:#999999;">NEW:</div> <b>Custom Heroes Index</b></a>
+        <li class="guide" id="corevern"><a href="corevern"><div class="type"></div><img class="hide" src="img/40px-Maelstrom_icon.png"></img><b>Corevern:</b> Core Winter Wyvern<div class="pull-right">by freelancefox</div></a>
+        <li class="guide" id="sking"> <a href="sking"><div class="type">UNDER CONSTRUCTION:</div> <img class="hide" src="img/40px-Octarine_Core_icon.png"></img> <b>Nicely Stung!:</b> Guide to Caustic Sand King<div class="pull-right">by freelancefox</div></a>
+        <li class="hide edu" id="heroes"><a href="hc101"><div class="type">NEW:</div><b> Hero Concepts 101:</b> Your First Hero<div class="pull-right">by freelancefox</div></a>
+        <li class="hide announce"> <a href="http://esportscasts.com">Top-Secret WIP project #2: <b>ESportsCasts</b></a>
       </ul>
     </div><!--/.content-->
     <div class="tab-pane text-center fade" id="about">
+      <h2>About</h2>
+      <p>
+        Originally my personal site, @freelancedota is a fan site for Dota 2
+        founded in 2016. The name is in reference to you guys and your
+        contribution to this site—anyone can submit posts for consideration.
+      </p>
       <h3>Purpose</h3>
       <p>
-        There's lots of other guides out there—my goal is to only present
-        truly <b>new</b> ideas. My builds will always be what I think is
+        There's lots of other guide sites out there—our goal is to only present
+        truly <b>new</b> ideas. Our guides will always be what is
         mathematically optimal, even when that doesn't line up with what's
-        popular. In fact, that's exactly when I make a guide.
+        popular. In fact, that's exactly when we make a guide.
       </p>
-      <h3>About</h3>
+      <h3>What types of posts can I submit?</h3>
       <p>
-        Hi I'm Jon, aka freelance, a 23yo Software Engineer from Florida.
-        My favorite thing about Dota is that feeling of innovation when
-        something clever works, and after coming up with several ideas
-        I feel could have really impacted the meta I decided I should
-        share them. Although not necessarily intended for newer players,
-        practically anyone can benefit from what I would call the
-        <i>scientific approach</i> to Dota that I teach. One of my
-        beliefs, for example, is that item order and itemization in
-        general can be viewed as an equation with a set solution or
-        solutions—perhaps one day we can come up with an algorithm
-        to do it for us. Until then, we need to look deeper than just
-        winrates and professional trends to find answers—which
-        is something I hope I can inspire others to do as well.
+        There are two ways to contribute: You can submit either complete web pages like
+        we feature here at @freelanceDota, OR you can submit the idea for a
+        post. Ideas for posts should be submitted via our <a href="post">Forum</a>. To upload a
+        full post for consideration, it must meet a certain set of criteria.
+      </p>
+      <h3>What are the criteria for post submissions?</h3>
+      <p>
+        For now, the following 4 rules will be used to judge submitted posts:
+      </p>
+      <div><b>I. Is the content visually pleasing?</b></div><br>
+      <div><b>II. Is the post original (not plagiarized) and creative?</b></div><br>
+      <div><b>III. Is the post self-consistent? Does it support its assertions with statistics, figures or models?</b></div><br>
+      <div><b>IV. For custom concepts, would the idea fit into Dota today?</b></div>
+      </ul>
+      <h3>What do I get for contributing?</h3>
+      <p>
+        Contributors who submit a certain number of posts will eventually
+        become partners with access to moderation powers and VIP permissions,
+        able to bypass admin approval for posts. This functionality is
+        currently not implemented.
+      </p>
+    </div><!--/.about-->
+    <div class="tab-pane text-center fade" id="collab">
+      <h2>Freelance_Fox (admin)</h2>
+      <h3>Biography</h3>
+      <p>
+        Hi I'm Jon, aka freelance, and so far this project is just me.  I'a
+        24yo Software Engineer from Florida.  My favorite thing about Dota is
+        that feeling of innovation when something clever works, and after
+        coming up with several ideas I feel could have really impacted the meta
+        I decided I should share them. Although not necessarily intended for
+        newer players, practically anyone can benefit from what I would call
+        the <i>scientific approach</i> to Dota that I teach. One of my beliefs,
+        for example, is that item order and itemization in general can be
+        viewed as an equation with a set solution or solutions—perhaps one day
+        we can come up with an algorithm to do it for us. Until then, we need
+        to look deeper than just winrates and professional trends to find
+        answers—which is something I hope I can inspire others to do as well.
       </p>
       <h3>Playstyle</h3>
       <p>
-        I started playing in November 2011, shortly after TI1, and
-        calibrated at 3.5k shortly after the MMR system was released.
-        I've never really cared much about MMR, and the objectively
-        worse quality of ranked games has driven me to mostly play
-        unranked RD (my favorite mode). I watch massive amounts of
-        pro Dota though, many times more than I've played. In general,
-        I love drafting and favor playmaking cores and sometimes
-        supports, but not hard carries or hard supports. I play a lot
-        of mid but I'm more of a team player, and my hero pool
-        tends more towards Dendi/s4 than your hard carry mid players.
-        These days I haven't been playing as frequently so I'm not as
-        well rounded, but if I ever get to climbing or streaming I'm
-        sure that can be fixed!
+        I started playing in November 2011, shortly after TI1, and calibrated
+        at 3.5k shortly after the MMR system was released.  I've never really
+        cared much about MMR, and the objectively worse quality of ranked games
+        has driven me to mostly play unranked RD (my favorite mode). I watch
+        massive amounts of pro Dota though, many times more than I've played.
+        In general, I love drafting and favor playmaking cores and sometimes
+        supports, but not hard carries or hard supports. I play a lot of mid
+        but I'm more of a team player, and my hero pool tends more towards
+        Dendi/s4 than your hard carry mid players.  These days I haven't been
+        playing as frequently so I'm not as well rounded, but if I ever get to
+        climbing or streaming I'm sure that can be fixed!
       </p>
       <p>
         <b>My OpenDota page:</b> <a href="https://www.opendota.com/players/8160525">www.opendota.com/players/8160525</a>
       </p>
-    </div><!--/.about-->
-    <div class="tab-pane text-center fade" id="collab">
-      <h3>Collab</h3>
-      <p>
-        I'm looking for contributors to this project in two areas:
-        authors with unique ideas about Dota and the ability to
-        articulate them, and software devs with a background in Dota.
-        One huge requirement is a familiarity with, or demonstrable
-        willingness to learn, <a href="https://github.com/freelancefox/freelancefox.github.io"><b>git</b></a>, which is being used as the
-        backbone of this website. Git makes contributing to this
-        project easy if you know it, but even if you don't I will
-        make an effort to help you learn if you contact me and I
-        like your ideas otherwise. The main point is this: reach
-        out to me on Twitter or Reddit, let me know what you're
-        interested in, and maybe this crazy project will grow!
-      </p>
       <h3>Casting</h3>
       <p>
-        I casted a couple small local LANs back in 2014, and
-        have attempted to cover a few small online events with no
-        English coverage since then. The main reason I haven't
-        casted more regularly is that I want to develop software
-        to provide a better user interface more than I want to
-        just simply cast. Such is the curse of being a software
-        engineer. If anyone <i>wants</i> to work with me in the
-        meantime, reach out.
+        I casted a couple small local LANs back in 2014, and have attempted to
+        cover a few small online events with no English coverage since then.
+        The main reason I haven't casted more regularly is that I want to
+        develop software to provide a better user interface more than I want to
+        just simply cast. Such is the curse of being a software engineer. If
+        anyone <i>wants</i> to work with me in the meantime, reach out.
       </p>
     </div><!--/.collab-->
   </div><!--/.tab-content-->
+  <div class="spacer"></div>
 
 <footer id="footer" class="footer row text-center">
   <ul id="tabs" class="nav nav-tabs">
     <li class="active"><a href="#content" data-toggle="tab">Content</a></li>
     <li style="margin-left: 4px;"><a href="#about" data-toggle="tab">About</a></li>
-    <li style="margin-left: 4px;"><a href="#collab" data-toggle="tab">Collaborate</a></li>
+    <li style="margin-left: 4px;"><a href="#collab" data-toggle="tab">Contributors</a></li>
     <li style="margin-left: 4px;"><a id="twitter" href="http://www.twitter.com/freelancedota"><img alt="@freelancedota" src="img/twitter.png" height="30" width="30"></img></a></li>
-    <li style="margin-left: 4px;"><a id="reddit" href="https://www.reddit.com/user/freelance_fox/"><img alt="/u/freelance_fox" src="img/reddit.png" height="30" width="30"></img></a></li>
-    <li>Updated Feb 10, 2017</li>
+    <li style="margin-left: 4px;"><a id="discord" href="https://discord.gg/MgY6MW6"><img alt="Discord" src="img/Discord.png" height="30" width="30"></img></a></li>
+    <!--<li style="margin-left: 4px;"><a id="patreon" href=""><img alt="/u/freelance_fox" src="img/patreon.png" height="30" width="30"></img></a></li>-->
+    <li>Updated 19 May 2017</li>
   </ul>
 </footer><!--/.footer-->
 
@@ -113,6 +149,15 @@
   <script type="text/javascript">
     jQuery(document).ready(function ($) {
       $('#tabs').tab();
+    });
+    $('.dropdown-menu li a').click(function(e){
+      var target = this.text;
+      var type = this.id;
+      $('#postType').html(target+' <span class="caret"></span>');
+      $('.highlight-panels').children().not('li.'+type).hide();
+      if(type == 'all') {$('.highlight-panels').children('li').show() }
+      else { $('.highlight-panels').children('li.'+type).show() }
+      e.preventDefault();
     });
   </script>
 </body>

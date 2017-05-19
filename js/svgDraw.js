@@ -206,8 +206,6 @@ $("#int").on("click", function() {
     $("#path37").show(150);
     $("#path41").show(150);
     $("#path44").show(150);
-    $("#path48").show(150);
-    $("#path49").show(150);
     $("#path53").show(150);
     $("#path54").show(150);
     $("#path55").show(150);
@@ -231,8 +229,6 @@ $("#intp").on("click", function() {
     $("#path37").hide();
     $("#path41").hide();
     $("#path44").hide();
-    $("#path48").hide();
-    $("#path49").hide();
     $("#path53").hide();
     $("#path54").hide();
     $("#path55").hide();
@@ -256,7 +252,6 @@ $("#agi").on("click", function() {
     $("#path39").show(150);
     $("#path40").show(150);
     $("#path45").show(150);
-    $("#path46").show(150);
     $("#path56").show(150);
     $("#path57").show(150);
     $("#path58").show(150);
@@ -280,10 +275,9 @@ $("#agip").on("click", function() {
     $("#path39").hide();
     $("#path40").hide();
     $("#path45").hide();
-    $("#path46").hide();
     $("#path56").hide();
     $("#path57").hide();
-    $("#path57").hide();
+    $("#path58").hide();
 });
 
 $("#belt").hover(function() {

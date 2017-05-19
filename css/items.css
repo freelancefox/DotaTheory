@@ -226,3 +226,19 @@ a:focus, a:hover {
   display: none;
 }
 
+@media (max-width: 992px) {
+  #offset1 {
+    width: 25%;
+  }
+  #offset2 {
+    margin-left: 0 !important;
+  }
+}
+
+@media (max-width: 713px) {
+  #offset3 {
+    width: 33.333333333%;
+    margin-left: 0 !important;
+  }
+}
+

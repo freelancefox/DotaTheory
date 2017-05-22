@@ -262,7 +262,7 @@ ul { padding: 0; margin: 0; }
 }
 
 #twitter, #reddit,
-#patreon, #discord {
+#patreon, #discord, #overwatch {
   padding: 10px 15px;
   background-color: rgba(255,255,255,0.18);
 }
@@ -293,6 +293,8 @@ ul { padding: 0; margin: 0; }
   color: rgba(255,255,255,0.8);
 }
 
+#overwatch:hover,
+#overwatch:focus,
 #patreon:hover,
 #patreon:focus,
 #discord:hover,

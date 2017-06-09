@@ -70,68 +70,232 @@ function connectElements(svg, path, startElem, endElem) {
 }
 
 function connectAll() {
-    connectElements($("#svg"), $("#path1"), $("#belt"),  $("#sange"));
-    connectElements($("#svg"), $("#path2"), $("#robe"),  $("#lucen"));
-    connectElements($("#svg"), $("#path3"), $("#band"),  $("#yasha"));
-    connectElements($("#svg"), $("#path4"), $("#club"),  $("#sange"));
-    connectElements($("#svg"), $("#path5"), $("#staff"), $("#lucen"));
-    connectElements($("#svg"), $("#path6"), $("#blade"), $("#yasha"));
-    connectElements($("#svg"), $("#path7"), $("#gauntlets"),  $("#woodsman"));
-    connectElements($("#svg"), $("#path8"), $("#mantle"),  $("#frost"));
-    connectElements($("#svg"), $("#path9"), $("#slippers"),  $("#pms"));
-    connectElements($("#svg"), $("#path10"), $("#sange"),  $("#halberd"));
-    connectElements($("#svg"), $("#path11"), $("#sange"),  $("#gjalla"));
-    connectElements($("#svg"), $("#path12"), $("#sange"),  $("#sny"));
-    connectElements($("#svg"), $("#path13"), $("#sange"),  $("#snl"));
-    connectElements($("#svg"), $("#path14"), $("#sange"),  $("#trio"));
-    connectElements($("#svg"), $("#path15"), $("#lucen"),  $("#spellblade"));
-    connectElements($("#svg"), $("#path16"), $("#lucen"),  $("#seraph"));
-    connectElements($("#svg"), $("#path17"), $("#lucen"),  $("#snl"));
-    connectElements($("#svg"), $("#path18"), $("#lucen"),  $("#lny"));
-    connectElements($("#svg"), $("#path19"), $("#lucen"),  $("#trio"));
-    connectElements($("#svg"), $("#path20"), $("#yasha"),  $("#manta"));
-    connectElements($("#svg"), $("#path21"), $("#yasha"),  $("#hayabusa"));
-    connectElements($("#svg"), $("#path22"), $("#yasha"),  $("#sny"));
-    connectElements($("#svg"), $("#path23"), $("#yasha"),  $("#lny"));
-    connectElements($("#svg"), $("#path24"), $("#yasha"),  $("#trio"));
-    connectElements($("#svg"), $("#path25"), $("#force"),  $("#pike"));
-    connectElements($("#svg"), $("#path26"), $("#dlance"),  $("#pike"));
-    connectElements($("#svg"), $("#path27"), $("#dlance"),  $("#wyrmslayer"));
-    connectElements($("#svg"), $("#path28"), $("#echo"),  $("#wyrmslayer"));
-    connectElements($("#svg"), $("#path29"), $("#sny"),  $("#trio"));
-    connectElements($("#svg"), $("#path30"), $("#snl"),  $("#trio"));
-    connectElements($("#svg"), $("#path31"), $("#lny"),  $("#trio"));
-    connectElements($("#svg"), $("#path32"), $("#reaver"),  $("#heart"));
-    connectElements($("#svg"), $("#path33"), $("#reaver"),  $("#satanic"));
-    connectElements($("#svg"), $("#path34"), $("#reaver"),  $("#pauldron"));
-    connectElements($("#svg"), $("#path35"), $("#mystic"),  $("#sheep"));
-    connectElements($("#svg"), $("#path36"), $("#mystic"),  $("#shiva"));
-    connectElements($("#svg"), $("#path37"), $("#mystic"),  $("#ocore"));
-    connectElements($("#svg"), $("#path38"), $("#eagle"),  $("#butterfly"));
-    connectElements($("#svg"), $("#path39"), $("#eagle"),  $("#eblade"));
-    connectElements($("#svg"), $("#path40"), $("#eagle"),  $("#wkb"));
-    connectElements($("#svg"), $("#path41"), $("#force"),  $("#seraph"));
-    //connectElements($("#svg"), $("#path42"), $("#lny"),  $("#trio"));
-    //connectElements($("#svg"), $("#path43"), $("#lny"),  $("#trio"));
-    connectElements($("#svg"), $("#path44"), $("#staff"),  $("#force"));
-    connectElements($("#svg"), $("#path45"), $("#band"),  $("#dlance"));
-    connectElements($("#svg"), $("#path46"), $("#club"),  $("#dlance"));
-    connectElements($("#svg"), $("#path47"), $("#club"),  $("#echo"));
-    connectElements($("#svg"), $("#path48"), $("#staff"),  $("#atos"));
-    connectElements($("#svg"), $("#path49"), $("#staff"),  $("#dagon"));
-    connectElements($("#svg"), $("#path50"), $("#gauntlets"),  $("#bracer"));
-    connectElements($("#svg"), $("#path51"), $("#bracer"),  $("#drum"));
-    connectElements($("#svg"), $("#path52"), $("#bracer"),  $("#atos"));
-    connectElements($("#svg"), $("#path53"), $("#mantle"),  $("#null"));
-    connectElements($("#svg"), $("#path54"), $("#null"),  $("#dagon"));
-    connectElements($("#svg"), $("#path55"), $("#null"),  $("#veil"));
-    connectElements($("#svg"), $("#path56"), $("#slippers"),  $("#wraith"));
-    connectElements($("#svg"), $("#path57"), $("#wraith"),  $("#aquila"));
-    connectElements($("#svg"), $("#path58"), $("#wraith"),  $("#squire"));
+    connectElements($("#svg"), $("#belt-sange"), $("#belt"), $("#sange"));
+    connectElements($("#svg"), $("#robe-lucen"), $("#robe"), $("#lucen"));
+    connectElements($("#svg"), $("#band-yasha"), $("#band"), $("#yasha"));
+    connectElements($("#svg"), $("#club-sange"), $("#club"), $("#sange"));
+    connectElements($("#svg"), $("#staff-lucen"), $("#staff"), $("#lucen"));
+    connectElements($("#svg"), $("#blade-yasha"), $("#blade"), $("#yasha"));
+    connectElements($("#svg"), $("#gauntlets-woodsman"), $("#gauntlets"), $("#woodsman"));
+    connectElements($("#svg"), $("#mantle-frost"), $("#mantle"), $("#frost"));
+    connectElements($("#svg"), $("#slippers-pms"), $("#slippers"), $("#pms"));
+    connectElements($("#svg"), $("#sange-halberd"), $("#sange"), $("#halberd"));
+    connectElements($("#svg"), $("#sange-gjalla"), $("#sange"), $("#gjalla"));
+    connectElements($("#svg"), $("#sange-sny"), $("#sange"), $("#sny"));
+    connectElements($("#svg"), $("#sange-snl"), $("#sange"), $("#snl"));
+    connectElements($("#svg"), $("#sange-trio"), $("#sange"), $("#trio"));
+    connectElements($("#svg"), $("#lucen-spellblade"), $("#lucen"), $("#spellblade"));
+    connectElements($("#svg"), $("#lucen-seraph"), $("#lucen"), $("#seraph"));
+    connectElements($("#svg"), $("#lucen-snl"), $("#lucen"), $("#snl"));
+    connectElements($("#svg"), $("#lucen-lny"), $("#lucen"), $("#lny"));
+    connectElements($("#svg"), $("#lucen-trio"), $("#lucen"), $("#trio"));
+    connectElements($("#svg"), $("#yasha-manta"), $("#yasha"), $("#manta"));
+    connectElements($("#svg"), $("#yasha-hayabusa"), $("#yasha"), $("#hayabusa"));
+    connectElements($("#svg"), $("#yasha-sny"), $("#yasha"), $("#sny"));
+    connectElements($("#svg"), $("#yasha-lny"), $("#yasha"), $("#lny"));
+    connectElements($("#svg"), $("#yasha-trio"), $("#yasha"), $("#trio"));
+    connectElements($("#svg"), $("#force-pike"), $("#force"), $("#pike"));
+    connectElements($("#svg"), $("#dlance-pike"), $("#dlance"), $("#pike"));
+    connectElements($("#svg"), $("#dlance-wyrmslayer"), $("#dlance"), $("#wyrmslayer"));
+    connectElements($("#svg"), $("#echo-wyrmslayer"), $("#echo"), $("#wyrmslayer"));
+    connectElements($("#svg"), $("#sny-trio"), $("#sny"), $("#trio"));
+    connectElements($("#svg"), $("#snl-trio"), $("#snl"), $("#trio"));
+    connectElements($("#svg"), $("#lny-trio"), $("#lny"), $("#trio"));
+    connectElements($("#svg"), $("#reaver-heart"), $("#reaver"), $("#heart"));
+    connectElements($("#svg"), $("#reaver-satanic"), $("#reaver"), $("#satanic"));
+    connectElements($("#svg"), $("#reaver-pauldron"), $("#reaver"), $("#pauldron"));
+    connectElements($("#svg"), $("#mystic-sheep"), $("#mystic"), $("#sheep"));
+    connectElements($("#svg"), $("#mystic-shiva"), $("#mystic"), $("#shiva"));
+    connectElements($("#svg"), $("#mystic-ocore"), $("#mystic"), $("#ocore"));
+    connectElements($("#svg"), $("#eagle-butterfly"), $("#eagle"), $("#butterfly"));
+    connectElements($("#svg"), $("#eagle-eblade"), $("#eagle"), $("#eblade"));
+    connectElements($("#svg"), $("#eagle-wkb"), $("#eagle"), $("#wkb"));
+    connectElements($("#svg"), $("#force-seraph"), $("#force"), $("#seraph"));
+    connectElements($("#svg"), $("#staff-force"), $("#staff"), $("#force"));
+    connectElements($("#svg"), $("#band-dlance"), $("#band"), $("#dlance"));
+    connectElements($("#svg"), $("#club-dlance"), $("#club"), $("#dlance"));
+    connectElements($("#svg"), $("#club-echo"), $("#club"), $("#echo"));
+    connectElements($("#svg"), $("#staff-atos"), $("#staff"), $("#atos"));
+    connectElements($("#svg"), $("#staff-dagon"), $("#staff"), $("#dagon"));
+    connectElements($("#svg"), $("#gauntlets-bracer"), $("#gauntlets"), $("#bracer"));
+    connectElements($("#svg"), $("#bracer-drum"), $("#bracer"), $("#drum"));
+    connectElements($("#svg"), $("#bracer-atos"), $("#bracer"), $("#atos"));
+    connectElements($("#svg"), $("#mantle-null"), $("#mantle"), $("#null"));
+    connectElements($("#svg"), $("#null-dagon"), $("#null"), $("#dagon"));
+    connectElements($("#svg"), $("#null-veil"), $("#null"), $("#veil"));
+    connectElements($("#svg"), $("#slippers-wraith"), $("#slippers"), $("#wraith"));
+    connectElements($("#svg"), $("#wraith-aquila"), $("#wraith"), $("#aquila"));
+    connectElements($("#svg"), $("#wraith-squire"), $("#wraith"), $("#squire"));
+    connectElements($("#svg"), $("#mango-soulring"), $("#mango"), $("#soulring"));
+    connectElements($("#svg"), $("#ror-soulring"), $("#ror"), $("#soulring"));
+    connectElements($("#svg"), $("#sage-soulring"), $("#sage"), $("#soulring"));
+    connectElements($("#svg"), $("#irain-urn"), $("#irain"), $("#urn"));
+    connectElements($("#svg"), $("#rop-urn"), $("#rop"), $("#urn"));
+    connectElements($("#svg"), $("#circlet-urn"), $("#circlet"), $("#urn"));
+    connectElements($("#svg"), $("#roh-perseverance"), $("#roh"), $("#perseverance"));
+    connectElements($("#svg"), $("#void-perseverance"), $("#void"), $("#perseverance"));
+    connectElements($("#svg"), $("#stick-wand"), $("#stick"), $("#wand"));
+    connectElements($("#svg"), $("#branch-wand"), $("#branch"), $("#wand"));
+    connectElements($("#svg"), $("#circlet-wand"), $("#circlet"), $("#wand"));
+    connectElements($("#svg"), $("#rop-woodsman"), $("#rop"), $("#woodsman"));
+    connectElements($("#svg"), $("#branch-woodsman"), $("#branch"), $("#woodsman"));
+    connectElements($("#svg"), $("#vit-soulbooster"), $("#vit"), $("#soulbooster"));
+    connectElements($("#svg"), $("#energy-soulbooster"), $("#energy"), $("#soulbooster"));
+    connectElements($("#svg"), $("#pb-soulbooster"), $("#pb"), $("#soulbooster"));
+    connectElements($("#svg"), $("#soulring-bloodstone"), $("#soulring"), $("#bloodstone"));
+    connectElements($("#svg"), $("#soulbooster-bloodstone"), $("#soulbooster"), $("#bloodstone"));
+    connectElements($("#svg"), $("#energy-aether"), $("#energy"), $("#aether"));
+    connectElements($("#svg"), $("#void-aether"), $("#void"), $("#aether"));
+    connectElements($("#svg"), $("#rop-talon"), $("#rop"), $("#talon"));
+    connectElements($("#svg"), $("#qb-talon"), $("#qb"), $("#talon"));
+    connectElements($("#svg"), $("#sage-moc"), $("#sage"), $("#moc"));
+    connectElements($("#svg"), $("#chainmail-moc"), $("#chainmail"), $("#moc"));
+    connectElements($("#svg"), $("#blight-moc"), $("#blight"), $("#moc"));
+    connectElements($("#svg"), $("#moc-solar"), $("#moc"), $("#solar"));
+    connectElements($("#svg"), $("#talisman-solar"), $("#talisman"), $("#solar"));
+    connectElements($("#svg"), $("#talisman-halberd"), $("#talisman"), $("#halberd"));
+    connectElements($("#svg"), $("#rop-basi"), $("#rop"), $("#basi"));
+    connectElements($("#svg"), $("#sage-basi"), $("#sage"), $("#basi"));
+    connectElements($("#svg"), $("#basi-aquila"), $("#basi"), $("#aquila"));
+    connectElements($("#svg"), $("#basi-vlads"), $("#basi"), $("#vlads"));
+    connectElements($("#svg"), $("#boots-arcane"), $("#boots"), $("#arcane"));
+    connectElements($("#svg"), $("#boots-tranquil"), $("#boots"), $("#tranquil"));
+    connectElements($("#svg"), $("#boots-treads"), $("#boots"), $("#treads"));
+    connectElements($("#svg"), $("#boots-phase"), $("#boots"), $("#phase"));
+    connectElements($("#svg"), $("#boots-bots"), $("#boots"), $("#bots"));
+    connectElements($("#svg"), $("#energy-arcane"), $("#energy"), $("#arcane"));
+    connectElements($("#svg"), $("#ror-tranquil"), $("#ror"), $("#tranquil"));
+    connectElements($("#svg"), $("#lace-tranquil"), $("#lace"), $("#tranquil"));
+    connectElements($("#svg"), $("#belt-treads"), $("#belt"), $("#treads"));
+    connectElements($("#svg"), $("#robe-treads"), $("#robe"), $("#treads"));
+    connectElements($("#svg"), $("#band-treads"), $("#band"), $("#treads"));
+    connectElements($("#svg"), $("#boa-phase"), $("#boa"), $("#phase"));
+    connectElements($("#svg"), $("#branch-buckler"), $("#branch"), $("#buckler"));
+    connectElements($("#svg"), $("#chainmail-buckler"), $("#chainmail"), $("#buckler"));
+    connectElements($("#svg"), $("#branch-headdress"), $("#branch"), $("#headdress"));
+    connectElements($("#svg"), $("#ror-headdress"), $("#ror"), $("#headdress"));
+    connectElements($("#svg"), $("#cloak-glimmer"), $("#cloak"), $("#glimmer"));
+    connectElements($("#svg"), $("#shadowam-glimmer"), $("#shadowam"), $("#glimmer"));
+    connectElements($("#svg"), $("#cloak-hood"), $("#cloak"), $("#hood"));
+    connectElements($("#svg"), $("#ror-hood"), $("#ror"), $("#hood"));
+    connectElements($("#svg"), $("#roh-hood"), $("#roh"), $("#hood"));
+    connectElements($("#svg"), $("#stout-vanguard"), $("#stout"), $("#vanguard"));
+    connectElements($("#svg"), $("#roh-vanguard"), $("#roh"), $("#vanguard"));
+    connectElements($("#svg"), $("#vit-vanguard"), $("#vit"), $("#vanguard"));
+    connectElements($("#svg"), $("#buckler-mek"), $("#buckler"), $("#mek"));
+    connectElements($("#svg"), $("#headdress-mek"), $("#headdress"), $("#mek"));
+    connectElements($("#svg"), $("#headdress-hotd"), $("#headdress"), $("#hotd"));
+    connectElements($("#svg"), $("#goh-hotd"), $("#goh"), $("#hotd"));
+    connectElements($("#svg"), $("#roh-hotd"), $("#roh"), $("#hotd"));
+    connectElements($("#svg"), $("#perseverance-refresher"), $("#perseverance"), $("#refresher"));
+    connectElements($("#svg"), $("#vanguard-crimson"), $("#vanguard"), $("#crimson"));
+    connectElements($("#svg"), $("#buckler-crimson"), $("#buckler"), $("#crimson"));
+    connectElements($("#svg"), $("#mek-greaves"), $("#mek"), $("#greaves"));
+    connectElements($("#svg"), $("#arcane-greaves"), $("#arcane"), $("#greaves"));
+    connectElements($("#svg"), $("#hood-pipe"), $("#hood"), $("#pipe"));
+    connectElements($("#svg"), $("#headdress-pipe"), $("#headdress"), $("#pipe"));
+    connectElements($("#svg"), $("#platemail-lotus"), $("#platemail"), $("#lotus"));
+    connectElements($("#svg"), $("#energy-lotus"), $("#energy"), $("#lotus"));
+    connectElements($("#svg"), $("#perseverance-lotus"), $("#perseverance"), $("#lotus"));
+    connectElements($("#svg"), $("#chainmail-ac"), $("#chainmail"), $("#ac"));
+    connectElements($("#svg"), $("#platemail-ac"), $("#platemail"), $("#ac"));
+    connectElements($("#svg"), $("#hyper-ac"), $("#hyper"), $("#ac"));
+    connectElements($("#svg"), $("#lace-drum"), $("#lace"), $("#drum"));
+    connectElements($("#svg"), $("#sage-drum"), $("#sage"), $("#drum"));
+    connectElements($("#svg"), $("#hoiw-veil"), $("#hoiw"), $("#veil"));
+    connectElements($("#svg"), $("#clay-squire"), $("#clay"), $("#squire"));
+    connectElements($("#svg"), $("#oov-frost"), $("#oov"), $("#frost"));
+    connectElements($("#svg"), $("#qb-frost"), $("#qb"), $("#frost"));
+    connectElements($("#svg"), $("#stout-pms"), $("#stout"), $("#pms"));
+    connectElements($("#svg"), $("#ghost-gjalla"), $("#ghost"), $("#gjalla"));
+    connectElements($("#svg"), $("#wand-gjalla"), $("#wand"), $("#gjalla"));
+    connectElements($("#svg"), $("#aether-spellblade"), $("#aether"), $("#spellblade"));
+    connectElements($("#svg"), $("#void-seraph"), $("#void"), $("#seraph"));
+    connectElements($("#svg"), $("#ultimateorb-manta"), $("#ultimateorb"), $("#manta"));
+    connectElements($("#svg"), $("#lace-hayabusa"), $("#lace"), $("#hayabusa"));
+    connectElements($("#svg"), $("#demon-hayabusa"), $("#demon"), $("#hayabusa"));
+    connectElements($("#svg"), $("#qstaff-oblivion"), $("#qstaff"), $("#oblivion"));
+    connectElements($("#svg"), $("#robe-oblivion"), $("#robe"), $("#oblivion"));
+    connectElements($("#svg"), $("#sage-oblivion"), $("#sage"), $("#oblivion"));
+    connectElements($("#svg"), $("#circlet-bracer"), $("#circlet"), $("#bracer"));
+    connectElements($("#svg"), $("#circlet-null"), $("#circlet"), $("#null"));
+    connectElements($("#svg"), $("#circlet-wraith"), $("#circlet"), $("#wraith"));
+    connectElements($("#svg"), $("#roh-force"), $("#roh"), $("#force"));
+    connectElements($("#svg"), $("#oblivion-echo"), $("#oblivion"), $("#echo"));
+    connectElements($("#svg"), $("#javelin-wyrmslayer"), $("#javelin"), $("#wyrmslayer"));
+    connectElements($("#svg"), $("#javelin-basher"), $("#javelin"), $("#basher"));
+    connectElements($("#svg"), $("#belt-basher"), $("#belt"), $("#basher"));
+    connectElements($("#svg"), $("#oblivion-orchid"), $("#oblivion"), $("#orchid"));
+    connectElements($("#svg"), $("#chainmail-blademail"), $("#chainmail"), $("#blademail"));
+    connectElements($("#svg"), $("#broad-blademail"), $("#broad"), $("#blademail"));
+    connectElements($("#svg"), $("#robe-blademail"), $("#robe"), $("#blademail"));
+    connectElements($("#svg"), $("#club-bkb"), $("#club"), $("#bkb"));
+    connectElements($("#svg"), $("#mithham-bkb"), $("#mithham"), $("#bkb"));
+    connectElements($("#svg"), $("#lace-euls"), $("#lace"), $("#euls"));
+    connectElements($("#svg"), $("#sage-euls"), $("#sage"), $("#euls"));
+    connectElements($("#svg"), $("#void-euls"), $("#void"), $("#euls"));
+    connectElements($("#svg"), $("#staff-euls"), $("#staff"), $("#euls"));
+    connectElements($("#svg"), $("#belt-necro"), $("#belt"), $("#necro"));
+    connectElements($("#svg"), $("#staff-necro"), $("#staff"), $("#necro"));
+    connectElements($("#svg"), $("#blade-diffu"), $("#blade"), $("#diffu"));
+    connectElements($("#svg"), $("#robe-diffu"), $("#robe"), $("#diffu"));
+    connectElements($("#svg"), $("#club-aghs"), $("#club"), $("#aghs"));
+    connectElements($("#svg"), $("#staff-aghs"), $("#staff"), $("#aghs"));
+    connectElements($("#svg"), $("#blade-aghs"), $("#blade"), $("#aghs"));
+    connectElements($("#svg"), $("#pb-aghs"), $("#pb"), $("#aghs"));
+    connectElements($("#svg"), $("#vit-heart"), $("#vit"), $("#heart"));
+    connectElements($("#svg"), $("#morbid-satanic"), $("#morbid"), $("#satanic"));
+    connectElements($("#svg"), $("#mithham-satanic"), $("#mithham"), $("#satanic"));
+    connectElements($("#svg"), $("#hotd-pauldron"), $("#hotd"), $("#pauldron"));
+    connectElements($("#svg"), $("#talon-pauldron"), $("#talon"), $("#pauldron"));
+    connectElements($("#svg"), $("#ultimateorb-sheep"), $("#ultimateorb"), $("#sheep"));
+    connectElements($("#svg"), $("#void-sheep"), $("#void"), $("#sheep"));
+    connectElements($("#svg"), $("#platemail-shiva"), $("#platemail"), $("#shiva"));
+    connectElements($("#svg"), $("#soulbooster-ocore"), $("#soulbooster"), $("#ocore"));
+    connectElements($("#svg"), $("#talisman-butterfly"), $("#talisman"), $("#butterfly"));
+    connectElements($("#svg"), $("#qstaff-butterfly"), $("#qstaff"), $("#butterfly"));
+    connectElements($("#svg"), $("#ghost-eblade"), $("#ghost"), $("#eblade"));
+    connectElements($("#svg"), $("#blight-wkb"), $("#blight"), $("#wkb"));
+    connectElements($("#svg"), $("#shadowam-wkb"), $("#shadowam"), $("#wkb"));
+    connectElements($("#svg"), $("#boa-crystal"), $("#boa"), $("#crystal"));
+    connectElements($("#svg"), $("#broad-crystal"), $("#broad"), $("#crystal"));
+    connectElements($("#svg"), $("#clay-shadowb"), $("#clay"), $("#shadowb"));
+    connectElements($("#svg"), $("#shadowam-shadowb"), $("#shadowam"), $("#shadowb"));
+    connectElements($("#svg"), $("#goh-midas"), $("#goh"), $("#midas"));
+    connectElements($("#svg"), $("#oov-skadi"), $("#oov"), $("#skadi"));
+    connectElements($("#svg"), $("#pb-skadi"), $("#pb"), $("#skadi"));
+    connectElements($("#svg"), $("#ultimateorb-skadi"), $("#ultimateorb"), $("#skadi"));
+    connectElements($("#svg"), $("#perseverance-linkens"), $("#perseverance"), $("#linkens"));
+    connectElements($("#svg"), $("#ultimateorb-linkens"), $("#ultimateorb"), $("#linkens"));
+    connectElements($("#svg"), $("#morbid-mom"), $("#morbid"), $("#mom"));
+    connectElements($("#svg"), $("#qstaff-mom"), $("#qstaff"), $("#mom"));
+    connectElements($("#svg"), $("#blight-deso"), $("#blight"), $("#deso"));
+    connectElements($("#svg"), $("#mithham-deso"), $("#mithham"), $("#deso"));
+    connectElements($("#svg"), $("#goh-mael"), $("#goh"), $("#mael"));
+    connectElements($("#svg"), $("#mithham-mael"), $("#mithham"), $("#mael"));
+    connectElements($("#svg"), $("#goh-armlet"), $("#goh"), $("#armlet"));
+    connectElements($("#svg"), $("#boa-armlet"), $("#boa"), $("#armlet"));
+    connectElements($("#svg"), $("#hoiw-armlet"), $("#hoiw"), $("#armlet"));
+    connectElements($("#svg"), $("#crystal-daedalus"), $("#crystal"), $("#daedalus"));
+    connectElements($("#svg"), $("#demon-daedalus"), $("#demon"), $("#daedalus"));
+    connectElements($("#svg"), $("#shadowb-silvedge"), $("#shadowb"), $("#silvedge"));
+    connectElements($("#svg"), $("#ultimateorb-silvedge"), $("#ultimateorb"), $("#silvedge"));
+    connectElements($("#svg"), $("#demon-mkb"), $("#demon"), $("#mkb"));
+    connectElements($("#svg"), $("#javelin-mkb"), $("#javelin"), $("#mkb"));
+    connectElements($("#svg"), $("#relic-radiance"), $("#relic"), $("#radiance"));
+    connectElements($("#svg"), $("#vanguard-ablade"), $("#vanguard"), $("#ablade"));
+    connectElements($("#svg"), $("#basher-ablade"), $("#basher"), $("#ablade"));
+    connectElements($("#svg"), $("#crystal-bloodthorn"), $("#crystal"), $("#bloodthorn"));
+    connectElements($("#svg"), $("#orchid-bloodthorn"), $("#orchid"), $("#bloodthorn"));
+    connectElements($("#svg"), $("#demon-rapier"), $("#demon"), $("#rapier"));
+    connectElements($("#svg"), $("#relic-rapier"), $("#relic"), $("#rapier"));
+    connectElements($("#svg"), $("#hyper-mjoll"), $("#hyper"), $("#mjoll"));
+    connectElements($("#svg"), $("#mael-mjoll"), $("#mael"), $("#mjoll"));
+    connectElements($("#svg"), $("#hyper-moonsh"), $("#hyper"), $("#moonsh"));
 }
 
 function hideAll() {
-    $("[id^=path]").hide();
+    $("#svg > path").hide();
 }
 
 $(window).on("load", function() {
@@ -142,587 +306,654 @@ $(window).on("load", function() {
     hideAll();
 });
 
-$("#str").on("click", function() {
-    $("#str").hide();
-    $("#strp").show();
-    $("#path1").show(150);
-    $("#path4").show(150);
-    $("#path7").show(150);
-    $("#path10").show(150);
-    $("#path11").show(150);
-    $("#path12").show(150);
-    $("#path13").show(150);
-    $("#path14").show(150);
-    $("#path28").show(150);
-    $("#path29").show(150);
-    $("#path30").show(150);
-    $("#path32").show(150);
-    $("#path33").show(150);
-    $("#path34").show(150);
-    $("#path47").show(150);
-    $("#path50").show(150);
-    $("#path51").show(150);
-    $("#path52").show(150);
-});
-$("#strp").on("click", function() {
-    $("#strp").hide();
-    $("#str").show();
-    $("#path1").hide();
-    $("#path4").hide();
-    $("#path7").hide();
-    $("#path10").hide();
-    $("#path11").hide();
-    $("#path12").hide();
-    $("#path13").hide();
-    $("#path14").hide();
-    $("#path28").hide();
-    $("#path29").hide();
-    $("#path30").hide();
-    $("#path32").hide();
-    $("#path33").hide();
-    $("#path34").hide();
-    $("#path47").hide();
-    $("#path50").hide();
-    $("#path51").hide();
-    $("#path52").hide();
-});
-
-$("#int").on("click", function() {
-    $("#int").hide();
-    $("#intp").show();
-    $("#path2").show(150);
-    $("#path5").show(150);
-    $("#path8").show(150);
-    $("#path15").show(150);
-    $("#path16").show(150);
-    $("#path17").show(150);
-    $("#path18").show(150);
-    $("#path19").show(150);
-    $("#path25").show(150);
-    $("#path30").show(150);
-    $("#path31").show(150);
-    $("#path35").show(150);
-    $("#path36").show(150);
-    $("#path37").show(150);
-    $("#path41").show(150);
-    $("#path44").show(150);
-    $("#path53").show(150);
-    $("#path54").show(150);
-    $("#path55").show(150);
-});
-$("#intp").on("click", function() {
-    $("#intp").hide();
-    $("#int").show();
-    $("#path2").hide();
-    $("#path5").hide();
-    $("#path8").hide();
-    $("#path15").hide();
-    $("#path16").hide();
-    $("#path17").hide();
-    $("#path18").hide();
-    $("#path19").hide();
-    $("#path25").hide();
-    $("#path30").hide();
-    $("#path31").hide();
-    $("#path35").hide();
-    $("#path36").hide();
-    $("#path37").hide();
-    $("#path41").hide();
-    $("#path44").hide();
-    $("#path53").hide();
-    $("#path54").hide();
-    $("#path55").hide();
-});
-
-$("#agi").on("click", function() {
-    $("#agi").hide();
-    $("#agip").show();
-    $("#path3").show(150);
-    $("#path6").show(150);
-    $("#path9").show(150);
-    $("#path20").show(150);
-    $("#path21").show(150);
-    $("#path22").show(150);
-    $("#path23").show(150);
-    $("#path26").show(150);
-    $("#path27").show(150);
-    $("#path29").show(150);
-    $("#path31").show(150);
-    $("#path38").show(150);
-    $("#path39").show(150);
-    $("#path40").show(150);
-    $("#path45").show(150);
-    $("#path56").show(150);
-    $("#path57").show(150);
-    $("#path58").show(150);
-});
-$("#agip").on("click", function() {
-    $("#agip").hide();
-    $("#agi").show();
-    $("#path3").hide();
-    $("#path6").hide();
-    $("#path9").hide();
-    $("#path20").hide();
-    $("#path21").hide();
-    $("#path22").hide();
-    $("#path23").hide();
-    $("#path26").hide();
-    $("#path27").hide();
-    $("#path29").hide();
-    $("#path30").hide();
-    $("#path31").hide();
-    $("#path38").hide();
-    $("#path39").hide();
-    $("#path40").hide();
-    $("#path45").hide();
-    $("#path56").hide();
-    $("#path57").hide();
-    $("#path58").hide();
-});
-
-$("#belt").hover(function() {
-    $("#path1").show(150);
-  }, function() {
-    $("#path1").hide();
-});
-
-$("#club").hover(function() {
-    $("#path4").show(150);
-    $("#path46").show(150);
-    $("#path47").show(150);
-  }, function() {
-    $("#path4").hide();
-    $("#path46").hide();
-    $("#path47").hide();
-});
-
-$("#halberd").hover(function() {
-    $("#path1").show(150);
-    $("#path4").show(150);
-    $("#path10").show(150);
-  }, function() {
-    $("#path1").hide();
-    $("#path4").hide();
-    $("#path10").hide();
-});
-
-$("#gjalla").hover(function() {
-    $("#path1").show(150);
-    $("#path4").show(150);
-    $("#path11").show(150);
-  }, function() {
-    $("#path1").hide();
-    $("#path4").hide();
-    $("#path11").hide();
-});
-
-$("#sange").hover(function() {
-    $("#path1").show(150);
-    $("#path4").show(150);
-    $("#path10").show(150);
-    $("#path11").show(150);
-    $("#path12").show(150);
-    $("#path13").show(150);
-    $("#path14").show(150);
-  }, function() {
-    $("#path1").hide();
-    $("#path4").hide();
-    $("#path10").hide();
-    $("#path11").hide();
-    $("#path12").hide();
-    $("#path13").hide();
-    $("#path14").hide();
-});
-
-$("#robe").hover(function() {
-    $("#path2").show(150);
-  }, function() {
-    $("#path2").hide();
-});
-
-$("#staff").hover(function() {
-    $("#path5").show(150);
-    $("#path44").show(150);
-    $("#path48").show(150);
-    $("#path49").show(150);
-  }, function() {
-    $("#path5").hide();
-    $("#path44").hide();
-    $("#path48").hide();
-    $("#path49").hide();
-});
-
-$("#spellblade").hover(function() {
-    $("#path2").show(150);
-    $("#path5").show(150);
-    $("#path15").show(150);
-  }, function() {
-    $("#path2").hide();
-    $("#path5").hide();
-    $("#path15").hide();
-});
-
-$("#seraph").hover(function() {
-    $("#path2").show(150);
-    $("#path5").show(150);
-    $("#path16").show(150);
-    $("#path41").show(150);
-  }, function() {
-    $("#path2").hide();
-    $("#path5").hide();
-    $("#path16").hide();
-    $("#path41").hide();
-});
-
-$("#lucen").hover(function() {
-    $("#path2").show(150);
-    $("#path5").show(150);
-    $("#path15").show(150);
-    $("#path16").show(150);
-    $("#path17").show(150);
-    $("#path18").show(150);
-    $("#path19").show(150);
-  }, function() {
-    $("#path2").hide();
-    $("#path5").hide();
-    $("#path15").hide();
-    $("#path16").hide();
-    $("#path17").hide();
-    $("#path18").hide();
-    $("#path19").hide();
-});
-
-$("#band").hover(function() {
-    $("#path3").show(150);
-    $("#path45").show(150);
-  }, function() {
-    $("#path3").hide();
-    $("#path45").hide();
-});
-
-$("#blade").hover(function() {
-    $("#path6").show(150);
-  }, function() {
-    $("#path6").hide();
-});
-
-$("#manta").hover(function() {
-    $("#path3").show(150);
-    $("#path6").show(150);
-    $("#path20").show(150);
-  }, function() {
-    $("#path3").hide();
-    $("#path6").hide();
-    $("#path20").hide();
-});
-
-$("#hayabusa").hover(function() {
-    $("#path3").show(150);
-    $("#path6").show(150);
-    $("#path21").show(150);
-  }, function() {
-    $("#path3").hide();
-    $("#path6").hide();
-    $("#path21").hide();
-});
-
-$("#yasha").hover(function() {
-    $("#path3").show(150);
-    $("#path6").show(150);
-    $("#path20").show(150);
-    $("#path21").show(150);
-    $("#path22").show(150);
-    $("#path23").show(150);
-    $("#path24").show(150);
-  }, function() {
-    $("#path3").hide();
-    $("#path6").hide();
-    $("#path20").hide();
-    $("#path21").hide();
-    $("#path22").hide();
-    $("#path23").hide();
-    $("#path24").hide();
-});
-
-$("#trio").hover(function() {
-    $("#path29").show(150);
-    $("#path30").show(150);
-    $("#path31").show(150);
-  }, function() {
-    $("#path29").hide();
-    $("#path30").hide();
-    $("#path31").hide();
-});
-
-$("#sny").hover(function() {
-    $("#path12").show(150);
-    $("#path22").show(150);
-  }, function() {
-    $("#path12").hide();
-    $("#path22").hide();
-});
-
-$("#snl").hover(function() {
-    $("#path13").show(150);
-    $("#path17").show(150);
-  }, function() {
-    $("#path13").hide();
-    $("#path17").hide();
-});
-
-$("#lny").hover(function() {
-    $("#path18").show(150);
-    $("#path23").show(150);
-  }, function() {
-    $("#path18").hide();
-    $("#path23").hide();
-});
-
-$("#gauntlets").hover(function() {
-    $("#path7").show(150);
-    $("#path50").show(150);
-  }, function() {
-    $("#path7").hide();
-    $("#path50").hide();
-});
-
-$("#woodsman").hover(function() {
-    $("#path7").show(150);
-  }, function() {
-    $("#path7").hide();
-});
-
-$("#mantle").hover(function() {
-    $("#path8").show(150);
-    $("#path53").show(150);
-  }, function() {
-    $("#path8").hide();
-    $("#path53").hide();
-});
-
-$("#frost").hover(function() {
-    $("#path8").show(150);
-  }, function() {
-    $("#path8").hide();
-});
-
-$("#slippers").hover(function() {
-    $("#path9").show(150);
-    $("#path56").show(150);
-  }, function() {
-    $("#path9").hide();
-    $("#path56").hide();
-});
-
-$("#pms").hover(function() {
-    $("#path9").show(150);
-  }, function() {
-    $("#path9").hide();
-});
-
-$("#bracer").hover(function() {
-    $("#path50").show(150);
-    $("#path51").show(150);
-    $("#path52").show(150);
-  }, function() {
-    $("#path50").hide();
-    $("#path51").hide();
-    $("#path52").hide();
-});
-
-$("#drum").hover(function() {
-    $("#path51").show(150);
-  }, function() {
-    $("#path51").hide();
-});
-
-$("#atos").hover(function() {
-    $("#path48").show(150);
-    $("#path52").show(150);
-  }, function() {
-    $("#path48").hide();
-    $("#path52").hide();
-});
-
-$("#null").hover(function() {
-    $("#path53").show(150);
-    $("#path54").show(150);
-    $("#path55").show(150);
-  }, function() {
-    $("#path53").hide();
-    $("#path54").hide();
-    $("#path55").hide();
-});
-
-$("#dagon").hover(function() {
-    $("#path49").show(150);
-    $("#path54").show(150);
-  }, function() {
-    $("#path49").hide();
-    $("#path54").hide();
-});
-
-$("#veil").hover(function() {
-    $("#path55").show(150);
-  }, function() {
-    $("#path55").hide();
-});
-
-$("#wraith").hover(function() {
-    $("#path56").show(150);
-    $("#path57").show(150);
-    $("#path58").show(150);
-  }, function() {
-    $("#path56").hide();
-    $("#path57").hide();
-    $("#path58").hide();
-});
-
-$("#aquila").hover(function() {
-    $("#path57").show(150);
-  }, function() {
-    $("#path57").hide();
-});
-
-$("#squire").hover(function() {
-    $("#path58").show(150);
-  }, function() {
-    $("#path58").hide();
-});
-
-$("#dlance").hover(function() {
-    $("#path26").show(150);
-    $("#path27").show(150);
-    $("#path45").show(150);
-    $("#path46").show(150);
-  }, function() {
-    $("#path26").hide();
-    $("#path27").hide();
-    $("#path45").hide();
-    $("#path46").hide();
-});
-
-$("#pike").hover(function() {
-    $("#path25").show(150);
-    $("#path26").show(150);
-  }, function() {
-    $("#path25").hide();
-    $("#path26").hide();
-});
-
-$("#echo").hover(function() {
-    $("#path28").show(150);
-    $("#path47").show(150);
-  }, function() {
-    $("#path28").hide();
-    $("#path47").hide();
-});
-
-$("#force").hover(function() {
-    $("#path25").show(150);
-    $("#path41").show(150);
-    $("#path44").show(150);
-  }, function() {
-    $("#path25").hide();
-    $("#path41").hide();
-    $("#path44").hide();
-});
-
-$("#wyrmslayer").hover(function() {
-    $("#path27").show(150);
-    $("#path28").show(150);
-  }, function() {
-    $("#path27").hide();
-    $("#path28").hide();
-});
-
-$("#reaver").hover(function() {
-    $("#path32").show(150);
-    $("#path33").show(150);
-    $("#path34").show(150);
-  }, function() {
-    $("#path32").hide();
-    $("#path33").hide();
-    $("#path34").hide();
-});
-
-$("#heart").hover(function() {
-    $("#path32").show(150);
-  }, function() {
-    $("#path32").hide();
-});
-
-$("#satanic").hover(function() {
-    $("#path33").show(150);
-  }, function() {
-    $("#path33").hide();
-});
-
-$("#pauldron").hover(function() {
-    $("#path34").show(150);
-  }, function() {
-    $("#path34").hide();
-});
-
-$("#mystic").hover(function() {
-    $("#path35").show(150);
-    $("#path36").show(150);
-    $("#path37").show(150);
-  }, function() {
-    $("#path35").hide();
-    $("#path36").hide();
-    $("#path37").hide();
-});
-
-$("#sheep").hover(function() {
-    $("#path35").show(150);
-  }, function() {
-    $("#path35").hide();
-});
-
-$("#shiva").hover(function() {
-    $("#path36").show(150);
-  }, function() {
-    $("#path36").hide();
-});
-
-$("#ocore").hover(function() {
-    $("#path37").show(150);
-  }, function() {
-    $("#path37").hide();
-});
-
-$("#eagle").hover(function() {
-    $("#path38").show(150);
-    $("#path39").show(150);
-    $("#path40").show(150);
-  }, function() {
-    $("#path38").hide();
-    $("#path39").hide();
-    $("#path40").hide();
-});
-
-$("#butterfly").hover(function() {
-    $("#path38").show(150);
-  }, function() {
-    $("#path38").hide();
-});
-
-$("#eblade").hover(function() {
-    $("#path39").show(150);
-  }, function() {
-    $("#path39").hide();
-});
-
-$("#wkb").hover(function() {
-    $("#path40").show(150);
-  }, function() {
-    $("#path40").hide();
-});
-
 $(window).resize(function () {
     // reset svg each time
     $("#svg").attr("height", "0");
     $("#svg").attr("width", "0");
     connectAll();
 });
+
+$("#str").on("click", function() {
+    $("#str").hide();
+    $("#strp").show();
+    $("#belt-sange").show(150);
+    $("#club-sange").show(150);
+    $("#gauntlets-woodsman").show(150);
+    $("#sange-halberd").show(150);
+    $("#sange-gjalla").show(150);
+    $("#sange-sny").show(150);
+    $("#sange-snl").show(150);
+    $("#sange-trio").show(150);
+    $("#echo-wyrmslayer").show(150);
+    $("#sny-trio").show(150);
+    $("#snl-trio").show(150);
+    $("#reaver-heart").show(150);
+    $("#reaver-satanic").show(150);
+    $("#reaver-pauldron").show(150);
+    $("#club-echo").show(150);
+    $("#gauntlets-bracer").show(150);
+    $("#bracer-drum").show(150);
+    $("#bracer-atos").show(150);
+});
+$("#strp").on("click", function() {
+    $("#strp").hide();
+    $("#str").show();
+    $("#belt-sange").hide();
+    $("#club-sange").hide();
+    $("#gauntlets-woodsman").hide();
+    $("#sange-halberd").hide();
+    $("#sange-gjalla").hide();
+    $("#sange-sny").hide();
+    $("#sange-snl").hide();
+    $("#sange-trio").hide();
+    $("#echo-wyrmslayer").hide();
+    $("#sny-trio").hide();
+    $("#snl-trio").hide();
+    $("#reaver-heart").hide();
+    $("#reaver-satanic").hide();
+    $("#reaver-pauldron").hide();
+    $("#club-echo").hide();
+    $("#gauntlets-bracer").hide();
+    $("#bracer-drum").hide();
+    $("#bracer-atos").hide();
+});
+
+$("#int").on("click", function() {
+    $("#int").hide();
+    $("#intp").show();
+    $("#robe-lucen").show(150);
+    $("#staff-lucen").show(150);
+    $("#mantle-frost").show(150);
+    $("#lucen-spellblade").show(150);
+    $("#lucen-seraph").show(150);
+    $("#lucen-snl").show(150);
+    $("#lucen-lny").show(150);
+    $("#lucen-trio").show(150);
+    $("#force-pike").show(150);
+    $("#snl-trio").show(150);
+    $("#lny-trio").show(150);
+    $("#mystic-sheep").show(150);
+    $("#mystic-shiva").show(150);
+    $("#mystic-ocore").show(150);
+    $("#force-seraph").show(150);
+    $("#staff-force").show(150);
+    $("#mantle-null").show(150);
+    $("#null-dagon").show(150);
+    $("#null-veil").show(150);
+});
+$("#intp").on("click", function() {
+    $("#intp").hide();
+    $("#int").show();
+    $("#robe-lucen").hide();
+    $("#staff-lucen").hide();
+    $("#mantle-frost").hide();
+    $("#lucen-spellblade").hide();
+    $("#lucen-seraph").hide();
+    $("#lucen-snl").hide();
+    $("#lucen-lny").hide();
+    $("#lucen-trio").hide();
+    $("#force-pike").hide();
+    $("#snl-trio").hide();
+    $("#lny-trio").hide();
+    $("#mystic-sheep").hide();
+    $("#mystic-shiva").hide();
+    $("#mystic-ocore").hide();
+    $("#force-seraph").hide();
+    $("#staff-force").hide();
+    $("#mantle-null").hide();
+    $("#null-dagon").hide();
+    $("#null-veil").hide();
+});
+
+$("#agi").on("click", function() {
+    $("#agi").hide();
+    $("#agip").show();
+    $("#band-yasha").show(150);
+    $("#blade-yasha").show(150);
+    $("#slippers-pms").show(150);
+    $("#yasha-manta").show(150);
+    $("#yasha-hayabusa").show(150);
+    $("#yasha-sny").show(150);
+    $("#yasha-lny").show(150);
+    $("#dlance-pike").show(150);
+    $("#dlance-wyrmslayer").show(150);
+    $("#sny-trio").show(150);
+    $("#lny-trio").show(150);
+    $("#eagle-butterfly").show(150);
+    $("#eagle-eblade").show(150);
+    $("#eagle-wkb").show(150);
+    $("#band-dlance").show(150);
+    $("#slippers-wraith").show(150);
+    $("#wraith-aquila").show(150);
+    $("#wraith-squire").show(150);
+});
+$("#agip").on("click", function() {
+    $("#agip").hide();
+    $("#agi").show();
+    $("#band-yasha").hide();
+    $("#blade-yasha").hide();
+    $("#slippers-pms").hide();
+    $("#yasha-manta").hide();
+    $("#yasha-hayabusa").hide();
+    $("#yasha-sny").hide();
+    $("#yasha-lny").hide();
+    $("#dlance-pike").hide();
+    $("#dlance-wyrmslayer").hide();
+    $("#sny-trio").hide();
+    $("#snl-trio").hide();
+    $("#lny-trio").hide();
+    $("#eagle-butterfly").hide();
+    $("#eagle-eblade").hide();
+    $("#eagle-wkb").hide();
+    $("#band-dlance").hide();
+    $("#slippers-wraith").hide();
+    $("#wraith-aquila").hide();
+    $("#wraith-squire").hide();
+});
+
+$("#belt").hover(function() {
+    $("#belt-sange").show(150);
+    $("#belt-treads").show(150);
+    $("#belt-basher").show(150);
+    $("#belt-necro").show(150);
+  }, function() {
+    $("#belt-sange").hide();
+    $("#belt-treads").hide();
+    $("#belt-basher").hide();
+    $("#belt-necro").hide();
+});
+
+$("#club").hover(function() {
+    $("#club-sange").show(150);
+    $("#club-dlance").show(150);
+    $("#club-echo").show(150);
+    $("#club-bkb").show(150);
+    $("#club-aghs").show(150);
+  }, function() {
+    $("#club-sange").hide();
+    $("#club-dlance").hide();
+    $("#club-echo").hide();
+    $("#club-bkb").hide();
+    $("#club-aghs").hide();
+});
+
+$("#halberd").hover(function() {
+    $("#belt-sange").show(150);
+    $("#club-sange").show(150);
+    $("#sange-halberd").show(150);
+    $("#talisman-halberd").show(150);
+  }, function() {
+    $("#belt-sange").hide();
+    $("#club-sange").hide();
+    $("#sange-halberd").hide();
+    $("#talisman-halberd").hide();
+});
+
+$("#gjalla").hover(function() {
+    $("#belt-sange").show(150);
+    $("#club-sange").show(150);
+    $("#sange-gjalla").show(150);
+    $("#ghost-gjalla").show(150);
+    $("#wand-gjalla").show(150);
+    $("#branch-wand").show(150);
+    $("#circlet-wand").show(150);
+    $("#stick-wand").show(150);
+  }, function() {
+    $("#belt-sange").hide();
+    $("#club-sange").hide();
+    $("#sange-gjalla").hide();
+    $("#ghost-gjalla").hide();
+    $("#wand-gjalla").hide();
+    $("#branch-wand").hide();
+    $("#circlet-wand").hide();
+    $("#stick-wand").hide();
+});
+
+$("#sange").hover(function() {
+    $("#belt-sange").show(150);
+    $("#club-sange").show(150);
+    $("#sange-halberd").show(150);
+    $("#sange-gjalla").show(150);
+    $("#sange-sny").show(150);
+    $("#sange-snl").show(150);
+    $("#sange-trio").show(150);
+  }, function() {
+    $("#belt-sange").hide();
+    $("#club-sange").hide();
+    $("#sange-halberd").hide();
+    $("#sange-gjalla").hide();
+    $("#sange-sny").hide();
+    $("#sange-snl").hide();
+    $("#sange-trio").hide();
+});
+
+$("#robe").hover(function() {
+    $("#robe-lucen").show(150);
+    $("#robe-treads").show(150);
+    $("#robe-oblivion").show(150);
+    $("#robe-blademail").show(150);
+    $("#robe-diffu").show(150);
+  }, function() {
+    $("#robe-lucen").hide();
+    $("#robe-treads").hide();
+    $("#robe-oblivion").hide();
+    $("#robe-blademail").hide();
+    $("#robe-diffu").hide();
+});
+
+$("#staff").hover(function() {
+    $("#staff-lucen").show(150);
+    $("#staff-force").show(150);
+    $("#staff-atos").show(150);
+    $("#staff-dagon").show(150);
+    $("#staff-euls").show(150);
+    $("#staff-necro").show(150);
+    $("#staff-aghs").show(150);
+  }, function() {
+    $("#staff-lucen").hide();
+    $("#staff-force").hide();
+    $("#staff-atos").hide();
+    $("#staff-dagon").hide();
+    $("#staff-euls").hide();
+    $("#staff-necro").hide();
+    $("#staff-aghs").hide();
+});
+
+$("#spellblade").hover(function() {
+    $("#robe-lucen").show(150);
+    $("#staff-lucen").show(150);
+    $("#lucen-spellblade").show(150);
+    $("#aether-spellblade").show(150);
+    $("#void-aether").show(150);
+    $("#energy-aether").show(150);
+  }, function() {
+    $("#robe-lucen").hide();
+    $("#staff-lucen").hide();
+    $("#lucen-spellblade").hide();
+    $("#aether-spellblade").hide();
+    $("#void-aether").hide();
+    $("#energy-aether").hide();
+});
+
+$("#seraph").hover(function() {
+    $("#robe-lucen").show(150);
+    $("#staff-lucen").show(150);
+    $("#lucen-seraph").show(150);
+    $("#void-seraph").show(150);
+    $("#force-seraph").show(150);
+    $("#roh-force").show(150);
+    $("#staff-force").show(150);
+  }, function() {
+    $("#robe-lucen").hide();
+    $("#staff-lucen").hide();
+    $("#lucen-seraph").hide();
+    $("#void-seraph").hide();
+    $("#force-seraph").hide();
+    $("#roh-force").hide();
+    $("#staff-force").hide();
+});
+
+$("#lucen").hover(function() {
+    $("#robe-lucen").show(150);
+    $("#staff-lucen").show(150);
+    $("#lucen-spellblade").show(150);
+    $("#lucen-seraph").show(150);
+    $("#lucen-snl").show(150);
+    $("#lucen-lny").show(150);
+    $("#lucen-trio").show(150);
+  }, function() {
+    $("#robe-lucen").hide();
+    $("#staff-lucen").hide();
+    $("#lucen-spellblade").hide();
+    $("#lucen-seraph").hide();
+    $("#lucen-snl").hide();
+    $("#lucen-lny").hide();
+    $("#lucen-trio").hide();
+});
+
+$("#band").hover(function() {
+    $("#band-yasha").show(150);
+    $("#band-dlance").show(150);
+  }, function() {
+    $("#band-yasha").hide();
+    $("#band-dlance").hide();
+});
+
+$("#blade").hover(function() {
+    $("#blade-yasha").show(150);
+  }, function() {
+    $("#blade-yasha").hide();
+});
+
+$("#manta").hover(function() {
+    $("#band-yasha").show(150);
+    $("#blade-yasha").show(150);
+    $("#yasha-manta").show(150);
+  }, function() {
+    $("#band-yasha").hide();
+    $("#blade-yasha").hide();
+    $("#yasha-manta").hide();
+});
+
+$("#hayabusa").hover(function() {
+    $("#band-yasha").show(150);
+    $("#blade-yasha").show(150);
+    $("#yasha-hayabusa").show(150);
+  }, function() {
+    $("#band-yasha").hide();
+    $("#blade-yasha").hide();
+    $("#yasha-hayabusa").hide();
+});
+
+$("#yasha").hover(function() {
+    $("#band-yasha").show(150);
+    $("#blade-yasha").show(150);
+    $("#yasha-manta").show(150);
+    $("#yasha-hayabusa").show(150);
+    $("#yasha-sny").show(150);
+    $("#yasha-lny").show(150);
+    $("#yasha-trio").show(150);
+  }, function() {
+    $("#band-yasha").hide();
+    $("#blade-yasha").hide();
+    $("#yasha-manta").hide();
+    $("#yasha-hayabusa").hide();
+    $("#yasha-sny").hide();
+    $("#yasha-lny").hide();
+    $("#yasha-trio").hide();
+});
+
+$("#trio").hover(function() {
+    $("#sange-trio").show(150);
+    $("#lucen-trio").show(150);
+    $("#yasha-trio").show(150);
+    $("#sny-trio").show(150);
+    $("#snl-trio").show(150);
+    $("#lny-trio").show(150);
+  }, function() {
+    $("#sange-trio").hide();
+    $("#lucen-trio").hide();
+    $("#yasha-trio").hide();
+    $("#sny-trio").hide();
+    $("#snl-trio").hide();
+    $("#lny-trio").hide();
+});
+
+$("#sny").hover(function() {
+    $("#sange-sny").show(150);
+    $("#yasha-sny").show(150);
+  }, function() {
+    $("#sange-sny").hide();
+    $("#yasha-sny").hide();
+});
+
+$("#snl").hover(function() {
+    $("#sange-snl").show(150);
+    $("#lucen-snl").show(150);
+  }, function() {
+    $("#sange-snl").hide();
+    $("#lucen-snl").hide();
+});
+
+$("#lny").hover(function() {
+    $("#lucen-lny").show(150);
+    $("#yasha-lny").show(150);
+  }, function() {
+    $("#lucen-lny").hide();
+    $("#yasha-lny").hide();
+});
+
+$("#gauntlets").hover(function() {
+    $("#gauntlets-woodsman").show(150);
+    $("#gauntlets-bracer").show(150);
+  }, function() {
+    $("#gauntlets-woodsman").hide();
+    $("#gauntlets-bracer").hide();
+});
+
+$("#woodsman").hover(function() {
+    $("#gauntlets-woodsman").show(150);
+  }, function() {
+    $("#gauntlets-woodsman").hide();
+});
+
+$("#mantle").hover(function() {
+    $("#mantle-frost").show(150);
+    $("#mantle-null").show(150);
+  }, function() {
+    $("#mantle-frost").hide();
+    $("#mantle-null").hide();
+});
+
+$("#frost").hover(function() {
+    $("#mantle-frost").show(150);
+  }, function() {
+    $("#mantle-frost").hide();
+});
+
+$("#slippers").hover(function() {
+    $("#slippers-pms").show(150);
+    $("#slippers-wraith").show(150);
+  }, function() {
+    $("#slippers-pms").hide();
+    $("#slippers-wraith").hide();
+});
+
+$("#pms").hover(function() {
+    $("#slippers-pms").show(150);
+  }, function() {
+    $("#slippers-pms").hide();
+});
+
+$("#bracer").hover(function() {
+    $("#gauntlets-bracer").show(150);
+    $("#bracer-drum").show(150);
+    $("#bracer-atos").show(150);
+  }, function() {
+    $("#gauntlets-bracer").hide();
+    $("#bracer-drum").hide();
+    $("#bracer-atos").hide();
+});
+
+$("#drum").hover(function() {
+    $("#bracer-drum").show(150);
+  }, function() {
+    $("#bracer-drum").hide();
+});
+
+$("#atos").hover(function() {
+    $("#staff-atos").show(150);
+    $("#bracer-atos").show(150);
+  }, function() {
+    $("#staff-atos").hide();
+    $("#bracer-atos").hide();
+});
+
+$("#null").hover(function() {
+    $("#mantle-null").show(150);
+    $("#null-dagon").show(150);
+    $("#null-veil").show(150);
+  }, function() {
+    $("#mantle-null").hide();
+    $("#null-dagon").hide();
+    $("#null-veil").hide();
+});
+
+$("#dagon").hover(function() {
+    $("#staff-dagon").show(150);
+    $("#null-dagon").show(150);
+  }, function() {
+    $("#staff-dagon").hide();
+    $("#null-dagon").hide();
+});
+
+$("#veil").hover(function() {
+    $("#null-veil").show(150);
+  }, function() {
+    $("#null-veil").hide();
+});
+
+$("#wraith").hover(function() {
+    $("#slippers-wraith").show(150);
+    $("#wraith-aquila").show(150);
+    $("#wraith-squire").show(150);
+  }, function() {
+    $("#slippers-wraith").hide();
+    $("#wraith-aquila").hide();
+    $("#wraith-squire").hide();
+});
+
+$("#aquila").hover(function() {
+    $("#wraith-aquila").show(150);
+  }, function() {
+    $("#wraith-aquila").hide();
+});
+
+$("#squire").hover(function() {
+    $("#wraith-squire").show(150);
+  }, function() {
+    $("#wraith-squire").hide();
+});
+
+$("#dlance").hover(function() {
+    $("#dlance-pike").show(150);
+    $("#dlance-wyrmslayer").show(150);
+    $("#band-dlance").show(150);
+    $("#club-dlance").show(150);
+  }, function() {
+    $("#dlance-pike").hide();
+    $("#dlance-wyrmslayer").hide();
+    $("#band-dlance").hide();
+    $("#club-dlance").hide();
+});
+
+$("#pike").hover(function() {
+    $("#force-pike").show(150);
+    $("#dlance-pike").show(150);
+  }, function() {
+    $("#force-pike").hide();
+    $("#dlance-pike").hide();
+});
+
+$("#echo").hover(function() {
+    $("#echo-wyrmslayer").show(150);
+    $("#club-echo").show(150);
+  }, function() {
+    $("#echo-wyrmslayer").hide();
+    $("#club-echo").hide();
+});
+
+$("#force").hover(function() {
+    $("#force-pike").show(150);
+    $("#force-seraph").show(150);
+    $("#staff-force").show(150);
+  }, function() {
+    $("#force-pike").hide();
+    $("#force-seraph").hide();
+    $("#staff-force").hide();
+});
+
+$("#wyrmslayer").hover(function() {
+    $("#dlance-wyrmslayer").show(150);
+    $("#echo-wyrmslayer").show(150);
+  }, function() {
+    $("#dlance-wyrmslayer").hide();
+    $("#echo-wyrmslayer").hide();
+});
+
+$("#reaver").hover(function() {
+    $("#reaver-heart").show(150);
+    $("#reaver-satanic").show(150);
+    $("#reaver-pauldron").show(150);
+  }, function() {
+    $("#reaver-heart").hide();
+    $("#reaver-satanic").hide();
+    $("#reaver-pauldron").hide();
+});
+
+$("#heart").hover(function() {
+    $("#reaver-heart").show(150);
+  }, function() {
+    $("#reaver-heart").hide();
+});
+
+$("#satanic").hover(function() {
+    $("#reaver-satanic").show(150);
+  }, function() {
+    $("#reaver-satanic").hide();
+});
+
+$("#pauldron").hover(function() {
+    $("#reaver-pauldron").show(150);
+  }, function() {
+    $("#reaver-pauldron").hide();
+});
+
+$("#mystic").hover(function() {
+    $("#mystic-sheep").show(150);
+    $("#mystic-shiva").show(150);
+    $("#mystic-ocore").show(150);
+  }, function() {
+    $("#mystic-sheep").hide();
+    $("#mystic-shiva").hide();
+    $("#mystic-ocore").hide();
+});
+
+$("#sheep").hover(function() {
+    $("#mystic-sheep").show(150);
+  }, function() {
+    $("#mystic-sheep").hide();
+});
+
+$("#shiva").hover(function() {
+    $("#mystic-shiva").show(150);
+  }, function() {
+    $("#mystic-shiva").hide();
+});
+
+$("#ocore").hover(function() {
+    $("#mystic-ocore").show(150);
+  }, function() {
+    $("#mystic-ocore").hide();
+});
+
+$("#eagle").hover(function() {
+    $("#eagle-butterfly").show(150);
+    $("#eagle-eblade").show(150);
+    $("#eagle-wkb").show(150);
+  }, function() {
+    $("#eagle-butterfly").hide();
+    $("#eagle-eblade").hide();
+    $("#eagle-wkb").hide();
+});
+
+$("#butterfly").hover(function() {
+    $("#eagle-butterfly").show(150);
+  }, function() {
+    $("#eagle-butterfly").hide();
+});
+
+$("#eblade").hover(function() {
+    $("#eagle-eblade").show(150);
+  }, function() {
+    $("#eagle-eblade").hide();
+});
+
+$("#wkb").hover(function() {
+    $("#eagle-wkb").show(150);
+  }, function() {
+    $("#eagle-wkb").hide();
+});
+
+$("#mango").hover(function() {
+    $("#mango-soulring").show(150);
+  }, function() {
+    $("#mango-soulring").hide();
+});
+
+$("#irain").hover(function() {
+    $("#irain-urn").show(150);
+  }, function() {
+    $("#irain-urn").hide();
+});
+

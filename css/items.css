@@ -5,10 +5,6 @@ body {
   color: #1E1E1E;
 }
 
-.container {
-  margin-top: 24px;
-}
-
 #svgContainer {
   z-index: 10;
   position: absolute;
@@ -21,13 +17,24 @@ h1 {
   font-size: 42px;
 }
 
-.section-bg > .row {
+.section-bg > .row .row {
   margin-bottom: 24px;
+  min-height: 48px;
 }
 
 .section-bg {
   background-color: rgba(210,215,240,0.35);
-  padding: 0 8px;
+  padding: 0;
+  width: 96%;
+  margin: 54px auto 0 auto;
+}
+
+div[class^="col"] {
+  padding: 0 4px;
+}
+
+.col-lg-3.5 {
+  width: 29.1666666%;
 }
 
 .spacer {
@@ -62,14 +69,20 @@ h1 {
 }
 
 a { color: #40444E; }
+
 a:focus, a:hover {
   color: #f9f9f9;
   text-decoration: none;
 }
+
 .btn-default {
-  background-color: #5E6272;
+  color: rgba(249,249,249,0.85);
+  background-color: rgba(32,36,46,0.8);
+  box-shadow: 0 0 6px rgba(249,249,249,0.85);
   border: 0;
-  font-weight: 500;
+  font-variant: small-caps;
+  font-weight: 400;
+  padding: 9px 12px;
 }
 
 .btn-default:active:hover,
@@ -77,6 +90,7 @@ a:focus, a:hover {
 .btn-default:active {
   background-color: #5E6272;
   color: #f9f9f9;
+  box-shadow: 0;
 }
 
 .btn:active:focus,
@@ -211,12 +225,6 @@ a:focus, a:hover {
   }
 }
 
-@media (max-width: 1363px) {
-  .container {
-    margin-top: 48px;
-  }
-}
-
 #str:hover, #int:hover, #agi:hover,
 #strp:hover, #intp:hover, #agip:hover {
   cursor: pointer;
@@ -224,21 +232,5 @@ a:focus, a:hover {
 
 #strp, #intp, #agip {
   display: none;
-}
-
-@media (max-width: 992px) {
-  #offset1 {
-    width: 25%;
-  }
-  #offset2 {
-    margin-left: 0 !important;
-  }
-}
-
-@media (max-width: 713px) {
-  #offset3 {
-    width: 33.333333333%;
-    margin-left: 0 !important;
-  }
 }
 

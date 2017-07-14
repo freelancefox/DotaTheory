@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>freelance-dota</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+</head>
+
+<body>
+  <h1>
+    <div class="pull-right"><a href="index">@freelancedota</a>&nbsp;Forum</div>
+    <a href="index"><btn id="forumbtn" class="btn"><div id="larrow">➜</div> Index</btn></a>
+  </h1>
+  <div id="forumnav" class="row text-center">
+    <div class="rules-btn pull-left">
+      <a href="#rules"><btn id="forumbtn" type="button" class="btn" data-toggle="modal" data-target="#rules-modal"> ? </btn></a>
+    </div>
+    <ul id="tabs" class="nav nav-tabs">
+      <li class="active"><a data-toggle="tab" href="#gameplay">Gameplay Discussion</a></li>
+      <li style="margin-left: 4px;"><a data-toggle="tab" href="#concepts">Custom Concepts</a></li>
+    </ul>
+    <div class="new-btn pull-right">
+      <a href="#new"><btn id="forumbtn" type="button" class="btn" data-toggle="modal" data-target="#new-modal" data-backdrop="static"> + </btn></a>
+    </div>
+  </div><!--/.forum-nav-->
+  <div class="modal fade" id="rules-modal" tabindex="-1" role="dialog" aria-labelledby="rules">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="Rules">Rules</h4>
+        </div>
+        <div class="modal-body">
+          ...
+        </div><!--/.modal-body-->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div><!--/.modal-footer-->
+      </div><!--/.modal-content-->
+    </div><!--/.modal-dialog-->
+  </div><!--/.modal-->
+  <div class="modal fade" id="new-modal" tabindex="-1" role="dialog" aria-labelledby="NewPost">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="NewPost">New Post</h4>
+        </div>
+        <div class="modal-body">
+          ...
+        </div><!--/.modal-body-->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div><!--/.modal-footer-->
+      </div><!--/.modal-content-->
+    </div><!--/.modal-dialog-->
+  </div><!--/.modal-->
+  <div class="tab-content">
+    <div id="gameplay" class="tab-pane active fade in">
+      <div id="controls" class="row">
+        <div class="col-xs-3 col-xs-offset-1-5 text-center">
+          <div class="filterlabel">Hero</div>
+          <div class="filterbtn">
+            <div class="btn-group">
+              <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                All <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" id="scroll">
+                <li><a href="#">All</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#"><img src="img/Abaddon_icon.png"></img> Abaddon</a></li>
+                <li><a href="#"><img src="img/Alchemist_icon.png"></img> Alchemist</a></li>
+                <li><a href="#"><img src="img/Ancient_Apparition_icon.png"></img> Ancient Apparition</a></li>
+                <li><a href="#"><img src="img/Anti-Mage_icon.png"></img> Anti-Mage</a></li>
+                <li><a href="#"><img src="img/Arc_Warden_icon.png"></img> Arc Warden</a></li>
+                <li><a href="#"><img src="img/Axe_icon.png"></img> Axe</a></li>
+                <li><a href="#"><img src="img/Bane_icon.png"></img> Bane</a></li>
+                <li><a href="#"><img src="img/Batrider_icon.png"></img> Batrider</a></li>
+                <li><a href="#"><img src="img/Beastmaster_icon.png"></img> Beastmaster</a></li>
+                <li><a href="#"><img src="img/Bloodseeker_icon.png"></img> Bloodseeker</a></li>
+                <li><a href="#"><img src="img/Bounty_Hunter_icon.png"></img> Bounty Hunter</a></li>
+                <li><a href="#"><img src="img/Brewmaster_icon.png"></img> Brewmaster</a></li>
+                <li><a href="#"><img src="img/Bloodseeker_icon.png"></img> Bloodseeker</a></li>
+                <li><a href="#"><img src="img/Bounty_Hunter_icon.png"></img> Bounty Hunter</a></li>
+                <li><a href="#"><img src="img/Brewmaster_icon.png"></img> Brewmaster</a></li>
+                <li><a href="#"><img src="img/Bristleback_icon.png"></img> Bristleback</a></li>
+                <li><a href="#"><img src="img/Broodmother_icon.png"></img> Broodmother</a></li>
+                <li><a href="#"><img src="img/Centaur_Warrunner_icon.png"></img> Centaur Warrunner</a></li>
+                <li><a href="#"><img src="img/Chaos_Knight_icon.png"></img> Chaos Knight</a></li>
+                <li><a href="#"><img src="img/Chen_icon.png"></img> Chen</a></li>
+                <li><a href="#"><img src="img/Clinkz_icon.png"></img> Clinkz</a></li>
+                <li><a href="#"><img src="img/Clockwerk_icon.png"></img> Clockwerk</a></li>
+                <li><a href="#"><img src="img/Crystal_Maiden_icon.png"></img> Crystal Maiden</a></li>
+                <li><a href="#"><img src="img/Dark_Seer_icon.png"></img> Dark Seer</a></li>
+                <li><a href="#"><img src="img/Dazzle_icon.png"></img> Dazzle</a></li>
+                <li><a href="#"><img src="img/Death_Prophet_icon.png"></img> Death Prophet</a></li>
+                <li><a href="#"><img src="img/Disruptor_icon.png"></img> Disruptor</a></li>
+                <li><a href="#"><img src="img/Doom_icon.png"></img> Doom</a></li>
+                <li><a href="#"><img src="img/Dragon_Knight_icon.png"></img> Dragon Knight</a></li>
+                <li><a href="#"><img src="img/Drow_Ranger_icon.png"></img> Drow Ranger</a></li>
+                <li><a href="#"><img src="img/Earth_Spirit_icon.png"></img> Earth Spirit</a></li>
+                <li><a href="#"><img src="img/Earthshaker_icon.png"></img> Earthshaker</a></li>
+                <li><a href="#"><img src="img/Elder_Titan_icon.png"></img> Elder Titan</a></li>
+                <li><a href="#"><img src="img/Ember_Spirit_icon.png"></img> Ember Spirit</a></li>
+                <li><a href="#"><img src="img/Enchantress_icon.png"></img> Enchantress</a></li>
+                <li><a href="#"><img src="img/Enigma_icon.png"></img> Enigma</a></li>
+                <li><a href="#"><img src="img/Faceless_Void_icon.png"></img> Faceless Void</a></li>
+                <li><a href="#"><img src="img/Gyrocopter_icon.png"></img> Gyrocopter</a></li>
+                <li><a href="#"><img src="img/Huskar_icon.png"></img> Huskar</a></li>
+                <li><a href="#"><img src="img/Invoker_icon.png"></img> Invoker</a></li>
+                <li><a href="#"><img src="img/IO_icon.png"></img> IO</a></li>
+                <li><a href="#"><img src="img/Jakiro_icon.png"></img> Jakiro</a></li>
+                <li><a href="#"><img src="img/Juggernaut_icon.png"></img> Juggernaut</a></li>
+                <li><a href="#"><img src="img/Keeper_of_the_Light_icon.png"></img> Keeper of the Light</a></li>
+                <li><a href="#"><img src="img/Leshrac_icon.png"></img> Leshrac</a></li>
+                <li><a href="#"><img src="img/Lich_icon.png"></img> Lich</a></li>
+                <li><a href="#"><img src="img/Lifestealer_icon.png"></img> Lifestealer</a></li>
+                <li><a href="#"><img src="img/Lina_icon.png"></img> Lina</a></li>
+                <li><a href="#"><img src="img/Lion_icon.png"></img> Lion</a></li>
+                <li><a href="#"><img src="img/Lone_Druid_icon.png"></img> Lone Druid</a></li>
+                <li><a href="#"><img src="img/Luna_icon.png"></img> Luna</a></li>
+                <li><a href="#"><img src="img/Lycan_icon.png"></img> Lycan</a></li>
+                <li><a href="#"><img src="img/Magnus_icon.png"></img> Magnus</a></li>
+                <li><a href="#"><img src="img/Medusa_icon.png"></img> Medusa</a></li>
+                <li><a href="#"><img src="img/Meepo_icon.png"></img> Meepo</a></li>
+                <li><a href="#"><img src="img/Mirana_icon.png"></img> Mirana</a></li>
+                <li><a href="#"><img src="img/Monkey_King_icon.png"></img> Monkey King</a></li>
+                <li><a href="#"><img src="img/Morphling_icon.png"></img> Morphling</a></li>
+                <li><a href="#"><img src="img/Naga_Siren_icon.png"></img> Naga Siren</a></li>
+                <li><a href="#"><img src="img/Nature's_Prophet_icon.png"></img> Nature's Prophet</a></li>
+                <li><a href="#"><img src="img/Necrophos_icon.png"></img> Necrophos</a></li>
+                <li><a href="#"><img src="img/Night_Stalker_icon.png"></img> Night Stalker</a></li>
+                <li><a href="#"><img src="img/Nyx_Assassin_icon.png"></img> Nyx Assassin</a></li>
+                <li><a href="#"><img src="img/Ogre_Magi_icon.png"></img> Ogre Magi</a></li>
+                <li><a href="#"><img src="img/Omniknight_icon.png"></img> Omniknight</a></li>
+                <li><a href="#"><img src="img/Oracle_icon.png"></img> Oracle</a></li>
+                <li><a href="#"><img src="img/Outworld_Devourer_icon.png"></img> Outworld Devourer</a></li>
+                <li><a href="#"><img src="img/Phantom_Assassin_icon.png"></img> Phantom Assassin</a></li>
+                <li><a href="#"><img src="img/Phantom_Lancer_icon.png"></img> Phantom Lancer</a></li>
+                <li><a href="#"><img src="img/Phoenix_icon.png"></img> Phoenix</a></li>
+                <li><a href="#"><img src="img/Puck_icon.png"></img> Puck</a></li>
+                <li><a href="#"><img src="img/Pudge_icon.png"></img> Pudge</a></li>
+                <li><a href="#"><img src="img/Pugna_icon.png"></img> Pugna</a></li>
+                <li><a href="#"><img src="img/Queen_of_Pain_icon.png"></img> Queen of Pain</a></li>
+                <li><a href="#"><img src="img/Razor_icon.png"></img> Razor</a></li>
+                <li><a href="#"><img src="img/Riki_icon.png"></img> Riki</a></li>
+                <li><a href="#"><img src="img/Rubick_icon.png"></img> Rubick</a></li>
+                <li><a href="#"><img src="img/Sand_King_icon.png"></img> Sand King</a></li>
+                <li><a href="#"><img src="img/Shadow_Demon_icon.png"></img> Shadow Demon</a></li>
+                <li><a href="#"><img src="img/Shadow_Fiend_icon.png"></img> Shadow Fiend</a></li>
+                <li><a href="#"><img src="img/Shadow_Shaman_icon.png"></img> Shadow Shaman</a></li>
+                <li><a href="#"><img src="img/Silencer_icon.png"></img> Silencer</a></li>
+                <li><a href="#"><img src="img/Skywrath_Mage_icon.png"></img> Skywrath Mage</a></li>
+                <li><a href="#"><img src="img/Slardar_icon.png"></img> Slardar</a></li>
+                <li><a href="#"><img src="img/Slark_icon.png"></img> Slark</a></li>
+                <li><a href="#"><img src="img/Sniper_icon.png"></img> Sniper</a></li>
+                <li><a href="#"><img src="img/Spectre_icon.png"></img> Spectre</a></li>
+                <li><a href="#"><img src="img/Spirit_Breaker_icon.png"></img> Spirit Breaker</a></li>
+                <li><a href="#"><img src="img/Storm_Spirit_icon.png"></img> Storm Spirit</a></li>
+                <li><a href="#"><img src="img/Sven_icon.png"></img> Sven</a></li>
+                <li><a href="#"><img src="img/Techies_icon.png"></img> Techies</a></li>
+                <li><a href="#"><img src="img/Templar_Assassin_icon.png"></img> Templar Assassin</a></li>
+                <li><a href="#"><img src="img/Terrorblade_icon.png"></img> Terrorblade</a></li>
+                <li><a href="#"><img src="img/Tidehunter_icon.png"></img> Tidehunter</a></li>
+                <li><a href="#"><img src="img/Timbersaw_icon.png"></img> Timbersaw</a></li>
+                <li><a href="#"><img src="img/Tinker_icon.png"></img> Tinker</a></li>
+                <li><a href="#"><img src="img/Tiny_icon.png"></img> Tiny</a></li>
+                <li><a href="#"><img src="img/Treant_Protector_icon.png"></img> Treant Protector</a></li>
+                <li><a href="#"><img src="img/Troll_Warlord_icon.png"></img> Troll Warlord</a></li>
+                <li><a href="#"><img src="img/Tusk_icon.png"></img> Tusk</a></li>
+                <li><a href="#"><img src="img/Underlord_icon.png"></img> Underlord</a></li>
+                <li><a href="#"><img src="img/Undying_icon.png"></img> Undying</a></li>
+                <li><a href="#"><img src="img/Ursa_icon.png"></img> Ursa</a></li>
+                <li><a href="#"><img src="img/Vengeful_Spirit_icon.png"></img> Vengeful Spirit</a></li>
+                <li><a href="#"><img src="img/Venomancer_icon.png"></img> Venomancer</a></li>
+                <li><a href="#"><img src="img/Viper_icon.png"></img> Viper</a></li>
+                <li><a href="#"><img src="img/Visage_icon.png"></img> Visage</a></li>
+                <li><a href="#"><img src="img/Warlock_icon.png"></img> Warlock</a></li>
+                <li><a href="#"><img src="img/Weaver_icon.png"></img> Weaver</a></li>
+                <li><a href="#"><img src="img/Windranger_icon.png"></img> Windranger</a></li>
+                <li><a href="#"><img src="img/Winter_Wyvern_icon.png"></img> Winter Wyvern</a></li>
+                <li><a href="#"><img src="img/Witch_Doctor_icon.png"></img> Witch Doctor</a></li>
+                <li><a href="#"><img src="img/Wraith_King_icon.png"></img> Wraith King</a></li>
+                <li><a href="#"><img src="img/Zeus_icon.png"></img> Zeus</a></li>
+              </ul>
+            </div>
+          </div><!--/filterbtn-->
+        </div><!--/hero-filter-->
+        <div class="col-xs-3 text-center">
+          <div class="filterlabel">Post Type</div>
+          <div class="filterbtn">
+            <div class="btn-group">
+              <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                All <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">All</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Mechanics</a></li>
+                <li><a href="#">Strategy</a></li>
+                <li><a href="#">Competitive Meta</a></li>
+                <li><a href="#">Guide Idea/Feedback</a></li>
+                <li><a href="#">Item/Hero Build Theorycrafting</a></li>
+              </ul>
+            </div>
+          </div><!--/filterbtn-->
+        </div><!--/type-filter-->
+        <div class="col-xs-3 text-center">
+          <div class="filterlabel">Patch</div>
+          <div class="filterbtn">
+            <div class="btn-group">
+              <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                7.02 <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">7.02</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">7.01</a></li>
+                <li><a href="#">7.00</a></li>
+                <li><a href="#">6.88</a></li>
+                <li><a href="#">6.87 and prior</a></li>
+              </ul>
+            </div>
+          </div><!--/filterbtn-->
+        </div><!--/patch-filter-->
+      </div><!--/controls-->
+      <ul id="forum" class="highlight-panels">
+        <li><a href="/posts/0/700"><b>Patch 7.02 —</b> Reaction/Discussion<div class="pull-right">by freelancefox</div></a>
+        <li><a href="/posts/0/talents"><b>Discussion:</b> Hero Talents Visualized<div class="pull-right">by freelancefox</div></a>
+        <li id="skymage"> <a href="/posts/0/skymage"><b>Feedback:</b> How to Train Your Dragonus: Core Skywrath<div class="pull-right">by freelancefox</div></a>
+        <li id="sking"> <a href="/posts/0/sking"><b>Feedback:</b> Nicely Stung!: Guide to Caustic Sand King<div class="pull-right">by freelancefox</div></a>
+        <li id="corevern"> <a href="/posts/0/corevern"><b>Feedback:</b> Corevern: Core Winter Wyvern<div class="pull-right">by freelancefox</div></a>
+        <li><a href="/posts/0/hc101"><b>Feedback:</b> Hero Concepts 101<div class="pull-right">by freelancefox</div></a>
+        <li><a href="/posts/2/whatto"><b>What to build on So and So:</b> my first post<div class="pull-right">by someone_else</div></a>
+        <li><a href="/posts/3/whatto"><b>What to build on So and So:</b> my first post<div class="pull-right">by anotherone</div></a>
+      </ul>
+    </div><!--/.gameplay-->
+    <div id="concepts" class="tab-pane fade">
+      <div id="controls" class="row">
+        <div class="col-xs-3 col-xs-offset-1-5 text-center" style="min-width:184px;">
+          <div class="filterlabel">Concept Type</div>
+          <div class="filterbtn">
+            <div class="btn-group">
+              <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                All <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">All</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Hero Concepts</a></li>
+                <li><a href="#">Item Concepts</a></li>
+                <li><a href="#">Game Modes</a></li>
+                <li><a href="#">Mechanics</a></li>
+                <li><a href="#">Reworks</a></li>
+              </ul>
+            </div>
+          </div><!--/filterbtn-->
+        </div><!--/concept-type-filter-->
+        <div class="col-xs-3 text-center">
+          <div class="filterlabel">Stage</div>
+          <div class="filterbtn">
+            <div class="btn-group">
+              <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                All <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">All</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Early Idea Stage</a></li>
+                <li><a href="#">Rough Draft/WIP</a></li>
+                <li><a href="#">Polished Concepts</a></li>
+              </ul>
+            </div>
+          </div><!--/filterbtn-->
+        </div><!--/post-type-filter-->
+        <div class="col-xs-3 text-center">
+          <div class="filterlabel">Rating</div>
+          <div class="filterbtn">
+            <div class="btn-group">
+              <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                All <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">All</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">*****</a></li>
+                <li><a href="#">****</a></li>
+                <li><a href="#">***</a></li>
+                <li><a href="#">**</a></li>
+                <li><a href="#">*</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">3 and Above</a></li>
+              </ul>
+            </div>
+          </div><!--/filterbtn-->
+        </div><!--/rating-filter-->
+      </div><!--/controls-->
+      <ul id="forum" class="highlight-panels">
+        <li><a href="/posts/3/filler"><b>Idea:</b> Filler Content, Idea Name Here<div class="pull-right">by someone3</div></a>
+        <li id="goldwing"><a href="/posts/0/goldwing"><b>WIP:</b> Goldwing, the Draken Miser<div class="pull-right">by freelancefox</div></a>
+        <li id="arcturyx"><a href="/posts/0/arcturyx"><b>Feedback:</b> Arcturyx, the Warbird<div class="pull-right">by freelancefox</div></a>
+        <li id="merinth"><a href="/posts/0/merinth"><b>Feedback:</b> Sulliver, the Merinth Tracker<div class="pull-right">by freelancefox</div></a>
+        <li id="antares"><a href="/posts/0/antares"><b>Feedback:</b> Antares, the Stag Archer<div class="pull-right">by freelancefox</div></a>
+        <li id="proteus"><a href="/posts/0/proteus"><b>Feedback:</b> Proteus, the Kraken Spawn<div class="pull-right">by freelancefox</div></a>
+      </ul>
+    </div><!--/.concepts-->
+  </div><!--/.tab-content-->
+
+<footer id="account-nav" class="footer row text-center">
+  <div class="load">
+   <a href="load-more">▼ Load More ▼</a>
+  </div><!--/load-->
+  <ul id="tabs" class="nav nav-tabs">
+    <li style="margin-left: 4px;"><a href="#login">Login</a></li>
+    <li style="margin-left: 4px;"><a href="#profile">Profile</a></li>
+    <li>You are not logged in</li>
+  </ul>
+</footer><!--/.footer-->
+
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function ($) {
+      $('#tabs').tab();
+    });
+  </script>
+</body>

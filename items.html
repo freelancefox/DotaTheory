@@ -215,10 +215,15 @@
       <path id="ultimateorb-skadi" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
       <path id="perseverance-linkens" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
       <path id="ultimateorb-linkens" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
+      <path id="perseverance-bfury" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
+      <path id="qb-bfury" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
+      <path id="broad-bfury" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
+      <path id="clay-bfury" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
       <path id="morbid-mom" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
       <path id="qstaff-mom" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
       <path id="blight-deso" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
       <path id="mithham-deso" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
+      <path id="goh-treads" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
       <path id="goh-mael" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
       <path id="mithham-mael" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
       <path id="goh-armlet" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
@@ -240,19 +245,25 @@
       <path id="hyper-mjoll" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
       <path id="mael-mjoll" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
       <path id="hyper-moonsh" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
+      <path id="reaver-vermcloak" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
+      <path id="mystic-vermcloak" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
+      <path id="eagle-vermcloak" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
     </svg>
   </div>
   <div class="container section-bg text-center">
     <h1>Custom Item Concepts</h1>
-    <div class="row" style="margin-bottom: 12px;">
-      <div class="col-xs-6 col-xs-offset-3">
+    <div class="row" style="margin: 12px 0 24px;">
+      <div class="col-xs-2">
+        <button id="showhide" class="btn btn-main">Hide Custom Items</button>
+      </div><!--/.col-xs-2-->
+      <div class="col-xs-6 col-xs-offset-1">
         <p id="key">Key: <span class="new">New Items</span> <span class="reworked">Reworked Items</span></p>
       </div><!--/.col-xs-6-offset-->
       <div class="col-xs-3">
         <img id="str" src="img/str.png"> <img id="strp" src="img/str_p.png">
         <img id="int" src="img/int.png"> <img id="intp" src="img/int_p.png">
         <img id="agi" src="img/agi.png"> <img id="agip" src="img/agi_p.png">
-      </div><!--/.col-xs-6-->
+      </div><!--/.col-xs-3-->
     </div>
 <div class="row" style="padding: 0 8px; margin: 0;">
   <div class="col-lg-12">
@@ -345,6 +356,62 @@
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-1-->
       <div class="col-xs-1">
+        <div id="courier" class="item-box-1 center-block"
+             rel="popover" data-title="Animal Courier">
+          <img src="img/40px-Animal_Courier_icon.png">
+          <div id="content-courier" class="hide">
+            <p><i>Losing the courier is punishable by death.</i></p>
+            <div class="popover-inset text-center">
+              <div class="popover-line">
+                <img src="img/Gold_symbol.png" height="24px"> 100
+              </div><!--/.popover-line-->
+            </div><!--/.popover-inset-->
+            <p>Active: <i>Deploy Courier</i> – Deploys a creature to carry items to and from your team's base. (120s respawn time, 175 gold team bounty)</p>
+          </div><!--/.popover-content-->
+        </div><!--/.item-box-1-->
+        <div id="flycour" class="item-box-1 center-block"
+             rel="popover" data-title="Flying Courier">
+          <img src="img/40px-Flying_Courier_icon.png">
+          <div id="content-flycour" class="hide">
+            <p><i>The faithful mount upon which soar the fortunes of battle.</i></p>
+            <div class="popover-inset text-center">
+              <div class="popover-line">
+                <img src="img/Gold_symbol.png" height="24px"> 150
+              </div><!--/.popover-line-->
+            </div><!--/.popover-inset-->
+            <p>Active: <i>Upgrade Courier</i> – Upgrades your team's Animal Courier to a Flying Courier, granting it swift, unobstructed movement to carry items to and from your team's base. (Requires a deployed Animal Courier)</p>
+          </div><!--/.popover-content-->
+        </div><!--/.item-box-1-->
+      </div><!--/.col-xs-1-->
+      <div class="col-xs-1">
+        <div id="obsw" class="item-box-1 center-block"
+             rel="popover" data-title="Observer Ward">
+          <img src="img/40px-Observer_Ward_icon.png">
+          <div id="content-obsw" class="hide">
+            <p><i>A form of half-sentient plant, often cultivated by apprentice wizards.</i></p>
+            <div class="popover-inset text-center">
+              <div class="popover-line">
+                <img src="img/Gold_symbol.png" height="24px"> 60
+              </div><!--/.popover-line-->
+            </div><!--/.popover-inset-->
+            <p>Active: <i>Place Observer Ward</i> – Plants an Observer Ward, an invisible watcher that gives vision of its surrounding area to your team. Lasts 6 minutes. Hold Control to give one Observer Ward to an allied hero. (500 cast range, 1600 vision, 360s duration) [2 stock initially, 4 stock max, 150s restock time]. <img src="img/cd.png"> 1s</p>
+          </div><!--/.popover-content-->
+        </div><!--/.item-box-1-->
+        <div id="sentryw" class="item-box-1 center-block"
+             rel="popover" data-title="Sentry Ward">
+          <img src="img/40px-Sentry_Ward_icon.png">
+          <div id="content-sentryw" class="hide">
+            <p><i>A form of plant originally grown in the garden of a fearful king.</i></p>
+            <div class="popover-inset text-center">
+              <div class="popover-line">
+                <img src="img/Gold_symbol.png" height="24px"> 100
+              </div><!--/.popover-line-->
+            </div><!--/.popover-inset-->
+            <p>Active: <i>Place Sentry Ward</i> – Plants a Sentry Ward, an invisible watcher that grants True Sight, the ability to see invisible enemy units and wards, to any existing allied vision within its range. Lasts 4 minutes. Hold Control to give one Sentry Ward to an allied hero. (500 cast range, 850 vision, 240s duration) <img src="img/cd.png"> 1s</p>
+          </div><!--/.popover-content-->
+        </div><!--/.item-box-1-->
+      </div><!--/.col-xs-1-->
+      <div class="col-xs-1">
         <div id="dust" class="item-box-1 center-block"
              rel="popover" data-title="Dust of Appearance">
           <img src="img/40px-Dust_of_Appearance_icon.png">
@@ -373,86 +440,30 @@
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-1-->
       <div class="col-xs-1">
-        <div id="obsw" class="item-box-1 center-block"
-             rel="popover" data-title="Observer Ward">
-          <img src="img/40px-Observer_Ward_icon.png">
-          <div id="content-obsw" class="hide">
-            <p><i></i></p>
-            <div class="popover-inset text-center">
-              <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 60
-              </div><!--/.popover-line-->
-            </div><!--/.popover-inset-->
-            <p>Active: <i>Place Observer Ward</i> – Plants an Observer Ward, an invisible watcher that gives vision of its surrounding area to your team. Lasts 6 minutes. Hold Control to give one Observer Ward to an allied hero.(500 cast range, 1600 vision, 360s duration) [2 stock initially, 4 stock max, 150s restock time]. <img src="img/cd.png"> 1s</p>
-          </div><!--/.popover-content-->
-        </div><!--/.item-box-1-->
-        <div id="sentryw" class="item-box-1 center-block"
-             rel="popover" data-title="Sentry Ward">
-          <img src="img/40px-Sentry_Ward_icon.png">
-          <div id="content-sentryw" class="hide">
-            <p><i></i></p>
-            <div class="popover-inset text-center">
-              <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 
-              </div><!--/.popover-line-->
-            </div><!--/.popover-inset-->
-            <p></p>
-          </div><!--/.popover-content-->
-        </div><!--/.item-box-1-->
-      </div><!--/.col-xs-1-->
-      <div class="col-xs-1">
-        <div id="courier" class="item-box-1 center-block"
-             rel="popover" data-title="Animal Courier">
-          <img src="img/40px-Animal_Courier_icon.png">
-          <div id="content-courier" class="hide">
-            <p><i></i></p>
-            <div class="popover-inset text-center">
-              <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 
-              </div><!--/.popover-line-->
-            </div><!--/.popover-inset-->
-            <p></p>
-          </div><!--/.popover-content-->
-        </div><!--/.item-box-1-->
-        <div id="flycour" class="item-box-1 center-block"
-             rel="popover" data-title="Flying Courier">
-          <img src="img/40px-Flying_Courier_icon.png">
-          <div id="content-flycour" class="hide">
-            <p><i></i></p>
-            <div class="popover-inset text-center">
-              <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 
-              </div><!--/.popover-line-->
-            </div><!--/.popover-inset-->
-            <p></p>
-          </div><!--/.popover-content-->
-        </div><!--/.item-box-1-->
-      </div><!--/.col-xs-1-->
-      <div class="col-xs-1">
         <div id="gem" class="item-box-1 center-block"
              rel="popover" data-title="Gem of True Sight">
           <img src="img/40px-Gem_of_True_Sight_icon.png">
           <div id="content-gem" class="hide">
-            <p><i></i></p>
+            <p><i>Not one thrall creature of the depths, Nor spirit bound in drowning's keep, Nor Maelrawn the Tentacular, Shall rest till seas, gem comes to sleep.</i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
                 <img src="img/Gold_symbol.png" height="24px"> 900
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
-            <p></p>
+            <p>Passive: <i>True Sight</i> – Adds the ability to see invisible units and wards to any allied vision within its carrier's range. (900 radius, drops on death)</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
         <div id="tome" class="item-box-1 center-block"
              rel="popover" data-title="Tome of Knowledge">
           <img src="img/40px-Tome_of_Knowledge_icon.png">
           <div id="content-tome" class="hide">
-            <p><i></i></p>
+            <p><i>That which raises beast to man and man to god.</i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 
+                <img src="img/Gold_symbol.png" height="24px"> 150
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
-            <p></p>
+            <p>Active: <i>Acquire Knowledge</i> – Grants you 500 experience plus 135 per tome consumed by your team.</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-1-->
@@ -461,13 +472,13 @@
              rel="popover" data-title="Town Portal Scroll">
           <img src="img/40px-Town_Portal_Scroll_icon.png">
           <div id="content-tpscr" class="hide">
-            <p><i></i></p>
+            <p><i>What a hero truly needs.</i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 
+                <img src="img/Gold_symbol.png" height="24px"> 50
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
-            <p></p>
+            <p>Active: <i>Teleport</i> – Teleports you to a target friendly building. Double-click to teleport to your team's base fountain. (3s channel time, 5s for 2nd teleport to same structure, +0.5s for each additional). <img src="img/cd.png"> 80s <img src="img/mana.png"> 75</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-1-->
@@ -476,13 +487,13 @@
              rel="popover" data-title="Bottle">
           <img src="img/40px-Bottle_icon.png">
           <div id="content-bottle" class="hide">
-            <p><i></i></p>
+            <p><i>An old bottle that survived the ages, the contents placed inside become enchanted.</i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 
+                <img src="img/Gold_symbol.png" height="24px"> 650
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
-            <p></p>
+            <p>Active: <i>Regenerate</i> – Consumes a charge to restore Health and Mana over time. Healing stops if attacked. Bottle can be refilled at your team's fountain. If Bottle does not have full charges and is placed on a courier, the courier will move 30% slower. Hold control to use Regenerate on an allied hero. (600 cast range, holds 3 charges, 90 health/60 mana per charge, 2.5s duration) <img src="img/cd.png"> 0.5s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-1-->
@@ -491,45 +502,45 @@
              rel="popover" data-title="Blink Dagger">
           <img src="img/40px-Blink_Dagger_icon.png">
           <div id="content-blink" class="hide">
-            <p><i></i></p>
+            <p><i>The fabled dagger used by the fastest assassin ever to walk the lands.</i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 
+                <img src="img/Gold_symbol.png" height="24px"> 2,250
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
-            <p></p>
+            <p>Active: <i>Blink</i> – Teleport to a target point up to 1200 units away. If damage is taken, Blink Dagger cannot be used for 3 seconds. (960 penalty blink range for clicking to far) <img src="img/cd.png"> 12s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-1-->
     </div><!--/.row-->
   </div><!--/.col-lg-12-->
-  <div class="col-lg-3 flip-lg">
+  <div class="col-lg-35 col-lg-3 flip-lg outer">
     <div class="row">
       <div class="col-xs-4">
         <div id="ror" class="item-box-1 center-block"
              rel="popover" data-title="Ring of Regen">
           <img src="img/40px-Ring_of_Regen_icon.png">
           <div id="content-ror" class="hide">
-            <p><i></i></p>
+            <p><i>This ring is considered a good luck charm among the Gnomes.</i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 
+                <img src="img/Gold_symbol.png" height="24px"> 325
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
-            <p></p>
+            <p>+2 Health Regen</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
         <div id="sage" class="item-box-1 center-block"
              rel="popover" data-title="Sage's Mask">
           <img src="img/40px-Sage's_Mask_icon.png">
           <div id="content-sage" class="hide">
-            <p><i></i></p>
+            <p><i>A mask commonly used by mages and warlocks for various rituals.</i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 
+                <img src="img/Gold_symbol.png" height="24px"> 325
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
-            <p></p>
+            <p>+50% Mana Regen</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
@@ -538,26 +549,26 @@
              rel="popover" data-title="Ring of Health">
           <img src="img/40px-Ring_of_Health_icon.png">
           <div id="content-roh" class="hide">
-            <p><i></i></p>
+            <p><i>A shiny ring found beneath a fat halfling's corpse.</i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 
+                <img src="img/Gold_symbol.png" height="24px"> 850
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
-            <p></p>
+            <p>+6 Health Regen</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
         <div id="void" class="item-box-1 center-block"
              rel="popover" data-title="Void Stone">
           <img src="img/40px-Void_Stone_icon.png">
           <div id="content-void" class="hide">
-            <p><i></i></p>
+            <p><i>Jewelry that was once used to channel nether realm magic, this ring pulses with energy.</i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 
+                <img src="img/Gold_symbol.png" height="24px"> 850
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
-            <p></p>
+            <p>+100% Mana Regen</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
@@ -566,29 +577,115 @@
              rel="popover" data-title="Magic Stick">
           <img src="img/40px-Magic_Stick_icon.png">
           <div id="content-stick" class="hide">
-            <p><i></i></p>
+            <p><i>A simple wand used to channel magic energies, it is favored by apprentice wizards and great warlocks alike.</i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 
+                <img src="img/Gold_symbol.png" height="24px"> 200
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
-            <p></p>
+            <p>Active: <i>Energy Charge</i> – Instantly restores health and mana based on the number of charges stored. Gains a charge whenever a nearby visible enemy uses an ability (10 max charges, 15 health/mana per charge, 1200 radius). <img src="img/cd.png"> 13s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
         <div id="stout" class="item-box-1 center-block"
              rel="popover" data-title="Stout Shield">
           <img src="img/40px-Stout_Shield_icon.png">
           <div id="content-stout" class="hide">
-            <p><i></i></p>
+            <p><i>One man's wine barrel bottom is another man's shield.</i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 
+                <img src="img/Gold_symbol.png" height="24px"> 200
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
-            <p></p>
+            <p>Passive: <i>Damage Block</i> – Gives a chance to block damage based on whether the equipped hero is melee or ranged (16/8 damage blocked for melee/ranged heroes, 50% proc chance).</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
+    </div><!--/.row-->
+    <div class="row">
+      <div class="col-xs-6">
+        <div id="vit" class="item-box-1 center-block"
+             rel="popover" data-title="Vitality Booster">
+          <img src="img/40px-Vitality_Booster_icon.png">
+          <div id="content-vit" class="hide">
+            <p><i>A ruby gemstone that has been passed down through generations of warrior kin.</i></p>
+            <div class="popover-inset text-center">
+              <div class="popover-line">
+                <img src="img/Gold_symbol.png" height="24px"> 1,100
+              </div><!--/.popover-line-->
+            </div><!--/.popover-inset-->
+            <p>+250 Health</p>
+          </div><!--/.popover-content-->
+        </div><!--/.item-box-1-->
+        <div id="energy" class="item-box-1 center-block"
+             rel="popover" data-title="Energy Booster">
+          <img src="img/40px-Energy_Booster_icon.png">
+          <div id="content-energy" class="hide">
+            <p><i>This lapis gemstone is commonly added to the collection of wizards seeking to improve their presence in combat.</i></p>
+            <div class="popover-inset text-center">
+              <div class="popover-line">
+                <img src="img/Gold_symbol.png" height="24px"> 900
+              </div><!--/.popover-line-->
+            </div><!--/.popover-inset-->
+            <p>+250 Mana</p>
+          </div><!--/.popover-content-->
+        </div><!--/.item-box-1-->
+        <div id="pb" class="item-box-1 center-block"
+             rel="popover" data-title="Point Booster">
+          <img src="img/40px-Point_Booster_icon.png">
+          <div id="content-pb" class="hide">
+            <p><i>A perfectly formed amethyst that nourishes body and mind when held.</i></p>
+            <div class="popover-inset text-center">
+              <div class="popover-line">
+                <img src="img/Gold_symbol.png" height="24px"> 1,200
+              </div><!--/.popover-line-->
+            </div><!--/.popover-inset-->
+            <p>+175 Health</p>
+            <p>+175 Mana</p>
+          </div><!--/.popover-content-->
+        </div><!--/.item-box-1-->
+      </div><!--/.col-xs-6-->
+      <div class="col-xs-6">
+        <div id="rop" class="item-box-1 center-block"
+             rel="popover" data-title="Ring of Protection">
+          <img src="img/40px-Ring_of_Protection_icon.png">
+          <div id="content-rop" class="hide">
+            <p><i>A glimmering ring that defends its bearer.</i></p>
+            <div class="popover-inset text-center">
+              <div class="popover-line">
+                <img src="img/Gold_symbol.png" height="24px"> 175
+              </div><!--/.popover-line-->
+            </div><!--/.popover-inset-->
+            <p>+2 Armor</p>
+          </div><!--/.popover-content-->
+        </div><!--/.item-box-1-->
+        <div id="chainmail" class="item-box-1 center-block"
+             rel="popover" data-title="Chainmail">
+          <img src="img/40px-Chainmail_icon.png">
+          <div id="content-chainmail" class="hide">
+            <p><i>A medium weave of metal chains.</i></p>
+            <div class="popover-inset text-center">
+              <div class="popover-line">
+                <img src="img/Gold_symbol.png" height="24px"> 550
+              </div><!--/.popover-line-->
+            </div><!--/.popover-inset-->
+            <p>+5 Armor</p>
+          </div><!--/.popover-content-->
+        </div><!--/.item-box-1-->
+        <div id="hoiw" class="item-box-1 center-block"
+             rel="popover" data-title="Helm of Iron Will">
+          <img src="img/40px-Helm_of_Iron_Will_icon.png">
+          <div id="content-hoiw" class="hide">
+            <p><i>The helmet of a legendary warrior who fell in battle.</i></p>
+            <div class="popover-inset text-center">
+              <div class="popover-line">
+                <img src="img/Gold_symbol.png" height="24px"> 900
+              </div><!--/.popover-line-->
+            </div><!--/.popover-inset-->
+            <p>+5 Armor</p>
+            <p>+3 Health Regen</p>
+          </div><!--/.popover-content-->
+        </div><!--/.item-box-1-->
+      </div><!--/.col-xs-6-->
     </div><!--/.row-->
     <div class="row">
       <div class="col-xs-4">
@@ -596,215 +693,115 @@
              rel="popover" data-title="Soul Ring">
           <img src="img/40px-Soul_Ring_icon.png">
           <div id="content-soulring" class="hide">
-            <p><i></i></p>
+            <p><i>A ring that feeds on the souls of those who wear it.</i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 
+                <img src="img/40px-Ring_of_Regen_icon.png"> 325 +
+                <img src="img/40px-Sage's_Mask_icon.png"> 325 +
+                <img src="img/40px-Enchanted_Mango_icon.png"> 100
+                = <img src="img/40px-Soul_Ring_icon.png"> 750
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
-            <p></p>
+            <p>+3 Health Regen</p>
+            <p>+50% Mana Regen</p>
+            <p>Active: <i>Sacrifice</i> – Consume 150 health to temporarily gain 150 mana. Lasts 10 seconds. <img src="img/cd.png"> 30s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
-      <div class="col-xs-4">
+      <div class="col-xs-2 col-xs-offset-1">
         <div id="perseverance" class="item-box-1 center-block"
              rel="popover" data-title="Perseverance">
           <img src="img/40px-Perseverance_icon.png">
           <div id="content-perseverance" class="hide">
-            <p><i></i></p>
+            <p><i>A gem that grants heart to the bearer.</i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 
+                <img src="img/40px-Ring_of_Health_icon.png"> 850 +
+                <img src="img/40px-Void_Stone_icon.png"> 850
+                = <img src="img/40px-Perseverance_icon.png"> 1,700
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
-            <p></p>
+            <p>+6 Health Regen</p>
+            <p>+125% Mana Regen</p>
+            <p>+10 Damage</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-      </div><!--/.col-xs-4-->
-      <div class="col-xs-4">
-        <div id="branch" class="item-box-1 center-block"
-             rel="popover" data-title="Iron Branch">
-          <img src="img/40px-Iron_Branch_icon.png">
-          <div id="content-branch" class="hide">
-            <p><i></i></p>
-            <div class="popover-inset text-center">
-              <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 
-              </div><!--/.popover-line-->
-            </div><!--/.popover-inset-->
-            <p></p>
-          </div><!--/.popover-content-->
-        </div><!--/.item-box-1-->
-        <div id="circlet" class="item-box-1 center-block"
-             rel="popover" data-title="Circlet">
-          <img src="img/40px-Circlet_icon.png">
-          <div id="content-circlet" class="hide">
-            <p><i></i></p>
-            <div class="popover-inset text-center">
-              <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 
-              </div><!--/.popover-line-->
-            </div><!--/.popover-inset-->
-            <p></p>
-          </div><!--/.popover-content-->
-        </div><!--/.item-box-1-->
-      </div><!--/.col-xs-4-->
-    </div><!--/.row-->
-    <div class="row">
-      <div class="col-xs-4">
-        <div id="vit" class="item-box-1 center-block"
-             rel="popover" data-title="Vitality Booster">
-          <img src="img/40px-Vitality_Booster_icon.png">
-          <div id="content-vit" class="hide">
-            <p><i></i></p>
-            <div class="popover-inset text-center">
-              <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 
-              </div><!--/.popover-line-->
-            </div><!--/.popover-inset-->
-            <p></p>
-          </div><!--/.popover-content-->
-        </div><!--/.item-box-1-->
-        <div id="energy" class="item-box-1 center-block"
-             rel="popover" data-title="Energy Booster">
-          <img src="img/40px-Energy_Booster_icon.png">
-          <div id="content-energy" class="hide">
-            <p><i></i></p>
-            <div class="popover-inset text-center">
-              <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 
-              </div><!--/.popover-line-->
-            </div><!--/.popover-inset-->
-            <p></p>
-          </div><!--/.popover-content-->
-        </div><!--/.item-box-1-->
-        <div id="pb" class="item-box-1 center-block"
-             rel="popover" data-title="Point Booster">
-          <img src="img/40px-Point_Booster_icon.png">
-          <div id="content-pb" class="hide">
-            <p><i></i></p>
-            <div class="popover-inset text-center">
-              <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 
-              </div><!--/.popover-line-->
-            </div><!--/.popover-inset-->
-            <p></p>
-          </div><!--/.popover-content-->
-        </div><!--/.item-box-1-->
-      </div><!--/.col-xs-4-->
-      <div class="col-xs-4">
+      </div><!--/.col-xs-2-offset-->
+      <div class="col-xs-5">
         <div id="talisman" class="item-box-1 center-block"
              rel="popover" data-title="Talisman of Evasion">
           <img src="img/40px-Talisman_of_Evasion_icon.png">
           <div id="content-talisman" class="hide">
-            <p><i></i></p>
+            <p><i>A necklace that allows you to anticipate enemy attacks.</i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 
+                <img src="img/Gold_symbol.png" height="24px"> 1,450
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
-            <p></p>
+            <p>+20% Evasion</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
         <div id="cloak" class="item-box-1 center-block"
              rel="popover" data-title="Cloak">
           <img src="img/40px-Cloak_icon.png">
           <div id="content-cloak" class="hide">
-            <p><i></i></p>
+            <p><i>A cloak made of a magical material that works to dispel any magic cast on it.</i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 
+                <img src="img/Gold_symbol.png" height="24px"> 550
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
-            <p></p>
+            <p>+15% Magic Resistance</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-      </div><!--/.col-xs-4-->
-      <div class="col-xs-4">
-        <div id="rop" class="item-box-1 center-block"
-             rel="popover" data-title="Ring of Protection">
-          <img src="img/40px-Ring_of_Protection_icon.png">
-          <div id="content-rop" class="hide">
-            <p><i></i></p>
-            <div class="popover-inset text-center">
-              <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 
-              </div><!--/.popover-line-->
-            </div><!--/.popover-inset-->
-            <p></p>
-          </div><!--/.popover-content-->
-        </div><!--/.item-box-1-->
-        <div id="chainmail" class="item-box-1 center-block"
-             rel="popover" data-title="Chainmail">
-          <img src="img/40px-Chainmail_icon.png">
-          <div id="content-chainmail" class="hide">
-            <p><i></i></p>
-            <div class="popover-inset text-center">
-              <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 
-              </div><!--/.popover-line-->
-            </div><!--/.popover-inset-->
-            <p></p>
-          </div><!--/.popover-content-->
-        </div><!--/.item-box-1-->
-      </div><!--/.col-xs-4-->
+      </div><!--/.col-xs-5-->
     </div><!--/.row-->
     <div class="row">
-      <div class="col-xs-2 col-xs-offset-1">
-        <div id="soulbooster" class="item-box-1 center-block"
-             rel="popover" data-title="Soul Booster">
-          <img src="img/40px-Soul_Booster_icon.png">
-          <div id="content-soulbooster" class="hide">
-            <p><i></i></p>
-            <div class="popover-inset text-center">
-              <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 
-              </div><!--/.popover-line-->
-            </div><!--/.popover-inset-->
-            <p></p>
-          </div><!--/.popover-content-->
-        </div><!--/.item-box-1-->
-      </div><!--/.col-xs-2-offset-->
-      <div class="col-xs-1">
+      <div class="col-xs-3 col-xs-offset-1">
         <div id="aether" class="item-box-1 center-block"
              rel="popover" data-title="Aether Lens">
           <img src="img/40px-Aether_Lens_icon.png">
           <div id="content-aether" class="hide">
-            <p><i></i></p>
+            <p><i>Polished with the incantation of his final breath, the gift of a dying mage to his sickly son.</i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 
+                <img src="img/40px-Void_Stone_icon.png"> 850 +
+                <img src="img/40px-Energy_Booster_icon.png"> 900 +
+                <img src="img/40px-Recipe_Scroll_icon.png"> 600
+                = <img src="img/40px-Aether_Lens_icon.png"> 2,350
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
-            <p></p>
+            <p>+250 Mana</p>
+            <p>+100% Mana Regen</p>
+            <p>+6% Spell Amplification</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-      </div><!--/.col-xs-1-->
+      </div><!--/.col-xs-4-->
       <div class="col-xs-4">
         <div id="lace" class="item-box-1 center-block"
              rel="popover" data-title="Wind Lace">
           <img src="img/40px-Wind_Lace_icon.png">
           <div id="content-lace" class="hide">
-            <p><i></i></p>
+            <p><i>Hasten to battle on wind-touched heels.</i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 
+                <img src="img/Gold_symbol.png" height="24px"> 250
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
-            <p></p>
+            <p>+20 Movement Speed</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
         <div id="boots" class="item-box-1 center-block"
              rel="popover" data-title="Boots of Speed">
           <img src="img/40px-Boots_of_Speed_icon.png">
-          <div id="content-lace" class="hide">
-            <p><i></i></p>
+          <div id="content-boots" class="hide">
+            <p><i>Fleet footwear, increasing movement.</i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 
+                <img src="img/Gold_symbol.png" height="24px"> 400
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
-            <p></p>
+            <p>+45 Movement Speed</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
@@ -813,123 +810,176 @@
              rel="popover" data-title="Magic Wand">
           <img src="img/40px-Magic_Wand_icon.png">
           <div id="content-wand" class="hide">
-            <p><i></i></p>
+            <p><i>A simple wand used to channel magic energies, it is favored by apprentice wizards and great warlocks alike.</i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 
+                <img src="img/40px-Magic_Stick_icon.png"> 200 +
+                <img src="img/40px-Iron_Branch_icon.png"> 50 +
+                <img src="img/40px-Iron_Branch_icon.png"> 50 +
+                <img src="img/40px-Circlet_icon.png"> 165
+                = <img src="img/40px-Magic_Wand_icon.png"> 465
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
-            <p></p>
+            <p>+4 All Stats (+80 health, +0.24 health regen, +0.56 armor, +4 attack speed, +44 mana, +0.16 mana regen, +0.28% spell damage, +4 damage)</p>
+            <p>Active: <i>Energy Charge</i> – Instantly restores health and mana based on the number of charges stored. Gains a charge whenever a nearby visible enemy uses an ability (17 max charges, 15 health/mana per charge, 1200 radius).  <img src="img/cd.png"> 13s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
         <div id="talon" class="item-box-1 center-block"
              rel="popover" data-title="Iron Talon">
           <img src="img/40px-Iron_Talon_icon.png">
           <div id="content-talon" class="hide">
-            <p><i></i></p>
+            <p><i>A simple but effective weapon devised to quell a great Hellbear uprising.</i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 
+                <img src="img/40px-Quelling_Blade_icon.png"> 200 +
+                <img src="img/40px-Ring_of_Protection_icon.png"> 175 +
+                <img src="img/40px-Recipe_Scroll_icon.png"> 125
+                = <img src="img/40px-Iron_Talon_icon.png"> 500
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
-            <p></p>
+            <p>+2 Armor</p>
+            <p>Quell: +24 Damage Melee / +7 Ranged (damage to creeps ONLY)</p>
+            <p>Active: <i>Chop</i> – Targets a non-player enemy unit to remove 40% of its current health. (350 cast range trees/units, 450 cast range wards). <img src="img/cd.png"> 20s units/4s ward/trees</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
     </div><!--/.row-->
     <div class="row">
-      <div class="col-xs-4">
-        <div id="bloodstone" class="item-box-1 center-block"
-             rel="popover" data-title="Bloodstone">
-          <img src="img/40px-Bloodstone_icon.png">
-          <div id="content-bloodstone" class="hide">
-            <p><i></i></p>
+      <div class="col-xs-6">
+        <div id="soulbooster" class="item-box-1 center-block"
+             rel="popover" data-title="Soul Booster">
+          <img src="img/40px-Soul_Booster_icon.png">
+          <div id="content-soulbooster" class="hide">
+            <p><i>Regain lost courage.</i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 
+                <img src="img/40px-Vitality_Booster_icon.png"> 1,100 +
+                <img src="img/40px-Energy_Booster_icon.png"> 900 +
+                <img src="img/40px-Point_Booster_icon.png"> 1,200
+                = <img src="img/40px-Soul_Booster_icon.png"> 3,200
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
-            <p></p>
+            <p>+425 Health</p>
+            <p>+425 Mana</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-      </div><!--/.col-xs-4-->
-      <div class="col-xs-4">
-        
-      </div><!--/.col-xs-4-->
-      <div class="col-xs-4">
+      </div><!--/.col-xs-6-->
+      <div class="col-xs-6">
         <div id="urn" class="item-box-1 center-block"
              rel="popover" data-title="Urn of Shadows">
           <img src="img/40px-Urn_of_Shadows_icon.png">
           <div id="content-urn" class="hide">
-            <p><i></i></p>
+            <p><i>Contains the ashes of powerful demons.</i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 
+                <img src="img/40px-Ring_of_Protection_icon.png"> 175 +
+                <img src="img/40px-Infused_Raindrops_icon.png"> 225 +
+                <img src="img/40px-Circlet_icon.png"> 165 +
+                <img src="img/40px-Recipe_Scroll_icon.png"> 310
+                = <img src="img/40px-Urn_of_Shadows_icon.png"> 875
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
-            <p></p>
+            <p>+2 All Stats (+40 health, +0.12 health regen, +0.28 armor, +2 attack speed, +22 mana, +0.08 mana regen, +0.14% spell damage, +2 damage)</p>
+            <p>+1 Mana Regen (+1.08 total)</p>
+            <p>+2 Armor (+2.28 total)</p>
+            <p>Active: <i>Soul Release</i> – Heals health over time to friendly units, but deals pure damage over time to enemy units. The healing effect is lost if the affected ally takes damage from an enemy hero. Gains charges every time an enemy hero dies within 1400 range. Only the closest Urn to the dying hero will gain a charge (950 cast range, 400 ally heal, 150 damage enemies, 8s duration). <img src="img/cd.png"> 7s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
         <div id="moc" class="item-box-1 center-block"
              rel="popover" data-title="Medallion of Courage">
           <img src="img/40px-Medallion_of_Courage_icon.png">
           <div id="content-moc" class="hide">
-            <p><i></i></p>
+            <p><i>The bearer has no fear of combat.</i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 
+                <img src="img/40px-Chainmail_icon.png"> 550 +
+                <img src="img/40px-Sage's_Mask_icon.png"> 325 +
+                <img src="img/40px-Blight_Stone_icon.png"> 300
+                = <img src="img/40px-Medallion_of_Courage_icon.png"> 1,175
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
-            <p></p>
+            <p>+50% Mana Regen</p>
+            <p>+7 Armor</p>
+            <p>Active: <i>Valor</i> – If cast on an ally, increases their armor while reducing the caster's. If cast on an enemy, reduces the armor of both the enemy and the caster. Cannot target magic immune enemieas (1000 cast range, +/-7 armor bonus/reduction, 7s duration). <img src="img/cd.png"> 7s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
         <div id="basi" class="item-box-1 center-block"
              rel="popover" data-title="Ring of Basilius">
           <img src="img/40px-Ring_of_Basilius_icon.png">
           <div id="content-basi" class="hide">
-            <p><i></i></p>
+            <p><i>Ring given as a reward to the greatest mages.</i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 
+                <img src="img/40px-Ring_of_Protection_icon.png"> 175 +
+                <img src="img/40px-Sage's_Mask_icon.png"> 325
+                = <img src="img/40px-Ring_of_Basilius_icon.png"> 500
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
-            <p></p>
+            <p>+7 Damage</p>
+            <p>Aura: <i>Basilius Aura</i> – Grants +0.65 mana regeneration and +2 armor in a 900 area of effect. Toggle whether the aura affects other non-hero units. Multiple instances of Basilius Aura do not stack. <img src="img/cd.png"> 0s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-      </div><!--/.col-xs-4-->
+      </div><!--/.col-xs-6-->
     </div><!--/.row-->
     <div class="row">
-      <div class="col-xs-2 col-xs-offset-2">
-        <div id="arcane" class="item-box-1 center-block"
-             rel="popover" data-title="Arcane Boots">
-          <img src="img/40px-Arcane_Boots_icon.png">
-          <div id="content-arcane" class="hide">
-            <p><i></i></p>
+      <div class="col-xs-10 col-xs-offset-1">
+        <div id="bots" class="item-box-1 center-block"
+             rel="popover" data-title="Boots of Travel">
+          <img src="img/40px-Boots_of_Travel_icon.png">
+          <div id="content-bots" class="hide">
+            <p><i>Winged boots that grant omnipresence.</i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 
+                <img src="img/40px-Boots_of_Speed_icon.png"> 400 +
+                <img src="img/40px-Recipe_Scroll_icon.png"> 2,000
+                = <img src="img/40px-Boots_of_Travel_icon.png"> 2,400
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
-            <p></p>
+            <p>+100 Movement Speed</p>
+            <p>Active: <i>Teleport</i> – Teleports you to an allied non-hero unit or structure. Upgradable to allow you to teleport to allied heroes (3s channel time). <img src="img/cd.png"> 60s <img src="img/mana.png"> 75</p>
+            <div class="popover-inset text-center">
+              <div class="popover-line">
+                + <img src="img/40px-Recipe_Scroll_icon.png"> 2,000
+                = <img src="img/40px-Boots_of_Travel_2_icon.png"> 4,400
+              </div><!--/.popover-line-->
+            </div><!--/.popover-inset-->
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-      </div><!--/.col-xs-2-offset-->
-      <div class="col-xs-2">
         <div id="tranquil" class="item-box-1 center-block"
              rel="popover" data-title="Tranquil Boots">
           <img src="img/40px-Tranquil_Boots_icon.png">
           <div id="content-tranquil" class="hide">
-            <p><i></i></p>
+            <p><i>While they increase the longevity of the wearer, this boot is not particularly reliable.</i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 
+                <img src="img/40px-Boots_of_Speed_icon.png"> 400 +
+                <img src="img/40px-Wind_Lace_icon.png"> 250 +
+                <img src="img/40px-Ring_of_Regen_icon.png"> 325
+                = <img src="img/40px-Boots_of_Travel_icon.png"> 975
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
-            <p></p>
+            <p>+14 Health Regen</p>
+            <p>+90 Movement Speed</p>
+            <p>Passive: <i>Break</i> – Whenever you attack or are attacked, lose the +14 health regeneration and 25 movement speed for 13 seconds. <img src="img/cd.png"> 13s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-      </div><!--/.col-xs-2-->
-      <div class="col-xs-2">
+        <div id="arcane" class="item-box-1 center-block"
+             rel="popover" data-title="Arcane Boots">
+          <img src="img/40px-Arcane_Boots_icon.png">
+          <div id="content-arcane" class="hide">
+            <p><i>Magi equipped with these boots are valued in battle.</i></p>
+            <div class="popover-inset text-center">
+              <div class="popover-line">
+                <img src="img/40px-Boots_of_Speed_icon.png"> 400 +
+                <img src="img/40px-Energy_Booster_icon.png"> 900
+                = <img src="img/40px-Arcane_Boots_icon.png"> 1,300
+              </div><!--/.popover-line-->
+            </div><!--/.popover-inset-->
+            <p>+250 Mana</p>
+            <p>+50 Movement Speed</p>
+            <p>Active: <i>Replenish Mana</i> – Restores mana to all allies in a 900 area around the hero (900 radius, 135 mana restored). <img src="img/cd.png"> 55s</p>
+          </div><!--/.popover-content-->
+        </div><!--/.item-box-1-->
         <div id="treads" class="item-box-1 center-block"
              rel="popover" data-title="Power Treads">
           <img src="img/40px-Power_Treads_icon.png">
@@ -937,14 +987,17 @@
             <p><i></i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 
+                <img src="img/40px-Boots_of_Speed_icon.png"> 400 +
+                (<img src="img/40px-Belt_of_Strength_icon.png"> or
+                <img src="img/40px-Robe_of_the_Magi_icon.png"> or
+                <img src="img/40px-Band_of_Elvenskin_icon.png">) 450 +
+                <img src="img/40px-Gloves_of_Haste_icon.png"> 500
+                = <img src="img/40px-Power_Treads_icon.png"> 1,350
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
             <p></p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-      </div><!--/.col-xs-2-->
-      <div class="col-xs-2">
         <div id="phase" class="item-box-1 center-block"
              rel="popover" data-title="Phase Boots">
           <img src="img/40px-Phase_Boots_icon.png">
@@ -952,29 +1005,19 @@
             <p><i></i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 
+                <img src="img/40px-Boots_of_Speed_icon.png"> 400 +
+                <img src="img/40px-Blades_of_Attack_icon.png"> 420 +
+                <img src="img/40px-Blades_of_Attack_icon.png"> 420
+                = <img src="img/40px-Phase_Boots_icon.png"> 1,240
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
             <p></p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-      </div><!--/.col-xs-2-->
+      </div><!--/.col-xs-10-offset-->
     </div><!--/.row-->
     <div class="row">
       <div class="col-xs-4">
-        <div id="bots" class="item-box-1 center-block"
-             rel="popover" data-title="Boots of Travel">
-          <img src="img/40px-Boots_of_Travel_icon.png">
-          <div id="content-bots" class="hide">
-            <p><i></i></p>
-            <div class="popover-inset text-center">
-              <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 
-              </div><!--/.popover-line-->
-            </div><!--/.popover-inset-->
-            <p></p>
-          </div><!--/.popover-content-->
-        </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
       <div class="col-xs-4">
         <div id="buckler" class="item-box-1 center-block"
@@ -1004,7 +1047,7 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
-      <div class="col-xs-4">
+      <div class="col-xs-3">
         <div id="solar" class="item-box-1 center-block"
              rel="popover" data-title="Solar Crest">
           <img src="img/40px-Solar_Crest_icon.png">
@@ -1031,7 +1074,7 @@
             <p></p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-      </div><!--/.col-xs-4-->
+      </div><!--/.col-xs-3-->
     </div><!--/.row-->
     <div class="row">
       <div class="col-xs-3">
@@ -1131,6 +1174,19 @@
     </div><!--/.row-->
     <div class="row">
       <div class="col-xs-4">
+        <div id="bloodstone" class="item-box-1 center-block"
+             rel="popover" data-title="Bloodstone">
+          <img src="img/40px-Bloodstone_icon.png">
+          <div id="content-bloodstone" class="hide">
+            <p><i></i></p>
+            <div class="popover-inset text-center">
+              <div class="popover-line">
+                <img src="img/Gold_symbol.png" height="24px"> 
+              </div><!--/.popover-line-->
+            </div><!--/.popover-inset-->
+            <p></p>
+          </div><!--/.popover-content-->
+        </div><!--/.item-box-1-->
         <div id="refresher" class="item-box-1 center-block"
              rel="popover" data-title="Refresher Orb">
           <img src="img/40px-Refresher_Orb_icon.png">
@@ -1215,8 +1271,8 @@
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
     </div><!--/.row-->
-  </div><!--/.col-lg-3-->
-  <div id="middle" class="col-lg-6">
+  </div><!--/.col-lg-35-->
+  <div class="col-lg-5 middle">
     <div class="row">
       <div class="col-xs-4 col-xs-offset-2">
         <div id="belt" class="item-box-1 center-block"
@@ -1302,7 +1358,7 @@
       </div><!--/.col-xs-4-->
     </div><!--/.row-->
     <div class="row">
-      <div class="col-xs-4">
+      <div class="col-xs-4 tag-attr">
         <div id="gauntlets" class="item-box-1 center-block"
              rel="popover" data-title="Gauntlets of Strength">
           <img src="img/40px-Gauntlets_of_Strength_icon.png">
@@ -1455,7 +1511,7 @@
                 = <img src="img/40px-Lucen_icon.png"> 1,950
               </div>
             </div><!--/.popover-inset-->
-            <p>+16 Intelligence (176 mana, 0.64 mana regen, 1.14% spell amplification)</p>
+            <p>+16 Intelligence (+176 mana, +0.64 mana regen, +1.14% spell amplification)</p>
             <p>+0.4 Turn Rate</p>
             <p>+10% Manacost Reduction</p>
           </div><!--/.popover-content-->
@@ -1539,7 +1595,7 @@
       </div><!--/.col-xs-4-->
     </div><!--/.row-->
     <div class="row">
-      <div class="col-xs-3 col-xs-offset-1">
+      <div class="col-xs-5">
         <div id="woodsman" class="item-box-1 center-block new"
              rel="popover" data-title="Woodsman's Gauntlets">
           <img src="img/40px-place_icon.png">
@@ -1597,10 +1653,10 @@
             <p>Passive: <i>Damage Block</i>  – On 100% of attacks by enemy heroes and 50% of attacks by enemy units, blocks 20 damage for melee heroes/10 for ranged.</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-      </div><!--/.col-xs-3-offset-->
-      <div class="col-xs-4">
+      </div><!--/.col-xs-5-->
+      <div class="col-xs-3">
         
-      </div><!--/.col-xs-4-->
+      </div><!--/.col-xs-3-->
       <div class="col-xs-4">
         <div id="pike" class="item-box-1 center-block"
              rel="popover" data-title="Hurricane Pike">
@@ -1649,10 +1705,10 @@
       </div><!--/.col-xs-4-->
     </div><!--/.row-->
     <div class="row">
-      <div class="col-xs-3">
+      <div class="col-xs-32 col-xs-1">
         
-      </div><!--/.col-xs-3-->
-      <div class="col-xs-2">
+      </div><!--/.col-xs-32-->
+      <div class="col-xs-3">
         <div id="halberd" class="item-box-1 center-block"
              rel="popover" data-title="Heaven's Halberd">
           <img src="img/40px-Heaven's_Halberd_icon.png">
@@ -1705,8 +1761,8 @@
             <p>Passive: <i>Lesser Maim</i> – 30% chance to apply a 20/10% (melee/ranged) move & attack speed slow for 5s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-      </div><!--/.col-xs-2-->
-      <div class="col-xs-2">
+      </div><!--/.col-xs-3-->
+      <div class="col-xs-3">
         <div id="spellblade" class="item-box-1 center-block new"
              rel="popover" data-title="Spellblade">
           <img src="img/40px-Spellblade_icon.png">
@@ -1756,8 +1812,8 @@
             </p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-      </div><!--/.col-xs-2-->
-      <div class="col-xs-2">
+      </div><!--/.col-xs-3-->
+      <div class="col-xs-3">
         <div id="manta" class="item-box-1 center-block"
              rel="popover" data-title="Manta Style">
           <img src="img/40px-Manta_Style_icon.png">
@@ -1799,12 +1855,12 @@
             <p>Passive: <i>Windpiercer</i> – Upon attack, grants a 20% chance to apply a self weak dispel and gain +28% additional movement speed for 1s.
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-      </div><!--/.col-xs-2-->
-      <div class="col-xs-2">
-      </div><!--/.col-xs-2-->
+      </div><!--/.col-xs-3-->
+      <div class="col-xs-32 col-xs-1">
+      </div><!--/.col-xs-32-->
     </div><!--/.row-->
     <div class="row">
-      <div class="col-xs-4">
+      <div class="col-xs-5">
         <div id="drum" class="item-box-1 center-block"
              rel="popover" data-title="Drum of Endurance">
           <img src="img/40px-Drum_of_Endurance_icon.png">
@@ -1862,7 +1918,7 @@
                 = <img src="img/40px-Dagon_1_icon.png"> 2,720
               </div>
             </div><!--/.popover-inset-->
-            <p>+16 Intelligence (+192 mana, +0.64 mana regen, +1.07% spell amplification)</p>
+            <p>+16 Intelligence (+176 mana, +0.64 mana regen, +1.14% spell amplification)</p>
             <p>+3 Strength (+60 health, +0.18 health regen)</p>
             <p>+3 Agility (+0.43 armor, +3 attack speed)</p>
             <p>+9 Damage</p>
@@ -1934,12 +1990,12 @@
             <p>Passive: <i>Squire's Respite</i> – Gains an additional +2 of the bearer's primary attribute and +1% experience gain each time they level up.</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-      </div><!--/.col-xs-4-->
-      <div class="col-xs-4 col-xs-offset-4">
-        <div id="basher" class="item-box-1 center-block"
-             rel="popover" data-title="Skull Basher">
-          <img src="img/40px-Skull_Basher_icon.png">
-          <div id="content-basher" class="hide">
+      </div><!--/.col-xs-5-->
+      <div class="col-xs-2 col-xs-offset-2">
+        <div id="aghs" class="item-box-1 center-block"
+             rel="popover" data-title="Aghanim's Scepter">
+          <img src="img/40px-Aghanim's_Scepter_icon.png">
+          <div id="content-aghs" class="hide">
             <p><i></i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
@@ -1949,19 +2005,8 @@
             <p></p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="orchid" class="item-box-1 center-block"
-             rel="popover" data-title="Orchid Malevolence">
-          <img src="img/40px-Orchid_Malevolence_icon.png">
-          <div id="content-orchid" class="hide">
-            <p><i></i></p>
-            <div class="popover-inset text-center">
-              <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 
-              </div><!--/.popover-line-->
-            </div><!--/.popover-inset-->
-            <p></p>
-          </div><!--/.popover-content-->
-        </div><!--/.item-box-1-->
+      </div><!--/.col-xs-2-->
+      <div class="col-xs-3">
         <div id="blademail" class="item-box-1 center-block"
              rel="popover" data-title="Blade Mail">
           <img src="img/40px-Blade_Mail_icon.png">
@@ -1975,7 +2020,20 @@
             <p></p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-      </div><!--/.col-xs-3-offset-->
+        <div id="diffu" class="item-box-1 center-block"
+             rel="popover" data-title="Diffusal Blade">
+          <img src="img/40px-Diffusal_Blade_1_icon.png">
+          <div id="content-diffu" class="hide">
+            <p><i></i></p>
+            <div class="popover-inset text-center">
+              <div class="popover-line">
+                <img src="img/Gold_symbol.png" height="24px"> 
+              </div><!--/.popover-line-->
+            </div><!--/.popover-inset-->
+            <p></p>
+          </div><!--/.popover-content-->
+        </div><!--/.item-box-1-->
+      </div><!--/.col-xs-3-->
     </div><!--/.row-->
     <div class="row">
       <div class="col-xs-4">
@@ -1994,7 +2052,7 @@
               </div>
             </div><!--/.popover-inset-->
             <p>+16 Strength (320 health, 0.96 health regen)</p>
-            <p>+16 Intelligence (176 mana, 0.64 mana regen, 1.14% spell amplification)</p>
+            <p>+16 Intelligence (+176 mana, +0.64 mana regen, +1.14% spell amplification)</p>
             <p>+16 Damage</p>
             <p>+0.5 Turn Rate</p>
             <p>+16% Manacost Reduction</p>
@@ -2042,7 +2100,7 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
-      <div class="col-xs-3">
+      <div class="col-xs-4">
         <div id="bkb" class="item-box-1 center-block"
              rel="popover" data-title="Black King Bar">
           <img src="img/40px-Black_King_Bar_icon.png">
@@ -2082,20 +2140,7 @@
             <p></p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="diffu" class="item-box-1 center-block"
-             rel="popover" data-title="Diffusal Blade">
-          <img src="img/40px-Diffusal_Blade_1_icon.png">
-          <div id="content-diffu" class="hide">
-            <p><i></i></p>
-            <div class="popover-inset text-center">
-              <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 
-              </div><!--/.popover-line-->
-            </div><!--/.popover-inset-->
-            <p></p>
-          </div><!--/.popover-content-->
-        </div><!--/.item-box-1-->
-      </div><!--/.col-xs-3-->
+      </div><!--/.col-xs-4-->
     </div><!--/.row-->
     <div class="row">
       <div class="col-xs-5">
@@ -2115,7 +2160,7 @@
                 = <img src="img/40px-Sacred_Trio_icon.png"> 7,400
               </div>
             </div><!--/.popover-inset-->
-            <p>+20 All Stats</p>
+            <p>+20 All Stats (+400 health, +1.2 health regen, +2.8 armor, +20 attack speed, +220 mana, +0.80 mana regen, +1.4% spell damage, +20 damage)</p>
             <p>+20 Damage (+40 total)</p>
             <p>+20 Attack Speed (+40 total)</p>
             <p>+20% Movement Speed</p>
@@ -2123,21 +2168,6 @@
             <p>+20% Manacost Reduction</p>
             <p>Passive: <i>Sword Dance</i> – Casting a spell grants a boost of 100 attack speed for 2.4 seconds (does not count items, does not stack but refreshes duration)</p>
             <p>Passive: <i>Greater Maim</i> – 40% chance to apply a 26/13% (melee/ranged) move & attack speed slow for 5s</p>
-          </div><!--/.popover-content-->
-        </div><!--/.item-box-1-->
-      </div><!--/.col-xs-2-->
-      <div class="col-xs-2">
-        <div id="aghs" class="item-box-1 center-block"
-             rel="popover" data-title="Aghanim's Scepter">
-          <img src="img/40px-Aghanim's_Scepter_icon.png">
-          <div id="content-aghs" class="hide">
-            <p><i></i></p>
-            <div class="popover-inset text-center">
-              <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 
-              </div><!--/.popover-line-->
-            </div><!--/.popover-inset-->
-            <p></p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-2-->
@@ -2377,27 +2407,64 @@
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-3-->
     </div><!--/.row-->
-  </div><!--/.col-lg-6-->
-  <div class="col-lg-3">
     <div class="row">
-      <div class="col-xs-6">
+      <div class="col-xs-4 col-xs-offset-4">
+        <div id="vermcloak" class="item-box-1 center-block new"
+             rel="popover" data-title="Vermillion Cloak">
+          <img src="img/40px-Vermillion_Cloak_icon.png">
+          <div id="content-vermcloak" class="hide">
+            <p><i>The reddish fabric of this heavy coat is inlaid with glittering jewels that hold ancient knowledge.</i></p>
+            <div class="popover-inset text-center">
+              <div class="popover-line">
+                <img src="img/40px-Reaver_icon.png"> 3,000 +
+                <img src="img/40px-Mystic_Staff_icon.png"> 2,700 +
+                <img src="img/40px-Eaglesong_icon.png"> 3,200
+                = <img src="img/40px-Vermillion_Cloak_icon.png"> 8,900
+              </div><!--/.popover-line-->
+            </div><!--/.popover-inset-->
+            <p>+25 All Stats (+500 health, +1.5 health regen, +3.5 armor, +25 attack speed, +275 mana, +1.00 mana regen, +1.78% spell damage, +25 damage)</p>
+            <p>Passive: <i>True Flame</i> – Grants the bearer every opposite talent in the tree for each level of talents they have.</p>
+          </div><!--/.popover-content-->
+        </div><!--/.item-box-1-->
+      </div><!--/.col-xs-4-offset-->
+    </div><!--/.row-->
+  </div><!--/.col-lg-5-->
+  <div class="col-lg-35 col-lg-3 outer">
+    <div class="row">
+      <div class="col-xs-4">
+        <div id="branch" class="item-box-1 center-block"
+             rel="popover" data-title="Iron Branch">
+          <img src="img/40px-Iron_Branch_icon.png">
+          <div id="content-branch" class="hide">
+            <p><i>A seemingly ordinary branch, its ironlike qualities are bestowed upon the bearer.</i></p>
+            <div class="popover-inset text-center">
+              <div class="popover-line">
+                <img src="img/Gold_symbol.png" height="24px"> 50
+              </div><!--/.popover-line-->
+            </div><!--/.popover-inset-->
+            <p>+1 All Stats (+20 health, +0.06 health regen, +0.14 armor, +1 attack speed, +11 mana, +0.04 mana regen, +0.07% spell damage, +1 damage)</p>
+            <p>Active: <i>Plant Tree</i> – Targets the ground to plant a happy little tree that lasts for 20 seconds (200 cast range). <img src="img/cd.png"> 0s</p>
+          </div><!--/.popover-content-->
+        </div><!--/.item-box-1-->
+        <div id="circlet" class="item-box-1 center-block"
+             rel="popover" data-title="Circlet">
+          <img src="img/40px-Circlet_icon.png">
+          <div id="content-circlet" class="hide">
+            <p><i>An elegant circlet designed for human princesses.</i></p>
+            <div class="popover-inset text-center">
+              <div class="popover-line">
+                <img src="img/Gold_symbol.png" height="24px"> 165
+              </div><!--/.popover-line-->
+            </div><!--/.popover-inset-->
+            <p>+2 All Stats (+40 health, +0.12 health regen, +0.28 armor, +2 attack speed, +22 mana, +0.08 mana regen, +0.14% spell damage, +2 damage)</p>
+          </div><!--/.popover-content-->
+        </div><!--/.item-box-1-->
+      </div><!--/.col-xs-4-->
+      <div class="col-xs-4">
         <div id="qb" class="item-box-1 center-block"
              rel="popover" data-title="Quelling Blade">
           <img src="img/40px-Quelling_Blade_icon.png">
           <div id="content-qb" class="hide">
-            <p><i></i></p>
-            <div class="popover-inset text-center">
-              <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 
-              </div><!--/.popover-line-->
-            </div><!--/.popover-inset-->
-            <p></p>
-          </div><!--/.popover-content-->
-        </div><!--/.item-box-1-->
-        <div id="blight" class="item-box-1 center-block"
-             rel="popover" data-title="Blight Stone">
-          <img src="img/40px-Blight_Stone_icon.png">
-          <div id="content-blight" class="hide">
             <p><i></i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
@@ -2420,8 +2487,34 @@
             <p></p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-      </div><!--/.col-xs-6-->
-      <div class="col-xs-5">
+        <div id="blight" class="item-box-1 center-block"
+             rel="popover" data-title="Blight Stone">
+          <img src="img/40px-Blight_Stone_icon.png">
+          <div id="content-blight" class="hide">
+            <p><i></i></p>
+            <div class="popover-inset text-center">
+              <div class="popover-line">
+                <img src="img/Gold_symbol.png" height="24px"> 
+              </div><!--/.popover-line-->
+            </div><!--/.popover-inset-->
+            <p></p>
+          </div><!--/.popover-content-->
+        </div><!--/.item-box-1-->
+      </div><!--/.col-xs-4-->
+      <div class="col-xs-4">
+        <div id="morbid" class="item-box-1 center-block"
+             rel="popover" data-title="Morbid Mask">
+          <img src="img/40px-Morbid_Mask_icon.png">
+          <div id="content-morbid" class="hide">
+            <p><i></i></p>
+            <div class="popover-inset text-center">
+              <div class="popover-line">
+                <img src="img/Gold_symbol.png" height="24px"> 
+              </div><!--/.popover-line-->
+            </div><!--/.popover-inset-->
+            <p></p>
+          </div><!--/.popover-content-->
+        </div><!--/.item-box-1-->
         <div id="javelin" class="item-box-1 center-block"
              rel="popover" data-title="Javelin">
           <img src="img/40px-Javelin_icon.png">
@@ -2448,36 +2541,10 @@
             <p></p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="hoiw" class="item-box-1 center-block"
-             rel="popover" data-title="Helm of Iron Will">
-          <img src="img/40px-Helm_of_Iron_Will_icon.png">
-          <div id="content-hoiw" class="hide">
-            <p><i></i></p>
-            <div class="popover-inset text-center">
-              <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 
-              </div><!--/.popover-line-->
-            </div><!--/.popover-inset-->
-            <p></p>
-          </div><!--/.popover-content-->
-        </div><!--/.item-box-1-->
-        <div id="morbid" class="item-box-1 center-block"
-             rel="popover" data-title="Morbid Mask">
-          <img src="img/40px-Morbid_Mask_icon.png">
-          <div id="content-morbid" class="hide">
-            <p><i></i></p>
-            <div class="popover-inset text-center">
-              <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 
-              </div><!--/.popover-line-->
-            </div><!--/.popover-inset-->
-            <p></p>
-          </div><!--/.popover-content-->
-        </div><!--/.item-box-1-->
-      </div><!--/.col-xs-5-->
+      </div><!--/.col-xs-4-->
     </div><!--/.row-->
     <div class="row">
-      <div class="col-xs-4">
+      <div class="col-xs-2 col-xs-offset-1">
         <div id="ghost" class="item-box-1 center-block"
              rel="popover" data-title="Ghost Scepter">
           <img src="img/40px-Ghost_Scepter_icon.png">
@@ -2491,8 +2558,8 @@
             <p></p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-      </div><!--/.col-xs-4-->
-      <div class="col-xs-4">
+      </div><!--/.col-xs-2-offset-->
+      <div class="col-xs-6">
         <div id="boa" class="item-box-1 center-block"
              rel="popover" data-title="Blades of Attack">
           <img src="img/40px-Blades_of_Attack_icon.png">
@@ -2532,8 +2599,8 @@
             <p></p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-      </div><!--/.col-xs-4-->
-      <div class="col-xs-4">
+      </div><!--/.col-xs-6-->
+      <div class="col-xs-3">
         <div id="goh" class="item-box-1 center-block"
              rel="popover" data-title="Gloves of Haste">
           <img src="img/40px-Gloves_of_Haste_icon.png">
@@ -2560,10 +2627,10 @@
             <p></p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-      </div><!--/.col-xs-4-->
+      </div><!--/.col-xs-3-->
     </div><!--/.row-->
     <div class="row">
-      <div class="col-xs-4">
+      <div class="col-xs-2 col-xs-offset-1">
         <div id="ultimateorb" class="item-box-1 center-block"
              rel="popover" data-title="Ultimate Orb">
           <img src="img/40px-Ultimate_Orb_icon.png">
@@ -2577,8 +2644,8 @@
             <p></p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-      </div><!--/.col-xs-4-->
-      <div class="col-xs-4">
+      </div><!--/.col-xs-2-offset-->
+      <div class="col-xs-6">
         <div id="mithham" class="item-box-1 center-block"
              rel="popover" data-title="Mithril Hammer">
           <img src="img/40px-Mithril_Hammer_icon.png">
@@ -2619,9 +2686,9 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-6-->
-      <div class="col-xs-4">
+      <div class="col-xs-3">
         
-      </div><!--/.col-xs-4-->
+      </div><!--/.col-xs-3-->
     </div><!--/.row-->
     <div class="row">
       <div class="col-xs-4">
@@ -2675,10 +2742,10 @@
     </div><!--/.row-->
     <div class="row">
       <div class="col-xs-4">
-        <div id="skadi" class="item-box-1 center-block"
-             rel="popover" data-title="Eye of Skadi">
-          <img src="img/40px-Eye_of_Skadi_icon.png">
-          <div id="content-skadi" class="hide">
+        <div id="linkens" class="item-box-1 center-block"
+             rel="popover" data-title="Linken's Sphere">
+          <img src="img/40px-Linken's_Sphere_icon.png">
+          <div id="content-linkens" class="hide">
             <p><i></i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
@@ -2688,10 +2755,10 @@
             <p></p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="linkens" class="item-box-1 center-block"
-             rel="popover" data-title="Linken's Sphere">
-          <img src="img/40px-Linken's_Sphere_icon.png">
-          <div id="content-linkens" class="hide">
+        <div id="skadi" class="item-box-1 center-block"
+             rel="popover" data-title="Eye of Skadi">
+          <img src="img/40px-Eye_of_Skadi_icon.png">
+          <div id="content-skadi" class="hide">
             <p><i></i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
@@ -2787,9 +2854,36 @@
       </div><!--/.col-xs-2-->
     </div><!--/.row-->
     <div class="row">
-      <div class="col-xs-4">
-        
-      </div><!--/.col-xs-4-->
+      <div class="col-xs-2">
+        <div id="basher" class="item-box-1 center-block"
+             rel="popover" data-title="Skull Basher">
+          <img src="img/40px-Skull_Basher_icon.png">
+          <div id="content-basher" class="hide">
+            <p><i></i></p>
+            <div class="popover-inset text-center">
+              <div class="popover-line">
+                <img src="img/Gold_symbol.png" height="24px"> 
+              </div><!--/.popover-line-->
+            </div><!--/.popover-inset-->
+            <p></p>
+          </div><!--/.popover-content-->
+        </div><!--/.item-box-1-->
+      </div><!--/.col-xs-2-->
+      <div class="col-xs-2">
+        <div id="orchid" class="item-box-1 center-block"
+             rel="popover" data-title="Orchid Malevolence">
+          <img src="img/40px-Orchid_Malevolence_icon.png">
+          <div id="content-orchid" class="hide">
+            <p><i></i></p>
+            <div class="popover-inset text-center">
+              <div class="popover-line">
+                <img src="img/Gold_symbol.png" height="24px"> 
+              </div><!--/.popover-line-->
+            </div><!--/.popover-inset-->
+            <p></p>
+          </div><!--/.popover-content-->
+        </div><!--/.item-box-1-->
+      </div><!--/.col-xs-2-->
       <div class="col-xs-2">
         <div id="daedalus" class="item-box-1 center-block"
              rel="popover" data-title="Daedalus">
@@ -2881,7 +2975,7 @@
       </div><!--/.col-xs-3-->
     </div><!--/.row-->
     <div class="row">
-      <div class="col-xs-4">
+      <div class="col-xs-2">
         <div id="ablade" class="item-box-1 center-block"
              rel="popover" data-title="Abyssal Blade">
           <img src="img/40px-Abyssal_Blade_icon.png">
@@ -2895,6 +2989,8 @@
             <p></p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
+      </div><!--/.col-xs-2-->
+      <div class="col-xs-2">
         <div id="bloodthorn" class="item-box-1 center-block"
              rel="popover" data-title="Bloodthorn">
           <img src="img/40px-Bloodthorn_icon.png">
@@ -2908,8 +3004,8 @@
             <p></p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-      </div><!--/.col-xs-4-->
-      <div class="col-xs-4">
+      </div><!--/.col-xs-2-->
+      <div class="col-xs-2 col-xs-offset-1">
         <div id="rapier" class="item-box-1 center-block"
              rel="popover" data-title="Divine Rapier">
           <img src="img/40px-Divine_Rapier_icon.png">
@@ -2923,8 +3019,8 @@
             <p></p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-      </div><!--/.col-xs-4-->
-      <div class="col-xs-3">
+      </div><!--/.col-xs-2-offset-->
+      <div class="col-xs-5">
         <div id="mjoll" class="item-box-1 center-block"
              rel="popover" data-title="Mjollnir">
           <img src="img/40px-Mjollnir_icon.png">
@@ -2951,14 +3047,14 @@
             <p></p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-      </div><!--/.col-xs-3-->
+      </div><!--/.col-xs-5-->
     </div><!--/.row-->
-  </div><!--/.col-lg-3-->
+  </div><!--/.col-lg-35-->
 </div><!--/.row-->
   </div><!--/.section-bg-->
 
 <div id="footer" class="row text-center">
-  by <a href="https://www.reddit.com/user/freelance_fox/">/u/freelance_fox</a> • <a href="http://www.twitter.com/freelancedota">@freelancedota</a> • Last Updated 3 June 2017
+  by <a href="https://www.reddit.com/user/freelance_fox/">/u/freelance_fox</a> • <a href="http://www.twitter.com/freelancedota">@freelancedota</a> • Last Updated 14 June 2017
 </div><!--/.row-->
 
   <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
@@ -2974,14 +3070,34 @@
       function checkWidth() {
         var windowsize = $window.width();
         if (windowsize < 1199) {
-          $('.flip-lg').insertAfter($('#middle'));
+          $('.flip-lg').insertAfter($('.middle'));
 
         } else if (windowsize > 1200) {
-          $('.flip-lg').insertBefore($('#middle'));
+          $('.flip-lg').insertBefore($('.middle'));
         }
       }
       checkWidth();
       $(window).resize(checkWidth);
+    });
+    $('#showhide').click( function (e) {
+      if ($(this).text() === 'Hide Custom Items') {
+        $(this).text('Show Custom Items');
+        $('.item-box-1.new').hide();
+        //$('.outer').removeClass('col-lg-3').addClass('col-lg-4');
+        //$('.middle').removeClass('col-lg-6').addClass('col-lg-4');
+        $("#svg").attr("height", "0");
+        $("#svg").attr("width", "0");
+        connectAll();
+      }
+      else {
+        $(this).text('Hide Custom Items');
+        $('.item-box-1.new').show();
+        //$('.outer').removeClass('col-lg-4').addClass('col-lg-3');
+        //$('.middle').removeClass('col-lg-4').addClass('col-lg-6');
+        $("#svg").attr("height", "0");
+        $("#svg").attr("width", "0");
+        connectAll();
+      }
     });
     jQuery(document).ready(function($) {
       // Javascript to enable link to tab

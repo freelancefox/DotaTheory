@@ -13,7 +13,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'top auto',
+      placement:'left auto',
       html: true,
       content: function() {
         return $('#content-dlance').html();
@@ -23,7 +23,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'top auto',
+      placement:'right auto',
       html: true,
       content: function() {
         return $('#content-force').html();
@@ -903,7 +903,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'right auto',
+      placement:'bottom auto',
       html: true,
       content: function() {
         return $('#content-wand').html();
@@ -913,7 +913,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'right auto',
+      placement:'bottom auto',
       html: true,
       content: function() {
         return $('#content-talon').html();
@@ -933,7 +933,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'right auto',
+      placement:'left auto',
       html: true,
       content: function() {
         return $('#content-basi').html();
@@ -1617,6 +1617,16 @@ jQuery(document).ready(function() {
       html: true,
       content: function() {
         return $('#content-moonsh').html();
+      }
+  });
+   $('#vermcloak').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'right auto',
+      html: true,
+      content: function() {
+        return $('#content-vermcloak').html();
       }
   });
 });

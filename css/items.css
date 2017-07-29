@@ -30,11 +30,17 @@ h1 {
 }
 
 div[class^="col"] {
-  padding: 0 4px;
+  padding: 0;
 }
 
-.col-lg-3.5 {
-  width: 29.1666666%;
+.col-xs-32 {
+  width: 12.5% !important;
+}
+
+@media (min-width: 1200px) {
+  .col-lg-35 {
+    width: 29.166666% !important;
+  }
 }
 
 .spacer {
@@ -77,10 +83,9 @@ a:focus, a:hover {
 
 .btn-default {
   color: rgba(249,249,249,0.85);
-  background-color: rgba(32,36,46,0.8);
+  background-color: rgba(32,36,46,0.3);
   box-shadow: 0 0 6px rgba(249,249,249,0.85);
   border: 0;
-  font-variant: small-caps;
   font-weight: 400;
   padding: 9px 12px;
 }
@@ -91,6 +96,23 @@ a:focus, a:hover {
   background-color: #5E6272;
   color: #f9f9f9;
   box-shadow: 0;
+}
+
+.btn-main:focus,
+.btn-main {
+  color: rgba(249,249,249,0.6);
+  background-color: rgba(32,36,46,0.2);
+  box-shadow: 0 0 6px rgba(249,249,249,0.6);
+  border: 0;
+  font-weight: 400;
+}
+
+.btn-main:active:hover,
+.btn-main:hover,
+.btn-main:active {
+  color: #f9f9f9;
+  background-color: #5E6272;
+  box-shadow: 0 0 6px rgba(249,249,249,0.85);
 }
 
 .btn:active:focus,
@@ -225,6 +247,7 @@ a:focus, a:hover {
   }
 }
 
+btn-main:hover,
 #str:hover, #int:hover, #agi:hover,
 #strp:hover, #intp:hover, #agip:hover {
   cursor: pointer;

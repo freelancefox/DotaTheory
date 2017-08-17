@@ -12,42 +12,53 @@
 <nav class="navbar navbar-default navbar-fixed-top">
   <a href="index">
     <button class="btn btn-default pull-left header-hide"
-     style="margin-top:12px; padding:10px;">< INDEX</button>
+     style="margin-top: 12px; padding:10px;">◄ Index</button>
   </a>
   <a id="top">
     <button class="btn btn-default pull-right hide-top"
-     style="display: none;">^ TOP</button>
+     style="display: none;">↑ Top</button>
   </a>
   <div id="controls" class="container" style="padding: 0;">
     <div class="row text-center header-hide">
       <h1>Custom Heroes Index</h1>
     </div><!--/.row-->
     <div id="navigation" class="row text-center">
-      <a id="eeex" class="jumpb" href="#goldwing" onclick="this.click()">
-        <div><<</div>
-      </a>
-      <div class="panel-group" id="accordion">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h4 class="panel-title">
-              <a id="index" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse">↓ Heroes ↓</a>
-            </h4>
-          </div>
-          <div class="panel-collapse collapse" id="collapse">
-            <div class="list-group">
-              <a id="aaax" href="#proteus" class="list-group-item"><img src="img/Intelligence_symbol.png" height="24" width="24"> Proteus, the Kraken Spawn</a>
-              <a id="bbbx" href="#antares" class="list-group-item"><img src="img/Agility_symbol.png" height="24" width="24"> Antares, the Stag Archer</a>
-              <a id="cccx" href="#merinth" class="list-group-item"><img src="img/Intelligence_symbol.png" height="24" width="24"> Sulliver, the Merinth Tracker</a>
-              <a id="dddx" href="#arcturyx" class="list-group-item"><img src="img/Agility_symbol.png" height="24" width="24"> Arcturyx, the Warbird</a>
-              <a id="eeex" href="#goldwing" class="list-group-item"><img src="img/Strength_symbol.png" height="24" width="24"> Goldwing, the Draken Miser</a>
-              <a id="fffx" href="#sylph" class="list-group-item"><img src="img/Agility_symbol.png" height="24" width="24"> Sylph, the Dryad Daemon</a>
+      <div class="col-sm-3">
+        <div class="header-hide pull-left">
+          <button id="showhide" class="btn btn-main">Show Author List</button>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <a id="eeex" class="jumpb" href="#sylph" onclick="this.click()">
+          <div><<</div>
+        </a>
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse">
+              <div class="panel-heading">
+                <h4 id="index" class="panel-title">↓ Heroes ↓</h4>
+              </div>
+            </a>
+            <div class="panel-collapse collapse" id="collapse">
+              <div class="list-group">
+                <a id="aaax" href="#proteus" class="list-group-item"><img src="img/Intelligence_symbol.png" height="24" width="24"> Proteus, the Kraken Spawn</a>
+                <a id="bbbx" href="#antares" class="list-group-item"><img src="img/Agility_symbol.png" height="24" width="24"> Antares, the Stag Archer</a>
+                <a id="cccx" href="#merinth" class="list-group-item"><img src="img/Intelligence_symbol.png" height="24" width="24"> Sulliver, the Merinth Tracker</a>
+                <a id="dddx" href="#arcturyx" class="list-group-item"><img src="img/Agility_symbol.png" height="24" width="24"> Arcturyx, the Warbird</a>
+                <a id="eeex" href="#goldwing" class="list-group-item"><img src="img/Strength_symbol.png" height="24" width="24"> Goldwing, the Draken Miser</a>
+                <a id="fffx" href="#sylph" class="list-group-item"><img src="img/Agility_symbol.png" height="24" width="24"> Sylph, the Dryad Daemon</a>
+              </div>
             </div>
           </div>
         </div>
+        <a id="bbbx" class="jumpn" href="#antares" onclick="this.click()">
+          <div>>></div>
+        </a>
       </div>
-      <a id="bbbx" class="jumpn" href="#antares" onclick="this.click()">
-        <div>>></div>
-      </a>
+    </div><!--/.row-->
+    <div id="authorlist" class="row header-hide text-center" style="display: none;">
+      <button id="author-freelancefox" class="btn btn-main">freelancefox (6)</button>
+      <a href="#coming-soon"><button id="author-add" class="btn btn-main">+</button></a>
     </div><!--/.row-->
   </div><!-- /.container-->
 </nav>
@@ -855,7 +866,8 @@
                 </li>
               </ul>
               <p>v2.0 (June 2016):</p>
-              <li>
+              <ul>
+                <li>
                   Sidewinder damage increased from 100/140/180/220 +
                   10/20/30/40 per unit or hero to 100/150/200/250 + 20/30/40/50
                   per hero and 10/15/20/25 per unit.
@@ -2067,7 +2079,7 @@
                   <p><b>Deathroot Lifesteal</b>: 50/75/100/125%</p>
                   <p><b>Deathroot Attack Range</b>: 550</p>
                   <p><b>Deathroot Projectile Speed</b>: 1600</p>
-                  <p><b>Deathroot Base Damage</b>: 35/50/65/80</p>
+                  <p><b>Deathroot Base Damage</b>: 33-37/48-52/63-67/78-82</p>
                   <p><b>Deathroot Damage Per Hit</b>: +7/10/13/16</p>
                   <p><b>Deathroot Damage Reset Duration</b>: 180s</p>
                   <p><b>Deathroot BAT</b>: 1.0</p>
@@ -2388,7 +2400,7 @@
 </div><!--/.row_fff-->
 
 <div id="footer" class="row text-center">
-  by <a href="https://www.reddit.com/user/freelance_fox/">/u/freelance_fox</a> • <a href="http://www.twitter.com/freelancedota">@freelancedota</a> • Last Updated 19 May 2017
+  by <a href="https://www.reddit.com/user/freelance_fox/">/u/freelance_fox</a> • <a href="http://www.twitter.com/freelancedota">@freelancedota</a> • Updated 17 August 2017
 </div><!--/.row-->
 
 <script src="http://code.jquery.com/jquery-1.12.2.js"></script>
@@ -2411,6 +2423,9 @@ $(document).ready(function()
       }
       if ($(window).scrollTop() < 50) {
         $('.header-hide').css('display', 'block');
+        if ($('#showhide').text() !== 'Hide Author List') {
+          $('#authorlist').css('display', 'none');
+        }
         $('.hide-top').css('display', 'none');
       }
     });
@@ -2423,6 +2438,16 @@ $(document).ready(function()
           scrollTop: 0
         }, 400);
     });
+  });
+  $('#showhide').click( function (e) {
+    if ($(this).text() === 'Hide Author List') {
+      $(this).text('Show Author List');
+      $('#authorlist').hide();
+    }
+    else {
+      $(this).text('Hide Author List');
+      $('#authorlist').show();
+    }
   });
   $("#aaa,#aaA,#aAA,#AAA").bind("inview", function(event, visible) {
     if (visible == true) {

@@ -13,16 +13,17 @@ a:focus, a:hover {
 .btn-default:focus,
 .btn-default:hover {
   text-decoration: none;
-  color: #f9f9f9;
-  background-color: rgba(255,255,255,0.5);
-  text-decoration: none;
+  background-color: rgba(255,255,255,0.8);
 }
 
 .btn-default {
   background-color: rgba(255,255,255,0.35);
+  color: #f9f9f9;
+  text-decoration: none;
   border: 0;
+  font-size: 18px;
   font-weight: 500;
-  padding: 6px;
+  padding: 10px 15px;
   margin: 8px 15px;
   mix-blend-mode: color;
 }
@@ -34,6 +35,23 @@ a:focus, a:hover {
 
 .btn:active:focus,
 .btn:focus { outline: 0; }
+
+.btn-main:focus,
+.btn-main {
+  background-color: rgba(255,255,255,0.35);
+  color: #f9f9f9;
+  border: 0;
+  font-weight: 400;
+}
+
+.btn-main:active:hover,
+.btn-main:hover,
+.btn-main:active {
+  color: #666666;
+  background-color: rgba(255,255,255,0.8);
+  cursor: pointer;
+  border: 0;
+}
 
 #footer {
   padding: 12px 0;
@@ -572,15 +590,43 @@ h5 {
   min-height: 100vh;
 }
 
+.list-group {
+  border-top: solid 1px rgb(221,221,221);
+}
+
+.panel-heading,
+a.list-group-item {
+  background-color: rgba(255,255,255,0.96);
+}
+
+.panel-heading:focus,
+.panel-heading:hover,
+a.list-group-item:focus,
+a.list-group-item:hover {
+  background-color: rgba(255,255,255,0.8);
+  font-weight: bold;
+}
+
+.panel {
+  background-color: rgba(255,255,255,0.35);
+}
+
 .panel-title {
   height: 17px;
 }
 
 .panel-group {
   margin: 0;
-  width: 300px;
+  width: 60%;
+  max-width: 300px;
   margin-bottom: 6px;
   display: inline-block;
+}
+
+.panel-default > .panel-heading {
+  background-color: rgba(255,255,255,0.96);
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .jumpb, .jumpn {
@@ -588,14 +634,25 @@ h5 {
   width: 40px;
   padding: 10px 12px;
   border-radius: 3px;
-  background-color: #f5f5f5;
+  background-color: rgba(255,255,255,0.96);
   display: inline-block;
   color: #333333;
+}
+
+.jumpb:focus,
+.jumpb:hover,
+.jumpn:focus,
+.jumpn:hover {
+  background-color: rgba(255,255,255,0.8);
 }
 
 .header-hide {
   padding: 6px 0 0 0;
   overflow: hidden;
+}
+
+#authorlist {
+  padding: 2px 0 8px 0;
 }
 
 #navigation {
@@ -606,7 +663,7 @@ h5 {
   max-width: 60%;
 }
 
-#index:hover, .jumpb:hover, .jumpn:hover {
+.jumpb:hover, .jumpn:hover {
   font-weight: bold;
 }
 
@@ -679,4 +736,18 @@ h5 {
   padding-left: 15px;
 }
 
+#index { width: 100%; }
+
+.col-sm-6 {
+  min-width: 420px;
+}
+
+#author-add {
+  font-size: 21px;
+  padding: 1px 12px;
+}
+
+#authorlist .btn {
+  margin: 0 2px;
+}
 

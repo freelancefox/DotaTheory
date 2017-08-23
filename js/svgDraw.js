@@ -158,6 +158,8 @@ function connectAll() {
     connectElements($("#svg"), $("#sage-basi"), $("#sage"), $("#basi"));
     connectElements($("#svg"), $("#basi-aquila"), $("#basi"), $("#aquila"));
     connectElements($("#svg"), $("#basi-vlads"), $("#basi"), $("#vlads"));
+    connectElements($("#svg"), $("#morbid-vlads"), $("#morbid"), $("#vlads"));
+    connectElements($("#svg"), $("#headdress-vlads"), $("#headdress"), $("#vlads"));
     connectElements($("#svg"), $("#boots-arcane"), $("#boots"), $("#arcane"));
     connectElements($("#svg"), $("#boots-tranquil"), $("#boots"), $("#tranquil"));
     connectElements($("#svg"), $("#boots-treads"), $("#boots"), $("#treads"));
@@ -321,1969 +323,1469 @@ $(window).resize(function () {
     connectAll();
 });
 
-$("#str").on("click", function() {
-    $("#str").hide();
-    $("#strp").show();
-    $("#belt-sange").show(150);
-    $("#club-sange").show(150);
-    $("#gauntlets-woodsman").show(150);
-    $("#sange-halberd").show(150);
-    $("#sange-gjalla").show(150);
-    $("#sange-sny").show(150);
-    $("#sange-snl").show(150);
-    $("#sange-trio").show(150);
-    $("#echo-wyrmslayer").show(150);
-    $("#sny-trio").show(150);
-    $("#snl-trio").show(150);
-    $("#reaver-heart").show(150);
-    $("#reaver-satanic").show(150);
-    $("#reaver-pauldron").show(150);
-    $("#club-echo").show(150);
-    $("#gauntlets-bracer").show(150);
-    $("#bracer-drum").show(150);
-    $("#bracer-atos").show(150);
+$("#str,#strl").on("click", function() {
+    $("#str").toggle();
+    $("#strp").toggle();
+    $("#strl").toggle();
+    $("#strlp").toggle();
+    $(".item-str").css('background-color','#cc3333');
 });
-$("#strp").on("click", function() {
-    $("#strp").hide();
-    $("#str").show();
-    $("#belt-sange").hide();
-    $("#club-sange").hide();
-    $("#gauntlets-woodsman").hide();
-    $("#sange-halberd").hide();
-    $("#sange-gjalla").hide();
-    $("#sange-sny").hide();
-    $("#sange-snl").hide();
-    $("#sange-trio").hide();
-    $("#echo-wyrmslayer").hide();
-    $("#sny-trio").hide();
-    $("#snl-trio").hide();
-    $("#reaver-heart").hide();
-    $("#reaver-satanic").hide();
-    $("#reaver-pauldron").hide();
-    $("#club-echo").hide();
-    $("#gauntlets-bracer").hide();
-    $("#bracer-drum").hide();
-    $("#bracer-atos").hide();
+$("#str,#strl").hover(function() {
+    $("#strl").css('border','4px solid #cc3333');
+    $(".item-str").css('background-color','#cc3333');
+  }, function() {
+    $("#strl").css('border','none');
+    $(".item-str").css('background-color','#23242A');
+});
+$("#strp,#strlp").on("click", function() {
+    $("#strp").toggle();
+    $("#str").toggle();
+    $("#strlp").toggle();
+    $("#strl").toggle();
+    $(".item-str").css('background-color','#23242A');
+});
+$("#strp,#strlp").hover(function() {
+    $(".item-str").css('background-color','#cc3333');
 });
 
-$("#int").on("click", function() {
-    $("#int").hide();
-    $("#intp").show();
-    $("#robe-lucen").show(150);
-    $("#staff-lucen").show(150);
-    $("#mantle-frost").show(150);
-    $("#lucen-spellblade").show(150);
-    $("#lucen-seraph").show(150);
-    $("#lucen-snl").show(150);
-    $("#lucen-lny").show(150);
-    $("#lucen-trio").show(150);
-    $("#force-pike").show(150);
-    $("#snl-trio").show(150);
-    $("#lny-trio").show(150);
-    $("#mystic-sheep").show(150);
-    $("#mystic-shiva").show(150);
-    $("#mystic-ocore").show(150);
-    $("#force-seraph").show(150);
-    $("#staff-force").show(150);
-    $("#mantle-null").show(150);
-    $("#null-dagon").show(150);
-    $("#null-veil").show(150);
+$("#int,#intl").on("click", function() {
+    $("#int").toggle();
+    $("#intp").toggle();
+    $("#intl").toggle();
+    $("#intlp").toggle();
+    $(".item-int").css('background-color','#0099cc');
 });
-$("#intp").on("click", function() {
-    $("#intp").hide();
-    $("#int").show();
-    $("#robe-lucen").hide();
-    $("#staff-lucen").hide();
-    $("#mantle-frost").hide();
-    $("#lucen-spellblade").hide();
-    $("#lucen-seraph").hide();
-    $("#lucen-snl").hide();
-    $("#lucen-lny").hide();
-    $("#lucen-trio").hide();
-    $("#force-pike").hide();
-    $("#snl-trio").hide();
-    $("#lny-trio").hide();
-    $("#mystic-sheep").hide();
-    $("#mystic-shiva").hide();
-    $("#mystic-ocore").hide();
-    $("#force-seraph").hide();
-    $("#staff-force").hide();
-    $("#mantle-null").hide();
-    $("#null-dagon").hide();
-    $("#null-veil").hide();
+$("#int,#intl").hover(function() {
+    $("#intl").css('border','4px solid #0099cc');
+    $(".item-int").css('background-color','#0099cc');
+  }, function() {
+    $("#intl").css('border','none');
+    $(".item-int").css('background-color','#23242A');
+});
+$("#intp,#intlp").on("click", function() {
+    $("#intp").toggle();
+    $("#int").toggle();
+    $("#intlp").toggle();
+    $("#intl").toggle();
+    $(".item-int").css('background-color','#23242A');
+});
+$("#intp,#intlp").hover(function() {
+    $(".item-int").css('background-color','#0099cc');
 });
 
-$("#agi").on("click", function() {
-    $("#agi").hide();
-    $("#agip").show();
-    $("#band-yasha").show(150);
-    $("#blade-yasha").show(150);
-    $("#slippers-pms").show(150);
-    $("#yasha-manta").show(150);
-    $("#yasha-hayabusa").show(150);
-    $("#yasha-sny").show(150);
-    $("#yasha-lny").show(150);
-    $("#dlance-pike").show(150);
-    $("#dlance-wyrmslayer").show(150);
-    $("#sny-trio").show(150);
-    $("#lny-trio").show(150);
-    $("#eagle-butterfly").show(150);
-    $("#eagle-eblade").show(150);
-    $("#eagle-wkb").show(150);
-    $("#band-dlance").show(150);
-    $("#slippers-wraith").show(150);
-    $("#wraith-aquila").show(150);
-    $("#wraith-squire").show(150);
+$("#agi,#agil").on("click", function() {
+    $("#agi").toggle();
+    $("#agip").toggle();
+    $("#agil").toggle();
+    $("#agilp").toggle();
+    $(".item-agi").css('background-color','#339966');
 });
-$("#agip").on("click", function() {
-    $("#agip").hide();
-    $("#agi").show();
-    $("#band-yasha").hide();
-    $("#blade-yasha").hide();
-    $("#slippers-pms").hide();
-    $("#yasha-manta").hide();
-    $("#yasha-hayabusa").hide();
-    $("#yasha-sny").hide();
-    $("#yasha-lny").hide();
-    $("#dlance-pike").hide();
-    $("#dlance-wyrmslayer").hide();
-    $("#sny-trio").hide();
-    $("#snl-trio").hide();
-    $("#lny-trio").hide();
-    $("#eagle-butterfly").hide();
-    $("#eagle-eblade").hide();
-    $("#eagle-wkb").hide();
-    $("#band-dlance").hide();
-    $("#slippers-wraith").hide();
-    $("#wraith-aquila").hide();
-    $("#wraith-squire").hide();
+$("#agi,#agil").hover(function() {
+    $("#agil").css('border','4px solid #339966');
+    $(".item-agi").css('background-color','#339966');
+  }, function() {
+    $("#agil").css('border','none');
+    $(".item-agi").css('background-color','#23242A');
+});
+$("#agip,#agilp").on("click", function() {
+    $("#agip").toggle();
+    $("#agi").toggle();
+    $("#agilp").toggle();
+    $("#agil").toggle();
+    $(".item-agi").css('background-color','#23242A');
+});
+$("#agip,#agilp").hover(function() {
+    $(".item-agi").css('background-color','#339966');
+});
+
+$("#stat,#statl").on("click", function() {
+    $("#stat").toggle();
+    $("#statp").toggle();
+    $("#statl").toggle();
+    $("#statlp").toggle();
+    $(".item-stat").css('background-color','#663399');
+});
+$("#stat,#statl").hover(function() {
+    $("#statl").css('border','4px solid #663399');
+    $(".item-stat").css('background-color','#663399');
+  }, function() {
+    $("#statl").css('border','none');
+    $(".item-stat").css('background-color','#23242A');
+});
+$("#statp,#statlp").on("click", function() {
+    $("#statp").toggle();
+    $("#stat").toggle();
+    $("#statlp").toggle();
+    $("#statl").toggle();
+    $(".item-stat").css('background-color','#23242A');
+});
+$("#statp,#statlp").hover(function() {
+    $(".item-stat").css('background-color','#663399');
+});
+
+$("#regen,#regenl").on("click", function() {
+    $("#regen").toggle();
+    $("#regenp").toggle();
+    $("#regenl").toggle();
+    $("#regenlp").toggle();
+    $(".item-regen").css('background-color','#993399');
+});
+$("#regen,#regenl").hover(function() {
+    $("#regenl").css('border','4px solid #993399');
+    $(".item-regen").css('background-color','#993399');
+  }, function() {
+    $("#regenl").css('border','none');
+    $(".item-regen").css('background-color','#23242A');
+});
+$("#regenp,#regenlp").on("click", function() {
+    $("#regenp").toggle();
+    $("#regen").toggle();
+    $("#regenlp").toggle();
+    $("#regenl").toggle();
+    $(".item-regen").css('background-color','#23242A');
+});
+$("#regenp,#regenlp").hover(function() {
+    $(".item-regen").css('background-color','#993399');
+});
+
+$("#cons,#consl").on("click", function() {
+    $("#cons").toggle();
+    $("#consp").toggle();
+    $("#consl").toggle();
+    $("#conslp").toggle();
+    $(".item-cons").css('background-color','#cccc33');
+});
+$("#cons,#consl").hover(function() {
+    $("#consl").css('border','4px solid #cccc33');
+    $(".item-cons").css('background-color','#cccc33');
+  }, function() {
+    $("#consl").css('border','none');
+    $(".item-cons").css('background-color','#23242A');
+});
+$("#consp,#conslp").on("click", function() {
+    $("#consp").toggle();
+    $("#cons").toggle();
+    $("#conslp").toggle();
+    $("#consl").toggle();
+    $(".item-cons").css('background-color','#23242A');
+});
+$("#consp,#conslp").hover(function() {
+    $(".item-cons").css('background-color','#cccc33');
+});
+
+$("#mobi,#mobil").on("click", function() {
+    $("#mobi").toggle();
+    $("#mobip").toggle();
+    $("#mobil").toggle();
+    $("#mobilp").toggle();
+    $(".item-mobi").css('background-color','#0066cc');
+});
+$("#mobi,#mobil").hover(function() {
+    $("#mobil").css('border','4px solid #0066cc');
+    $(".item-mobi").css('background-color','#0066cc');
+  }, function() {
+    $("#mobil").css('border','none');
+    $(".item-mobi").css('background-color','#23242A');
+});
+$("#mobip,#mobilp").on("click", function() {
+    $("#mobip").toggle();
+    $("#mobi").toggle();
+    $("#mobilp").toggle();
+    $("#mobil").toggle();
+    $(".item-mobi").css('background-color','#23242A');
+});
+$("#mobip,#mobilp").hover(function() {
+    $(".item-mobi").css('background-color','#0066cc');
+});
+
+$("#dam,#daml").on("click", function() {
+    $("#dam").toggle();
+    $("#damp").toggle();
+    $("#daml").toggle();
+    $("#damlp").toggle();
+    $(".item-dam").css('background-color','#33cccc');
+});
+$("#dam,#daml").hover(function() {
+    $("#daml").css('border','4px solid #33cccc');
+    $(".item-dam").css('background-color','#33cccc');
+  }, function() {
+    $("#daml").css('border','none');
+    $(".item-dam").css('background-color','#23242A');
+});
+$("#damp,#damlp").on("click", function() {
+    $("#damp").toggle();
+    $("#dam").toggle();
+    $("#damlp").toggle();
+    $("#daml").toggle();
+    $(".item-dam").css('background-color','#23242A');
+});
+$("#damp,#damlp").hover(function() {
+    $(".item-dam").css('background-color','#33cccc');
+});
+
+$("#def,#defl").on("click", function() {
+    $("#def").toggle();
+    $("#defp").toggle();
+    $("#defl").toggle();
+    $("#deflp").toggle();
+    $(".item-def").css('background-color','#999999');
+});
+$("#def,#defl").hover(function() {
+    $("#defl").css('border','4px solid #999999');
+    $(".item-def").css('background-color','#999999');
+  }, function() {
+    $("#defl").css('border','none');
+    $(".item-def").css('background-color','#23242A');
+});
+$("#defp,#deflp").on("click", function() {
+    $("#defp").toggle();
+    $("#def").toggle();
+    $("#deflp").toggle();
+    $("#defl").toggle();
+    $(".item-def").css('background-color','#23242A');
+});
+$("#defp,#deflp").hover(function() {
+    $(".item-def").css('background-color','#999999');
+});
+
+$("#util,#utill").on("click", function() {
+    $("#util").toggle();
+    $("#utilp").toggle();
+    $("#utill").toggle();
+    $("#utillp").toggle();
+    $(".item-util").css('background-color','#993300');
+});
+$("#util,#utill").hover(function() {
+    $("#utill").css('border','4px solid #993300');
+    $(".item-util").css('background-color','#993300');
+  }, function() {
+    $("#utill").css('border','none');
+    $(".item-util").css('background-color','#23242A');
+});
+$("#utilp,#utillp").on("click", function() {
+    $("#utilp").toggle();
+    $("#util").toggle();
+    $("#utillp").toggle();
+    $("#utill").toggle();
+    $(".item-util").css('background-color','#23242A');
+});
+$("#utilp,#utillp").hover(function() {
+    $(".item-util").css('background-color','#993300');
+});
+
+$("#cast,#castl").on("click", function() {
+    $("#cast").toggle();
+    $("#castp").toggle();
+    $("#castl").toggle();
+    $("#castlp").toggle();
+    $(".item-cast").css('background-color','#99cc66');
+});
+$("#cast,#castl").hover(function() {
+    $("#castl").css('border','4px solid #99cc66');
+    $(".item-cast").css('background-color','#99cc66');
+  }, function() {
+    $("#castl").css('border','none');
+    $(".item-cast").css('background-color','#23242A');
+});
+$("#castp,#castlp").on("click", function() {
+    $("#castp").toggle();
+    $("#cast").toggle();
+    $("#castlp").toggle();
+    $("#castl").toggle();
+    $(".item-cast").css('background-color','#23242A');
+});
+$("#castp,#castlp").hover(function() {
+    $(".item-cast").css('background-color','#99cc66');
+});
+
+$("#supp,#suppl").on("click", function() {
+    $("#supp").toggle();
+    $("#suppp").toggle();
+    $("#suppl").toggle();
+    $("#supplp").toggle();
+    $(".item-supp").css('background-color','#cc6600');
+});
+$("#supp,#suppl").hover(function() {
+    $("#suppl").css('border','4px solid #cc6600');
+    $(".item-supp").css('background-color','#cc6600');
+  }, function() {
+    $("#suppl").css('border','none');
+    $(".item-supp").css('background-color','#23242A');
+});
+$("#suppp,#supplp").on("click", function() {
+    $("#suppp").toggle();
+    $("#supp").toggle();
+    $("#supplp").toggle();
+    $("#suppl").toggle();
+    $(".item-supp").css('background-color','#23242A');
+});
+$("#suppp,#supplp").hover(function() {
+    $(".item-supp").css('background-color','#cc6600');
+});
+
+$('.item-str').hover(function (e) {
+  $('#strl').toggle();
+  $('#strlp').toggle();
+}, function (e) {
+  $('#strl').toggle();
+  $('#strlp').toggle();
+});
+
+$('.item-int').hover(function (e) {
+  $('#intl').toggle();
+  $('#intlp').toggle();
+}, function (e) {
+  $('#intl').toggle();
+  $('#intlp').toggle();
+});
+
+$('.item-agi').hover(function (e) {
+  $('#agil').toggle();
+  $('#agilp').toggle();
+}, function (e) {
+  $('#agil').toggle();
+  $('#agilp').toggle();
+});
+
+$('.item-stat').hover(function (e) {
+  $('#statl').toggle();
+  $('#statlp').toggle();
+}, function (e) {
+  $('#statl').toggle();
+  $('#statlp').toggle();
+});
+
+$('.item-regen').hover(function (e) {
+  $('#regenl').toggle();
+  $('#regenlp').toggle();
+}, function (e) {
+  $('#regenl').toggle();
+  $('#regenlp').toggle();
+});
+
+$('.item-cons').hover(function (e) {
+  $('#consl').toggle();
+  $('#conslp').toggle();
+}, function (e) {
+  $('#consl').toggle();
+  $('#conslp').toggle();
+});
+
+$('.item-mobi').hover(function (e) {
+  $('#mobil').toggle();
+  $('#mobilp').toggle();
+}, function (e) {
+  $('#mobil').toggle();
+  $('#mobilp').toggle();
+});
+
+$('.item-dam').hover(function (e) {
+  $('#daml').toggle();
+  $('#damlp').toggle();
+}, function (e) {
+  $('#daml').toggle();
+  $('#damlp').toggle();
+});
+
+$('.item-def').hover(function (e) {
+  $('#defl').toggle();
+  $('#deflp').toggle();
+}, function (e) {
+  $('#defl').toggle();
+  $('#deflp').toggle();
+});
+
+$('.item-util').hover(function (e) {
+  $('#utill').toggle();
+  $('#utillp').toggle();
+}, function (e) {
+  $('#utill').toggle();
+  $('#utillp').toggle();
+});
+
+$('.item-cast').hover(function (e) {
+  $('#castl').toggle();
+  $('#castlp').toggle();
+}, function (e) {
+  $('#castl').toggle();
+  $('#castlp').toggle();
+});
+
+$('.item-supp').hover(function (e) {
+  $('#suppl').toggle();
+  $('#supplp').toggle();
+}, function (e) {
+  $('#suppl').toggle();
+  $('#supplp').toggle();
 });
 
 $("#belt").hover(function() {
-    $("#belt-sange").show(150);
-    $("#belt-treads").show(150);
-    $("#belt-basher").show(150);
-    $("#belt-necro").show(150);
+    $("path[id*=belt]").show(150);
+    //$("#belt-sange").show(150);
+    //$("#belt-treads").show(150);
+    //$("#belt-basher").show(150);
+    //$("#belt-necro").show(150);
   }, function() {
-    $("#belt-sange").hide();
-    $("#belt-treads").hide();
-    $("#belt-basher").hide();
-    $("#belt-necro").hide();
+    $("path[id*=belt]").hide();
+    //$("#belt-sange").hide();
+    //$("#belt-treads").hide();
+    //$("#belt-basher").hide();
+    //$("#belt-necro").hide();
 });
 
 $("#club").hover(function() {
-    $("#club-sange").show(150);
-    $("#club-dlance").show(150);
-    $("#club-echo").show(150);
-    $("#club-bkb").show(150);
-    $("#club-aghs").show(150);
+    $("path[id*=club]").show(150);
   }, function() {
-    $("#club-sange").hide();
-    $("#club-dlance").hide();
-    $("#club-echo").hide();
-    $("#club-bkb").hide();
-    $("#club-aghs").hide();
+    $("path[id*=club]").hide();
 });
 
 $("#halberd").hover(function() {
-    $("#belt-sange").show(150);
-    $("#club-sange").show(150);
-    $("#sange-halberd").show(150);
-    $("#talisman-halberd").show(150);
+    $("path[id*=halberd]").show(150);
   }, function() {
-    $("#belt-sange").hide();
-    $("#club-sange").hide();
-    $("#sange-halberd").hide();
-    $("#talisman-halberd").hide();
+    $("path[id*=halberd]").hide();
 });
 
 $("#gjalla").hover(function() {
-    $("#belt-sange").show(150);
-    $("#club-sange").show(150);
-    $("#sange-gjalla").show(150);
-    $("#ghost-gjalla").show(150);
-    $("#wand-gjalla").show(150);
-    $("#branch-wand").show(150);
-    $("#circlet-wand").show(150);
-    $("#stick-wand").show(150);
+    $("path[id*=gjalla]").show(150);
   }, function() {
-    $("#belt-sange").hide();
-    $("#club-sange").hide();
-    $("#sange-gjalla").hide();
-    $("#ghost-gjalla").hide();
-    $("#wand-gjalla").hide();
-    $("#branch-wand").hide();
-    $("#circlet-wand").hide();
-    $("#stick-wand").hide();
+    $("path[id*=gjalla]").hide();
 });
 
 $("#sange").hover(function() {
-    $("#belt-sange").show(150);
-    $("#club-sange").show(150);
-    $("#sange-halberd").show(150);
-    $("#sange-gjalla").show(150);
-    $("#sange-sny").show(150);
-    $("#sange-snl").show(150);
-    $("#sange-trio").show(150);
+    $("path[id*=sange]").show(150);
   }, function() {
-    $("#belt-sange").hide();
-    $("#club-sange").hide();
-    $("#sange-halberd").hide();
-    $("#sange-gjalla").hide();
-    $("#sange-sny").hide();
-    $("#sange-snl").hide();
-    $("#sange-trio").hide();
+    $("path[id*=sange]").hide();
 });
 
 $("#robe").hover(function() {
-    $("#robe-lucen").show(150);
-    $("#robe-treads").show(150);
-    $("#robe-oblivion").show(150);
-    $("#robe-blademail").show(150);
-    $("#robe-diffu").show(150);
+    $("path[id*=robe]").show(150);
   }, function() {
-    $("#robe-lucen").hide();
-    $("#robe-treads").hide();
-    $("#robe-oblivion").hide();
-    $("#robe-blademail").hide();
-    $("#robe-diffu").hide();
+    $("path[id*=robe]").hide();
 });
 
 $("#staff").hover(function() {
-    $("#staff-lucen").show(150);
-    $("#staff-force").show(150);
-    $("#staff-atos").show(150);
-    $("#staff-dagon").show(150);
-    $("#staff-euls").show(150);
-    $("#staff-necro").show(150);
-    $("#staff-aghs").show(150);
+    $("path[id^=staff]").show(150);
   }, function() {
-    $("#staff-lucen").hide();
-    $("#staff-force").hide();
-    $("#staff-atos").hide();
-    $("#staff-dagon").hide();
-    $("#staff-euls").hide();
-    $("#staff-necro").hide();
-    $("#staff-aghs").hide();
+    $("path[id^=staff]").hide();
 });
 
 $("#spellblade").hover(function() {
-    $("#robe-lucen").show(150);
-    $("#staff-lucen").show(150);
-    $("#lucen-spellblade").show(150);
-    $("#aether-spellblade").show(150);
-    $("#void-aether").show(150);
-    $("#energy-aether").show(150);
+    $("path[id*=spellblade]").show(150);
   }, function() {
-    $("#robe-lucen").hide();
-    $("#staff-lucen").hide();
-    $("#lucen-spellblade").hide();
-    $("#aether-spellblade").hide();
-    $("#void-aether").hide();
-    $("#energy-aether").hide();
+    $("path[id*=spellblade]").hide();
 });
 
 $("#seraph").hover(function() {
-    $("#robe-lucen").show(150);
-    $("#staff-lucen").show(150);
-    $("#lucen-seraph").show(150);
-    $("#void-seraph").show(150);
-    $("#force-seraph").show(150);
-    $("#roh-force").show(150);
-    $("#staff-force").show(150);
+    $("path[id*=seraph]").show(150);
   }, function() {
-    $("#robe-lucen").hide();
-    $("#staff-lucen").hide();
-    $("#lucen-seraph").hide();
-    $("#void-seraph").hide();
-    $("#force-seraph").hide();
-    $("#roh-force").hide();
-    $("#staff-force").hide();
+    $("path[id*=seraph]").hide();
 });
 
 $("#lucen").hover(function() {
-    $("#robe-lucen").show(150);
-    $("#staff-lucen").show(150);
-    $("#lucen-spellblade").show(150);
-    $("#lucen-seraph").show(150);
-    $("#lucen-snl").show(150);
-    $("#lucen-lny").show(150);
-    $("#lucen-trio").show(150);
+    $("path[id*=lucen]").show(150);
   }, function() {
-    $("#robe-lucen").hide();
-    $("#staff-lucen").hide();
-    $("#lucen-spellblade").hide();
-    $("#lucen-seraph").hide();
-    $("#lucen-snl").hide();
-    $("#lucen-lny").hide();
-    $("#lucen-trio").hide();
+    $("path[id*=lucen]").hide();
 });
 
 $("#band").hover(function() {
-    $("#band-yasha").show(150);
-    $("#band-dlance").show(150);
+    $("path[id*=band]").show(150);
   }, function() {
-    $("#band-yasha").hide();
-    $("#band-dlance").hide();
+    $("path[id*=band]").hide();
 });
 
 $("#blade").hover(function() {
-    $("#blade-yasha").show(150);
-    $("#blade-diffu").show(150);
-    $("#blade-aghs").show(150);
+    $("path[id^=blade]").show(150);
   }, function() {
-    $("#blade-yasha").hide();
-    $("#blade-diffu").hide();
-    $("#blade-aghs").hide();
+    $("path[id^=blade]").hide();
 });
 
 $("#manta").hover(function() {
-    $("#band-yasha").show(150);
-    $("#blade-yasha").show(150);
-    $("#yasha-manta").show(150);
-    $("#ultimateorb-manta").show(150);
+    $("path[id*=manta]").show(150);
   }, function() {
-    $("#band-yasha").hide();
-    $("#blade-yasha").hide();
-    $("#yasha-manta").hide();
-    $("#ultimateorb-manta").hide();
+    $("path[id*=manta]").hide();
 });
 
 $("#hayabusa").hover(function() {
-    $("#band-yasha").show(150);
-    $("#blade-yasha").show(150);
-    $("#yasha-hayabusa").show(150);
-    $("#demon-hayabusa").show(150);
-    $("#lace-hayabusa").show(150);
+    $("path[id*=hayabusa]").show(150);
   }, function() {
-    $("#band-yasha").hide();
-    $("#blade-yasha").hide();
-    $("#yasha-hayabusa").hide();
-    $("#demon-hayabusa").hide();
-    $("#lace-hayabusa").hide();
+    $("path[id*=hayabusa]").hide();
 });
 
 $("#yasha").hover(function() {
-    $("#band-yasha").show(150);
-    $("#blade-yasha").show(150);
-    $("#yasha-manta").show(150);
-    $("#yasha-hayabusa").show(150);
-    $("#yasha-sny").show(150);
-    $("#yasha-lny").show(150);
-    $("#yasha-trio").show(150);
+    $("path[id*=yasha]").show(150);
   }, function() {
-    $("#band-yasha").hide();
-    $("#blade-yasha").hide();
-    $("#yasha-manta").hide();
-    $("#yasha-hayabusa").hide();
-    $("#yasha-sny").hide();
-    $("#yasha-lny").hide();
-    $("#yasha-trio").hide();
+    $("path[id*=yasha]").hide();
 });
 
 $("#trio").hover(function() {
-    $("#belt-sange").show(150);
-    $("#club-sange").show(150);
-    $("#robe-lucen").show(150);
-    $("#staff-lucen").show(150);
-    $("#band-yasha").show(150);
-    $("#blade-yasha").show(150);
-    $("#sange-trio").show(150);
-    $("#lucen-trio").show(150);
-    $("#yasha-trio").show(150);
-    $("#sny-trio").show(150);
-    $("#snl-trio").show(150);
-    $("#lny-trio").show(150);
+    $("path[id*=trio]").show(150);
   }, function() {
-    $("#belt-sange").hide();
-    $("#club-sange").hide();
-    $("#robe-lucen").hide();
-    $("#staff-lucen").hide();
-    $("#band-yasha").hide();
-    $("#blade-yasha").hide();
-    $("#sange-trio").hide();
-    $("#lucen-trio").hide();
-    $("#yasha-trio").hide();
-    $("#sny-trio").hide();
-    $("#snl-trio").hide();
-    $("#lny-trio").hide();
+    $("path[id*=trio]").hide();
 });
 
 $("#sny").hover(function() {
-    $("#belt-sange").show(150);
-    $("#club-sange").show(150);
-    $("#band-yasha").show(150);
-    $("#blade-yasha").show(150);
-    $("#sange-sny").show(150);
-    $("#yasha-sny").show(150);
+    $("path[id*=sny]").show(150);
   }, function() {
-    $("#sange-sny").hide();
-    $("#yasha-sny").hide();
-    $("#belt-sange").hide();
-    $("#club-sange").hide();
-    $("#band-yasha").hide();
-    $("#blade-yasha").hide();
+    $("path[id*=sny]").hide();
 });
 
 $("#snl").hover(function() {
-    $("#sange-snl").show(150);
-    $("#lucen-snl").show(150);
-    $("#belt-sange").show(150);
-    $("#club-sange").show(150);
-    $("#robe-lucen").show(150);
-    $("#staff-lucen").show(150);
+    $("path[id*=snl]").show(150);
   }, function() {
-    $("#belt-sange").hide();
-    $("#club-sange").hide();
-    $("#robe-lucen").hide();
-    $("#staff-lucen").hide();
-    $("#sange-snl").hide();
-    $("#lucen-snl").hide();
+    $("path[id*=snl]").hide();
 });
 
 $("#lny").hover(function() {
-    $("#lucen-lny").show(150);
-    $("#yasha-lny").show(150);
-    $("#robe-lucen").show(150);
-    $("#staff-lucen").show(150);
-    $("#band-yasha").show(150);
-    $("#blade-yasha").show(150);
+    $("path[id*=lny]").show(150);
   }, function() {
-    $("#lucen-lny").hide();
-    $("#yasha-lny").hide();
-    $("#robe-lucen").hide();
-    $("#staff-lucen").hide();
-    $("#band-yasha").hide();
-    $("#blade-yasha").hide();
+    $("path[id*=lny]").hide();
 });
 
 $("#gauntlets").hover(function() {
-    $("#gauntlets-woodsman").show(150);
-    $("#gauntlets-bracer").show(150);
+    $("path[id*=gauntlets]").show(150);
   }, function() {
-    $("#gauntlets-woodsman").hide();
-    $("#gauntlets-bracer").hide();
+    $("path[id*=gauntlets]").hide();
 });
 
 $("#woodsman").hover(function() {
-    $("#gauntlets-woodsman").show(150);
-    $("#rop-woodsman").show(150);
-    $("#branch-woodsman").show(150);
+    $("path[id*=woodsman]").show(150);
   }, function() {
-    $("#gauntlets-woodsman").hide();
-    $("#rop-woodsman").hide();
-    $("#branch-woodsman").hide();
+    $("path[id*=woodsman]").hide();
 });
 
 $("#mantle").hover(function() {
-    $("#mantle-frost").show(150);
-    $("#mantle-null").show(150);
+    $("path[id*=mantle]").show(150);
   }, function() {
-    $("#mantle-frost").hide();
-    $("#mantle-null").hide();
+    $("path[id*=mantle]").hide();
 });
 
 $("#frost").hover(function() {
-    $("#mantle-frost").show(150);
-    $("#oov-frost").show(150);
-    $("#qb-frost").show(150);
+    $("path[id*=frost]").show(150);
   }, function() {
-    $("#mantle-frost").hide();
-    $("#oov-frost").hide();
-    $("#qb-frost").hide();
+    $("path[id*=frost]").hide();
 });
 
 $("#slippers").hover(function() {
-    $("#slippers-pms").show(150);
-    $("#slippers-wraith").show(150);
+    $("path[id*=slippers]").show(150);
   }, function() {
-    $("#slippers-pms").hide();
-    $("#slippers-wraith").hide();
+    $("path[id*=slippers]").hide();
 });
 
 $("#pms").hover(function() {
-    $("#slippers-pms").show(150);
-    $("#stout-pms").show(150);
+    $("path[id*=pms]").show(150);
   }, function() {
-    $("#slippers-pms").hide();
-    $("#stout-pms").hide();
+    $("path[id*=pms]").hide();
 });
 
 $("#bracer").hover(function() {
-    $("#gauntlets-bracer").show(150);
-    $("#circlet-bracer").show(150);
-    $("#bracer-drum").show(150);
-    $("#bracer-atos").show(150);
+    $("path[id*=bracer]").show(150);
   }, function() {
-    $("#gauntlets-bracer").hide();
-    $("#circlet-bracer").hide();
-    $("#bracer-drum").hide();
-    $("#bracer-atos").hide();
+    $("path[id*=bracer]").hide();
 });
 
 $("#drum").hover(function() {
-    $("#gauntlets-bracer").show(150);
-    $("#circlet-bracer").show(150);
-    $("#bracer-drum").show(150);
-    $("#sage-drum").show(150);
-    $("#lace-drum").show(150);
+    $("path[id*=drum]").show(150);
   }, function() {
-    $("#gauntlets-bracer").hide();
-    $("#circlet-bracer").hide();
-    $("#bracer-drum").hide();
-    $("#sage-drum").hide();
-    $("#lace-drum").hide();
+    $("path[id*=drum]").hide();
 });
 
 $("#atos").hover(function() {
-    $("#gauntlets-bracer").show(150);
-    $("#circlet-bracer").show(150);
-    $("#staff-atos").show(150);
-    $("#bracer-atos").show(150);
+    $("path[id*=atos]").show(150);
   }, function() {
-    $("#gauntlets-bracer").hide();
-    $("#circlet-bracer").hide();
-    $("#staff-atos").hide();
-    $("#bracer-atos").hide();
+    $("path[id*=atos]").hide();
 });
 
 $("#null").hover(function() {
-    $("#mantle-null").show(150);
-    $("#circlet-null").show(150);
-    $("#null-dagon").show(150);
-    $("#null-veil").show(150);
+    $("path[id*=null]").show(150);
   }, function() {
-    $("#mantle-null").hide();
-    $("#circlet-null").hide();
-    $("#null-dagon").hide();
-    $("#null-veil").hide();
+    $("path[id*=null]").hide();
 });
 
 $("#dagon").hover(function() {
-    $("#mantle-null").show(150);
-    $("#circlet-null").show(150);
-    $("#staff-dagon").show(150);
-    $("#null-dagon").show(150);
+    $("path[id*=dagon]").show(150);
   }, function() {
-    $("#mantle-null").hide();
-    $("#circlet-null").hide();
-    $("#staff-dagon").hide();
-    $("#null-dagon").hide();
+    $("path[id*=dagon]").hide();
 });
 
 $("#veil").hover(function() {
-    $("#mantle-null").show(150);
-    $("#circlet-null").show(150);
-    $("#null-veil").show(150);
-    $("#hoiw-veil").show(150);
+    $("path[id*=veil]").show(150);
   }, function() {
-    $("#mantle-null").hide();
-    $("#circlet-null").hide();
-    $("#null-veil").hide();
-    $("#hoiw-veil").hide();
+    $("path[id*=veil]").hide();
 });
 
 $("#wraith").hover(function() {
-    $("#slippers-wraith").show(150);
-    $("#circlet-wraith").show(150);
-    $("#wraith-aquila").show(150);
-    $("#wraith-squire").show(150);
+    $("path[id*=wraith]").show(150);
   }, function() {
-    $("#slippers-wraith").hide();
-    $("#circlet-wraith").hide();
-    $("#wraith-aquila").hide();
-    $("#wraith-squire").hide();
+    $("path[id*=wraith]").hide();
 });
 
 $("#aquila").hover(function() {
-    $("#slippers-wraith").show(150);
-    $("#circlet-wraith").show(150);
-    $("#wraith-aquila").show(150);
-    $("#basi-aquila").show(150);
-    $("#sage-basi").show(150);
-    $("#rop-basi").show(150);
+    $("path[id*=aquila]").show(150);
   }, function() {
-    $("#slippers-wraith").hide();
-    $("#circlet-wraith").hide();
-    $("#wraith-aquila").hide();
-    $("#basi-aquila").hide();
-    $("#sage-basi").hide();
-    $("#rop-basi").hide();
+    $("path[id*=aquila]").hide();
 });
 
 $("#squire").hover(function() {
-    $("#slippers-wraith").show(150);
-    $("#circlet-wraith").show(150);
-    $("#wraith-squire").show(150);
-    $("#clay-squire").show(150);
+    $("path[id*=squire]").show(150);
   }, function() {
-    $("#slippers-wraith").hide();
-    $("#circlet-wraith").hide();
-    $("#wraith-squire").hide();
-    $("#clay-squire").hide();
+    $("path[id*=squire]").hide();
 });
 
 $("#dlance").hover(function() {
-    $("#dlance-pike").show(150);
-    $("#dlance-wyrmslayer").show(150);
-    $("#band-dlance").show(150);
-    $("#club-dlance").show(150);
+    $("path[id*=dlance]").show(150);
   }, function() {
-    $("#dlance-pike").hide();
-    $("#dlance-wyrmslayer").hide();
-    $("#band-dlance").hide();
-    $("#club-dlance").hide();
+    $("path[id*=dlance]").hide();
 });
 
 $("#pike").hover(function() {
-    $("#band-dlance").show(150);
-    $("#club-dlance").show(150);
-    $("#force-pike").show(150);
-    $("#dlance-pike").show(150);
-    $("#roh-force").show(150);
-    $("#staff-force").show(150);
+    $("path[id*=pike]").show(150);
   }, function() {
-    $("#band-dlance").hide();
-    $("#club-dlance").hide();
-    $("#force-pike").hide();
-    $("#dlance-pike").hide();
-    $("#roh-force").hide();
-    $("#staff-force").hide();
+    $("path[id*=pike]").hide();
 });
 
 $("#oblivion").hover(function() {
-    $("#oblivion-echo").show(150);
-    $("#oblivion-orchid").show(150);
-    $("#sage-oblivion").show(150);
-    $("#robe-oblivion").show(150);
-    $("#qstaff-oblivion").show(150);
+    $("path[id*=oblivion]").show(150);
   }, function() {
-    $("#oblivion-echo").hide();
-    $("#oblivion-orchid").hide();
-    $("#sage-oblivion").hide();
-    $("#robe-oblivion").hide();
-    $("#qstaff-oblivion").hide();
+    $("path[id*=oblivion]").hide();
 });
 
 $("#echo").hover(function() {
-    $("#echo-wyrmslayer").show(150);
-    $("#club-echo").show(150);
-    $("#oblivion-echo").show(150);
-    $("#sage-oblivion").show(150);
-    $("#robe-oblivion").show(150);
-    $("#qstaff-oblivion").show(150);
+    $("path[id*=echo]").show(150);
   }, function() {
-    $("#echo-wyrmslayer").hide();
-    $("#club-echo").hide();
-    $("#oblivion-echo").hide();
-    $("#sage-oblivion").hide();
-    $("#robe-oblivion").hide();
-    $("#qstaff-oblivion").hide();
+    $("path[id*=echo]").hide();
 });
 
 $("#force").hover(function() {
-    $("#force-pike").show(150);
-    $("#force-seraph").show(150);
-    $("#roh-force").show(150);
-    $("#staff-force").show(150);
+    $("path[id*=force]").show(150);
   }, function() {
-    $("#force-pike").hide();
-    $("#force-seraph").hide();
-    $("#roh-force").hide();
-    $("#staff-force").hide();
+    $("path[id*=force]").hide();
 });
 
 $("#wyrmslayer").hover(function() {
-    $("#band-dlance").show(150);
-    $("#club-dlance").show(150);
-    $("#dlance-wyrmslayer").show(150);
-    $("#echo-wyrmslayer").show(150);
-    $("#club-echo").show(150);
-    $("#oblivion-echo").show(150);
-    $("#sage-oblivion").show(150);
-    $("#robe-oblivion").show(150);
-    $("#qstaff-oblivion").show(150);
+    $("path[id*=wyrmslayer]").show(150);
   }, function() {
-    $("#band-dlance").hide();
-    $("#club-dlance").hide();
-    $("#dlance-wyrmslayer").hide();
-    $("#echo-wyrmslayer").hide();
-    $("#club-echo").hide();
-    $("#oblivion-echo").hide();
-    $("#sage-oblivion").hide();
-    $("#robe-oblivion").hide();
-    $("#qstaff-oblivion").hide();
+    $("path[id*=wyrmslayer]").hide();
 });
 
 $("#reaver").hover(function() {
-    $("#reaver-heart").show(150);
-    $("#reaver-satanic").show(150);
-    $("#reaver-pauldron").show(150);
+    $("path[id*=reaver]").show(150);
   }, function() {
-    $("#reaver-heart").hide();
-    $("#reaver-satanic").hide();
-    $("#reaver-pauldron").hide();
+    $("path[id*=reaver]").hide();
 });
 
 $("#heart").hover(function() {
-    $("#reaver-heart").show(150);
-    $("#vit-heart").show(150);
+    $("path[id*=heart]").show(150);
   }, function() {
-    $("#reaver-heart").hide();
-    $("#vit-heart").hide();
+    $("path[id*=heart]").hide();
 });
 
 $("#satanic").hover(function() {
-    $("#reaver-satanic").show(150);
-    $("#mithham-satanic").show(150);
-    $("#morbid-satanic").show(150);
+    $("path[id*=satanic]").show(150);
   }, function() {
-    $("#reaver-satanic").hide();
-    $("#mithham-satanic").hide();
-    $("#morbid-satanic").hide();
+    $("path[id*=satanic]").hide();
 });
 
 $("#pauldron").hover(function() {
-    $("#reaver-pauldron").show(150);
-    $("#hotd-pauldron").show(150);
-    $("#talon-pauldron").show(150);
+    $("path[id*=pauldron]").show(150);
   }, function() {
-    $("#reaver-pauldron").hide();
-    $("#hotd-pauldron").hide();
-    $("#talon-pauldron").hide();
+    $("path[id*=pauldron]").hide();
 });
 
 $("#mystic").hover(function() {
-    $("#mystic-sheep").show(150);
-    $("#mystic-shiva").show(150);
-    $("#mystic-ocore").show(150);
+    $("path[id*=mystic]").show(150);
   }, function() {
-    $("#mystic-sheep").hide();
-    $("#mystic-shiva").hide();
-    $("#mystic-ocore").hide();
+    $("path[id*=mystic]").hide();
 });
 
 $("#sheep").hover(function() {
-    $("#mystic-sheep").show(150);
-    $("#ultimateorb-sheep").show(150);
-    $("#void-sheep").show(150);
+    $("path[id*=sheep]").show(150);
   }, function() {
-    $("#mystic-sheep").hide();
-    $("#ultimateorb-sheep").hide();
-    $("#void-sheep").hide();
+    $("path[id*=sheep]").hide();
 });
 
 $("#shiva").hover(function() {
-    $("#mystic-shiva").show(150);
-    $("#platemail-shiva").show(150);
+    $("path[id*=shiva]").show(150);
   }, function() {
-    $("#mystic-shiva").hide();
-    $("#platemail-shiva").hide();
+    $("path[id*=shiva]").hide();
 });
 
 $("#ocore").hover(function() {
-    $("#mystic-ocore").show(150);
-    $("#soulbooster-ocore").show(150);
-    $("#vit-soulbooster").show(150);
-    $("#energy-soulbooster").show(150);
-    $("#pb-soulbooster").show(150);
+    $("path[id*=ocore]").show(150);
   }, function() {
-    $("#mystic-ocore").hide();
-    $("#soulbooster-ocore").hide();
-    $("#vit-soulbooster").hide();
-    $("#energy-soulbooster").hide();
-    $("#pb-soulbooster").hide();
+    $("path[id*=ocore]").hide();
 });
 
 $("#eagle").hover(function() {
-    $("#eagle-butterfly").show(150);
-    $("#eagle-eblade").show(150);
-    $("#eagle-wkb").show(150);
+    $("path[id*=eagle]").show(150);
   }, function() {
-    $("#eagle-butterfly").hide();
-    $("#eagle-eblade").hide();
-    $("#eagle-wkb").hide();
+    $("path[id*=eagle]").hide();
 });
 
 $("#butterfly").hover(function() {
-    $("#eagle-butterfly").show(150);
-    $("#talisman-butterfly").show(150);
-    $("#qstaff-butterfly").show(150);
+    $("path[id*=butterfly]").show(150);
   }, function() {
-    $("#eagle-butterfly").hide();
-    $("#talisman-butterfly").hide();
-    $("#qstaff-butterfly").hide();
+    $("path[id*=butterfly]").hide();
 });
 
 $("#eblade").hover(function() {
-    $("#eagle-eblade").show(150);
-    $("#ghost-eblade").show(150);
+    $("path[id*=eblade]").show(150);
   }, function() {
-    $("#eagle-eblade").hide();
-    $("#ghost-eblade").hide();
+    $("path[id*=eblade]").hide();
 });
 
 $("#wkb").hover(function() {
-    $("#eagle-wkb").show(150);
-    $("#shadowam-wkb").show(150);
-    $("#blight-wkb").show(150);
+    $("path[id*=wkb]").show(150);
   }, function() {
-    $("#eagle-wkb").hide();
-    $("#shadowam-wkb").hide();
-    $("#blight-wkb").hide();
+    $("path[id*=wkb]").hide();
 });
 
 $("#vermcloak").hover(function() {
-    $("#reaver-vermcloak").show(150);
-    $("#mystic-vermcloak").show(150);
-    $("#eagle-vermcloak").show(150);
+    $("path[id*=vermcloak]").show(150);
   }, function() {
-    $("#reaver-vermcloak").hide();
-    $("#mystic-vermcloak").hide();
-    $("#eagle-vermcloak").hide();
+    $("path[id*=vermcloak]").hide();
 });
 
 $("#mango").hover(function() {
-    $("#mango-soulring").show(150);
+    $("path[id*=mango]").show(150);
   }, function() {
-    $("#mango-soulring").hide();
+    $("path[id*=mango]").hide();
 });
 
 $("#irain").hover(function() {
-    $("#irain-urn").show(150);
+    $("path[id*=irain]").show(150);
   }, function() {
-    $("#irain-urn").hide();
+    $("path[id*=irain]").hide();
 });
 
 $("#ror").hover(function() {
-    $("#ror-soulring").show(150);
-    $("#ror-headdress").show(150);
-    $("#ror-hood").show(150);
-    $("#ror-tranquil").show(150);
+    $("path[id*=ror]").show(150);
   }, function() {
-    $("#ror-soulring").hide();
-    $("#ror-headdress").hide();
-    $("#ror-hood").hide();
-    $("#ror-tranquil").hide();
+    $("path[id*=ror]").hide();
 });
 
 $("#sage").hover(function() {
-    $("#sage-moc").show(150);
-    $("#sage-oblivion").show(150);
-    $("#sage-basi").show(150);
-    $("#sage-soulring").show(150);
-    $("#sage-drum").show(150);
+    $("path[id*=sage]").show(150);
   }, function() {
-    $("#sage-moc").hide();
-    $("#sage-oblivion").hide();
-    $("#sage-basi").hide();
-    $("#sage-soulring").hide();
-    $("#sage-drum").hide();
+    $("path[id*=sage]").hide();
 });
 
 $("#roh").hover(function() {
-    $("#roh-hood").show(150);
-    $("#roh-perseverance").show(150);
-    $("#roh-vanguard").show(150);
-    $("#roh-force").show(150);
-    $("#roh-hotd").show(150);
+    $("path[id*=roh]").show(150);
   }, function() {
-    $("#roh-hood").hide();
-    $("#roh-perseverance").hide();
-    $("#roh-vanguard").hide();
-    $("#roh-force").hide();
-    $("#roh-hotd").hide();
+    $("path[id*=roh]").hide();
 });
 
 $("#void").hover(function() {
-    $("#void-euls").show(150);
-    $("#void-sheep").show(150);
-    $("#void-perseverance").show(150);
-    $("#void-aether").show(150);
-    $("#void-seraph").show(150);
+    $("path[id*=void]").show(150);
   }, function() {
-    $("#void-euls").hide();
-    $("#void-sheep").hide();
-    $("#void-perseverance").hide();
-    $("#void-aether").hide();
-    $("#void-seraph").hide();
+    $("path[id*=void]").hide();
 });
 
 $("#stick").hover(function() {
-    $("#stick-wand").show(150);
+    $("path[id*=stick]").show(150);
   }, function() {
-    $("#stick-wand").hide();
+    $("path[id*=stick]").hide();
 });
 
 $("#stout").hover(function() {
-    $("#stout-pms").show(150);
-    $("#stout-vanguard").show(150);
+    $("path[id*=stout]").show(150);
   }, function() {
-    $("#stout-pms").hide();
-    $("#stout-vanguard").hide();
+    $("path[id*=stout]").hide();
 });
 
 $("#soulring").hover(function() {
-    $("#mango-soulring").show(150);
-    $("#ror-soulring").show(150);
-    $("#sage-soulring").show(150);
-    $("#soulring-bloodstone").show(150);
+    $("path[id*=soulring]").show(150);
   }, function() {
-    $("#mango-soulring").hide();
-    $("#ror-soulring").hide();
-    $("#sage-soulring").hide();
-    $("#soulring-bloodstone").hide();
+    $("path[id*=soulring]").hide();
 });
 
 $("#perseverance").hover(function() {
-    $("#void-perseverance").show(150);
-    $("#roh-perseverance").show(150);
-    $("#perseverance-refresher").show(150);
-    $("#perseverance-linkens").show(150);
-    $("#perseverance-lotus").show(150);
-    $("#perseverance-bfury").show(150);
+    $("path[id*=perseverance]").show(150);
   }, function() {
-    $("#void-perseverance").hide();
-    $("#roh-perseverance").hide();
-    $("#perseverance-refresher").hide();
-    $("#perseverance-linkens").hide();
-    $("#perseverance-lotus").hide();
-    $("#perseverance-bfury").hide();
+    $("path[id*=perseverance]").hide();
 });
 
 $("#branch").hover(function() {
-    $("#branch-headdress").show(150);
-    $("#branch-buckler").show(150);
-    $("#branch-wand").show(150);
-    $("#branch-woodsman").show(150);
+    $("path[id*=branch]").show(150);
   }, function() {
-    $("#branch-headdress").hide();
-    $("#branch-buckler").hide();
-    $("#branch-wand").hide();
-    $("#branch-woodsman").hide();
+    $("path[id*=branch]").hide();
 });
 
 $("#circlet").hover(function() {
-    $("#circlet-bracer").show(150);
-    $("#circlet-null").show(150);
-    $("#circlet-wraith").show(150);
-    $("#circlet-wand").show(150);
-    $("#circlet-urn").show(150);
+    $("path[id*=circlet]").show(150);
   }, function() {
-    $("#circlet-bracer").hide();
-    $("#circlet-null").hide();
-    $("#circlet-wraith").hide();
-    $("#circlet-wand").hide();
-    $("#circlet-urn").hide();
+    $("path[id*=circlet]").hide();
 });
 
 $("#vit").hover(function() {
-    $("#vit-heart").show(150);
-    $("#vit-soulbooster").show(150);
-    $("#vit-vanguard").show(150);
+    $("path[id*=vit]").show(150);
   }, function() {
-    $("#vit-heart").hide();
-    $("#vit-soulbooster").hide();
-    $("#vit-vanguard").hide();
+    $("path[id*=vit]").hide();
 });
 
 $("#energy").hover(function() {
-    $("#energy-arcane").show(150);
-    $("#energy-soulbooster").show(150);
-    $("#energy-aether").show(150);
-    $("#energy-lotus").show(150);
+    $("path[id*=energy]").show(150);
   }, function() {
-    $("#energy-arcane").hide();
-    $("#energy-soulbooster").hide();
-    $("#energy-aether").hide();
-    $("#energy-lotus").hide();
+    $("path[id*=energy]").hide();
 });
 
 $("#pb").hover(function() {
-    $("#pb-aghs").show(150);
-    $("#pb-skadi").show(150);
-    $("#pb-soulbooster").show(150);
+    $("path[id*=pb]").show(150);
   }, function() {
-    $("#pb-aghs").hide();
-    $("#pb-skadi").hide();
-    $("#pb-soulbooster").hide();
+    $("path[id*=pb]").hide();
 });
 
 $("#talisman").hover(function() {
-    $("#talisman-butterfly").show(150);
-    $("#talisman-halberd").show(150);
-    $("#talisman-solar").show(150);
+    $("path[id*=talisman]").show(150);
   }, function() {
-    $("#talisman-butterfly").hide();
-    $("#talisman-halberd").hide();
-    $("#talisman-solar").hide();
+    $("path[id*=talisman]").hide();
 });
 
 $("#cloak").hover(function() {
-    $("#cloak-hood").show(150);
-    $("#cloak-glimmer").show(150);
+    $("path[id*=cloak]").show(150);
   }, function() {
-    $("#cloak-hood").hide();
-    $("#cloak-glimmer").hide();
+    $("path[id*=cloak]").hide();
 });
 
 $("#rop").hover(function() {
-    $("#rop-basi").show(150);
-    $("#rop-talon").show(150);
-    $("#rop-urn").show(150);
-    $("#rop-woodsman").show(150);
+    $("path[id*=rop]").show(150);
   }, function() {
-    $("#rop-basi").hide();
-    $("#rop-talon").hide();
-    $("#rop-urn").hide();
-    $("#rop-woodsman").hide();
+    $("path[id*=rop]").hide();
 });
 
 $("#chainmail").hover(function() {
-    $("#chainmail-moc").show(150);
-    $("#chainmail-buckler").show(150);
-    $("#chainmail-blademail").show(150);
-    $("#chainmail-ac").show(150);
+    $("path[id*=chainmail]").show(150);
   }, function() {
-    $("#chainmail-moc").hide();
-    $("#chainmail-buckler").hide();
-    $("#chainmail-blademail").hide();
-    $("#chainmail-ac").hide();
+    $("path[id*=chainmail]").hide();
 });
 
 $("#hoiw").hover(function() {
-    $("#hoiw-armlet").show(150);
-    $("#hoiw-veil").show(150);
+    $("path[id*=hoiw]").show(150);
   }, function() {
-    $("#hoiw-armlet").hide();
-    $("#hoiw-veil").hide();
+    $("path[id*=hoiw]").hide();
 });
 
 $("#soulbooster").hover(function() {
-    $("#soulbooster-bloodstone").show(150);
-    $("#soulbooster-ocore").show(150);
-    $("#vit-soulbooster").show(150);
-    $("#energy-soulbooster").show(150);
-    $("#pb-soulbooster").show(150);
+    $("path[id*=soulbooster]").show(150);
   }, function() {
-    $("#soulbooster-bloodstone").hide();
-    $("#soulbooster-ocore").hide();
-    $("#vit-soulbooster").hide();
-    $("#energy-soulbooster").hide();
-    $("#pb-soulbooster").hide();
+    $("path[id*=soulbooster]").hide();
 });
 
 $("#aether").hover(function() {
-    $("#void-aether").show(150);
-    $("#energy-aether").show(150);
-    $("#aether-spellblade").show(150);
+    $("path[id*=aether]").show(150);
   }, function() {
-    $("#void-aether").hide();
-    $("#energy-aether").hide();
-    $("#aether-spellblade").hide();
+    $("path[id*=aether]").hide();
 });
 
 $("#lace").hover(function() {
-    $("#lace-euls").show(150);
-    $("#lace-drum").show(150);
-    $("#lace-tranquil").show(150);
-    $("#lace-hayabusa").show(150);
+    $("path[id*=lace]").show(150);
   }, function() {
-    $("#lace-euls").hide();
-    $("#lace-drum").hide();
-    $("#lace-tranquil").hide();
-    $("#lace-hayabusa").hide();
+    $("path[id*=lace]").hide();
 });
 
 $("#boots").hover(function() {
-    $("#boots-arcane").show(150);
-    $("#boots-treads").show(150);
-    $("#boots-phase").show(150);
-    $("#boots-tranquil").show(150);
-    $("#boots-bots").show(150);
+    $("path[id*=boots]").show(150);
   }, function() {
-    $("#boots-arcane").hide();
-    $("#boots-treads").hide();
-    $("#boots-phase").hide();
-    $("#boots-tranquil").hide();
-    $("#boots-bots").hide();
+    $("path[id*=boots]").hide();
 });
 
 $("#wand").hover(function() {
-    $("#stick-wand").show(150);
-    $("#branch-wand").show(150);
-    $("#circlet-wand").show(150);
-    $("#wand-gjalla").show(150);
+    $("path[id*=wand]").show(150);
   }, function() {
-    $("#stick-wand").hide();
-    $("#branch-wand").hide();
-    $("#circlet-wand").hide();
-    $("#wand-gjalla").hide();
+    $("path[id*=wand]").hide();
 });
 
 $("#talon").hover(function() {
-    $("#qb-talon").show(150);
-    $("#rop-talon").show(150);
-    $("#talon-pauldron").show(150);
+    $("path[id*=talon]").show(150);
   }, function() {
-    $("#qb-talon").hide();
-    $("#rop-talon").hide();
-    $("#talon-pauldron").hide();
+    $("path[id*=talon]").hide();
 });
 
 $("#urn").hover(function() {
-    $("#rop-urn").show(150);
-    $("#circlet-urn").show(150);
-    $("#irain-urn").show(150);
+    $("path[id*=urn]").show(150);
   }, function() {
-    $("#rop-urn").hide();
-    $("#circlet-urn").hide();
-    $("#irain-urn").hide();
+    $("path[id*=urn]").hide();
 });
 
 $("#basi").hover(function() {
-    $("#rop-basi").show(150);
-    $("#sage-basi").show(150);
-    $("#basi-aquila").show(150);
-    $("#basi-vlads").show(150);
+    $("path[id*=basi]").show(150);
   }, function() {
-    $("#rop-basi").hide();
-    $("#sage-basi").hide();
-    $("#basi-aquila").hide();
-    $("#basi-vlads").hide();
+    $("path[id*=basi]").hide();
 });
 
 $("#bloodstone").hover(function() {
-    $("#soulring-bloodstone").show(150);
-    $("#soulbooster-bloodstone").show(150);
+    $("path[id*=bloodstone]").show(150);
   }, function() {
-    $("#soulring-bloodstone").hide();
-    $("#soulbooster-bloodstone").hide();
+    $("path[id*=bloodstone]").hide();
 });
 
 $("#moc").hover(function() {
-    $("#sage-moc").show(150);
-    $("#blight-moc").show(150);
-    $("#chainmail-moc").show(150);
-    $("#moc-solar").show(150);
+    $("path[id*=moc]").show(150);
   }, function() {
-    $("#sage-moc").hide();
-    $("#blight-moc").hide();
-    $("#chainmail-moc").hide();
-    $("#moc-solar").hide();
+    $("path[id*=moc]").hide();
 });
 
 $("#arcane").hover(function() {
-    $("#boots-arcane").show(150);
-    $("#energy-arcane").show(150);
-    $("#arcane-greaves").show(150);
+    $("path[id*=arcane]").show(150);
   }, function() {
-    $("#boots-arcane").hide();
-    $("#energy-arcane").hide();
-    $("#arcane-greaves").hide();
+    $("path[id*=arcane]").hide();
 });
 
 $("#tranquil").hover(function() {
-    $("#lace-tranquil").show(150);
-    $("#ror-tranquil").show(150);
-    $("#boots-tranquil").show(150);
+    $("path[id*=tranquil]").show(150);
   }, function() {
-    $("#lace-tranquil").hide();
-    $("#ror-tranquil").hide();
-    $("#boots-tranquil").hide();
+    $("path[id*=tranquil]").hide();
 });
 
 $("#treads").hover(function() {
-    $("#goh-treads").show(150);
-    $("#robe-treads").show(150);
-    $("#belt-treads").show(150);
-    $("#band-treads").show(150);
-    $("#boots-treads").show(150);
+    $("path[id*=treads]").show(150);
   }, function() {
-    $("#goh-treads").hide();
-    $("#robe-treads").hide();
-    $("#belt-treads").hide();
-    $("#band-treads").hide();
-    $("#boots-treads").hide();
+    $("path[id*=treads]").hide();
 });
 
 $("#phase").hover(function() {
-    $("#boa-phase").show(150);
-    $("#boots-phase").show(150);
+    $("path[id*=phase]").show(150);
   }, function() {
-    $("#boa-phase").hide();
-    $("#boots-phase").hide();
+    $("path[id*=phase]").hide();
 });
 
 $("#bots").hover(function() {
-    $("#boots-bots").show(150);
+    $("path[id*=bots]").show(150);
   }, function() {
-    $("#boots-bots").hide();
+    $("path[id*=bots]").hide();
 });
 
 $("#headdress").hover(function() {
-    $("#branch-headdress").show(150);
-    $("#ror-headdress").show(150);
-    $("#headdress-pipe").show(150);
-    $("#headdress-mek").show(150);
-    $("#headdress-vlads").show(150);
-    $("#headdress-hotd").show(150);
+    $("path[id*=headdress]").show(150);
   }, function() {
-    $("#branch-headdress").hide();
-    $("#ror-headdress").hide();
-    $("#headdress-pipe").hide();
-    $("#headdress-mek").hide();
-    $("#headdress-vlads").hide();
-    $("#headdress-hotd").hide();
+    $("path[id*=headdress]").hide();
 });
 
 $("#buckler").hover(function() {
-    $("#branch-buckler").show(150);
-    $("#chainmail-buckler").show(150);
-    $("#buckler-mek").show(150);
-    $("#buckler-crimson").show(150);
+    $("path[id*=buckler]").show(150);
   }, function() {
-    $("#branch-buckler").hide();
-    $("#chainmail-buckler").hide();
-    $("#buckler-mek").hide();
-    $("#buckler-crimson").hide();
+    $("path[id*=buckler]").hide();
 });
 
 $("#solar").hover(function() {
-    $("#moc-solar").show(150);
-    $("#talisman-solar").show(150);
+    $("path[id*=solar]").show(150);
   }, function() {
-    $("#moc-solar").hide();
-    $("#talisman-solar").hide();
+    $("path[id*=solar]").hide();
 });
 
 $("#glimmer").hover(function() {
-    $("#cloak-glimmer").show(150);
-    $("#shadowam-glimmer").show(150);
+    $("path[id*=glimmer]").show(150);
   }, function() {
-    $("#cloak-glimmer").hide();
-    $("#shadowam-glimmer").hide();
+    $("path[id*=glimmer]").hide();
 });
 
 $("#hotd").hover(function() {
-    $("#goh-hotd").show(150);
-    $("#headdress-hotd").show(150);
-    $("#roh-hotd").show(150);
-    $("#hotd-pauldron").show(150);
+    $("path[id*=hotd]").show(150);
   }, function() {
-    $("#goh-hotd").hide();
-    $("#headdress-hotd").hide();
-    $("#roh-hotd").hide();
-    $("#hotd-pauldron").hide();
+    $("path[id*=hotd]").hide();
 });
 
 $("#vanguard").hover(function() {
-    $("#stout-vanguard").show(150);
-    $("#vit-vanguard").show(150);
-    $("#roh-vanguard").show(150);
-    $("#vanguard-crimson").show(150);
-    $("#vanguard-ablade").show(150);
+    $("path[id*=vanguard]").show(150);
   }, function() {
-    $("#stout-vanguard").hide();
-    $("#vit-vanguard").hide();
-    $("#roh-vanguard").hide();
-    $("#vanguard-crimson").hide();
-    $("#vanguard-ablade").hide();
+    $("path[id*=vanguard]").hide();
 });
 
 $("#mek").hover(function() {
-    $("#branch-headdress").show(150);
-    $("#ror-headdress").show(150);
-    $("#branch-buckler").show(150);
-    $("#chainmail-buckler").show(150);
-    $("#headdress-mek").show(150);
-    $("#buckler-mek").show(150);
-    $("#mek-greaves").show(150);
+    $("path[id*=mek]").show(150);
   }, function() {
-    $("#branch-headdress").hide();
-    $("#ror-headdress").hide();
-    $("#branch-buckler").hide();
-    $("#chainmail-buckler").hide();
-    $("#headdress-mek").hide();
-    $("#buckler-mek").hide();
-    $("#mek-greaves").hide();
+    $("path[id*=mek]").hide();
 });
 
 $("#hood").hover(function() {
-    $("#ror-hood").show(150);
-    $("#roh-hood").show(150);
-    $("#cloak-hood").show(150);
-    $("#hood-pipe").show(150);
+    $("path[id*=hood]").show(150);
   }, function() {
-    $("#ror-hood").hide();
-    $("#roh-hood").hide();
-    $("#cloak-hood").hide();
-    $("#hood-pipe").hide();
+    $("path[id*=hood]").hide();
 });
 
 $("#vlads").hover(function() {
-    $("#branch-headdress").show(150);
-    $("#ror-headdress").show(150);
-    $("#rop-basi").show(150);
-    $("#sage-basi").show(150);
-    $("#morbid-vlads").show(150);
-    $("#basi-vlads").show(150);
-    $("#headdress-vlads").show(150);
+    $("path[id*=vlads]").show(150);
   }, function() {
-    $("#branch-headdress").hide();
-    $("#ror-headdress").hide();
-    $("#rop-basi").hide();
-    $("#sage-basi").hide();
-    $("#morbid-vlads").hide();
-    $("#basi-vlads").hide();
-    $("#headdress-vlads").hide();
+    $("path[id*=vlads]").hide();
 });
 
 $("#platemail").hover(function() {
-    $("#-platemail").show(150);
-    $("#platemail-").show(150);
+    $("path[id*=platemail]").show(150);
   }, function() {
-    $("#-platemail").hide();
-    $("#platemail-").hide();
+    $("path[id*=platemail]").hide();
 });
 
 $("#refresher").hover(function() {
-    $("#-refresher").show(150);
-    $("#refresher-").show(150);
+    $("path[id*=refresher]").show(150);
   }, function() {
-    $("#-refresher").hide();
-    $("#refresher-").hide();
+    $("path[id*=refresher]").hide();
 });
 
 $("#crimson").hover(function() {
-    $("#-crimson").show(150);
-    $("#crimson-").show(150);
+    $("path[id*=crimson]").show(150);
   }, function() {
-    $("#-crimson").hide();
-    $("#crimson-").hide();
+    $("path[id*=crimson]").hide();
 });
 
 $("#greaves").hover(function() {
-    $("#-greaves").show(150);
-    $("#greaves-").show(150);
+    $("path[id*=greaves]").show(150);
   }, function() {
-    $("#-greaves").hide();
-    $("#greaves-").hide();
+    $("path[id*=greaves]").hide();
 });
 
 $("#pipe").hover(function() {
-    $("#-pipe").show(150);
-    $("#pipe-").show(150);
+    $("path[id*=pipe]").show(150);
   }, function() {
-    $("#-pipe").hide();
-    $("#pipe-").hide();
+    $("path[id*=pipe]").hide();
 });
 
 $("#lotus").hover(function() {
-    $("#-lotus").show(150);
-    $("#lotus-").show(150);
+    $("path[id*=lotus]").show(150);
   }, function() {
-    $("#-lotus").hide();
-    $("#lotus-").hide();
+    $("path[id*=lotus]").hide();
 });
 
 $("#ac").hover(function() {
-    $("#-ac").show(150);
-    $("#ac-").show(150);
+    $("path[id*=ac]").show(150);
   }, function() {
-    $("#-ac").hide();
-    $("#ac-").hide();
+    $("path[id*=ac]").hide();
 });
 
 $("#qb").hover(function() {
-    $("#-qb").show(150);
-    $("#qb-").show(150);
+    $("path[id*=qb]").show(150);
   }, function() {
-    $("#-qb").hide();
-    $("#qb-").hide();
+    $("path[id*=qb]").hide();
 });
 
 $("#blight").hover(function() {
-    $("#-blight").show(150);
-    $("#blight-").show(150);
+    $("path[id*=blight]").show(150);
   }, function() {
-    $("#-blight").hide();
-    $("#blight-").hide();
+    $("path[id*=blight]").hide();
 });
 
 $("#oov").hover(function() {
-    $("#-oov").show(150);
-    $("#oov-").show(150);
+    $("path[id*=oov]").show(150);
   }, function() {
-    $("#-oov").hide();
-    $("#oov-").hide();
+    $("path[id*=oov]").hide();
 });
 
 $("#javelin").hover(function() {
-    $("#-javelin").show(150);
-    $("#javelin-").show(150);
+    $("path[id*=javelin]").show(150);
   }, function() {
-    $("#-javelin").hide();
-    $("#javelin-").hide();
+    $("path[id*=javelin]").hide();
 });
 
 $("#qstaff").hover(function() {
-    $("#-qstaff").show(150);
-    $("#qstaff-").show(150);
+    $("path[id*=qstaff]").show(150);
   }, function() {
-    $("#-qstaff").hide();
-    $("#qstaff-").hide();
+    $("path[id*=qstaff]").hide();
 });
 
 $("#hoiw").hover(function() {
-    $("#-hoiw").show(150);
-    $("#hoiw-").show(150);
+    $("path[id*=hoiw]").show(150);
   }, function() {
-    $("#-hoiw").hide();
-    $("#hoiw-").hide();
+    $("path[id*=hoiw]").hide();
 });
 
 $("#oblivion").hover(function() {
-    $("#-oblivion").show(150);
-    $("#oblivion-").show(150);
+    $("path[id*=oblivion]").show(150);
   }, function() {
-    $("#-oblivion").hide();
-    $("#oblivion-").hide();
+    $("path[id*=oblivion]").hide();
 });
 
 $("#morbid").hover(function() {
-    $("#-morbid").show(150);
-    $("#morbid-").show(150);
+    $("path[id*=morbid]").show(150);
   }, function() {
-    $("#-morbid").hide();
-    $("#morbid-").hide();
+    $("path[id*=morbid]").hide();
 });
 
 $("#boa").hover(function() {
-    $("#-boa").show(150);
-    $("#boa-").show(150);
+    $("path[id*=boa]").show(150);
   }, function() {
-    $("#-boa").hide();
-    $("#boa-").hide();
+    $("path[id*=boa]").hide();
 });
 
 $("#broad").hover(function() {
-    $("#-broad").show(150);
-    $("#broad-").show(150);
+    $("path[id*=broad]").show(150);
   }, function() {
-    $("#-broad").hide();
-    $("#broad-").hide();
+    $("path[id*=broad]").hide();
 });
 
 $("#clay").hover(function() {
-    $("#-clay").show(150);
-    $("#clay-").show(150);
+    $("path[id*=clay]").show(150);
   }, function() {
-    $("#-clay").hide();
-    $("#clay-").hide();
+    $("path[id*=clay]").hide();
 });
 
 $("#goh").hover(function() {
-    $("#-goh").show(150);
-    $("#goh-").show(150);
+    $("path[id*=goh]").show(150);
   }, function() {
-    $("#-goh").hide();
-    $("#goh-").hide();
+    $("path[id*=goh]").hide();
 });
 
 $("#shadowam").hover(function() {
-    $("#-shadowam").show(150);
-    $("#shadowam-").show(150);
+    $("path[id*=shadowam]").show(150);
   }, function() {
-    $("#-shadowam").hide();
-    $("#shadowam-").hide();
+    $("path[id*=shadowam]").hide();
 });
 
 $("#mithham").hover(function() {
-    $("#-mithham").show(150);
-    $("#mithham-").show(150);
+    $("path[id*=mithham]").show(150);
   }, function() {
-    $("#-mithham").hide();
-    $("#mithham-").hide();
+    $("path[id*=mithham]").hide();
 });
 
 $("#demon").hover(function() {
-    $("#-demon").show(150);
-    $("#demon-").show(150);
+    $("path[id*=demon]").show(150);
   }, function() {
-    $("#-demon").hide();
-    $("#demon-").hide();
+    $("path[id*=demon]").hide();
 });
 
 $("#relic").hover(function() {
-    $("#-relic").show(150);
-    $("#relic-").show(150);
+    $("path[id*=relic]").show(150);
   }, function() {
-    $("#-relic").hide();
-    $("#relic-").hide();
+    $("path[id*=relic]").hide();
 });
 
 $("#ultimateorb").hover(function() {
-    $("#-ultimateorb").show(150);
-    $("#ultimateorb-").show(150);
+    $("path[id*=ultimateorb]").show(150);
   }, function() {
-    $("#-ultimateorb").hide();
-    $("#ultimateorb-").hide();
+    $("path[id*=ultimateorb]").hide();
 });
 
 $("#crystal").hover(function() {
-    $("#-crystal").show(150);
-    $("#crystal-").show(150);
+    $("path[id*=crystal]").show(150);
   }, function() {
-    $("#-crystal").hide();
-    $("#crystal-").hide();
+    $("path[id*=crystal]").hide();
 });
 
 $("#shadowb").hover(function() {
-    $("#-shadowb").show(150);
-    $("#shadowb-").show(150);
+    $("path[id*=shadowb]").show(150);
   }, function() {
-    $("#-shadowb").hide();
-    $("#shadowb-").hide();
+    $("path[id*=shadowb]").hide();
 });
 
 $("#deso").hover(function() {
-    $("#-deso").show(150);
-    $("#deso-").show(150);
+    $("path[id*=deso]").show(150);
   }, function() {
-    $("#-deso").hide();
-    $("#deso-").hide();
+    $("path[id*=deso]").hide();
 });
 
 $("#skadi").hover(function() {
-    $("#-skadi").show(150);
-    $("#skadi-").show(150);
+    $("path[id*=skadi]").show(150);
   }, function() {
-    $("#-skadi").hide();
-    $("#skadi-").hide();
+    $("path[id*=skadi]").hide();
 });
 
 $("#linkens").hover(function() {
-    $("#-linkens").show(150);
-    $("#linkens-").show(150);
+    $("path[id*=linkens]").show(150);
   }, function() {
-    $("#-linkens").hide();
-    $("#linkens-").hide();
+    $("path[id*=linkens]").hide();
 });
 
 $("#silvedge").hover(function() {
-    $("#-silvedge").show(150);
-    $("#silvedge-").show(150);
+    $("path[id*=silvedge]").show(150);
   }, function() {
-    $("#-silvedge").hide();
-    $("#silvedge-").hide();
+    $("path[id*=silvedge]").hide();
 });
 
 $("#bfury").hover(function() {
-    $("#-bfury").show(150);
-    $("#bfury-").show(150);
+    $("path[id*=bfury]").show(150);
   }, function() {
-    $("#-bfury").hide();
-    $("#bfury-").hide();
+    $("path[id*=bfury]").hide();
 });
 
 $("#orchid").hover(function() {
-    $("#-orchid").show(150);
-    $("#orchid-").show(150);
+    $("path[id*=orchid]").show(150);
   }, function() {
-    $("#-orchid").hide();
-    $("#orchid-").hide();
+    $("path[id*=orchid]").hide();
 });
 
 $("#basher").hover(function() {
-    $("#-basher").show(150);
-    $("#basher-").show(150);
+    $("path[id*=basher]").show(150);
   }, function() {
-    $("#-basher").hide();
-    $("#basher-").hide();
+    $("path[id*=basher]").hide();
 });
 
 $("#blademail").hover(function() {
-    $("#-blademail").show(150);
-    $("#blademail-").show(150);
+    $("path[id*=blademail]").show(150);
   }, function() {
-    $("#-blademail").hide();
-    $("#blademail-").hide();
+    $("path[id*=blademail]").hide();
 });
 
 $("#midas").hover(function() {
-    $("#-midas").show(150);
-    $("#midas-").show(150);
+    $("path[id*=midas]").show(150);
   }, function() {
-    $("#-midas").hide();
-    $("#midas-").hide();
+    $("path[id*=midas]").hide();
 });
 
 $("#armlet").hover(function() {
-    $("#-armlet").show(150);
-    $("#armlet-").show(150);
+    $("path[id*=armlet]").show(150);
   }, function() {
-    $("#-armlet").hide();
-    $("#armlet-").hide();
+    $("path[id*=armlet]").hide();
 });
 
 $("#mael").hover(function() {
-    $("#-mael").show(150);
-    $("#mael-").show(150);
+    $("path[id*=mael]").show(150);
   }, function() {
-    $("#-mael").hide();
-    $("#mael-").hide();
+    $("path[id*=mael]").hide();
 });
 
 $("#mom").hover(function() {
-    $("#-mom").show(150);
-    $("#mom-").show(150);
+    $("path[id*=mom]").show(150);
   }, function() {
-    $("#-mom").hide();
-    $("#mom-").hide();
+    $("path[id*=mom]").hide();
 });
 
 $("#bloodthorn").hover(function() {
-    $("#-bloodthorn").show(150);
-    $("#bloodthorn-").show(150);
+    $("path[id*=bloodthorn]").show(150);
   }, function() {
-    $("#-bloodthorn").hide();
-    $("#bloodthorn-").hide();
+    $("path[id*=bloodthorn]").hide();
 });
 
 $("#bkb").hover(function() {
-    $("#-bkb").show(150);
-    $("#bkb-").show(150);
+    $("path[id*=bkb]").show(150);
   }, function() {
-    $("#-bkb").hide();
-    $("#bkb-").hide();
+    $("path[id*=bkb]").hide();
 });
 
 $("#euls").hover(function() {
-    $("#-euls").show(150);
-    $("#euls-").show(150);
+    $("path[id*=euls]").show(150);
   }, function() {
-    $("#-euls").hide();
-    $("#euls-").hide();
+    $("path[id*=euls]").hide();
 });
 
 $("#necro").hover(function() {
-    $("#-necro").show(150);
-    $("#necro-").show(150);
+    $("path[id*=necro]").show(150);
   }, function() {
-    $("#-necro").hide();
-    $("#necro-").hide();
+    $("path[id*=necro]").hide();
 });
 
 $("#diffu").hover(function() {
-    $("#-diffu").show(150);
-    $("#diffu-").show(150);
+    $("path[id*=diffu]").show(150);
   }, function() {
-    $("#-diffu").hide();
-    $("#diffu-").hide();
+    $("path[id*=diffu]").hide();
 });
 
 $("#daedalus").hover(function() {
-    $("#-daedalus").show(150);
-    $("#daedalus-").show(150);
+    $("path[id*=daedalus]").show(150);
   }, function() {
-    $("#-daedalus").hide();
-    $("#daedalus-").hide();
+    $("path[id*=daedalus]").hide();
 });
 
 $("#mkb").hover(function() {
-    $("#-mkb").show(150);
-    $("#mkb-").show(150);
+    $("path[id*=mkb]").show(150);
   }, function() {
-    $("#-mkb").hide();
-    $("#mkb-").hide();
+    $("path[id*=mkb]").hide();
 });
 
 $("#radiance").hover(function() {
-    $("#-radiance").show(150);
-    $("#radiance-").show(150);
+    $("path[id*=radiance]").show(150);
   }, function() {
-    $("#-radiance").hide();
-    $("#radiance-").hide();
+    $("path[id*=radiance]").hide();
 });
 
 $("#aghs").hover(function() {
-    $("#-aghs").show(150);
-    $("#aghs-").show(150);
+    $("path[id*=aghs]").show(150);
   }, function() {
-    $("#-aghs").hide();
-    $("#aghs-").hide();
+    $("path[id*=aghs]").hide();
 });
 
 $("#hyper").hover(function() {
-    $("#-hyper").show(150);
-    $("#hyper-").show(150);
+    $("path[id*=hyper]").show(150);
   }, function() {
-    $("#-hyper").hide();
-    $("#hyper-").hide();
+    $("path[id*=hyper]").hide();
 });
 
 $("#ablade").hover(function() {
-    $("#-ablade").show(150);
-    $("#ablade-").show(150);
+    $("path[id*=ablade]").show(150);
   }, function() {
-    $("#-ablade").hide();
-    $("#ablade-").hide();
+    $("path[id*=ablade]").hide();
 });
 
 $("#rapier").hover(function() {
-    $("#-rapier").show(150);
-    $("#rapier-").show(150);
+    $("path[id*=rapier]").show(150);
   }, function() {
-    $("#-rapier").hide();
-    $("#rapier-").hide();
+    $("path[id*=rapier]").hide();
 });
 
 $("#mjoll").hover(function() {
-    $("#-mjoll").show(150);
-    $("#mjoll-").show(150);
+    $("path[id*=mjoll]").show(150);
   }, function() {
-    $("#-mjoll").hide();
-    $("#mjoll-").hide();
+    $("path[id*=mjoll]").hide();
 });
 
 $("#moonsh").hover(function() {
-    $("#-moonsh").show(150);
-    $("#moonsh-").show(150);
+    $("path[id*=moonsh]").show(150);
   }, function() {
-    $("#-moonsh").hide();
-    $("#moonsh-").hide();
+    $("path[id*=moonsh]").hide();
 });
 
 $("#vermcloak").hover(function() {
-    $("#-vermcloak").show(150);
-    $("#vermcloak-").show(150);
+    $("path[id*=vermcloak]").show(150);
   }, function() {
-    $("#-vermcloak").hide();
-    $("#vermcloak-").hide();
+    $("path[id*=vermcloak]").hide();
 });
 
 $("#ghost").hover(function() {
-    $("#-ghost").show(150);
-    $("#ghost-").show(150);
+    $("path[id*=ghost]").show(150);
   }, function() {
-    $("#-ghost").hide();
-    $("#ghost-").hide();
+    $("path[id*=ghost]").hide();
 });
 
 $("#urn").hover(function() {
-    $("#-urn").show(150);
-    $("#urn-").show(150);
+    $("path[id*=urn]").show(150);
   }, function() {
-    $("#-urn").hide();
-    $("#urn-").hide();
+    $("path[id*=urn]").hide();
 });
 
 $("#basi").hover(function() {
-    $("#-basi").show(150);
-    $("#basi-").show(150);
+    $("path[id*=basi]").show(150);
   }, function() {
-    $("#-basi").hide();
-    $("#basi-").hide();
+    $("path[id*=basi]").hide();
 });
 
 $("#bloodstone").hover(function() {
-    $("#-bloodstone").show(150);
-    $("#bloodstone-").show(150);
+    $("path[id*=bloodstone]").show(150);
   }, function() {
-    $("#-bloodstone").hide();
-    $("#bloodstone-").hide();
+    $("path[id*=bloodstone]").hide();
 });
 
 $("#moc").hover(function() {
-    $("#-moc").show(150);
-    $("#moc-").show(150);
+    $("path[id*=moc]").show(150);
   }, function() {
-    $("#-moc").hide();
-    $("#moc-").hide();
+    $("path[id*=moc]").hide();
 });
 
 $("#arcane").hover(function() {
-    $("#-arcane").show(150);
-    $("#arcane-").show(150);
+    $("path[id*=arcane]").show(150);
   }, function() {
-    $("#-arcane").hide();
-    $("#arcane-").hide();
+    $("path[id*=arcane]").hide();
 });
 
 $("#arcane").hover(function() {
-    $("#-arcane").show(150);
-    $("#arcane-").show(150);
+    $("path[id*=arcane]").show(150);
   }, function() {
-    $("#-arcane").hide();
-    $("#arcane-").hide();
+    $("path[id*=arcane]").hide();
 });
 
 $("#tranquil").hover(function() {
-    $("#-tranquil").show(150);
-    $("#tranquil-").show(150);
+    $("path[id*=tranquil]").show(150);
   }, function() {
-    $("#-tranquil").hide();
-    $("#tranquil-").hide();
+    $("path[id*=tranquil]").hide();
 });
 
 $("#treads").hover(function() {
-    $("#-treads").show(150);
-    $("#treads-").show(150);
+    $("path[id*=treads]").show(150);
   }, function() {
-    $("#-treads").hide();
-    $("#treads-").hide();
+    $("path[id*=treads]").hide();
 });
 
 $("#phase").hover(function() {
-    $("#-phase").show(150);
-    $("#phase-").show(150);
+    $("path[id*=phase]").show(150);
   }, function() {
-    $("#-phase").hide();
-    $("#phase-").hide();
+    $("path[id*=phase]").hide();
 });
 
 $("#bots").hover(function() {
-    $("#-bots").show(150);
-    $("#bots-").show(150);
+    $("path[id*=bots]").show(150);
   }, function() {
-    $("#-bots").hide();
-    $("#bots-").hide();
+    $("path[id*=bots]").hide();
 });
 
 $("#headdress").hover(function() {
-    $("#-headdress").show(150);
-    $("#headdress-").show(150);
+    $("path[id*=headdress]").show(150);
   }, function() {
-    $("#-headdress").hide();
-    $("#headdress-").hide();
+    $("path[id*=headdress]").hide();
 });
 
 $("#buckler").hover(function() {
-    $("#-buckler").show(150);
-    $("#buckler-").show(150);
+    $("path[id*=buckler]").show(150);
   }, function() {
-    $("#-buckler").hide();
-    $("#buckler-").hide();
+    $("path[id*=buckler]").hide();
 });
 
 $("#solar").hover(function() {
-    $("#-solar").show(150);
-    $("#solar-").show(150);
+    $("path[id*=solar]").show(150);
   }, function() {
-    $("#-solar").hide();
-    $("#solar-").hide();
+    $("path[id*=solar]").hide();
 });
 
 $("#glimmer").hover(function() {
-    $("#-glimmer").show(150);
-    $("#glimmer-").show(150);
+    $("path[id*=glimmer]").show(150);
   }, function() {
-    $("#-glimmer").hide();
-    $("#glimmer-").hide();
+    $("path[id*=glimmer]").hide();
 });
 
 $("#hotd").hover(function() {
-    $("#-hotd").show(150);
-    $("#hotd-").show(150);
+    $("path[id*=hotd]").show(150);
   }, function() {
-    $("#-hotd").hide();
-    $("#hotd-").hide();
+    $("path[id*=hotd]").hide();
 });
 
 $("#vanguard").hover(function() {
-    $("#-vanguard").show(150);
-    $("#vanguard-").show(150);
+    $("path[id*=vanguard]").show(150);
   }, function() {
-    $("#-vanguard").hide();
-    $("#vanguard-").hide();
+    $("path[id*=vanguard]").hide();
 });
 
 $("#mek").hover(function() {
-    $("#-mek").show(150);
-    $("#mek-").show(150);
+    $("path[id*=mek]").show(150);
   }, function() {
-    $("#-mek").hide();
-    $("#mek-").hide();
+    $("path[id*=mek]").hide();
 });
 
 $("#hood").hover(function() {
-    $("#-hood").show(150);
-    $("#hood-").show(150);
+    $("path[id*=hood]").show(150);
   }, function() {
-    $("#-hood").hide();
-    $("#hood-").hide();
+    $("path[id*=hood]").hide();
 });
 
 $("#vlads").hover(function() {
-    $("#-vlads").show(150);
-    $("#vlads-").show(150);
+    $("path[id*=vlads]").show(150);
   }, function() {
-    $("#-vlads").hide();
-    $("#vlads-").hide();
+    $("path[id*=vlads]").hide();
 });
 
 $("#platemail").hover(function() {
-    $("#-platemail").show(150);
-    $("#platemail-").show(150);
+    $("path[id*=platemail]").show(150);
   }, function() {
-    $("#-platemail").hide();
-    $("#platemail-").hide();
+    $("path[id*=platemail]").hide();
 });
 
 $("#refresher").hover(function() {
-    $("#-refresher").show(150);
-    $("#refresher-").show(150);
+    $("path[id*=refresher]").show(150);
   }, function() {
-    $("#-refresher").hide();
-    $("#refresher-").hide();
+    $("path[id*=refresher]").hide();
 });
 
 $("#crimson").hover(function() {
-    $("#-crimson").show(150);
-    $("#crimson-").show(150);
+    $("path[id*=crimson]").show(150);
   }, function() {
-    $("#-crimson").hide();
-    $("#crimson-").hide();
+    $("path[id*=crimson]").hide();
 });
 
 $("#greaves").hover(function() {
-    $("#-greaves").show(150);
-    $("#greaves-").show(150);
+    $("path[id*=greaves]").show(150);
   }, function() {
-    $("#-greaves").hide();
-    $("#greaves-").hide();
+    $("path[id*=greaves]").hide();
 });
 
 $("#pipe").hover(function() {
-    $("#-pipe").show(150);
-    $("#pipe-").show(150);
+    $("path[id*=pipe]").show(150);
   }, function() {
-    $("#-pipe").hide();
-    $("#pipe-").hide();
+    $("path[id*=pipe]").hide();
 });
 
 $("#lotus").hover(function() {
-    $("#-lotus").show(150);
-    $("#lotus-").show(150);
+    $("path[id*=lotus]").show(150);
   }, function() {
-    $("#-lotus").hide();
-    $("#lotus-").hide();
+    $("path[id*=lotus]").hide();
 });
 
 $("#ac").hover(function() {
-    $("#-ac").show(150);
-    $("#ac-").show(150);
+    $("path[id*=ac]").show(150);
   }, function() {
-    $("#-ac").hide();
-    $("#ac-").hide();
-});
-
-$("#").hover(function() {
-    $("#-").show(150);
-    $("#-").show(150);
-  }, function() {
-    $("#-").hide();
-    $("#-").hide();
+    $("path[id*=ac]").hide();
 });
 

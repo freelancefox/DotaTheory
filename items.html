@@ -12,21 +12,21 @@
 <nav class="navbar navbar-default navbar-fixed-top">
   <div id="navigation" class="row text-center">
     <a href="index">
-      <button class="btn btn-default pull-left header-hide">◄ Index</button>
+      <button class="btn btn-default pull-left">◄ Index</button>
     </a>
   </div><!--/.row-->
 </nav>
   <div id="svgContainer" style="margin: 50px 50px;">
     <svg id="svg" width="0" height="0">
-      <path id="belt-sange"  d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
-      <path id="robe-lucen"  d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
-      <path id="band-yasha"  d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
-      <path id="club-sange"  d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
-      <path id="staff-lucen"  d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
-      <path id="blade-yasha"  d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
-      <path id="gauntlets-woodsman"  d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
-      <path id="mantle-frost"  d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
-      <path id="slippers-pms"  d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
+      <path id="belt-sange" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
+      <path id="robe-lucen" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
+      <path id="band-yasha" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
+      <path id="club-sange" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
+      <path id="staff-lucen" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
+      <path id="blade-yasha" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
+      <path id="gauntlets-woodsman" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
+      <path id="mantle-frost" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
+      <path id="slippers-pms" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
       <path id="sange-halberd" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
       <path id="sange-gjalla" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
       <path id="sange-sny" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
@@ -106,6 +106,8 @@
       <path id="sage-basi" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
       <path id="basi-aquila" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
       <path id="basi-vlads" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
+      <path id="morbid-vlads" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
+      <path id="headdress-vlads" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
       <path id="boots-arcane" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
       <path id="boots-tranquil" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
       <path id="boots-treads" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
@@ -251,25 +253,76 @@
     </svg>
   </div>
   <div class="container section-bg text-center">
-    <h1>Custom Item Concepts</h1>
-    <div class="row" style="margin: 12px 0 24px;">
-      <div class="col-xs-2">
-        <button id="showhide" class="btn btn-main">Hide Custom Items</button>
+    <div class="row">
+      <div class="col-lg-6 col-lg-offset-3">
+        <h1 id="title">Custom Item Concepts</h1>
+      </div><!--/.col-lg-4-->
+      <div id="price" class="col-xs-4 hidden-lg" style="margin-left: 4.16666667%">
+      </div><!--/.col-hidden-xs-4-->
+      <div id="price" class="col-xs-1">
+        <div class="btn-group pull-right">
+          <button type="button" class="btn btn-main dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Filter <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="" id="all" class="active">All Items</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="" id="t1">Tier 1</a></li>
+            <li><a href="" id="t2">Tier 2</a></li>
+            <li><a href="" id="t3">Tier 3</a></li>
+            <li><a href="" id="t4">Tier 4</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="" id="secret">Secret Shop</a></li>
+            <li><a href="" id="side">Side Shop</a></li>
+            <li><a href="" id="base">Base Shop</a></li>
+          </ul>
+        </div>
+      </div><!--/.col-xs-1-->
+      <div id="search" class="col-xs-2">
+        <div class="input-group">
+          <input id="searchbox" type="text" class="form-control" placeholder="Search...">
+        </div><!--/.input-group-->
       </div><!--/.col-xs-2-->
-      <div class="col-xs-6 col-xs-offset-1">
-        <p id="key">Key: <span class="new">New Items</span> <span class="reworked">Reworked Items</span></p>
-      </div><!--/.col-xs-6-offset-->
-      <div class="col-xs-3">
-        <img id="str" src="img/str.png"> <img id="strp" src="img/str_p.png">
-        <img id="int" src="img/int.png"> <img id="intp" src="img/int_p.png">
-        <img id="agi" src="img/agi.png"> <img id="agip" src="img/agi_p.png">
-      </div><!--/.col-xs-3-->
+    </div><!--/.row-->
+    <div id="controls" class="row">
+      <div class="col-md-2">
+        <button id="showhide" class="btn btn-main">Hide Custom Items</button>
+      </div><!--/.col-md-2-->
+      <div id="filters" class="col-md-8">
+        <a data-toggle="tooltip" title="Items that primarily provide Strength">
+        <span id="strl">Strength</span><span id="strlp"><b>Strength</b></span><img id="str" src="img/str.png"><img id="strp" src="img/str_p.png"></a>
+        <a data-toggle="tooltip" title="Items that primarily provide Intelligence">
+        <span id="intl">Intelligence</span><span id="intlp"><b>Intelligence</b></span><img id="int" src="img/int.png"><img id="intp" src="img/int_p.png"></a>
+        <a data-toggle="tooltip" title="Items that primarily provide Agility">
+        <span id="agil">Agility</span><span id="agilp"><b>Agility</b></span><img id="agi" src="img/agi.png"><img id="agip" src="img/agi_p.png"></a>
+        <a data-toggle="tooltip" title="Items that provide raw Health, Mana, or a mixed bonus to All Stats">
+        <span id="statl">Stat&nbsp;</span><span id="statlp"><b>Stat</b></span><img id="stat" src="img/carry.png"><img id="statp" src="img/carry_p.png"></a>
+        <a data-toggle="tooltip" title="Items that provide Mana Regen, Health Regen or Lifesteal">
+        <span id="regenl">Regen&nbsp;</span><span id="regenlp"><b>Regen</b></span><img id="regen" src="img/ganker.png"><img id="regenp" src="img/ganker_p.png"></a>
+        <a data-toggle="tooltip" title="Items that disappear after a fixed number of uses">
+        <span id="consl">Consumable&nbsp;</span><span id="conslp"><b>Consumable</b></span><img id="cons" src="img/jungler.png"><img id="consp" src="img/jungler_p.png"></a>
+        <a data-toggle="tooltip" title="Items that provide Movement Speed or have an active ability that moves the player">
+        <span id="mobil">Mobility&nbsp;</span><span id="mobilp"><b>Mobility</b></span><img id="mobi" src="img/roamer.png"><img id="mobip" src="img/roamer_p.png"></a>
+        <a data-toggle="tooltip" title="Items that provide raw Damage or Attack Speed">
+        <span id="daml">Damage&nbsp;</span><span id="damlp"><b>Damage</b></span><img id="dam" src="img/initiator.png"><img id="damp" src="img/initiator_p.png"></a>
+        <a data-toggle="tooltip" title="Items that provide Armor, Evasion, Magic Resistance, or have a self-targetable active ability that blocks damage">
+        <span id="defl">Defensive&nbsp;</span><span id="deflp"><b>Defensive</b></span><img id="def" src="img/tank.png"><img id="defp" src="img/tank_p.png"></a>
+        <a data-toggle="tooltip" title="Items with an active ability that provides a Disable such as a slow, stun, or silence, or makes the bearer Invisible">
+        <span id="utill">Utility&nbsp;</span><span id="utillp"><b>Utility</b></span><img id="util" src="img/babysitter.png"><img id="utilp" src="img/babysitter_p.png"></a>
+        <a data-toggle="tooltip" title="Items that increase the power of spells directly, or have an active ability that deals magic damage">
+        <span id="castl">Caster&nbsp;</span><span id="castlp"><b>Caster</b></span><img id="cast" src="img/pusher.png"><img id="castp" src="img/pusher_p.png"></a>
+        <a data-toggle="tooltip" title="Items that have an active effect that can be used on allies, or makes allies stronger">
+        <span id="suppl">Support&nbsp;</span><span id="supplp"><b>Support</b></span><img id="supp" src="img/disabler.png"><img id="suppp" src="img/disabler_p.png"></a>
+      </div><!--/.col-md-8-offset-->
+      <div class="col-md-2">
+        <p id="key"><b>Key:</b> <span class="new">Item&nbsp;Concept</span> <span class="reworked">Item&nbsp;Rework</span></p>
+      </div><!--/.col-md-2-->
     </div>
 <div class="row" style="padding: 0 8px; margin: 0;">
   <div class="col-lg-12">
     <div class="row">
-      <div class="col-xs-1 col-xs-offset-1">
-        <div id="ff" class="item-box-1 center-block"
+      <div class="col-xs-1 col-xs-offset-1 tier-1 shop-base">
+        <div id="ff" class="item-box-1 center-block item-cons item-regen item-dam"
              rel="popover" data-title="Faerie Fire">
           <img src="img/40px-Faerie_Fire_icon.png">
           <div id="content-ff" class="hide">
@@ -283,7 +336,7 @@
             <p>Active: <i>Consume</i> – Consume the Faerie Fire to instantly restore 75 health.</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="mango" class="item-box-1 center-block"
+        <div id="mango" class="item-box-1 center-block item-cons item-regen"
              rel="popover" data-title="Enchanted Mango">
           <img src="img/40px-Enchanted_Mango_icon.png">
           <div id="content-mango" class="hide">
@@ -298,8 +351,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-1-->
-      <div class="col-xs-1">
-        <div id="clarity" class="item-box-1 center-block"
+      <div class="col-xs-1 tier-1 shop-base">
+        <div id="clarity" class="item-box-1 center-block item-cons item-regen"
              rel="popover" data-title="Clarity">
           <img src="img/40px-Clarity_icon.png">
           <div id="content-clarity" class="hide">
@@ -312,7 +365,7 @@
             <p>Active: <i>Regenerate Mana</i> – Restores mana to the target unit over time. If the unit is attacked by an enemy hero or Roshan the effect is lost. (500 cast range, 190 total mana restored, 3.8 mana/s for 50s).</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="irain" class="item-box-1 center-block"
+        <div id="irain" class="item-box-1 center-block item-cons item-regen item-def"
              rel="popover" data-title="Infused Raindrops">
           <img src="img/40px-Infused_Raindrops_icon.png">
           <div id="content-irain" class="hide">
@@ -327,8 +380,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-1-->
-      <div class="col-xs-1">
-        <div id="tango" class="item-box-1 center-block"
+      <div class="col-xs-1 tier-1 shop-base">
+        <div id="tango" class="item-box-1 center-block item-cons item-regen"
              rel="popover" data-title="Tango">
           <img src="img/40px-Tango_icon.png">
           <div id="content-tango" class="hide">
@@ -341,7 +394,7 @@
             <p>Active: <i>Eat Tree or Ward</i> – Consume a target tree or ward to gradually restore health. May be used on an allied hero to give them one Tango. Heals double for wards or Ironwood Trees. (4 charges, 115/230 health restored, ~7.2 health regen for 16/32s, 165 cast range tree/ally, 450 cast range wards).</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="salve" class="item-box-1 center-block"
+        <div id="salve" class="item-box-1 center-block item-cons item-regen"
              rel="popover" data-title="Healing Salve">
           <img src="img/40px-Healing_Salve_icon.png">
           <div id="content-salve" class="hide">
@@ -355,8 +408,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-1-->
-      <div class="col-xs-1">
-        <div id="courier" class="item-box-1 center-block"
+      <div class="col-xs-1 tier-1 shop-base">
+        <div id="courier" class="item-box-1 center-block item-cons"
              rel="popover" data-title="Animal Courier">
           <img src="img/40px-Animal_Courier_icon.png">
           <div id="content-courier" class="hide">
@@ -369,7 +422,7 @@
             <p>Active: <i>Deploy Courier</i> – Deploys a creature to carry items to and from your team's base. (120s respawn time, 175 gold team bounty)</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="flycour" class="item-box-1 center-block"
+        <div id="flycour" class="item-box-1 center-block item-cons"
              rel="popover" data-title="Flying Courier">
           <img src="img/40px-Flying_Courier_icon.png">
           <div id="content-flycour" class="hide">
@@ -383,8 +436,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-1-->
-      <div class="col-xs-1">
-        <div id="obsw" class="item-box-1 center-block"
+      <div class="col-xs-1 tier-1 shop-base">
+        <div id="obsw" class="item-box-1 center-block item-cons"
              rel="popover" data-title="Observer Ward">
           <img src="img/40px-Observer_Ward_icon.png">
           <div id="content-obsw" class="hide">
@@ -397,7 +450,7 @@
             <p>Active: <i>Place Observer Ward</i> – Plants an Observer Ward, an invisible watcher that gives vision of its surrounding area to your team. Lasts 6 minutes. Hold Control to give one Observer Ward to an allied hero. (500 cast range, 1600 vision, 360s duration) [2 stock initially, 4 stock max, 150s restock time]. <img src="img/cd.png"> 1s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="sentryw" class="item-box-1 center-block"
+        <div id="sentryw" class="item-box-1 center-block item-cons"
              rel="popover" data-title="Sentry Ward">
           <img src="img/40px-Sentry_Ward_icon.png">
           <div id="content-sentryw" class="hide">
@@ -411,8 +464,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-1-->
-      <div class="col-xs-1">
-        <div id="dust" class="item-box-1 center-block"
+      <div class="col-xs-1 tier-1 shop-base">
+        <div id="dust" class="item-box-1 center-block item-cons"
              rel="popover" data-title="Dust of Appearance">
           <img src="img/40px-Dust_of_Appearance_icon.png">
           <div id="content-dust" class="hide">
@@ -425,7 +478,7 @@
             <p>Active: <i>Reveal</i> – Reveals and slows invisible Heroes in a nearby area (2 charges, 1050 radius, 20% movespeed slow, 12s duration). <img src="img/cd.png"> 30s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="smoke" class="item-box-1 center-block"
+        <div id="smoke" class="item-box-1 center-block item-cons"
              rel="popover" data-title="Smoke of Deceit">
           <img src="img/40px-Smoke_of_Deceit_icon.png">
           <div id="content-smoke" class="hide">
@@ -439,8 +492,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-1-->
-      <div class="col-xs-1">
-        <div id="gem" class="item-box-1 center-block"
+      <div class="col-xs-1 tier-1 shop-base">
+        <div id="gem" class="item-box-1 center-block item-cons"
              rel="popover" data-title="Gem of True Sight">
           <img src="img/40px-Gem_of_True_Sight_icon.png">
           <div id="content-gem" class="hide">
@@ -453,7 +506,7 @@
             <p>Passive: <i>True Sight</i> – Adds the ability to see invisible units and wards to any allied vision within its carrier's range. (900 radius, drops on death)</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="tome" class="item-box-1 center-block"
+        <div id="tome" class="item-box-1 center-block item-cons"
              rel="popover" data-title="Tome of Knowledge">
           <img src="img/40px-Tome_of_Knowledge_icon.png">
           <div id="content-tome" class="hide">
@@ -467,8 +520,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-1-->
-      <div class="col-xs-1">
-        <div id="tpscr" class="item-box-1 center-block"
+      <div class="col-xs-1 tier-1 shop-base">
+        <div id="tpscr" class="item-box-1 center-block item-cons shop-side"
              rel="popover" data-title="Town Portal Scroll">
           <img src="img/40px-Town_Portal_Scroll_icon.png">
           <div id="content-tpscr" class="hide">
@@ -482,8 +535,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-1-->
-      <div class="col-xs-1">
-        <div id="bottle" class="item-box-1 center-block"
+      <div class="col-xs-1 tier-1 shop-base shop-side">
+        <div id="bottle" class="item-box-1 center-block item-regen"
              rel="popover" data-title="Bottle">
           <img src="img/40px-Bottle_icon.png">
           <div id="content-bottle" class="hide">
@@ -493,12 +546,12 @@
                 <img src="img/Gold_symbol.png" height="24px"> 650
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
-            <p>Active: <i>Regenerate</i> – Consumes a charge to restore Health and Mana over time. Healing stops if attacked. Bottle can be refilled at your team's fountain. If Bottle does not have full charges and is placed on a courier, the courier will move 30% slower. Hold control to use Regenerate on an allied hero. (600 cast range, holds 3 charges, 90 health/60 mana per charge, 2.5s duration) <img src="img/cd.png"> 0.5s</p>
+            <p>Active: <i>Regenerate</i> – Consumes a charge to restore Health and Mana over time. Healing stops if attacked. Bottle can be refilled at your team's fountain. If Bottle does not have full charges and is placed on a courier, the courier will move 30% slower. Hold control to use Regenerate on an allied hero. (600 cast range, holds 3 charges, 90 health/60 mana per charge, 2.5s duration, starts with 3 charges or 1 from side shop) <img src="img/cd.png"> 0.5s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-1-->
-      <div class="col-xs-1">
-        <div id="blink" class="item-box-1 center-block"
+      <div class="col-xs-1 tier-2 shop-side shop-base">
+        <div id="blink" class="item-box-1 center-block item-mobi"
              rel="popover" data-title="Blink Dagger">
           <img src="img/40px-Blink_Dagger_icon.png">
           <div id="content-blink" class="hide">
@@ -516,8 +569,8 @@
   </div><!--/.col-lg-12-->
   <div class="col-lg-35 col-lg-3 flip-lg outer">
     <div class="row">
-      <div class="col-xs-4">
-        <div id="ror" class="item-box-1 center-block"
+      <div class="col-xs-4 tier-1 shop-side shop-base">
+        <div id="ror" class="item-box-1 center-block item-regen"
              rel="popover" data-title="Ring of Regen">
           <img src="img/40px-Ring_of_Regen_icon.png">
           <div id="content-ror" class="hide">
@@ -530,7 +583,7 @@
             <p>+2 Health Regen</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="sage" class="item-box-1 center-block"
+        <div id="sage" class="item-box-1 center-block item-regen"
              rel="popover" data-title="Sage's Mask">
           <img src="img/40px-Sage's_Mask_icon.png">
           <div id="content-sage" class="hide">
@@ -544,8 +597,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
-      <div class="col-xs-4">
-        <div id="roh" class="item-box-1 center-block"
+      <div class="col-xs-4 tier-1 shop-side shop-base">
+        <div id="roh" class="item-box-1 center-block item-regen"
              rel="popover" data-title="Ring of Health">
           <img src="img/40px-Ring_of_Health_icon.png">
           <div id="content-roh" class="hide">
@@ -558,7 +611,7 @@
             <p>+6 Health Regen</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="void" class="item-box-1 center-block"
+        <div id="void" class="item-box-1 center-block item-regen"
              rel="popover" data-title="Void Stone">
           <img src="img/40px-Void_Stone_icon.png">
           <div id="content-void" class="hide">
@@ -572,8 +625,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
-      <div class="col-xs-4">
-        <div id="stick" class="item-box-1 center-block"
+      <div class="col-xs-4 tier-1 shop-side shop-base">
+        <div id="stick" class="item-box-1 center-block item-regen"
              rel="popover" data-title="Magic Stick">
           <img src="img/40px-Magic_Stick_icon.png">
           <div id="content-stick" class="hide">
@@ -586,7 +639,7 @@
             <p>Active: <i>Energy Charge</i> – Instantly restores health and mana based on the number of charges stored. Gains a charge whenever a nearby visible enemy uses an ability (10 max charges, 15 health/mana per charge, 1200 radius). <img src="img/cd.png"> 13s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="stout" class="item-box-1 center-block"
+        <div id="stout" class="item-box-1 center-block item-def"
              rel="popover" data-title="Stout Shield">
           <img src="img/40px-Stout_Shield_icon.png">
           <div id="content-stout" class="hide">
@@ -602,8 +655,8 @@
       </div><!--/.col-xs-4-->
     </div><!--/.row-->
     <div class="row">
-      <div class="col-xs-6">
-        <div id="vit" class="item-box-1 center-block"
+      <div class="col-xs-6 tier-1 shop-secret">
+        <div id="vit" class="item-box-1 center-block item-stat shop-side"
              rel="popover" data-title="Vitality Booster">
           <img src="img/40px-Vitality_Booster_icon.png">
           <div id="content-vit" class="hide">
@@ -616,7 +669,7 @@
             <p>+250 Health</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="energy" class="item-box-1 center-block"
+        <div id="energy" class="item-box-1 center-block item-stat shop-side"
              rel="popover" data-title="Energy Booster">
           <img src="img/40px-Energy_Booster_icon.png">
           <div id="content-energy" class="hide">
@@ -629,7 +682,7 @@
             <p>+250 Mana</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="pb" class="item-box-1 center-block"
+        <div id="pb" class="item-box-1 center-block item-stat"
              rel="popover" data-title="Point Booster">
           <img src="img/40px-Point_Booster_icon.png">
           <div id="content-pb" class="hide">
@@ -644,8 +697,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-6-->
-      <div class="col-xs-6">
-        <div id="rop" class="item-box-1 center-block"
+      <div class="col-xs-6 tier-1 shop-base">
+        <div id="rop" class="item-box-1 center-block item-def"
              rel="popover" data-title="Ring of Protection">
           <img src="img/40px-Ring_of_Protection_icon.png">
           <div id="content-rop" class="hide">
@@ -658,7 +711,7 @@
             <p>+2 Armor</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="chainmail" class="item-box-1 center-block"
+        <div id="chainmail" class="item-box-1 center-block item-def shop-side"
              rel="popover" data-title="Chainmail">
           <img src="img/40px-Chainmail_icon.png">
           <div id="content-chainmail" class="hide">
@@ -671,7 +724,7 @@
             <p>+5 Armor</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="hoiw" class="item-box-1 center-block"
+        <div id="hoiw" class="item-box-1 center-block item-def item-regen shop-side"
              rel="popover" data-title="Helm of Iron Will">
           <img src="img/40px-Helm_of_Iron_Will_icon.png">
           <div id="content-hoiw" class="hide">
@@ -688,8 +741,8 @@
       </div><!--/.col-xs-6-->
     </div><!--/.row-->
     <div class="row">
-      <div class="col-xs-4">
-        <div id="soulring" class="item-box-1 center-block"
+      <div class="col-xs-4 tier-2">
+        <div id="soulring" class="item-box-1 center-block item-regen"
              rel="popover" data-title="Soul Ring">
           <img src="img/40px-Soul_Ring_icon.png">
           <div id="content-soulring" class="hide">
@@ -708,8 +761,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
-      <div class="col-xs-2 col-xs-offset-1">
-        <div id="perseverance" class="item-box-1 center-block"
+      <div class="col-xs-2 col-xs-offset-1 tier-2">
+        <div id="perseverance" class="item-box-1 center-block item-regen item-dam"
              rel="popover" data-title="Perseverance">
           <img src="img/40px-Perseverance_icon.png">
           <div id="content-perseverance" class="hide">
@@ -728,7 +781,7 @@
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-2-offset-->
       <div class="col-xs-5">
-        <div id="talisman" class="item-box-1 center-block"
+        <div id="talisman" class="item-box-1 center-block item-def tier-2 shop-secret"
              rel="popover" data-title="Talisman of Evasion">
           <img src="img/40px-Talisman_of_Evasion_icon.png">
           <div id="content-talisman" class="hide">
@@ -741,7 +794,7 @@
             <p>+20% Evasion</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="cloak" class="item-box-1 center-block"
+        <div id="cloak" class="item-box-1 center-block item-def tier-1 shop-side shop-base"
              rel="popover" data-title="Cloak">
           <img src="img/40px-Cloak_icon.png">
           <div id="content-cloak" class="hide">
@@ -757,8 +810,8 @@
       </div><!--/.col-xs-5-->
     </div><!--/.row-->
     <div class="row">
-      <div class="col-xs-3 col-xs-offset-1">
-        <div id="aether" class="item-box-1 center-block"
+      <div class="col-xs-3 col-xs-offset-1 tier-2">
+        <div id="aether" class="item-box-1 center-block item-cast item-regen item-stat"
              rel="popover" data-title="Aether Lens">
           <img src="img/40px-Aether_Lens_icon.png">
           <div id="content-aether" class="hide">
@@ -777,8 +830,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
-      <div class="col-xs-4">
-        <div id="lace" class="item-box-1 center-block"
+      <div class="col-xs-4 tier-1 shop-base">
+        <div id="lace" class="item-box-1 center-block item-mobi"
              rel="popover" data-title="Wind Lace">
           <img src="img/40px-Wind_Lace_icon.png">
           <div id="content-lace" class="hide">
@@ -791,7 +844,7 @@
             <p>+20 Movement Speed</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="boots" class="item-box-1 center-block"
+        <div id="boots" class="item-box-1 center-block item-mobi shop-side"
              rel="popover" data-title="Boots of Speed">
           <img src="img/40px-Boots_of_Speed_icon.png">
           <div id="content-boots" class="hide">
@@ -805,8 +858,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
-      <div class="col-xs-4">
-        <div id="wand" class="item-box-1 center-block"
+      <div class="col-xs-4 tier-2">
+        <div id="wand" class="item-box-1 center-block item-reg item-stat"
              rel="popover" data-title="Magic Wand">
           <img src="img/40px-Magic_Wand_icon.png">
           <div id="content-wand" class="hide">
@@ -824,7 +877,7 @@
             <p>Active: <i>Energy Charge</i> – Instantly restores health and mana based on the number of charges stored. Gains a charge whenever a nearby visible enemy uses an ability (17 max charges, 15 health/mana per charge, 1200 radius).  <img src="img/cd.png"> 13s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="talon" class="item-box-1 center-block"
+        <div id="talon" class="item-box-1 center-block item-def item-stat"
              rel="popover" data-title="Iron Talon">
           <img src="img/40px-Iron_Talon_icon.png">
           <div id="content-talon" class="hide">
@@ -845,8 +898,8 @@
       </div><!--/.col-xs-4-->
     </div><!--/.row-->
     <div class="row">
-      <div class="col-xs-6">
-        <div id="soulbooster" class="item-box-1 center-block"
+      <div class="col-xs-6 tier-2">
+        <div id="soulbooster" class="item-box-1 center-block item-stat"
              rel="popover" data-title="Soul Booster">
           <img src="img/40px-Soul_Booster_icon.png">
           <div id="content-soulbooster" class="hide">
@@ -864,8 +917,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-6-->
-      <div class="col-xs-6">
-        <div id="urn" class="item-box-1 center-block"
+      <div class="col-xs-6 tier-2">
+        <div id="urn" class="item-box-1 center-block item-regen item-stat item-def item-supp"
              rel="popover" data-title="Urn of Shadows">
           <img src="img/40px-Urn_of_Shadows_icon.png">
           <div id="content-urn" class="hide">
@@ -885,7 +938,7 @@
             <p>Active: <i>Soul Release</i> – Heals health over time to friendly units, but deals pure damage over time to enemy units. The healing effect is lost if the affected ally takes damage from an enemy hero. Gains charges every time an enemy hero dies within 1400 range. Only the closest Urn to the dying hero will gain a charge (950 cast range, 400 ally heal, 150 damage enemies, 8s duration). <img src="img/cd.png"> 7s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="moc" class="item-box-1 center-block"
+        <div id="moc" class="item-box-1 center-block item-def item-supp item-regen"
              rel="popover" data-title="Medallion of Courage">
           <img src="img/40px-Medallion_of_Courage_icon.png">
           <div id="content-moc" class="hide">
@@ -903,7 +956,7 @@
             <p>Active: <i>Valor</i> – If cast on an ally, increases their armor while reducing the caster's. If cast on an enemy, reduces the armor of both the enemy and the caster. Cannot target magic immune enemieas (1000 cast range, +/-7 armor bonus/reduction, 7s duration). <img src="img/cd.png"> 7s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="basi" class="item-box-1 center-block"
+        <div id="basi" class="item-box-1 center-block item-def item-regen item-dam"
              rel="popover" data-title="Ring of Basilius">
           <img src="img/40px-Ring_of_Basilius_icon.png">
           <div id="content-basi" class="hide">
@@ -922,8 +975,8 @@
       </div><!--/.col-xs-6-->
     </div><!--/.row-->
     <div class="row">
-      <div class="col-xs-10 col-xs-offset-1">
-        <div id="bots" class="item-box-1 center-block"
+      <div class="col-xs-10 col-xs-offset-1 tier-2">
+        <div id="bots" class="item-box-1 center-block item-mobi"
              rel="popover" data-title="Boots of Travel">
           <img src="img/40px-Boots_of_Travel_icon.png">
           <div id="content-bots" class="hide">
@@ -936,7 +989,7 @@
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
             <p>+100 Movement Speed</p>
-            <p>Active: <i>Teleport</i> – Teleports you to an allied non-hero unit or structure. Upgradable to allow you to teleport to allied heroes (3s channel time). <img src="img/cd.png"> 60s <img src="img/mana.png"> 75</p>
+            <p>Active: <i>Teleport</i> – Teleports you to an allied non-hero unit or structure. Upgradable to allow you to teleport to allied heroes (3s channel time).<br><img src="img/cd.png"> 60s <img src="img/mana.png"> 75</p>
             <div class="popover-inset text-center">
               <div class="popover-line">
                 + <img src="img/40px-Recipe_Scroll_icon.png"> 2,000
@@ -945,7 +998,7 @@
             </div><!--/.popover-inset-->
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="tranquil" class="item-box-1 center-block"
+        <div id="tranquil" class="item-box-1 center-block item-regen item-mobi"
              rel="popover" data-title="Tranquil Boots">
           <img src="img/40px-Tranquil_Boots_icon.png">
           <div id="content-tranquil" class="hide">
@@ -963,7 +1016,7 @@
             <p>Passive: <i>Break</i> – Whenever you attack or are attacked, lose the +14 health regeneration and 25 movement speed for 13 seconds. <img src="img/cd.png"> 13s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="arcane" class="item-box-1 center-block"
+        <div id="arcane" class="item-box-1 center-block item-regen item-mobi"
              rel="popover" data-title="Arcane Boots">
           <img src="img/40px-Arcane_Boots_icon.png">
           <div id="content-arcane" class="hide">
@@ -980,7 +1033,7 @@
             <p>Active: <i>Replenish Mana</i> – Restores mana to all allies in a 900 area around the hero (900 radius, 135 mana restored). <img src="img/cd.png"> 55s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="treads" class="item-box-1 center-block"
+        <div id="treads" class="item-box-1 center-block item-mobi item-stat"
              rel="popover" data-title="Power Treads">
           <img src="img/40px-Power_Treads_icon.png">
           <div id="content-treads" class="hide">
@@ -991,14 +1044,14 @@
                 (<img src="img/40px-Belt_of_Strength_icon.png"> or
                 <img src="img/40px-Robe_of_the_Magi_icon.png"> or
                 <img src="img/40px-Band_of_Elvenskin_icon.png">) 450 +
-                <img src="img/40px-Gloves_of_Haste_icon.png"> 500
+                <img src="img/40px-Gloves_of_Haste_icon.png"> 500<br>
                 = <img src="img/40px-Power_Treads_icon.png"> 1,350
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
             <p></p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="phase" class="item-box-1 center-block"
+        <div id="phase" class="item-box-1 center-block item-mobi item-dam"
              rel="popover" data-title="Phase Boots">
           <img src="img/40px-Phase_Boots_icon.png">
           <div id="content-phase" class="hide">
@@ -1019,8 +1072,8 @@
     <div class="row">
       <div class="col-xs-4">
       </div><!--/.col-xs-4-->
-      <div class="col-xs-4">
-        <div id="buckler" class="item-box-1 center-block"
+      <div class="col-xs-4 tier-2">
+        <div id="buckler" class="item-box-1 center-block item-def item-supp item-stat"
              rel="popover" data-title="Buckler">
           <img src="img/40px-Buckler_icon.png">
           <div id="content-buckler" class="hide">
@@ -1033,7 +1086,7 @@
             <p></p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="headdress" class="item-box-1 center-block"
+        <div id="headdress" class="item-box-1 center-block item-regen item-supp item-stat"
              rel="popover" data-title="Headdress">
           <img src="img/40px-Headdress_icon.png">
           <div id="content-headdress" class="hide">
@@ -1048,7 +1101,7 @@
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
       <div class="col-xs-3">
-        <div id="solar" class="item-box-1 center-block"
+        <div id="solar" class="item-box-1 center-block item-supp item-def item-regen tier-3"
              rel="popover" data-title="Solar Crest">
           <img src="img/40px-Solar_Crest_icon.png">
           <div id="content-solar" class="hide">
@@ -1061,7 +1114,7 @@
             <p></p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="glimmer" class="item-box-1 center-block"
+        <div id="glimmer" class="item-box-1 center-block item-supp item-def item-dam tier-2"
              rel="popover" data-title="Glimmer Cape">
           <img src="img/40px-Glimmer_Cape_icon.png">
           <div id="content-glimmer" class="hide">
@@ -1077,8 +1130,8 @@
       </div><!--/.col-xs-3-->
     </div><!--/.row-->
     <div class="row">
-      <div class="col-xs-3">
-        <div id="hotd" class="item-box-1 center-block"
+      <div class="col-xs-3 tier-3">
+        <div id="hotd" class="item-box-1 center-block item-regen item-util item-dam item-stat"
              rel="popover" data-title="Helm of the Dominator">
           <img src="img/40px-Helm_of_the_Dominator_icon.png">
           <div id="content-hotd" class="hide">
@@ -1093,7 +1146,7 @@
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-3-->
       <div class="col-xs-6">
-        <div id="vanguard" class="item-box-1 center-block"
+        <div id="vanguard" class="item-box-1 center-block item-def item-regen item-stat tier-2"
              rel="popover" data-title="Vanguard">
           <img src="img/40px-Vanguard_icon.png">
           <div id="content-vanguard" class="hide">
@@ -1106,7 +1159,7 @@
             <p></p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="mek" class="item-box-1 center-block"
+        <div id="mek" class="item-box-1 center-block item-stat item-supp item-regen item-def tier-3"
              rel="popover" data-title="Mekansm">
           <img src="img/40px-Mekansm_icon.png">
           <div id="content-mek" class="hide">
@@ -1119,7 +1172,7 @@
             <p></p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="hood" class="item-box-1 center-block"
+        <div id="hood" class="item-box-1 center-block item-def item-regen tier-2"
              rel="popover" data-title="Hood of Defiance">
           <img src="img/40px-Hood_of_Defiance_icon.png">
           <div id="content-hood" class="hide">
@@ -1133,8 +1186,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-6-->
-      <div class="col-xs-3">
-        <div id="vlads" class="item-box-1 center-block"
+      <div class="col-xs-3 tier-3">
+        <div id="vlads" class="item-box-1 center-block item-supp item-regen item-dam item-def"
              rel="popover" data-title="Vladmir's Offering">
           <img src="img/40px-Vladmir's_Offering_icon.png">
           <div id="content-vlads" class="hide">
@@ -1156,8 +1209,8 @@
       <div class="col-xs-4">
         
       </div><!--/.col-xs-4-->
-      <div class="col-xs-4">
-        <div id="platemail" class="item-box-1 center-block"
+      <div class="col-xs-4 tier-2 shop-secret">
+        <div id="platemail" class="item-box-1 center-block item-def"
              rel="popover" data-title="Platemail">
           <img src="img/40px-Platemail_icon.png">
           <div id="content-platemail" class="hide">
@@ -1173,8 +1226,8 @@
       </div><!--/.col-xs-4-->
     </div><!--/.row-->
     <div class="row">
-      <div class="col-xs-4">
-        <div id="bloodstone" class="item-box-1 center-block"
+      <div class="col-xs-4 tier-3">
+        <div id="bloodstone" class="item-box-1 center-block item-stat item-regen item-cast item-supp"
              rel="popover" data-title="Bloodstone">
           <img src="img/40px-Bloodstone_icon.png">
           <div id="content-bloodstone" class="hide">
@@ -1187,7 +1240,7 @@
             <p></p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="refresher" class="item-box-1 center-block"
+        <div id="refresher" class="item-box-1 center-block item-regen item-cast item-util item-dam"
              rel="popover" data-title="Refresher Orb">
           <img src="img/40px-Refresher_Orb_icon.png">
           <div id="content-refresher" class="hide">
@@ -1202,7 +1255,7 @@
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
       <div class="col-xs-4">
-        <div id="crimson" class="item-box-1 center-block"
+        <div id="crimson" class="item-box-1 center-block item-supp item-stat item-regen item-def tier-3"
              rel="popover" data-title="Crimson Guard">
           <img src="img/40px-Crimson_Guard_icon.png">
           <div id="content-crimson" class="hide">
@@ -1215,7 +1268,7 @@
             <p></p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="greaves" class="item-box-1 center-block"
+        <div id="greaves" class="item-box-1 center-block item-regen item-def item-supp item-stat item-mobi tier-4"
              rel="popover" data-title="Guardian Greaves">
           <img src="img/40px-Guardian_Greaves_icon.png">
           <div id="content-greaves" class="hide">
@@ -1228,7 +1281,7 @@
             <p></p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="pipe" class="item-box-1 center-block"
+        <div id="pipe" class="item-box-1 center-block item-regen item-def item-supp tier-3"
              rel="popover" data-title="Pipe of Insight">
           <img src="img/40px-Pipe_of_Insight_icon.png">
           <div id="content-pipe" class="hide">
@@ -1242,8 +1295,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
-      <div class="col-xs-4">
-        <div id="lotus" class="item-box-1 center-block"
+      <div class="col-xs-4 tier-3">
+        <div id="lotus" class="item-box-1 center-block item-supp item-def item-regen item-stat"
              rel="popover" data-title="Lotus Orb">
           <img src="img/40px-Lotus_Orb_icon.png">
           <div id="content-lotus" class="hide">
@@ -1256,7 +1309,7 @@
             <p></p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="ac" class="item-box-1 center-block"
+        <div id="ac" class="item-box-1 center-block item-def item-dam"
              rel="popover" data-title="Assault Cuirass">
           <img src="img/40px-Assault_Cuirass_icon.png">
           <div id="content-ac" class="hide">
@@ -1274,8 +1327,8 @@
   </div><!--/.col-lg-35-->
   <div class="col-lg-5 middle">
     <div class="row">
-      <div class="col-xs-4 col-xs-offset-2">
-        <div id="belt" class="item-box-1 center-block"
+      <div class="col-xs-4 col-xs-offset-2 tier-1 shop-side shop-base">
+        <div id="belt" class="item-box-1 center-block item-str"
              rel="popover" data-title="Belt of Strength">
           <img src="img/40px-Belt_of_Strength_icon.png">
           <div id="content-belt" class="hide">
@@ -1288,7 +1341,7 @@
             <p>+6 Strength (+120 health, +0.36 health regen)</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="robe" class="item-box-1 center-block"
+        <div id="robe" class="item-box-1 center-block item-int"
              rel="popover" data-title="Robe of the Magi">
           <img src="img/40px-Robe_of_the_Magi_icon.png">
           <div id="content-robe" class="hide">
@@ -1301,7 +1354,7 @@
             <p>+6 Intelligence (+66 mana, +0.24 mana regen, +0.43% spell amplification)</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="band" class="item-box-1 center-block"
+        <div id="band" class="item-box-1 center-block item-agi"
              rel="popover" data-title="Band of Elvenskin">
           <img src="img/40px-Band_of_Elvenskin_icon.png">
           <div id="content-band" class="hide">
@@ -1315,8 +1368,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
-      <div class="col-xs-4">
-        <div id="club" class="item-box-1 center-block"
+      <div class="col-xs-4 tier-1 shop-base">
+        <div id="club" class="item-box-1 center-block item-str"
              rel="popover" data-title="Ogre Club">
           <img src="img/40px-Ogre_Club_icon.png">
           <div id="content-club" class="hide">
@@ -1329,7 +1382,7 @@
             <p>+10 Strength (+200 health, +0.60 health regen)</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="staff" class="item-box-1 center-block"
+        <div id="staff" class="item-box-1 center-block item-int"
              rel="popover" data-title="Staff of Wizardry">
           <img src="img/40px-Staff_of_Wizardry_icon.png">
           <div id="content-staff" class="hide">
@@ -1342,7 +1395,7 @@
             <p>+10 Intelligence (+110 mana, +0.40 mana regen, +0.71% spell amplification)</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="blade" class="item-box-1 center-block"
+        <div id="blade" class="item-box-1 center-block item-agi"
              rel="popover" data-title="Blade of Alacrity">
           <img src="img/40px-Blade_of_Alacrity_icon.png">
           <div id="content-blade" class="hide">
@@ -1358,8 +1411,8 @@
       </div><!--/.col-xs-4-->
     </div><!--/.row-->
     <div class="row">
-      <div class="col-xs-4 tag-attr">
-        <div id="gauntlets" class="item-box-1 center-block"
+      <div class="col-xs-4 tier-1 shop-base">
+        <div id="gauntlets" class="item-box-1 center-block item-str"
              rel="popover" data-title="Gauntlets of Strength">
           <img src="img/40px-Gauntlets_of_Strength_icon.png">
           <div id="content-gauntlets" class="hide">
@@ -1372,7 +1425,7 @@
             <p>+3 Strength (+60 health, +0.18 health regen)</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="mantle" class="item-box-1 center-block"
+        <div id="mantle" class="item-box-1 center-block item-int"
              rel="popover" data-title="Mantle of Intelligence">
           <img src="img/40px-Mantle_of_Intelligence_icon.png">
           <div id="content-mantle" class="hide">
@@ -1385,7 +1438,7 @@
             <p>+3 Intelligence (+33 mana, +0.12 mana regen, +0.21% spell amplification)</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="slippers" class="item-box-1 center-block"
+        <div id="slippers" class="item-box-1 center-block item-agi"
              rel="popover" data-title="Slippers of Agility">
           <img src="img/40px-Slippers_of_Agility_icon.png">
           <div id="content-slippers" class="hide">
@@ -1402,8 +1455,8 @@
       <div class="col-xs-4">
         
       </div><!--/.col-xs-4-->
-      <div class="col-xs-3 col-xs-offset-1">
-        <div id="oblivion" class="item-box-1 center-block"
+      <div class="col-xs-3 col-xs-offset-1 tier-2">
+        <div id="oblivion" class="item-box-1 center-block item-int item-regen item-dam"
              rel="popover" data-title="Oblivion Staff">
           <img src="img/40px-Oblivion_Staff_icon.png">
           <div id="content-oblivion" class="hide">
@@ -1419,8 +1472,8 @@
       </div><!--/.col-xs-2-offset-->
     </div><!--/.row-->
     <div class="row">
-      <div class="col-xs-4">
-        <div id="bracer" class="item-box-1 center-block"
+      <div class="col-xs-4 tier-2">
+        <div id="bracer" class="item-box-1 center-block item-str item-dam"
              rel="popover" data-title="Bracer">
           <img src="img/40px-Bracer_icon.png">
           <div id="content-bracer" class="hide">
@@ -1439,7 +1492,7 @@
             <p>+3 Damage</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="null" class="item-box-1 center-block"
+        <div id="null" class="item-box-1 center-block item-int item-dam"
              rel="popover" data-title="Null Talisman">
           <img src="img/40px-Null_Talisman_icon.png">
           <div id="content-null" class="hide">
@@ -1459,7 +1512,7 @@
             </p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="wraith" class="item-box-1 center-block"
+        <div id="wraith" class="item-box-1 center-block item-agi item-dam"
              rel="popover" data-title="Wraith Band">
           <img src="img/40px-Wraith_Band_icon.png">
           <div id="content-wraith" class="hide">
@@ -1479,8 +1532,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
-      <div class="col-xs-4">
-        <div id="sange" class="item-box-1 center-block"
+      <div class="col-xs-4 tier-2">
+        <div id="sange" class="item-box-1 center-block item-str item-dam"
              rel="popover" data-title="Sange">
           <img src="img/40px-Sange_icon.png">
           <div id="content-sange" class="hide">
@@ -1498,7 +1551,7 @@
             <p>Passive: <i>Lesser Maim</i> – 30% chance to apply a 20/10% (melee/ranged) move & attack speed slow for 5s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="lucen" class="item-box-1 center-block new"
+        <div id="lucen" class="item-box-1 new center-block item-int item-cast"
              rel="popover" data-title="Lucen">
           <img src="img/40px-Lucen_icon.png">
           <div id="content-lucen" class="hide">
@@ -1516,7 +1569,7 @@
             <p>+10% Manacost Reduction</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="yasha" class="item-box-1 center-block"
+        <div id="yasha" class="item-box-1 center-block item-agi item-mobi"
              rel="popover" data-title="Yasha">
           <img src="img/40px-Yasha_icon.png">
           <div id="content-yasha" class="hide">
@@ -1536,7 +1589,7 @@
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
       <div class="col-xs-4">
-        <div id="force" class="item-box-1 center-block"
+        <div id="force" class="item-box-1 center-block item-int item-mobi item-regen item-supp tier-2"
              rel="popover" data-title="Force Staff">
           <img src="img/40px-Force_Staff_icon.png">
           <div id="content-force" class="hide">
@@ -1551,10 +1604,10 @@
             </div><!--/.popover-inset-->
             <p>+10 Intelligence (+110 mana, +0.40 mana regen, +0.71% spell amplification)</p>
             <p>+6 Health Regen</p>
-            <p>Active: <i>Force</i> – Pushes an allied or enemy unit 600 range forward (800 cast range, 1500 push speed). <img src="img/cd.png"> 20s <img src="img/mana.png"> 25</p>
+            <p>Active: <i>Force</i> – Pushes an allied or enemy unit 600 range forward (750 cast range, 1500 push speed). <img src="img/cd.png"> 20s <img src="img/mana.png"> 25</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="dlance" class="item-box-1 center-block"
+        <div id="dlance" class="item-box-1 center-block item-agi tier-2"
              rel="popover" data-title="Dragon Lance">
           <img src="img/40px-Dragon_Lance_icon.png">
           <div id="content-dlance" class="hide">
@@ -1572,7 +1625,7 @@
             <p>+140 Attack Range (Ranged ONLY)</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="echo" class="item-box-1 center-block"
+        <div id="echo" class="item-box-1 center-block item-str item-regen tier-3"
              rel="popover" data-title="Echo Sabre">
           <img src="img/40px-Echo_Sabre_icon.png">
           <div id="content-echo" class="hide">
@@ -1595,8 +1648,8 @@
       </div><!--/.col-xs-4-->
     </div><!--/.row-->
     <div class="row">
-      <div class="col-xs-5">
-        <div id="woodsman" class="item-box-1 center-block new"
+      <div class="col-xs-5 tier-2">
+        <div id="woodsman" class="item-box-1 center-block new item-str item-util"
              rel="popover" data-title="Woodsman's Gauntlets">
           <img src="img/40px-place_icon.png">
           <div id="content-woodsman" class="hide">
@@ -1615,7 +1668,7 @@
             <p>Active: <i>Plant Tree</i> – Plants a tree at the target location (200 cast range, 20s duration). Begins with 3 charges, holds up to 8, charges are gained by cutting down normal trees by any means, 1 charge per tree removed. <img src="img/cd.png"> 0s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="frost" class="item-box-1 center-block new"
+        <div id="frost" class="item-box-1 center-block new item-int item-regen item-dam item-util"
              rel="popover" data-title="Frost Spike">
           <img src="img/40px-Frost_Spike_icon.png">
           <div id="content-frost" class="hide">
@@ -1636,7 +1689,7 @@
             </p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="pms" class="item-box-1 center-block"
+        <div id="pms" class="item-box-1 center-block item-agi item-def"
              rel="popover" data-title="Poor Man's Shield">
           <img src="img/40px-Poor_Man's_Shield_icon.png">
           <div id="content-pms" class="hide">
@@ -1650,7 +1703,7 @@
               </div>
             </div><!--/.popover-inset-->
             <p>+6 Agility (+0.86 armor, +6 attack speed)</p>
-            <p>Passive: <i>Damage Block</i>  – On 100% of attacks by enemy heroes and 50% of attacks by enemy units, blocks 20 damage for melee heroes/10 for ranged.</p>
+            <p>Passive: <i>Damage Block</i> – On 100% of attacks by enemy heroes and 50% of attacks by enemy units, blocks 20 damage for melee heroes/10 for ranged.</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-5-->
@@ -1658,7 +1711,7 @@
         
       </div><!--/.col-xs-3-->
       <div class="col-xs-4">
-        <div id="pike" class="item-box-1 center-block"
+        <div id="pike" class="item-box-1 center-block item-agi item-mobi item-regen tier-3"
              rel="popover" data-title="Hurricane Pike">
           <img src="img/40px-Hurricane_Pike_icon.png">
           <div id="content-pike" class="hide">
@@ -1676,10 +1729,10 @@
             <p>+10 Intelligence (+110 mana, +0.40 mana regen, +0.71% spell amplification)</p>
             <p>+6 Health Regen (+6.9 total)</p>
             <p>+140 Attack Range (Ranged ONLY)</p>
-            <p>Active: <i>Hurricane Thrust</i> – When used on an enemy (400 cast range), pushes you both 450 units away and grants 4 attacks with 100 bonus attack speed and unlimited range (or up to 5 seconds). When used on self or an ally behaves like Force Staff. <img src="img/cd.png"> 14s <img src="img/mana.png"> 25</p>
+            <p>Active: <i>Hurricane Thrust</i> – When used on an enemy (400 cast range), pushes you both 450 units away and grants 4 attacks with 100 bonus attack speed and unlimited range (or up to 5 seconds). When used on self or an ally behaves like Force Staff (800 cast range). <img src="img/cd.png"> 14s <img src="img/mana.png"> 25</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="wyrmslayer" class="item-box-1 center-block new"
+        <div id="wyrmslayer" class="item-box-1 center-block new item-str item-dam item-regen tier-4"
              rel="popover" data-title="Wyrmslayer">
           <img src="img/40px-Wyrmslayer_icon.png">
           <div id="content-wyrmslayer" class="hide">
@@ -1708,8 +1761,8 @@
       <div class="col-xs-32 col-xs-1">
         
       </div><!--/.col-xs-32-->
-      <div class="col-xs-3">
-        <div id="halberd" class="item-box-1 center-block"
+      <div class="col-xs-3 tier-3">
+        <div id="halberd" class="item-box-1 center-block item-str item-util item-dam item-def"
              rel="popover" data-title="Heaven's Halberd">
           <img src="img/40px-Heaven's_Halberd_icon.png">
           <div id="content-halberd" class="hide">
@@ -1728,7 +1781,7 @@
             <p>Passive: <i>Lesser Maim</i> – 35% chance to apply a 20/10% (melee/ranged) move & attack speed slow for 5s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="gjalla" class="item-box-1 center-block new" style="margin-left: -6px;"
+        <div id="gjalla" class="item-box-1 center-block new item-str item-def item-supp item-dam" style="margin-left: -6px;"
              rel="popover" data-title="Gjallarhorn">
           <img src="img/40px-place_icon.png">
           <div id="content-gjalla" class="hide">
@@ -1762,8 +1815,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-3-->
-      <div class="col-xs-3">
-        <div id="spellblade" class="item-box-1 center-block new"
+      <div class="col-xs-3 tier-3">
+        <div id="spellblade" class="item-box-1 center-block new item-int item-regen item-cast"
              rel="popover" data-title="Spellblade">
           <img src="img/40px-Spellblade_icon.png">
           <div id="content-spellblade" class="hide">
@@ -1787,7 +1840,7 @@
             <p>Passive: <i>Spellmastery</i> – Cast a spell instantly once every <img src="img/cd.png"> 4s (only applies to spells with an animation)</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="seraph" class="item-box-1 center-block new" style="margin-left: -6px;"
+        <div id="seraph" class="item-box-1 center-block new item-int item-regen item-cast item-mobi item-supp" style="margin-left: -6px;"
              rel="popover" data-title="Seraph Wing">
           <img src="img/40px-Seraph_Wing_icon.png">
           <div id="content-seraph" class="hide">
@@ -1813,8 +1866,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-3-->
-      <div class="col-xs-3">
-        <div id="manta" class="item-box-1 center-block"
+      <div class="col-xs-3 tier-3">
+        <div id="manta" class="item-box-1 center-block item-agi item-util item-mobi item-def"
              rel="popover" data-title="Manta Style">
           <img src="img/40px-Manta_Style_icon.png">
           <div id="content-manta" class="hide">
@@ -1835,7 +1888,7 @@
             <p>Active: <i>Mirror Image</i> – Creates 2 illusions that last 20 seconds, deal 33% damage for melee heroes/28% for ranged heroes, and take 350%/400% damage. Applies a weak dispel and disjoint projectiles during the 0.1s split time. <img src="img/cd.png"> 30/45s <img src="img/mana.png"> 125</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="hayabusa" class="item-box-1 center-block new" style="margin-left: -6px;"
+        <div id="hayabusa" class="item-box-1 center-block new item-agi item-mobi item-dam" style="margin-left: -6px;"
              rel="popover" data-title="Hayabusa">
           <img src="img/40px-Hayabusa_icon.png">
           <div id="content-hayabusa" class="hide">
@@ -1860,8 +1913,8 @@
       </div><!--/.col-xs-32-->
     </div><!--/.row-->
     <div class="row">
-      <div class="col-xs-5">
-        <div id="drum" class="item-box-1 center-block"
+      <div class="col-xs-5 tier-3">
+        <div id="drum" class="item-box-1 center-block item-str item-dam item-regen item-mobi item-supp"
              rel="popover" data-title="Drum of Endurance">
           <img src="img/40px-Drum_of_Endurance_icon.png">
           <div id="content-drum" class="hide">
@@ -1884,7 +1937,7 @@
             <p>Active: <i>Endurance</i> – Grants +25 attack speed and +13% movement speed to allies within a 900 radius (6s duration, 6 charges, rebuy recipe to replenish). <img src="img/cd.png"> 30s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="atos" class="item-box-1 center-block" style="margin-left: -12px;"
+        <div id="atos" class="item-box-1 center-block item-str item-util item-dam" style="margin-left: -12px;"
              rel="popover" data-title="Rod of Atos">
           <img src="img/40px-Rod_of_Atos_icon.png">
           <div id="content-atos" class="hide">
@@ -1905,7 +1958,7 @@
             <p>Active: <i>Cripple</i> – Roots the target for 2s (1150 cast range) <img src="img/cd.png"> 16s <img src="img/mana.png"> 50</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="dagon" class="item-box-1 center-block"
+        <div id="dagon" class="item-box-1 center-block item-int item-cast item-dam"
              rel="popover" data-title="Dagon">
           <img src="img/40px-Dagon_1_icon.png">
           <div id="content-dagon" class="hide">
@@ -1918,15 +1971,26 @@
                 = <img src="img/40px-Dagon_1_icon.png"> 2,720
               </div>
             </div><!--/.popover-inset-->
-            <p>+16 Intelligence (+176 mana, +0.64 mana regen, +1.14% spell amplification)</p>
+            <p>+16/19/22/25/28 Intelligence (+176/209/242/275/308 mana,<br>+0.64/0.76/0.88/1/1.12 mana regen,<br>+1.14/1.36/1.57/1.79/2% spell amplification)</p>
             <p>+3 Strength (+60 health, +0.18 health regen)</p>
             <p>+3 Agility (+0.43 armor, +3 attack speed)</p>
-            <p>+9 Damage</p>
-            <p>Active: <i>Energy Burst</i> – Instantly deals 400 magic damage to the target enemy (600 cast range, kills illusions instantly). <img src="img/cd.png"> 35s <img src="img/mana.png"> 180</p>
-            </p>
+            <p>+9 Damage (+25/28/31/34/37 for Intelligence heroes)</p>
+            <p>Active: <i>Energy Burst</i> – Instantly deals 400 magic damage to the target enemy (600/650/700/750/800 cast range, 0.03s effect delay, kills illusions instantly). Upgradable up to 4 times. <img src="img/cd.png"> 35/30/25/20/15s <img src="img/mana.png"> 180</p>
+            <div class="popover-inset text-center">
+              <div class="popover-line">
+                + <img src="img/40px-Recipe_Scroll_icon.png"> 1,250
+                = <img src="img/40px-Dagon_2_icon.png"> 3,970<br>
+                + <img src="img/40px-Recipe_Scroll_icon.png"> 1,250
+                = <img src="img/40px-Dagon_3_icon.png"> 5,220<br>
+                + <img src="img/40px-Recipe_Scroll_icon.png"> 1,250
+                = <img src="img/40px-Dagon_4_icon.png"> 6,470<br>
+                + <img src="img/40px-Recipe_Scroll_icon.png"> 1,250
+                = <img src="img/40px-Dagon_5_icon.png"> 7,720<br>
+              </div><!--/.popover-line-->
+            </div><!--/.popover-inset-->
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="veil" class="item-box-1 center-block" style="margin-left: -12px;"
+        <div id="veil" class="item-box-1 center-block item-int item-dam item-def item-regen item-cast item-supp" style="margin-left: -12px;"
              rel="popover" data-title="Veil of Discord">
           <img src="img/40px-Veil_of_Discord_icon.png">
           <div id="content-veil" class="hide">
@@ -1950,7 +2014,7 @@
             </p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="aquila" class="item-box-1 center-block"
+        <div id="aquila" class="item-box-1 center-block item-agi item-dam item-def item-regen"
              rel="popover" data-title="Ring of Aquila">
           <img src="img/40px-Ring_of_Aquila_icon.png">
           <div id="content-aquila" class="hide">
@@ -1969,7 +2033,7 @@
             <p>Aura: <i>Aquila Aura</i> – Grants +0.65 mana regeneration and +2 armor to allies in range (Activate to toggle).</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="squire" class="item-box-1 center-block new" style="margin-left: -12px;"
+        <div id="squire" class="item-box-1 center-block new item-agi item-dam" style="margin-left: -12px;"
              rel="popover" data-title="Squire's Greatsword">
           <img src="img/40px-place_icon.png">
           <div id="content-squire" class="hide">
@@ -1991,8 +2055,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-5-->
-      <div class="col-xs-2 col-xs-offset-2">
-        <div id="aghs" class="item-box-1 center-block"
+      <div class="col-xs-2 col-xs-offset-2 tier-2">
+        <div id="aghs" class="item-box-1 center-block item-stat item-cast"
              rel="popover" data-title="Aghanim's Scepter">
           <img src="img/40px-Aghanim's_Scepter_icon.png">
           <div id="content-aghs" class="hide">
@@ -2006,8 +2070,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-2-->
-      <div class="col-xs-3">
-        <div id="blademail" class="item-box-1 center-block"
+      <div class="col-xs-3 tier-2">
+        <div id="blademail" class="item-box-1 center-block item-int item-def item-dam"
              rel="popover" data-title="Blade Mail">
           <img src="img/40px-Blade_Mail_icon.png">
           <div id="content-blademail" class="hide">
@@ -2020,7 +2084,7 @@
             <p></p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="diffu" class="item-box-1 center-block"
+        <div id="diffu" class="item-box-1 center-block item-agi item-util item-dam"
              rel="popover" data-title="Diffusal Blade">
           <img src="img/40px-Diffusal_Blade_1_icon.png">
           <div id="content-diffu" class="hide">
@@ -2038,8 +2102,8 @@
     <div class="row">
       <div class="col-xs-4">
       </div><!--/.col-xs-4-->
-      <div class="col-xs-4">
-        <div id="snl" class="item-box-1 center-block new"
+      <div class="col-xs-4 tier-3">
+        <div id="snl" class="item-box-1 center-block new item-stat item-dam item-cast"
              rel="popover" data-title="Sange & Lucen">
           <img src="img/40px-Sange_and_Lucen_icon.png">
           <div id="content-snl" class="hide">
@@ -2059,7 +2123,7 @@
             <p>Passive: <i>Greater Maim</i> – 40% chance to apply a 26/13% (melee/ranged) move & attack speed slow for 5s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="sny" class="item-box-1 center-block"
+        <div id="sny" class="item-box-1 center-block item-stat item-dam item-mobi"
              rel="popover" data-title="Sange & Yasha">
           <img src="img/40px-Sange_and_Yasha_icon.png">
           <div id="content-sny" class="hide">
@@ -2079,7 +2143,7 @@
             <p>Passive: <i>Greater Maim</i> – 40% chance to apply a 26/13% (melee/ranged) move & attack speed slow for 5s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="lny" class="item-box-1 center-block new"
+        <div id="lny" class="item-box-1 center-block new item-stat item-mobi item-cast"
              rel="popover" data-title="Lucen & Yasha">
           <img src="img/40px-Lucen_and_Yasha_icon.png">
           <div id="content-lny" class="hide">
@@ -2100,8 +2164,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
-      <div class="col-xs-4">
-        <div id="bkb" class="item-box-1 center-block"
+      <div class="col-xs-4 tier-2">
+        <div id="bkb" class="item-box-1 center-block item-str item-def item-dam"
              rel="popover" data-title="Black King Bar">
           <img src="img/40px-Black_King_Bar_icon.png">
           <div id="content-bkb" class="hide">
@@ -2114,7 +2178,7 @@
             <p></p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="euls" class="item-box-1 center-block"
+        <div id="euls" class="item-box-1 center-block item-int item-mobi item-util item-regen item-def"
              rel="popover" data-title="Eul's Scepter of Divinity">
           <img src="img/40px-Eul's_Scepter_of_Divinity_icon.png">
           <div id="content-euls" class="hide">
@@ -2127,7 +2191,7 @@
             <p></p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="necro" class="item-box-1 center-block"
+        <div id="necro" class="item-box-1 center-block item-int item-util"
              rel="popover" data-title="Necronomicon">
           <img src="img/40px-Necronomicon_1_icon.png">
           <div id="content-necro" class="hide">
@@ -2145,8 +2209,8 @@
     <div class="row">
       <div class="col-xs-5">
       </div><!--/.col-xs-5-->
-      <div class="col-xs-2">
-        <div id="trio" class="item-box-1 center-block new"
+      <div class="col-xs-2 tier-4">
+        <div id="trio" class="item-box-1 center-block new item-stat item-dam item-mobi item-cast"
              rel="popover" data-title="Sacred Trio">
           <img src="img/40px-Sacred_Trio_icon.png">
           <div id="content-trio" class="hide">
@@ -2176,8 +2240,8 @@
       </div><!--/.col-xs-2-->
     </div><!--/.row-->
     <div class="row">
-      <div class="col-xs-3 col-xs-3-3 col-xs-offset-1">
-        <div id="reaver" class="item-box-1 center-block"
+      <div class="col-xs-3 col-xs-3-3 col-xs-offset-1 tier-3 shop-secret">
+        <div id="reaver" class="item-box-1 center-block item-str"
              rel="popover" data-title="Reaver">
           <img src="img/40px-Reaver_icon.png">
           <div id="content-reaver" class="hide">
@@ -2191,8 +2255,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-3-->
-      <div class="col-xs-3 col-xs-3-3">
-        <div id="mystic" class="item-box-1 center-block"
+      <div class="col-xs-3 col-xs-3-3 tier-3 shop-secret">
+        <div id="mystic" class="item-box-1 center-block item-int"
              rel="popover" data-title="Mystic Staff">
           <img src="img/40px-Mystic_Staff_icon.png">
           <div id="content-mystic" class="hide">
@@ -2206,8 +2270,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-3-->
-      <div class="col-xs-3 col-xs-3-3">
-        <div id="eagle" class="item-box-1 center-block"
+      <div class="col-xs-3 col-xs-3-3 tier-3 shop-secret">
+        <div id="eagle" class="item-box-1 center-block item-agi"
              rel="popover" data-title="Eaglesong">
           <img src="img/40px-Eaglesong_icon.png">
           <div id="content-eagle" class="hide">
@@ -2223,8 +2287,8 @@
       </div><!--/.col-xs-8-offset-->
     </div><!--/.row-->
     <div class="row">
-      <div class="col-xs-3 col-xs-3-3 col-xs-offset-1">
-        <div id="heart" class="item-box-1 center-block"
+      <div class="col-xs-3 col-xs-3-3 col-xs-offset-1 tier-4">
+        <div id="heart" class="item-box-1 center-block item-str item-stat item-regen"
              rel="popover" data-title="Heart of Tarrasque">
           <img src="img/40px-Heart_of_Tarrasque_icon.png">
           <div id="content-heart" class="hide">
@@ -2242,7 +2306,7 @@
             <p>Passive: <i>Health Regeneration</i> – Restores 7% of max health per second after not taking damage from an enemy hero or Roshan for <img src="img/cd.png"> 7s ranged/5s melee.</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="satanic" class="item-box-1 center-block" style="margin-left: -12px;"
+        <div id="satanic" class="item-box-1 center-block item-str item-dam item-regen" style="margin-left: -12px;"
              rel="popover" data-title="Satanic">
           <img src="img/40px-Satanic_icon.png">
           <div id="content-satanic" class="hide">
@@ -2261,7 +2325,7 @@
             <p>Active: <i>Unholy Rage</i> – Lifesteal 200% total (+175%) for 4.5 seconds. <img src="img/cd.png"> 35s <img src="img/mana.png"> 0</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="pauldron" class="item-box-1 center-block new" style="margin-left: -8px;"
+        <div id="pauldron" class="item-box-1 center-block new item-str item-regen item-dam item-def item-util" style="margin-left: -8px;"
              rel="popover" data-title="Beast Pauldron">
           <img src="img/40px-Beast_Pauldron_icon.png">
           <div id="content-pauldron" class="hide">
@@ -2277,17 +2341,17 @@
             <p>+30 Strength (+600 health, +1.80 health regen)</p>
             <p>+2 Intelligence (+22 mana, +0.08 mana regen, +0.14% spell amplification)</p>
             <p>+2 Agility (+0.29 armor, +2 attack speed)</p>
-            <p>+10 Attack Speed (+27 total)</p>
+            <p>+10 Attack Speed (+32 total</p>
             <p>+2 Armor (+2.29 total)</p>
             <p>Quell: +192 Damage Melee / +96 Ranged (damage to creeps ONLY)</p>
-            <p>Aura: <i>Greater Dominator Aura</i> – +15 Attack Speed & +15 Health Regen</p>
+            <p>Aura: <i>Greater Dominator Aura</i> – +20 Attack Speed & +15 Health Regen</p>
             <p>Active: <i>Dark Dominion</i> – Take control of a non-hero, non-ancient unit and sets its movement speed to 475 and health to at least 2200 (1 unit max, 700 cast range). <img src="img/cd.png"> 60s</p>
             <p>Passive: <i>Carnifex</i> – Upon killing an enemy hero, spawns an illusion of them under your control that deals 80% damage, takes 200% damage, and lasts 5 seconds. Illusion duration is refreshed upon killing a hero.</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-3-->
-      <div class="col-xs-3 col-xs-3-3">
-        <div id="sheep" class="item-box-1 center-block"
+      <div class="col-xs-3 col-xs-3-3 tier-4">
+        <div id="sheep" class="item-box-1 center-block item-int item-regen item-util"
              rel="popover" data-title="Scythe of Vyse">
           <img src="img/40px-Scythe_of_Vyse_icon.png">
           <div id="content-sheep" class="hide">
@@ -2307,7 +2371,7 @@
             <p>Active: <i>Hex</i> – Turns the target into a harmless critter for 3.5s (800 cast range, instantly destroys illusions). <img src="img/cd.png"> 22s <img src="img/mana.png"> 100</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="shiva" class="item-box-1 center-block" style="margin-left: -12px;"
+        <div id="shiva" class="item-box-1 center-block item-int item-def item-cast" style="margin-left: -12px;"
              rel="popover" data-title="Shiva's Guard">
           <img src="img/40px-Shiva's_Guard_icon.png">
           <div id="content-shiva" class="hide">
@@ -2326,7 +2390,7 @@
             <p>Active: <i>Arctic Blast</i> – Emits a 900 radius freezing wave that deals 200 magical damage to enemies and slows their movement by 40% for 4 seconds. <div style="inline-block"><img src="img/cd.png"> 30s <img src="img/mana.png"> 100</div></p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="ocore" class="item-box-1 center-block" style="margin-left: -12px;"
+        <div id="ocore" class="item-box-1 center-block item-int item-stat item-cast" style="margin-left: -12px;"
              rel="popover" data-title="Octarine Core">
           <img src="img/40px-Octarine_Core_icon.png">
           <div id="content-ocore" class="hide">
@@ -2346,8 +2410,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-3-->
-      <div class="col-xs-3 col-xs-3-3">
-        <div id="butterfly" class="item-box-1 center-block"
+      <div class="col-xs-3 col-xs-3-3 tier-4">
+        <div id="butterfly" class="item-box-1 center-block item-agi item-def item-mobi item-dam item-def"
              rel="popover" data-title="Butterfly">
           <img src="img/40px-Butterfly_icon.png">
           <div id="content-butterfly" class="hide">
@@ -2367,7 +2431,7 @@
             <p>Active: <i>Flutter</i> – Trade evasion for 35% additional movement speed for 4 seconds. <img src="img/cd.png"> 25s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="eblade" class="item-box-1 center-block" style="margin-left: -12px;"
+        <div id="eblade" class="item-box-1 center-block item-agi item-def item-supp item-cast" style="margin-left: -12px;"
              rel="popover" data-title="Ethereal Blade">
           <img src="img/40px-Ethereal_Blade_icon.png">
           <div id="content-eblade" class="hide">
@@ -2386,7 +2450,7 @@
             </p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="wkb" class="item-box-1 center-block new" style="margin-left: -8px;"
+        <div id="wkb" class="item-box-1 center-block new item-agi item-dam item-util" style="margin-left: -8px;"
              rel="popover" data-title="Wight King Bar">
           <img src="img/40px-Wight_King_Bar_icon.png">
           <div id="content-wkb" class="hide">
@@ -2407,13 +2471,13 @@
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-3-->
     </div><!--/.row-->
-    <div class="row">
-      <div class="col-xs-4 col-xs-offset-4">
-        <div id="vermcloak" class="item-box-1 center-block new"
-             rel="popover" data-title="Vermillion Cloak">
+    <div class="row bottom-wide">
+      <div class="col-xs-4 col-xs-offset-4 tier-4">
+        <div id="vermcloak" class="item-box-1 center-block new item-stat"
+             rel="popover" data-title="Vermillion Cloak" style="margin-bottom: 12px;">
           <img src="img/40px-Vermillion_Cloak_icon.png">
           <div id="content-vermcloak" class="hide">
-            <p><i>The reddish fabric of this heavy coat is inlaid with glittering jewels that hold ancient knowledge.</i></p>
+            <p><i>The reddish fabric of this heavy coat is inlaid with glittering jewels that contain ancient stratagems.</i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
                 <img src="img/40px-Reaver_icon.png"> 3,000 +
@@ -2431,8 +2495,8 @@
   </div><!--/.col-lg-5-->
   <div class="col-lg-35 col-lg-3 outer">
     <div class="row">
-      <div class="col-xs-4">
-        <div id="branch" class="item-box-1 center-block"
+      <div class="col-xs-4 tier-1 shop-base">
+        <div id="branch" class="item-box-1 center-block item-stat item-util"
              rel="popover" data-title="Iron Branch">
           <img src="img/40px-Iron_Branch_icon.png">
           <div id="content-branch" class="hide">
@@ -2446,7 +2510,7 @@
             <p>Active: <i>Plant Tree</i> – Targets the ground to plant a happy little tree that lasts for 20 seconds (200 cast range). <img src="img/cd.png"> 0s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="circlet" class="item-box-1 center-block"
+        <div id="circlet" class="item-box-1 center-block item-stat"
              rel="popover" data-title="Circlet">
           <img src="img/40px-Circlet_icon.png">
           <div id="content-circlet" class="hide">
@@ -2460,8 +2524,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
-      <div class="col-xs-4">
-        <div id="qb" class="item-box-1 center-block"
+      <div class="col-xs-4 tier-1 shop-base">
+        <div id="qb" class="item-box-1 center-block item-dam shop-side"
              rel="popover" data-title="Quelling Blade">
           <img src="img/40px-Quelling_Blade_icon.png">
           <div id="content-qb" class="hide">
@@ -2474,7 +2538,7 @@
             <p></p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="oov" class="item-box-1 center-block"
+        <div id="oov" class="item-box-1 center-block item-dam shop-side"
              rel="popover" data-title="Orb of Venom">
           <img src="img/40px-Orb_of_Venom_icon.png">
           <div id="content-oov" class="hide">
@@ -2487,7 +2551,7 @@
             <p></p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="blight" class="item-box-1 center-block"
+        <div id="blight" class="item-box-1 center-block item-dam"
              rel="popover" data-title="Blight Stone">
           <img src="img/40px-Blight_Stone_icon.png">
           <div id="content-blight" class="hide">
@@ -2501,8 +2565,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
-      <div class="col-xs-4">
-        <div id="morbid" class="item-box-1 center-block"
+      <div class="col-xs-4 tier-1 shop-base">
+        <div id="morbid" class="item-box-1 center-block item-dam item-regen shop-side"
              rel="popover" data-title="Morbid Mask">
           <img src="img/40px-Morbid_Mask_icon.png">
           <div id="content-morbid" class="hide">
@@ -2515,7 +2579,7 @@
             <p></p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="javelin" class="item-box-1 center-block"
+        <div id="javelin" class="item-box-1 center-block item-dam"
              rel="popover" data-title="Javelin">
           <img src="img/40px-Javelin_icon.png">
           <div id="content-javelin" class="hide">
@@ -2528,7 +2592,7 @@
             <p></p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="qstaff" class="item-box-1 center-block"
+        <div id="qstaff" class="item-box-1 center-block item-dam shop-side"
              rel="popover" data-title="Quarterstaff">
           <img src="img/40px-Quarterstaff_icon.png">
           <div id="content-qstaff" class="hide">
@@ -2544,8 +2608,8 @@
       </div><!--/.col-xs-4-->
     </div><!--/.row-->
     <div class="row">
-      <div class="col-xs-2 col-xs-offset-1">
-        <div id="ghost" class="item-box-1 center-block"
+      <div class="col-xs-2 col-xs-offset-1 tier-2 shop-base">
+        <div id="ghost" class="item-box-1 center-block item-stat item-def"
              rel="popover" data-title="Ghost Scepter">
           <img src="img/40px-Ghost_Scepter_icon.png">
           <div id="content-ghost" class="hide">
@@ -2559,8 +2623,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-2-offset-->
-      <div class="col-xs-6">
-        <div id="boa" class="item-box-1 center-block"
+      <div class="col-xs-6 tier-1 shop-base">
+        <div id="boa" class="item-box-1 center-block item-dam shop-side"
              rel="popover" data-title="Blades of Attack">
           <img src="img/40px-Blades_of_Attack_icon.png">
           <div id="content-boa" class="hide">
@@ -2573,7 +2637,7 @@
             <p></p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="broad" class="item-box-1 center-block"
+        <div id="broad" class="item-box-1 center-block item-dam shop-side"
              rel="popover" data-title="Broadsword">
           <img src="img/40px-Broadsword_icon.png">
           <div id="content-broad" class="hide">
@@ -2586,7 +2650,7 @@
             <p></p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="clay" class="item-box-1 center-block"
+        <div id="clay" class="item-box-1 center-block item-dam"
              rel="popover" data-title="Claymore">
           <img src="img/40px-Claymore_icon.png">
           <div id="content-clay" class="hide">
@@ -2600,8 +2664,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-6-->
-      <div class="col-xs-3">
-        <div id="goh" class="item-box-1 center-block"
+      <div class="col-xs-3 tier-1 shop-base">
+        <div id="goh" class="item-box-1 center-block item-dam"
              rel="popover" data-title="Gloves of Haste">
           <img src="img/40px-Gloves_of_Haste_icon.png">
           <div id="content-goh" class="hide">
@@ -2614,7 +2678,7 @@
             <p></p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="shadowam" class="item-box-1 center-block"
+        <div id="shadowam" class="item-box-1 center-block item-dam item-util"
              rel="popover" data-title="Shadow Amulet">
           <img src="img/40px-Shadow_Amulet_icon.png">
           <div id="content-shadowam" class="hide">
@@ -2630,8 +2694,8 @@
       </div><!--/.col-xs-3-->
     </div><!--/.row-->
     <div class="row">
-      <div class="col-xs-2 col-xs-offset-1">
-        <div id="ultimateorb" class="item-box-1 center-block"
+      <div class="col-xs-2 col-xs-offset-1 tier-2 shop-secret">
+        <div id="ultimateorb" class="item-box-1 center-block item-stat"
              rel="popover" data-title="Ultimate Orb">
           <img src="img/40px-Ultimate_Orb_icon.png">
           <div id="content-ultimateorb" class="hide">
@@ -2646,7 +2710,7 @@
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-2-offset-->
       <div class="col-xs-6">
-        <div id="mithham" class="item-box-1 center-block"
+        <div id="mithham" class="item-box-1 center-block item-dam tier-1 shop-base"
              rel="popover" data-title="Mithril Hammer">
           <img src="img/40px-Mithril_Hammer_icon.png">
           <div id="content-mithham" class="hide">
@@ -2659,7 +2723,7 @@
             <p></p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="demon" class="item-box-1 center-block"
+        <div id="demon" class="item-box-1 center-block item-dam tier-2 shop-secret"
              rel="popover" data-title="Demon Edge">
           <img src="img/40px-Demon_Edge_icon.png">
           <div id="content-demon" class="hide">
@@ -2672,7 +2736,7 @@
             <p></p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="relic" class="item-box-1 center-block"
+        <div id="relic" class="item-box-1 center-block item-dam tier-3 shop-secret"
              rel="popover" data-title="Sacred Relic">
           <img src="img/40px-Sacred_Relic_icon.png">
           <div id="content-relic" class="hide">
@@ -2694,8 +2758,8 @@
       <div class="col-xs-4">
         
       </div><!--/.col-xs-4-->
-      <div class="col-xs-2">
-        <div id="crystal" class="item-box-1 center-block"
+      <div class="col-xs-2 tier-2">
+        <div id="crystal" class="item-box-1 center-block item-dam"
              rel="popover" data-title="Crystalys">
           <img src="img/40px-Crystalys_icon.png">
           <div id="content-crystal" class="hide">
@@ -2709,8 +2773,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-2-->
-      <div class="col-xs-2">
-        <div id="shadowb" class="item-box-1 center-block"
+      <div class="col-xs-2 tier-2">
+        <div id="shadowb" class="item-box-1 center-block item-dam item-util item-mobi"
              rel="popover" data-title="Shadow Blade">
           <img src="img/40px-Shadow_Blade_icon.png">
           <div id="content-shadowb" class="hide">
@@ -2724,8 +2788,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-2-->
-      <div class="col-xs-4">
-        <div id="midas" class="item-box-1 center-block"
+      <div class="col-xs-4 tier-2">
+        <div id="midas" class="item-box-1 center-block item-dam item-util"
              rel="popover" data-title="Hand of Midas">
           <img src="img/40px-Hand_of_Midas_icon.png">
           <div id="content-midas" class="hide">
@@ -2741,8 +2805,8 @@
       </div><!--/.col-xs-4-->
     </div><!--/.row-->
     <div class="row">
-      <div class="col-xs-4">
-        <div id="linkens" class="item-box-1 center-block"
+      <div class="col-xs-4 tier-3">
+        <div id="linkens" class="item-box-1 center-block item-stat item-regen item-def item-supp"
              rel="popover" data-title="Linken's Sphere">
           <img src="img/40px-Linken's_Sphere_icon.png">
           <div id="content-linkens" class="hide">
@@ -2755,7 +2819,7 @@
             <p></p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="skadi" class="item-box-1 center-block"
+        <div id="skadi" class="item-box-1 center-block item-stat"
              rel="popover" data-title="Eye of Skadi">
           <img src="img/40px-Eye_of_Skadi_icon.png">
           <div id="content-skadi" class="hide">
@@ -2769,8 +2833,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
-      <div class="col-xs-4">
-        <div id="bfury" class="item-box-1 center-block"
+      <div class="col-xs-4 tier-3">
+        <div id="bfury" class="item-box-1 center-block item-dam item-regen"
              rel="popover" data-title="Battle Fury">
           <img src="img/40px-Battle_Fury_icon.png">
           <div id="content-bfury" class="hide">
@@ -2784,8 +2848,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
-      <div class="col-xs-2">
-        <div id="mom" class="item-box-1 center-block"
+      <div class="col-xs-2 tier-2">
+        <div id="mom" class="item-box-1 center-block item-dam item-regen item-mobi"
              rel="popover" data-title="Mask of Madness">
           <img src="img/40px-Mask_of_Madness_icon.png">
           <div id="content-mom" class="hide">
@@ -2804,8 +2868,8 @@
       <div class="col-xs-3">
         
       </div><!--/.col-xs-3-->
-      <div class="col-xs-2">
-        <div id="deso" class="item-box-1 center-block"
+      <div class="col-xs-2 tier-2">
+        <div id="deso" class="item-box-1 center-block item-dam"
              rel="popover" data-title="Desolator">
           <img src="img/40px-Desolator_icon.png">
           <div id="content-deso" class="hide">
@@ -2822,8 +2886,8 @@
       <div class="col-xs-2">
         
       </div><!--/.col-xs-2-->
-      <div class="col-xs-2">
-        <div id="mael" class="item-box-1 center-block"
+      <div class="col-xs-2 tier-2">
+        <div id="mael" class="item-box-1 center-block item-dam"
              rel="popover" data-title="Maelstrom">
           <img src="img/40px-Maelstrom_icon.png">
           <div id="content-mael" class="hide">
@@ -2837,8 +2901,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-2-->
-      <div class="col-xs-2">
-        <div id="armlet" class="item-box-1 center-block"
+      <div class="col-xs-2 tier-2">
+        <div id="armlet" class="item-box-1 center-block item-dam item-regen item-def"
              rel="popover" data-title="Armlet of Mordiggian">
           <img src="img/40px-Armlet_of_Mordiggian_icon.png">
           <div id="content-armlet" class="hide">
@@ -2854,8 +2918,8 @@
       </div><!--/.col-xs-2-->
     </div><!--/.row-->
     <div class="row">
-      <div class="col-xs-2">
-        <div id="basher" class="item-box-1 center-block"
+      <div class="col-xs-2 tier-2">
+        <div id="basher" class="item-box-1 center-block item-str"
              rel="popover" data-title="Skull Basher">
           <img src="img/40px-Skull_Basher_icon.png">
           <div id="content-basher" class="hide">
@@ -2869,8 +2933,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-2-->
-      <div class="col-xs-2">
-        <div id="orchid" class="item-box-1 center-block"
+      <div class="col-xs-2 tier-3">
+        <div id="orchid" class="item-box-1 center-block item-int item-dam item-regen item-util"
              rel="popover" data-title="Orchid Malevolence">
           <img src="img/40px-Orchid_Malevolence_icon.png">
           <div id="content-orchid" class="hide">
@@ -2884,8 +2948,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-2-->
-      <div class="col-xs-2">
-        <div id="daedalus" class="item-box-1 center-block"
+      <div class="col-xs-2 tier-3">
+        <div id="daedalus" class="item-box-1 center-block item-dam"
              rel="popover" data-title="Daedalus">
           <img src="img/40px-Daedalus_icon.png">
           <div id="content-daedalus" class="hide">
@@ -2899,8 +2963,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-2-->
-      <div class="col-xs-2">
-        <div id="silvedge" class="item-box-1 center-block"
+      <div class="col-xs-2 tier-3">
+        <div id="silvedge" class="item-box-1 center-block item-stat item-util item-mobi item-dam"
              rel="popover" data-title="Silver Edge">
           <img src="img/40px-Silver_Edge_icon.png">
           <div id="content-silvedge" class="hide">
@@ -2920,7 +2984,7 @@
         
       </div><!--/.col-xs-4-->
       <div class="col-xs-4">
-        <div id="mkb" class="item-box-1 center-block"
+        <div id="mkb" class="item-box-1 center-block item-dam tier-3"
              rel="popover" data-title="Monkey King Bar">
           <img src="img/40px-Monkey_King_Bar_icon.png">
           <div id="content-mkb" class="hide">
@@ -2933,7 +2997,7 @@
             <p></p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="radiance" class="item-box-1 center-block"
+        <div id="radiance" class="item-box-1 center-block item-dam tier-4"
              rel="popover" data-title="Radiance">
           <img src="img/40px-Radiance_icon.png">
           <div id="content-radiance" class="hide">
@@ -2959,7 +3023,7 @@
         
       </div><!--/.col-xs-4-->
       <div class="col-xs-3">
-        <div id="hyper" class="item-box-1 center-block"
+        <div id="hyper" class="item-box-1 center-block item-dam tier-2 shop-secret"
              rel="popover" data-title="Hyperstone">
           <img src="img/40px-Hyperstone_icon.png">
           <div id="content-hyper" class="hide">
@@ -2974,9 +3038,9 @@
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-3-->
     </div><!--/.row-->
-    <div class="row">
-      <div class="col-xs-2">
-        <div id="ablade" class="item-box-1 center-block"
+    <div class="row bottom-tall">
+      <div class="col-xs-2 tier-3">
+        <div id="ablade" class="item-box-1 center-block item-str item-def item-util item-regen"
              rel="popover" data-title="Abyssal Blade">
           <img src="img/40px-Abyssal_Blade_icon.png">
           <div id="content-ablade" class="hide">
@@ -2990,8 +3054,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-2-->
-      <div class="col-xs-2">
-        <div id="bloodthorn" class="item-box-1 center-block"
+      <div class="col-xs-2 tier-4">
+        <div id="bloodthorn" class="item-box-1 center-block item-int item-dam item-regen item-util"
              rel="popover" data-title="Bloodthorn">
           <img src="img/40px-Bloodthorn_icon.png">
           <div id="content-bloodthorn" class="hide">
@@ -3005,8 +3069,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-2-->
-      <div class="col-xs-2 col-xs-offset-1">
-        <div id="rapier" class="item-box-1 center-block"
+      <div class="col-xs-2 col-xs-offset-1 tier-4">
+        <div id="rapier" class="item-box-1 center-block item-dam"
              rel="popover" data-title="Divine Rapier">
           <img src="img/40px-Divine_Rapier_icon.png">
           <div id="content-rapier" class="hide">
@@ -3020,8 +3084,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-2-offset-->
-      <div class="col-xs-5">
-        <div id="mjoll" class="item-box-1 center-block"
+      <div class="col-xs-5 tier-3">
+        <div id="mjoll" class="item-box-1 center-block item-dam"
              rel="popover" data-title="Mjollnir">
           <img src="img/40px-Mjollnir_icon.png">
           <div id="content-mjoll" class="hide">
@@ -3034,7 +3098,7 @@
             <p></p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="moonsh" class="item-box-1 center-block"
+        <div id="moonsh" class="item-box-1 center-block item-dam"
              rel="popover" data-title="Moon Shard">
           <img src="img/40px-Moon_Shard_icon.png">
           <div id="content-moonsh" class="hide">
@@ -3054,7 +3118,7 @@
   </div><!--/.section-bg-->
 
 <div id="footer" class="row text-center">
-  by <a href="https://www.reddit.com/user/freelance_fox/">/u/freelance_fox</a> • <a href="http://www.twitter.com/freelancedota">@freelancedota</a> • Last Updated 14 June 2017
+  by <a href="https://www.reddit.com/user/freelance_fox/">/u/freelance_fox</a> • <a href="http://www.twitter.com/freelancedota">@freelancedota</a> • Last Updated 23 August 2017
 </div><!--/.row-->
 
   <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
@@ -3079,10 +3143,24 @@
       checkWidth();
       $(window).resize(checkWidth);
     });
+    $(document).ready(function() {
+      $('[data-toggle="tooltip"]').tooltip({'placement': 'top'});
+    });
+    $('input#searchbox').on('input',function(e){
+      searchterm = $('#searchbox').val().substr(0,1).toUpperCase() + $('#searchbox').val().substr(1);
+      searchterm_lower = $('#searchbox').val().toLowerCase();
+      $('div[class^=item-box-]').hide();
+      $("div[id*="+searchterm+"],div[data-title*="+searchterm+"]").show();
+      $("div[id*="+searchterm_lower+"],div[data-title*="+searchterm_lower+"]").show();
+      if ($('#searchbox').val() === '') {
+        $('div[class^=item-box-]').show();
+      }
+    });
     $('#showhide').click( function (e) {
       if ($(this).text() === 'Hide Custom Items') {
         $(this).text('Show Custom Items');
-        $('.item-box-1.new').hide();
+        $('.item-box-1.new').addClass('hidden');
+        $('#title').text('Dota Item Concepts');
         //$('.outer').removeClass('col-lg-3').addClass('col-lg-4');
         //$('.middle').removeClass('col-lg-6').addClass('col-lg-4');
         $("#svg").attr("height", "0");
@@ -3091,13 +3169,93 @@
       }
       else {
         $(this).text('Hide Custom Items');
-        $('.item-box-1.new').show();
+        $('.item-box-1.new.hidden').css('display', 'inline-block');
+        $('.item-box-1.new').removeClass('hidden');
+        $('#title').text('Custom Item Concepts');
         //$('.outer').removeClass('col-lg-4').addClass('col-lg-3');
         //$('.middle').removeClass('col-lg-4').addClass('col-lg-6');
         $("#svg").attr("height", "0");
         $("#svg").attr("width", "0");
         connectAll();
       }
+    });
+    $('.dropdown-menu li a').click( function (e) {
+      var target = this.text;
+      var type = this.id;
+      $('.dropdown-menu li a.active').removeClass('active'); // remove active
+      $(this).addClass('active');// add active
+      if(type.indexOf('all') >= 0) {
+        $('.item-box-1').show();
+      } else if (type === "t1") {
+        $('div[class^=col-].tier-1 .item-box-1').show();
+        $('div[class^=col-].tier-2 .item-box-1').hide();
+        $('div[class^=col-].tier-3 .item-box-1').hide();
+        $('div[class^=col-].tier-4 .item-box-1').hide();
+        $('.item-box-1.tier-1').show();
+        $('.item-box-1.tier-2').hide();
+        $('.item-box-1.tier-3').hide();
+        $('.item-box-1.tier-4').hide();
+      } else if (type === "t2") {
+        $('div[class^=col-].tier-1 .item-box-1').hide();
+        $('div[class^=col-].tier-2 .item-box-1').show();
+        $('div[class^=col-].tier-3 .item-box-1').hide();
+        $('div[class^=col-].tier-4 .item-box-1').hide();
+        $('.item-box-1.tier-1').hide();
+        $('.item-box-1.tier-2').show();
+        $('.item-box-1.tier-3').hide();
+        $('.item-box-1.tier-4').hide();
+      } else if (type === "t3") {
+        $('div[class^=col-].tier-1 .item-box-1').hide();
+        $('div[class^=col-].tier-2 .item-box-1').hide();
+        $('div[class^=col-].tier-3 .item-box-1').show();
+        $('div[class^=col-].tier-4 .item-box-1').hide();
+        $('.item-box-1.tier-1').hide();
+        $('.item-box-1.tier-2').hide();
+        $('.item-box-1.tier-3').show();
+        $('.item-box-1.tier-4').hide();
+      } else if (type === "t4") {
+        $('div[class^=col-].tier-1 .item-box-1').hide();
+        $('div[class^=col-].tier-2 .item-box-1').hide();
+        $('div[class^=col-].tier-3 .item-box-1').hide();
+        $('div[class^=col-].tier-4 .item-box-1').show();
+        $('.item-box-1.tier-1').hide();
+        $('.item-box-1.tier-2').hide();
+        $('.item-box-1.tier-3').hide();
+        $('.item-box-1.tier-4').show();
+      } else if (type === "secret") {
+        $('.item-box-1').hide();
+        $('div[class^=col-].shop-secret .item-box-1').show();
+        $('.item-box-1.shop-secret').show();
+      } else if (type === "side") {
+        $('.item-box-1').hide();
+        $('div[class^=col-].shop-side .item-box-1').show();
+        $('.item-box-1.shop-side').show();
+      } else if (type === "base") {
+        $('.item-box-1').hide();
+        $('div[class^=col-].shop-base .item-box-1').show();
+        $('.item-box-1.shop-base').show();
+      }
+      $(this).parent().parent().parent().find('.btn').html(target+' <span class="caret"></span>');
+      e.preventDefault();
+    });
+    $('.dropdown-menu li a:not(#all)').hover(function (e) {
+      var target = this.id;
+      if (target.indexOf('t') == 0) {
+        target = "tier-" + target.slice(1);
+      } else if (target.indexOf('s') >= 0) { // secret, side, and base all contain s, and no other option does either
+        target = "shop-" + target;
+      }
+      $('div[class^=col-].'+target+' .item-box-1').css('background-color','#A3A4AA');
+      $('.item-box-1.'+target).css('background-color','#A3A4AA');
+    }, function (e) {
+      var target = this.id;
+      if (target.indexOf('t') == 0) {
+        target = "tier-" + target.slice(1);
+      } else if (target.indexOf('s') >= 0) { // secret, side, and base all contain s, and no other option does either
+        target = "shop-" + target;
+      }
+      $('div[class^=col-].'+target+' .item-box-1').css('background-color','#23242A');
+      $('.item-box-1.'+target).css('background-color','#23242A');
     });
     jQuery(document).ready(function($) {
       // Javascript to enable link to tab
@@ -3106,7 +3264,7 @@
       if (hash.indexOf(prefix) >= 0) {
         $('#'+hash.replace(prefix,"")).click();
       } else if (hash.indexOf('official') >= 0) {
-        $('#wip').trigger('click');
+        $('#showhide').trigger('click');
       } else if (hash.indexOf('str') >= 0) {
         $('#str').trigger('click');
       } else if (hash.indexOf('agi') >= 0) {

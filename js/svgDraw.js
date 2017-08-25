@@ -720,1072 +720,1064 @@ $('.item-supp').hover(function (e) {
 });
 
 $("#belt").hover(function() {
-    $("path[id*=belt]").show(150);
-    //$("#belt-sange").show(150);
-    //$("#belt-treads").show(150);
-    //$("#belt-basher").show(150);
-    //$("#belt-necro").show(150);
+    $("path[id*=belt]").show();
   }, function() {
     $("path[id*=belt]").hide();
-    //$("#belt-sange").hide();
-    //$("#belt-treads").hide();
-    //$("#belt-basher").hide();
-    //$("#belt-necro").hide();
 });
 
 $("#club").hover(function() {
-    $("path[id*=club]").show(150);
+    $("path[id*=club]").show();
   }, function() {
     $("path[id*=club]").hide();
 });
 
 $("#halberd").hover(function() {
-    $("path[id*=halberd]").show(150);
+    $("path[id*=halberd]").show();
   }, function() {
     $("path[id*=halberd]").hide();
 });
 
 $("#gjalla").hover(function() {
-    $("path[id*=gjalla]").show(150);
+    $("path[id*=gjalla]").show();
   }, function() {
     $("path[id*=gjalla]").hide();
 });
 
 $("#sange").hover(function() {
-    $("path[id*=sange]").show(150);
+    $("path[id*=sange]").show();
   }, function() {
     $("path[id*=sange]").hide();
 });
 
 $("#robe").hover(function() {
-    $("path[id*=robe]").show(150);
+    $("path[id*=robe]").show();
   }, function() {
     $("path[id*=robe]").hide();
 });
 
 $("#staff").hover(function() {
-    $("path[id^=staff]").show(150);
+    $("path[id^=staff]").show();
   }, function() {
     $("path[id^=staff]").hide();
 });
 
 $("#spellblade").hover(function() {
-    $("path[id*=spellblade]").show(150);
+    $("path[id*=spellblade]").show();
   }, function() {
     $("path[id*=spellblade]").hide();
 });
 
 $("#seraph").hover(function() {
-    $("path[id*=seraph]").show(150);
+    $("path[id*=seraph]").show();
   }, function() {
     $("path[id*=seraph]").hide();
 });
 
 $("#lucen").hover(function() {
-    $("path[id*=lucen]").show(150);
+    $("path[id*=lucen]").show();
   }, function() {
     $("path[id*=lucen]").hide();
 });
 
 $("#band").hover(function() {
-    $("path[id*=band]").show(150);
+    $("path[id*=band]").show();
   }, function() {
     $("path[id*=band]").hide();
 });
 
 $("#blade").hover(function() {
-    $("path[id^=blade]").show(150);
+    $("path[id^=blade]").show();
   }, function() {
     $("path[id^=blade]").hide();
 });
 
 $("#manta").hover(function() {
-    $("path[id*=manta]").show(150);
+    $("path[id*=manta]").show();
   }, function() {
     $("path[id*=manta]").hide();
 });
 
 $("#hayabusa").hover(function() {
-    $("path[id*=hayabusa]").show(150);
+    $("path[id*=hayabusa]").show();
   }, function() {
     $("path[id*=hayabusa]").hide();
 });
 
 $("#yasha").hover(function() {
-    $("path[id*=yasha]").show(150);
+    $("path[id*=yasha]").show();
   }, function() {
     $("path[id*=yasha]").hide();
 });
 
 $("#trio").hover(function() {
-    $("path[id*=trio]").show(150);
+    $("path[id*=trio]").show();
   }, function() {
     $("path[id*=trio]").hide();
 });
 
 $("#sny").hover(function() {
-    $("path[id*=sny]").show(150);
+    $("path[id*=sny]").show();
   }, function() {
     $("path[id*=sny]").hide();
 });
 
 $("#snl").hover(function() {
-    $("path[id*=snl]").show(150);
+    $("path[id*=snl]").show();
   }, function() {
     $("path[id*=snl]").hide();
 });
 
 $("#lny").hover(function() {
-    $("path[id*=lny]").show(150);
+    $("path[id*=lny]").show();
   }, function() {
     $("path[id*=lny]").hide();
 });
 
 $("#gauntlets").hover(function() {
-    $("path[id*=gauntlets]").show(150);
+    $("path[id*=gauntlets]").show();
   }, function() {
     $("path[id*=gauntlets]").hide();
 });
 
 $("#woodsman").hover(function() {
-    $("path[id*=woodsman]").show(150);
+    $("path[id*=woodsman]").show();
   }, function() {
     $("path[id*=woodsman]").hide();
 });
 
 $("#mantle").hover(function() {
-    $("path[id*=mantle]").show(150);
+    $("path[id*=mantle]").show();
   }, function() {
     $("path[id*=mantle]").hide();
 });
 
 $("#frost").hover(function() {
-    $("path[id*=frost]").show(150);
+    $("path[id*=frost]").show();
   }, function() {
     $("path[id*=frost]").hide();
 });
 
 $("#slippers").hover(function() {
-    $("path[id*=slippers]").show(150);
+    $("path[id*=slippers]").show();
   }, function() {
     $("path[id*=slippers]").hide();
 });
 
 $("#pms").hover(function() {
-    $("path[id*=pms]").show(150);
+    $("path[id*=pms]").show();
   }, function() {
     $("path[id*=pms]").hide();
 });
 
 $("#bracer").hover(function() {
-    $("path[id*=bracer]").show(150);
+    $("path[id*=bracer]").show();
   }, function() {
     $("path[id*=bracer]").hide();
 });
 
 $("#drum").hover(function() {
-    $("path[id*=drum]").show(150);
+    $("path[id*=drum]").show();
   }, function() {
     $("path[id*=drum]").hide();
 });
 
 $("#atos").hover(function() {
-    $("path[id*=atos]").show(150);
+    $("path[id*=atos]").show();
   }, function() {
     $("path[id*=atos]").hide();
 });
 
 $("#null").hover(function() {
-    $("path[id*=null]").show(150);
+    $("path[id*=null]").show();
   }, function() {
     $("path[id*=null]").hide();
 });
 
 $("#dagon").hover(function() {
-    $("path[id*=dagon]").show(150);
+    $("path[id*=dagon]").show();
   }, function() {
     $("path[id*=dagon]").hide();
 });
 
 $("#veil").hover(function() {
-    $("path[id*=veil]").show(150);
+    $("path[id*=veil]").show();
   }, function() {
     $("path[id*=veil]").hide();
 });
 
 $("#wraith").hover(function() {
-    $("path[id*=wraith]").show(150);
+    $("path[id*=wraith]").show();
   }, function() {
     $("path[id*=wraith]").hide();
 });
 
 $("#aquila").hover(function() {
-    $("path[id*=aquila]").show(150);
+    $("path[id*=aquila]").show();
   }, function() {
     $("path[id*=aquila]").hide();
 });
 
 $("#squire").hover(function() {
-    $("path[id*=squire]").show(150);
+    $("path[id*=squire]").show();
   }, function() {
     $("path[id*=squire]").hide();
 });
 
 $("#dlance").hover(function() {
-    $("path[id*=dlance]").show(150);
+    $("path[id*=dlance]").show();
   }, function() {
     $("path[id*=dlance]").hide();
 });
 
 $("#pike").hover(function() {
-    $("path[id*=pike]").show(150);
+    $("path[id*=pike]").show();
   }, function() {
     $("path[id*=pike]").hide();
 });
 
 $("#oblivion").hover(function() {
-    $("path[id*=oblivion]").show(150);
+    $("path[id*=oblivion]").show();
   }, function() {
     $("path[id*=oblivion]").hide();
 });
 
 $("#echo").hover(function() {
-    $("path[id*=echo]").show(150);
+    $("path[id*=echo]").show();
   }, function() {
     $("path[id*=echo]").hide();
 });
 
 $("#force").hover(function() {
-    $("path[id*=force]").show(150);
+    $("path[id*=force]").show();
   }, function() {
     $("path[id*=force]").hide();
 });
 
 $("#wyrmslayer").hover(function() {
-    $("path[id*=wyrmslayer]").show(150);
+    $("path[id*=wyrmslayer]").show();
   }, function() {
     $("path[id*=wyrmslayer]").hide();
 });
 
 $("#reaver").hover(function() {
-    $("path[id*=reaver]").show(150);
+    $("path[id*=reaver]").show();
   }, function() {
     $("path[id*=reaver]").hide();
 });
 
 $("#heart").hover(function() {
-    $("path[id*=heart]").show(150);
+    $("path[id*=heart]").show();
   }, function() {
     $("path[id*=heart]").hide();
 });
 
 $("#satanic").hover(function() {
-    $("path[id*=satanic]").show(150);
+    $("path[id*=satanic]").show();
   }, function() {
     $("path[id*=satanic]").hide();
 });
 
 $("#pauldron").hover(function() {
-    $("path[id*=pauldron]").show(150);
+    $("path[id*=pauldron]").show();
   }, function() {
     $("path[id*=pauldron]").hide();
 });
 
 $("#mystic").hover(function() {
-    $("path[id*=mystic]").show(150);
+    $("path[id*=mystic]").show();
   }, function() {
     $("path[id*=mystic]").hide();
 });
 
 $("#sheep").hover(function() {
-    $("path[id*=sheep]").show(150);
+    $("path[id*=sheep]").show();
   }, function() {
     $("path[id*=sheep]").hide();
 });
 
 $("#shiva").hover(function() {
-    $("path[id*=shiva]").show(150);
+    $("path[id*=shiva]").show();
   }, function() {
     $("path[id*=shiva]").hide();
 });
 
 $("#ocore").hover(function() {
-    $("path[id*=ocore]").show(150);
+    $("path[id*=ocore]").show();
   }, function() {
     $("path[id*=ocore]").hide();
 });
 
 $("#eagle").hover(function() {
-    $("path[id*=eagle]").show(150);
+    $("path[id*=eagle]").show();
   }, function() {
     $("path[id*=eagle]").hide();
 });
 
 $("#butterfly").hover(function() {
-    $("path[id*=butterfly]").show(150);
+    $("path[id*=butterfly]").show();
   }, function() {
     $("path[id*=butterfly]").hide();
 });
 
 $("#eblade").hover(function() {
-    $("path[id*=eblade]").show(150);
+    $("path[id*=eblade]").show();
   }, function() {
     $("path[id*=eblade]").hide();
 });
 
 $("#wkb").hover(function() {
-    $("path[id*=wkb]").show(150);
+    $("path[id*=wkb]").show();
   }, function() {
     $("path[id*=wkb]").hide();
 });
 
 $("#vermcloak").hover(function() {
-    $("path[id*=vermcloak]").show(150);
+    $("path[id*=vermcloak]").show();
   }, function() {
     $("path[id*=vermcloak]").hide();
 });
 
 $("#mango").hover(function() {
-    $("path[id*=mango]").show(150);
+    $("path[id*=mango]").show();
   }, function() {
     $("path[id*=mango]").hide();
 });
 
 $("#irain").hover(function() {
-    $("path[id*=irain]").show(150);
+    $("path[id*=irain]").show();
   }, function() {
     $("path[id*=irain]").hide();
 });
 
 $("#ror").hover(function() {
-    $("path[id*=ror]").show(150);
+    $("path[id*=ror]").show();
   }, function() {
     $("path[id*=ror]").hide();
 });
 
 $("#sage").hover(function() {
-    $("path[id*=sage]").show(150);
+    $("path[id*=sage]").show();
   }, function() {
     $("path[id*=sage]").hide();
 });
 
 $("#roh").hover(function() {
-    $("path[id*=roh]").show(150);
+    $("path[id*=roh]").show();
   }, function() {
     $("path[id*=roh]").hide();
 });
 
 $("#void").hover(function() {
-    $("path[id*=void]").show(150);
+    $("path[id*=void]").show();
   }, function() {
     $("path[id*=void]").hide();
 });
 
 $("#stick").hover(function() {
-    $("path[id*=stick]").show(150);
+    $("path[id*=stick]").show();
   }, function() {
     $("path[id*=stick]").hide();
 });
 
 $("#stout").hover(function() {
-    $("path[id*=stout]").show(150);
+    $("path[id*=stout]").show();
   }, function() {
     $("path[id*=stout]").hide();
 });
 
 $("#soulring").hover(function() {
-    $("path[id*=soulring]").show(150);
+    $("path[id*=soulring]").show();
   }, function() {
     $("path[id*=soulring]").hide();
 });
 
 $("#perseverance").hover(function() {
-    $("path[id*=perseverance]").show(150);
+    $("path[id*=perseverance]").show();
   }, function() {
     $("path[id*=perseverance]").hide();
 });
 
 $("#branch").hover(function() {
-    $("path[id*=branch]").show(150);
+    $("path[id*=branch]").show();
   }, function() {
     $("path[id*=branch]").hide();
 });
 
 $("#circlet").hover(function() {
-    $("path[id*=circlet]").show(150);
+    $("path[id*=circlet]").show();
   }, function() {
     $("path[id*=circlet]").hide();
 });
 
 $("#vit").hover(function() {
-    $("path[id*=vit]").show(150);
+    $("path[id*=vit]").show();
   }, function() {
     $("path[id*=vit]").hide();
 });
 
 $("#energy").hover(function() {
-    $("path[id*=energy]").show(150);
+    $("path[id*=energy]").show();
   }, function() {
     $("path[id*=energy]").hide();
 });
 
 $("#pb").hover(function() {
-    $("path[id*=pb]").show(150);
+    $("path[id*=pb]").show();
   }, function() {
     $("path[id*=pb]").hide();
 });
 
 $("#talisman").hover(function() {
-    $("path[id*=talisman]").show(150);
+    $("path[id*=talisman]").show();
   }, function() {
     $("path[id*=talisman]").hide();
 });
 
 $("#cloak").hover(function() {
-    $("path[id*=cloak]").show(150);
+    $("path[id*=cloak]").show();
   }, function() {
     $("path[id*=cloak]").hide();
 });
 
 $("#rop").hover(function() {
-    $("path[id*=rop]").show(150);
+    $("path[id*=rop]").show();
   }, function() {
     $("path[id*=rop]").hide();
 });
 
 $("#chainmail").hover(function() {
-    $("path[id*=chainmail]").show(150);
+    $("path[id*=chainmail]").show();
   }, function() {
     $("path[id*=chainmail]").hide();
 });
 
 $("#hoiw").hover(function() {
-    $("path[id*=hoiw]").show(150);
+    $("path[id*=hoiw]").show();
   }, function() {
     $("path[id*=hoiw]").hide();
 });
 
 $("#soulbooster").hover(function() {
-    $("path[id*=soulbooster]").show(150);
+    $("path[id*=soulbooster]").show();
   }, function() {
     $("path[id*=soulbooster]").hide();
 });
 
 $("#aether").hover(function() {
-    $("path[id*=aether]").show(150);
+    $("path[id*=aether]").show();
   }, function() {
     $("path[id*=aether]").hide();
 });
 
 $("#lace").hover(function() {
-    $("path[id*=lace]").show(150);
+    $("path[id*=lace]").show();
   }, function() {
     $("path[id*=lace]").hide();
 });
 
 $("#boots").hover(function() {
-    $("path[id*=boots]").show(150);
+    $("path[id*=boots]").show();
   }, function() {
     $("path[id*=boots]").hide();
 });
 
 $("#wand").hover(function() {
-    $("path[id*=wand]").show(150);
+    $("path[id*=wand]").show();
   }, function() {
     $("path[id*=wand]").hide();
 });
 
 $("#talon").hover(function() {
-    $("path[id*=talon]").show(150);
+    $("path[id*=talon]").show();
   }, function() {
     $("path[id*=talon]").hide();
 });
 
 $("#urn").hover(function() {
-    $("path[id*=urn]").show(150);
+    $("path[id*=urn]").show();
   }, function() {
     $("path[id*=urn]").hide();
 });
 
 $("#basi").hover(function() {
-    $("path[id*=basi]").show(150);
+    $("path[id*=basi]").show();
   }, function() {
     $("path[id*=basi]").hide();
 });
 
 $("#bloodstone").hover(function() {
-    $("path[id*=bloodstone]").show(150);
+    $("path[id*=bloodstone]").show();
   }, function() {
     $("path[id*=bloodstone]").hide();
 });
 
 $("#moc").hover(function() {
-    $("path[id*=moc]").show(150);
+    $("path[id*=moc]").show();
   }, function() {
     $("path[id*=moc]").hide();
 });
 
 $("#arcane").hover(function() {
-    $("path[id*=arcane]").show(150);
+    $("path[id*=arcane]").show();
   }, function() {
     $("path[id*=arcane]").hide();
 });
 
 $("#tranquil").hover(function() {
-    $("path[id*=tranquil]").show(150);
+    $("path[id*=tranquil]").show();
   }, function() {
     $("path[id*=tranquil]").hide();
 });
 
 $("#treads").hover(function() {
-    $("path[id*=treads]").show(150);
+    $("path[id*=treads]").show();
   }, function() {
     $("path[id*=treads]").hide();
 });
 
 $("#phase").hover(function() {
-    $("path[id*=phase]").show(150);
+    $("path[id*=phase]").show();
   }, function() {
     $("path[id*=phase]").hide();
 });
 
 $("#bots").hover(function() {
-    $("path[id*=bots]").show(150);
+    $("path[id*=bots]").show();
   }, function() {
     $("path[id*=bots]").hide();
 });
 
 $("#headdress").hover(function() {
-    $("path[id*=headdress]").show(150);
+    $("path[id*=headdress]").show();
   }, function() {
     $("path[id*=headdress]").hide();
 });
 
 $("#buckler").hover(function() {
-    $("path[id*=buckler]").show(150);
+    $("path[id*=buckler]").show();
   }, function() {
     $("path[id*=buckler]").hide();
 });
 
 $("#solar").hover(function() {
-    $("path[id*=solar]").show(150);
+    $("path[id*=solar]").show();
   }, function() {
     $("path[id*=solar]").hide();
 });
 
 $("#glimmer").hover(function() {
-    $("path[id*=glimmer]").show(150);
+    $("path[id*=glimmer]").show();
   }, function() {
     $("path[id*=glimmer]").hide();
 });
 
 $("#hotd").hover(function() {
-    $("path[id*=hotd]").show(150);
+    $("path[id*=hotd]").show();
   }, function() {
     $("path[id*=hotd]").hide();
 });
 
 $("#vanguard").hover(function() {
-    $("path[id*=vanguard]").show(150);
+    $("path[id*=vanguard]").show();
   }, function() {
     $("path[id*=vanguard]").hide();
 });
 
 $("#mek").hover(function() {
-    $("path[id*=mek]").show(150);
+    $("path[id*=mek]").show();
   }, function() {
     $("path[id*=mek]").hide();
 });
 
 $("#hood").hover(function() {
-    $("path[id*=hood]").show(150);
+    $("path[id*=hood]").show();
   }, function() {
     $("path[id*=hood]").hide();
 });
 
 $("#vlads").hover(function() {
-    $("path[id*=vlads]").show(150);
+    $("path[id*=vlads]").show();
   }, function() {
     $("path[id*=vlads]").hide();
 });
 
 $("#platemail").hover(function() {
-    $("path[id*=platemail]").show(150);
+    $("path[id*=platemail]").show();
   }, function() {
     $("path[id*=platemail]").hide();
 });
 
 $("#refresher").hover(function() {
-    $("path[id*=refresher]").show(150);
+    $("path[id*=refresher]").show();
   }, function() {
     $("path[id*=refresher]").hide();
 });
 
 $("#crimson").hover(function() {
-    $("path[id*=crimson]").show(150);
+    $("path[id*=crimson]").show();
   }, function() {
     $("path[id*=crimson]").hide();
 });
 
 $("#greaves").hover(function() {
-    $("path[id*=greaves]").show(150);
+    $("path[id*=greaves]").show();
   }, function() {
     $("path[id*=greaves]").hide();
 });
 
 $("#pipe").hover(function() {
-    $("path[id*=pipe]").show(150);
+    $("path[id*=pipe]").show();
   }, function() {
     $("path[id*=pipe]").hide();
 });
 
 $("#lotus").hover(function() {
-    $("path[id*=lotus]").show(150);
+    $("path[id*=lotus]").show();
   }, function() {
     $("path[id*=lotus]").hide();
 });
 
 $("#ac").hover(function() {
-    $("path[id*=ac]").show(150);
+    $("path[id*=ac]").show();
   }, function() {
     $("path[id*=ac]").hide();
 });
 
 $("#qb").hover(function() {
-    $("path[id*=qb]").show(150);
+    $("path[id*=qb]").show();
   }, function() {
     $("path[id*=qb]").hide();
 });
 
 $("#blight").hover(function() {
-    $("path[id*=blight]").show(150);
+    $("path[id*=blight]").show();
   }, function() {
     $("path[id*=blight]").hide();
 });
 
 $("#oov").hover(function() {
-    $("path[id*=oov]").show(150);
+    $("path[id*=oov]").show();
   }, function() {
     $("path[id*=oov]").hide();
 });
 
 $("#javelin").hover(function() {
-    $("path[id*=javelin]").show(150);
+    $("path[id*=javelin]").show();
   }, function() {
     $("path[id*=javelin]").hide();
 });
 
 $("#qstaff").hover(function() {
-    $("path[id*=qstaff]").show(150);
+    $("path[id*=qstaff]").show();
   }, function() {
     $("path[id*=qstaff]").hide();
 });
 
 $("#hoiw").hover(function() {
-    $("path[id*=hoiw]").show(150);
+    $("path[id*=hoiw]").show();
   }, function() {
     $("path[id*=hoiw]").hide();
 });
 
 $("#oblivion").hover(function() {
-    $("path[id*=oblivion]").show(150);
+    $("path[id*=oblivion]").show();
   }, function() {
     $("path[id*=oblivion]").hide();
 });
 
 $("#morbid").hover(function() {
-    $("path[id*=morbid]").show(150);
+    $("path[id*=morbid]").show();
   }, function() {
     $("path[id*=morbid]").hide();
 });
 
 $("#boa").hover(function() {
-    $("path[id*=boa]").show(150);
+    $("path[id*=boa]").show();
   }, function() {
     $("path[id*=boa]").hide();
 });
 
 $("#broad").hover(function() {
-    $("path[id*=broad]").show(150);
+    $("path[id*=broad]").show();
   }, function() {
     $("path[id*=broad]").hide();
 });
 
 $("#clay").hover(function() {
-    $("path[id*=clay]").show(150);
+    $("path[id*=clay]").show();
   }, function() {
     $("path[id*=clay]").hide();
 });
 
 $("#goh").hover(function() {
-    $("path[id*=goh]").show(150);
+    $("path[id*=goh]").show();
   }, function() {
     $("path[id*=goh]").hide();
 });
 
 $("#shadowam").hover(function() {
-    $("path[id*=shadowam]").show(150);
+    $("path[id*=shadowam]").show();
   }, function() {
     $("path[id*=shadowam]").hide();
 });
 
 $("#mithham").hover(function() {
-    $("path[id*=mithham]").show(150);
+    $("path[id*=mithham]").show();
   }, function() {
     $("path[id*=mithham]").hide();
 });
 
 $("#demon").hover(function() {
-    $("path[id*=demon]").show(150);
+    $("path[id*=demon]").show();
   }, function() {
     $("path[id*=demon]").hide();
 });
 
 $("#relic").hover(function() {
-    $("path[id*=relic]").show(150);
+    $("path[id*=relic]").show();
   }, function() {
     $("path[id*=relic]").hide();
 });
 
 $("#ultimateorb").hover(function() {
-    $("path[id*=ultimateorb]").show(150);
+    $("path[id*=ultimateorb]").show();
   }, function() {
     $("path[id*=ultimateorb]").hide();
 });
 
 $("#crystal").hover(function() {
-    $("path[id*=crystal]").show(150);
+    $("path[id*=crystal]").show();
   }, function() {
     $("path[id*=crystal]").hide();
 });
 
 $("#shadowb").hover(function() {
-    $("path[id*=shadowb]").show(150);
+    $("path[id*=shadowb]").show();
   }, function() {
     $("path[id*=shadowb]").hide();
 });
 
 $("#deso").hover(function() {
-    $("path[id*=deso]").show(150);
+    $("path[id*=deso]").show();
   }, function() {
     $("path[id*=deso]").hide();
 });
 
 $("#skadi").hover(function() {
-    $("path[id*=skadi]").show(150);
+    $("path[id*=skadi]").show();
   }, function() {
     $("path[id*=skadi]").hide();
 });
 
 $("#linkens").hover(function() {
-    $("path[id*=linkens]").show(150);
+    $("path[id*=linkens]").show();
   }, function() {
     $("path[id*=linkens]").hide();
 });
 
 $("#silvedge").hover(function() {
-    $("path[id*=silvedge]").show(150);
+    $("path[id*=silvedge]").show();
   }, function() {
     $("path[id*=silvedge]").hide();
 });
 
 $("#bfury").hover(function() {
-    $("path[id*=bfury]").show(150);
+    $("path[id*=bfury]").show();
   }, function() {
     $("path[id*=bfury]").hide();
 });
 
 $("#orchid").hover(function() {
-    $("path[id*=orchid]").show(150);
+    $("path[id*=orchid]").show();
   }, function() {
     $("path[id*=orchid]").hide();
 });
 
 $("#basher").hover(function() {
-    $("path[id*=basher]").show(150);
+    $("path[id*=basher]").show();
   }, function() {
     $("path[id*=basher]").hide();
 });
 
 $("#blademail").hover(function() {
-    $("path[id*=blademail]").show(150);
+    $("path[id*=blademail]").show();
   }, function() {
     $("path[id*=blademail]").hide();
 });
 
 $("#midas").hover(function() {
-    $("path[id*=midas]").show(150);
+    $("path[id*=midas]").show();
   }, function() {
     $("path[id*=midas]").hide();
 });
 
 $("#armlet").hover(function() {
-    $("path[id*=armlet]").show(150);
+    $("path[id*=armlet]").show();
   }, function() {
     $("path[id*=armlet]").hide();
 });
 
 $("#mael").hover(function() {
-    $("path[id*=mael]").show(150);
+    $("path[id*=mael]").show();
   }, function() {
     $("path[id*=mael]").hide();
 });
 
 $("#mom").hover(function() {
-    $("path[id*=mom]").show(150);
+    $("path[id*=mom]").show();
   }, function() {
     $("path[id*=mom]").hide();
 });
 
 $("#bloodthorn").hover(function() {
-    $("path[id*=bloodthorn]").show(150);
+    $("path[id*=bloodthorn]").show();
   }, function() {
     $("path[id*=bloodthorn]").hide();
 });
 
 $("#bkb").hover(function() {
-    $("path[id*=bkb]").show(150);
+    $("path[id*=bkb]").show();
   }, function() {
     $("path[id*=bkb]").hide();
 });
 
 $("#euls").hover(function() {
-    $("path[id*=euls]").show(150);
+    $("path[id*=euls]").show();
   }, function() {
     $("path[id*=euls]").hide();
 });
 
 $("#necro").hover(function() {
-    $("path[id*=necro]").show(150);
+    $("path[id*=necro]").show();
   }, function() {
     $("path[id*=necro]").hide();
 });
 
 $("#diffu").hover(function() {
-    $("path[id*=diffu]").show(150);
+    $("path[id*=diffu]").show();
   }, function() {
     $("path[id*=diffu]").hide();
 });
 
 $("#daedalus").hover(function() {
-    $("path[id*=daedalus]").show(150);
+    $("path[id*=daedalus]").show();
   }, function() {
     $("path[id*=daedalus]").hide();
 });
 
 $("#mkb").hover(function() {
-    $("path[id*=mkb]").show(150);
+    $("path[id*=mkb]").show();
   }, function() {
     $("path[id*=mkb]").hide();
 });
 
 $("#radiance").hover(function() {
-    $("path[id*=radiance]").show(150);
+    $("path[id*=radiance]").show();
   }, function() {
     $("path[id*=radiance]").hide();
 });
 
 $("#aghs").hover(function() {
-    $("path[id*=aghs]").show(150);
+    $("path[id*=aghs]").show();
   }, function() {
     $("path[id*=aghs]").hide();
 });
 
 $("#hyper").hover(function() {
-    $("path[id*=hyper]").show(150);
+    $("path[id*=hyper]").show();
   }, function() {
     $("path[id*=hyper]").hide();
 });
 
 $("#ablade").hover(function() {
-    $("path[id*=ablade]").show(150);
+    $("path[id*=ablade]").show();
   }, function() {
     $("path[id*=ablade]").hide();
 });
 
 $("#rapier").hover(function() {
-    $("path[id*=rapier]").show(150);
+    $("path[id*=rapier]").show();
   }, function() {
     $("path[id*=rapier]").hide();
 });
 
 $("#mjoll").hover(function() {
-    $("path[id*=mjoll]").show(150);
+    $("path[id*=mjoll]").show();
   }, function() {
     $("path[id*=mjoll]").hide();
 });
 
 $("#moonsh").hover(function() {
-    $("path[id*=moonsh]").show(150);
+    $("path[id*=moonsh]").show();
   }, function() {
     $("path[id*=moonsh]").hide();
 });
 
 $("#vermcloak").hover(function() {
-    $("path[id*=vermcloak]").show(150);
+    $("path[id*=vermcloak]").show();
   }, function() {
     $("path[id*=vermcloak]").hide();
 });
 
 $("#ghost").hover(function() {
-    $("path[id*=ghost]").show(150);
+    $("path[id*=ghost]").show();
   }, function() {
     $("path[id*=ghost]").hide();
 });
 
 $("#urn").hover(function() {
-    $("path[id*=urn]").show(150);
+    $("path[id*=urn]").show();
   }, function() {
     $("path[id*=urn]").hide();
 });
 
 $("#basi").hover(function() {
-    $("path[id*=basi]").show(150);
+    $("path[id*=basi]").show();
   }, function() {
     $("path[id*=basi]").hide();
 });
 
 $("#bloodstone").hover(function() {
-    $("path[id*=bloodstone]").show(150);
+    $("path[id*=bloodstone]").show();
   }, function() {
     $("path[id*=bloodstone]").hide();
 });
 
 $("#moc").hover(function() {
-    $("path[id*=moc]").show(150);
+    $("path[id*=moc]").show();
   }, function() {
     $("path[id*=moc]").hide();
 });
 
 $("#arcane").hover(function() {
-    $("path[id*=arcane]").show(150);
+    $("path[id*=arcane]").show();
   }, function() {
     $("path[id*=arcane]").hide();
 });
 
 $("#arcane").hover(function() {
-    $("path[id*=arcane]").show(150);
+    $("path[id*=arcane]").show();
   }, function() {
     $("path[id*=arcane]").hide();
 });
 
 $("#tranquil").hover(function() {
-    $("path[id*=tranquil]").show(150);
+    $("path[id*=tranquil]").show();
   }, function() {
     $("path[id*=tranquil]").hide();
 });
 
 $("#treads").hover(function() {
-    $("path[id*=treads]").show(150);
+    $("path[id*=treads]").show();
   }, function() {
     $("path[id*=treads]").hide();
 });
 
 $("#phase").hover(function() {
-    $("path[id*=phase]").show(150);
+    $("path[id*=phase]").show();
   }, function() {
     $("path[id*=phase]").hide();
 });
 
 $("#bots").hover(function() {
-    $("path[id*=bots]").show(150);
+    $("path[id*=bots]").show();
   }, function() {
     $("path[id*=bots]").hide();
 });
 
 $("#headdress").hover(function() {
-    $("path[id*=headdress]").show(150);
+    $("path[id*=headdress]").show();
   }, function() {
     $("path[id*=headdress]").hide();
 });
 
 $("#buckler").hover(function() {
-    $("path[id*=buckler]").show(150);
+    $("path[id*=buckler]").show();
   }, function() {
     $("path[id*=buckler]").hide();
 });
 
 $("#solar").hover(function() {
-    $("path[id*=solar]").show(150);
+    $("path[id*=solar]").show();
   }, function() {
     $("path[id*=solar]").hide();
 });
 
 $("#glimmer").hover(function() {
-    $("path[id*=glimmer]").show(150);
+    $("path[id*=glimmer]").show();
   }, function() {
     $("path[id*=glimmer]").hide();
 });
 
 $("#hotd").hover(function() {
-    $("path[id*=hotd]").show(150);
+    $("path[id*=hotd]").show();
   }, function() {
     $("path[id*=hotd]").hide();
 });
 
 $("#vanguard").hover(function() {
-    $("path[id*=vanguard]").show(150);
+    $("path[id*=vanguard]").show();
   }, function() {
     $("path[id*=vanguard]").hide();
 });
 
 $("#mek").hover(function() {
-    $("path[id*=mek]").show(150);
+    $("path[id*=mek]").show();
   }, function() {
     $("path[id*=mek]").hide();
 });
 
 $("#hood").hover(function() {
-    $("path[id*=hood]").show(150);
+    $("path[id*=hood]").show();
   }, function() {
     $("path[id*=hood]").hide();
 });
 
 $("#vlads").hover(function() {
-    $("path[id*=vlads]").show(150);
+    $("path[id*=vlads]").show();
   }, function() {
     $("path[id*=vlads]").hide();
 });
 
 $("#platemail").hover(function() {
-    $("path[id*=platemail]").show(150);
+    $("path[id*=platemail]").show();
   }, function() {
     $("path[id*=platemail]").hide();
 });
 
 $("#refresher").hover(function() {
-    $("path[id*=refresher]").show(150);
+    $("path[id*=refresher]").show();
   }, function() {
     $("path[id*=refresher]").hide();
 });
 
 $("#crimson").hover(function() {
-    $("path[id*=crimson]").show(150);
+    $("path[id*=crimson]").show();
   }, function() {
     $("path[id*=crimson]").hide();
 });
 
 $("#greaves").hover(function() {
-    $("path[id*=greaves]").show(150);
+    $("path[id*=greaves]").show();
   }, function() {
     $("path[id*=greaves]").hide();
 });
 
 $("#pipe").hover(function() {
-    $("path[id*=pipe]").show(150);
+    $("path[id*=pipe]").show();
   }, function() {
     $("path[id*=pipe]").hide();
 });
 
 $("#lotus").hover(function() {
-    $("path[id*=lotus]").show(150);
+    $("path[id*=lotus]").show();
   }, function() {
     $("path[id*=lotus]").hide();
 });
 
 $("#ac").hover(function() {
-    $("path[id*=ac]").show(150);
+    $("path[id^=ac]").show();
   }, function() {
-    $("path[id*=ac]").hide();
+    $("path[id^=ac]").hide();
 });
 

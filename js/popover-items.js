@@ -1629,4 +1629,24 @@ jQuery(document).ready(function() {
         return $('#content-vermcloak').html();
       }
   });
+   $('#aegis').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'bottom auto',
+      html: true,
+      content: function() {
+        return $('#content-aegis').html();
+      }
+  });
+   $('#cheese').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'bottom auto',
+      html: true,
+      content: function() {
+        return $('#content-cheese').html();
+      }
+  });
 });

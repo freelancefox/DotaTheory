@@ -1337,12 +1337,6 @@ $("#lotus").hover(function() {
     $("path[id*=lotus]").hide();
 });
 
-$("#ac").hover(function() {
-    $("path[id*=ac]").show();
-  }, function() {
-    $("path[id*=ac]").hide();
-});
-
 $("#qb").hover(function() {
     $("path[id*=qb]").show();
   }, function() {
@@ -1776,8 +1770,8 @@ $("#lotus").hover(function() {
 });
 
 $("#ac").hover(function() {
-    $("path[id^=ac]").show();
+    $("path[id$=-ac]").show();
   }, function() {
-    $("path[id^=ac]").hide();
+    $("path[id$=-ac]").hide();
 });
 

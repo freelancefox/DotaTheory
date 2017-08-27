@@ -176,7 +176,7 @@ a:focus, a:hover {
 }
 
 @media (min-width: 1200px) {
-  #price {
+  #filter, #spacer {
     padding: 26px 8px 8px;
   }
   #search {
@@ -184,8 +184,8 @@ a:focus, a:hover {
   }
 }
 @media (max-width: 1200px) {
-  #price {
-    padding: 0 20px 12px 8px;
+  #filter, #spacer {
+    padding: 1px 20px 12px 8px;
   }
   #search {
     padding: 0 0 12px 0;
@@ -239,8 +239,14 @@ a:focus, a:hover {
   width: 27.77%;
 }
 
+@media (max-width: 1200px) {
+  .popover {
+    max-width: 50vw !important;
+  }
+}
+
 .popover {
-  max-width: 25vw;
+  max-width: 600px;
   padding: 0;
   //background-color: #23242A;
   background-color: rgba(35,36,42,0.9);
@@ -408,5 +414,13 @@ div[class^="item-box-"], div[class^="item-box-"] > img,
 .dropdown-menu > li > a:focus {
   color: #1E1E1E;
   background-color: rgba(249,249,249,0.6);
+}
+
+.navbar #search {
+  padding: 4px 0;
+}
+
+.navbar #filter {
+  padding: 5px 20px 4px 8px;
 }
 

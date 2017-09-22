@@ -81,7 +81,7 @@
               <p>
                 Proteus is a fast-paced support hero whose abilities allow it
                 to quickly get in and out of combat, using Jet, while also
-                repositioning allies/enemies with Razorwind and providing burst
+                repositioning allies or enemies with Razorwind and providing burst
                 damage or a damage shield with Polyp. Proteus's ultimate,
                 Rarefaction, grants reduced non-ultimate cooldowns to allies
                 nearby, making Proteus a useful pick in strategies that involve
@@ -208,6 +208,21 @@
                   <p><b>Max Push Distance</b>: 600/650/700/750</p>
                   <p><b>Push Speed</b>: 750</p>
                 </div>
+                <div class="row notes">
+                  <h5>Notes:</h5>
+                  <ul>
+                    <li>
+                      Targets being pushed by Razorwind destroy any trees
+                      they are thrown into, within a 75 unit radius.
+                    </li>
+                    <li>
+                      The max push distance scales with cast range,
+                      up to 700/750/800/850 with the level 15 cast range
+                      talent and 800/850/900/950 with the talent and
+                      Aether Lens.
+                    </li>
+                  </ul>
+                </div>
               </div><!--/.col-md-9-->
             </div><!--/.row-->
             <div id="aaA" class="row padded">
@@ -298,6 +313,14 @@
                   <p><b>Cast Time</b>: instant</p>
                   <p><b>Jet Distance</b>: 300/400/500/600</p>
                   <p><b>Jet Push Speed</b>: 1500</p>
+                </div>
+                <div class="row notes">
+                  <h5>Notes:</h5>
+                  <ul>
+                    <li>
+                      Jet destroys all trees in its path within a 75 unit radius.
+                    </li>
+                  </ul>
                 </div>
               </div><!--/.col-md-9-->
             </div><!--/.row-->
@@ -1053,9 +1076,14 @@
                       trail of water as it flies to the target location.
                     </li>
                     <li>
-                      There may only be one Sprite at a time. Throwing a new Sprite
-                      while an existing Sprite is out causes the older one to despawn,
-                      but the trail will linger.
+                      There may only be one Sprite at a time. Throwing a new
+                      Sprite while an existing Sprite is out causes the older
+                      one to despawn, but the trail will linger.
+                    </li>
+                    <li>
+                      The aura lifesteal effect does NOT linger once the sprite
+                      disappears or is killed, however the effect DOES remain for
+                      enemies on the trail.
                     </li>
                   </ul>
                 </div>

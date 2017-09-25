@@ -1043,12 +1043,12 @@
                 <img class="img-responsive" src="img/place.png">
                 <div id="icons" class="row">
                   <p><img src="img/cd.png"> 9/8/7/6s</p>
-                  <p><img src="img/mana.png"> 70/80/90/100</p>
+                  <p><img src="img/mana.png"> 70/85/100/115</p>
                 </div>
               </div><!--/.col-md-3-->
               <div class="col-md-9">
                 <div class="row">
-                  <h4><b>Q: WATER SPRITE</b> target point, magical</h4>
+                  <h4><b>Q: WATER SPRITE</b> target point</h4>
                   <p class="ability">
                     Calls forth a frothy, tamed water sprite and throws it to
                     the target point. The water sprite has flying vision and
@@ -1081,8 +1081,8 @@
                       one to despawn, but the trail will linger.
                     </li>
                     <li>
-                      The aura lifesteal effect does NOT linger once the sprite
-                      disappears or is killed, however the effect DOES remain for
+                      The aura lifesteal effect does not linger once the sprite
+                      disappears or is killed, however the effect does remain for
                       enemies on the trail.
                     </li>
                   </ul>
@@ -1101,10 +1101,11 @@
                 <div class="row">
                   <h4><b>W: MANA WAVE</b> no target, magical</h4>
                   <p class="ability">
-                    Releases a slow charged wave that washes away enemy mana
-                    and restores allied mana to those in range. The wave
-                    follows Merinth as he moves and always gives mana to
-                    Merinth himself.
+                    Releases a slow charged wave that restores allied mana
+                    and washes away enemy mana, dealing magic damage equal to
+                    the mana burned. The wave follows Merinth as he moves,
+                    affecting units who come within range while always giving
+                    mana to Merinth himself.
                   </p>
                   <p><b>Cast Time</b>: instant</p>
                   <p><b>Wave Radius</b>: 600/700/800/900</p>
@@ -1152,7 +1153,7 @@
                     Merinth primes himself to land a finishing blow with
                     his next attack, stunning the enemy with a heavy strike
                     and granting bonus gold if he manages to kill them or
-                    the target dies while stunned.
+                    the target dies within the stun's duration.
                   </p>
                   <p><b>Cast Time</b>: instant</p>
                   <p><b>Range</b>: 350</p>
@@ -1166,6 +1167,10 @@
                     <li>
                       Only Merinth can benefit from the bonus gold. Applies
                       fully to all other bonus gold including kill streaks.
+                    </li>
+                    <li>
+                      Even if the stun is removed, the bonus gold debuff
+                      on enemies is not dispellable.
                     </li>
                     <li>
                       Merinth thrusts his spear forward with a gush of water,
@@ -1183,12 +1188,17 @@
               </div><!--/.col-md-3-->
               <div class="col-md-9">
                 <div class="row">
-                  <h4><b>R: HYDROPLANE</b> ultimate, passive</h4>
+                  <h4><b>R: HYDROPLANE</b> ultimate, passive, magical</h4>
                   <p class="ability">
                     Move at extreme speeds over water, as in the map's river
-                    and over the water sprite's trail. Also affects the water sprite.
+                    and over the water sprite's trail. The water sprite also
+                    gains this movement speed, as well as the ability to deal
+                    magic damage to enemy units it touches once per cast. This
+                    damage is doubled in the river.
                   </p>
                   <p><b>Movement Speed</b>: 600/750/900</p>
+                  <p><b>Sprite Damage</b>: 150/225/300</p>
+                  <p><b>Sprite Damage Radius</b>: 130</p>
                 </div>
                 <div class="row notes">
                   <h5>Notes:</h5>
@@ -1206,7 +1216,23 @@
           <div id="changelog" class="row">
             <h3 id="cl3b" type="button" data-toggle="collapse" data-target="#cl3">↓ Changelog ↓</h3>
             <div id="cl3" class="row padded collapse">
-              <p id="cCC">v1.3 (September 2017):</p>
+              <p id="cCC">v1.4 (September 2017):</p>
+              <ul>
+                <li>
+                  Hydroplane now gives water sprite the ability to deal damage to enemies
+                  it touches (150/225/300, or double in the river)
+                </li>
+                <li>
+                  Increase Water Sprite manacost from 70/80/90/100 to 70/85/100/115
+                </li>
+                <li>
+                  Adjust wording of Mana Wave to specify manaburn spell damage more clearly
+                </li>
+                <li>
+                  Added note to Harpoon clarifying that the bonus gold effect is not dispellable
+                </li>
+              </ul>
+              <p>v1.3 (September 2017):</p>
               <ul>
                 <li>
                   Change affiliation from Radiant to Dire

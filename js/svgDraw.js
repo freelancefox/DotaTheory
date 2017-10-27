@@ -299,9 +299,9 @@ function connectAll() {
     connectElements($("#svg"), $("#hyper-mjoll"), $("#hyper"), $("#mjoll"));
     connectElements($("#svg"), $("#mael-mjoll"), $("#mael"), $("#mjoll"));
     connectElements($("#svg"), $("#hyper-moonsh"), $("#hyper"), $("#moonsh"));
-    connectElements($("#svg"), $("#reaver-vermcloak"), $("#reaver"), $("#vermcloak"));
-    connectElements($("#svg"), $("#mystic-vermcloak"), $("#mystic"), $("#vermcloak"));
-    connectElements($("#svg"), $("#eagle-vermcloak"), $("#eagle"), $("#vermcloak"));
+    connectElements($("#svg"), $("#reaver-vermilion"), $("#reaver"), $("#vermilion"));
+    connectElements($("#svg"), $("#mystic-vermilion"), $("#mystic"), $("#vermilion"));
+    connectElements($("#svg"), $("#eagle-vermilion"), $("#eagle"), $("#vermilion"));
 }
 
 function hideAll() {
@@ -1031,10 +1031,10 @@ $("#wkb").hover(function() {
     $("path[id*=wkb]").hide();
 });
 
-$("#vermcloak").hover(function() {
-    $("path[id*=vermcloak]").show();
+$("#vermilion").hover(function() {
+    $("path[id*=vermilion]").show();
   }, function() {
-    $("path[id*=vermcloak]").hide();
+    $("path[id*=vermilion]").hide();
 });
 
 $("#mango").hover(function() {
@@ -1607,10 +1607,10 @@ $("#moonsh").hover(function() {
     $("path[id*=moonsh]").hide();
 });
 
-$("#vermcloak").hover(function() {
-    $("path[id*=vermcloak]").show();
+$("#vermilion").hover(function() {
+    $("path[id*=vermilion]").show();
   }, function() {
-    $("path[id*=vermcloak]").hide();
+    $("path[id*=vermilion]").hide();
 });
 
 $("#ghost").hover(function() {

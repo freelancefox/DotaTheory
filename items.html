@@ -246,9 +246,9 @@
       <path id="hyper-mjoll" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
       <path id="mael-mjoll" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
       <path id="hyper-moonsh" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
-      <path id="reaver-vermcloak" class="new" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
-      <path id="mystic-vermcloak" class="new" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
-      <path id="eagle-vermcloak" class="new" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
+      <path id="reaver-vermilion" class="new" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
+      <path id="mystic-vermilion" class="new" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
+      <path id="eagle-vermilion" class="new" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
     </svg>
   </div>
   <div class="container section-bg text-center">
@@ -806,19 +806,6 @@
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-2-offset-->
       <div class="col-xs-5">
-        <div id="talisman" class="item-box-1 center-block item-def tier-2 shop-secret"
-             rel="popover" data-title="Talisman of Evasion">
-          <img src="img/40px-Talisman_of_Evasion_icon.png">
-          <div id="content-talisman" class="hide">
-            <p><i>A necklace that allows you to anticipate enemy attacks.</i></p>
-            <div class="popover-inset text-center">
-              <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 1,450
-              </div><!--/.popover-line-->
-            </div><!--/.popover-inset-->
-            <p>+20% Evasion</p>
-          </div><!--/.popover-content-->
-        </div><!--/.item-box-1-->
         <div id="cloak" class="item-box-1 center-block item-def tier-1 shop-side shop-base"
              rel="popover" data-title="Cloak">
           <img src="img/40px-Cloak_icon.png">
@@ -830,6 +817,19 @@
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
             <p>+15% Magic Resistance</p>
+          </div><!--/.popover-content-->
+        </div><!--/.item-box-1-->
+        <div id="talisman" class="item-box-1 center-block item-def tier-2 shop-secret"
+             rel="popover" data-title="Talisman of Evasion">
+          <img src="img/40px-Talisman_of_Evasion_icon.png">
+          <div id="content-talisman" class="hide">
+            <p><i>A necklace that allows you to anticipate enemy attacks.</i></p>
+            <div class="popover-inset text-center">
+              <div class="popover-line">
+                <img src="img/Gold_symbol.png" height="24px"> 1,450
+              </div><!--/.popover-line-->
+            </div><!--/.popover-inset-->
+            <p>+20% Evasion</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-5-->
@@ -1139,7 +1139,24 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
-      <div class="col-xs-3">
+      <div class="col-xs-3 fixed-height">
+        <div id="glimmer" class="item-box-1 center-block item-supp item-def item-util item-dam item-dam tier-2"
+             rel="popover" data-title="Glimmer Cape">
+          <img src="img/40px-Glimmer_Cape_icon.png">
+          <div id="content-glimmer" class="hide">
+            <p><i>The stolen cape of a master illusionist.</i></p>
+            <div class="popover-inset text-center">
+              <div class="popover-line">
+                <img src="img/40px-Cloak_icon.png"> 550 +
+                <img src="img/40px-Shadow_Amulet_icon.png"> 1,300
+                = <img src="img/40px-Glimmer_Cape_icon.png"> 1,850
+              </div><!--/.popover-line-->
+            </div><!--/.popover-inset-->
+            <p>+20 Attack Speed</p>
+            <p>+15% Magic Resistance</p>
+            <p>Active: <i>Glimmer</i> – After a 0.6 second delay, grants invisibility and 45% magic resistance to you or a target allied unit for 5 seconds. Can be cast while channelling. <img src="img/cd.png"> 14s <img src="img/mana.png"> 90</p>
+          </div><!--/.popover-content-->
+        </div><!--/.item-box-1-->
         <div id="solar" class="item-box-1 center-block item-supp item-def item-regen tier-3"
              rel="popover" data-title="Solar Crest">
           <img src="img/40px-Solar_Crest_icon.png">
@@ -1156,23 +1173,6 @@
             <p>+10 Armor</p>
             <p>+20% Evasion</p>
             <p>Active: <i>Valor</i> – When cast on an ally, grants them 10 armor and 20% evasion. When cast on an enemy, removes 10 of their armor and grants your allies 35% Accuracy on the target. Removes the armor and evasion from the caster when used. Cannot target magic immune enemies (1000 cast range, 7s duration). <img src="img/cd.png"> 7s</p>
-          </div><!--/.popover-content-->
-        </div><!--/.item-box-1-->
-        <div id="glimmer" class="item-box-1 center-block item-supp item-def item-util item-dam item-dam tier-2"
-             rel="popover" data-title="Glimmer Cape">
-          <img src="img/40px-Glimmer_Cape_icon.png">
-          <div id="content-glimmer" class="hide">
-            <p><i>The stolen cape of a master illusionist.</i></p>
-            <div class="popover-inset text-center">
-              <div class="popover-line">
-                <img src="img/40px-Cloak_icon.png"> 550 +
-                <img src="img/40px-Shadow_Amulet_icon.png"> 1,300
-                = <img src="img/40px-Glimmer_Cape_icon.png"> 1,850
-              </div><!--/.popover-line-->
-            </div><!--/.popover-inset-->
-            <p>+20 Attack Speed</p>
-            <p>+15% Magic Resistance</p>
-            <p>Active: <i>Glimmer</i> – After a 0.6 second delay, grants invisibility and 45% magic resistance to you or a target allied unit for 5 seconds. Can be cast while channelling. <img src="img/cd.png"> 14s <img src="img/mana.png"> 90</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-3-->
@@ -1301,7 +1301,7 @@
       </div><!--/.col-xs-4-->
     </div><!--/.row-->
     <div class="row">
-      <div class="col-xs-4 tier-3">
+      <div class="col-xs-4 shift-width tier-3">
         <div id="bloodstone" class="item-box-1 center-block item-stat item-regen item-cast item-supp"
              rel="popover" data-title="Bloodstone">
           <img src="img/40px-Bloodstone_icon.png">
@@ -1343,7 +1343,7 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
-      <div class="col-xs-4">
+      <div class="col-xs-4 fixed-height">
         <div id="crimson" class="item-box-1 center-block item-supp item-stat item-regen item-def tier-3"
              rel="popover" data-title="Crimson Guard">
           <img src="img/40px-Crimson_Guard_icon.png">
@@ -1399,14 +1399,14 @@
                 = <img src="img/40px-Pipe_of_Insight_icon.png"> 3,200
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
-            <p>+8 Health Regen</p>
+            <p>+8 Health Regen (+12 total)</p>
             <p>+25% Magic Resistance</p>
             <p>Aura: <i>Insight Aura</i> – Gives allied units 4 health regeneration and 10% magic resistance (900 radius).</p>
             <p>Active: <i>Barrier</i> – Gives a shield that blocks 400 spell damage to all nearby allies (900 radius). Lasts 12 seconds. <img src="img/cd.png"> 60s <img src="img/mana.png"> 100</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
-      <div class="col-xs-4 tier-3">
+      <div class="col-xs-4 shift-width tier-3">
         <div id="lotus" class="item-box-1 center-block item-supp item-dam item-def item-regen item-stat"
              rel="popover" data-title="Lotus Orb">
           <img src="img/40px-Lotus_Orb_icon.png">
@@ -1452,7 +1452,7 @@
   </div><!--/.col-lg-35-->
   <div class="col-lg-5 middle">
     <div class="row">
-      <div class="col-xs-4 col-xs-offset-2 tier-1 shop-side shop-base">
+      <div class="col-xs-4 fix-margin col-xs-offset-2 tier-1 shop-side shop-base">
         <div id="belt" class="item-box-1 center-block item-str"
              rel="popover" data-title="Belt of Strength">
           <img src="img/40px-Belt_of_Strength_icon.png">
@@ -1493,7 +1493,7 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
-      <div class="col-xs-4 tier-1 shop-base">
+      <div class="col-xs-4 fix-margin tier-1 shop-base">
         <div id="club" class="item-box-1 center-block item-str"
              rel="popover" data-title="Ogre Club">
           <img src="img/40px-Ogre_Club_icon.png">
@@ -1536,7 +1536,7 @@
       </div><!--/.col-xs-4-->
     </div><!--/.row-->
     <div class="row">
-      <div class="col-xs-4 tier-1 shop-base">
+      <div class="col-xs-4 fix-margin tier-1 shop-base">
         <div id="gauntlets" class="item-box-1 center-block item-str"
              rel="popover" data-title="Gauntlets of Strength">
           <img src="img/40px-Gauntlets_of_Strength_icon.png">
@@ -1580,7 +1580,7 @@
       <div class="col-xs-4">
         
       </div><!--/.col-xs-4-->
-      <div class="col-xs-3 col-xs-offset-1 tier-2">
+      <div class="col-xs-4 tier-2">
         <div id="oblivion" class="item-box-1 center-block item-int item-regen item-dam"
              rel="popover" data-title="Oblivion Staff">
           <img src="img/40px-Oblivion_Staff_icon.png">
@@ -1600,10 +1600,10 @@
             <p>+10 Attack Speed</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-      </div><!--/.col-xs-3-offset-->
+      </div><!--/.col-xs-4-->
     </div><!--/.row-->
     <div class="row">
-      <div class="col-xs-4 tier-2">
+      <div class="col-xs-4 fix-margin tier-2">
         <div id="bracer" class="item-box-1 center-block item-str item-dam"
              rel="popover" data-title="Bracer">
           <img src="img/40px-Bracer_icon.png">
@@ -1663,7 +1663,7 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
-      <div class="col-xs-4 tier-2">
+      <div class="col-xs-4 fix-margin tier-2">
         <div id="sange" class="item-box-1 center-block item-str item-dam"
              rel="popover" data-title="Sange">
           <img src="img/40px-Sange_icon.png">
@@ -1719,7 +1719,7 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
-      <div class="col-xs-4">
+      <div class="col-xs-4 fix-margin">
         <div id="echo" class="item-box-1 center-block item-str item-regen item-dam tier-3"
              rel="popover" data-title="Echo Sabre">
           <img src="img/40px-Echo_Sabre_icon.png">
@@ -1782,7 +1782,7 @@
       <div class="col-xs-5 tier-2">
         <div id="woodsman" class="item-box-1 center-block new item-str item-def item-util"
              rel="popover" data-title="Woodsman's Gauntlets">
-          <img src="img/40px-place_icon.png">
+          <img src="img/40px-Woodsman's_Gauntlets_icon.png">
           <div id="content-woodsman" class="hide">
             <p><i>Slightly soiled, but useful for gardening.</i></p>
             <div class="popover-inset text-center">
@@ -1791,7 +1791,7 @@
                 <img src="img/40px-Gauntlets_of_Strength_icon.png"> 150 +
                 <img src="img/40px-Ring_of_Protection_icon.png"> 175 +
                 <img src="img/40px-Iron_Branch_icon.png"> 50
-                = <img src="img/40px-place_icon.png"> 525
+                = <img src="img/40px-Woodsman's_Gauntlets_icon.png"> 525
               </div>
             </div><!--/.popover-inset-->
             <p>+6 Strength (+120 health, +0.36 health regen)</p>
@@ -1890,7 +1890,7 @@
         </div><!--/.item-box-1-->
         <div id="gjalla" class="item-box-1 center-block new item-str item-def item-supp item-dam" style="margin-left: -6px;"
              rel="popover" data-title="Gjallarhorn">
-          <img src="img/40px-place_icon.png">
+          <img src="img/40px-Gjallarhorn_icon.png">
           <div id="content-gjalla" class="hide">
             <p><i>When the watcher of winter calls out Ragnarok's approach, the Gjallarhorn's sound is the sane world's last bastion.</i></p>
             <div class="popover-inset text-center">
@@ -1899,7 +1899,7 @@
                 <img src="img/40px-Ghost_Scepter_icon.png"> 1,500 +
                 <img src="img/40px-Magic_Wand_icon.png"> 465 +
                 <img src="img/40px-Recipe_Scroll_icon.png"> 1,450
-                = <img src="img/40px-place_icon.png"> 5,365
+                = <img src="img/40px-Gjallarhorn_icon.png"> 5,365
               </div>
             </div><!--/.popover-inset-->
             <p>+25 Strength (+400 health, +1.50 health regen)</p>
@@ -2023,7 +2023,7 @@
       </div><!--/.col-xs-32-->
     </div><!--/.row-->
     <div class="row">
-      <div class="col-xs-5 tier-3">
+      <div class="col-xs-5 fixed-height tier-3">
         <div id="drum" class="item-box-1 center-block item-str item-dam item-regen item-mobi item-supp"
              rel="popover" data-title="Drum of Endurance">
           <img src="img/40px-Drum_of_Endurance_icon.png">
@@ -2145,7 +2145,7 @@
         </div><!--/.item-box-1-->
         <div id="squire" class="item-box-1 center-block new item-agi item-dam" style="margin-left: -12px;"
              rel="popover" data-title="Squire's Greatsword">
-          <img src="img/40px-place_icon.png">
+          <img src="img/40px-Squire's_Greatsword_icon.png">
           <div id="content-squire" class="hide">
             <p><i>An unusually heavy (though forgiving) sword meant for training young knights who are not yet ready for combat.</i></p>
             <div class="popover-inset text-center">
@@ -2153,7 +2153,7 @@
                 <img src="img/40px-Claymore_icon.png"> 1,400 +
                 <img src="img/40px-Wraith_Band_icon.png"> 485 +
                 <img src="img/40px-Wraith_Band_icon.png"> 485
-                = <img src="img/40px-place_icon.png"> 2,370
+                = <img src="img/40px-Squire's_Greatsword_icon.png"> 2,370
               </div>
             </div><!--/.popover-inset-->
             <p>+12 Agility (+1.71 armor, +12 attack speed)</p>
@@ -2165,7 +2165,9 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-5-->
-      <div class="col-xs-2 col-xs-offset-2 tier-2">
+      <div class="col-xs-2 width-spacer">
+      </div><!--/.col-xs-2-->
+      <div class="col-xs-2 fix-margin tier-2">
         <div id="aghs" class="item-box-1 center-block item-stat item-cast"
              rel="popover" data-title="Aghanim's Scepter">
           <img src="img/40px-Aghanim's_Scepter_icon.png">
@@ -2238,7 +2240,7 @@
     <div class="row">
       <div class="col-xs-4">
       </div><!--/.col-xs-4-->
-      <div class="col-xs-4 tier-3">
+      <div class="col-xs-4 fix-margin tier-3">
         <div id="snl" class="item-box-1 center-block new item-stat item-dam item-cast"
              rel="popover" data-title="Sange & Lucen">
           <img src="img/40px-Sange_and_Lucen_icon.png">
@@ -2300,7 +2302,7 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
-      <div class="col-xs-4 tier-2">
+      <div class="col-xs-4 fix-margin tier-2">
         <div id="bkb" class="item-box-1 center-block item-str item-def item-dam"
              rel="popover" data-title="Black King Bar">
           <img src="img/40px-Black_King_Bar_icon.png">
@@ -2419,7 +2421,7 @@
             <p>+75% Mana Regen</p>
             <p>+140 Attack Range (Melee AND Ranged)</p>
             <p>+20 Damage</p>
-            <p>+10 Attack Speed (+23 total)</p>
+            <p>+10 Attack Speed (+22 total)</p>
             <p>Passive: <i>Echo Thrust</i> – Attacks have a 17% chance to echo, attacking again immediately and dealing 85 magic damage. Melee heroes apply a 100% movement speed slow for 0.6s on each echo strike.
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
@@ -2473,7 +2475,7 @@
       </div><!--/.col-xs-8-offset-->
     </div><!--/.row-->
     <div class="row">
-      <div class="col-xs-3 col-xs-3-3 col-xs-offset-1 tier-4">
+      <div class="col-xs-3 col-xs-3-3 fix-margin col-xs-offset-1 tier-4">
         <div id="heart" class="item-box-1 center-block item-str item-stat item-regen"
              rel="popover" data-title="Heart of Tarrasque">
           <img src="img/40px-Heart_of_Tarrasque_icon.png">
@@ -2536,7 +2538,7 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-3-->
-      <div class="col-xs-3 col-xs-3-3 tier-4">
+      <div class="col-xs-3 col-xs-3-3 fix-margin tier-4">
         <div id="sheep" class="item-box-1 center-block item-int item-regen item-util"
              rel="popover" data-title="Scythe of Vyse">
           <img src="img/40px-Scythe_of_Vyse_icon.png">
@@ -2596,7 +2598,7 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-3-->
-      <div class="col-xs-3 col-xs-3-3 tier-4">
+      <div class="col-xs-3 col-xs-3-3 fix-margin tier-4">
         <div id="butterfly" class="item-box-1 center-block item-agi item-def item-mobi item-dam item-def"
              rel="popover" data-title="Butterfly">
           <img src="img/40px-Butterfly_icon.png">
@@ -2659,17 +2661,17 @@
     </div><!--/.row-->
     <div class="row bottom-wide custom-collapse">
       <div class="col-xs-4 col-xs-offset-4 tier-4">
-        <div id="vermcloak" class="item-box-1 center-block new item-stat"
-             rel="popover" data-title="Vermillion Cloak" style="margin-bottom: 12px;">
-          <img src="img/40px-Vermillion_Cloak_icon.png">
-          <div id="content-vermcloak" class="hide">
+        <div id="vermilion" class="item-box-1 center-block new item-stat"
+             rel="popover" data-title="Vermilion Coat" style="margin-bottom: 12px;">
+          <img src="img/40px-Vermilion_Coat_icon.png">
+          <div id="content-vermilion" class="hide">
             <p><i>The reddish fabric of this heavy coat is inlaid with glittering jewels that contain ancient knowledge.</i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
                 <img src="img/40px-Reaver_icon.png"> 3,000 +
                 <img src="img/40px-Mystic_Staff_icon.png"> 2,700 +
                 <img src="img/40px-Eaglesong_icon.png"> 3,200
-                = <img src="img/40px-Vermillion_Cloak_icon.png"> 8,900
+                = <img src="img/40px-Vermilion_Coat_icon.png"> 8,900
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
             <p>+25 All Stats (+500 health, +1.5 health regen, +3.5 armor, +25 attack speed, +275 mana, +1.00 mana regen, +1.78% spell amplification, +25 damage)</p>
@@ -2681,7 +2683,7 @@
   </div><!--/.col-lg-5-->
   <div class="col-lg-35 col-lg-3 outer">
     <div class="row">
-      <div class="col-xs-4 tier-1 shop-base">
+      <div class="col-xs-4 shift-width tier-1 shop-base">
         <div id="branch" class="item-box-1 center-block item-stat item-util"
              rel="popover" data-title="Iron Branch">
           <img src="img/40px-Iron_Branch_icon.png">
@@ -2710,7 +2712,7 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
-      <div class="col-xs-4 tier-1 shop-base">
+      <div class="col-xs-4 fixed-height tier-1 shop-base">
         <div id="blight" class="item-box-1 center-block item-dam"
              rel="popover" data-title="Blight Stone">
           <img src="img/40px-Blight_Stone_icon.png">
@@ -2752,7 +2754,7 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
-      <div class="col-xs-4 tier-1 shop-base">
+      <div class="col-xs-4 shift-width tier-1 shop-base">
         <div id="morbid" class="item-box-1 center-block item-dam item-regen shop-side"
              rel="popover" data-title="Morbid Mask">
           <img src="img/40px-Morbid_Mask_icon.png">
@@ -2784,7 +2786,7 @@
       </div><!--/.col-xs-4-->
     </div><!--/.row-->
     <div class="row">
-      <div class="col-xs-2 col-xs-offset-1 tier-1 shop-base">
+      <div class="col-xs-2 shift-width col-xs-offset-1 tier-1 shop-base">
         <div id="ghost" class="item-box-1 center-block item-stat item-def"
              rel="popover" data-title="Ghost Scepter">
           <img src="img/40px-Ghost_Scepter_icon.png">
@@ -2800,7 +2802,7 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-2-offset-->
-      <div class="col-xs-6 tier-1 shop-base">
+      <div class="col-xs-6 fixed-height tier-1 shop-base">
         <div id="boa" class="item-box-1 center-block item-dam shop-side"
              rel="popover" data-title="Blades of Attack">
           <img src="img/40px-Blades_of_Attack_icon.png">
@@ -2854,7 +2856,7 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-6-->
-      <div class="col-xs-3 tier-1 shop-base">
+      <div class="col-xs-2 shift-width tier-1 shop-base">
         <div id="goh" class="item-box-1 center-block item-dam"
              rel="popover" data-title="Gloves of Haste">
           <img src="img/40px-Gloves_of_Haste_icon.png">
@@ -2868,21 +2870,7 @@
             <p>+20 Attack Speed</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="shadowam" class="item-box-1 center-block item-dam item-util"
-             rel="popover" data-title="Shadow Amulet">
-          <img src="img/40px-Shadow_Amulet_icon.png">
-          <div id="content-shadowam" class="hide">
-            <p><i>A small talisman that clouds the senses of one's enemies when held perfectly still.</i></p>
-            <div class="popover-inset text-center">
-              <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 1,300
-              </div><!--/.popover-line-->
-            </div><!--/.popover-inset-->
-            <p>+20 Attack Speed</p>
-            <p>Active: <i>Fade</i> – Grants invisibility to you or a target allied hero as long as target unit remains still. Has a 1.25 second fade time, and breaks instantly upon moving (600 cast range). There is no cooldown when using this item on yourself. <img src="img/cd.png"> 4/0s</p>
-          </div><!--/.popover-content-->
-        </div><!--/.item-box-1-->
-      </div><!--/.col-xs-3-->
+      </div><!--/.col-xs-2-->
     </div><!--/.row-->
     <div class="row">
       <div class="col-xs-2 col-xs-offset-1 tier-2 shop-secret">
@@ -2929,9 +2917,22 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-6-->
-      <div class="col-xs-3">
-        
-      </div><!--/.col-xs-3-->
+      <div class="col-xs-2 tier-1 shop-base">
+        <div id="shadowam" class="item-box-1 center-block item-dam item-util"
+             rel="popover" data-title="Shadow Amulet">
+          <img src="img/40px-Shadow_Amulet_icon.png">
+          <div id="content-shadowam" class="hide">
+            <p><i>A small talisman that clouds the senses of one's enemies when held perfectly still.</i></p>
+            <div class="popover-inset text-center">
+              <div class="popover-line">
+                <img src="img/Gold_symbol.png" height="24px"> 1,300
+              </div><!--/.popover-line-->
+            </div><!--/.popover-inset-->
+            <p>+20 Attack Speed</p>
+            <p>Active: <i>Fade</i> – Grants invisibility to you or a target allied hero as long as target unit remains still. Has a 1.25 second fade time, and breaks instantly upon moving (600 cast range). There is no cooldown when using this item on yourself. <img src="img/cd.png"> 4/0s</p>
+          </div><!--/.popover-content-->
+        </div><!--/.item-box-1-->
+      </div><!--/.col-xs-2-->
     </div><!--/.row-->
     <div class="row">
       <div class="col-xs-4">
@@ -2975,7 +2976,93 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-2-->
+    </div><!--/.row-->
+    <div class="row">
       <div class="col-xs-2 tier-2">
+        <div id="basher" class="item-box-1 center-block item-str item-dam"
+             rel="popover" data-title="Skull Basher">
+          <img src="img/40px-Skull_Basher_icon.png">
+          <div id="content-basher" class="hide">
+            <p><i>A feared weapon in the right hands, this maul's ability to shatter the defenses of its opponents should not be underestimated.</i></p>
+            <div class="popover-inset text-center">
+              <div class="popover-line">
+                <img src="img/40px-Belt_of_Strength_icon.png"> 450 +
+                <img src="img/40px-Javelin_icon.png"> 1,500 +
+                <img src="img/40px-Recipe_Scroll_icon.png"> 750
+                = <img src="img/40px-Skull_Basher_icon.png"> 2,700
+              </div><!--/.popover-line-->
+            </div><!--/.popover-inset-->
+            <p>+10 Strength (+200 health, +0.60 health regen)</p>
+            <p>+10 Damage (+20 for Strength heroes)</p>
+            <p>Passive: <i>Bash</i> – Grants melee heroes a 25% chance on hit to stun the target for 1.4 seconds and deal 85 bonus magical damage. Bash chance for ranged heroes is 10%. <img src="img/cd.png"> 2.3s</p>
+          </div><!--/.popover-content-->
+        </div><!--/.item-box-1-->
+      </div><!--/.col-xs-2-->
+      <div class="col-xs-2 tier-3">
+        <div id="orchid" class="item-box-1 center-block item-int item-dam item-regen item-util"
+             rel="popover" data-title="Orchid Malevolence">
+          <img src="img/40px-Orchid_Malevolence_icon.png">
+          <div id="content-orchid" class="hide">
+            <p><i>A garnet rod constructed from the essence of a fire demon.</i></p>
+            <div class="popover-inset text-center">
+              <div class="popover-line">
+                <img src="img/40px-Oblivion_Staff_icon.png"> 1,650 +
+                <img src="img/40px-Oblivion_Staff_icon.png"> 1,650 +
+                <img src="img/40px-Recipe_Scroll_icon.png"> 775
+                = <img src="img/40px-Orchid_Malevolence_icon.png"> 4,075
+              </div><!--/.popover-line-->
+            </div><!--/.popover-inset-->
+            <p>+25 Intelligence (+275 mana, +1.00 mana regen, +1.79% spell amplification)</p>
+            <p>+30 Attack Speed</p>
+            <p>+30 Damage (+55 for Intelligence heroes)</p>
+            <p>+150% Mana Regen</p>
+            <p>Active: <i>Soul Burn</i> – Silences the target unit for 5 seconds. At the end of the silence, 30% of the damage received while silenced is inflicted as bonus magical damage. <img src="img/cd.png"> 18s <img src="img/mana.png"> 100</p>
+          </div><!--/.popover-content-->
+        </div><!--/.item-box-1-->
+      </div><!--/.col-xs-2-->
+      <div class="col-xs-4 tier-3">
+        <div id="bfury" class="item-box-1 center-block item-dam item-regen"
+             rel="popover" data-title="Battle Fury">
+          <img src="img/40px-Battle_Fury_icon.png">
+          <div id="content-bfury" class="hide">
+            <p><i>The bearer of this mighty axe gains the ability to cut down swaths of enemies at once.</i></p>
+            <div class="popover-inset text-center">
+              <div class="popover-line">
+                <img src="img/40px-Quelling_Blade_icon.png"> 200 +
+                <img src="img/40px-Broadsword_icon.png"> 1,200 +
+                <img src="img/40px-Claymore_icon.png"> 1,400 +
+                <img src="img/40px-Perseverance_icon.png"> 1,700
+                = <img src="img/40px-Battle_Fury_icon.png"> 4,500
+              </div><!--/.popover-line-->
+            </div><!--/.popover-inset-->
+            <p>+55 Damage</p>
+            <p>+6 Health Regen</p>
+            <p>+150% Mana Regen</p>
+            <p>Quell: +60% Damage Melee / +25% Ranged (damage to creeps ONLY)</p>
+            <p>Active: <i>Chop Tree or Ward</i> – Destroy a target tree or ward. Chop cast range is increased when targeting wards (350 cast range trees, 450 wards). <img src="img/cd.png"> 4s</p>
+            <p>Passive: <i>Cleave</i> – Deals 40% of attack damage in a cone up to 570 around the target (Melee ONLY, 150 cleave starting radius, 300 end radius).</p>
+          </div><!--/.popover-content-->
+        </div><!--/.item-box-1-->
+      </div><!--/.col-xs-4-->
+      <div class="col-xs-3 fixed-height tier-2">
+        <div id="mael" class="item-box-1 center-block item-dam"
+             rel="popover" data-title="Maelstrom">
+          <img src="img/40px-Maelstrom_icon.png">
+          <div id="content-mael" class="hide">
+            <p><i>A hammer forged for the gods themselves, Maelstrom allows its user to harness the power of lightning.</i></p>
+            <div class="popover-inset text-center">
+              <div class="popover-line">
+                <img src="img/40px-Gloves_of_Haste_icon.png"> 500 +
+                <img src="img/40px-Mithril_Hammer_icon.png"> 1,600 +
+                <img src="img/40px-Recipe_Scroll_icon.png"> 700
+                = <img src="img/40px-Maelstrom_icon.png"> 2,800
+              </div><!--/.popover-line-->
+            </div><!--/.popover-inset-->
+            <p>+25 Attack Speed</p>
+            <p>+24 Damage</p>
+            <p>Passive: <i>Chain Lightning</i> – Grants a 25% chance on attack to release a bolt of electricity that leaps between 4 targets within a 900 radius, dealing 120 magical damage to each (0.25s bounce interval).</p>
+          </div><!--/.popover-content-->
+        </div><!--/.item-box-1-->
         <div id="midas" class="item-box-1 center-block item-dam item-util"
              rel="popover" data-title="Hand of Midas">
           <img src="img/40px-Hand_of_Midas_icon.png">
@@ -2990,6 +3077,76 @@
             </div><!--/.popover-inset-->
             <p>+30 Attack Speed</p>
             <p>Active: <i>Transmute</i> – Kills a non-hero target for 200 gold and 1.85x experience. Cannot be used on Ancient Creeps (600 cast range). <img src="img/cd.png"> 100s</p>
+          </div><!--/.popover-content-->
+        </div><!--/.item-box-1-->
+      </div><!--/.col-xs-3-->
+    </div><!--/.row-->
+    <div class="row">
+      <div class="col-xs-3">
+        
+      </div><!--/.col-xs-3-->
+      <div class="col-xs-2 tier-2">
+        <div id="deso" class="item-box-1 center-block item-dam"
+             rel="popover" data-title="Desolator">
+          <img src="img/40px-Desolator_icon.png">
+          <div id="content-deso" class="hide">
+            <p><i>A wicked weapon, used in torturing political criminals.</i></p>
+            <div class="popover-inset text-center">
+              <div class="popover-line">
+                <img src="img/40px-Blight_Stone_icon.png"> 300 +
+                <img src="img/40px-Mithril_Hammer_icon.png"> 1,600 +
+                <img src="img/40px-Mithril_Hammer_icon.png"> 1,600
+                = <img src="img/40px-Desolator_icon.png"> 3,500
+              </div><!--/.popover-line-->
+            </div><!--/.popover-inset-->
+            <p>+50 Damage</p>
+            <p>Passive: <i>Corruption</i> – Your attacks reduce the target's armor by 7 for 15 seconds (successive hits refresh the debuff duration).</p>
+          </div><!--/.popover-content-->
+        </div><!--/.item-box-1-->
+      </div><!--/.col-xs-2-->
+      <div class="col-xs-2">
+        
+      </div><!--/.col-xs-2-->
+      <div class="col-xs-2 tier-2">
+        <div id="armlet" class="item-box-1 center-block item-dam item-regen item-def"
+             rel="popover" data-title="Armlet of Mordiggian">
+          <img src="img/40px-Armlet_of_Mordiggian_icon.png">
+          <div id="content-armlet" class="hide">
+            <p><i>Weapon of choice among brutes, the bearer sacrifices his life energy to gain immense strength and power.</i></p>
+            <div class="popover-inset text-center">
+              <div class="popover-line">
+                <img src="img/40px-Blades_of_Attack_icon.png"> 420 +
+                <img src="img/40px-Gloves_of_Haste_icon.png"> 500 +
+                <img src="img/40px-Helm_of_Iron_Will_icon.png"> 950 +
+                <img src="img/40px-Recipe_Scroll_icon.png"> 550
+                = <img src="img/40px-Armlet_of_Mordiggian_icon.png"> 2,370
+              </div><!--/.popover-line-->
+            </div><!--/.popover-inset-->
+            <p>+7 Health Regen</p>
+            <p>+5 Armor</p>
+            <p>+25 Attack Speed</p>
+            <p>+9 Damage</p>
+            <p>Active: <i>Unholy Strength</i> – When active, Unholy Strength grants +31 damage, +25 strength and +4 armor, but drains 45 health per second. You cannot die from the health drain when Unholy Strength is activated, nor from the strength loss when Unholy Strength is deactivated (0.6s activation time). <img src="img/cd.png"> 0s</p>
+          </div><!--/.popover-content-->
+        </div><!--/.item-box-1-->
+      </div><!--/.col-xs-2-->
+      <div class="col-xs-2 tier-2">
+        <div id="mom" class="item-box-1 center-block item-dam item-regen item-mobi"
+             rel="popover" data-title="Mask of Madness">
+          <img src="img/40px-Mask_of_Madness_icon.png">
+          <div id="content-mom" class="hide">
+            <p><i>Once this mask is worn, its bearer becomes an uncontrollable aggressive force.</i></p>
+            <div class="popover-inset text-center">
+              <div class="popover-line">
+                <img src="img/40px-Morbid_Mask_icon.png"> 1,100 +
+                <img src="img/40px-Quarterstaff_icon.png"> 875
+                = <img src="img/40px-Mask_of_Madness_icon.png"> 1,975
+              </div><!--/.popover-line-->
+            </div><!--/.popover-inset-->
+            <p>+10 Attack Speed</p>
+            <p>+20 Damage</p>
+            <p>+15% Lifesteal</p>
+            <p>Active: <i>Berserk</i> – Gives 110 attack speed and 17% movement speed, but reduces your armor by 6 and silences you. Lasts 8 seconds. <img src="img/cd.png"> 22s <img src="img/mana.png"> 25</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-2-->
@@ -3037,162 +3194,6 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
-      <div class="col-xs-4 tier-3">
-        <div id="bfury" class="item-box-1 center-block item-dam item-regen"
-             rel="popover" data-title="Battle Fury">
-          <img src="img/40px-Battle_Fury_icon.png">
-          <div id="content-bfury" class="hide">
-            <p><i>The bearer of this mighty axe gains the ability to cut down swaths of enemies at once.</i></p>
-            <div class="popover-inset text-center">
-              <div class="popover-line">
-                <img src="img/40px-Quelling_Blade_icon.png"> 200 +
-                <img src="img/40px-Broadsword_icon.png"> 1,200 +
-                <img src="img/40px-Claymore_icon.png"> 1,400 +
-                <img src="img/40px-Perseverance_icon.png"> 1,700
-                = <img src="img/40px-Battle_Fury_icon.png"> 4,500
-              </div><!--/.popover-line-->
-            </div><!--/.popover-inset-->
-            <p>+55 Damage</p>
-            <p>+6 Health Regen</p>
-            <p>+150% Mana Regen</p>
-            <p>Quell: +60% Damage Melee / +25% Ranged (damage to creeps ONLY)</p>
-            <p>Active: <i>Chop Tree or Ward</i> – Destroy a target tree or ward. Chop cast range is increased when targeting wards (350 cast range trees, 450 wards). <img src="img/cd.png"> 4s</p>
-            <p>Passive: <i>Cleave</i> – Deals 40% of attack damage in a cone up to 570 around the target (Melee ONLY, 150 cleave starting radius, 300 end radius).</p>
-          </div><!--/.popover-content-->
-        </div><!--/.item-box-1-->
-      </div><!--/.col-xs-4-->
-      <div class="col-xs-2 col-xs-offset-1 tier-2">
-        <div id="mom" class="item-box-1 center-block item-dam item-regen item-mobi"
-             rel="popover" data-title="Mask of Madness">
-          <img src="img/40px-Mask_of_Madness_icon.png">
-          <div id="content-mom" class="hide">
-            <p><i>Once this mask is worn, its bearer becomes an uncontrollable aggressive force.</i></p>
-            <div class="popover-inset text-center">
-              <div class="popover-line">
-                <img src="img/40px-Morbid_Mask_icon.png"> 1,100 +
-                <img src="img/40px-Quarterstaff_icon.png"> 875
-                = <img src="img/40px-Mask_of_Madness_icon.png"> 1,975
-              </div><!--/.popover-line-->
-            </div><!--/.popover-inset-->
-            <p>+10 Attack Speed</p>
-            <p>+20 Damage</p>
-            <p>+15% Lifesteal</p>
-            <p>Active: <i>Berserk</i> – Gives 110 attack speed and 17% movement speed, but reduces your armor by 6 and silences you. Lasts 8 seconds. <img src="img/cd.png"> 22s <img src="img/mana.png"> 25</p>
-          </div><!--/.popover-content-->
-        </div><!--/.item-box-1-->
-      </div><!--/.col-xs-2-offset-->
-    </div><!--/.row-->
-    <div class="row">
-      <div class="col-xs-3">
-        
-      </div><!--/.col-xs-3-->
-      <div class="col-xs-2 tier-2">
-        <div id="deso" class="item-box-1 center-block item-dam"
-             rel="popover" data-title="Desolator">
-          <img src="img/40px-Desolator_icon.png">
-          <div id="content-deso" class="hide">
-            <p><i>A wicked weapon, used in torturing political criminals.</i></p>
-            <div class="popover-inset text-center">
-              <div class="popover-line">
-                <img src="img/40px-Blight_Stone_icon.png"> 300 +
-                <img src="img/40px-Mithril_Hammer_icon.png"> 1,600 +
-                <img src="img/40px-Mithril_Hammer_icon.png"> 1,600
-                = <img src="img/40px-Desolator_icon.png"> 3,500
-              </div><!--/.popover-line-->
-            </div><!--/.popover-inset-->
-            <p>+50 Damage</p>
-            <p>Passive: <i>Corruption</i> – Your attacks reduce the target's armor by 7 for 15 seconds (successive hits refresh the debuff duration).</p>
-          </div><!--/.popover-content-->
-        </div><!--/.item-box-1-->
-      </div><!--/.col-xs-2-->
-      <div class="col-xs-2">
-        
-      </div><!--/.col-xs-2-->
-      <div class="col-xs-4 tier-2">
-        <div id="mael" class="item-box-1 center-block item-dam"
-             rel="popover" data-title="Maelstrom">
-          <img src="img/40px-Maelstrom_icon.png">
-          <div id="content-mael" class="hide">
-            <p><i>A hammer forged for the gods themselves, Maelstrom allows its user to harness the power of lightning.</i></p>
-            <div class="popover-inset text-center">
-              <div class="popover-line">
-                <img src="img/40px-Gloves_of_Haste_icon.png"> 500 +
-                <img src="img/40px-Mithril_Hammer_icon.png"> 1,600 +
-                <img src="img/40px-Recipe_Scroll_icon.png"> 700
-                = <img src="img/40px-Maelstrom_icon.png"> 2,800
-              </div><!--/.popover-line-->
-            </div><!--/.popover-inset-->
-            <p>+25 Attack Speed</p>
-            <p>+24 Damage</p>
-            <p>Passive: <i>Chain Lightning</i> – Grants a 25% chance on attack to release a bolt of electricity that leaps between 4 targets within a 900 radius, dealing 120 magical damage to each (0.25s bounce interval).</p>
-          </div><!--/.popover-content-->
-        </div><!--/.item-box-1-->
-        <div id="armlet" class="item-box-1 center-block item-dam item-regen item-def"
-             rel="popover" data-title="Armlet of Mordiggian">
-          <img src="img/40px-Armlet_of_Mordiggian_icon.png">
-          <div id="content-armlet" class="hide">
-            <p><i>Weapon of choice among brutes, the bearer sacrifices his life energy to gain immense strength and power.</i></p>
-            <div class="popover-inset text-center">
-              <div class="popover-line">
-                <img src="img/40px-Blades_of_Attack_icon.png"> 420 +
-                <img src="img/40px-Gloves_of_Haste_icon.png"> 500 +
-                <img src="img/40px-Helm_of_Iron_Will_icon.png"> 950 +
-                <img src="img/40px-Recipe_Scroll_icon.png"> 550
-                = <img src="img/40px-Armlet_of_Mordiggian_icon.png"> 2,370
-              </div><!--/.popover-line-->
-            </div><!--/.popover-inset-->
-            <p>+7 Health Regen</p>
-            <p>+5 Armor</p>
-            <p>+25 Attack Speed</p>
-            <p>+9 Damage</p>
-            <p>Active: <i>Unholy Strength</i> – When active, Unholy Strength grants +31 damage, +25 strength and +4 armor, but drains 45 health per second. You cannot die from the health drain when Unholy Strength is activated, nor from the strength loss when Unholy Strength is deactivated (0.6s activation time). <img src="img/cd.png"> 0s</p>
-          </div><!--/.popover-content-->
-        </div><!--/.item-box-1-->
-      </div><!--/.col-xs-4-->
-    </div><!--/.row-->
-    <div class="row">
-      <div class="col-xs-2 tier-2">
-        <div id="basher" class="item-box-1 center-block item-str item-dam"
-             rel="popover" data-title="Skull Basher">
-          <img src="img/40px-Skull_Basher_icon.png">
-          <div id="content-basher" class="hide">
-            <p><i>A feared weapon in the right hands, this maul's ability to shatter the defenses of its opponents should not be underestimated.</i></p>
-            <div class="popover-inset text-center">
-              <div class="popover-line">
-                <img src="img/40px-Belt_of_Strength_icon.png"> 450 +
-                <img src="img/40px-Javelin_icon.png"> 1,500 +
-                <img src="img/40px-Recipe_Scroll_icon.png"> 750
-                = <img src="img/40px-Skull_Basher_icon.png"> 2,700
-              </div><!--/.popover-line-->
-            </div><!--/.popover-inset-->
-            <p>+10 Strength (+200 health, +0.60 health regen)</p>
-            <p>+10 Damage (+20 for Strength heroes)</p>
-            <p>Passive: <i>Bash</i> – Grants melee heroes a 25% chance on hit to stun the target for 1.4 seconds and deal 85 bonus magical damage. Bash chance for ranged heroes is 10%. <img src="img/cd.png"> 2.3s</p>
-          </div><!--/.popover-content-->
-        </div><!--/.item-box-1-->
-      </div><!--/.col-xs-2-->
-      <div class="col-xs-2 tier-3">
-        <div id="orchid" class="item-box-1 center-block item-int item-dam item-regen item-util"
-             rel="popover" data-title="Orchid Malevolence">
-          <img src="img/40px-Orchid_Malevolence_icon.png">
-          <div id="content-orchid" class="hide">
-            <p><i>A garnet rod constructed from the essence of a fire demon.</i></p>
-            <div class="popover-inset text-center">
-              <div class="popover-line">
-                <img src="img/40px-Oblivion_Staff_icon.png"> 1,650 +
-                <img src="img/40px-Oblivion_Staff_icon.png"> 1,650 +
-                <img src="img/40px-Recipe_Scroll_icon.png"> 775
-                = <img src="img/40px-Orchid_Malevolence_icon.png"> 4,075
-              </div><!--/.popover-line-->
-            </div><!--/.popover-inset-->
-            <p>+25 Intelligence (+275 mana, +1.00 mana regen, +1.79% spell amplification)</p>
-            <p>+30 Attack Speed</p>
-            <p>+30 Damage (+55 for Intelligence heroes)</p>
-            <p>+150% Mana Regen</p>
-            <p>Active: <i>Soul Burn</i> – Silences the target unit for 5 seconds. At the end of the silence, 30% of the damage received while silenced is inflicted as bonus magical damage. <img src="img/cd.png"> 18s <img src="img/mana.png"> 100</p>
-          </div><!--/.popover-content-->
-        </div><!--/.item-box-1-->
-      </div><!--/.col-xs-2-->
       <div class="col-xs-2 tier-3">
         <div id="daedalus" class="item-box-1 center-block item-dam"
              rel="popover" data-title="Daedalus">
@@ -3378,7 +3379,7 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
-      <div class="col-xs-3 tier-3">
+      <div class="col-xs-3 fixed-height tier-3">
         <div id="mjoll" class="item-box-1 center-block item-dam"
              rel="popover" data-title="Mjollnir">
           <img src="img/40px-Mjollnir_icon.png">
@@ -3421,7 +3422,7 @@
   </div><!--/.section-bg-->
 
 <div id="footer" class="row text-center">
-  by <a href="https://www.reddit.com/user/freelance_fox/">/u/freelance_fox</a> • <a href="http://www.twitter.com/freelancedota">@freelancedota</a> • Last Updated 9 September 2017
+  by <a href="https://www.reddit.com/user/freelance_fox/">/u/freelance_fox</a> • <a href="http://www.twitter.com/freelancedota">@freelancedota</a> • Last Updated 27 October 2017
 </div><!--/.row-->
 
   <script src="http://code.jquery.com/jquery-1.10.2.js"></script>

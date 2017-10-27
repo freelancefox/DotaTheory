@@ -1619,14 +1619,14 @@ jQuery(document).ready(function() {
         return $('#content-moonsh').html();
       }
   });
-   $('#vermcloak').popover({
+   $('#vermilion').popover({
       toggle:'popover',
       container:'body',
       trigger:'hover click',
       placement:'right auto',
       html: true,
       content: function() {
-        return $('#content-vermcloak').html();
+        return $('#content-vermilion').html();
       }
   });
    $('#aegis').popover({

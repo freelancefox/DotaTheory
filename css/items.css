@@ -425,3 +425,71 @@ div[class^="item-box-"], div[class^="item-box-"] > img,
   padding: 5px 20px 4px 8px;
 }
 
+@media (max-width: 1810px) and (min-width: 1200px) {
+  .col-xs-4.fixed-height {
+    max-height: 48px;
+    width: 40%;
+  }
+  .col-xs-4.shift-width {
+    width: 30%;
+  }
+  .col-xs-4.fixed-height .item-box-1,
+  .col-xs-4.shift-width .item-box-1 {
+    margin: 0 0 10px;
+  }
+  .col-xs-5.fixed-height {
+    max-height: 48px;
+    width: 58.333333333%;
+  }
+  .col-xs-2.width-spacer {
+    width: 0%;
+    display: none;
+  }
+}
+
+@media (max-width: 1282px) and (min-width: 1200px) {
+  .col-xs-4.fixed-height .item-box-1,
+  .col-xs-4.shift-width .item-box-1 {
+    margin: 0 -2px 10px;
+  }
+  .col-xs-3.fix-margin .item-box-1,
+  .col-xs-4.fix-margin .item-box-1 {
+    margin: 0 0 10px;
+  }
+  .col-xs-5.fixed-height {
+    max-height: 48px;
+    width: 65%;
+  }
+  .col-xs-2.fix-margin {
+    width: 10%;
+  }
+}
+
+@media (max-width: 1582px) and (min-width: 1200px) {
+  .col-xs-3.fixed-height {
+    max-height: 48px;
+    width: 38.3333333%;
+    margin-left: -5%;
+  }
+  .col-xs-3.fixed-height .item-box-1 {
+    margin: 0 0 10px;
+  }
+}
+
+@media (max-width: 1610px) and (min-width: 1200px) {
+  .col-xs-6.fixed-height {
+    max-height: 48px;
+    width: 59.3333333%;
+  }
+  .col-xs-2.shift-width {
+    width: 12%;
+  }
+  .col-xs-6.fixed-height .item-box-1,
+  .col-xs-2.shift-width .item-box-1 {
+    margin: 0 0 10px;
+  }
+}
+
+
+
+

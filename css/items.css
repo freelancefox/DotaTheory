@@ -433,6 +433,7 @@ div[class^="item-box-"], div[class^="item-box-"] > img,
   .col-xs-4.shift-width {
     width: 30%;
   }
+  .col-xs-6.fix-margin .item-box-1,
   .col-xs-4.fixed-height .item-box-1,
   .col-xs-4.shift-width .item-box-1 {
     margin: 0 0 10px;
@@ -448,6 +449,7 @@ div[class^="item-box-"], div[class^="item-box-"] > img,
 }
 
 @media (max-width: 1282px) and (min-width: 1200px) {
+  .col-xs-6.fix-margin .item-box-1,
   .col-xs-4.fixed-height .item-box-1,
   .col-xs-4.shift-width .item-box-1 {
     margin: 0 -2px 10px;

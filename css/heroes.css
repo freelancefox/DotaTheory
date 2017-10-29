@@ -25,7 +25,6 @@ a:focus, a:hover {
   font-weight: 500;
   padding: 10px 15px;
   margin: 8px 15px;
-  mix-blend-mode: color;
 }
 
 .btn-default:active:hover,

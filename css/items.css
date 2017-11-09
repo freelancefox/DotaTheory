@@ -202,7 +202,7 @@ div.new {
 }
 
 .reworked {
-  outline: 1px solid #c4c;
+  outline: 1px solid #ff54ff;
 }
 
 .item-box-4 {
@@ -425,6 +425,10 @@ div[class^="item-box-"], div[class^="item-box-"] > img,
   padding: 5px 20px 4px 8px;
 }
 
+.special {
+  margin-left: -8.3333333%;
+}
+
 @media (max-width: 1810px) and (min-width: 1200px) {
   .col-xs-4.fixed-height {
     max-height: 48px;
@@ -499,8 +503,24 @@ div[class^="item-box-"], div[class^="item-box-"] > img,
 }
 
 @media (max-width: 1210px) and (min-width: 1200px) {
+  .col-xs-5.fix-margin > img,
   .col-xs-5.fix-margin .item-box-1 {
     margin: 0 -2px 10px;
   }
 }
+
+@media (max-width: 1680px) and (min-width: 1200px) {
+  .col-xs-2.fixed-height .item-box-1 {
+  }
+  .col-xs-2.fixed-height {
+    width: 25%;
+  }
+}
+
+@media (max-width: 1416px) and (min-width: 1200px) {
+  .col-xs-2.fixed-height .item-box-1 {
+    margin: 0 0px 10px;
+  }
+}
+
 

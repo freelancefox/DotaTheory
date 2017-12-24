@@ -36,7 +36,7 @@
           <div class="panel panel-default">
             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse">
               <div class="panel-heading">
-                <h4 id="index" class="panel-title">↓ Heroes ↓</h4>
+                <h4 id="index" class="panel-title">↓ freelance's Heroes ↓</h4>
               </div>
             </a>
             <div class="panel-collapse collapse" id="collapse">
@@ -55,10 +55,15 @@
           <div>>></div>
         </a>
       </div>
+      <div class="col-sm-3">
+        <div class="header-hide pull-right">
+          <button id="nextauth" class="btn btn-main">Next Author >></button>
+        </div>
+      </div>
     </div><!--/.row-->
     <div id="authorlist" class="row header-hide text-center" style="display: none;">
-      <button id="author-freelancefox" class="btn btn-main">freelancefox (6)</button>
-      <a href="#coming-soon"><button id="author-add" class="btn btn-main">+</button></a>
+      <button id="author-freelance" class="btn btn-main">freelance (6)</button>
+      <a href="#coming-soon"><button id="author-add" class="btn btn-main">Add a Concept...</button></a>
     </div><!--/.row-->
   </div><!-- /.container-->
 </nav>
@@ -179,10 +184,10 @@
               </div><!--/.col-md-3-->
               <div class="col-md-9">
                 <div class="row text-left">
-                  <p><b>Level 10</b>: +10 Health Regen <b>or</b> +20 Movement Speed</p>
+                  <p><b>Level 10</b>: +10 Health Regen <b>or</b> +25 Movement Speed</p>
                   <p><b>Level 15</b>: +200 Cast Range <b>or</b> +90 Gold/Min</p>
-                  <p><b>Level 20</b>: +10 Armor <b>or</b> +12 Mana Regen</p>
-                  <p><b>Level 25</b>: +3 Jet Charges <b>or</b> +50 Polyp Regen Rate</p>
+                  <p><b>Level 20</b>: +10 Armor <b>or</b> +50 Polyp Regen Rate</p>
+                  <p><b>Level 25</b>: +3 Jet Charges <b>or</b> Double Polyp/+1 Polyp per Hero</p>
                 </div>
               </div><!--/.col-md-9-->
             </div><!--/.row-->
@@ -218,7 +223,7 @@
                     <li>
                       The max push distance scales with cast range,
                       up to 700/750/800/850 with the level 15 cast range
-                      talent and 800/850/900/950 with the talent and
+                      talent and 825/875/925/975 with the talent and
                       Aether Lens.
                     </li>
                   </ul>
@@ -247,21 +252,35 @@
                   </p>
                   <p><b>Cast Range</b>: 800</p>
                   <p><b>Polyp Base Health</b>: 50/75/100/125</p>
-                  <p><b>Polyp Regen Rate</b>: 5/10/20/25 hp/s</p>
-                  <p><b>Duration for Max Charge</b>: 20/15/10/10s</p>
+                  <p><b>Polyp Regen Rate</b>: 5/10/20/25 hp/s (<img src="img/talent.png"></img> 55/60/70/75 hp/s)</p>
+                  <p><b>Duration for Max Charge</b>: 20/15/10/10s (<img src="img/talent.png"></img> 1.81/2.5/2.85/3.33s)</p>
                   <p><b>Max Polyp Health/Damage</b>: 150/225/300/375</p>
-                  <p><b>Max Polyps per Hero</b>: 1</p>
+                  <p><b>Number of Targets</b>: 1 (<img src="img/talent.png"></img> 2)</p>
+                  <p><b>Max Polyps per Hero</b>: 1 (<img src="img/talent.png"></img> 2)</p>
                   <p><b>Polyp Duration</b>: 50s</p>
                 </div>
                 <div class="row notes">
                   <h5>Notes:</h5>
                   <ul>
                     <li>
-                      Polyps do not stack with each other. Casting a second
-                      Polyp on an ally has no effect (unless the Polyp's health
-                      was at less than its base health, at which point the new
-                      Polyp will override) but still puts the spell on
-                      cooldown.
+                      Polyps are indicated visually by an additional light blue
+                      health bar over the target, as well as the model of a
+                      Polyp hovering above the target.
+                    </li>
+                    <li>
+                      Polyps do not stack with each other, unless the level 25
+                      talent is taken. Casting a second Polyp on an ally has no
+                      effect (unless the Polyp's health was at less than its
+                      base health, at which point the new Polyp will override)
+                      but still puts the spell on cooldown. The level 25 talent
+                      prioritizes putting 1 Polyp per ally if there's more than
+                      one within range, but can put 2 Polyps on a single target
+                      if no other heroes (including yourself) are in range and
+                      have less total combined Polyp health.
+                    </li>
+                    <li>
+                      Polyp damage does not work on buildings, but the buff and
+                      damage are NOT expended if the host attacks a structure.
                     </li>
                     <li>
                       At level 1, Proteus can place up to 2 Polyps on allies
@@ -270,22 +289,13 @@
                       3 and 4 Polyp this increases to 3 max Polyps in an 8s
                       window, 4 max Polyps in a 13s window, and 5 max Polyps
                       in a 12s window respectively.
+                    </li>
                     <li>
                       With level 3 ultimate, Proteus can extend this window up
                       to 28s, although the Polyps lose their ability to regenerate
                       health upon reaching full capacity. With the level 25
                       Polyp regen talent and an Octarine core, the window
                       can reach up to 37.66s.
-                    </li>
-                    <li>
-                      Polyps are indicated visually by an additional light blue
-                      health bar over the target, as well as the model of a
-                      Polyp hovering above the target.
-                    </li>
-                    <li>
-                      Polyp damage does not work on buildings, though the buff
-                      and damage are expended anyway if the host attacks a
-                      structure.
                     </li>
                   </ul>
                 </div>
@@ -295,7 +305,7 @@
               <div class="col-md-3">
                 <img class="img-responsive" src="img/proteus_jet.png">
                 <div id="icons" class="row">
-                  <p><img src="img/cd.png"> 6/5/4/3s</p>
+                  <p><img src="img/cd.png"> 6/5/4/3s (<img src="img/talent.png"></img> 0)</p>
                   <p><img src="img/mana.png"> 20/30/40/50</p>
                 </div>
               </div><!--/.col-md-3-->
@@ -313,6 +323,8 @@
                   <p><b>Cast Time</b>: instant</p>
                   <p><b>Jet Distance</b>: 300/400/500/600</p>
                   <p><b>Jet Push Speed</b>: 1500</p>
+                  <p><b>Number of Charges</b>: 0 (<img src="img/talent.png"></img> 3)</p>
+                  <p><b>Charge Replenish Time</b>: 0 (<img src="img/talent.png"></img> 6/5/4/3s)</p>
                 </div>
                 <div class="row notes">
                   <h5>Notes:</h5>
@@ -371,7 +383,20 @@
             <h3 id="cl1b" type="button" data-toggle="collapse"
                 data-target="#cl1">↓ Changelog ↓</h3>
             <div id="cl1" class="row padded collapse">
-              <p id="AAA">v2.7 (May 2017):</p>
+              <p id="AAA">v2.8 (Nov 2017):</p>
+              <ul>
+                <li>
+                  Add double Polyp/+1 Polyp per Hero talent at level 25, move
+                  +50 Polyp Regen talent to level 20, replacing the mana regen talent
+                </li>
+                <li>
+                  Heavily rework Poylp notes and mechanics, add talent values to skills
+                </li>
+                <li>
+                  Increase level 10 Movement Speed talent from +20 to +25
+                </li>
+              </ul>
+              <p>v2.7 (May 2017):</p>
               <ul>
                 <li>
                   Increase Strength gain by 0.3, from 2.5 to 2.8 (7.06 change to all heroes)
@@ -689,10 +714,10 @@
               </div><!--/.col-md-3-->
               <div class="col-md-9">
                 <div class="row text-left">
-                  <p><b>Level 10</b>: +8 Intelligence <b>or</b> +12% Evasion</p>
-                  <p><b>Level 15</b>: +8% Spell Amplification <b>or</b> +8 All Stats</p>
-                  <p><b>Level 20</b>: +50/25 Sidewinder Damage per Hero/Unit <b>or</b> +50 Damage</p>
-                  <p><b>Level 25</b>: +20% Cooldown Reduction <b>or</b> +36 Eruption DPS</p>
+                  <p><b>Level 10</b>: +7 All Stats <b>or</b> +12% Evasion</p>
+                  <p><b>Level 15</b>: +8% Spell Amplification <b>or</b> +300 Cliff Jump speed from Eruption</p>
+                  <p><b>Level 20</b>: +50/25 Sidewinder Damage per Hero/Unit <b>or</b> +20% Cooldown Reduction</p>
+                  <p><b>Level 25</b>: -8s Eruption Cooldown <b>or</b> +36 Eruption DPS</p>
                 </div>
               </div><!--/.col-md-9-->
             </div><!--/.row-->
@@ -873,6 +898,17 @@
               <p id="bBB">v2.2 (May 2017):</p>
               <ul>
                 <li>
+                  Move level 25 20% Cooldown Reduction talent to level 20, add -8s
+                  Eruption Cooldown talent at level 25
+                </li>
+                <li>
+                  Swap level 15 +8 All Stats talent to replace level 10 Intelligence talent,
+                  add +300 Cliff Jump speed for 1s after Eruption talent at level 15
+                </li>
+              </ul>
+              <p>v2.2 (May 2017):</p>
+              <ul>
+                <li>
                   Increase Strength gain by 0.3, from 1.5 to 1.8 (7.06 change to all heroes)
                 </li>
               </ul>
@@ -1031,9 +1067,9 @@
               </div><!--/.col-md-3-->
               <div class="col-md-9">
                 <div class="row text-left">
-                  <p><b>Level 10</b>: +8 Strength <b>or</b> +20% Experience Gain</p>
-                  <p><b>Level 15</b>: +25 Attack Speed <b>or</b> +12 Health Regen</p>
-                  <p><b>Level 20</b>: +15% Cooldown Reduction <b>or</b> +25 Intelligence</p>
+                  <p><b>Level 10</b>: +10 Strength <b>or</b> +200 Hydroplane Speed on Water</p>
+                  <p><b>Level 15</b>: +75 Hydroplane Damage <b>or</b> +35 Attack Speed</p>
+                  <p><b>Level 20</b>: +15% Cooldown Reduction <b>or</b> +0.5s Harpoon Duration</p>
                   <p><b>Level 25</b>: +9s Water Sprite Trail Duration <b>or</b> +25% Spell Lifesteal</p>
                 </div>
               </div><!--/.col-md-9-->
@@ -1064,7 +1100,7 @@
                   <p><b>Cast Range</b>: 900</p>
                   <p><b>Sprite Duration</b>: 9s</p>
                   <p><b>Sprite Vision</b>: 100/200/300/400</p>
-                  <p><b>Trail Duration</b>: 3/4/5/6s</p>
+                  <p><b>Trail Duration</b>: 3/4/5/6s (<img src="img/talent.png"></img>12/13/14/15s)</p>
                   <p><b>Trail Width</b>: 250</p>
                   <p><b>Sprite Throw Duration</b>: 0.3s</p>
                 </div>
@@ -1091,48 +1127,39 @@
             </div><!--/.row-->
             <div id="ccC" class="row padded">
               <div class="col-md-3">
-                <img class="img-responsive" src="img/merinth_manawave.png">
-                <div id="icons" class="row">
-                  <p><img src="img/cd.png"> 20/16/12/8s</p>
-                  <p><img src="img/mana.png"> 135/180/225/270<br>(<img src="img/aghs-upgrade.png"></img> 90/120/150/180)</p>
-                </div>
+                <img class="img-responsive" src="img/merinth_hydroplane.png">
+                  <p><img src="img/cd.png"> 24/21/18/15s</p>
+                  <p><img src="img/mana.png"> 80/100/120/140</p>
               </div><!--/.col-md-3-->
               <div class="col-md-9">
                 <div class="row">
-                  <h4><b>W: MANA WAVE</b> no target, magical</h4>
+                  <h4><b>W: HYDROPLANE</b> no target, magical</h4>
                   <p class="ability">
-                    Releases a slow charged wave that restores allied mana
-                    and washes away enemy mana, dealing magic damage equal to
-                    the mana burned. The wave follows Merinth as he moves,
-                    affecting units who come within range while always giving
-                    mana to Merinth himself.
+                  Temporarily causes the Merinth Tracker and his summoned units
+                  to vibrate at the perfect frequency to glide across water,
+                  granting uncapped movement speed and an increased base speed
+                  across water, as in the river, or over the water sprite's trail.
+                  The water sprite also gains this movement speed, plus Merinth
+                  and his sprite both gain the ability to deal magic damage to
+                  enemy units they touch. This damage is doubled in the river.
                   </p>
-                  <p><b>Cast Time</b>: instant</p>
-                  <p><b>Wave Radius</b>: 600/700/800/900</p>
-                  <p><b>Wave Speed</b>: 300</p>
-                  <p><b>Mana Restore</b>: 90/120/150/180</p>
-                  <p><b>Mana Burn</b>: 90/120/150/180 (<img src="img/aghs-upgrade.png"></img> 135/180/225/270)</p>
-                  <h5><b><img src="img/aghs-upgrade.png"></img> Aghanim's Upgrade:</b></h5>
-                  <p class="ability">
-                    Mana Wave costs 33% less mana (90/120/150/180) and burns 50%
-                    more mana from enemies (135/180/225/270).
-                  </p>
+                  <p><b>Hydroplane Duration</b>: 6/7/8/9s</p>
+                  <p><b>Water Movement Speed</b>: 550/600/650/700 (<img src="img/talent.png"></img>750/800/850/900)</p>
+                  <p><b>Land Bonus Speed</b>: +50/100/150/200</p>
+                  <p><b>Sprite/Hero Touch Damage</b>: 75/125/175/225 (150/250/350/450 in the river, <img src="img/talent.png"></img>150/200/250/300 base or 300/400/500/600 in river)</p>
+                  <p><b>Damage Radius</b>: 200</p>
                 </div>
                 <div class="row notes">
                   <h5>Notes:</h5>
                   <ul>
                     <li>
-                      Mana Wave always has a net manacost of 45/60/75/90 (0
-                      with Aghanim's), but may only be cast when Merinth has
-                      the full amount of mana available.
+                      MAY go above the listed movement speed while active,
+                      but benefits from any movement speed bonuses and is
+                      affected by slows as normal.
                     </li>
                     <li>
-                      The wave expands at a speed of 300 units per second to its
-                      max radius, then remains at its full radius for 0.33s before
-                      receding. The total effect duration is 2.33/2.66/3.0/3.33s.
-                      May affect each target once while they are in the area, so
-                      allies with full mana or enemies with no mana will be effected
-                      if they're in the wave when their status changes.
+                      The water sprite OR merinth himself may only damage each
+                      enemy once per cast.
                     </li>
                   </ul>
                 </div>
@@ -1158,25 +1185,28 @@
                   <p><b>Cast Time</b>: instant</p>
                   <p><b>Range</b>: 350</p>
                   <p><b>Buff Duration</b>: 5/7/9/11s</p>
-                  <p><b>Stun/Bonus Gold Duration</b>: 1.75/2/2.25/2.5s</p>
+                  <p><b>Stun/Bonus Gold Duration</b>: 1/1.25/1.5/1.75s (<img src="img/talent.png"></img>1.5/1.75/2/2.25s)</p>
                   <p><b>Bonus Gold</b>: 40/60/80/100%</p>
                 </div>
                 <div class="row notes">
                   <h5>Notes:</h5>
                   <ul>
                     <li>
-                      Only Merinth can benefit from the bonus gold. Applies
-                      fully to all other bonus gold including kill streaks.
-                    </li>
-                    <li>
-                      Even if the stun is removed, the bonus gold debuff
-                      on enemies is not dispellable.
-                    </li>
-                    <li>
                       Merinth thrusts his spear forward with a gush of water,
                       granting his Harpoon attack an extended attack range.
                       While primed to use Harpoon Merinth goes from wielding
                       his spear under-hand to over-hand.
+                    </li>
+                    <li>
+                      Only Merinth can benefit from the bonus gold. Applies
+                      fully to all other bonus gold including kill streaks.
+                    </li>
+                    <li>
+                      The Harpoon attack has true strike.
+                    </li>
+                    <li>
+                      Even if the stun is removed, the bonus gold debuff
+                      on enemies is not dispellable.
                     </li>
                   </ul>
                 </div>
@@ -1184,33 +1214,52 @@
             </div><!--/.row-->
             <div class="row padded">
               <div class="col-md-3">
-                <img class="img-responsive" src="img/merinth_hydroplane.png">
+                <img class="img-responsive" src="img/merinth_manawave.png">
+                <div id="icons" class="row">
+                  <p><img src="img/cd.png"> 20/16/12s</p>
+                  <p><img src="img/mana.png"> 240/360/480<br>(<img src="img/aghs-upgrade.png"></img> 160/240/320)</p>
+                </div>
               </div><!--/.col-md-3-->
               <div class="col-md-9">
                 <div class="row">
-                  <h4><b>R: HYDROPLANE</b> ultimate, passive, magical</h4>
+                  <h4><b>R: MANA WAVE</b> no target, magical</h4>
                   <p class="ability">
-                    Move at extreme speeds over water, as in the map's river
-                    and over the water sprite's trail. The water sprite also
-                    gains this movement speed, as well as the ability to deal
-                    magic damage to enemy units it touches. This damage is
-                    doubled in the river.
+                    Releases a slow charged wave that restores allied mana
+                    and washes away enemy mana, dealing magic damage equal to
+                    the mana burned. The wave follows Merinth as he moves,
+                    affecting units who come within range while always giving
+                    mana to Merinth himself. Heroes hit by the wave also
+                    briefly gain +/-Manacost Reduction for allies/enemies.
                   </p>
-                  <p><b>Movement Speed</b>: 600/750/900</p>
-                  <p><b>Sprite Damage</b>: 150/225/300</p>
-                  <p><b>Sprite Damage Radius</b>: 130</p>
+                  <p><b>Cast Time</b>: instant</p>
+                  <p><b>Wave Radius</b>: 700/800/900</p>
+                  <p><b>Wave Speed</b>: 300</p>
+                  <p><b>Mana Restore</b>: 160/240/320</p>
+                  <p><b>Mana Burn</b>: 160/240/320 (<img src="img/aghs-upgrade.png"></img> 240/360/480)</p>
+                  <p><b>Burned Mana as Damage</b>: 100%</p>
+                  <p><b>Manacost Reduction</b>: +/-20/30/40%</p>
+                  <p><b>Manacost Reduction Duration</b>: 3s</p>
+                  <h5><b><img src="img/aghs-upgrade.png"></img> Aghanim's Upgrade:</b></h5>
+                  <p class="ability">
+                    Mana Wave costs 33% less mana (160/240/320) and burns 50%
+                    more mana from enemies (240/360/480).
+                  </p>
                 </div>
                 <div class="row notes">
                   <h5>Notes:</h5>
                   <ul>
                     <li>
-                      May not go above the listed movement speed while active,
-                      but benefits from any movement speed bonuses and is
-                      affected by slows as normal.
+                      Mana Wave always has a net manacost of 80/120/160 (0
+                      with Aghanim's), but may only be cast when Merinth has
+                      the full amount of mana available.
                     </li>
                     <li>
-                      The water sprite may only damage each enemy once per
-                      cast.
+                      The wave expands at a speed of 300 units per second to its
+                      max radius, then remains at its full radius for 0.33s before
+                      receding. The total effect duration is 2.66/3.0/3.33s.
+                      May affect each target once while they are in the area, so
+                      allies with full mana or enemies with no mana will be effected
+                      if they're in the wave when their status changes.
                     </li>
                   </ul>
                 </div>
@@ -1220,7 +1269,29 @@
           <div id="changelog" class="row">
             <h3 id="cl3b" type="button" data-toggle="collapse" data-target="#cl3">↓ Changelog ↓</h3>
             <div id="cl3" class="row padded collapse">
-              <p id="cCC">v1.4 (September 2017):</p>
+              <p id="cCC">v2.0 (November 2017):</p>
+              <ul>
+                <li>
+                  Switched Mana Wave from W to ultimate/R, and Hydroplane from R to W
+                </li>
+                <li>
+                  Mana Wave now gives +/-Manacost Reduction (20/30/40%) to
+                  allies/enemies for a short duration (3s)
+                </li>
+                <li>
+                  Hydroplane now gives a max movement speed of 550/600/650/700, with a
+                  talent available to give +200 at level 15
+                </li>
+                <li>
+                  Add +75 Hydroplane Damage talent at level 15 and +200 Hydroplane Speed at
+                  level 10
+                </li>
+                <li>
+                  Reduced Harpoon duration by 0.75s at all levels, but added +0.5s duration
+                  talent at level 20
+                </li>
+              </ul>
+              <p>v1.4 (September 2017):</p>
               <ul>
                 <li>
                   Hydroplane now gives water sprite the ability to deal damage to enemies
@@ -1426,10 +1497,10 @@
               </div><!--/.col-md-3-->
               <div class="col-md-9">
                 <div class="row text-left">
-                  <p><b>Level 10</b>: +10 Agility <b>or</b> +4 Mana Regen</p>
-                  <p><b>Level 15</b>: +15% Magic Resistance <b>or</b> +250 Mana</p>
-                  <p><b>Level 20</b>: +8% Spell Amplification <b>or</b> +50 Attack Speed</p>
-                  <p><b>Level 25</b>: -7s Broadside Cooldown <b>or</b> +300 Cast Range</p>
+                  <p><b>Level 10</b>: +10 Agility <b>or</b> +2 Mana Regen</p>
+                  <p><b>Level 15</b>: +20% Magic Resistance <b>or</b> +10% Spell Amplification</p>
+                  <p><b>Level 20</b>: No Manacosts in Prismatic Wings <b>or</b> +300 Cast Range</p>
+                  <p><b>Level 25</b>: 3 Broadside Charges <b>or</b> +40% Arc Boost Resistance</p>
                 </div>
               </div><!--/.col-md-9-->
             </div><!--/.row-->
@@ -1603,7 +1674,22 @@
           <div id="changelog" class="row">
             <h3 id="cl4b" type="button" data-toggle="collapse" data-target="#cl4">↓ Changelog ↓</h3>
             <div id="cl4" class="row padded collapse">
-              <p id="dDD">v1.4 (Sept 2017):</p>
+              <p id="dDD">v1.5 (Dec 2017):</p>
+              <ul>
+                <li>
+                  Move level 25 +300 Cast Range talent to level 20, level 20 +8% Spell Amplification talent to level 15 replacing +250 Mana, and replace level 25 -7s Broadside Cooldown with +3 Broadside Charges
+                </li>
+                <li>
+                  Add +40% Arc Boost Resistance talent at level 25, and No Manacosts in Prismatic Wings at level 20
+                </li>
+                <li>
+                  Increase level 15 talents from +15% to +20% Magic Resistance and +8% to +10% Spell Amplification
+                </li>
+                <li>
+                  Adjust level 10 Mana Regen talent from +4 to +2
+                </li>
+              </ul>
+              <p>v1.4 (Sept 2017):</p>
               <ul>
                 <li>
                   Change title from 'Warbird' to 'Thunderbird'
@@ -1707,7 +1793,7 @@
             <div class="row padded">
               <div class="col-md-6">
                 <p><b>Movement Speed</b>: 295</p>
-                <p><b>Turn Rate</b>: 0.4</p>
+                <p><b>Turn Rate</b>: 0.5</p>
                 <p><b>Attack Range</b>: 580</p>
                 <p><b>Projectile Speed</b>: 1200</p>
                 <p><b>Vision</b>: 1800/800</p>
@@ -1950,6 +2036,15 @@
           <div id="changelog" class="row">
             <h3 id="cl5b" type="button" data-toggle="collapse" data-target="#cl5">↓ Changelog ↓</h3>
             <div id="cl5" class="row padded collapse">
+              <p>v1.4 (Nov 2017):</p>
+              <ul>
+                <li>
+                  
+                </li>
+                <li>
+                  Update turn rate from 0.4 to 0.5 in accordance with 7.07 global changes
+                </li>
+              </ul>
               <p>v1.3 (May 2017):</p>
               <ul>
                 <li>
@@ -2135,7 +2230,7 @@
               <div class="col-md-9">
                 <div class="row text-left">
                   <p><b>Level 10</b>: +25 Attack Speed <b>or</b> +225 Health</p>
-                  <p><b>Level 15</b>: +8 Mana Regen <b>or</b> +240 Gaia's Blessing Heal</p>
+                  <p><b>Level 15</b>: +6 Mana Regen <b>or</b> +240 Gaia's Blessing Heal</p>
                   <p><b>Level 20</b>: +12 Armor <b>or</b> +70 Deathroot Base Damage</p>
                   <p><b>Level 25</b>: +100% Great Tree Damage/Health <b>or</b> +200 Attack Range</p>
                 </div>
@@ -2393,12 +2488,23 @@
                     Temporarily grants the target allied hero or unit a base
                     amount of healing per second plus healing equal to all
                     healing occurring around them, including that of enemies as
-                    well as all of Sylph's summoned units globally.
+                    well as all of Sylph's summoned units globally. Sylph's
+                    summoned units also gain healing for the duration.
                   </p>
                   <p><b>Cast Range</b>: global</p>
                   <p><b>Base Healing</b>: 30/60/90 hp/s</p>
                   <p><b>Heal Absorb Radius</b>: 900 (global for Sylph's controlled units)</p>
                   <p><b>Heal Absorb Duration</b>: 4/4.5/5s</p>
+                </div>
+                <div class="row notes">
+                  <h5>Notes:</h5>
+                  <ul>
+                    <li>
+                      Sylph's summoned units gain 100% of all lifesteal from her
+                      other summoned units while active, but this healing does not
+                      contribute to the total amount healed by Life Surge's target.
+                    </li>
+                  </ul>
                 </div>
               </div><!--/.col-md-9-->
             </div><!--/.row-->
@@ -2406,7 +2512,18 @@
           <div id="changelog" class="row">
             <h3 id="cl6b" type="button" data-toggle="collapse" data-target="#cl6">↓ Changelog ↓</h3>
             <div id="cl6" class="row padded collapse">
-              <p id="fFF">v1.4 (Sept 2017):</p>
+              <p id="fFF">v1.5 (Nov 2017):</p>
+              <ul>
+                <li>
+                  Increased Life Surge effects to now share lifesteal among
+                  Sylph's summoned units for the duration
+                </li>
+                <li>
+                  Reduced level 15 mana regen talent from +8 to +6, in line with
+                  global regen rework
+                </li>
+              </ul>
+              <p>v1.4 (Sept 2017):</p>
               <ul>
                 <li>
                   Reduced level 25 talent from 300 attack range to 200
@@ -2603,11 +2720,11 @@ $(document).ready(function()
     document.body.style.backgroundColor = '#752742';
   });
   $('#index').click(function() {
-    if ($(this).text() === '↓ Heroes ↓') {
-         $(this).text('↑ Heroes ↑');
+    if ($(this).text() === '↓ freelance\'s Heroes ↓') {
+         $(this).text('↑ freelance\'s Heroes ↑');
     }
     else {
-        $(this).text('↓ Heroes ↓');
+        $(this).text('↓ freelance\'s Heroes ↓');
     }
   });
   $('#l1b,#l2b,#l3b,#l4b,#l5b,#l6b').click(function() {

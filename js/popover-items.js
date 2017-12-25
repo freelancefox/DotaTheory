@@ -3,7 +3,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'left auto',
+      placement:'bottom auto',
       html: true,
       content: function() {
         return $('#content-echo').html();
@@ -13,7 +13,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'left auto',
+      placement:'right auto',
       html: true,
       content: function() {
         return $('#content-dlance').html();
@@ -129,14 +129,14 @@ jQuery(document).ready(function() {
         return $('#content-sange').html();
       }
   });
-   $('#lucen').popover({
+   $('#kaya').popover({
       toggle:'popover',
       container:'body',
       trigger:'hover click',
       placement:'left auto',
       html: true,
       content: function() {
-        return $('#content-lucen').html();
+        return $('#content-kaya').html();
       }
   });
    $('#yasha').popover({
@@ -193,7 +193,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'bottom',
+      placement:'left auto',
       html: true,
       content: function() {
         return $('#content-gjalla').html();
@@ -203,7 +203,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'bottom',
+      placement:'right auto',
       html: true,
       content: function() {
         return $('#content-spellblade').html();
@@ -213,7 +213,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'bottom auto',
+      placement:'right auto',
       html: true,
       content: function() {
         return $('#content-seraph').html();
@@ -249,24 +249,24 @@ jQuery(document).ready(function() {
         return $('#content-sny').html();
       }
   });
-   $('#snl').popover({
+   $('#snk').popover({
       toggle:'popover',
       container:'body',
       trigger:'hover click',
       placement:'left auto',
       html: true,
       content: function() {
-        return $('#content-snl').html();
+        return $('#content-snk').html();
       }
   });
-   $('#lny').popover({
+   $('#kny').popover({
       toggle:'popover',
       container:'body',
       trigger:'hover click',
       placement:'right auto',
       html: true,
       content: function() {
-        return $('#content-lny').html();
+        return $('#content-kny').html();
       }
   });
    $('#trio').popover({
@@ -373,7 +373,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'bottom',
+      placement:'top auto',
       html: true,
       content: function() {
         return $('#content-wyrmslayer').html();
@@ -409,41 +409,31 @@ jQuery(document).ready(function() {
         return $('#content-frost').html();
       }
   });
-   $('#pms').popover({
-      toggle:'popover',
-      container:'body',
-      trigger:'hover click',
-      placement:'bottom auto',
-      html: true,
-      content: function() {
-        return $('#content-pms').html();
-      }
-  });
    $('#bracer').popover({
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'right auto',
+      placement:'left auto',
       html: true,
       content: function() {
         return $('#content-bracer').html();
       }
   });
-   $('#null').popover({
+   $('#nulltal').popover({
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'right auto',
+      placement:'left auto',
       html: true,
       content: function() {
-        return $('#content-null').html();
+        return $('#content-nulltal').html();
       }
   });
    $('#wraith').popover({
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'right auto',
+      placement:'left auto',
       html: true,
       content: function() {
         return $('#content-wraith').html();
@@ -683,7 +673,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'right auto',
+      placement:'top auto',
       html: true,
       content: function() {
         return $('#content-ror').html();
@@ -693,7 +683,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'right auto',
+      placement:'top auto',
       html: true,
       content: function() {
         return $('#content-sage').html();
@@ -703,7 +693,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'right auto',
+      placement:'top auto',
       html: true,
       content: function() {
         return $('#content-roh').html();
@@ -713,7 +703,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'right auto',
+      placement:'top auto',
       html: true,
       content: function() {
         return $('#content-void').html();
@@ -723,7 +713,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'right auto',
+      placement:'top auto',
       html: true,
       content: function() {
         return $('#content-stick').html();
@@ -733,7 +723,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'right auto',
+      placement:'top auto',
       html: true,
       content: function() {
         return $('#content-stout').html();
@@ -763,7 +753,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'right auto',
+      placement:'top auto',
       html: true,
       content: function() {
         return $('#content-branch').html();
@@ -773,7 +763,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'right auto',
+      placement:'top auto',
       html: true,
       content: function() {
         return $('#content-circlet').html();
@@ -823,7 +813,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'right auto',
+      placement:'top auto',
       html: true,
       content: function() {
         return $('#content-ghost').html();
@@ -833,7 +823,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'right auto',
+      placement:'top auto',
       html: true,
       content: function() {
         return $('#content-cloak').html();
@@ -843,7 +833,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'right auto',
+      placement:'top auto',
       html: true,
       content: function() {
         return $('#content-rop').html();
@@ -853,7 +843,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'right auto',
+      placement:'top auto',
       html: true,
       content: function() {
         return $('#content-chainmail').html();
@@ -873,7 +863,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'right auto',
+      placement:'bottom auto',
       html: true,
       content: function() {
         return $('#content-aether').html();
@@ -883,7 +873,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'right auto',
+      placement:'top auto',
       html: true,
       content: function() {
         return $('#content-lace').html();
@@ -893,7 +883,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'right auto',
+      placement:'top auto',
       html: true,
       content: function() {
         return $('#content-boots').html();
@@ -907,16 +897,6 @@ jQuery(document).ready(function() {
       html: true,
       content: function() {
         return $('#content-wand').html();
-      }
-  });
-   $('#talon').popover({
-      toggle:'popover',
-      container:'body',
-      trigger:'hover click',
-      placement:'bottom auto',
-      html: true,
-      content: function() {
-        return $('#content-talon').html();
       }
   });
    $('#urn').popover({
@@ -1013,7 +993,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'right auto',
+      placement:'top auto',
       html: true,
       content: function() {
         return $('#content-headdress').html();
@@ -1173,7 +1153,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'left auto',
+      placement:'top auto',
       html: true,
       content: function() {
         return $('#content-qb').html();
@@ -1183,7 +1163,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'left auto',
+      placement:'top auto',
       html: true,
       content: function() {
         return $('#content-blight').html();
@@ -1193,7 +1173,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'left auto',
+      placement:'top auto',
       html: true,
       content: function() {
         return $('#content-oov').html();
@@ -1203,7 +1183,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'left auto',
+      placement:'top auto',
       html: true,
       content: function() {
         return $('#content-javelin').html();
@@ -1213,7 +1193,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'left auto',
+      placement:'top auto',
       html: true,
       content: function() {
         return $('#content-qstaff').html();
@@ -1223,7 +1203,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'left auto',
+      placement:'top auto',
       html: true,
       content: function() {
         return $('#content-hoiw').html();
@@ -1233,7 +1213,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'left auto',
+      placement:'top auto',
       html: true,
       content: function() {
         return $('#content-oblivion').html();
@@ -1243,7 +1223,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'left auto',
+      placement:'top auto',
       html: true,
       content: function() {
         return $('#content-morbid').html();
@@ -1253,7 +1233,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'left auto',
+      placement:'top auto',
       html: true,
       content: function() {
         return $('#content-boa').html();
@@ -1263,7 +1243,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'left auto',
+      placement:'top auto',
       html: true,
       content: function() {
         return $('#content-broad').html();
@@ -1273,7 +1253,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'left auto',
+      placement:'top auto',
       html: true,
       content: function() {
         return $('#content-clay').html();
@@ -1283,7 +1263,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'left auto',
+      placement:'top auto',
       html: true,
       content: function() {
         return $('#content-goh').html();
@@ -1293,7 +1273,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'left auto',
+      placement:'top auto',
       html: true,
       content: function() {
         return $('#content-shadowam').html();
@@ -1303,7 +1283,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'left auto',
+      placement:'top auto',
       html: true,
       content: function() {
         return $('#content-mithham').html();
@@ -1313,7 +1293,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'left auto',
+      placement:'top auto',
       html: true,
       content: function() {
         return $('#content-demon').html();
@@ -1323,7 +1303,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'left auto',
+      placement:'top auto',
       html: true,
       content: function() {
         return $('#content-relic').html();
@@ -1333,7 +1313,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'left auto',
+      placement:'top auto',
       html: true,
       content: function() {
         return $('#content-ultimateorb').html();
@@ -1513,7 +1493,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'left auto',
+      placement:'right auto',
       html: true,
       content: function() {
         return $('#content-necro').html();
@@ -1573,7 +1553,7 @@ jQuery(document).ready(function() {
       toggle:'popover',
       container:'body',
       trigger:'hover click',
-      placement:'left auto',
+      placement:'top auto',
       html: true,
       content: function() {
         return $('#content-hyper').html();
@@ -1629,6 +1609,216 @@ jQuery(document).ready(function() {
         return $('#content-vermilion').html();
       }
   });
+   $('#vessel').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'right auto',
+      html: true,
+      content: function() {
+        return $('#content-vessel').html();
+      }
+  });
+   $('#aeondisk').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'right auto',
+      html: true,
+      content: function() {
+        return $('#content-aeondisk').html();
+      }
+  });
+   $('#nullifier').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'right auto',
+      html: true,
+      content: function() {
+        return $('#content-nullifier').html();
+      }
+  });
+   $('#meteor').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'right auto',
+      html: true,
+      content: function() {
+        return $('#content-meteor').html();
+      }
+  });
+   $('#volt').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top auto',
+      html: true,
+      content: function() {
+        return $('#content-volt').html();
+      }
+  });
+   $('#seal').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top auto',
+      html: true,
+      content: function() {
+        return $('#content-seal').html();
+      }
+  });
+   $('#shieldbreaker').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top auto',
+      html: true,
+      content: function() {
+        return $('#content-shieldbreaker').html();
+      }
+  });
+   $('#cc').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'left auto',
+      html: true,
+      content: function() {
+        return $('#content-cc').html();
+      }
+  });
+   $('#fangs').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'left auto',
+      html: true,
+      content: function() {
+        return $('#content-fangs').html();
+      }
+  });
+   $('#lantern').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'right auto',
+      html: true,
+      content: function() {
+        return $('#content-lantern').html();
+      }
+  });
+   $('#pov').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'right auto',
+      html: true,
+      content: function() {
+        return $('#content-pov').html();
+      }
+  });
+   $('#lov').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'right auto',
+      html: true,
+      content: function() {
+        return $('#content-lov').html();
+      }
+  });
+   $('#bov').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'right auto',
+      html: true,
+      content: function() {
+        return $('#content-bov').html();
+      }
+  });
+   $('#sigil').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'right auto',
+      html: true,
+      content: function() {
+        return $('#content-sigil').html();
+      }
+  });
+   $('#chargers').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'left auto',
+      html: true,
+      content: function() {
+        return $('#content-chargers').html();
+      }
+  });
+   $('#valiance').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'right auto',
+      html: true,
+      content: function() {
+        return $('#content-valiance').html();
+      }
+  });
+   $('#infernalorb').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'right auto',
+      html: true,
+      content: function() {
+        return $('#content-infernalorb').html();
+      }
+  });
+   $('#aoa').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'right auto',
+      html: true,
+      content: function() {
+        return $('#content-aoa').html();
+      }
+  });
+   $('#swift').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'right auto',
+      html: true,
+      content: function() {
+        return $('#content-swift').html();
+      }
+  });
+   $('#sanguine').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'bottom auto',
+      html: true,
+      content: function() {
+        return $('#content-sanguine').html();
+      }
+  });
+   $('#prism').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'right auto',
+      html: true,
+      content: function() {
+        return $('#content-prism').html();
+      }
+  });
    $('#aegis').popover({
       toggle:'popover',
       container:'body',
@@ -1647,6 +1837,16 @@ jQuery(document).ready(function() {
       html: true,
       content: function() {
         return $('#content-cheese').html();
+      }
+  });
+   $('#shard').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'bottom auto',
+      html: true,
+      content: function() {
+        return $('#content-shard').html();
       }
   });
 });

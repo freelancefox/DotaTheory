@@ -71,36 +71,34 @@ function connectElements(svg, path, startElem, endElem) {
 
 function connectAll() {
     connectElements($("#svg"), $("#belt-sange"), $("#belt"), $("#sange"));
-    connectElements($("#svg"), $("#robe-lucen"), $("#robe"), $("#lucen"));
+    connectElements($("#svg"), $("#robe-kaya"), $("#robe"), $("#kaya"));
     connectElements($("#svg"), $("#band-yasha"), $("#band"), $("#yasha"));
     connectElements($("#svg"), $("#club-sange"), $("#club"), $("#sange"));
-    connectElements($("#svg"), $("#staff-lucen"), $("#staff"), $("#lucen"));
+    connectElements($("#svg"), $("#staff-kaya"), $("#staff"), $("#kaya"));
     connectElements($("#svg"), $("#blade-yasha"), $("#blade"), $("#yasha"));
-    connectElements($("#svg"), $("#gauntlets-woodsman"), $("#gauntlets"), $("#woodsman"));
     connectElements($("#svg"), $("#mantle-frost"), $("#mantle"), $("#frost"));
-    connectElements($("#svg"), $("#slippers-pms"), $("#slippers"), $("#pms"));
     connectElements($("#svg"), $("#sange-halberd"), $("#sange"), $("#halberd"));
-    connectElements($("#svg"), $("#sange-gjalla"), $("#sange"), $("#gjalla"));
+    connectElements($("#svg"), $("#sange-sanguine"), $("#sange"), $("#sanguine"));
     connectElements($("#svg"), $("#sange-sny"), $("#sange"), $("#sny"));
-    connectElements($("#svg"), $("#sange-snl"), $("#sange"), $("#snl"));
+    connectElements($("#svg"), $("#sange-snk"), $("#sange"), $("#snk"));
     connectElements($("#svg"), $("#sange-trio"), $("#sange"), $("#trio"));
-    connectElements($("#svg"), $("#lucen-spellblade"), $("#lucen"), $("#spellblade"));
-    connectElements($("#svg"), $("#lucen-seraph"), $("#lucen"), $("#seraph"));
-    connectElements($("#svg"), $("#lucen-snl"), $("#lucen"), $("#snl"));
-    connectElements($("#svg"), $("#lucen-lny"), $("#lucen"), $("#lny"));
-    connectElements($("#svg"), $("#lucen-trio"), $("#lucen"), $("#trio"));
+    connectElements($("#svg"), $("#kaya-spellblade"), $("#kaya"), $("#spellblade"));
+    connectElements($("#svg"), $("#kaya-seraph"), $("#kaya"), $("#seraph"));
+    connectElements($("#svg"), $("#kaya-snk"), $("#kaya"), $("#snk"));
+    connectElements($("#svg"), $("#kaya-kny"), $("#kaya"), $("#kny"));
+    connectElements($("#svg"), $("#kaya-trio"), $("#kaya"), $("#trio"));
     connectElements($("#svg"), $("#yasha-manta"), $("#yasha"), $("#manta"));
     connectElements($("#svg"), $("#yasha-hayabusa"), $("#yasha"), $("#hayabusa"));
     connectElements($("#svg"), $("#yasha-sny"), $("#yasha"), $("#sny"));
-    connectElements($("#svg"), $("#yasha-lny"), $("#yasha"), $("#lny"));
+    connectElements($("#svg"), $("#yasha-kny"), $("#yasha"), $("#kny"));
     connectElements($("#svg"), $("#yasha-trio"), $("#yasha"), $("#trio"));
     connectElements($("#svg"), $("#force-pike"), $("#force"), $("#pike"));
     connectElements($("#svg"), $("#dlance-pike"), $("#dlance"), $("#pike"));
     connectElements($("#svg"), $("#dlance-wyrmslayer"), $("#dlance"), $("#wyrmslayer"));
     connectElements($("#svg"), $("#echo-wyrmslayer"), $("#echo"), $("#wyrmslayer"));
     connectElements($("#svg"), $("#sny-trio"), $("#sny"), $("#trio"));
-    connectElements($("#svg"), $("#snl-trio"), $("#snl"), $("#trio"));
-    connectElements($("#svg"), $("#lny-trio"), $("#lny"), $("#trio"));
+    connectElements($("#svg"), $("#snk-trio"), $("#snk"), $("#trio"));
+    connectElements($("#svg"), $("#kny-trio"), $("#kny"), $("#trio"));
     connectElements($("#svg"), $("#reaver-heart"), $("#reaver"), $("#heart"));
     connectElements($("#svg"), $("#reaver-satanic"), $("#reaver"), $("#satanic"));
     connectElements($("#svg"), $("#reaver-pauldron"), $("#reaver"), $("#pauldron"));
@@ -120,34 +118,34 @@ function connectAll() {
     connectElements($("#svg"), $("#gauntlets-bracer"), $("#gauntlets"), $("#bracer"));
     connectElements($("#svg"), $("#bracer-drum"), $("#bracer"), $("#drum"));
     connectElements($("#svg"), $("#bracer-atos"), $("#bracer"), $("#atos"));
-    connectElements($("#svg"), $("#mantle-null"), $("#mantle"), $("#null"));
-    connectElements($("#svg"), $("#null-dagon"), $("#null"), $("#dagon"));
-    connectElements($("#svg"), $("#null-veil"), $("#null"), $("#veil"));
+    connectElements($("#svg"), $("#mantle-nulltal"), $("#mantle"), $("#nulltal"));
+    connectElements($("#svg"), $("#nulltal-dagon"), $("#nulltal"), $("#dagon"));
+    connectElements($("#svg"), $("#nulltal-veil"), $("#nulltal"), $("#veil"));
     connectElements($("#svg"), $("#slippers-wraith"), $("#slippers"), $("#wraith"));
+    connectElements($("#svg"), $("#wraith-pike"), $("#wraith"), $("#pike"));
     connectElements($("#svg"), $("#wraith-aquila"), $("#wraith"), $("#aquila"));
     connectElements($("#svg"), $("#wraith-squire"), $("#wraith"), $("#squire"));
-    connectElements($("#svg"), $("#mango-soulring"), $("#mango"), $("#soulring"));
+    connectElements($("#svg"), $("#mango-wand"), $("#mango"), $("#wand"));
     connectElements($("#svg"), $("#ror-soulring"), $("#ror"), $("#soulring"));
-    connectElements($("#svg"), $("#sage-soulring"), $("#sage"), $("#soulring"));
+    connectElements($("#svg"), $("#gauntlets-soulring"), $("#gauntlets"), $("#soulring"));
+    connectElements($("#svg"), $("#soulring-sanguine"), $("#soulring"), $("#sanguine"));
     connectElements($("#svg"), $("#irain-urn"), $("#irain"), $("#urn"));
     connectElements($("#svg"), $("#rop-urn"), $("#rop"), $("#urn"));
     connectElements($("#svg"), $("#circlet-urn"), $("#circlet"), $("#urn"));
+    connectElements($("#svg"), $("#urn-vessel"), $("#urn"), $("#vessel"));
     connectElements($("#svg"), $("#roh-perseverance"), $("#roh"), $("#perseverance"));
     connectElements($("#svg"), $("#void-perseverance"), $("#void"), $("#perseverance"));
     connectElements($("#svg"), $("#stick-wand"), $("#stick"), $("#wand"));
     connectElements($("#svg"), $("#branch-wand"), $("#branch"), $("#wand"));
-    connectElements($("#svg"), $("#circlet-wand"), $("#circlet"), $("#wand"));
-    connectElements($("#svg"), $("#rop-woodsman"), $("#rop"), $("#woodsman"));
-    connectElements($("#svg"), $("#branch-woodsman"), $("#branch"), $("#woodsman"));
+    connectElements($("#svg"), $("#circlet-woodsman"), $("#circlet"), $("#woodsman"));
+    connectElements($("#svg"), $("#tango-woodsman"), $("#tango"), $("#woodsman"));
     connectElements($("#svg"), $("#vit-soulbooster"), $("#vit"), $("#soulbooster"));
     connectElements($("#svg"), $("#energy-soulbooster"), $("#energy"), $("#soulbooster"));
     connectElements($("#svg"), $("#pb-soulbooster"), $("#pb"), $("#soulbooster"));
-    connectElements($("#svg"), $("#soulring-bloodstone"), $("#soulring"), $("#bloodstone"));
+    connectElements($("#svg"), $("#perseverance-bloodstone"), $("#perseverance"), $("#bloodstone"));
     connectElements($("#svg"), $("#soulbooster-bloodstone"), $("#soulbooster"), $("#bloodstone"));
     connectElements($("#svg"), $("#energy-aether"), $("#energy"), $("#aether"));
     connectElements($("#svg"), $("#void-aether"), $("#void"), $("#aether"));
-    connectElements($("#svg"), $("#rop-talon"), $("#rop"), $("#talon"));
-    connectElements($("#svg"), $("#qb-talon"), $("#qb"), $("#talon"));
     connectElements($("#svg"), $("#sage-moc"), $("#sage"), $("#moc"));
     connectElements($("#svg"), $("#chainmail-moc"), $("#chainmail"), $("#moc"));
     connectElements($("#svg"), $("#blight-moc"), $("#blight"), $("#moc"));
@@ -165,15 +163,20 @@ function connectAll() {
     connectElements($("#svg"), $("#boots-treads"), $("#boots"), $("#treads"));
     connectElements($("#svg"), $("#boots-phase"), $("#boots"), $("#phase"));
     connectElements($("#svg"), $("#boots-bots"), $("#boots"), $("#bots"));
+    connectElements($("#svg"), $("#boots-chargers"), $("#boots"), $("#chargers"));
     connectElements($("#svg"), $("#energy-arcane"), $("#energy"), $("#arcane"));
     connectElements($("#svg"), $("#ror-tranquil"), $("#ror"), $("#tranquil"));
     connectElements($("#svg"), $("#lace-tranquil"), $("#lace"), $("#tranquil"));
+    connectElements($("#svg"), $("#volt-chargers"), $("#volt"), $("#chargers"));
+    connectElements($("#svg"), $("#bov-chargers"), $("#bov"), $("#chargers"));
     connectElements($("#svg"), $("#belt-treads"), $("#belt"), $("#treads"));
     connectElements($("#svg"), $("#robe-treads"), $("#robe"), $("#treads"));
     connectElements($("#svg"), $("#band-treads"), $("#band"), $("#treads"));
     connectElements($("#svg"), $("#boa-phase"), $("#boa"), $("#phase"));
     connectElements($("#svg"), $("#branch-buckler"), $("#branch"), $("#buckler"));
     connectElements($("#svg"), $("#chainmail-buckler"), $("#chainmail"), $("#buckler"));
+    connectElements($("#svg"), $("#branch-lantern"), $("#branch"), $("#lantern"));
+    connectElements($("#svg"), $("#sage-lantern"), $("#sage"), $("#lantern"));
     connectElements($("#svg"), $("#branch-headdress"), $("#branch"), $("#headdress"));
     connectElements($("#svg"), $("#ror-headdress"), $("#ror"), $("#headdress"));
     connectElements($("#svg"), $("#cloak-glimmer"), $("#cloak"), $("#glimmer"));
@@ -206,9 +209,8 @@ function connectAll() {
     connectElements($("#svg"), $("#sage-drum"), $("#sage"), $("#drum"));
     connectElements($("#svg"), $("#hoiw-veil"), $("#hoiw"), $("#veil"));
     connectElements($("#svg"), $("#clay-squire"), $("#clay"), $("#squire"));
-    connectElements($("#svg"), $("#oov-frost"), $("#oov"), $("#frost"));
-    connectElements($("#svg"), $("#qb-frost"), $("#qb"), $("#frost"));
-    connectElements($("#svg"), $("#stout-pms"), $("#stout"), $("#pms"));
+    connectElements($("#svg"), $("#sage-frost"), $("#sage"), $("#frost"));
+    connectElements($("#svg"), $("#qb-woodsman"), $("#qb"), $("#woodsman"));
     connectElements($("#svg"), $("#ghost-gjalla"), $("#ghost"), $("#gjalla"));
     connectElements($("#svg"), $("#wand-gjalla"), $("#wand"), $("#gjalla"));
     connectElements($("#svg"), $("#aether-spellblade"), $("#aether"), $("#spellblade"));
@@ -216,11 +218,17 @@ function connectAll() {
     connectElements($("#svg"), $("#ultimateorb-manta"), $("#ultimateorb"), $("#manta"));
     connectElements($("#svg"), $("#lace-hayabusa"), $("#lace"), $("#hayabusa"));
     connectElements($("#svg"), $("#demon-hayabusa"), $("#demon"), $("#hayabusa"));
+    connectElements($("#svg"), $("#morbid-seal"), $("#morbid"), $("#seal"));
+    connectElements($("#svg"), $("#belt-seal"), $("#belt"), $("#seal"));
+    connectElements($("#svg"), $("#ror-seal"), $("#ror"), $("#seal"));
     connectElements($("#svg"), $("#qstaff-oblivion"), $("#qstaff"), $("#oblivion"));
     connectElements($("#svg"), $("#robe-oblivion"), $("#robe"), $("#oblivion"));
     connectElements($("#svg"), $("#sage-oblivion"), $("#sage"), $("#oblivion"));
+    connectElements($("#svg"), $("#javelin-shieldbreaker"), $("#javelin"), $("#shieldbreaker"));
+    connectElements($("#svg"), $("#band-shieldbreaker"), $("#band"), $("#shieldbreaker"));
+    connectElements($("#svg"), $("#oov-shieldbreaker"), $("#oov"), $("#shieldbreaker"));
     connectElements($("#svg"), $("#circlet-bracer"), $("#circlet"), $("#bracer"));
-    connectElements($("#svg"), $("#circlet-null"), $("#circlet"), $("#null"));
+    connectElements($("#svg"), $("#circlet-nulltal"), $("#circlet"), $("#nulltal"));
     connectElements($("#svg"), $("#circlet-wraith"), $("#circlet"), $("#wraith"));
     connectElements($("#svg"), $("#roh-force"), $("#roh"), $("#force"));
     connectElements($("#svg"), $("#oblivion-echo"), $("#oblivion"), $("#echo"));
@@ -228,6 +236,12 @@ function connectAll() {
     connectElements($("#svg"), $("#javelin-basher"), $("#javelin"), $("#basher"));
     connectElements($("#svg"), $("#belt-basher"), $("#belt"), $("#basher"));
     connectElements($("#svg"), $("#oblivion-orchid"), $("#oblivion"), $("#orchid"));
+    connectElements($("#svg"), $("#shieldbreaker-fangs"), $("#shieldbreaker"), $("#fangs"));
+    connectElements($("#svg"), $("#oblivion-fangs"), $("#oblivion"), $("#fangs"));
+    connectElements($("#svg"), $("#boa-fangs"), $("#boa"), $("#fangs"));
+    connectElements($("#svg"), $("#armlet-cc"), $("#armlet"), $("#cc"));
+    connectElements($("#svg"), $("#seal-cc"), $("#seal"), $("#cc"));
+    connectElements($("#svg"), $("#seal-gjalla"), $("#seal"), $("#gjalla"));
     connectElements($("#svg"), $("#chainmail-blademail"), $("#chainmail"), $("#blademail"));
     connectElements($("#svg"), $("#broad-blademail"), $("#broad"), $("#blademail"));
     connectElements($("#svg"), $("#robe-blademail"), $("#robe"), $("#blademail"));
@@ -238,7 +252,7 @@ function connectAll() {
     connectElements($("#svg"), $("#void-euls"), $("#void"), $("#euls"));
     connectElements($("#svg"), $("#staff-euls"), $("#staff"), $("#euls"));
     connectElements($("#svg"), $("#belt-necro"), $("#belt"), $("#necro"));
-    connectElements($("#svg"), $("#staff-necro"), $("#staff"), $("#necro"));
+    connectElements($("#svg"), $("#sage-necro"), $("#sage"), $("#necro"));
     connectElements($("#svg"), $("#blade-diffu"), $("#blade"), $("#diffu"));
     connectElements($("#svg"), $("#robe-diffu"), $("#robe"), $("#diffu"));
     connectElements($("#svg"), $("#club-aghs"), $("#club"), $("#aghs"));
@@ -247,9 +261,10 @@ function connectAll() {
     connectElements($("#svg"), $("#pb-aghs"), $("#pb"), $("#aghs"));
     connectElements($("#svg"), $("#vit-heart"), $("#vit"), $("#heart"));
     connectElements($("#svg"), $("#morbid-satanic"), $("#morbid"), $("#satanic"));
-    connectElements($("#svg"), $("#mithham-satanic"), $("#mithham"), $("#satanic"));
+    connectElements($("#svg"), $("#clay-satanic"), $("#clay"), $("#satanic"));
     connectElements($("#svg"), $("#hotd-pauldron"), $("#hotd"), $("#pauldron"));
-    connectElements($("#svg"), $("#talon-pauldron"), $("#talon"), $("#pauldron"));
+    connectElements($("#svg"), $("#chainmail-pauldron"), $("#chainmail"), $("#pauldron"));
+    connectElements($("#svg"), $("#qb-pauldron"), $("#qb"), $("#pauldron"));
     connectElements($("#svg"), $("#ultimateorb-sheep"), $("#ultimateorb"), $("#sheep"));
     connectElements($("#svg"), $("#void-sheep"), $("#void"), $("#sheep"));
     connectElements($("#svg"), $("#platemail-shiva"), $("#platemail"), $("#shiva"));
@@ -264,15 +279,16 @@ function connectAll() {
     connectElements($("#svg"), $("#clay-shadowb"), $("#clay"), $("#shadowb"));
     connectElements($("#svg"), $("#shadowam-shadowb"), $("#shadowam"), $("#shadowb"));
     connectElements($("#svg"), $("#goh-midas"), $("#goh"), $("#midas"));
-    connectElements($("#svg"), $("#oov-skadi"), $("#oov"), $("#skadi"));
+    connectElements($("#svg"), $("#pb-prism"), $("#pb"), $("#prism"));
+    connectElements($("#svg"), $("#hoiw-prism"), $("#hoiw"), $("#prism"));
+    connectElements($("#svg"), $("#stout-prism"), $("#stout"), $("#prism"));
     connectElements($("#svg"), $("#pb-skadi"), $("#pb"), $("#skadi"));
     connectElements($("#svg"), $("#ultimateorb-skadi"), $("#ultimateorb"), $("#skadi"));
     connectElements($("#svg"), $("#perseverance-linkens"), $("#perseverance"), $("#linkens"));
     connectElements($("#svg"), $("#ultimateorb-linkens"), $("#ultimateorb"), $("#linkens"));
     connectElements($("#svg"), $("#perseverance-bfury"), $("#perseverance"), $("#bfury"));
     connectElements($("#svg"), $("#qb-bfury"), $("#qb"), $("#bfury"));
-    connectElements($("#svg"), $("#broad-bfury"), $("#broad"), $("#bfury"));
-    connectElements($("#svg"), $("#clay-bfury"), $("#clay"), $("#bfury"));
+    connectElements($("#svg"), $("#demon-bfury"), $("#demon"), $("#bfury"));
     connectElements($("#svg"), $("#morbid-mom"), $("#morbid"), $("#mom"));
     connectElements($("#svg"), $("#qstaff-mom"), $("#qstaff"), $("#mom"));
     connectElements($("#svg"), $("#blight-deso"), $("#blight"), $("#deso"));
@@ -287,7 +303,7 @@ function connectAll() {
     connectElements($("#svg"), $("#demon-daedalus"), $("#demon"), $("#daedalus"));
     connectElements($("#svg"), $("#shadowb-silvedge"), $("#shadowb"), $("#silvedge"));
     connectElements($("#svg"), $("#ultimateorb-silvedge"), $("#ultimateorb"), $("#silvedge"));
-    connectElements($("#svg"), $("#demon-mkb"), $("#demon"), $("#mkb"));
+    connectElements($("#svg"), $("#hyper-mkb"), $("#hyper"), $("#mkb"));
     connectElements($("#svg"), $("#javelin-mkb"), $("#javelin"), $("#mkb"));
     connectElements($("#svg"), $("#relic-radiance"), $("#relic"), $("#radiance"));
     connectElements($("#svg"), $("#vanguard-ablade"), $("#vanguard"), $("#ablade"));
@@ -302,6 +318,27 @@ function connectAll() {
     connectElements($("#svg"), $("#reaver-vermilion"), $("#reaver"), $("#vermilion"));
     connectElements($("#svg"), $("#mystic-vermilion"), $("#mystic"), $("#vermilion"));
     connectElements($("#svg"), $("#eagle-vermilion"), $("#eagle"), $("#vermilion"));
+    connectElements($("#svg"), $("#lace-vessel"), $("#lace"), $("#vessel"));
+    connectElements($("#svg"), $("#vit-vessel"), $("#vit"), $("#vessel"));
+    connectElements($("#svg"), $("#vit-aeondisk"), $("#vit"), $("#aeondisk"));
+    connectElements($("#svg"), $("#energy-aeondisk"), $("#energy"), $("#aeondisk"));
+    connectElements($("#svg"), $("#staff-meteor"), $("#staff"), $("#meteor"));
+    connectElements($("#svg"), $("#club-meteor"), $("#club"), $("#meteor"));
+    connectElements($("#svg"), $("#ror-meteor"), $("#ror"), $("#meteor"));
+    connectElements($("#svg"), $("#sage-meteor"), $("#sage"), $("#meteor"));
+    connectElements($("#svg"), $("#relic-nullifier"), $("#relic"), $("#nullifier"));
+    connectElements($("#svg"), $("#hoiw-nullifier"), $("#hoiw"), $("#nullifier"));
+    connectElements($("#svg"), $("#bov-sigil"), $("#bov"), $("#sigil"));
+    connectElements($("#svg"), $("#vlads-sigil"), $("#vlads"), $("#sigil"));
+    connectElements($("#svg"), $("#pov-valiance"), $("#pov"), $("#valiance"));
+    connectElements($("#svg"), $("#lov-valiance"), $("#lov"), $("#valiance"));
+    connectElements($("#svg"), $("#lov-infernalorb"), $("#lov"), $("#infernalorb"));
+    connectElements($("#svg"), $("#lantern-infernalorb"), $("#lantern"), $("#infernalorb"));
+    connectElements($("#svg"), $("#ultimateorb-infernalorb"), $("#ultimateorb"), $("#infernalorb"));
+    connectElements($("#svg"), $("#aeondisk-aoa"), $("#aeondisk"), $("#aoa"));
+    connectElements($("#svg"), $("#pov-aoa"), $("#pov"), $("#aoa"));
+    connectElements($("#svg"), $("#slippers-swift"), $("#slippers"), $("#swift"));
+    connectElements($("#svg"), $("#lace-swift"), $("#lace"), $("#swift"));
 }
 
 function hideAll() {
@@ -328,21 +365,33 @@ $("#str,#strl").on("click", function() {
     $("#strp").toggle();
     $("#strl").toggle();
     $("#strlp").toggle();
-    $(".item-str").css('background-color','#cc3333');
+    $(".item-str").addClass('active0');
 });
 $("#str,#strl").hover(function() {
     $("#strl").css('border','4px solid #cc3333');
     $(".item-str").css('background-color','#cc3333');
   }, function() {
     $("#strl").css('border','none');
-    $(".item-str").css('background-color','#23242A');
+    $(".item-str:not(.active0):not(.active1):not(.active2):not(.active3):not(.active4):not(.active5):not(.active6):not(.active7):not(.active8):not(.active9):not(.activeA):not(.activeB)").css('background-color','#23242A');
+    $(".item-str.active0").css('background-color','#cc3333');
+    $(".item-str.active1").css('background-color','#0099cc');
+    $(".item-str.active2").css('background-color','#339966');
+    $(".item-str.active3").css('background-color','#663399');
+    $(".item-str.active4").css('background-color','#993399');
+    $(".item-str.active5").css('background-color','#cccc33');
+    $(".item-str.active6").css('background-color','#0066cc');
+    $(".item-str.active7").css('background-color','#33cccc');
+    $(".item-str.active8").css('background-color','#999999');
+    $(".item-str.active9").css('background-color','#993300');
+    $(".item-str.activeA").css('background-color','#99cc66');
+    $(".item-str.activeB").css('background-color','#cc6600');
 });
 $("#strp,#strlp").on("click", function() {
     $("#strp").toggle();
     $("#str").toggle();
     $("#strlp").toggle();
     $("#strl").toggle();
-    $(".item-str").css('background-color','#23242A');
+    $(".item-str").removeClass('active0');
 });
 $("#strp,#strlp").hover(function() {
     $(".item-str").css('background-color','#cc3333');
@@ -353,21 +402,33 @@ $("#int,#intl").on("click", function() {
     $("#intp").toggle();
     $("#intl").toggle();
     $("#intlp").toggle();
-    $(".item-int").css('background-color','#0099cc');
+    $(".item-int").addClass('active1');
 });
 $("#int,#intl").hover(function() {
     $("#intl").css('border','4px solid #0099cc');
     $(".item-int").css('background-color','#0099cc');
   }, function() {
     $("#intl").css('border','none');
-    $(".item-int").css('background-color','#23242A');
+    $(".item-int:not(.active0):not(.active1):not(.active2):not(.active3):not(.active4):not(.active5):not(.active6):not(.active7):not(.active8):not(.active9):not(.activeA):not(.activeB)").css('background-color','#23242A');
+    $(".item-int.active0").css('background-color','#cc3333');
+    $(".item-int.active1").css('background-color','#0099cc');
+    $(".item-int.active2").css('background-color','#339966');
+    $(".item-int.active3").css('background-color','#663399');
+    $(".item-int.active4").css('background-color','#993399');
+    $(".item-int.active5").css('background-color','#cccc33');
+    $(".item-int.active6").css('background-color','#0066cc');
+    $(".item-int.active7").css('background-color','#33cccc');
+    $(".item-int.active8").css('background-color','#999999');
+    $(".item-int.active9").css('background-color','#993300');
+    $(".item-int.activeA").css('background-color','#99cc66');
+    $(".item-int.activeB").css('background-color','#cc6600');
 });
 $("#intp,#intlp").on("click", function() {
     $("#intp").toggle();
     $("#int").toggle();
     $("#intlp").toggle();
     $("#intl").toggle();
-    $(".item-int").css('background-color','#23242A');
+    $(".item-int").removeClass('active1');
 });
 $("#intp,#intlp").hover(function() {
     $(".item-int").css('background-color','#0099cc');
@@ -378,21 +439,33 @@ $("#agi,#agil").on("click", function() {
     $("#agip").toggle();
     $("#agil").toggle();
     $("#agilp").toggle();
-    $(".item-agi").css('background-color','#339966');
+    $(".item-agi").addClass('active2');
 });
 $("#agi,#agil").hover(function() {
     $("#agil").css('border','4px solid #339966');
     $(".item-agi").css('background-color','#339966');
   }, function() {
     $("#agil").css('border','none');
-    $(".item-agi").css('background-color','#23242A');
+    $(".item-agi:not(.active0):not(.active1):not(.active2):not(.active3):not(.active4):not(.active5):not(.active6):not(.active7):not(.active8):not(.active9):not(.activeA):not(.activeB)").css('background-color','#23242A');
+    $(".item-agi.active0").css('background-color','#cc3333');
+    $(".item-agi.active1").css('background-color','#0099cc');
+    $(".item-agi.active2").css('background-color','#339966');
+    $(".item-agi.active3").css('background-color','#663399');
+    $(".item-agi.active4").css('background-color','#993399');
+    $(".item-agi.active5").css('background-color','#cccc33');
+    $(".item-agi.active6").css('background-color','#0066cc');
+    $(".item-agi.active7").css('background-color','#33cccc');
+    $(".item-agi.active8").css('background-color','#999999');
+    $(".item-agi.active9").css('background-color','#993300');
+    $(".item-agi.activeA").css('background-color','#99cc66');
+    $(".item-agi.activeB").css('background-color','#cc6600');
 });
 $("#agip,#agilp").on("click", function() {
     $("#agip").toggle();
     $("#agi").toggle();
     $("#agilp").toggle();
     $("#agil").toggle();
-    $(".item-agi").css('background-color','#23242A');
+    $(".item-agi").removeClass('active2');
 });
 $("#agip,#agilp").hover(function() {
     $(".item-agi").css('background-color','#339966');
@@ -403,21 +476,33 @@ $("#stat,#statl").on("click", function() {
     $("#statp").toggle();
     $("#statl").toggle();
     $("#statlp").toggle();
-    $(".item-stat").css('background-color','#663399');
+    $(".item-stat").addClass('active3');
 });
 $("#stat,#statl").hover(function() {
     $("#statl").css('border','4px solid #663399');
     $(".item-stat").css('background-color','#663399');
   }, function() {
     $("#statl").css('border','none');
-    $(".item-stat").css('background-color','#23242A');
+    $(".item-stat:not(.active0):not(.active1):not(.active2):not(.active3):not(.active4):not(.active5):not(.active6):not(.active7):not(.active8):not(.active9):not(.activeA):not(.activeB)").css('background-color','#23242A');
+    $(".item-stat.active0").css('background-color','#cc3333');
+    $(".item-stat.active1").css('background-color','#0099cc');
+    $(".item-stat.active2").css('background-color','#339966');
+    $(".item-stat.active3").css('background-color','#663399');
+    $(".item-stat.active4").css('background-color','#993399');
+    $(".item-stat.active5").css('background-color','#cccc33');
+    $(".item-stat.active6").css('background-color','#0066cc');
+    $(".item-stat.active7").css('background-color','#33cccc');
+    $(".item-stat.active8").css('background-color','#999999');
+    $(".item-stat.active9").css('background-color','#993300');
+    $(".item-stat.activeA").css('background-color','#99cc66');
+    $(".item-stat.activeB").css('background-color','#cc6600');
 });
 $("#statp,#statlp").on("click", function() {
     $("#statp").toggle();
     $("#stat").toggle();
     $("#statlp").toggle();
     $("#statl").toggle();
-    $(".item-stat").css('background-color','#23242A');
+    $(".item-stat").removeClass('active3');
 });
 $("#statp,#statlp").hover(function() {
     $(".item-stat").css('background-color','#663399');
@@ -428,21 +513,33 @@ $("#regen,#regenl").on("click", function() {
     $("#regenp").toggle();
     $("#regenl").toggle();
     $("#regenlp").toggle();
-    $(".item-regen").css('background-color','#993399');
+    $(".item-regen").addClass('active4');
 });
 $("#regen,#regenl").hover(function() {
     $("#regenl").css('border','4px solid #993399');
     $(".item-regen").css('background-color','#993399');
   }, function() {
     $("#regenl").css('border','none');
-    $(".item-regen").css('background-color','#23242A');
+    $(".item-regen:not(.active0):not(.active1):not(.active2):not(.active3):not(.active4):not(.active5):not(.active6):not(.active7):not(.active8):not(.active9):not(.activeA):not(.activeB)").css('background-color','#23242A');
+    $(".item-regen.active0").css('background-color','#cc3333');
+    $(".item-regen.active1").css('background-color','#0099cc');
+    $(".item-regen.active2").css('background-color','#339966');
+    $(".item-regen.active3").css('background-color','#663399');
+    $(".item-regen.active4").css('background-color','#993399');
+    $(".item-regen.active5").css('background-color','#cccc33');
+    $(".item-regen.active6").css('background-color','#0066cc');
+    $(".item-regen.active7").css('background-color','#33cccc');
+    $(".item-regen.active8").css('background-color','#999999');
+    $(".item-regen.active9").css('background-color','#993300');
+    $(".item-regen.activeA").css('background-color','#99cc66');
+    $(".item-regen.activeB").css('background-color','#cc6600');
 });
 $("#regenp,#regenlp").on("click", function() {
     $("#regenp").toggle();
     $("#regen").toggle();
     $("#regenlp").toggle();
     $("#regenl").toggle();
-    $(".item-regen").css('background-color','#23242A');
+    $(".item-regen").removeClass('active4');
 });
 $("#regenp,#regenlp").hover(function() {
     $(".item-regen").css('background-color','#993399');
@@ -453,21 +550,33 @@ $("#cons,#consl").on("click", function() {
     $("#consp").toggle();
     $("#consl").toggle();
     $("#conslp").toggle();
-    $(".item-cons").css('background-color','#cccc33');
+    $(".item-cons").addClass('active5');
 });
 $("#cons,#consl").hover(function() {
     $("#consl").css('border','4px solid #cccc33');
     $(".item-cons").css('background-color','#cccc33');
   }, function() {
     $("#consl").css('border','none');
-    $(".item-cons").css('background-color','#23242A');
+    $(".item-cons:not(.active0):not(.active1):not(.active2):not(.active3):not(.active4):not(.active5):not(.active6):not(.active7):not(.active8):not(.active9):not(.activeA):not(.activeB)").css('background-color','#23242A');
+    $(".item-cons.active0").css('background-color','#cc3333');
+    $(".item-cons.active1").css('background-color','#0099cc');
+    $(".item-cons.active2").css('background-color','#339966');
+    $(".item-cons.active3").css('background-color','#663399');
+    $(".item-cons.active4").css('background-color','#993399');
+    $(".item-cons.active5").css('background-color','#cccc33');
+    $(".item-cons.active6").css('background-color','#0066cc');
+    $(".item-cons.active7").css('background-color','#33cccc');
+    $(".item-cons.active8").css('background-color','#999999');
+    $(".item-cons.active9").css('background-color','#993300');
+    $(".item-cons.activeA").css('background-color','#99cc66');
+    $(".item-cons.activeB").css('background-color','#cc6600');
 });
 $("#consp,#conslp").on("click", function() {
     $("#consp").toggle();
     $("#cons").toggle();
     $("#conslp").toggle();
     $("#consl").toggle();
-    $(".item-cons").css('background-color','#23242A');
+    $(".item-cons").removeClass('active5');
 });
 $("#consp,#conslp").hover(function() {
     $(".item-cons").css('background-color','#cccc33');
@@ -478,7 +587,7 @@ $("#mobi,#mobil").on("click", function() {
     $("#mobip").toggle();
     $("#mobil").toggle();
     $("#mobilp").toggle();
-    $(".item-mobi").css('background-color','#0066cc');
+    $(".item-mobi").addClass('active6');
 });
 $("#mobi,#mobil").hover(function() {
     $("#mobil").css('border','4px solid #0066cc');
@@ -486,13 +595,26 @@ $("#mobi,#mobil").hover(function() {
   }, function() {
     $("#mobil").css('border','none');
     $(".item-mobi").css('background-color','#23242A');
+    $(".item-mobi:not(.active0):not(.active1):not(.active2):not(.active3):not(.active4):not(.active5):not(.active6):not(.active7):not(.active8):not(.active9):not(.activeA):not(.activeB)").css('background-color','#23242A');
+    $(".item-mobi.active0").css('background-color','#cc3333');
+    $(".item-mobi.active1").css('background-color','#0099cc');
+    $(".item-mobi.active2").css('background-color','#339966');
+    $(".item-mobi.active3").css('background-color','#663399');
+    $(".item-mobi.active4").css('background-color','#993399');
+    $(".item-mobi.active5").css('background-color','#cccc33');
+    $(".item-mobi.active6").css('background-color','#0066cc');
+    $(".item-mobi.active7").css('background-color','#33cccc');
+    $(".item-mobi.active8").css('background-color','#999999');
+    $(".item-mobi.active9").css('background-color','#993300');
+    $(".item-mobi.activeA").css('background-color','#99cc66');
+    $(".item-mobi.activeB").css('background-color','#cc6600');
 });
 $("#mobip,#mobilp").on("click", function() {
     $("#mobip").toggle();
     $("#mobi").toggle();
     $("#mobilp").toggle();
     $("#mobil").toggle();
-    $(".item-mobi").css('background-color','#23242A');
+    $(".item-mobi").removeClass('active6');
 });
 $("#mobip,#mobilp").hover(function() {
     $(".item-mobi").css('background-color','#0066cc');
@@ -503,7 +625,7 @@ $("#dam,#daml").on("click", function() {
     $("#damp").toggle();
     $("#daml").toggle();
     $("#damlp").toggle();
-    $(".item-dam").css('background-color','#33cccc');
+    $(".item-dam").addClass('active7');
 });
 $("#dam,#daml").hover(function() {
     $("#daml").css('border','4px solid #33cccc');
@@ -511,13 +633,26 @@ $("#dam,#daml").hover(function() {
   }, function() {
     $("#daml").css('border','none');
     $(".item-dam").css('background-color','#23242A');
+    $(".item-dam:not(.active0):not(.active1):not(.active2):not(.active3):not(.active4):not(.active5):not(.active6):not(.active7):not(.active8):not(.active9):not(.activeA):not(.activeB)").css('background-color','#23242A');
+    $(".item-dam.active0").css('background-color','#cc3333');
+    $(".item-dam.active1").css('background-color','#0099cc');
+    $(".item-dam.active2").css('background-color','#339966');
+    $(".item-dam.active3").css('background-color','#663399');
+    $(".item-dam.active4").css('background-color','#993399');
+    $(".item-dam.active5").css('background-color','#cccc33');
+    $(".item-dam.active6").css('background-color','#0066cc');
+    $(".item-dam.active7").css('background-color','#33cccc');
+    $(".item-dam.active8").css('background-color','#999999');
+    $(".item-dam.active9").css('background-color','#993300');
+    $(".item-dam.activeA").css('background-color','#99cc66');
+    $(".item-dam.activeB").css('background-color','#cc6600');
 });
 $("#damp,#damlp").on("click", function() {
     $("#damp").toggle();
     $("#dam").toggle();
     $("#damlp").toggle();
     $("#daml").toggle();
-    $(".item-dam").css('background-color','#23242A');
+    $(".item-dam").removeClass('active7');
 });
 $("#damp,#damlp").hover(function() {
     $(".item-dam").css('background-color','#33cccc');
@@ -528,7 +663,7 @@ $("#def,#defl").on("click", function() {
     $("#defp").toggle();
     $("#defl").toggle();
     $("#deflp").toggle();
-    $(".item-def").css('background-color','#999999');
+    $(".item-def").addClass('active8');
 });
 $("#def,#defl").hover(function() {
     $("#defl").css('border','4px solid #999999');
@@ -536,13 +671,26 @@ $("#def,#defl").hover(function() {
   }, function() {
     $("#defl").css('border','none');
     $(".item-def").css('background-color','#23242A');
+    $(".item-def:not(.active0):not(.active1):not(.active2):not(.active3):not(.active4):not(.active5):not(.active6):not(.active7):not(.active8):not(.active9):not(.activeA):not(.activeB)").css('background-color','#23242A');
+    $(".item-def.active0").css('background-color','#cc3333');
+    $(".item-def.active1").css('background-color','#0099cc');
+    $(".item-def.active2").css('background-color','#339966');
+    $(".item-def.active3").css('background-color','#663399');
+    $(".item-def.active4").css('background-color','#993399');
+    $(".item-def.active5").css('background-color','#cccc33');
+    $(".item-def.active6").css('background-color','#0066cc');
+    $(".item-def.active7").css('background-color','#33cccc');
+    $(".item-def.active8").css('background-color','#999999');
+    $(".item-def.active9").css('background-color','#993300');
+    $(".item-def.activeA").css('background-color','#99cc66');
+    $(".item-def.activeB").css('background-color','#cc6600');
 });
 $("#defp,#deflp").on("click", function() {
     $("#defp").toggle();
     $("#def").toggle();
     $("#deflp").toggle();
     $("#defl").toggle();
-    $(".item-def").css('background-color','#23242A');
+    $(".item-def").removeClass('active8');
 });
 $("#defp,#deflp").hover(function() {
     $(".item-def").css('background-color','#999999');
@@ -553,7 +701,7 @@ $("#util,#utill").on("click", function() {
     $("#utilp").toggle();
     $("#utill").toggle();
     $("#utillp").toggle();
-    $(".item-util").css('background-color','#993300');
+    $(".item-util").addClass('active9');
 });
 $("#util,#utill").hover(function() {
     $("#utill").css('border','4px solid #993300');
@@ -561,13 +709,26 @@ $("#util,#utill").hover(function() {
   }, function() {
     $("#utill").css('border','none');
     $(".item-util").css('background-color','#23242A');
+    $(".item-util:not(.active0):not(.active1):not(.active2):not(.active3):not(.active4):not(.active5):not(.active6):not(.active7):not(.active8):not(.active9):not(.activeA):not(.activeB)").css('background-color','#23242A');
+    $(".item-util.active0").css('background-color','#cc3333');
+    $(".item-util.active1").css('background-color','#0099cc');
+    $(".item-util.active2").css('background-color','#339966');
+    $(".item-util.active3").css('background-color','#663399');
+    $(".item-util.active4").css('background-color','#993399');
+    $(".item-util.active5").css('background-color','#cccc33');
+    $(".item-util.active6").css('background-color','#0066cc');
+    $(".item-util.active7").css('background-color','#33cccc');
+    $(".item-util.active8").css('background-color','#999999');
+    $(".item-util.active9").css('background-color','#993300');
+    $(".item-util.activeA").css('background-color','#99cc66');
+    $(".item-util.activeB").css('background-color','#cc6600');
 });
 $("#utilp,#utillp").on("click", function() {
     $("#utilp").toggle();
     $("#util").toggle();
     $("#utillp").toggle();
     $("#utill").toggle();
-    $(".item-util").css('background-color','#23242A');
+    $(".item-util").removeClass('active9');
 });
 $("#utilp,#utillp").hover(function() {
     $(".item-util").css('background-color','#993300');
@@ -578,7 +739,7 @@ $("#cast,#castl").on("click", function() {
     $("#castp").toggle();
     $("#castl").toggle();
     $("#castlp").toggle();
-    $(".item-cast").css('background-color','#99cc66');
+    $(".item-cast").addClass('activeA');
 });
 $("#cast,#castl").hover(function() {
     $("#castl").css('border','4px solid #99cc66');
@@ -586,13 +747,26 @@ $("#cast,#castl").hover(function() {
   }, function() {
     $("#castl").css('border','none');
     $(".item-cast").css('background-color','#23242A');
+    $(".item-cast:not(.active0):not(.active1):not(.active2):not(.active3):not(.active4):not(.active5):not(.active6):not(.active7):not(.active8):not(.active9):not(.activeA):not(.activeB)").css('background-color','#23242A');
+    $(".item-cast.active0").css('background-color','#cc3333');
+    $(".item-cast.active1").css('background-color','#0099cc');
+    $(".item-cast.active2").css('background-color','#339966');
+    $(".item-cast.active3").css('background-color','#663399');
+    $(".item-cast.active4").css('background-color','#993399');
+    $(".item-cast.active5").css('background-color','#cccc33');
+    $(".item-cast.active6").css('background-color','#0066cc');
+    $(".item-cast.active7").css('background-color','#33cccc');
+    $(".item-cast.active8").css('background-color','#999999');
+    $(".item-cast.active9").css('background-color','#993300');
+    $(".item-cast.activeA").css('background-color','#99cc66');
+    $(".item-cast.activeB").css('background-color','#cc6600');
 });
 $("#castp,#castlp").on("click", function() {
     $("#castp").toggle();
     $("#cast").toggle();
     $("#castlp").toggle();
     $("#castl").toggle();
-    $(".item-cast").css('background-color','#23242A');
+    $(".item-cast").removeClass('activeA');
 });
 $("#castp,#castlp").hover(function() {
     $(".item-cast").css('background-color','#99cc66');
@@ -603,7 +777,7 @@ $("#supp,#suppl").on("click", function() {
     $("#suppp").toggle();
     $("#suppl").toggle();
     $("#supplp").toggle();
-    $(".item-supp").css('background-color','#cc6600');
+    $(".item-supp").addClass('activeB');
 });
 $("#supp,#suppl").hover(function() {
     $("#suppl").css('border','4px solid #cc6600');
@@ -611,13 +785,26 @@ $("#supp,#suppl").hover(function() {
   }, function() {
     $("#suppl").css('border','none');
     $(".item-supp").css('background-color','#23242A');
+    $(".item-supp:not(.active0):not(.active1):not(.active2):not(.active3):not(.active4):not(.active5):not(.active6):not(.active7):not(.active8):not(.active9):not(.activeA):not(.activeB)").css('background-color','#23242A');
+    $(".item-supp.active0").css('background-color','#cc3333');
+    $(".item-supp.active1").css('background-color','#0099cc');
+    $(".item-supp.active2").css('background-color','#339966');
+    $(".item-supp.active3").css('background-color','#663399');
+    $(".item-supp.active4").css('background-color','#993399');
+    $(".item-supp.active5").css('background-color','#cccc33');
+    $(".item-supp.active6").css('background-color','#0066cc');
+    $(".item-supp.active7").css('background-color','#33cccc');
+    $(".item-supp.active8").css('background-color','#999999');
+    $(".item-supp.active9").css('background-color','#993300');
+    $(".item-supp.activeA").css('background-color','#99cc66');
+    $(".item-supp.activeB").css('background-color','#cc6600');
 });
 $("#suppp,#supplp").on("click", function() {
     $("#suppp").toggle();
     $("#supp").toggle();
     $("#supplp").toggle();
     $("#suppl").toggle();
-    $(".item-supp").css('background-color','#23242A');
+    $(".item-supp").removeClass('activeB');
 });
 $("#suppp,#supplp").hover(function() {
     $(".item-supp").css('background-color','#cc6600');
@@ -773,10 +960,10 @@ $("#seraph").hover(function() {
     $("path[id*=seraph]").hide();
 });
 
-$("#lucen").hover(function() {
-    $("path[id*=lucen]").show();
+$("#kaya").hover(function() {
+    $("path[id*=kaya]").show();
   }, function() {
-    $("path[id*=lucen]").hide();
+    $("path[id*=kaya]").hide();
 });
 
 $("#band").hover(function() {
@@ -821,16 +1008,16 @@ $("#sny").hover(function() {
     $("path[id*=sny]").hide();
 });
 
-$("#snl").hover(function() {
-    $("path[id*=snl]").show();
+$("#snk").hover(function() {
+    $("path[id*=snk]").show();
   }, function() {
-    $("path[id*=snl]").hide();
+    $("path[id*=snk]").hide();
 });
 
-$("#lny").hover(function() {
-    $("path[id*=lny]").show();
+$("#kny").hover(function() {
+    $("path[id*=kny]").show();
   }, function() {
-    $("path[id*=lny]").hide();
+    $("path[id*=kny]").hide();
 });
 
 $("#gauntlets").hover(function() {
@@ -863,12 +1050,6 @@ $("#slippers").hover(function() {
     $("path[id*=slippers]").hide();
 });
 
-$("#pms").hover(function() {
-    $("path[id*=pms]").show();
-  }, function() {
-    $("path[id*=pms]").hide();
-});
-
 $("#bracer").hover(function() {
     $("path[id*=bracer]").show();
   }, function() {
@@ -887,10 +1068,10 @@ $("#atos").hover(function() {
     $("path[id*=atos]").hide();
 });
 
-$("#null").hover(function() {
-    $("path[id*=null]").show();
+$("#nulltal").hover(function() {
+    $("path[id*=nulltal]").show();
   }, function() {
-    $("path[id*=null]").hide();
+    $("path[id*=nulltal]").hide();
 });
 
 $("#dagon").hover(function() {
@@ -1187,16 +1368,34 @@ $("#wand").hover(function() {
     $("path[id*=wand]").hide();
 });
 
-$("#talon").hover(function() {
-    $("path[id*=talon]").show();
-  }, function() {
-    $("path[id*=talon]").hide();
-});
-
 $("#urn").hover(function() {
     $("path[id*=urn]").show();
   }, function() {
     $("path[id*=urn]").hide();
+});
+
+$("#vessel").hover(function() {
+    $("path[id*=vessel]").show();
+  }, function() {
+    $("path[id*=vessel]").hide();
+});
+
+$("#aeondisk").hover(function() {
+    $("path[id*=aeondisk]").show();
+  }, function() {
+    $("path[id*=aeondisk]").hide();
+});
+
+$("#nullifier").hover(function() {
+    $("path[id*=nullifier]").show();
+  }, function() {
+    $("path[id*=nullifier]").hide();
+});
+
+$("#meteor").hover(function() {
+    $("path[id*=meteor]").show();
+  }, function() {
+    $("path[id*=meteor]").hide();
 });
 
 $("#basi").hover(function() {
@@ -1371,12 +1570,6 @@ $("#hoiw").hover(function() {
     $("path[id*=hoiw]").show();
   }, function() {
     $("path[id*=hoiw]").hide();
-});
-
-$("#oblivion").hover(function() {
-    $("path[id*=oblivion]").show();
-  }, function() {
-    $("path[id*=oblivion]").hide();
 });
 
 $("#morbid").hover(function() {
@@ -1774,4 +1967,107 @@ $("#ac").hover(function() {
   }, function() {
     $("path[id$=-ac]").hide();
 });
+
+$("#volt").hover(function() {
+    $("path[id*=volt]").show();
+  }, function() {
+    $("path[id*=volt]").hide();
+});
+
+$("#seal").hover(function() {
+    $("path[id*=seal]").show();
+  }, function() {
+    $("path[id*=seal]").hide();
+});
+
+$("#shieldbreaker").hover(function() {
+    $("path[id*=shieldbreaker]").show();
+  }, function() {
+    $("path[id*=shieldbreaker]").hide();
+});
+
+$("#cc").hover(function() {
+    $("path[id*=cc]").show();
+  }, function() {
+    $("path[id*=cc]").hide();
+});
+
+$("#fangs").hover(function() {
+    $("path[id*=fangs]").show();
+  }, function() {
+    $("path[id*=fangs]").hide();
+});
+
+$("#lantern").hover(function() {
+    $("path[id*=lantern]").show();
+  }, function() {
+    $("path[id*=lantern]").hide();
+});
+
+$("#pov").hover(function() {
+    $("path[id*=pov]").show();
+  }, function() {
+    $("path[id*=pov]").hide();
+});
+
+$("#lov").hover(function() {
+    $("path[id*=lov]").show();
+  }, function() {
+    $("path[id*=lov]").hide();
+});
+
+$("#bov").hover(function() {
+    $("path[id*=bov]").show();
+  }, function() {
+    $("path[id*=bov]").hide();
+});
+
+$("#chargers").hover(function() {
+    $("path[id*=chargers]").show();
+  }, function() {
+    $("path[id*=chargers]").hide();
+});
+
+$("#sigil").hover(function() {
+    $("path[id*=sigil]").show();
+  }, function() {
+    $("path[id*=sigil]").hide();
+});
+
+$("#valiance").hover(function() {
+    $("path[id*=valiance]").show();
+  }, function() {
+    $("path[id*=valiance]").hide();
+});
+
+$("#infernalorb").hover(function() {
+    $("path[id*=infernalorb]").show();
+  }, function() {
+    $("path[id*=infernalorb]").hide();
+});
+
+$("#aoa").hover(function() {
+    $("path[id*=aoa]").show();
+  }, function() {
+    $("path[id*=aoa]").hide();
+});
+
+$("#swift").hover(function() {
+    $("path[id*=swift]").show();
+  }, function() {
+    $("path[id*=swift]").hide();
+});
+
+$("#prism").hover(function() {
+    $("path[id*=prism]").show();
+  }, function() {
+    $("path[id*=prism]").hide();
+});
+
+$("#sanguine").hover(function() {
+    $("path[id*=sanguine]").show();
+  }, function() {
+    $("path[id*=sanguine]").hide();
+});
+
 

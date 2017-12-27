@@ -499,10 +499,9 @@ div[class^="item-box-"] > img {
   margin-left: -8.6666666%;
 }
 
-@media (max-width: 1810px) and (min-width: 1200px) {
+@media (max-width: 1901px) and (min-width: 1200px) {
   .col-xs-4.fixed-height {
     max-height: 48px;
-    width: 40%;
   }
   .col-xs-4.shift-width {
     width: 30%;

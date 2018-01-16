@@ -321,6 +321,10 @@ span.contest:hover {
   margin: 4px;
 }
 
+.glow {
+  outline: 4px solid rgba(249,249,249,0.6);
+}
+
 .col-xs-3-3 {
   width: 27.77%;
 }
@@ -649,7 +653,7 @@ div[class^="item-box-"] > img {
 
 
 @media (min-width: 1200px) {
-.page-spacer {
+  .page-spacer {
     height: 40vh;
   }
 }
@@ -780,6 +784,20 @@ ul {
 .feedback .col-xs-2.attrib {
   padding: 8px 0 0;
   margin-bottom: 0;
+  max-height: 41px;
+  min-width: 48px;
+}
+
+@media (max-width: 1325px) and (min-width: 1200) {
+  .feedback .col-xs-2.attrib {
+    margin-left: -25%;
+  }
+}
+
+@media (max-width: 709px) {
+  .feedback .col-xs-2.attrib {
+    margin-left: -25%;
+  }
 }
 
 .changelog .col-lg-12 .col-xs-1.attrib {
@@ -814,7 +832,7 @@ ul {
 
 .feedback img.avatar {
   max-height: 24px;
-  padding-top: 4px;
+  padding: 4px;
 }
 
 .changelog img.avatar {
@@ -845,7 +863,7 @@ ul {
 .fb-block {
   background-color: transparent !important;
   padding: 0 !important;
-  margin: 0 0 4px 0 !important;
+  margin: 0 8px 4px !important;
 }
 
 .note-block {
@@ -854,7 +872,7 @@ ul {
   margin: 0 !important;
 }
 
-div[class^="fb-"] {
+div[class^="fb-"]:not(.fb-block) {
   padding: 0;
   margin: 0;
 }
@@ -884,7 +902,7 @@ h3[data-toggle^="collapse"]:hover {
 }
 
 .fb-name .suggest {
-  padding: 6px 4px 4px;
+  padding: 6px 0 4px;
   font-size: 21px;
   //color: rgba(32,36,46,0.8);
 }

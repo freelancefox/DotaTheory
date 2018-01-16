@@ -4481,8 +4481,10 @@
       if (jQuery.browser.mobile) {
         $('.page-spacer').css('margin-top','12px');
         $('.page-spacer').css('margin-bottom','12px');
-        $(this).attr('data-toggle','tab');
-        $(this).attr('href','#item-'+$(this).attr('id'));
+        $('.item-box-1[rel="popover"]').each(function () {
+          $(this).attr('data-toggle','tab');
+          $(this).attr('href','#item-'+$(this).attr('id'));
+        });
       }
       else {
         $('.item-box-1[rel="popover"]').each(function () {

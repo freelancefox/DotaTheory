@@ -331,7 +331,7 @@ function connectAll() {
     connectElements($("#svg"), $("#bov-sigil"), $("#bov"), $("#sigil"));
     connectElements($("#svg"), $("#vlads-sigil"), $("#vlads"), $("#sigil"));
     connectElements($("#svg"), $("#pov-valiance"), $("#pov"), $("#valiance"));
-    connectElements($("#svg"), $("#lov-valiance"), $("#lov"), $("#valiance"));
+    connectElements($("#svg"), $("#talisman-valiance"), $("#talisman"), $("#valiance"));
     connectElements($("#svg"), $("#lov-infernalorb"), $("#lov"), $("#infernalorb"));
     connectElements($("#svg"), $("#lantern-infernalorb"), $("#lantern"), $("#infernalorb"));
     connectElements($("#svg"), $("#ultimateorb-infernalorb"), $("#ultimateorb"), $("#infernalorb"));
@@ -1216,6 +1216,12 @@ $("#vermilion").hover(function() {
     $("path[id*=vermilion]").show();
   }, function() {
     $("path[id*=vermilion]").hide();
+});
+
+$("#tango").hover(function() {
+    $("path[id*=tango]").show();
+  }, function() {
+    $("path[id*=tango]").hide();
 });
 
 $("#mango").hover(function() {

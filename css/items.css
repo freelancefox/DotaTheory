@@ -12,7 +12,7 @@ body {
 }
 
 h1 {
-  color: #1D1D1D;
+  color: #1E1E1E;
   margin: 12px;
   font-size: 42px;
 }
@@ -97,20 +97,34 @@ div[class^="col-"] {
   display: none;
 }
 
-#key {
-  display: inline-block;
+#key b {
   padding: 8px 0;
   margin-bottom: 0;
 }
 
 #key span {
-  padding: 4px;
+  display: inline-block;
   color: #1E1E1E;
+  background-color: rgba(94,98,114,0.8);
+  padding: 2px 4px;
+  margin-bottom: 4px;
+}
+
+#dota {
+  font-weight: 900;
+  color: #20242E;
+  text-shadow: -1px 0 0.5px rgba(249,249,249,0.8), 0 1px 0.5px rgba(249,249,249,0.8), 1px 0 0.5px rgba(249,249,249,0.8), 0 -1px 0.5px rgba(249,249,249,0.8),
+               -1px -1px 0.5px rgba(249,249,249,0.8), 1px 1px 0.5px rgba(249,249,249,0.8), 1px -1px 0.5px rgba(249,249,249,0.8), -1px 1px 0.5px rgba(249,249,249,0.8);
+}
+
+#theory {
+  font-weight: 300;
 }
 
 #logo {
   display: inline-block;
-  margin-top: -4px;
+  font-size: 2.4em;
+  color: rgba(249,249,249,0.8);
   margin: -4px auto 0 auto;
 }
 
@@ -223,39 +237,57 @@ a:focus, a:hover {
   }
 }
 
-.starting {
-  outline: 1px solid #22dd33;
+span.wip.active {
+  color: #e84 !important;
 }
 
-span.new:hover {
-  color: #cc2 !important;
-  font-weight: bold;
-  cursor: pointer;
+div.wip,
+span.wip {
+  outline: 1px solid #e84;
 }
 
-span.new,
-div.new {
-  outline: 1px solid #cc2;
+span.draft.active {
+  color: #ee4 !important;
 }
 
-.official:hover {
-  color: #ff54ff !important;
-  font-weight: bold;
-  cursor: pointer;
+div.draft,
+span.draft {
+  outline: 1px solid #ee4;
 }
 
-.official {
-  outline: 1px solid #ff54ff;
+span.official.active {
+  color: #4e8 !important;
 }
 
-.wip:hover {
-  color: #EE8844 !important;
-  font-weight: bold;
-  cursor: pointer;
+div.official,
+span.official {
+  outline: 1px solid #4e8;
 }
 
-.wip {
-  outline: 1px solid #EE8844;
+span.polished.active {
+  color: #e4e !important;
+}
+
+div.polished,
+span.polished {
+  outline: 1px solid #e4e;
+}
+
+span.contest.active {
+  color: #4ee !important;
+}
+
+div.contest,
+span.contest {
+  outline: 1px solid #4ee;
+}
+
+span.wip:hover,
+span.draft:hover,
+span.official:hover,
+span.polished:hover,
+span.contest:hover {
+  //cursor: pointer;
 }
 
 .item-box-4 {
@@ -509,7 +541,7 @@ div[class^="item-box-"] > img {
   .col-xs-6.fix-margin .item-box-1,
   .col-xs-4.fixed-height .item-box-1,
   .col-xs-4.shift-width .item-box-1 {
-    margin: 0 0 4px;
+    margin: 4px 0 4px;
   }
   .col-xs-5.fixed-height {
     max-height: 48px;
@@ -525,11 +557,11 @@ div[class^="item-box-"] > img {
   .col-xs-6.fix-margin .item-box-1,
   .col-xs-4.fixed-height .item-box-1,
   .col-xs-4.shift-width .item-box-1 {
-    margin: 0 -2px 4px;
+    margin: 4px -2px 4px;
   }
   .col-xs-3.fix-margin .item-box-1,
   .col-xs-4.fix-margin .item-box-1 {
-    margin: 0 0 4px;
+    margin: 4px 0 4px;
   }
   .col-xs-5.fixed-height {
     max-height: 48px;
@@ -547,7 +579,7 @@ div[class^="item-box-"] > img {
     margin-left: -5%;
   }
   .col-xs-3.fixed-height .item-box-1 {
-    margin: 0 0 4px;
+    margin: 4px 0 4px;
   }
 }
 
@@ -565,7 +597,7 @@ div[class^="item-box-"] > img {
   }
   .col-xs-6.fixed-height .item-box-1,
   .col-xs-2.shift-width .item-box-1 {
-    margin: 0 0 4px;
+    margin: 4px 0 4px;
   }
   #lantern {
     margin: 0 !important;
@@ -574,14 +606,14 @@ div[class^="item-box-"] > img {
 
 @media (max-width: 1416px) and (min-width: 1200px) {
   .col-xs-5.fix-margin .item-box-1 {
-    margin: 0 0 4px;
+    margin: 4px 0 4px;
   }
 }
 
 @media (max-width: 1210px) and (min-width: 1200px) {
   .col-xs-5.fix-margin > img,
   .col-xs-5.fix-margin .item-box-1 {
-    margin: 0 -2px 4px;
+    margin: 4px -2px 4px;
   }
 }
 
@@ -595,23 +627,48 @@ div[class^="item-box-"] > img {
 
 @media (max-width: 1416px) and (min-width: 1200px) {
   .col-xs-2.fixed-height .item-box-1 {
-    margin: 0 0px 4px;
+    margin: 4px 0px 4px;
   }
 }
 
-@media (max-width: 1700px) and (min-width: 1200px) {
+@media (max-width: 1775px) and (min-width: 1200px) {
   .col-xs-3.special-fix {
     width: 41.66667%;
     margin: 0 !important;
   }
+  .col-xs-3.offset-fix {
+    width: 16.66667%;
+  }
+}
+
+@media (max-width: 1700px) and (min-width: 1200px) {
   .col-xs-4.special-fix {
-    margin-left: -8.333333%
+    //margin-left: -8.333333%
+  }
+}
+
+
+@media (min-width: 1200px) {
+.page-spacer {
+    height: 40vh;
   }
 }
 
 .page-spacer {
-  height: 40vh;
-  margin: 20vh auto 20vh auto;
+  margin: 20vh 12px;
+  padding: 0 8px;
+  border: 8px outset rgba(249, 249, 249, 0.33);
+  background-color: rgba(214,215,221,0.33);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.page-spacer .popover-inset {
+  margin: 0 10%;
+}
+
+.page-spacer div[class^='col-'] {
+  margin-bottom: 12px;
 }
 
 .item-trigger {
@@ -661,27 +718,175 @@ h3[data-toggle^="collapse"] {
   padding: 8px 0 12px 0;
   background-color: #20242E;
   font-weight: 400;
+  color: #f9f9f9;
 }
 
 .collapse {
-  padding: 0 6% 12px 6%;
-  margin: 8px 8px;
-  background-color: rgba(32,36,46,0.4);
-  outline: 8px outset rgba(249, 249, 249, 0.33);
+  padding: 0 6%;
+  margin: 12px;
+  background-color: #5E6272;
+}
+
+.changelog h4 {
+  margin: 8px 0;
+}
+
+.changelog a {
+  color: #1E1E1E;
+}
+
+.changelog a:hover {
+  color: #F9F9F9;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+.changelog .col-lg-12 li {
+  text-align: center;
+  padding: 4px 0;
 }
 
 .changelog li {
   text-align: left;
+  padding: 4px 0;
+}
+
+.changelog ul {
+  margin-bottom: 0;
 }
 
 .changelog {
   margin: 0 auto;
   font-size: 1.15em;
-  color: rgba(249,249,249,0.85);
+  color: #1E1E1E;
+}
+
+.feedback .col-xs-2.vote {
+  padding-top: 8px;
+  margin-bottom: 0;
+}
+
+.changelog .col-lg-12 .col-xs-1.vote {
+  padding-top: 20px;
+  margin-bottom: 0;
+}
+
+.changelog .col-xs-1.vote {
+  padding-top: 12px;
+}
+
+.feedback .col-xs-2.attrib {
+  padding: 8px 0 0;
+  margin-bottom: 0;
+}
+
+.changelog .col-lg-12 .col-xs-1.attrib {
+  padding-top: 20px;
+}
+
+.changelog .col-xs-1.attrib {
+  padding: 12px 0 8px;
+}
+
+.feedback .col-xs-2 b {
+  padding: 4px;
+  position: absolute;
+  top: 8px;
+}
+
+.changelog .col-xs-1 b {
+  padding: 4px;
+  position: absolute;
+  top: 24px;
+}
+
+.feedback img.icon {
+  height: 24px;
+  padding-top: 4px;
+}
+
+.changelog img.icon {
+  height: 36px;
+  padding-top: 12px;
+}
+
+.feedback img.avatar {
+  max-height: 24px;
+  padding-top: 4px;
+}
+
+.changelog img.avatar {
+  max-height: 40px;
+  padding-top: 4px;
+}
+
+.changelog .col-xs-8 > img {
+  width: 40px;
+  margin: 4px 0;
+}
+
+.changelog .col-xs-10 > img {
+  margin: 4px 0;
+}
+
+.changelog .col-lg-12,
+.changelog .col-lg-6 {
+  margin: 4px auto;
+  padding: 8px;
+  border: 8px outset rgba(249, 249, 249, 0.33);
+  background-color: rgba(214,215,221,0.33);
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 100vh;
+}
+
+.fb-block {
+  background-color: transparent !important;
+  padding: 0 !important;
+  margin: 0 0 4px 0 !important;
+}
+
+.note-block {
+  background-color: transparent !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+div[class^="fb-"] {
+  padding: 0;
+  margin: 0;
+}
+
+div[class^="note-"] {
+  padding: 4px 0;
+  margin: 8px 0 0;
+}
+
+div[class^="fb-"]:hover,
+div[class^="note-"]:hover {
+  color: #F9F9F9;
+  background-color: rgba(32,36,46,0.4);
+  cursor: pointer;
 }
 
 h3[data-toggle^="collapse"]:hover {
   font-weight: 600;
+}
+
+.item .row > img {
+  padding-bottom: 8px;
+}
+
+.suggest {
+  margin-bottom: 0 !important;
+}
+
+.fb-name .suggest {
+  padding: 6px 4px 4px;
+  font-size: 21px;
+  //color: rgba(32,36,46,0.8);
 }
 
 .price-label {
@@ -707,4 +912,46 @@ h3[data-toggle^="collapse"]:hover {
 }
 
 #opt-btn { margin-left: 4px; }
+
+h5 {
+  margin: 0 0 4px 0;
+  color: #F9F9F9;
+  font-weight: normal;
+}
+
+div[class^='hero-box-'] img {
+  margin-bottom: 4px;
+}
+
+.hero-box-5 {
+  padding-top: 4px;
+  background-color: #23242A;
+  width: 264px;
+}
+
+.hero-box-4 {
+  padding-top: 4px;
+  background-color: #23242A;
+  max-width: 212px;
+}
+
+.hero-box-3 {
+  padding-top: 4px;
+  background-color: #23242A;
+  width: 160px;
+}
+
+.hero-box-2 {
+  padding-top: 4px;
+  background-color: #23242A;
+  width: 112px;
+}
+
+.fill-section {
+  margin: 0 5%;
+}
+
+.notes h4 {
+  margin: 0 0 8px;
+}
 

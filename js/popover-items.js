@@ -139,6 +139,26 @@ jQuery(document).ready(function() {
         return $('#content-kaya').html();
       }
   });
+   $('#synergy-on-kaya').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top auto',
+      html: true,
+      content: function() {
+        return $('#content-on-kaya').html();
+      }
+  });
+   $('#synergy-vs-kaya').popover({
+      toggle:'popover',
+      container:'body',
+      trigger:'hover click',
+      placement:'top auto',
+      html: true,
+      content: function() {
+        return $('#content-vs-kaya').html();
+      }
+  });
    $('#yasha').popover({
       toggle:'popover',
       container:'body',

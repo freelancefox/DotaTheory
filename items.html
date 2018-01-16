@@ -2197,10 +2197,10 @@
         </div><!--/.item-box-1-->
         <div id="kaya" class="item-box-1 center-block official item-int item-cast"
              rel="popover" data-title="Kaya">
+          <span class="price-label" style="position: absolute; top: 14px; padding-left: 2px;">1,950</span>
+          <img class="name-label" src="img/40px-Kaya_text.png">
+          <img src="img/40px-Kaya_icon.png">
           <a class="item-trigger" href="#item-kaya" data-toggle="tab">
-            <span class="price-label" style="position: absolute; top: 14px; padding-left: 2px;">1,950</span>
-            <img class="name-label" src="img/40px-Kaya_text.png">
-            <img src="img/40px-Kaya_icon.png">
             <div id="content-kaya" class="hide">
               <p><i>The staff of a renowned sorceress, lost for countless millennia.</i></p>
               <div class="popover-inset text-center">
@@ -2215,7 +2215,7 @@
               <p>+10% Spell Amplification (+11.14% total)</p>
               <p>+10% Manacost Reduction (also affects mana loss, does not stack with other sources of manacost reduction)</p>
             </div><!--/.popover-content-->
-          </a>
+          </a><!--/.item-trigger-->
         </div><!--/.item-box-1-->
         <div id="yasha" class="item-box-1 center-block item-agi item-mobi item-dam"
              rel="popover" data-title="Yasha">
@@ -4494,7 +4494,7 @@
     $(document).ready(function()
     {
       $('div[id^="item-"] .fill-section').each(function() {
-        $( this ).html($('#content-'+$( this ).parent().parent().parent().attr('id').substr(5)+' > a').html());
+        $( this ).html($('#content-'+$( this ).parent().parent().parent().attr("id").substr(5)).html());
       });
       $('div[class^="note-"]:not(".note-block")').each(function() {
         var target = $( this ).attr('class').split(' ')[0];

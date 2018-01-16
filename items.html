@@ -4481,6 +4481,8 @@
       if (jQuery.browser.mobile) {
         $('.page-spacer').css('margin-top','12px');
         $('.page-spacer').css('margin-bottom','12px');
+        $(this).attr('data-toggle','tab');
+        $(this).attr('href','#item-'+$(this).attr('id'));
       }
       else {
         $('.item-box-1[rel="popover"]').each(function () {
@@ -4492,7 +4494,6 @@
   <script>
     $(document).ready(function()
     {
-      $('.item-box-1 div[id^="content-"]').tab();
       $('div[id^="item-"] .fill-section').each(function() {
         $( this ).html($('#content-'+$( this ).parent().parent().parent().attr('id').substr(5)+' > a').html());
       });

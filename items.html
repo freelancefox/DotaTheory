@@ -2197,24 +2197,25 @@
         </div><!--/.item-box-1-->
         <div id="kaya" class="item-box-1 center-block official item-int item-cast"
              rel="popover" data-title="Kaya">
-          <span class="price-label" style="position: absolute; top: 14px; padding-left: 2px;">1,950</span>
-          <img class="name-label" src="img/40px-Kaya_text.png">
-          <img src="img/40px-Kaya_icon.png">
-          <div id="content-kaya" class="hide">
-            <a class="item-trigger" href="#item-kaya" data-toggle="tab">
-            <p><i>The staff of a renowned sorceress, lost for countless millennia.</i></p>
-            <div class="popover-inset text-center">
-              <div class="popover-line">
-                <img src="img/40px-Robe_of_the_Magi_icon.png"> 450 +
-                <img src="img/40px-Staff_of_Wizardry_icon.png"> 1,000 +
-                <img src="img/40px-Recipe_Scroll_icon.png"> 500
-                = <img src="img/40px-Kaya_icon.png"> 1,950
-              </div>
-            </div><!--/.popover-inset-->
-            <p>+16 Intelligence (+192 mana, +32% mana regen, +1.14% spell amplification, +2.4% magic resistance for intelligence heroes)</p>
-            <p>+10% Spell Amplification (+11.14% total)</p>
-            <p>+10% Manacost Reduction (also affects mana loss, does not stack with other sources of manacost reduction)</p>
-          </a></div><!--/.popover-content-->
+          <a class="item-trigger" href="#item-kaya" data-toggle="tab">
+            <span class="price-label" style="position: absolute; top: 14px; padding-left: 2px;">1,950</span>
+            <img class="name-label" src="img/40px-Kaya_text.png">
+            <img src="img/40px-Kaya_icon.png">
+            <div id="content-kaya" class="hide">
+              <p><i>The staff of a renowned sorceress, lost for countless millennia.</i></p>
+              <div class="popover-inset text-center">
+                <div class="popover-line">
+                  <img src="img/40px-Robe_of_the_Magi_icon.png"> 450 +
+                  <img src="img/40px-Staff_of_Wizardry_icon.png"> 1,000 +
+                  <img src="img/40px-Recipe_Scroll_icon.png"> 500
+                  = <img src="img/40px-Kaya_icon.png"> 1,950
+                </div>
+              </div><!--/.popover-inset-->
+              <p>+16 Intelligence (+192 mana, +32% mana regen, +1.14% spell amplification, +2.4% magic resistance for intelligence heroes)</p>
+              <p>+10% Spell Amplification (+11.14% total)</p>
+              <p>+10% Manacost Reduction (also affects mana loss, does not stack with other sources of manacost reduction)</p>
+            </div><!--/.popover-content-->
+          </a>
         </div><!--/.item-box-1-->
         <div id="yasha" class="item-box-1 center-block item-agi item-mobi item-dam"
              rel="popover" data-title="Yasha">
@@ -4481,10 +4482,6 @@
       if (jQuery.browser.mobile) {
         $('.page-spacer').css('margin-top','12px');
         $('.page-spacer').css('margin-bottom','12px');
-        $('.item-box-1[rel="popover"]').each(function () {
-          $(this).attr('data-toggle','tab');
-          $(this).attr('href','#item-'+$(this).attr('id'));
-        });
       }
       else {
         $('.item-box-1[rel="popover"]').each(function () {

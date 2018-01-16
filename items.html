@@ -4492,6 +4492,7 @@
   <script>
     $(document).ready(function()
     {
+      $('.item-box-1 div[id^="content-"]').tab();
       $('div[id^="item-"] .fill-section').each(function() {
         $( this ).html($('#content-'+$( this ).parent().parent().parent().attr('id').substr(5)+' > a').html());
       });

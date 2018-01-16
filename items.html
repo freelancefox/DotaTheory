@@ -4821,9 +4821,6 @@
     }, function (e) {
      $('.contest').removeClass('active animated infinite wobble');
     });
-    $('#items').hover(function (e) {
-      $('.popover').popover('hide');
-    });
     $('.dropdown-menu li a:not(#all)').hover(function (e) {
       var target = this.id;
       if (target.indexOf('tier-') >= 0) {

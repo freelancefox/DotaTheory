@@ -358,6 +358,13 @@ $(window).resize(function () {
     $("#svg").attr("height", "0");
     $("#svg").attr("width", "0");
     connectAll();
+    $('div[class*="row-"] div[class^="col-"]').each( function() {
+      if (($( this ).height() > 55) || ((this.scrollHeight - this.offsetHeight) > 40)) {
+        $( this ).children('.item-box-1').last().children('.price-label').addClass('label-reposition');
+      } else {
+        $( this ).children('.item-box-1').last().children('.price-label').removeClass('label-reposition');
+      }
+    });
 });
 
 $("#str,#strl").on("click", function() {

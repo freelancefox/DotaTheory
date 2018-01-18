@@ -365,6 +365,12 @@ $(window).resize(function () {
         $( this ).children('.item-box-1').last().children('.price-label').removeClass('label-reposition');
       }
     });
+    $('.grid .price-label').each( function() {
+      var multiplier = $(this).parent().parent().attr('class').split('-')[1].slice(1);
+      if (multiplier >= 1) {
+        $(this).addClass('label-reposition-'+multiplier);
+      }
+    });
 });
 
 $("#str,#strl").on("click", function() {

@@ -309,8 +309,8 @@
             <li><a href="" id="label-price" class="active">Price Labels</a></li>
             <li><a href="" id="label-name">Name Labels</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="" id="sort-price-a">Sort by Price Ascending</a></li>
-            <li><a href="" id="sort-price-d">Sort by Price Descending</a></li>
+            <!--<li><a href="" id="sort-price-a">Sort by Price Ascending</a></li>-->
+            <!--<li><a href="" id="sort-price-d">Sort by Price Descending</a></li>-->
             <li><a href="" id="layout-col">In-Game/Columns Layout</a></li>
             <li><a href="" id="layout-def">Default Layout</a></li>
           </ul>
@@ -342,7 +342,9 @@
             <li><a href="" id="shop-secret">Secret Shop</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="" id="type-upgrade">Upgrades</a></li>
-            <li><a href="" id="type-active">Active Items</a></li>
+            <li><a href="" id="type-active">Active Abilities</a></li>
+            <li><a href="" id="type-passive">Passive Effects</a></li>
+            <li><a href="" id="type-aura">Auras</a></li>
           </ul>
         </div>
       </div><!--/.col-xs-1-->
@@ -396,11 +398,11 @@
         <span class="contest">Contest</span></a>
       </div><!--/.col-md-2-->
     </div>
-<div id="main" class="row" style="padding: 0 8px; margin: 0;">
+<div id="main" class="row">
   <div id="col-0" class="col-lg-12">
     <div class="row row-0">
-      <div class="col-xs-1 col-xs-offset-1 tier-1 shop-base">
-        <div id="ff" class="item-box-1 center-block item-cons item-regen item-dam"
+      <div class="col-xs-1 col-xs-offset-1 shop-base">
+        <div id="ff" class="item-box-1 center-block item-cons item-regen item-dam tier-1"
              rel="popover" data-title="Faerie Fire">
           <span class="price-label" style="padding-left: 12px;">75</span>
           <img class="name-label" src="img/40px-Faerie_Fire_text.png">
@@ -416,7 +418,7 @@
             <p>Active: <i>Consume</i> – Consume the Faerie Fire to instantly restore 75 health.</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="mango" class="item-box-1 center-block item-cons item-regen"
+        <div id="mango" class="item-box-1 center-block item-cons item-regen tier-1"
              rel="popover" data-title="Enchanted Mango">
           <span class="price-label" style="padding-left: 8px;">100</span>
           <img class="name-label" src="img/40px-Enchanted_Mango_text.png">
@@ -433,8 +435,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-1-->
-      <div class="col-xs-1 tier-1 shop-base">
-        <div id="salve" class="item-box-1 center-block item-cons item-regen"
+      <div class="col-xs-1 shop-base">
+        <div id="salve" class="item-box-1 center-block item-cons item-regen tier-1"
              rel="popover" data-title="Healing Salve">
           <span class="price-label" style="padding-left: 8px;">110</span>
           <img class="name-label" src="img/40px-Healing_Salve_text.png">
@@ -449,7 +451,7 @@
             <p>Active: <i>Regenerate Health</i> – Restores health to the target unit over time. If the unit is attacked by an enemy hero or Roshan the effect is lost. (500 cast range, 400 total mana restored, 50 health/s for 8s).</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="clarity" class="item-box-1 center-block item-cons item-regen"
+        <div id="clarity" class="item-box-1 center-block item-cons item-regen tier-1"
              rel="popover" data-title="Clarity">
           <span class="price-label" style="padding-left: 12px;">50</span>
           <img class="name-label" src="img/40px-Clarity_text.png">
@@ -465,8 +467,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-1-->
-      <div class="col-xs-1 tier-1 shop-base">
-        <div id="tango" class="item-box-1 center-block item-cons item-regen"
+      <div class="col-xs-1 shop-base">
+        <div id="tango" class="item-box-1 center-block item-cons item-regen tier-1"
              rel="popover" data-title="Tango">
           <span class="price-label" style="padding-left: 8px;">150</span>
           <img class="name-label" src="img/40px-Tango_text.png">
@@ -481,7 +483,7 @@
             <p>Active: <i>Eat Tree or Ward</i> – Consume a target tree or ward to gradually restore health. May be used on an allied hero to give them one Tango. Heals double for wards or Ironwood Trees. (5 charges, stackable, 115/230 health restored, ~7.2 health regen for 16/32s, 165 cast range tree/ally, 450 cast range wards).</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="irain" class="item-box-1 center-block item-cons item-regen item-def"
+        <div id="irain" class="item-box-1 center-block item-cons item-regen item-def tier-1"
              rel="popover" data-title="Infused Raindrops">
           <span class="price-label" style="padding-left: 8px;">225</span>
           <img class="name-label" src="img/40px-Infused_Raindrops_text.png">
@@ -498,8 +500,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-1-->
-      <div class="col-xs-1 tier-1 shop-base">
-        <div id="tpscr" class="item-box-1 center-block item-cons item-mobi shop-side"
+      <div class="col-xs-1 shop-base">
+        <div id="tpscr" class="item-box-1 center-block item-cons item-mobi shop-side tier-1"
              rel="popover" data-title="Town Portal Scroll">
           <span class="price-label" style="padding-left: 12px;">50</span>
           <img class="name-label" src="img/40px-Town_Portal_Scroll_text.png">
@@ -514,7 +516,7 @@
             <p>Active: <i>Teleport</i> – Teleports you to a target friendly building. Double-click to teleport to your team's base fountain. (3s channel time, 5s for 2nd teleport to same structure, +0.5s for each additional). <img src="img/cd.png"> 80s <img src="img/mana.png"> 75</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="tome" class="item-box-1 center-block item-cons"
+        <div id="tome" class="item-box-1 center-block item-cons tier-1"
              rel="popover" data-title="Tome of Knowledge">
           <span class="price-label" style="padding-left: 8px;">150</span>
           <img class="name-label" src="img/40px-Tome_of_Knowledge_text.png">
@@ -530,8 +532,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-1-->
-      <div class="col-xs-1 tier-1 shop-base">
-        <div id="courier" class="item-box-1 center-block item-cons item-supp"
+      <div class="col-xs-1 shop-base">
+        <div id="courier" class="item-box-1 center-block item-cons item-supp tier-1"
              rel="popover" data-title="Animal Courier">
           <span class="price-label" style="padding-left: 8px;">200</span>
           <img class="name-label" src="img/40px-Animal_Courier_text.png">
@@ -547,8 +549,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-1-->
-      <div class="col-xs-1 tier-1 shop-base">
-        <div id="obsw" class="item-box-1 center-block item-cons item-supp"
+      <div class="col-xs-1 shop-base">
+        <div id="obsw" class="item-box-1 center-block item-cons item-supp tier-1"
              rel="popover" data-title="Observer Ward">
           <span class="price-label" style="padding-left: 12px;">80</span>
           <img class="name-label" src="img/40px-Observer_Ward_text.png">
@@ -563,7 +565,7 @@
             <p>Active: <i>Place Observer Ward</i> – Plants an Observer Ward, an invisible watcher that gives vision of its surrounding area to your team. Lasts 6 minutes. Hold Control to give one Observer Ward to an allied hero. (500 cast range, 1600 vision, 360s duration) [2 stock initially, 4 stock max, 150s restock time]. <img src="img/cd.png"> 1s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="sentryw" class="item-box-1 center-block item-cons item-supp"
+        <div id="sentryw" class="item-box-1 center-block item-cons item-supp tier-1"
              rel="popover" data-title="Sentry Ward">
           <span class="price-label" style="padding-left: 8px;">100</span>
           <img class="name-label" src="img/40px-Sentry_Ward_text.png">
@@ -579,8 +581,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-1-->
-      <div class="col-xs-1 tier-1 shop-base">
-        <div id="smoke" class="item-box-1 center-block item-cons item-supp item-util"
+      <div class="col-xs-1 shop-base">
+        <div id="smoke" class="item-box-1 center-block item-cons item-supp item-util tier-1"
              rel="popover" data-title="Smoke of Deceit">
           <span class="price-label" style="padding-left: 12px;">80</span>
           <img class="name-label" src="img/40px-Smoke_of_Deceit_text.png">
@@ -595,7 +597,7 @@
             <p>Active: <i>Conceal</i> – Upon activation, the user and all nearby allied player-controlled units gain invisibility and bonus movement speed for a brief time. Minimap icons will also be hidden. Attacking, or moving within 1025 range of an enemy hero or tower, will break the invisibility. (1200 effect radius, 0s fade time, +15% movespeed, 35s duration) [3 stock, 660s restock time]. <img src="img/cd.png"> 1s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="dust" class="item-box-1 center-block item-cons item-supp"
+        <div id="dust" class="item-box-1 center-block item-cons item-supp tier-1"
              rel="popover" data-title="Dust of Appearance">
           <span class="price-label" style="padding-left: 8px;">180</span>
           <img class="name-label" src="img/40px-Dust_of_Appearance_text.png">
@@ -644,8 +646,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-1-->
-      <div class="col-xs-1 tier-2 shop-side shop-base">
-        <div id="blink" class="item-box-1 center-block item-mobi"
+      <div class="col-xs-1 shop-base">
+        <div id="blink" class="item-box-1 center-block item-mobi tier-2 shop-side"
              rel="popover" data-title="Blink Dagger">
           <span class="price-label" style="padding-left: 2px;">2,250</span>
           <img class="name-label" src="img/40px-Blink_Dagger_text.png">
@@ -709,8 +711,8 @@
   </div><!--/.col-lg-12-->
   <div id="col-1" class="col-lg-35 col-lg-3 flip-lg outer">
     <div class="row row-1">
-      <div class="col-xs-5 tier-1 shop-base">
-        <div id="ror" class="item-box-1 center-block item-regen"
+      <div class="col-xs-5 shop-base">
+        <div id="ror" class="item-box-1 center-block item-regen tier-1"
              rel="popover" data-title="Ring of Regen">
           <span class="price-label" style="padding-left: 8px;">300</span>
           <img class="name-label" src="img/40px-Ring_of_Regen_text.png">
@@ -725,7 +727,7 @@
             <p>+1.5 Health Regen</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="sage" class="item-box-1 center-block item-regen"
+        <div id="sage" class="item-box-1 center-block item-regen tier-1"
              rel="popover" data-title="Sage's Mask">
           <span class="price-label" style="padding-left: 8px;">325</span>
           <img class="name-label" src="img/40px-Sage's_Mask_text.png">
@@ -741,8 +743,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-5-->
-      <div class="col-xs-2 tier-1 shop-base">
-        <div id="lace" class="item-box-1 center-block item-mobi"
+      <div class="col-xs-2 shop-base">
+        <div id="lace" class="item-box-1 center-block item-mobi tier-1"
              rel="popover" data-title="Wind Lace">
           <span class="price-label" style="padding-left: 8px;">250</span>
           <img class="name-label" src="img/40px-Wind_Lace_text.png">
@@ -758,8 +760,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-2-->
-      <div class="col-xs-5 fix-margin tier-1 shop-side shop-base">
-        <div id="stick" class="item-box-1 center-block item-regen"
+      <div class="col-xs-5 fix-margin shop-base">
+        <div id="stick" class="item-box-1 center-block item-regen tier-1 shop-side"
              rel="popover" data-title="Magic Stick">
           <span class="price-label" style="padding-left: 8px;">200</span>
           <img class="name-label" src="img/40px-Magic_Stick_text.png">
@@ -774,7 +776,7 @@
             <p>Active: <i>Energy Charge</i> – Instantly restores health and mana based on the number of charges stored. Gains a charge whenever a nearby visible enemy uses an ability (10 max charges, 15 health/mana per charge, 1200 radius). <img src="img/cd.png"> 13s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="stout" class="item-box-1 center-block item-def"
+        <div id="stout" class="item-box-1 center-block item-def tier-1 shop-side"
              rel="popover" data-title="Stout Shield">
           <span class="price-label" style="padding-left: 8px;">200</span>
           <img class="name-label" src="img/40px-Stout_Shield_text.png">
@@ -789,7 +791,7 @@
             <p>Passive: <i>Damage Block</i> – Gives a chance to block damage based on whether the equipped hero is melee or ranged (16/8 damage blocked for melee/ranged heroes, 50% proc chance).</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="morbid" class="item-box-1 center-block item-dam item-regen shop-side"
+        <div id="morbid" class="item-box-1 center-block item-dam item-regen shop-side tier-1"
              rel="popover" data-title="Morbid Mask">
           <span class="price-label" style="padding-left: 2px;">1,100</span>
           <img class="name-label" src="img/40px-Morbid_Mask_text.png">
@@ -808,8 +810,8 @@
       </div><!--/.col-xs-5-->
     </div><!--/.row-->
     <div class="row row-2">
-      <div class="col-xs-5 tier-1 shop-secret shop-base">
-        <div id="roh" class="item-box-1 center-block item-regen"
+      <div class="col-xs-5 shop-secret shop-base">
+        <div id="roh" class="item-box-1 center-block item-regen tier-1"
              rel="popover" data-title="Ring of Health">
           <span class="price-label" style="padding-left: 8px;">850</span>
           <img class="name-label" src="img/40px-Ring_of_Health_text.png">
@@ -824,7 +826,7 @@
             <p>+5 Health Regen</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="void" class="item-box-1 center-block item-regen shop-side"
+        <div id="void" class="item-box-1 center-block item-regen shop-side tier-1"
              rel="popover" data-title="Void Stone">
           <span class="price-label" style="padding-left: 8px;">850</span>
           <img class="name-label" src="img/40px-Void_Stone_text.png">
@@ -840,8 +842,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-5-->
-      <div class="col-xs-2 shop-base tier-1">
-        <div id="volt" class="item-box-1 center-block draft item-mobi"
+      <div class="col-xs-2 shop-base">
+        <div id="volt" class="item-box-1 center-block draft item-mobi tier-1"
              rel="popover" data-title="Volt Coil">
           <span class="price-label" style="padding-left: 8px;">375</span>
           <img class="name-label" src="img/40px-Volt_Coil_text.png">
@@ -857,8 +859,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-2-->
-      <div class="col-xs-5 fix-margin tier-1 shop-base shop-side">
-        <div id="rop" class="item-box-1 center-block item-def"
+      <div class="col-xs-5 fix-margin shop-base">
+        <div id="rop" class="item-box-1 center-block item-def tier-1 shop-side"
              rel="popover" data-title="Ring of Protection">
           <span class="price-label" style="padding-left: 8px;">175</span>
           <img class="name-label" src="img/40px-Ring_of_Protection_text.png">
@@ -873,7 +875,7 @@
             <p>+2 Armor</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="chainmail" class="item-box-1 center-block item-def"
+        <div id="chainmail" class="item-box-1 center-block item-def tier-1 shop-side"
              rel="popover" data-title="Chainmail">
           <span class="price-label" style="padding-left: 8px;">550</span>
           <img class="name-label" src="img/40px-Chainmail_text.png">
@@ -888,7 +890,7 @@
             <p>+5 Armor</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="hoiw" class="item-box-1 center-block item-def item-regen"
+        <div id="hoiw" class="item-box-1 center-block item-def item-regen tier-1 shop-side"
              rel="popover" data-title="Helm of Iron Will">
           <span class="price-label" style="padding-left: 8px;">900</span>
           <img class="name-label" src="img/40px-Helm_of_Iron_Will_text.png">
@@ -907,8 +909,8 @@
       </div><!--/.col-xs-6-offset-->
     </div><!--/.row-->
     <div class="row row-3">
-      <div class="col-xs-5 fix-margin tier-1 shop-secret">
-        <div id="vit" class="item-box-1 center-block item-stat shop-side"
+      <div class="col-xs-5 fix-margin shop-secret">
+        <div id="vit" class="item-box-1 center-block item-stat shop-side tier-1"
              rel="popover" data-title="Vitality Booster">
           <span class="price-label" style="padding-left: 2px;">1,100</span>
           <img class="name-label" src="img/40px-Vitality_Booster_text.png">
@@ -923,7 +925,7 @@
             <p>+250 Health</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="pb" class="item-box-1 center-block item-stat"
+        <div id="pb" class="item-box-1 center-block item-stat tier-1"
              rel="popover" data-title="Point Booster">
           <span class="price-label" style="padding-left: 2px;">1,200</span>
           <img class="name-label" src="img/40px-Point_Booster_text.png">
@@ -939,7 +941,7 @@
             <p>+175 Mana</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="energy" class="item-box-1 center-block item-stat shop-side"
+        <div id="energy" class="item-box-1 center-block item-stat shop-side tier-1"
              rel="popover" data-title="Energy Booster">
           <span class="price-label" style="padding-left: 8px;">900</span>
           <img class="name-label" src="img/40px-Energy_Booster_text.png">
@@ -955,8 +957,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-5-->
-      <div class="col-xs-2 tier-1 shop-base">
-        <div id="boots" class="item-box-1 center-block item-mobi shop-side"
+      <div class="col-xs-2 shop-base">
+        <div id="boots" class="item-box-1 center-block item-mobi shop-side tier-1"
              rel="popover" data-title="Boots of Speed">
           <span class="price-label" style="padding-left: 8px;">400</span>
           <img class="name-label" src="img/40px-Boots_of_Speed_text.png">
@@ -1021,8 +1023,8 @@
       </div><!--/.col-xs-3-->
     </div><!--/.row-->
     <div class="row row-4">
-      <div class="col-xs-3 col-xs-offset-1 tier-2">
-        <div id="perseverance" class="item-box-1 center-block item-regen"
+      <div class="col-xs-3 col-xs-offset-1">
+        <div id="perseverance" class="item-box-1 center-block item-regen tier-2"
              rel="popover" data-title="Perseverance">
           <span class="price-label" style="padding-left: 2px;">1,700</span>
           <img class="name-label" src="img/40px-Perseverance_text.png">
@@ -1043,8 +1045,8 @@
       </div><!--/.col-xs-3-->
       <div class="col-xs-1">
       </div><!--/.col-xs-1-->
-      <div class="col-xs-5 col-xs-offset-2 fix-margin tier-2">
-        <div id="wand" class="item-box-1 center-block item-reg item-stat"
+      <div class="col-xs-5 col-xs-offset-2 fix-margin">
+        <div id="wand" class="item-box-1 center-block item-reg item-stat tier-2"
              rel="popover" data-title="Magic Wand">
           <span class="price-label" style="padding-left: 8px;">400</span>
           <img class="name-label" src="img/40px-Magic_Wand_text.png">
@@ -1065,7 +1067,7 @@
             <p>Active: <i>Energy Charge</i> – Instantly restores health and mana based on the number of charges stored. Gains a charge whenever a nearby visible enemy uses an ability (17 max charges, 15 health/mana per charge, 1200 radius).  <img src="img/cd.png"> 13s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="basi" class="item-box-1 center-block item-def item-regen item-dam"
+        <div id="basi" class="item-box-1 center-block item-def item-regen item-dam tier-2"
              rel="popover" data-title="Ring of Basilius">
           <span class="price-label" style="padding-left: 8px;">500</span>
           <img class="name-label" src="img/40px-Ring_of_Basilius_text.png">
@@ -1086,8 +1088,8 @@
       </div><!--/.col-xs-5-->
     </div><!--/.row-->
     <div class="row row-5">
-      <div class="col-xs-12 tier-2">
-        <div id="bots" class="item-box-1 center-block item-mobi"
+      <div class="col-xs-12">
+        <div id="bots" class="item-box-1 center-block item-mobi tier-2"
              rel="popover" data-title="Boots of Travel">
           <span class="price-label" style="padding-left: 2px;">2,400</span>
           <img class="name-label" src="img/40px-Boots_of_Travel_text.png">
@@ -1111,7 +1113,7 @@
             </div><!--/.popover-inset-->
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="tranquil" class="item-box-1 center-block item-regen item-mobi"
+        <div id="tranquil" class="item-box-1 center-block item-regen item-mobi tier-2"
              rel="popover" data-title="Tranquil Boots">
           <span class="price-label" style="padding-left: 8px;">950</span>
           <img class="name-label" src="img/40px-Tranquil_Boots_text.png">
@@ -1131,7 +1133,7 @@
             <p>Passive: <i>Break</i> – Whenever you attack or are attacked, lose the +13 health regeneration and the movement speed bonus is reduced to 65 for 13 seconds. <img src="img/cd.png"> 13s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="arcane" class="item-box-1 center-block item-stat item-regen item-mobi item-supp"
+        <div id="arcane" class="item-box-1 center-block item-stat item-regen item-mobi item-supp tier-2"
              rel="popover" data-title="Arcane Boots">
           <span class="price-label" style="padding-left: 2px;">1,300</span>
           <img class="name-label" src="img/40px-Arcane_Boots_text.png">
@@ -1150,7 +1152,7 @@
             <p>Active: <i>Replenish Mana</i> – Restores mana to all allies in a 900 area around the hero (900 radius, 135 mana restored). <img src="img/cd.png"> 55s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="treads" class="item-box-1 center-block item-mobi item-stat item-dam"
+        <div id="treads" class="item-box-1 center-block item-mobi item-stat item-dam tier-2"
              rel="popover" data-title="Power Treads">
           <span class="price-label" style="padding-left: 2px;">1,350</span>
           <img class="name-label" src="img/40px-Power_Treads_text.png">
@@ -1172,7 +1174,7 @@
             <p>Active: <i>Switch Attribute</i> – Switches between +10 Strength, +10 Agility, or +10 Intelligence (starts with attribute matching component used, switches in the order Strength → Intelligence → Agility). <img src="img/cd.png"> 0s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="phase" class="item-box-1 center-block item-mobi item-dam"
+        <div id="phase" class="item-box-1 center-block item-mobi item-dam tier-2"
              rel="popover" data-title="Phase Boots">
           <span class="price-label" style="padding-left: 2px;">1,240</span>
           <img class="name-label" src="img/40px-Phase_Boots_text.png">
@@ -1195,8 +1197,8 @@
       </div><!--/.col-xs-12-->
     </div><!--/.row-->
     <div class="row row-6">
-      <div class="col-xs-3 col-xs-offset-1 tier-2">
-        <div id="soulbooster" class="item-box-1 center-block item-stat"
+      <div class="col-xs-3 col-xs-offset-1">
+        <div id="soulbooster" class="item-box-1 center-block item-stat tier-2"
              rel="popover" data-title="Soul Booster">
           <span class="price-label" style="padding-left: 2px;">3,200</span>
           <img class="name-label" src="img/40px-Soul_Booster_text.png">
@@ -1216,8 +1218,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-3-->
-      <div class="col-xs-4 fixed-height tier-2">
-        <div id="headdress" class="item-box-1 center-block item-regen item-supp item-stat"
+      <div class="col-xs-4 fixed-height">
+        <div id="headdress" class="item-box-1 center-block item-regen item-supp item-stat tier-2"
              rel="popover" data-title="Headdress">
           <span class="price-label" style="padding-left: 8px;">650</span>
           <img class="name-label" src="img/40px-Headdress_text.png">
@@ -1236,7 +1238,7 @@
             <p>Aura: <i>Regeneration Aura</i> – Grants 3 health regeneration to allies (900 radius).</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="lantern" class="item-box-1 center-block item-regen item-supp item-stat draft"
+        <div id="lantern" class="item-box-1 center-block item-regen item-supp item-stat draft tier-2"
              rel="popover" data-title="Lantern">
           <span class="price-label" style="padding-left: 8px;">625</span>
           <img class="name-label" src="img/40px-Lantern_text.png">
@@ -1256,7 +1258,7 @@
             <p>Aura: <i>Brightness</i> – Gives +100 day and +200 night vision to allies within direct line of sight (900 radius, multiple instances do not stack)</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="buckler" class="item-box-1 center-block item-def item-supp item-stat"
+        <div id="buckler" class="item-box-1 center-block item-def item-supp item-stat tier-2"
              rel="popover" data-title="Buckler">
           <span class="price-label" style="padding-left: 8px;">800</span>
           <img class="name-label" src="img/40px-Buckler_text.png">
@@ -1277,8 +1279,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
-      <div class="col-xs-4 fixed-height tier-2">
-        <div id="urn" class="item-box-1 center-block item-regen item-stat item-def item-supp item-cast"
+      <div class="col-xs-4 fixed-height">
+        <div id="urn" class="item-box-1 center-block item-regen item-stat item-def item-supp item-cast tier-2"
              rel="popover" data-title="Urn of Shadows">
           <span class="price-label" style="padding-left: 8px;">875</span>
           <img class="name-label" src="img/40px-Urn_of_Shadows_text.png">
@@ -1300,7 +1302,7 @@
             <p>Active: <i>Soul Release</i> – Heals health over time to friendly units, but deals pure damage over time to enemy units. The healing effect is lost if the affected ally takes damage from an enemy hero. Gains charges every time an enemy hero dies within 1400 range. Only the closest Urn to the dying hero will gain a charge (950 cast range, 400 ally heal, 150 damage enemies, 8s duration). <img src="img/cd.png"> 7s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="moc" class="item-box-1 center-block item-def item-supp item-regen"
+        <div id="moc" class="item-box-1 center-block item-def item-supp item-regen tier-2"
              rel="popover" data-title="Medallion of Courage">
           <span class="price-label" style="padding-left: 2px;">1,175</span>
           <img class="name-label" src="img/40px-Medallion_of_Courage_text.png">
@@ -1323,8 +1325,8 @@
       </div><!--/.col-xs-4-->
     </div><!--/.row-->
     <div class="row row-7">
-      <div class="col-xs-5 fix-margin tier-2">
-        <div id="prism" class="item-box-1 center-block item-stat item-regen item-def draft"
+      <div class="col-xs-5 fix-margin">
+        <div id="prism" class="item-box-1 center-block item-stat item-regen item-def draft tier-2"
              rel="popover" data-title="Deflector Prism">
           <span class="price-label" style="padding-left: 2px;">2,300</span>
           <img class="name-label" src="img/40px-Deflector_Prism_text.png">
@@ -1523,8 +1525,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-6-->
-      <div class="col-xs-3 fix-widen tier-3">
-        <div id="vlads" class="item-box-1 center-block item-supp item-regen item-dam item-def item-stat"
+      <div class="col-xs-3 fix-widen">
+        <div id="vlads" class="item-box-1 center-block item-supp item-regen item-dam item-def item-stat tier-3"
              rel="popover" data-title="Vladmir's Offering">
           <span class="price-label" style="padding-left: 2px;">2,250</span>
           <img class="name-label" src="img/40px-Vladmir's_Offering_text.png">
@@ -1544,7 +1546,7 @@
             <p>Aura: <i>Vladmir's Aura</i> – Grants lifesteal (15% for melee heroes, 10% for ranged), 2.5 health regeneration, 0.65 mana regeneration, 15% bonus attack damage, and 4 armor to nearby allies (900 radius).</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="hotd" class="item-box-1 center-block item-regen item-util item-dam item-stat item-supp"
+        <div id="hotd" class="item-box-1 center-block item-regen item-util item-dam item-stat item-supp tier-3"
              rel="popover" data-title="Helm of the Dominator">
           <span class="price-label" style="padding-left: 2px;">2,000</span>
           <img class="name-label" src="img/40px-Helm_of_the_Dominator_text.png">
@@ -1568,8 +1570,8 @@
       </div><!--/.col-xs-3-->
     </div><!--/.row-->
     <div class="row row-9">
-      <div class="col-xs-5 fix-margin tier-3 shop-secret">
-        <div id="pov" class="item-box-1 center-block item-regen item-def draft"
+      <div class="col-xs-5 fix-margin shop-secret">
+        <div id="pov" class="item-box-1 center-block item-regen item-def draft tier-3"
              rel="popover" data-title="Pendant of Vigor">
           <span class="price-label" style="padding-left: 2px;">2,600</span>
           <img class="name-label" src="img/40px-Pendant_of_Vigor_text.png">
@@ -1585,7 +1587,7 @@
             <p>+5% Status Resistance</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="lov" class="item-box-1 center-block item-regen item-def draft"
+        <div id="lov" class="item-box-1 center-block item-regen item-def draft tier-3"
              rel="popover" data-title="Locket of Virtue">
           <span class="price-label" style="padding-left: 2px;">2,600</span>
           <img class="name-label" src="img/40px-Locket_of_Virtue_text.png">
@@ -1602,8 +1604,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-5-->
-      <div class="col-xs-2 col-xs-offset-2 tier-3 shop-secret">
-        <div id="bov" class="item-box-1 center-block item-mobi item-def draft"
+      <div class="col-xs-2 col-xs-offset-2 shop-secret">
+        <div id="bov" class="item-box-1 center-block item-mobi item-def draft tier-3"
              rel="popover" data-title="Banner of Valor">
           <span class="price-label" style="padding-left: 2px;">2,600</span>
           <img class="name-label" src="img/40px-Banner_of_Valor_text.png">
@@ -1620,12 +1622,12 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-2-offset-->
-      <div class="col-xs-2 tier-3 shop-secret">
+      <div class="col-xs-2">
       </div><!--/.col-xs-2-->
     </div><!--/.row-->
     <div class="row row-10">
-      <div class="col-xs-4 tier-3">
-        <div id="bloodstone" class="item-box-1 center-block item-stat item-regen item-cast"
+      <div class="col-xs-4">
+        <div id="bloodstone" class="item-box-1 center-block item-stat item-regen item-cast tier-3"
              rel="popover" data-title="Bloodstone">
           <span class="price-label" style="padding-left: 2px;">4,900</span>
           <img class="name-label" src="img/40px-Bloodstone_text.png">
@@ -1647,7 +1649,7 @@
             <p>Passive: <i>Bloodpact</i> – Begins with 14 charges, and gains a charge each time an enemy hero dies within 1600 range. Each charge grants 0.35 mana regeneration per second, and reduces respawn time by 3 seconds. If the bearer dies the Bloodstone loses a third of its charges.</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="refresher" class="item-box-1 center-block item-regen item-cast item-util"
+        <div id="refresher" class="item-box-1 center-block item-regen item-cast item-util tier-3"
              rel="popover" data-title="Refresher Orb">
           <span class="price-label" style="padding-left: 2px;">5,200</span>
           <img class="name-label" src="img/40px-Refresher_Orb_text.png">
@@ -1737,8 +1739,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
-      <div class="col-xs-4 shift-width tier-3">
-        <div id="lotus" class="item-box-1 center-block item-supp item-def item-regen item-stat"
+      <div class="col-xs-4 shift-width">
+        <div id="lotus" class="item-box-1 center-block item-supp item-def item-regen item-stat tier-3"
              rel="popover" data-title="Lotus Orb">
           <span class="price-label" style="padding-left: 2px;">4,000</span>
           <img class="name-label" src="img/40px-Lotus_Orb_text.png">
@@ -1784,8 +1786,8 @@
       </div><!--/.col-xs-4-->
     </div><!--/.row-->
     <div class="row bottom-wide custom-collapse row-11">
-      <div class="col-xs-5 fix-margin tier-4">
-        <div id="aoa" class="item-box-1 center-block item-stat item-regen item-def item-supp wip"
+      <div class="col-xs-5 fix-margin">
+        <div id="aoa" class="item-box-1 center-block item-stat item-regen item-def item-supp wip tier-4"
              rel="popover" data-title="Amulet of Aeons" style="margin-bottom: 12px;">
           <span class="price-label" style="padding-left: 2px;">5,950</span>
           <img class="name-label" src="img/40px-Amulet_of_Aeons_text.png">
@@ -1830,8 +1832,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-5-->
-      <div class="col-xs-2 tier-4">
-        <div id="chargers" class="item-box-1 center-block item-mobi item-def wip"
+      <div class="col-xs-2">
+        <div id="chargers" class="item-box-1 center-block item-mobi item-def wip tier-4"
              rel="popover" data-title="Shock Chargers" style="margin-bottom: 12px;">
           <span class="price-label" style="padding-left: 2px;">3,375</span>
           <img class="name-label" src="img/40px-Shock_Chargers_text.png">
@@ -1854,8 +1856,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-2-->
-      <div class="col-xs-3 col-xs-offset-2 tier-4">
-        <div id="sigil" class="item-box-1 center-block item-supp item-regen item-mobi item-dam item-def item-stat draft"
+      <div class="col-xs-3 col-xs-offset-2">
+        <div id="sigil" class="item-box-1 center-block item-supp item-regen item-mobi item-dam item-def item-stat draft tier-4"
              rel="popover" data-title="Cursed Sigil" style="margin-bottom: 12px;">
           <span class="price-label" style="padding-left: 2px;">4,875</span>
           <img class="name-label" src="img/40px-Cursed_Sigil_text.png">
@@ -1874,7 +1876,7 @@
             <p>Aura: <i>Greater Vladmir's Aura</i> – Grants lifesteal (15% for melee heroes, 10% for ranged), 3 health regeneration, 0.8 mana regeneration, 15% bonus attack damage, 15% evasion, 15% movement speed and 4 armor to nearby allies (900 radius).</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="valiance" class="item-box-1 center-block item-regen item-def wip"
+        <div id="valiance" class="item-box-1 center-block item-regen item-def wip tier-4"
              rel="popover" data-title="Valiance" style="margin-bottom: 12px;">
           <span class="price-label" style="padding-left: 2px;">4,050</span>
           <img class="name-label" src="img/40px-Valiance_text.png">
@@ -1899,8 +1901,8 @@
   </div><!--/.col-lg-35-->
   <div id="col-2" class="col-lg-5 middle">
     <div class="row row-1">
-      <div class="col-xs-4 fix-margin col-xs-offset-2 tier-1 shop-side shop-base">
-        <div id="belt" class="item-box-1 center-block item-str"
+      <div class="col-xs-4 fix-margin col-xs-offset-2 shop-base">
+        <div id="belt" class="item-box-1 center-block item-str tier-1 shop-side"
              rel="popover" data-title="Belt of Strength">
           <span class="price-label" style="padding-left: 8px;">450</span>
           <img class="name-label" src="img/40px-Belt_of_Strength_text.png">
@@ -1915,7 +1917,7 @@
             <p>+6 Strength (+120 health, +4.2% health regen, +0.9% status resistance for strength heroes)</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="robe" class="item-box-1 center-block item-int"
+        <div id="robe" class="item-box-1 center-block item-int tier-1 shop-side"
              rel="popover" data-title="Robe of the Magi">
           <span class="price-label" style="padding-left: 8px;">450</span>
           <img class="name-label" src="img/40px-Robe_of_the_Magi_text.png">
@@ -1930,7 +1932,7 @@
             <p>+6 Intelligence (+72 mana, +12% mana regen, +0.42% spell amplification, +0.9% magic resistance for intelligence heroes)</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="band" class="item-box-1 center-block item-agi"
+        <div id="band" class="item-box-1 center-block item-agi tier-1 shop-side"
              rel="popover" data-title="Band of Elvenskin">
           <span class="price-label" style="padding-left: 8px;">450</span>
           <img class="name-label" src="img/40px-Band_of_Elvenskin_text.png">
@@ -1946,8 +1948,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
-      <div class="col-xs-4 fix-margin tier-1 shop-base">
-        <div id="club" class="item-box-1 center-block item-str"
+      <div class="col-xs-4 fix-margin shop-base">
+        <div id="club" class="item-box-1 center-block item-str tier-1"
              rel="popover" data-title="Ogre Axe">
           <span class="price-label" style="padding-left: 2px;">1,000</span>
           <img class="name-label" src="img/40px-Ogre_Club_text.png">
@@ -1962,7 +1964,7 @@
             <p>+10 Strength (+200 health, +7% health regen, +1.5% status resistance for strength heroes)</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="staff" class="item-box-1 center-block item-int"
+        <div id="staff" class="item-box-1 center-block item-int tier-1"
              rel="popover" data-title="Staff of Wizardry">
           <span class="price-label" style="padding-left: 2px;">1,000</span>
           <img class="name-label" src="img/40px-Staff_of_Wizardry_text.png">
@@ -1977,7 +1979,7 @@
             <p>+10 Intelligence (+120 mana, +20% mana regen, +0.7% spell amplification, +1.5% magic resistance for intelligence heroes)</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="blade" class="item-box-1 center-block item-agi"
+        <div id="blade" class="item-box-1 center-block item-agi tier-1"
              rel="popover" data-title="Blade of Alacrity">
           <span class="price-label" style="padding-left: 2px;">1,000</span>
           <img class="name-label" src="img/40px-Blade_of_Alacrity_text.png">
@@ -1995,8 +1997,8 @@
       </div><!--/.col-xs-4-->
     </div><!--/.row-->
     <div class="row row-2">
-      <div class="col-xs-4 fix-margin tier-1 shop-base">
-        <div id="gauntlets" class="item-box-1 center-block item-str"
+      <div class="col-xs-4 fix-margin shop-base">
+        <div id="gauntlets" class="item-box-1 center-block item-str tier-1"
              rel="popover" data-title="Gauntlets of Strength">
           <span class="price-label" style="padding-left: 8px;">135</span>
           <img class="name-label" src="img/40px-Gauntlets_of_Strength_text.png">
@@ -2011,7 +2013,7 @@
             <p>+3 Strength (+60 health, +2.1% health regen, +0.45% status resistance for strength heroes)</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="mantle" class="item-box-1 center-block item-int"
+        <div id="mantle" class="item-box-1 center-block item-int tier-1"
              rel="popover" data-title="Mantle of Intelligence">
           <span class="price-label" style="padding-left: 8px;">135</span>
           <img class="name-label" src="img/40px-Mantle_of_Intelligence_text.png">
@@ -2026,7 +2028,7 @@
             <p>+3 Intelligence (+36 mana, +6% mana regen, +0.21% spell amplification, +0.45% magic resistance for intelligence heroes)</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="slippers" class="item-box-1 center-block item-agi"
+        <div id="slippers" class="item-box-1 center-block item-agi tier-1"
              rel="popover" data-title="Slippers of Agility">
           <span class="price-label" style="padding-left: 8px;">135</span>
           <img class="name-label" src="img/40px-Slippers_of_Agility_text.png">
@@ -2045,8 +2047,8 @@
       <div class="col-xs-4">
         
       </div><!--/.col-xs-4-->
-      <div class="col-xs-4 fix-margin tier-2">
-        <div id="seal" class="item-box-1 center-block item-str item-regen item-dam wip"
+      <div class="col-xs-4 fix-margin">
+        <div id="seal" class="item-box-1 center-block item-str item-regen item-dam wip tier-2"
              rel="popover" data-title="Primal Seal">
           <span class="price-label" style="padding-left: 2px;">1,850</span>
           <img class="name-label" src="img/40px-Primal_Seal_text.png">
@@ -2064,10 +2066,10 @@
             <p>+10 Strength (+200 health, +7% health regen, +1.5% status resistance for strength heroes)</p>
             <p>+2.25 Health Regen</p>
             <p>+10 Damage (+20 for strength heroes)</p>
-            <p>+15% Lifesteal</p>
+            <p>Passive: <i>Lifesteal</i> – Heals the attacker for 15% of attack damage dealt.</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="oblivion" class="item-box-1 center-block item-int item-regen item-dam"
+        <div id="oblivion" class="item-box-1 center-block item-int item-regen item-dam tier-2"
              rel="popover" data-title="Oblivion Staff">
           <span class="price-label" style="padding-left: 2px;">1,650</span>
           <img class="name-label" src="img/40px-Oblivion_Staff_text.png">
@@ -2088,7 +2090,7 @@
             <p>+10 Attack Speed</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="shieldbreaker" class="item-box-1 center-block item-agi item-dam wip"
+        <div id="shieldbreaker" class="item-box-1 center-block item-agi item-dam wip tier-2"
              rel="popover" data-title="Shieldbreaker">
           <span class="price-label" style="padding-left: 2px;">1,825</span>
           <img class="name-label" src="img/40px-Shieldbreaker_text.png">
@@ -2112,8 +2114,8 @@
       </div><!--/.col-xs-4-->
     </div><!--/.row-->
     <div class="row row-3">
-      <div class="col-xs-4 fix-margin tier-2">
-        <div id="bracer" class="item-box-1 center-block item-str item-stat"
+      <div class="col-xs-4 fix-margin">
+        <div id="bracer" class="item-box-1 center-block item-str item-stat tier-2"
              rel="popover" data-title="Bracer">
           <span class="price-label" style="padding-left: 8px;">465</span>
           <img class="name-label" src="img/40px-Bracer_text.png">
@@ -2133,7 +2135,7 @@
             <p>+3 Intelligence (+36 mana, +6% mana regen, +0.21% spell amplification, +0.45% magic resistance for intelligence heroes)</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="nulltal" class="item-box-1 center-block item-int item-stat"
+        <div id="nulltal" class="item-box-1 center-block item-int item-stat tier-2"
              rel="popover" data-title="Null Talisman">
           <span class="price-label" style="padding-left: 8px;">465</span>
           <img class="name-label" src="img/40px-Null_Talisman_text.png">
@@ -2154,7 +2156,7 @@
             </p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="wraith" class="item-box-1 center-block item-agi item-stat"
+        <div id="wraith" class="item-box-1 center-block item-agi item-stat tier-2"
              rel="popover" data-title="Wraith Band">
           <span class="price-label" style="padding-left: 8px;">465</span>
           <img class="name-label" src="img/40px-Wraith_Band_text.png">
@@ -2175,8 +2177,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
-      <div class="col-xs-4 fix-margin tier-2">
-        <div id="sange" class="item-box-1 center-block item-str item-dam"
+      <div class="col-xs-4 fix-margin">
+        <div id="sange" class="item-box-1 center-block item-str item-dam tier-2"
              rel="popover" data-title="Sange">
           <span class="price-label" style="padding-left: 2px;">1,950</span>
           <img class="name-label" src="img/40px-Sange_text.png">
@@ -2196,7 +2198,7 @@
             <p>Passive: <i>Lesser Maim</i> – 30% chance to apply a 20/10% (melee/ranged) move & attack speed slow for 5s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="kaya" class="item-box-1 center-block official item-int item-cast"
+        <div id="kaya" class="item-box-1 center-block official item-int item-cast tier-2"
              rel="popover" data-title="Kaya">
           <span class="price-label" style="padding-left: 2px;">1,950</span>
           <img class="name-label" src="img/40px-Kaya_text.png">
@@ -2217,7 +2219,7 @@
             <p>+10% Manacost Reduction (also affects mana loss, does not stack with other sources of manacost reduction)</p>
           </a></div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="yasha" class="item-box-1 center-block item-agi item-mobi item-dam"
+        <div id="yasha" class="item-box-1 center-block item-agi item-mobi item-dam tier-2"
              rel="popover" data-title="Yasha">
           <span class="price-label" style="padding-left: 2px;">1,950</span>
           <img class="name-label" src="img/40px-Yasha_text.png">
@@ -2305,8 +2307,8 @@
       </div><!--/.col-xs-4-->
     </div><!--/.row-->
     <div class="row row-4">
-      <div class="col-xs-5 margin-special tier-2" style="margin:0 4.16666% 0 -4.16666%;">
-        <div id="soulring" class="item-box-1 center-block item-regen item-str"
+      <div class="col-xs-5 margin-special" style="margin:0 4.16666% 0 -4.16666%;">
+        <div id="soulring" class="item-box-1 center-block item-regen item-str tier-2"
              rel="popover" data-title="Soul Ring">
           <span class="price-label" style="padding-left: 8px;">755</span>
           <img class="name-label" src="img/40px-Soul_Ring_text.png">
@@ -2327,7 +2329,7 @@
             <p>Active: <i>Sacrifice</i> – Consume 150 health to temporarily gain 150 mana. Lasts 10 seconds. <img src="img/cd.png"> 30s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="frost" class="item-box-1 center-block item-int item-regen item-dam item-util item-cast wip"
+        <div id="frost" class="item-box-1 center-block item-int item-regen item-dam item-util item-cast wip tier-2"
              rel="popover" data-title="Frost Spike">
           <span class="price-label" style="padding-left: 8px;">755</span>
           <img class="name-label" src="img/40px-Frost_Spike_text.png">
@@ -2349,7 +2351,7 @@
             <p>Passive: <i>Survivalist</i> – Killing an enemy restores 12 mana for a creep, and 120 for a hero (to owner only).</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="swift" class="item-box-1 center-block item-agi item-mobi wip"
+        <div id="swift" class="item-box-1 center-block item-agi item-mobi wip tier-2"
              rel="popover" data-title="Swift Soles">
           <span class="price-label" style="padding-left: 8px;">675</span>
           <img class="name-label" src="img/40px-Swift_Soles_text.png">
@@ -2370,7 +2372,7 @@
             <p>Passive: <i>Step Lightly</i> – Gain +20 movement speed per second while within 1800 range of a visible enemy hero but not within their direct line of sight. Upon entering a visible enemy's line of sight, the movement speed is lost and converted to +2 of the bearer's primary attribute per stack. Max +4 stacks/80ms/+8 attribute, 8s stack duration (speed stacks with boots).</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="woodsman" class="item-box-1 center-block item-stat item-def item-util tier-2 wip"
+        <div id="woodsman" class="item-box-1 center-block item-stat item-def item-util tier-2 wip tier-2"
              rel="popover" data-title="Woodsman's Gloves">
           <span class="price-label" style="padding-left: 8px;">680</span>
           <img class="name-label" src="img/40px-Woodsman's_Gloves_text.png">
@@ -2420,8 +2422,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-1-->
-      <div class="col-xs-4 tier-2">
-        <div id="necro" class="item-box-1 center-block item-str item-regen item-util"
+      <div class="col-xs-4">
+        <div id="necro" class="item-box-1 center-block item-str item-regen item-util tier-2"
              rel="popover" data-title="Necronomicon">
           <span class="price-label" style="padding-left: 2px;">2,400</span>
           <img class="name-label" src="img/40px-Necronomicon_1_text.png">
@@ -2453,7 +2455,7 @@
             </div><!--/.popover-inset-->
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="blademail" class="item-box-1 center-block item-int item-def item-dam"
+        <div id="blademail" class="item-box-1 center-block item-int item-def item-dam tier-2"
              rel="popover" data-title="Blade Mail">
           <span class="price-label" style="padding-left: 2px;">2,200</span>
           <img class="name-label" src="img/40px-Blade_Mail_text.png">
@@ -2477,8 +2479,8 @@
       </div><!--/.col-xs-3-->
     </div><!--/.row-->
     <div class="row row-5">
-      <div class="col-xs-4 fix-margin tier-3">
-        <div id="drum" class="item-box-1 center-block item-str item-stat item-regen item-mobi item-supp"
+      <div class="col-xs-4 fix-margin">
+        <div id="drum" class="item-box-1 center-block item-str item-stat item-regen item-mobi item-supp tier-3"
              rel="popover" data-title="Drum of Endurance">
           <span class="price-label" style="padding-left: 2px;">1,615</span>
           <img class="name-label" src="img/40px-Drum_of_Endurance_text.png">
@@ -2502,7 +2504,7 @@
             <p>Active: <i>Endurance</i> – Grants +25 attack speed and +13% movement speed to allies within a 900 radius (6s duration, 6 charges, rebuy recipe to replenish). <img src="img/cd.png"> 30s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="dagon" class="item-box-1 center-block item-int item-stat item-cast"
+        <div id="dagon" class="item-box-1 center-block item-int item-stat item-cast tier-3"
              rel="popover" data-title="Dagon">
           <span class="price-label" style="padding-left: 2px;">2,715</span>
           <img class="name-label" src="img/40px-Dagon_1_text.png">
@@ -2535,7 +2537,7 @@
             </div><!--/.popover-inset-->
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="aquila" class="item-box-1 center-block item-agi item-stat item-dam item-def item-regen"
+        <div id="aquila" class="item-box-1 center-block item-agi item-stat item-dam item-def item-regen tier-3"
              rel="popover" data-title="Ring of Aquila">
           <span class="price-label" style="padding-left: 8px;">965</span>
           <img class="name-label" src="img/40px-Ring_of_Aquila_text.png">
@@ -2557,8 +2559,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
-      <div class="col-xs-4 fix-margin special-fix tier-3">
-        <div id="snk" class="item-box-1 center-block item-str item-int item-dam item-cast polished"
+      <div class="col-xs-4 fix-margin special-fix">
+        <div id="snk" class="item-box-1 center-block item-str item-int item-dam item-cast polished tier-3"
              rel="popover" data-title="Sange & Kaya">
           <span class="price-label" style="padding-left: 2px;">3,900</span>
           <img class="name-label" src="img/40px-Sange_and_Lucen_text.png">
@@ -2580,7 +2582,7 @@
             <p>Passive: <i>Greater Maim</i> – 40% chance to apply a 26/13% (melee/ranged) move & attack speed slow for 5s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="sny" class="item-box-1 center-block item-str item-agi item-dam item-mobi"
+        <div id="sny" class="item-box-1 center-block item-str item-agi item-dam item-mobi tier-3"
              rel="popover" data-title="Sange & Yasha">
           <span class="price-label" style="padding-left: 2px;">3,900</span>
           <img class="name-label" src="img/40px-Sange_and_Yasha_text.png">
@@ -2602,7 +2604,7 @@
             <p>Passive: <i>Greater Maim</i> – 40% chance to apply a 26/13% (melee/ranged) move & attack speed slow for 5s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="kny" class="item-box-1 center-block item-int item-agi item-mobi item-cast item-dam polished"
+        <div id="kny" class="item-box-1 center-block item-int item-agi item-mobi item-cast item-dam polished tier-3"
              rel="popover" data-title="Kaya & Yasha">
           <span class="price-label" style="padding-left: 2px;">3,900</span>
           <img class="name-label" src="img/40px-Lucen_and_Yasha_text.png">
@@ -2625,8 +2627,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
-      <div class="col-xs-4 fix-margin tier-2">
-        <div id="bkb" class="item-box-1 center-block item-str item-def item-dam"
+      <div class="col-xs-4 fix-margin">
+        <div id="bkb" class="item-box-1 center-block item-str item-def item-dam tier-2"
              rel="popover" data-title="Black King Bar">
           <span class="price-label" style="padding-left: 2px;">3,975</span>
           <img class="name-label" src="img/40px-Black_King_Bar_text.png">
@@ -2646,7 +2648,7 @@
             <p>Active: <i>Avatar</i> – Grants Spell Immunity and 100% Magic Damage Resistance. Duration and cooldown decrease with each use (10/9/8/7/6/5).<br><img src="img/cd.png"> 80/75/70/65/60/55s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="euls" class="item-box-1 center-block item-int item-mobi item-util item-regen item-def"
+        <div id="euls" class="item-box-1 center-block item-int item-mobi item-util item-regen item-def tier-2"
              rel="popover" data-title="Eul's Scepter of Divinity">
           <span class="price-label" style="padding-left: 2px;">2,750</span>
           <img class="name-label" src="img/40px-Eul's_Scepter_of_Divinity_text.png">
@@ -2668,7 +2670,7 @@
             <p>Active: <i>Cyclone</i> – Sweeps a target unit up into a cyclone, making them invulnerable for 2.5 seconds. Cyclone can only be cast on enemy units or yourself. Enemy units take 50 magical damage upon landing. (575 cast range, applies a basic dispel when cast on self). <img src="img/cd.png"> 23s <img src="img/mana.png"> 175</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="diffu" class="item-box-1 center-block item-int item-agi item-util item-dam"
+        <div id="diffu" class="item-box-1 center-block item-int item-agi item-util item-dam tier-2"
              rel="popover" data-title="Diffusal Blade">
           <span class="price-label" style="padding-left: 2px;">3,150</span>
           <img class="name-label" src="img/40px-Diffusal_Blade_text.png">
@@ -2693,8 +2695,8 @@
       </div><!--/.col-xs-4-->
     </div><!--/.row-->
     <div class="row row-6">
-      <div class="col-xs-3 col-xs-offset-1 special-fix tier-3">
-        <div id="atos" class="item-box-1 center-block item-str item-stat item-util"
+      <div class="col-xs-3 col-xs-offset-1 special-fix">
+        <div id="atos" class="item-box-1 center-block item-str item-stat item-util tier-3"
              rel="popover" data-title="Rod of Atos">
           <span class="price-label" style="padding-left: 2px;">3,030</span>
           <img class="name-label" src="img/40px-Rod_of_Atos_text.png">
@@ -2716,7 +2718,7 @@
             <p>Active: <i>Cripple</i> – Roots the target for 2s (1150 cast range) <img src="img/cd.png"> 16s <img src="img/mana.png"> 50</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="veil" class="item-box-1 center-block item-int item-stat item-def item-regen item-cast item-supp"
+        <div id="veil" class="item-box-1 center-block item-int item-stat item-def item-regen item-cast item-supp tier-3"
              rel="popover" data-title="Veil of Discord">
           <span class="price-label" style="padding-left: 2px;">2,330</span>
           <img class="name-label" src="img/40px-Veil_of_Discord_text.png">
@@ -2741,7 +2743,7 @@
             </p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="squire" class="item-box-1 center-block item-agi item-stat item-dam polished"
+        <div id="squire" class="item-box-1 center-block item-agi item-stat item-dam polished tier-3"
              rel="popover" data-title="Squire's Greatsword">
           <span class="price-label" style="padding-left: 2px;">2,330</span>
           <img class="name-label" src="img/40px-Squire's_Greatsword_text.png">
@@ -2767,8 +2769,8 @@
       </div><!--/.col-xs-3-offset-->
       <div class="col-xs-3 offset-fix">
       </div><!--/.col-xs-3-->
-      <div class="col-xs-2 fix-margin tier-2">
-        <div id="aghs" class="item-box-1 center-block item-stat item-cast"
+      <div class="col-xs-2 fix-margin">
+        <div id="aghs" class="item-box-1 center-block item-stat item-cast tier-2"
              rel="popover" data-title="Aghanim's Scepter">
           <span class="price-label" style="padding-left: 2px;">4,200</span>
           <img class="name-label" src="img/40px-Aghanim's_Scepter_text.png">
@@ -2820,8 +2822,8 @@
     <div class="row row-7">
       <div class="col-xs-32 col-xs-1 push-right">
       </div><!--/.col-xs-32-->
-      <div class="col-xs-3 fix-triple tier-3">
-        <div id="halberd" class="item-box-1 center-block item-str item-util item-dam item-def"
+      <div class="col-xs-3 fix-triple">
+        <div id="halberd" class="item-box-1 center-block item-str item-util item-dam item-def tier-3"
              rel="popover" data-title="Heaven's Halberd">
           <span class="price-label" style="padding-left: 2px;">3,400</span>
           <img class="name-label" src="img/40px-Heaven's_Halberd_text.png">
@@ -2842,7 +2844,7 @@
             <p>Passive: <i>Lesser Maim</i> – 35% chance to apply a 20/10% (melee/ranged) move & attack speed slow for 5s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="sanguine" class="item-box-1 center-block item-str item-regen item-dam item-cast wip" style="margin-left: -6px;"
+        <div id="sanguine" class="item-box-1 center-block item-str item-regen item-dam item-cast wip tier-3" style="margin-left: -6px;"
              rel="popover" data-title="Sanguine Edge">
           <span class="price-label" style="padding-left: 2px;">3,250</span>
           <img class="name-label" src="img/40px-Sanguine_Edge_text.png">
@@ -2866,8 +2868,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-3-->
-      <div class="col-xs-3 fix-triple push-left tier-3">
-        <div id="spellblade" class="item-box-1 center-block item-int item-regen item-cast wip"
+      <div class="col-xs-3 fix-triple push-left">
+        <div id="spellblade" class="item-box-1 center-block item-int item-regen item-cast wip tier-3"
              rel="popover" data-title="Spellblade">
           <span class="price-label" style="padding-left: 2px;">5,750</span>
           <img class="name-label" src="img/40px-Spellblade_text.png">
@@ -2892,7 +2894,7 @@
             <p>Toggle/Passive: <i>Spellmastery</i> – The next spell cast costs +20% mana, gains +100 effect radius and an instant cast point <img src="img/cd.png"> 8s (radius applies to spells only, animation applies to spells with a cast point, does not affect cast points longer than 1s)</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="seraph" class="item-box-1 center-block item-int item-regen item-cast item-mobi item-supp polished" style="margin-left: -6px;"
+        <div id="seraph" class="item-box-1 center-block item-int item-regen item-cast item-mobi item-supp polished tier-3" style="margin-left: -6px;"
              rel="popover" data-title="Seraph Wing">
           <span class="price-label" style="padding-left: 2px;">5,150</span>
           <img class="name-label" src="img/40px-Seraph_Wing_text.png">
@@ -2922,8 +2924,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-3-->
-      <div class="col-xs-3 fix-triple push-left tier-3">
-        <div id="manta" class="item-box-1 center-block item-agi item-stat item-util item-mobi item-dam item-def"
+      <div class="col-xs-3 fix-triple push-left">
+        <div id="manta" class="item-box-1 center-block item-agi item-stat item-util item-mobi item-dam item-def tier-3"
              rel="popover" data-title="Manta Style">
           <span class="price-label" style="padding-left: 2px;">5,000</span>
           <img class="name-label" src="img/40px-Manta_Style_text.png">
@@ -2946,7 +2948,7 @@
             <p>Active: <i>Mirror Image</i> – Creates 2 illusions that last 20 seconds, deal 33% damage for melee heroes/28% for ranged heroes, and take 350%/400% damage. Applies a weak dispel and disjoint projectiles during the 0.1s split time. <img src="img/cd.png"> 30/45s <img src="img/mana.png"> 125</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="hayabusa" class="item-box-1 center-block item-agi item-mobi item-dam polished" style="margin-left: -6px;"
+        <div id="hayabusa" class="item-box-1 center-block item-agi item-mobi item-dam polished tier-3" style="margin-left: -6px;"
              rel="popover" data-title="Hayabusa">
           <span class="price-label" style="padding-left: 2px;">4,400</span>
           <img class="name-label" src="img/40px-Hayabusa_text.png">
@@ -2975,8 +2977,8 @@
     <div class="row row-8">
       <div class="col-xs-5">
       </div><!--/.col-xs-5-->
-      <div class="col-xs-2 tier-4">
-        <div id="trio" class="item-box-1 center-block item-stat item-dam item-mobi item-cast polished"
+      <div class="col-xs-2">
+        <div id="trio" class="item-box-1 center-block item-stat item-dam item-mobi item-cast polished tier-4"
              rel="popover" data-title="Sacred Trio">
           <span class="price-label" style="padding-left: 2px;">7,400</span>
           <img class="name-label" src="img/40px-Sacred_Trio_text.png">
@@ -3003,8 +3005,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-2-->
-      <div class="col-xs-5 tier-3">
-        <div id="gjalla" class="item-box-1 center-block item-str item-stat item-def item-supp item-dam wip" style="margin-left: -6px;"
+      <div class="col-xs-5">
+        <div id="gjalla" class="item-box-1 center-block item-str item-stat item-def item-supp item-dam wip tier-3"
              rel="popover" data-title="Gjallarhorn">
           <span class="price-label" style="padding-left: 2px;">5,250</span>
           <img class="name-label" src="img/40px-Gjallarhorn_text.png">
@@ -3025,7 +3027,6 @@
             <p>+7 Agility (+1.17 armor, +7 attack speed, +0.42% movement speed for agility heroes)</p>
             <p>+10 Damage (+17 total, or +30 for strength heroes)</p>
             <p>+4.5 Health Regen</p>
-            <p>+15% Lifesteal</p>
             <p>Active/Passive: <i>Bind Souls</i> – Gains charges in a 1200 radius
               like a Magic Wand, with no limit on the max number of charges
               stored. When an ally in the same radius takes an instance of
@@ -3040,9 +3041,10 @@
               component on cooldown (1200 cast range, may be toggled to disable
               automatic passive usage by double-clicking).<br><img src="img/cd.png"> 30s
             </p>
+            <p>Passive: <i>Lifesteal</i> – Heals the attacker for 15% of attack damage dealt.</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="cc" class="item-box-1 center-block item-str item-dam item-regen item-def item-util draft"
+        <div id="cc" class="item-box-1 center-block item-str item-dam item-regen item-def item-util draft tier-3"
              rel="popover" data-title="Carnivore Claw">
           <span class="price-label" style="padding-left: 2px;">4,220</span>
           <img class="name-label" src="img/40px-Carnivore_Claw_text.png">
@@ -3061,11 +3063,11 @@
             <p>+25 Attack Speed</p>
             <p>+20 Damage (+30 for strength heroes)</p>
             <p>+5 Armor</p>
-            <p>+20% Lifesteal</p>
             <p>Active: <i>Stalk</i> – The target unit (including self if targeted) loses shared vision for the duration of each toggle of the active (800 cast range, instant vision loss, toggle off any time, <i>terror</i> effect over enemy's head), which gives the same benefits as Armlet’s Unholy Strength while toggled on (+31 damage, +25 strength, +4 armor, -45 hps). <img src="img/cd.png"> 0s</p>
+            <p>Passive: <i>Lifesteal</i> – Heals the attacker for 20% of attack damage dealt.</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="fangs" class="item-box-1 center-block item-int item-agi item-dam item-regen item-cast wip"
+        <div id="fangs" class="item-box-1 center-block item-int item-agi item-dam item-regen item-cast wip tier-3"
              rel="popover" data-title="Snake Fangs">
           <span class="price-label" style="padding-left: 2px;">3,895</span>
           <img class="name-label" src="img/40px-Snake_Fangs_text.png">
@@ -3092,8 +3094,8 @@
       </div><!--/.col-xs-4-offset-->
     </div><!--/.row-->
     <div class="row row-9">
-      <div class="col-xs-3 col-xs-3-3 col-xs-offset-1 tier-3 shop-secret">
-        <div id="reaver" class="item-box-1 center-block item-str"
+      <div class="col-xs-3 col-xs-3-3 col-xs-offset-1 shop-secret">
+        <div id="reaver" class="item-box-1 center-block item-str tier-3"
              rel="popover" data-title="Reaver">
           <span class="price-label" style="padding-left: 2px;">3,000</span>
           <img class="name-label" src="img/40px-Reaver_text.png">
@@ -3109,8 +3111,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-3-->
-      <div class="col-xs-3 col-xs-3-3 tier-3 shop-secret">
-        <div id="mystic" class="item-box-1 center-block item-int"
+      <div class="col-xs-3 col-xs-3-3 shop-secret">
+        <div id="mystic" class="item-box-1 center-block item-int tier-3"
              rel="popover" data-title="Mystic Staff">
           <span class="price-label" style="padding-left: 2px;">2,700</span>
           <img class="name-label" src="img/40px-Mystic_Staff_text.png">
@@ -3126,8 +3128,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-3-->
-      <div class="col-xs-3 col-xs-3-3 tier-3 shop-secret">
-        <div id="eagle" class="item-box-1 center-block item-agi"
+      <div class="col-xs-3 col-xs-3-3 shop-secret">
+        <div id="eagle" class="item-box-1 center-block item-agi tier-3"
              rel="popover" data-title="Eaglesong">
           <span class="price-label" style="padding-left: 2px;">3,200</span>
           <img class="name-label" src="img/40px-Eaglesong_text.png">
@@ -3145,8 +3147,8 @@
       </div><!--/.col-xs-8-offset-->
     </div><!--/.row-->
     <div class="row row-10">
-      <div class="col-xs-3 col-xs-3-3 fix-margin col-xs-offset-1 tier-4">
-        <div id="heart" class="item-box-1 center-block item-str item-stat item-regen"
+      <div class="col-xs-3 col-xs-3-3 fix-margin col-xs-offset-1">
+        <div id="heart" class="item-box-1 center-block item-str item-stat item-regen tier-4"
              rel="popover" data-title="Heart of Tarrasque">
           <span class="price-label" style="padding-left: 2px;">5,200</span>
           <img class="name-label" src="img/40px-Heart_of_Tarrasque_text.png">
@@ -3166,7 +3168,7 @@
             <p>Passive: <i>Health Regeneration</i> – Restores 7% of max health per second after not taking damage from an enemy hero or Roshan for <img src="img/cd.png"> 7s ranged/5s melee.</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="satanic" class="item-box-1 center-block item-str item-dam item-regen" style="margin-left: -12px;"
+        <div id="satanic" class="item-box-1 center-block item-str item-dam item-regen tier-4" style="margin-left: -12px;"
              rel="popover" data-title="Satanic">
           <span class="price-label" style="padding-left: 2px;">5,500</span>
           <img class="name-label" src="img/40px-Satanic_text.png">
@@ -3183,11 +3185,11 @@
             </div><!--/.popover-inset-->
             <p>+25 Strength (+400 health, +17.5% health regen, +3.75% status resistance for strength heroes)</p>
             <p>+50 Damage (+75 for strength heroes)</p>
-            <p>+25% Lifesteal</p>
-            <p>Active: <i>Unholy Rage</i> – Lifesteal 200% total (+175%) for 4.5 seconds. <img src="img/cd.png"> 35s <img src="img/mana.png"> 0</p>
+            <p>Active: <i>Unholy Rage</i> – Increases Lifesteal percentage to 200% total (+175%) for 4.5 seconds. <img src="img/cd.png"> 35s</p>
+            <p>Passive: <i>Lifesteal</i> – Heals the attacker for 25% of attack damage dealt.</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="pauldron" class="item-box-1 center-block item-str item-stat item-regen item-dam item-util polished" style="margin-left: -8px;"
+        <div id="pauldron" class="item-box-1 center-block item-str item-stat item-regen item-dam item-util polished tier-4" style="margin-left: -8px;"
              rel="popover" data-title="Beast Pauldron">
           <span class="price-label" style="padding-left: 2px;">5,000</span>
           <img class="name-label" src="img/40px-Beast_Pauldron_text.png">
@@ -3213,8 +3215,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-3-->
-      <div class="col-xs-3 col-xs-3-3 fix-margin tier-4">
-        <div id="sheep" class="item-box-1 center-block item-int item-stat item-regen item-util"
+      <div class="col-xs-3 col-xs-3-3 fix-margin">
+        <div id="sheep" class="item-box-1 center-block item-int item-stat item-regen item-util tier-4"
              rel="popover" data-title="Scythe of Vyse">
           <span class="price-label" style="padding-left: 2px;">5,700</span>
           <img class="name-label" src="img/40px-Scythe_of_Vyse_text.png">
@@ -3236,7 +3238,7 @@
             <p>Active: <i>Hex</i> – Turns the target into a harmless critter for 3.5s (800 cast range, instantly destroys illusions, not dispellable). <img src="img/cd.png"> 22s <img src="img/mana.png"> 100</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="shiva" class="item-box-1 center-block item-int item-def item-cast" style="margin-left: -12px;"
+        <div id="shiva" class="item-box-1 center-block item-int item-def item-cast tier-4" style="margin-left: -12px;"
              rel="popover" data-title="Shiva's Guard">
           <span class="price-label" style="padding-left: 2px;">4,750</span>
           <img class="name-label" src="img/40px-Shiva's_Guard_text.png">
@@ -3257,7 +3259,7 @@
             <p>Active: <i>Arctic Blast</i> – Emits a 900 radius freezing wave that deals 200 magical damage to enemies and slows their movement by 40% for 4 seconds. <div style="inline-block"><img src="img/cd.png"> 30s <img src="img/mana.png"> 100</div></p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="ocore" class="item-box-1 center-block item-int item-stat item-cast" style="margin-left: -12px;"
+        <div id="ocore" class="item-box-1 center-block item-int item-stat item-cast tier-4" style="margin-left: -12px;"
              rel="popover" data-title="Octarine Core">
           <span class="price-label" style="padding-left: 2px;">5,900</span>
           <img class="name-label" src="img/40px-Octarine_Core_text.png">
@@ -3274,13 +3276,13 @@
             <p>+25 Intelligence (+300 mana, +50% mana regen, +1.75% spell amplification, +3.75% magic resistance for intelligence heroes)</p>
             <p>+425 Health</p>
             <p>+425 Mana (+700 total)</p>
-            <p>+25% Cooldown Reduction</p>
-            <p>+25% Spell Lifesteal</p>
+            <p>Passive: <i>Cooldown Reduction</i> – Reduces the cooldown time of all spells and items by 25%.</p>
+            <p>Passive: <i>Spell Lifesteal</i> – 25% of spell damage dealt to enemy heroes is returned to the caster as health, regardless of spell damage type. Lifesteal reduced to 5% against creeps</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-3-->
-      <div class="col-xs-3 col-xs-3-3 fix-margin tier-4">
-        <div id="butterfly" class="item-box-1 center-block item-agi item-def item-mobi item-dam item-def"
+      <div class="col-xs-3 col-xs-3-3 fix-margin">
+        <div id="butterfly" class="item-box-1 center-block item-agi item-def item-mobi item-dam item-def tier-4"
              rel="popover" data-title="Butterfly">
           <span class="price-label" style="padding-left: 2px;">5,525</span>
           <img class="name-label" src="img/40px-Butterfly_text.png">
@@ -3302,7 +3304,7 @@
             <p>Active: <i>Flutter</i> – Grants 35% additional movement speed for 2 seconds. <img src="img/cd.png"> 25s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="eblade" class="item-box-1 center-block item-agi item-def item-supp item-cast" style="margin-left: -12px;"
+        <div id="eblade" class="item-box-1 center-block item-agi item-def item-supp item-cast tier-4" style="margin-left: -12px;"
              rel="popover" data-title="Ethereal Blade">
           <span class="price-label" style="padding-left: 2px;">4,700</span>
           <img class="name-label" src="img/40px-Ethereal_Blade_text.png">
@@ -3323,7 +3325,7 @@
             </p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="wkb" class="item-box-1 center-block item-agi item-dam item-util polished" style="margin-left: -8px;"
+        <div id="wkb" class="item-box-1 center-block item-agi item-dam item-util polished tier-4" style="margin-left: -8px;"
              rel="popover" data-title="Wight King Bar">
           <span class="price-label" style="padding-left: 2px;">4,800</span>
           <img class="name-label" src="img/40px-Wight_King_Bar_text.png">
@@ -3347,8 +3349,8 @@
       </div><!--/.col-xs-3-->
     </div><!--/.row-->
     <div class="row bottom-wide custom-collapse row-11">
-      <div class="col-xs-4 col-xs-offset-4 tier-4">
-        <div id="vermilion" class="item-box-1 center-block item-stat polished"
+      <div class="col-xs-4 col-xs-offset-4">
+        <div id="vermilion" class="item-box-1 center-block item-stat polished tier-4"
              rel="popover" data-title="Vermilion Coat" style="margin-bottom: 12px;">
           <span class="price-label" style="padding-left: 2px;">8,900</span>
           <img class="name-label" src="img/40px-Vermilion_Coat_text.png">
@@ -3368,8 +3370,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-offset-->
-      <div class="col-xs-2 col-xs-offset-1 tier-4">
-        <div id="wyrmslayer" class="item-box-1 center-block item-str item-stat item-dam item-regen polished"
+      <div class="col-xs-2 col-xs-offset-1">
+        <div id="wyrmslayer" class="item-box-1 center-block item-str item-stat item-dam item-regen polished tier-4"
              rel="popover" data-title="Wyrmslayer">
           <span class="price-label" style="padding-left: 2px;">5,650</span>
           <img class="name-label" src="img/40px-Wyrmslayer_text.png">
@@ -3399,8 +3401,8 @@
   </div><!--/.col-lg-5-->
   <div id="col-3" class="col-lg-35 col-lg-3 outer">
     <div class="row row-1">
-      <div class="col-xs-4 shift-special tier-1 shop-base">
-        <div id="branch" class="item-box-1 center-block item-stat item-util"
+      <div class="col-xs-4 shift-special shop-base">
+        <div id="branch" class="item-box-1 center-block item-stat item-util tier-1"
              rel="popover" data-title="Iron Branch">
           <span class="price-label" style="padding-left: 12px;">50</span>
           <img class="name-label" src="img/40px-Iron_Branch_text.png">
@@ -3416,7 +3418,7 @@
             <p>Active: <i>Plant Tree</i> – Targets the ground to plant a happy little tree that lasts for 20 seconds (200 cast range). <img src="img/cd.png"> 0s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="circlet" class="item-box-1 center-block item-stat"
+        <div id="circlet" class="item-box-1 center-block item-stat tier-1"
              rel="popover" data-title="Circlet">
           <span class="price-label" style="padding-left: 8px;">165</span>
           <img class="name-label" src="img/40px-Circlet_text.png">
@@ -3432,8 +3434,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
-      <div class="col-xs-6 push-left fixed-height tier-1 shop-base">
-        <div id="blight" class="item-box-1 center-block item-dam"
+      <div class="col-xs-6 push-left fixed-height shop-base">
+        <div id="blight" class="item-box-1 center-block item-dam tier-1"
              rel="popover" data-title="Blight Stone">
           <span class="price-label" style="padding-left: 8px;">300</span>
           <img class="name-label" src="img/40px-Blight_Stone_text.png">
@@ -3448,7 +3450,7 @@
             <p>Passive: <i>Lesser Corruption</i> – Your attacks reduce the target's armor by 2 for 8 seconds.</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="qb" class="item-box-1 center-block item-dam shop-side"
+        <div id="qb" class="item-box-1 center-block item-dam shop-side tier-1"
              rel="popover" data-title="Quelling Blade">
           <span class="price-label" style="padding-left: 8px;">200</span>
           <img class="name-label" src="img/40px-Quelling_Blade_text.png">
@@ -3464,7 +3466,7 @@
             <p>Passive: <i>Quell</i> – Increases attack damage against non-hero units by 24 for melee heroes, and 7 for ranged.</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="oov" class="item-box-1 center-block item-dam"
+        <div id="oov" class="item-box-1 center-block item-dam tier-1"
              rel="popover" data-title="Orb of Venom">
           <span class="price-label" style="padding-left: 8px;">275</span>
           <img class="name-label" src="img/40px-Orb_of_Venom_text.png">
@@ -3479,7 +3481,7 @@
             <p>Passive: <i>Poison Attack</i> – Poisons the target, dealing 5 damage per second for 3 seconds and slowing movement 12% if the equipped hero is melee, or 4% if they are ranged.</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="javelin" class="item-box-1 center-block item-dam"
+        <div id="javelin" class="item-box-1 center-block item-dam tier-1"
              rel="popover" data-title="Javelin">
           <span class="price-label" style="padding-left: 2px;">1,100</span>
           <img class="name-label" src="img/40px-Javelin_text.png">
@@ -3496,8 +3498,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-6-->
-      <div class="col-xs-4 shift-special push-left tier-1 shop-base" style="margin-right:-8.333333%;">
-        <div id="goh" class="item-box-1 center-block item-dam shop-side"
+      <div class="col-xs-4 shift-special push-left shop-base" style="margin-right:-8.333333%;">
+        <div id="goh" class="item-box-1 center-block item-dam shop-side tier-1"
              rel="popover" data-title="Gloves of Haste">
           <span class="price-label" style="padding-left: 8px;">500</span>
           <img class="name-label" src="img/40px-Gloves_of_Haste_text.png">
@@ -3512,7 +3514,7 @@
             <p>+20 Attack Speed</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="qstaff" class="item-box-1 center-block item-dam"
+        <div id="qstaff" class="item-box-1 center-block item-dam tier-1"
              rel="popover" data-title="Quarterstaff">
           <span class="price-label" style="padding-left: 8px;">875</span>
           <img class="name-label" src="img/40px-Quarterstaff_text.png">
@@ -3531,8 +3533,8 @@
       </div><!--/.col-xs-3-->
     </div><!--/.row-->
     <div class="row row-2">
-      <div class="col-xs-2 shift-width col-xs-offset-1 tier-1 shop-base">
-        <div id="ghost" class="item-box-1 center-block item-stat item-def"
+      <div class="col-xs-2 shift-width col-xs-offset-1 shop-base">
+        <div id="ghost" class="item-box-1 center-block item-stat item-def tier-1"
              rel="popover" data-title="Ghost Scepter">
           <span class="price-label" style="padding-left: 2px;">1,500</span>
           <img class="name-label" src="img/40px-Ghost_Scepter_text.png">
@@ -3549,8 +3551,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-2-offset-->
-      <div class="col-xs-6 fixed-height tier-1 shop-base">
-        <div id="boa" class="item-box-1 center-block item-dam"
+      <div class="col-xs-6 fixed-height shop-base">
+        <div id="boa" class="item-box-1 center-block item-dam tier-1"
              rel="popover" data-title="Blades of Attack">
           <span class="price-label" style="padding-left: 8px;">420</span>
           <img class="name-label" src="img/40px-Blades_of_Attack_text.png">
@@ -3565,7 +3567,7 @@
             <p>+9 Damage</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="broad" class="item-box-1 center-block item-dam shop-side"
+        <div id="broad" class="item-box-1 center-block item-dam shop-side tier-1"
              rel="popover" data-title="Broadsword">
           <span class="price-label" style="padding-left: 2px;">1,200</span>
           <img class="name-label" src="img/40px-Broadsword_text.png">
@@ -3580,7 +3582,7 @@
             <p>+18 Damage</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="clay" class="item-box-1 center-block item-dam"
+        <div id="clay" class="item-box-1 center-block item-dam tier-1"
              rel="popover" data-title="Claymore">
           <span class="price-label" style="padding-left: 2px;">1,400</span>
           <img class="name-label" src="img/40px-Claymore_text.png">
@@ -3611,8 +3613,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-6-->
-      <div class="col-xs-2 shift-width tier-1 shop-base">
-        <div id="shadowam" class="item-box-1 center-block item-dam item-util"
+      <div class="col-xs-2 shift-width shop-base">
+        <div id="shadowam" class="item-box-1 center-block item-dam item-util tier-1"
              rel="popover" data-title="Shadow Amulet">
           <span class="price-label" style="padding-left: 2px;">1,300</span>
           <img class="name-label" src="img/40px-Shadow_Amulet_text.png">
@@ -3631,8 +3633,8 @@
       </div><!--/.col-xs-2-->
     </div><!--/.row-->
     <div class="row row-3">
-      <div class="col-xs-2 col-xs-offset-1 tier-2 shop-secret">
-        <div id="ultimateorb" class="item-box-1 center-block item-stat"
+      <div class="col-xs-2 col-xs-offset-1 shop-secret">
+        <div id="ultimateorb" class="item-box-1 center-block item-stat tier-2"
              rel="popover" data-title="Ultimate Orb">
           <span class="price-label" style="padding-left: 2px;">2,150</span>
           <img class="name-label" src="img/40px-Ultimate_Orb_text.png">
@@ -3665,7 +3667,7 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-6-->
-      <div class="col-xs-2 tier-2">
+      <div class="col-xs-2">
         <div id="hyper" class="item-box-1 center-block item-dam tier-2 shop-secret"
              rel="popover" data-title="Hyperstone">
           <span class="price-label" style="padding-left: 2px;">2,000</span>
@@ -3687,8 +3689,8 @@
       <div class="col-xs-4">
         
       </div><!--/.col-xs-4-->
-      <div class="col-xs-2 tier-2">
-        <div id="crystal" class="item-box-1 center-block item-dam"
+      <div class="col-xs-2">
+        <div id="crystal" class="item-box-1 center-block item-dam tier-2"
              rel="popover" data-title="Crystalys">
           <span class="price-label" style="padding-left: 2px;">2,120</span>
           <img class="name-label" src="img/40px-Crystalys_text.png">
@@ -3708,8 +3710,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-2-->
-      <div class="col-xs-2 tier-2">
-        <div id="shadowb" class="item-box-1 center-block item-dam item-util item-mobi"
+      <div class="col-xs-2">
+        <div id="shadowb" class="item-box-1 center-block item-dam item-util item-mobi tier-2"
              rel="popover" data-title="Shadow Blade">
           <span class="price-label" style="padding-left: 2px;">2,700</span>
           <img class="name-label" src="img/40px-Shadow_Blade_text.png">
@@ -3731,8 +3733,8 @@
       </div><!--/.col-xs-2-->
     </div><!--/.row-->
     <div class="row row-5">
-      <div class="col-xs-2 tier-2">
-        <div id="basher" class="item-box-1 center-block item-str item-dam"
+      <div class="col-xs-2">
+        <div id="basher" class="item-box-1 center-block item-str item-dam tier-2"
              rel="popover" data-title="Skull Basher">
           <span class="price-label" style="padding-left: 2px;">2,700</span>
           <img class="name-label" src="img/40px-Skull_Basher_text.png">
@@ -3753,8 +3755,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-2-->
-      <div class="col-xs-2 tier-3">
-        <div id="orchid" class="item-box-1 center-block item-int item-dam item-regen item-util"
+      <div class="col-xs-2">
+        <div id="orchid" class="item-box-1 center-block item-int item-dam item-regen item-util tier-3"
              rel="popover" data-title="Orchid Malevolence">
           <span class="price-label" style="padding-left: 2px;">4,075</span>
           <img class="name-label" src="img/40px-Orchid_Malevolence_text.png">
@@ -3777,8 +3779,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-2-->
-      <div class="col-xs-4 tier-3">
-        <div id="bfury" class="item-box-1 center-block item-dam item-regen"
+      <div class="col-xs-4">
+        <div id="bfury" class="item-box-1 center-block item-dam item-regen tier-3"
              rel="popover" data-title="Battle Fury">
           <span class="price-label" style="padding-left: 2px;">4,100</span>
           <img class="name-label" src="img/40px-Battle_Fury_text.png">
@@ -3802,8 +3804,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
-      <div class="col-xs-3 fixed-height tier-2">
-        <div id="mael" class="item-box-1 center-block item-dam"
+      <div class="col-xs-3 fixed-height">
+        <div id="mael" class="item-box-1 center-block item-dam tier-2"
              rel="popover" data-title="Maelstrom">
           <span class="price-label" style="padding-left: 2px;">2,800</span>
           <img class="name-label" src="img/40px-Maelstrom_text.png">
@@ -3823,7 +3825,7 @@
             <p>Passive: <i>Chain Lightning</i> – Grants a 25% chance on attack to release a bolt of electricity that leaps between 4 targets within a 900 radius, dealing 120 magical damage to each (0.25s bounce interval).</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="midas" class="item-box-1 center-block item-dam item-util"
+        <div id="midas" class="item-box-1 center-block item-dam item-util tier-2"
              rel="popover" data-title="Hand of Midas">
           <span class="price-label" style="padding-left: 2px;">2,150</span>
           <img class="name-label" src="img/40px-Hand_of_Midas_text.png">
@@ -3847,8 +3849,8 @@
       <div class="col-xs-3">
         
       </div><!--/.col-xs-3-->
-      <div class="col-xs-2 tier-2">
-        <div id="deso" class="item-box-1 center-block item-dam"
+      <div class="col-xs-2">
+        <div id="deso" class="item-box-1 center-block item-dam tier-2"
              rel="popover" data-title="Desolator">
           <span class="price-label" style="padding-left: 2px;">3,500</span>
           <img class="name-label" src="img/40px-Desolator_text.png">
@@ -3871,8 +3873,8 @@
       <div class="col-xs-1">
         
       </div><!--/.col-xs-1-->
-      <div class="col-xs-5 tier-2">
-        <div id="armlet" class="item-box-1 center-block item-dam item-regen item-def"
+      <div class="col-xs-5">
+        <div id="armlet" class="item-box-1 center-block item-dam item-regen item-def tier-2"
              rel="popover" data-title="Armlet of Mordiggian">
           <span class="price-label" style="padding-left: 2px;">2,370</span>
           <img class="name-label" src="img/40px-Armlet_of_Mordiggian_text.png">
@@ -3895,7 +3897,7 @@
             <p>Active: <i>Unholy Strength</i> – When active, Unholy Strength grants +31 damage, +25 strength and +4 armor, but drains 45 health per second. You cannot die from the health drain when Unholy Strength is activated, nor from the strength loss when Unholy Strength is deactivated (0.6s activation time). <img src="img/cd.png"> 0s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="mom" class="item-box-1 center-block item-dam item-regen item-mobi"
+        <div id="mom" class="item-box-1 center-block item-dam item-regen item-mobi tier-2"
              rel="popover" data-title="Mask of Madness">
           <span class="price-label" style="padding-left: 2px;">1,975</span>
           <img class="name-label" src="img/40px-Mask_of_Madness_text.png">
@@ -3911,15 +3913,15 @@
             </div><!--/.popover-inset-->
             <p>+10 Attack Speed</p>
             <p>+20 Damage</p>
-            <p>+15% Lifesteal</p>
             <p>Active: <i>Berserk</i> – Gives 110 attack speed and 12% movement speed, but reduces your armor by 8 and silences you. Lasts 8 seconds. <img src="img/cd.png"> 22s <img src="img/mana.png"> 25</p>
+            <p>Passive: <i>Lifesteal</i> – Heals the attacker for 15% of attack damage dealt.</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-5-->
     </div><!--/.row-->
     <div class="row row-7">
-      <div class="col-xs-4 fix-margin tier-3">
-        <div id="linkens" class="item-box-1 center-block item-stat item-regen item-def item-supp"
+      <div class="col-xs-4 fix-margin">
+        <div id="linkens" class="item-box-1 center-block item-stat item-regen item-def item-supp tier-3"
              rel="popover" data-title="Linken's Sphere">
           <span class="price-label" style="padding-left: 2px;">5,050</span>
           <img class="name-label" src="img/40px-Linken's_Sphere_text.png">
@@ -3940,7 +3942,7 @@
             <p>Active/Passive: <i>Spellblock</i> – Blocks most targeted spells once every 13 seconds. Target an ally to temporarily remove Spellblock from the item's owner and transfer it to an allied unit for 13 seconds. <img src="img/cd.png"> 13s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="skadi" class="item-box-1 center-block item-stat"
+        <div id="skadi" class="item-box-1 center-block item-stat tier-3"
              rel="popover" data-title="Eye of Skadi">
           <span class="price-label" style="padding-left: 2px;">5,500</span>
           <img class="name-label" src="img/40px-Eye_of_Skadi_text.png">
@@ -3962,8 +3964,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
-      <div class="col-xs-2 tier-3">
-        <div id="daedalus" class="item-box-1 center-block item-dam"
+      <div class="col-xs-2">
+        <div id="daedalus" class="item-box-1 center-block item-dam tier-3"
              rel="popover" data-title="Daedalus">
           <span class="price-label" style="padding-left: 2px;">5,320</span>
           <img class="name-label" src="img/40px-Daedalus_text.png">
@@ -3983,8 +3985,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-2-->
-      <div class="col-xs-2 tier-3">
-        <div id="silvedge" class="item-box-1 center-block item-stat item-util item-mobi item-dam"
+      <div class="col-xs-2">
+        <div id="silvedge" class="item-box-1 center-block item-stat item-util item-mobi item-dam tier-3"
              rel="popover" data-title="Silver Edge">
           <span class="price-label" style="padding-left: 2px;">5,550</span>
           <img class="name-label" src="img/40px-Silver_Edge_text.png">
@@ -4006,8 +4008,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-2-->
-      <div class="col-xs-3 tier-3">
-        <div id="mkb" class="item-box-1 center-block item-dam"
+      <div class="col-xs-3">
+        <div id="mkb" class="item-box-1 center-block item-dam tier-3"
              rel="popover" data-title="Monkey King Bar">
           <span class="price-label" style="padding-left: 2px;">4,200</span>
           <img class="name-label" src="img/40px-Monkey_King_Bar_text.png">
@@ -4029,8 +4031,8 @@
       </div><!--/.col-xs-3-->
     </div><!--/.row-->
     <div class="row row-8">
-      <div class="col-xs-2 tier-3">
-        <div id="ablade" class="item-box-1 center-block item-str item-dam item-def item-util item-regen"
+      <div class="col-xs-2">
+        <div id="ablade" class="item-box-1 center-block item-str item-dam item-def item-util item-regen tier-3"
              rel="popover" data-title="Abyssal Blade">
           <span class="price-label" style="padding-left: 2px;">6,400</span>
           <img class="name-label" src="img/40px-Abyssal_Blade_text.png">
@@ -4054,8 +4056,8 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-2-->
-      <div class="col-xs-2 tier-4">
-        <div id="bloodthorn" class="item-box-1 center-block item-int item-dam item-regen item-util"
+      <div class="col-xs-2">
+        <div id="bloodthorn" class="item-box-1 center-block item-int item-dam item-regen item-util tier-4"
              rel="popover" data-title="Bloodthorn">
           <span class="price-label" style="padding-left: 2px;">7,195</span>
           <img class="name-label" src="img/40px-Bloodthorn_text.png">
@@ -4081,8 +4083,8 @@
       </div><!--/.col-xs-2-->
       <div class="col-xs-3">
       </div><!--/.col-xs-3-->
-      <div class="col-xs-5 tier-3">
-        <div id="mjoll" class="item-box-1 center-block item-dam"
+      <div class="col-xs-5">
+        <div id="mjoll" class="item-box-1 center-block item-dam tier-3"
              rel="popover" data-title="Mjollnir">
           <span class="price-label" style="padding-left: 2px;">5,700</span>
           <img class="name-label" src="img/40px-Mjollnir_text.png">
@@ -4103,7 +4105,7 @@
             <p>Passive: <i>Chain Lightning</i> – Grants a 25% chance on attack to release a bolt of electricity that leaps between 4 targets within a 900 radius, dealing 120 magical damage to each (0.25s bounce interval).</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="moonsh" class="item-box-1 center-block item-dam item-cons"
+        <div id="moonsh" class="item-box-1 center-block item-dam item-cons tier-3"
              rel="popover" data-title="Moon Shard">
           <span class="price-label" style="padding-left: 2px;">4,000</span>
           <img class="name-label" src="img/40px-Moon_Shard_text.png">
@@ -4149,7 +4151,7 @@
       </div><!--/.col-xs-3-->
     </div><!--/.row-->
     <div class="row bottom-tall row-10">
-      <div class="col-xs-8 col-xs-offset-2 tier-4">
+      <div class="col-xs-8 col-xs-offset-2">
         <div id="radiance" class="item-box-1 center-block item-dam tier-4"
              rel="popover" data-title="Radiance">
           <span class="price-label" style="padding-left: 2px;">5,150</span>
@@ -4168,7 +4170,7 @@
             <p>Aura/Toggle: <i>Burn</i> – When active, scorches enemies for 60 damage per second, and causes them to miss 17% of their attacks (700 radius, 35 dps burn for illusions). <img src="img/cd.png"> 0s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="rapier" class="item-box-1 center-block item-dam"
+        <div id="rapier" class="item-box-1 center-block item-dam tier-4"
              rel="popover" data-title="Divine Rapier">
           <span class="price-label" style="padding-left: 2px;">6,000</span>
           <img class="name-label" src="img/40px-Divine_Rapier_text.png">
@@ -4213,6 +4215,410 @@
       </div><!--/.col-xs-4-->
     </div><!--/.row-->
   </div><!--/.col-lg-35-->
+  <div class="col-xs-1 grid-c0 shop-base hidden">
+    <div class="row grid-r0">
+    </div><!--/.row-->
+    <div class="row grid-r1">
+    </div><!--/.row-->
+    <div class="row grid-r2">
+    </div><!--/.row-->
+    <div class="row grid-r3">
+    </div><!--/.row-->
+    <div class="row grid-r4">
+    </div><!--/.row-->
+    <div class="row grid-r5">
+    </div><!--/.row-->
+    <div class="row grid-r6">
+    </div><!--/.row-->
+    <div class="row grid-r7">
+    </div><!--/.row-->
+    <div class="row grid-r8">
+    </div><!--/.row-->
+    <div class="row grid-r9">
+    </div><!--/.row-->
+    <div class="row grid-r10">
+    </div><!--/.row-->
+    <div class="row grid-r11">
+    </div><!--/.row-->
+    <div class="row grid-r12">
+    </div><!--/.row-->
+  </div><!--/.grid-c0-->
+  <div class="col-xs-1 grid-c1 shop-base hidden">
+    <div class="row grid-r0">
+    </div><!--/.row-->
+    <div class="row grid-r1">
+    </div><!--/.row-->
+    <div class="row grid-r2">
+    </div><!--/.row-->
+    <div class="row grid-r3">
+    </div><!--/.row-->
+    <div class="row grid-r4">
+    </div><!--/.row-->
+    <div class="row grid-r5">
+    </div><!--/.row-->
+    <div class="row grid-r6">
+    </div><!--/.row-->
+    <div class="row grid-r7">
+    </div><!--/.row-->
+    <div class="row grid-r8">
+    </div><!--/.row-->
+    <div class="row grid-r9">
+    </div><!--/.row-->
+    <div class="row grid-r10">
+    </div><!--/.row-->
+  </div><!--/.grid-c1-->
+  <div class="col-xs-1 grid-c2 shop-base hidden">
+    <div class="row grid-r0">
+    </div><!--/.row-->
+    <div class="row grid-r1">
+    </div><!--/.row-->
+    <div class="row grid-r2">
+    </div><!--/.row-->
+    <div class="row grid-r3">
+    </div><!--/.row-->
+    <div class="row grid-r4">
+    </div><!--/.row-->
+    <div class="row grid-r5">
+    </div><!--/.row-->
+    <div class="row grid-r6">
+    </div><!--/.row-->
+    <div class="row grid-r7">
+    </div><!--/.row-->
+    <div class="row grid-r8">
+    </div><!--/.row-->
+    <div class="row grid-r9">
+    </div><!--/.row-->
+    <div class="row grid-r10">
+    </div><!--/.row-->
+    <div class="row grid-r11">
+    </div><!--/.row-->
+    <div class="row grid-r12">
+    </div><!--/.row-->
+    <div class="row grid-r13">
+    </div><!--/.row-->
+  </div><!--/.grid-c2-->
+  <div class="col-xs-1 grid-c3 shop-base hidden">
+    <div class="row grid-r0">
+    </div><!--/.row-->
+    <div class="row grid-r1">
+    </div><!--/.row-->
+    <div class="row grid-r2">
+    </div><!--/.row-->
+    <div class="row grid-r3">
+    </div><!--/.row-->
+    <div class="row grid-r4">
+    </div><!--/.row-->
+    <div class="row grid-r5">
+    </div><!--/.row-->
+    <div class="row grid-r6">
+    </div><!--/.row-->
+    <div class="row grid-r7">
+    </div><!--/.row-->
+    <div class="row grid-r8">
+    </div><!--/.row-->
+    <div class="row grid-r9">
+    </div><!--/.row-->
+    <div class="row grid-r10">
+    </div><!--/.row-->
+    <div class="row grid-r11">
+    </div><!--/.row-->
+    <div class="row grid-r12">
+    </div><!--/.row-->
+    <div class="row grid-r13">
+    </div><!--/.row-->
+    <div class="row grid-r14">
+    </div><!--/.row-->
+  </div><!--/.grid-c3-->
+  <div class="col-xs-1 grid-c4 hidden">
+    <div class="row grid-r0">
+    </div><!--/.row-->
+    <div class="row grid-r1">
+    </div><!--/.row-->
+    <div class="row grid-r2">
+    </div><!--/.row-->
+    <div class="row grid-r3">
+    </div><!--/.row-->
+    <div class="row grid-r4">
+    </div><!--/.row-->
+    <div class="row grid-r5">
+    </div><!--/.row-->
+    <div class="row grid-r6">
+    </div><!--/.row-->
+    <div class="row grid-r7">
+    </div><!--/.row-->
+    <div class="row grid-r8">
+    </div><!--/.row-->
+    <div class="row grid-r9">
+    </div><!--/.row-->
+    <div class="row grid-r10">
+    </div><!--/.row-->
+    <div class="row grid-r11">
+    </div><!--/.row-->
+    <div class="row grid-r12">
+    </div><!--/.row-->
+    <div class="row grid-r13">
+    </div><!--/.row-->
+    <div class="row grid-r14">
+    </div><!--/.row-->
+    <div class="row grid-r15">
+    </div><!--/.row-->
+    <div class="row grid-r16">
+    </div><!--/.row-->
+  </div><!--/.grid-c4-->
+  <div class="col-xs-1 grid-c5 hidden">
+    <div class="row grid-r0">
+    </div><!--/.row-->
+    <div class="row grid-r1">
+    </div><!--/.row-->
+    <div class="row grid-r2">
+    </div><!--/.row-->
+    <div class="row grid-r3">
+    </div><!--/.row-->
+    <div class="row grid-r4">
+    </div><!--/.row-->
+    <div class="row grid-r5">
+    </div><!--/.row-->
+    <div class="row grid-r6">
+    </div><!--/.row-->
+    <div class="row grid-r7">
+    </div><!--/.row-->
+    <div class="row grid-r8">
+    </div><!--/.row-->
+    <div class="row grid-r9">
+    </div><!--/.row-->
+    <div class="row grid-r10">
+    </div><!--/.row-->
+    <div class="row grid-r11">
+    </div><!--/.row-->
+    <div class="row grid-r12">
+    </div><!--/.row-->
+    <div class="row grid-r13">
+    </div><!--/.row-->
+    <div class="row grid-r14">
+    </div><!--/.row-->
+    <div class="row grid-r15">
+    </div><!--/.row-->
+    <div class="row grid-r16">
+    </div><!--/.row-->
+    <div class="row grid-r17">
+    </div><!--/.row-->
+  </div><!--/.grid-c5-->
+  <div class="col-xs-1 grid-c6 hidden">
+    <div class="row grid-r0">
+    </div><!--/.row-->
+    <div class="row grid-r1">
+    </div><!--/.row-->
+    <div class="row grid-r2">
+    </div><!--/.row-->
+    <div class="row grid-r3">
+    </div><!--/.row-->
+    <div class="row grid-r4">
+    </div><!--/.row-->
+    <div class="row grid-r5">
+    </div><!--/.row-->
+    <div class="row grid-r6">
+    </div><!--/.row-->
+    <div class="row grid-r7">
+    </div><!--/.row-->
+    <div class="row grid-r8">
+    </div><!--/.row-->
+    <div class="row grid-r9">
+    </div><!--/.row-->
+    <div class="row grid-r10">
+    </div><!--/.row-->
+    <div class="row grid-r11">
+    </div><!--/.row-->
+    <div class="row grid-r12">
+    </div><!--/.row-->
+    <div class="row grid-r13">
+    </div><!--/.row-->
+    <div class="row grid-r14">
+    </div><!--/.row-->
+    <div class="row grid-r15">
+    </div><!--/.row-->
+    <div class="row grid-r16">
+    </div><!--/.row-->
+  </div><!--/.grid-c6-->
+  <div class="col-xs-1 grid-c7 hidden">
+    <div class="row grid-r0">
+    </div><!--/.row-->
+    <div class="row grid-r1">
+    </div><!--/.row-->
+    <div class="row grid-r2">
+    </div><!--/.row-->
+    <div class="row grid-r3">
+    </div><!--/.row-->
+    <div class="row grid-r4">
+    </div><!--/.row-->
+    <div class="row grid-r5">
+    </div><!--/.row-->
+    <div class="row grid-r6">
+    </div><!--/.row-->
+    <div class="row grid-r7">
+    </div><!--/.row-->
+    <div class="row grid-r8">
+    </div><!--/.row-->
+    <div class="row grid-r9">
+    </div><!--/.row-->
+    <div class="row grid-r10">
+    </div><!--/.row-->
+    <div class="row grid-r11">
+    </div><!--/.row-->
+    <div class="row grid-r12">
+    </div><!--/.row-->
+    <div class="row grid-r13">
+    </div><!--/.row-->
+    <div class="row grid-r14">
+    </div><!--/.row-->
+    <div class="row grid-r15">
+    </div><!--/.row-->
+    <div class="row grid-r16">
+    </div><!--/.row-->
+    <div class="row grid-r17">
+    </div><!--/.row-->
+  </div><!--/.grid-c7-->
+  <div class="col-xs-1 grid-c8 hidden">
+    <div class="row grid-r0">
+    </div><!--/.row-->
+    <div class="row grid-r1">
+    </div><!--/.row-->
+    <div class="row grid-r2">
+    </div><!--/.row-->
+    <div class="row grid-r3">
+    </div><!--/.row-->
+    <div class="row grid-r4">
+    </div><!--/.row-->
+    <div class="row grid-r5">
+    </div><!--/.row-->
+    <div class="row grid-r6">
+    </div><!--/.row-->
+    <div class="row grid-r7">
+    </div><!--/.row-->
+    <div class="row grid-r8">
+    </div><!--/.row-->
+    <div class="row grid-r9">
+    </div><!--/.row-->
+    <div class="row grid-r10">
+    </div><!--/.row-->
+    <div class="row grid-r11">
+    </div><!--/.row-->
+    <div class="row grid-r12">
+    </div><!--/.row-->
+    <div class="row grid-r13">
+    </div><!--/.row-->
+    <div class="row grid-r14">
+    </div><!--/.row-->
+    <div class="row grid-r15">
+    </div><!--/.row-->
+  </div><!--/.grid-c8-->
+  <div class="col-xs-1 grid-c9 hidden">
+    <div class="row grid-r0">
+    </div><!--/.row-->
+    <div class="row grid-r1">
+    </div><!--/.row-->
+    <div class="row grid-r2">
+    </div><!--/.row-->
+    <div class="row grid-r3">
+    </div><!--/.row-->
+    <div class="row grid-r4">
+    </div><!--/.row-->
+    <div class="row grid-r5">
+    </div><!--/.row-->
+    <div class="row grid-r6">
+    </div><!--/.row-->
+    <div class="row grid-r7">
+    </div><!--/.row-->
+    <div class="row grid-r8">
+    </div><!--/.row-->
+    <div class="row grid-r9">
+    </div><!--/.row-->
+    <div class="row grid-r10">
+    </div><!--/.row-->
+    <div class="row grid-r11">
+    </div><!--/.row-->
+    <div class="row grid-r12">
+    </div><!--/.row-->
+    <div class="row grid-r13">
+    </div><!--/.row-->
+    <div class="row grid-r14">
+    </div><!--/.row-->
+    <div class="row grid-r15">
+    </div><!--/.row-->
+    <div class="row grid-r16">
+    </div><!--/.row-->
+    <div class="row grid-r17">
+    </div><!--/.row-->
+  </div><!--/.grid-c9-->
+  <div class="col-xs-1 grid-c10 shop-secret hidden">
+    <div class="row grid-r0">
+    </div><!--/.row-->
+    <div class="row grid-r1">
+    </div><!--/.row-->
+    <div class="row grid-r2">
+    </div><!--/.row-->
+    <div class="row grid-r3">
+    </div><!--/.row-->
+    <div class="row grid-r4">
+    </div><!--/.row-->
+    <div class="row grid-r5">
+    </div><!--/.row-->
+    <div class="row grid-r6">
+    </div><!--/.row-->
+    <div class="row grid-r7">
+    </div><!--/.row-->
+    <div class="row grid-r8">
+    </div><!--/.row-->
+    <div class="row grid-r9">
+    </div><!--/.row-->
+    <div class="row grid-r10">
+    </div><!--/.row-->
+    <div class="row grid-r11">
+    </div><!--/.row-->
+    <div class="row grid-r12">
+    </div><!--/.row-->
+    <div class="row grid-r13">
+    </div><!--/.row-->
+    <div class="row grid-r14">
+    </div><!--/.row-->
+  </div><!--/.grid-c10-->
+  <div class="col-xs-1 grid-c11 hidden">
+    <div class="row grid-r0">
+    </div><!--/.row-->
+    <div class="row grid-r1">
+    </div><!--/.row-->
+    <div class="row grid-r2">
+    </div><!--/.row-->
+    <div class="row grid-r3">
+    </div><!--/.row-->
+    <div class="row grid-r4">
+    </div><!--/.row-->
+    <div class="row grid-r5">
+    </div><!--/.row-->
+    <div class="row grid-r6">
+    </div><!--/.row-->
+    <div class="row grid-r7">
+    </div><!--/.row-->
+    <div class="row grid-r8">
+    </div><!--/.row-->
+    <div class="row grid-r9">
+    </div><!--/.row-->
+    <div class="row grid-r10">
+    </div><!--/.row-->
+    <div class="row grid-r11">
+    </div><!--/.row-->
+    <div class="row grid-r12">
+    </div><!--/.row-->
+    <div class="row grid-r13">
+    </div><!--/.row-->
+    <div class="row grid-r14">
+    </div><!--/.row-->
+    <div class="row grid-r15 shop-rosh">
+    </div><!--/.row-->
+    <div class="row grid-r16 shop-rosh">
+    </div><!--/.row-->
+    <div class="row grid-r17 shop-rosh">
+    </div><!--/.row-->
+  </div><!--/.grid-c10-->
 </div><!--/.row-->
 </div><!--/.tab-pane.items-->
   <div class="tab-pane text-center fade" id="item-kaya">
@@ -4341,7 +4747,7 @@
           <div class="note-kaya row"><a href="">
             <div class="col-xs-1 vote"><img class="score" src="img/vote.png"></img><b> 17</b></div>
             <div class="col-xs-10 log">
-              <img src="img/40px-Kaya_icon.png"></img> <b>KAYA: <span style="color:#4e8">NEW ITEM</span></b><br>
+              <img src="img/40px-Kaya_icon.png"></img> <b>KAYA: <span style="color:#4e4">NEW ITEM</span></b><br>
               <ul>
                 <li>Requires Staff of Wizardry (1,000), Robe of the Magi (450) and a Recipe (500).</li>
                 <li>Provides +16 Intelligence, +10% Spell Amp and +10% Manacost Reduction.</li>
@@ -4468,7 +4874,7 @@
 </div><!--/.container.section-bg-->
 
 <div id="footer" class="row text-center">
-  PAGE IS UNDER CONSTRUCTION • by <a href="https://www.reddit.com/user/freelance_fox/">/u/freelance_fox</a> • <a href="http://www.twitter.com/freelancedota">@freelancedota</a> • Last Updated 16 January 2018
+  PAGE IS UNDER CONSTRUCTION • by <a href="https://www.reddit.com/user/freelance_fox/">/u/freelance_fox</a> • <a href="http://www.twitter.com/freelancedota">@freelancedota</a> • Last Updated 18 January 2018
 </div><!--/.row-->
 
   <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
@@ -4639,15 +5045,30 @@
     $('#showhide').click( function (e) {
       if ($(this).text() === 'Hide Custom Items') {
         $(this).text('Show Custom Items');
-        $('.item-box-1.draft').addClass('hidden');
-        $('.item-box-1.wip').addClass('hidden');
-        $('.item-box-1.polished').addClass('hidden');
-        $('.item-box-1.contest').addClass('hidden');
-        $('path.custom').attr('class','contest hidden');
+        $('[id^="col-"] .item-box-1.draft').addClass('hidden');
+        $('[id^="col-"] .item-box-1.wip').addClass('hidden');
+        $('[id^="col-"] .item-box-1.polished').addClass('hidden');
+        $('[id^="col-"] .item-box-1.contest').addClass('hidden');
+        var gridcolno = 0;
+        $('[class*="grid-c"]').each( function() {
+          var depth = 0;
+          var gridrowno = 0;
+          $('.grid-c'+gridcolno+' .item-box-1').each( function(e) {
+            if (($('.grid-c'+gridcolno+' .grid-r'+gridrowno+' .item-box-1').hasClass('draft')) || ($('.grid-c'+gridcolno+' .grid-r'+gridrowno+' .item-box-1').hasClass('wip')) || ($('.grid-c'+gridcolno+' .grid-r'+gridrowno+' .item-box-1').hasClass('polished')) || ($('.grid-c'+gridcolno+' .grid-r'+gridrowno+' .item-box-1').hasClass('contest'))) {
+              $('.grid-c'+gridcolno+' .grid-r'+gridrowno+' .item-box-1').addClass('hidden');
+              depth++;
+            } else if (depth >= 1) {
+              $('.grid-c'+gridcolno+' .grid-r'+gridrowno+' .item-box-1 .price-label').removeClass('custom-top-1').removeClass('custom-top-2').removeClass('custom-top-3').removeClass('custom-top-4').removeClass('custom-top-5').addClass('custom-top-'+depth);
+            }
+            gridrowno++;
+          });
+          gridcolno++;
+        });
+        $('path.custom').attr('class','custom hidden');
+        $('div[class*="grid-r"]').css('min-height','0');
+        $('div[class*="grid-r"] .item-box-1').css('margin','0');
         $('#title').text('Dota Item Concepts');
         $('span.draft,span.wip,span.polished,span.contest').addClass('hidden');
-        //$('.outer').removeClass('col-lg-3').addClass('col-lg-4').removeClass('col-lg-35');
-        //$('.middle').removeClass('col-lg-5').addClass('col-lg-4');
         $('.custom-collapse').hide();
         $("#svg").attr("height", "0");
         $("#svg").attr("width", "0");
@@ -4663,11 +5084,12 @@
         $('.item-box-1.polished').removeClass('hidden');
         $('.item-box-1.contest.hidden').css('display', 'inline-block');
         $('.item-box-1.contest').removeClass('hidden');
-        $('path.custom').attr('class','contest');
+        $('.price-label').removeClass('custom-top-1').removeClass('custom-top-2').removeClass('custom-top-3').removeClass('custom-top-4').removeClass('custom-top-5');
+        $('path.custom').attr('class','custom');
+        $('div[class*="grid-r"]').css('min-height','44px');
+        $('div[class*="grid-r"] .item-box-1').css('margin','2px 0 4px');
         $('#title').text('Custom Item Concepts');
         $('span.draft,span.wip,span.polished,span.contest').removeClass('hidden');
-        //$('.outer').removeClass('col-lg-4').addClass('col-lg-3').addClass('col-lg-35');
-        //$('.middle').removeClass('col-lg-4').addClass('col-lg-5');
         $('.custom-collapse').show();
         $("#svg").attr("height", "0");
         $("#svg").attr("width", "0");
@@ -4734,6 +5156,12 @@
       } else if (type === "type-active") {
         $('.item-box-1').hide();
         $('.item-box-1:contains("Active")').show();
+      } else if (type === "type-passive") {
+        $('.item-box-1').hide();
+        $('.item-box-1:contains("Passive")').show();
+      } else if (type === "type-aura") {
+        $('.item-box-1').hide();
+        $('.item-box-1:contains("Aura")').show();
       } else if (type === "label-price") {
         $('.name-label').hide();
         $('.price-label').toggle();
@@ -4745,6 +5173,385 @@
         /* cases for different sorts */
         /* close dropdown */
         return false;
+      } else if (type.indexOf("layout-col") >= 0) {
+        $('#main').addClass('grid');
+        $('div[class*="grid-c"]').removeClass('hidden');
+        $('.item-box-1#tpscr').detach().appendTo('.grid-c0 .grid-r0');
+        $('.item-box-1#clarity').detach().appendTo('.grid-c0 .grid-r1');
+        $('.item-box-1#ff').detach().appendTo('.grid-c0 .grid-r2');
+        $('.item-box-1#smoke').detach().appendTo('.grid-c0 .grid-r3');
+        $('.item-box-1#obsw').detach().appendTo('.grid-c0 .grid-r4');
+        $('.item-box-1#sentryw').detach().appendTo('.grid-c0 .grid-r5');
+        $('.item-box-1#mango').detach().appendTo('.grid-c0 .grid-r6');
+        $('.item-box-1#salve').detach().appendTo('.grid-c0 .grid-r7');
+        $('.item-box-1#tango').detach().appendTo('.grid-c0 .grid-r8');
+        $('.item-box-1#tome').detach().appendTo('.grid-c0 .grid-r9');
+        $('.item-box-1#dust').detach().appendTo('.grid-c0 .grid-r10');
+        $('.item-box-1#courier').detach().appendTo('.grid-c0 .grid-r11');
+        $('.item-box-1#bottle').detach().appendTo('.grid-c0 .grid-r12');
+        $('.item-box-1#branch').detach().appendTo('.grid-c1 .grid-r0');
+        $('.item-box-1#gauntlets').detach().appendTo('.grid-c1 .grid-r1');
+        $('.item-box-1#slippers').detach().appendTo('.grid-c1 .grid-r2');
+        $('.item-box-1#mantle').detach().appendTo('.grid-c1 .grid-r3');
+        $('.item-box-1#circlet').detach().appendTo('.grid-c1 .grid-r4');
+        $('.item-box-1#belt').detach().appendTo('.grid-c1 .grid-r5');
+        $('.item-box-1#band').detach().appendTo('.grid-c1 .grid-r6');
+        $('.item-box-1#robe').detach().appendTo('.grid-c1 .grid-r7');
+        $('.item-box-1#club').detach().appendTo('.grid-c1 .grid-r8');
+        $('.item-box-1#blade').detach().appendTo('.grid-c1 .grid-r9');
+        $('.item-box-1#staff').detach().appendTo('.grid-c1 .grid-r10');
+        $('.item-box-1#rop').detach().appendTo('.grid-c2 .grid-r0');
+        $('.item-box-1#stout').detach().appendTo('.grid-c2 .grid-r1');
+        $('.item-box-1#qb').detach().appendTo('.grid-c2 .grid-r2');
+        $('.item-box-1#irain').detach().appendTo('.grid-c2 .grid-r3');
+        $('.item-box-1#oov').detach().appendTo('.grid-c2 .grid-r4');
+        $('.item-box-1#blight').detach().appendTo('.grid-c2 .grid-r5');
+        $('.item-box-1#boa').detach().appendTo('.grid-c2 .grid-r6');
+        $('.item-box-1#chainmail').detach().appendTo('.grid-c2 .grid-r7');
+        $('.item-box-1#qstaff').detach().appendTo('.grid-c2 .grid-r8');
+        $('.item-box-1#hoiw').detach().appendTo('.grid-c2 .grid-r9');
+        $('.item-box-1#javelin').detach().appendTo('.grid-c2 .grid-r10');
+        $('.item-box-1#broad').detach().appendTo('.grid-c2 .grid-r11');
+        $('.item-box-1#clay').detach().appendTo('.grid-c2 .grid-r12');
+        $('.item-box-1#mithham').detach().appendTo('.grid-c2 .grid-r13');
+        $('.item-box-1#stick').detach().appendTo('.grid-c3 .grid-r0');
+        $('.item-box-1#lace').detach().appendTo('.grid-c3 .grid-r1');
+        $('.item-box-1#ror').detach().appendTo('.grid-c3 .grid-r2');
+        $('.item-box-1#sage').detach().appendTo('.grid-c3 .grid-r3');
+        $('.item-box-1#boots').detach().appendTo('.grid-c3 .grid-r5');
+        $('.item-box-1#goh').detach().appendTo('.grid-c3 .grid-r6');
+        $('.item-box-1#cloak').detach().appendTo('.grid-c3 .grid-r7');
+        $('.item-box-1#roh').detach().appendTo('.grid-c3 .grid-r8');
+        $('.item-box-1#void').detach().appendTo('.grid-c3 .grid-r9');
+        $('.item-box-1#gem').detach().appendTo('.grid-c3 .grid-r10');
+        $('.item-box-1#morbid').detach().appendTo('.grid-c3 .grid-r11');
+        $('.item-box-1#shadowam').detach().appendTo('.grid-c3 .grid-r12');
+        $('.item-box-1#ghost').detach().appendTo('.grid-c3 .grid-r13');
+        $('.item-box-1#blink').detach().appendTo('.grid-c3 .grid-r14');
+        $('.item-box-1#wand').detach().appendTo('.grid-c4 .grid-r0');
+        $('.item-box-1#nulltal').detach().appendTo('.grid-c4 .grid-r1');
+        $('.item-box-1#wraith').detach().appendTo('.grid-c4 .grid-r2');
+        $('.item-box-1#bracer').detach().appendTo('.grid-c4 .grid-r3');
+        $('.item-box-1#soulring').detach().appendTo('.grid-c4 .grid-r6');
+        $('.item-box-1#phase').detach().appendTo('.grid-c4 .grid-r8');
+        $('.item-box-1#treads').detach().appendTo('.grid-c4 .grid-r9');
+        $('.item-box-1#oblivion').detach().appendTo('.grid-c4 .grid-r10');
+        $('.item-box-1#perseverance').detach().appendTo('.grid-c4 .grid-r11');
+        $('.item-box-1#midas').detach().appendTo('.grid-c4 .grid-r14');
+        $('.item-box-1#bots').detach().appendTo('.grid-c4 .grid-r15');
+        $('.item-box-1#moonsh').detach().appendTo('.grid-c4 .grid-r16');
+        $('.item-box-1#basi').detach().appendTo('.grid-c5 .grid-r0');
+        $('.item-box-1#headdress').detach().appendTo('.grid-c5 .grid-r2');
+        $('.item-box-1#buckler').detach().appendTo('.grid-c5 .grid-r3');
+        $('.item-box-1#urn').detach().appendTo('.grid-c5 .grid-r4');
+        $('.item-box-1#tranquil').detach().appendTo('.grid-c5 .grid-r5');
+        $('.item-box-1#aquila').detach().appendTo('.grid-c5 .grid-r6');
+        $('.item-box-1#moc').detach().appendTo('.grid-c5 .grid-r7');
+        $('.item-box-1#arcane').detach().appendTo('.grid-c5 .grid-r8');
+        $('.item-box-1#drum').detach().appendTo('.grid-c5 .grid-r9');
+        $('.item-box-1#vlads').detach().appendTo('.grid-c5 .grid-r10');
+        $('.item-box-1#mek').detach().appendTo('.grid-c5 .grid-r11');
+        $('.item-box-1#vessel').detach().appendTo('.grid-c5 .grid-r12');
+        $('.item-box-1#pipe').detach().appendTo('.grid-c5 .grid-r13');
+        $('.item-box-1#greaves').detach().appendTo('.grid-c5 .grid-r15');
+        $('.item-box-1#glimmer').detach().appendTo('.grid-c6 .grid-r0');
+        $('.item-box-1#veil').detach().appendTo('.grid-c6 .grid-r1');
+        $('.item-box-1#aether').detach().appendTo('.grid-c6 .grid-r2');
+        $('.item-box-1#force').detach().appendTo('.grid-c6 .grid-r3');
+        $('.item-box-1#necro').detach().appendTo('.grid-c6 .grid-r4');
+        $('.item-box-1#solar').detach().appendTo('.grid-c6 .grid-r5');
+        $('.item-box-1#dagon').detach().appendTo('.grid-c6 .grid-r6');
+        $('.item-box-1#euls').detach().appendTo('.grid-c6 .grid-r7');
+        $('.item-box-1#atos').detach().appendTo('.grid-c6 .grid-r8');
+        $('.item-box-1#orchid').detach().appendTo('.grid-c6 .grid-r9');
+        $('.item-box-1#aghs').detach().appendTo('.grid-c6 .grid-r10');
+        $('.item-box-1#nullifier').detach().appendTo('.grid-c6 .grid-r11');
+        $('.item-box-1#refresher').detach().appendTo('.grid-c6 .grid-r13');
+        $('.item-box-1#sheep').detach().appendTo('.grid-c6 .grid-r14');
+        $('.item-box-1#ocore').detach().appendTo('.grid-c6 .grid-r16');
+        $('.item-box-1#hood').detach().appendTo('.grid-c7 .grid-r0');
+        $('.item-box-1#vanguard').detach().appendTo('.grid-c7 .grid-r1');
+        $('.item-box-1#blademail').detach().appendTo('.grid-c7 .grid-r2');
+        $('.item-box-1#soulbooster').detach().appendTo('.grid-c7 .grid-r4');
+        $('.item-box-1#crimson').detach().appendTo('.grid-c7 .grid-r5');
+        $('.item-box-1#aeondisk').detach().appendTo('.grid-c7 .grid-r6');
+        $('.item-box-1#bkb').detach().appendTo('.grid-c7 .grid-r7');
+        $('.item-box-1#lotus').detach().appendTo('.grid-c7 .grid-r8');
+        $('.item-box-1#shiva').detach().appendTo('.grid-c7 .grid-r10');
+        $('.item-box-1#pike').detach().appendTo('.grid-c7 .grid-r11');
+        $('.item-box-1#linkens').detach().appendTo('.grid-c7 .grid-r12');
+        $('.item-box-1#bloodstone').detach().appendTo('.grid-c7 .grid-r13');
+        $('.item-box-1#manta').detach().appendTo('.grid-c7 .grid-r14');
+        $('.item-box-1#heart').detach().appendTo('.grid-c7 .grid-r16');
+        $('.item-box-1#ac').detach().appendTo('.grid-c7 .grid-r17');
+        $('.item-box-1#crystal').detach().appendTo('.grid-c8 .grid-r0');
+        $('.item-box-1#armlet').detach().appendTo('.grid-c8 .grid-r1');
+        $('.item-box-1#meteor').detach().appendTo('.grid-c8 .grid-r2');
+        $('.item-box-1#shadowb').detach().appendTo('.grid-c8 .grid-r3');
+        $('.item-box-1#basher').detach().appendTo('.grid-c8 .grid-r4');
+        $('.item-box-1#bfury').detach().appendTo('.grid-c8 .grid-r5');
+        $('.item-box-1#mkb').detach().appendTo('.grid-c8 .grid-r6');
+        $('.item-box-1#eblade').detach().appendTo('.grid-c8 .grid-r7');
+        $('.item-box-1#radiance').detach().appendTo('.grid-c8 .grid-r9');
+        $('.item-box-1#daedalus').detach().appendTo('.grid-c8 .grid-r10');
+        $('.item-box-1#butterfly').detach().appendTo('.grid-c8 .grid-r11');
+        $('.item-box-1#silvedge').detach().appendTo('.grid-c8 .grid-r12');
+        $('.item-box-1#rapier').detach().appendTo('.grid-c8 .grid-r13');
+        $('.item-box-1#ablade').detach().appendTo('.grid-c8 .grid-r14');
+        $('.item-box-1#bloodthorn').detach().appendTo('.grid-c8 .grid-r15');
+        $('.item-box-1#dlance').detach().appendTo('.grid-c9 .grid-r0');
+        $('.item-box-1#sange').detach().appendTo('.grid-c9 .grid-r1');
+        $('.item-box-1#yasha').detach().appendTo('.grid-c9 .grid-r2');
+        $('.item-box-1#kaya').detach().appendTo('.grid-c9 .grid-r3');
+        $('.item-box-1#mom').detach().appendTo('.grid-c9 .grid-r4');
+        $('.item-box-1#hotd').detach().appendTo('.grid-c9 .grid-r5');
+        $('.item-box-1#echo').detach().appendTo('.grid-c9 .grid-r6');
+        $('.item-box-1#mael').detach().appendTo('.grid-c9 .grid-r7');
+        $('.item-box-1#diffu').detach().appendTo('.grid-c9 .grid-r8');
+        $('.item-box-1#halberd').detach().appendTo('.grid-c9 .grid-r9');
+        $('.item-box-1#deso').detach().appendTo('.grid-c9 .grid-r10');
+        $('.item-box-1#sny').detach().appendTo('.grid-c9 .grid-r11');
+        $('.item-box-1#skadi').detach().appendTo('.grid-c9 .grid-r14');
+        $('.item-box-1#satanic').detach().appendTo('.grid-c9 .grid-r15');
+        $('.item-box-1#mjoll').detach().appendTo('.grid-c9 .grid-r16');
+        $('.item-box-1#energy').detach().appendTo('.grid-c10 .grid-r0');
+        $('.item-box-1#vit').detach().appendTo('.grid-c10 .grid-r1');
+        $('.item-box-1#pb').detach().appendTo('.grid-c10 .grid-r2');
+        $('.item-box-1#platemail').detach().appendTo('.grid-c10 .grid-r3');
+        $('.item-box-1#talisman').detach().appendTo('.grid-c10 .grid-r4');
+        $('.item-box-1#hyper').detach().appendTo('.grid-c10 .grid-r5');
+        $('.item-box-1#ultimateorb').detach().appendTo('.grid-c10 .grid-r6');
+        $('.item-box-1#demon').detach().appendTo('.grid-c10 .grid-r7');
+        $('.item-box-1#mystic').detach().appendTo('.grid-c10 .grid-r11');
+        $('.item-box-1#reaver').detach().appendTo('.grid-c10 .grid-r12');
+        $('.item-box-1#eagle').detach().appendTo('.grid-c10 .grid-r13');
+        $('.item-box-1#relic').detach().appendTo('.grid-c10 .grid-r14');
+        $('.item-box-1#aegis').detach().appendTo('.grid-c11 .grid-r15');
+        $('.item-box-1#cheese').detach().appendTo('.grid-c11 .grid-r16');
+        $('.item-box-1#shard').detach().appendTo('.grid-c11 .grid-r17');
+        /* custom items */
+        $('.item-box-1#volt').detach().appendTo('.grid-c3 .grid-r4');
+        $('.item-box-1#swift').detach().appendTo('.grid-c4 .grid-r4');
+        $('.item-box-1#woodsman').detach().appendTo('.grid-c4 .grid-r5');
+        $('.item-box-1#frost').detach().appendTo('.grid-c4 .grid-r7');
+        $('.item-box-1#shieldbreaker').detach().appendTo('.grid-c4 .grid-r12');
+        $('.item-box-1#seal').detach().appendTo('.grid-c4 .grid-r13');
+        $('.item-box-1#lantern').detach().appendTo('.grid-c5 .grid-r1');
+        $('.item-box-1#sigil').detach().appendTo('.grid-c5 .grid-r14');
+        $('.item-box-1#infernalorb').detach().appendTo('.grid-c5 .grid-r16');
+        $('.item-box-1#aoa').detach().appendTo('.grid-c5 .grid-r17');
+        $('.item-box-1#seraph').detach().appendTo('.grid-c6 .grid-r12');
+        $('.item-box-1#spellblade').detach().appendTo('.grid-c6 .grid-r15');
+        $('.item-box-1#prism').detach().appendTo('.grid-c7 .grid-r3');
+        $('.item-box-1#valiance').detach().appendTo('.grid-c7 .grid-r9');
+        $('.item-box-1#pauldron').detach().appendTo('.grid-c7 .grid-r15');
+        $('.item-box-1#wkb').detach().appendTo('.grid-c8 .grid-r8');
+        $('.item-box-1#snk').detach().appendTo('.grid-c9 .grid-r12');
+        $('.item-box-1#kny').detach().appendTo('.grid-c9 .grid-r13');
+        $('.item-box-1#trio').detach().appendTo('.grid-c9 .grid-r17');
+        $('.item-box-1#pov').detach().appendTo('.grid-c10 .grid-r8');
+        $('.item-box-1#lov').detach().appendTo('.grid-c10 .grid-r9');
+        $('.item-box-1#bov').detach().appendTo('.grid-c10 .grid-r10');
+        $('.item-box-1#squire').detach().appendTo('.grid-c11 .grid-r0');
+        $('.item-box-1#sanguine').detach().appendTo('.grid-c11 .grid-r1');
+        $('.item-box-1#chargers').detach().appendTo('.grid-c11 .grid-r2');
+        $('.item-box-1#fangs').detach().appendTo('.grid-c11 .grid-r3');
+        $('.item-box-1#cc').detach().appendTo('.grid-c11 .grid-r4');
+        $('.item-box-1#hayabusa').detach().appendTo('.grid-c11 .grid-r5');
+        $('.item-box-1#gjalla').detach().appendTo('.grid-c11 .grid-r6');
+        $('.item-box-1#wyrmslayer').detach().appendTo('.grid-c11 .grid-r7');
+        $('.item-box-1#vermilion').detach().appendTo('.grid-c11 .grid-r8');
+        $('div[id^="col-"]').addClass('hidden');
+        window.dispatchEvent(new Event('resize'));
+      } else if (type.indexOf("layout-def") >= 0) {
+        $('div[id^="col-"]').removeClass('hidden');
+        $('#main').removeClass('grid');
+        $('.item-box-1#ff').detach().appendTo('#col-0 .row-0 [class*=col-]:nth-child(1)');
+        $('.item-box-1#mango').detach().appendTo('#col-0 .row-0 [class*=col-]:nth-child(1)');
+        $('.item-box-1#salve').detach().appendTo('#col-0 .row-0 [class*=col-]:nth-child(2)');
+        $('.item-box-1#clarity').detach().appendTo('#col-0 .row-0 [class*=col-]:nth-child(2)');
+        $('.item-box-1#tango').detach().appendTo('#col-0 .row-0 [class*=col-]:nth-child(3)');
+        $('.item-box-1#irain').detach().appendTo('#col-0 .row-0 [class*=col-]:nth-child(3)');
+        $('.item-box-1#tpscr').detach().appendTo('#col-0 .row-0 [class*=col-]:nth-child(4)');
+        $('.item-box-1#tome').detach().appendTo('#col-0 .row-0 [class*=col-]:nth-child(4)');
+        $('.item-box-1#courier').detach().appendTo('#col-0 .row-0 [class*=col-]:nth-child(5)');
+        $('.item-box-1#obsw').detach().appendTo('#col-0 .row-0 [class*=col-]:nth-child(6)');
+        $('.item-box-1#sentryw').detach().appendTo('#col-0 .row-0 [class*=col-]:nth-child(6)');
+        $('.item-box-1#smoke').detach().appendTo('#col-0 .row-0 [class*=col-]:nth-child(7)');
+        $('.item-box-1#dust').detach().appendTo('#col-0 .row-0 [class*=col-]:nth-child(7)');
+        $('.item-box-1#gem').detach().appendTo('#col-0 .row-0 [class*=col-]:nth-child(8)');
+        $('.item-box-1#bottle').detach().appendTo('#col-0 .row-0 [class*=col-]:nth-child(8)');
+        $('.item-box-1#blink').detach().appendTo('#col-0 .row-0 [class*=col-]:nth-child(9)');
+        $('.item-box-1#aegis').detach().appendTo('#col-0 .row-0 [class*=col-]:nth-child(10)');
+        $('.item-box-1#cheese').detach().appendTo('#col-0 .row-0 [class*=col-]:nth-child(10)');
+        $('.item-box-1#shard').detach().appendTo('#col-0 .row-0 [class*=col-]:nth-child(10)');
+        $('.item-box-1#ror').detach().appendTo('#col-1 .row-1 [class*=col-]:nth-child(1)');
+        $('.item-box-1#sage').detach().appendTo('#col-1 .row-1 [class*=col-]:nth-child(1)');
+        $('.item-box-1#lace').detach().appendTo('#col-1 .row-1 [class*=col-]:nth-child(2)');
+        $('.item-box-1#stick').detach().appendTo('#col-1 .row-1 [class*=col-]:nth-child(3)');
+        $('.item-box-1#stout').detach().appendTo('#col-1 .row-1 [class*=col-]:nth-child(3)');
+        $('.item-box-1#morbid').detach().appendTo('#col-1 .row-1 [class*=col-]:nth-child(3)');
+        $('.item-box-1#roh').detach().appendTo('#col-1 .row-2 [class*=col-]:nth-child(1)');
+        $('.item-box-1#void').detach().appendTo('#col-1 .row-2 [class*=col-]:nth-child(1)');
+        $('.item-box-1#volt').detach().appendTo('#col-1 .row-2 [class*=col-]:nth-child(2)');
+        $('.item-box-1#rop').detach().appendTo('#col-1 .row-2 [class*=col-]:nth-child(3)');
+        $('.item-box-1#chainmail').detach().appendTo('#col-1 .row-2 [class*=col-]:nth-child(3)');
+        $('.item-box-1#hoiw').detach().appendTo('#col-1 .row-2 [class*=col-]:nth-child(3)');
+        $('.item-box-1#vit').detach().appendTo('#col-1 .row-3 [class*=col-]:nth-child(1)');
+        $('.item-box-1#pb').detach().appendTo('#col-1 .row-3 [class*=col-]:nth-child(1)');
+        $('.item-box-1#energy').detach().appendTo('#col-1 .row-3 [class*=col-]:nth-child(1)');
+        $('.item-box-1#boots').detach().appendTo('#col-1 .row-3 [class*=col-]:nth-child(2)');
+        $('.item-box-1#cloak').detach().appendTo('#col-1 .row-3 [class*=col-]:nth-child(3)');
+        $('.item-box-1#platemail').detach().appendTo('#col-1 .row-3 [class*=col-]:nth-child(3)');
+        $('.item-box-1#talisman').detach().appendTo('#col-1 .row-3 [class*=col-]:nth-child(3)');
+        $('.item-box-1#perseverance').detach().appendTo('#col-1 .row-4 [class*=col-]:nth-child(1)');
+        $('.item-box-1#wand').detach().appendTo('#col-1 .row-4 [class*=col-]:nth-child(3)');
+        $('.item-box-1#basi').detach().appendTo('#col-1 .row-4 [class*=col-]:nth-child(3)');
+        $('.item-box-1#bots').detach().appendTo('#col-1 .row-5 [class*=col-]:nth-child(1)');
+        $('.item-box-1#tranquil').detach().appendTo('#col-1 .row-5 [class*=col-]:nth-child(1)');
+        $('.item-box-1#arcane').detach().appendTo('#col-1 .row-5 [class*=col-]:nth-child(1)');
+        $('.item-box-1#treads').detach().appendTo('#col-1 .row-5 [class*=col-]:nth-child(1)');
+        $('.item-box-1#phase').detach().appendTo('#col-1 .row-5 [class*=col-]:nth-child(1)');
+        $('.item-box-1#soulbooster').detach().appendTo('#col-1 .row-6 [class*=col-]:nth-child(1)');
+        $('.item-box-1#headdress').detach().appendTo('#col-1 .row-6 [class*=col-]:nth-child(2)');
+        $('.item-box-1#lantern').detach().appendTo('#col-1 .row-6 [class*=col-]:nth-child(2)');
+        $('.item-box-1#buckler').detach().appendTo('#col-1 .row-6 [class*=col-]:nth-child(2)');
+        $('.item-box-1#urn').detach().appendTo('#col-1 .row-6 [class*=col-]:nth-child(3)');
+        $('.item-box-1#moc').detach().appendTo('#col-1 .row-6 [class*=col-]:nth-child(3)');
+        $('.item-box-1#prism').detach().appendTo('#col-1 .row-7 [class*=col-]:nth-child(1)');
+        $('.item-box-1#aether').detach().appendTo('#col-1 .row-7 [class*=col-]:nth-child(1)');
+        $('.item-box-1#glimmer').detach().appendTo('#col-1 .row-7 [class*=col-]:nth-child(3)');
+        $('.item-box-1#vessel').detach().appendTo('#col-1 .row-7 [class*=col-]:nth-child(3)');
+        $('.item-box-1#solar').detach().appendTo('#col-1 .row-7 [class*=col-]:nth-child(3)');
+        $('.item-box-1#aeondisk').detach().appendTo('#col-1 .row-8 [class*=col-]:nth-child(1)');
+        $('.item-box-1#vanguard').detach().appendTo('#col-1 .row-8 [class*=col-]:nth-child(2)');
+        $('.item-box-1#mek').detach().appendTo('#col-1 .row-8 [class*=col-]:nth-child(2)');
+        $('.item-box-1#hood').detach().appendTo('#col-1 .row-8 [class*=col-]:nth-child(2)');
+        $('.item-box-1#vlads').detach().appendTo('#col-1 .row-8 [class*=col-]:nth-child(3)');
+        $('.item-box-1#hotd').detach().appendTo('#col-1 .row-8 [class*=col-]:nth-child(3)');
+        $('.item-box-1#pov').detach().appendTo('#col-1 .row-9 [class*=col-]:nth-child(1)');
+        $('.item-box-1#lov').detach().appendTo('#col-1 .row-9 [class*=col-]:nth-child(1)');
+        $('.item-box-1#bov').detach().appendTo('#col-1 .row-9 [class*=col-]:nth-child(2)');
+        $('.item-box-1#bloodstone').detach().appendTo('#col-1 .row-10 [class*=col-]:nth-child(1)');
+        $('.item-box-1#refresher').detach().appendTo('#col-1 .row-10 [class*=col-]:nth-child(1)');
+        $('.item-box-1#crimson').detach().appendTo('#col-1 .row-10 [class*=col-]:nth-child(2)');
+        $('.item-box-1#greaves').detach().appendTo('#col-1 .row-10 [class*=col-]:nth-child(2)');
+        $('.item-box-1#pipe').detach().appendTo('#col-1 .row-10 [class*=col-]:nth-child(2)');
+        $('.item-box-1#lotus').detach().appendTo('#col-1 .row-10 [class*=col-]:nth-child(3)');
+        $('.item-box-1#ac').detach().appendTo('#col-1 .row-10 [class*=col-]:nth-child(3)');
+        $('.item-box-1#aoa').detach().appendTo('#col-1 .row-11 [class*=col-]:nth-child(1)');
+        $('.item-box-1#infernalorb').detach().appendTo('#col-1 .row-11 [class*=col-]:nth-child(1)');
+        $('.item-box-1#chargers').detach().appendTo('#col-1 .row-11 [class*=col-]:nth-child(2)');
+        $('.item-box-1#sigil').detach().appendTo('#col-1 .row-11 [class*=col-]:nth-child(3)');
+        $('.item-box-1#valiance').detach().appendTo('#col-1 .row-11 [class*=col-]:nth-child(3)');
+        $('.item-box-1#belt').detach().appendTo('#col-2 .row-1 [class*=col-]:nth-child(1)');
+        $('.item-box-1#robe').detach().appendTo('#col-2 .row-1 [class*=col-]:nth-child(1)');
+        $('.item-box-1#band').detach().appendTo('#col-2 .row-1 [class*=col-]:nth-child(1)');
+        $('.item-box-1#club').detach().appendTo('#col-2 .row-1 [class*=col-]:nth-child(2)');
+        $('.item-box-1#staff').detach().appendTo('#col-2 .row-1 [class*=col-]:nth-child(2)');
+        $('.item-box-1#blade').detach().appendTo('#col-2 .row-1 [class*=col-]:nth-child(2)');
+        $('.item-box-1#gauntlets').detach().appendTo('#col-2 .row-2 [class*=col-]:nth-child(1)');
+        $('.item-box-1#mantle').detach().appendTo('#col-2 .row-2 [class*=col-]:nth-child(1)');
+        $('.item-box-1#slippers').detach().appendTo('#col-2 .row-2 [class*=col-]:nth-child(1)');
+        $('.item-box-1#seal').detach().appendTo('#col-2 .row-2 [class*=col-]:nth-child(3)');
+        $('.item-box-1#oblivion').detach().appendTo('#col-2 .row-2 [class*=col-]:nth-child(3)');
+        $('.item-box-1#shieldbreaker').detach().appendTo('#col-2 .row-2 [class*=col-]:nth-child(3)');
+        $('.item-box-1#bracer').detach().appendTo('#col-2 .row-3 [class*=col-]:nth-child(1)');
+        $('.item-box-1#nulltal').detach().appendTo('#col-2 .row-3 [class*=col-]:nth-child(1)');
+        $('.item-box-1#wraith').detach().appendTo('#col-2 .row-3 [class*=col-]:nth-child(1)');
+        $('.item-box-1#sange').detach().appendTo('#col-2 .row-3 [class*=col-]:nth-child(2)');
+        $('.item-box-1#kaya').detach().appendTo('#col-2 .row-3 [class*=col-]:nth-child(2)');
+        $('.item-box-1#yasha').detach().appendTo('#col-2 .row-3 [class*=col-]:nth-child(2)');
+        $('.item-box-1#echo').detach().appendTo('#col-2 .row-3 [class*=col-]:nth-child(3)');
+        $('.item-box-1#force').detach().appendTo('#col-2 .row-3 [class*=col-]:nth-child(3)');
+        $('.item-box-1#dlance').detach().appendTo('#col-2 .row-3 [class*=col-]:nth-child(3)');
+        $('.item-box-1#soulring').detach().appendTo('#col-2 .row-4 [class*=col-]:nth-child(1)');
+        $('.item-box-1#frost').detach().appendTo('#col-2 .row-4 [class*=col-]:nth-child(1)');
+        $('.item-box-1#swift').detach().appendTo('#col-2 .row-4 [class*=col-]:nth-child(1)');
+        $('.item-box-1#woodsman').detach().appendTo('#col-2 .row-4 [class*=col-]:nth-child(1)');
+        $('.item-box-1#meteor').detach().appendTo('#col-2 .row-4 [class*=col-]:nth-child(3)');
+        $('.item-box-1#necro').detach().appendTo('#col-2 .row-4 [class*=col-]:nth-child(4)');
+        $('.item-box-1#blademail').detach().appendTo('#col-2 .row-4 [class*=col-]:nth-child(4)');
+        $('.item-box-1#drum').detach().appendTo('#col-2 .row-5 [class*=col-]:nth-child(1)');
+        $('.item-box-1#dagon').detach().appendTo('#col-2 .row-5 [class*=col-]:nth-child(1)');
+        $('.item-box-1#aquila').detach().appendTo('#col-2 .row-5 [class*=col-]:nth-child(1)');
+        $('.item-box-1#snk').detach().appendTo('#col-2 .row-5 [class*=col-]:nth-child(2)');
+        $('.item-box-1#sny').detach().appendTo('#col-2 .row-5 [class*=col-]:nth-child(2)');
+        $('.item-box-1#kny').detach().appendTo('#col-2 .row-5 [class*=col-]:nth-child(2)');
+        $('.item-box-1#bkb').detach().appendTo('#col-2 .row-5 [class*=col-]:nth-child(3)');
+        $('.item-box-1#euls').detach().appendTo('#col-2 .row-5 [class*=col-]:nth-child(3)');
+        $('.item-box-1#diffu').detach().appendTo('#col-2 .row-5 [class*=col-]:nth-child(3)');
+        $('.item-box-1#atos').detach().appendTo('#col-2 .row-6 [class*=col-]:nth-child(1)');
+        $('.item-box-1#veil').detach().appendTo('#col-2 .row-6 [class*=col-]:nth-child(1)');
+        $('.item-box-1#squire').detach().appendTo('#col-2 .row-6 [class*=col-]:nth-child(1)');
+        $('.item-box-1#aghs').detach().appendTo('#col-2 .row-6 [class*=col-]:nth-child(3)');
+        $('.item-box-1#pike').detach().appendTo('#col-2 .row-6 [class*=col-]:nth-child(4)');
+        $('.item-box-1#halberd').detach().appendTo('#col-2 .row-7 [class*=col-]:nth-child(2)');
+        $('.item-box-1#sanguine').detach().appendTo('#col-2 .row-7 [class*=col-]:nth-child(2)');
+        $('.item-box-1#spellblade').detach().appendTo('#col-2 .row-7 [class*=col-]:nth-child(3)');
+        $('.item-box-1#seraph').detach().appendTo('#col-2 .row-7 [class*=col-]:nth-child(3)');
+        $('.item-box-1#manta').detach().appendTo('#col-2 .row-7 [class*=col-]:nth-child(4)');
+        $('.item-box-1#hayabusa').detach().appendTo('#col-2 .row-7 [class*=col-]:nth-child(4)');
+        $('.item-box-1#trio').detach().appendTo('#col-2 .row-8 [class*=col-]:nth-child(2)');
+        $('.item-box-1#gjalla').detach().appendTo('#col-2 .row-8 [class*=col-]:nth-child(3)');
+        $('.item-box-1#cc').detach().appendTo('#col-2 .row-8 [class*=col-]:nth-child(3)');
+        $('.item-box-1#fangs').detach().appendTo('#col-2 .row-8 [class*=col-]:nth-child(3)');
+        $('.item-box-1#reaver').detach().appendTo('#col-2 .row-9 [class*=col-]:nth-child(1)');
+        $('.item-box-1#mystic').detach().appendTo('#col-2 .row-9 [class*=col-]:nth-child(2)');
+        $('.item-box-1#eagle').detach().appendTo('#col-2 .row-9 [class*=col-]:nth-child(3)');
+        $('.item-box-1#heart').detach().appendTo('#col-2 .row-10 [class*=col-]:nth-child(1)');
+        $('.item-box-1#satanic').detach().appendTo('#col-2 .row-10 [class*=col-]:nth-child(1)');
+        $('.item-box-1#pauldron').detach().appendTo('#col-2 .row-10 [class*=col-]:nth-child(1)');
+        $('.item-box-1#sheep').detach().appendTo('#col-2 .row-10 [class*=col-]:nth-child(2)');
+        $('.item-box-1#shiva').detach().appendTo('#col-2 .row-10 [class*=col-]:nth-child(2)');
+        $('.item-box-1#ocore').detach().appendTo('#col-2 .row-10 [class*=col-]:nth-child(2)');
+        $('.item-box-1#butterfly').detach().appendTo('#col-2 .row-10 [class*=col-]:nth-child(3)');
+        $('.item-box-1#eblade').detach().appendTo('#col-2 .row-10 [class*=col-]:nth-child(3)');
+        $('.item-box-1#wkb').detach().appendTo('#col-2 .row-10 [class*=col-]:nth-child(3)');
+        $('.item-box-1#vermilion').detach().appendTo('#col-2 .row-11 [class*=col-]:nth-child(1)');
+        $('.item-box-1#wyrmslayer').detach().appendTo('#col-2 .row-11 [class*=col-]:nth-child(2)');
+        $('.item-box-1#branch').detach().appendTo('#col-3 .row-1 [class*=col-]:nth-child(1)');
+        $('.item-box-1#circlet').detach().appendTo('#col-3 .row-1 [class*=col-]:nth-child(1)');
+        $('.item-box-1#blight').detach().appendTo('#col-3 .row-1 [class*=col-]:nth-child(2)');
+        $('.item-box-1#qb').detach().appendTo('#col-3 .row-1 [class*=col-]:nth-child(2)');
+        $('.item-box-1#oov').detach().appendTo('#col-3 .row-1 [class*=col-]:nth-child(2)');
+        $('.item-box-1#javelin').detach().appendTo('#col-3 .row-1 [class*=col-]:nth-child(2)');
+        $('.item-box-1#goh').detach().appendTo('#col-3 .row-1 [class*=col-]:nth-child(3)');
+        $('.item-box-1#qstaff').detach().appendTo('#col-3 .row-1 [class*=col-]:nth-child(3)');
+        $('.item-box-1#ghost').detach().appendTo('#col-3 .row-2 [class*=col-]:nth-child(1)');
+        $('.item-box-1#boa').detach().appendTo('#col-3 .row-2 [class*=col-]:nth-child(2)');
+        $('.item-box-1#broad').detach().appendTo('#col-3 .row-2 [class*=col-]:nth-child(2)');
+        $('.item-box-1#clay').detach().appendTo('#col-3 .row-2 [class*=col-]:nth-child(2)');
+        $('.item-box-1#mithham').detach().appendTo('#col-3 .row-2 [class*=col-]:nth-child(2)');
+        $('.item-box-1#shadowam').detach().appendTo('#col-3 .row-2 [class*=col-]:nth-child(3)');
+        $('.item-box-1#ultimateorb').detach().appendTo('#col-3 .row-3 [class*=col-]:nth-child(1)');
+        $('.item-box-1#demon').detach().appendTo('#col-3 .row-3 [class*=col-]:nth-child(2)');
+        $('.item-box-1#hyper').detach().appendTo('#col-3 .row-3 [class*=col-]:nth-child(3)');
+        $('.item-box-1#crystal').detach().appendTo('#col-3 .row-4 [class*=col-]:nth-child(2)');
+        $('.item-box-1#shadowb').detach().appendTo('#col-3 .row-4 [class*=col-]:nth-child(3)');
+        $('.item-box-1#basher').detach().appendTo('#col-3 .row-5 [class*=col-]:nth-child(1)');
+        $('.item-box-1#orchid').detach().appendTo('#col-3 .row-5 [class*=col-]:nth-child(2)');
+        $('.item-box-1#bfury').detach().appendTo('#col-3 .row-5 [class*=col-]:nth-child(3)');
+        $('.item-box-1#mael').detach().appendTo('#col-3 .row-5 [class*=col-]:nth-child(4)');
+        $('.item-box-1#midas').detach().appendTo('#col-3 .row-5 [class*=col-]:nth-child(4)');
+        $('.item-box-1#deso').detach().appendTo('#col-3 .row-6 [class*=col-]:nth-child(2)');
+        $('.item-box-1#armlet').detach().appendTo('#col-3 .row-6 [class*=col-]:nth-child(4)');
+        $('.item-box-1#mom').detach().appendTo('#col-3 .row-6 [class*=col-]:nth-child(4)');
+        $('.item-box-1#linkens').detach().appendTo('#col-3 .row-7 [class*=col-]:nth-child(1)');
+        $('.item-box-1#skadi').detach().appendTo('#col-3 .row-7 [class*=col-]:nth-child(1)');
+        $('.item-box-1#daedalus').detach().appendTo('#col-3 .row-7 [class*=col-]:nth-child(2)');
+        $('.item-box-1#silvedge').detach().appendTo('#col-3 .row-7 [class*=col-]:nth-child(3)');
+        $('.item-box-1#mkb').detach().appendTo('#col-3 .row-7 [class*=col-]:nth-child(4)');
+        $('.item-box-1#ablade').detach().appendTo('#col-3 .row-8 [class*=col-]:nth-child(1)');
+        $('.item-box-1#bloodthorn').detach().appendTo('#col-3 .row-8 [class*=col-]:nth-child(2)');
+        $('.item-box-1#mjoll').detach().appendTo('#col-3 .row-8 [class*=col-]:nth-child(4)');
+        $('.item-box-1#moonsh').detach().appendTo('#col-3 .row-8 [class*=col-]:nth-child(4)');
+        $('.item-box-1#relic').detach().appendTo('#col-3 .row-9 [class*=col-]:nth-child(2)');
+        $('.item-box-1#radiance').detach().appendTo('#col-3 .row-10 [class*=col-]:nth-child(1)');
+        $('.item-box-1#rapier').detach().appendTo('#col-3 .row-10 [class*=col-]:nth-child(1)');
+        $('.item-box-1#nullifier').detach().appendTo('#col-3 .row-10 [class*=col-]:nth-child(1)');
+        $('div[class*="grid-c"]').addClass('hidden');
+        window.dispatchEvent(new Event('resize'));
       }
       $(this).parent().parent().parent().find('.btn:not("#submit-btn")').html(target+' <span class="caret"></span>');
       e.preventDefault();
@@ -4838,6 +5645,10 @@
         $('div[class^="col-"].shop-rosh > .item-box-1 > img.icon, div[class^="col-"].shop-base > .item-box-1 > img.icon, div[class^="col-"].shop-side > .item-box-1 > img.icon, div[class^="col-"].shop-secret > .item-box-1 > img.icon, .item-box-1.shop-base > img.icon, .item-box-1.shop-side > img.icon, .item-box-1.shop-secret > img.icon').each(function () { $( this ).removeClass('glow'); });
       } else if (target.indexOf('active') >= 0) {
         $('.item-box-1:contains("Active") > img.icon').addClass('glow');
+      } else if (target.indexOf('passive') >= 0) {
+        $('.item-box-1:contains("Passive") > img.icon').addClass('glow');
+      } else if (target.indexOf('aura') >= 0) {
+        $('.item-box-1:contains("Aura") > img.icon').addClass('glow');
       }
     }, function (e) {
       var target = this.id;
@@ -4847,9 +5658,7 @@
       } else if (target.indexOf('shop-') >= 0) {
         $('div[class^=col-]:not([class^='+target+']) .item-box-1 > img.icon').removeClass('glow');
         $('.item-box-1:not([class^='+target+'] > img.icon').removeClass('glow');
-      } else if (target.indexOf('upgrade') >= 0) {
-        $('.item-box-1 > img.icon').removeClass('glow');
-      } else if (target.indexOf('active') >= 0) {
+      } else if (target.indexOf('type-') >= 0) {
         $('.item-box-1 > img.icon').removeClass('glow');
       }
     });

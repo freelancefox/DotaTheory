@@ -2891,7 +2891,7 @@
             <p>+10% Manacost Reduction</p>
             <p>Passive: <i>Greater Aethereal Focus</i> – +300 Cast Range</p>
             <p>Passive: <i>Retribution</i> – Converts 15% of spell damage to heroes and 3% of spell damage to creeps into mana.</p>
-            <p>Toggle/Passive: <i>Spellmastery</i> – The next spell cast costs +20% mana, gains +100 effect radius and an instant cast point <img src="img/cd.png"> 8s (radius applies to spells only, animation applies to spells with a cast point, does not affect cast points longer than 1s)</p>
+            <p>Toggle/Passive: <i>Spellmastery</i> – The next spell cast costs +20% mana, gains +100 effect radius (if the spell has an AoE radius) and an instant cast point <img src="img/cd.png"> 8s (radius applies to spells only, animation applies to spells with a cast point, reduces cast points above 1s by up to 1s)</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
         <div id="seraph" class="item-box-1 center-block item-int item-regen item-cast item-mobi item-supp polished tier-3" style="margin-left: -6px;"
@@ -3044,7 +3044,7 @@
             <p>Passive: <i>Lifesteal</i> – Heals the attacker for 15% of attack damage dealt.</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="cc" class="item-box-1 center-block item-str item-dam item-regen item-def item-util draft tier-3"
+        <div id="cc" class="item-box-1 center-block item-str item-dam item-regen item-def item-util wip tier-3"
              rel="popover" data-title="Carnivore Claw">
           <span class="price-label" style="padding-left: 2px;">4,220</span>
           <img class="name-label" src="img/40px-Carnivore_Claw_text.png">
@@ -3054,7 +3054,7 @@
             <div class="popover-inset text-center">
               <div class="popover-line">
                 <img src="img/40px-Primal_Seal_icon.png"> 1,850 +
-                <img src="img/40px-Armlet_of_Mordiggian_icon.png"> 2,370
+                <img src="img/40px-Armlet_of_Mordiggian_icon.png"> 2,370 +
                 = <img src="img/40px-Carnivore_Claw_icon.png"> 4,220
               </div>
             </div><!--/.popover-inset-->
@@ -3063,7 +3063,7 @@
             <p>+25 Attack Speed</p>
             <p>+20 Damage (+30 for strength heroes)</p>
             <p>+5 Armor</p>
-            <p>Active: <i>Stalk</i> – The target unit (including self if targeted) loses shared vision for the duration of each toggle of the active (800 cast range, instant vision loss, toggle off any time, <i>terror</i> effect over enemy's head), which gives the same benefits as Armlet’s Unholy Strength while toggled on (+31 damage, +25 strength, +4 armor, -45 hps). <img src="img/cd.png"> 0s</p>
+            <p>Active/Passive: <i>Predator's Gaze</i> – Enemies who target the bearer with a spell or attack lose shared vision for a short duration, and may actively target enemies as well (800 cast range, instant vision loss, 6s vision loss/buff duration, <i>terror</i> effect over enemy's head). For each enemy under this effect, gain one stack of <i>Predator's Gaze</i>, granting bonuses equal to Armlet’s Unholy Strength per stack up to 2 stacks (+30 damage, +25 strength, +4 armor, -45 hps). May target self without using the cooldown, causing vision loss but toggling like normal Armlet. <img src="img/cd.png"> 20s</p>
             <p>Passive: <i>Lifesteal</i> – Heals the attacker for 20% of attack damage dealt.</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
@@ -3805,24 +3805,24 @@
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
       <div class="col-xs-3 fixed-height">
-        <div id="mael" class="item-box-1 center-block item-dam tier-2"
-             rel="popover" data-title="Maelstrom">
-          <span class="price-label" style="padding-left: 2px;">2,800</span>
-          <img class="name-label" src="img/40px-Maelstrom_text.png">
-          <img class="icon" src="img/40px-Maelstrom_icon.png">
-          <div id="content-mael" class="hide">
-            <p><i>A hammer forged for the gods themselves, Maelstrom allows its user to harness the power of lightning.</i></p>
+        <div id="mom" class="item-box-1 center-block item-dam item-regen item-mobi tier-2"
+             rel="popover" data-title="Mask of Madness">
+          <span class="price-label" style="padding-left: 2px;">1,975</span>
+          <img class="name-label" src="img/40px-Mask_of_Madness_text.png">
+          <img class="icon" src="img/40px-Mask_of_Madness_icon.png">
+          <div id="content-mom" class="hide">
+            <p><i>Once this mask is worn, its bearer becomes an uncontrollable aggressive force.</i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
-                <img src="img/40px-Gloves_of_Haste_icon.png"> 500 +
-                <img src="img/40px-Mithril_Hammer_icon.png"> 1,600 +
-                <img src="img/40px-Recipe_Scroll_icon.png"> 700
-                = <img src="img/40px-Maelstrom_icon.png"> 2,800
+                <img src="img/40px-Morbid_Mask_icon.png"> 1,100 +
+                <img src="img/40px-Quarterstaff_icon.png"> 875
+                = <img src="img/40px-Mask_of_Madness_icon.png"> 1,975
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
-            <p>+25 Attack Speed</p>
-            <p>+24 Damage</p>
-            <p>Passive: <i>Chain Lightning</i> – Grants a 25% chance on attack to release a bolt of electricity that leaps between 4 targets within a 900 radius, dealing 120 magical damage to each (0.25s bounce interval).</p>
+            <p>+10 Attack Speed</p>
+            <p>+20 Damage</p>
+            <p>Active: <i>Berserk</i> – Gives 110 attack speed and 12% movement speed, but reduces your armor by 8 and silences you. Lasts 8 seconds. <img src="img/cd.png"> 22s <img src="img/mana.png"> 25</p>
+            <p>Passive: <i>Lifesteal</i> – Heals the attacker for 15% of attack damage dealt.</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
         <div id="midas" class="item-box-1 center-block item-dam item-util tier-2"
@@ -3897,24 +3897,24 @@
             <p>Active: <i>Unholy Strength</i> – When active, Unholy Strength grants +31 damage, +25 strength and +4 armor, but drains 45 health per second. You cannot die from the health drain when Unholy Strength is activated, nor from the strength loss when Unholy Strength is deactivated (0.6s activation time). <img src="img/cd.png"> 0s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="mom" class="item-box-1 center-block item-dam item-regen item-mobi tier-2"
-             rel="popover" data-title="Mask of Madness">
-          <span class="price-label" style="padding-left: 2px;">1,975</span>
-          <img class="name-label" src="img/40px-Mask_of_Madness_text.png">
-          <img class="icon" src="img/40px-Mask_of_Madness_icon.png">
-          <div id="content-mom" class="hide">
-            <p><i>Once this mask is worn, its bearer becomes an uncontrollable aggressive force.</i></p>
+        <div id="mael" class="item-box-1 center-block item-dam tier-2"
+             rel="popover" data-title="Maelstrom">
+          <span class="price-label" style="padding-left: 2px;">2,800</span>
+          <img class="name-label" src="img/40px-Maelstrom_text.png">
+          <img class="icon" src="img/40px-Maelstrom_icon.png">
+          <div id="content-mael" class="hide">
+            <p><i>A hammer forged for the gods themselves, Maelstrom allows its user to harness the power of lightning.</i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
-                <img src="img/40px-Morbid_Mask_icon.png"> 1,100 +
-                <img src="img/40px-Quarterstaff_icon.png"> 875
-                = <img src="img/40px-Mask_of_Madness_icon.png"> 1,975
+                <img src="img/40px-Gloves_of_Haste_icon.png"> 500 +
+                <img src="img/40px-Mithril_Hammer_icon.png"> 1,600 +
+                <img src="img/40px-Recipe_Scroll_icon.png"> 700
+                = <img src="img/40px-Maelstrom_icon.png"> 2,800
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
-            <p>+10 Attack Speed</p>
-            <p>+20 Damage</p>
-            <p>Active: <i>Berserk</i> – Gives 110 attack speed and 12% movement speed, but reduces your armor by 8 and silences you. Lasts 8 seconds. <img src="img/cd.png"> 22s <img src="img/mana.png"> 25</p>
-            <p>Passive: <i>Lifesteal</i> – Heals the attacker for 15% of attack damage dealt.</p>
+            <p>+25 Attack Speed</p>
+            <p>+24 Damage</p>
+            <p>Passive: <i>Chain Lightning</i> – Grants a 25% chance on attack to release a bolt of electricity that leaps between 4 targets within a 900 radius, dealing 120 magical damage to each (0.25s bounce interval).</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-5-->
@@ -4364,6 +4364,8 @@
     </div><!--/.row-->
     <div class="row grid-r16">
     </div><!--/.row-->
+    <div class="row grid-r17">
+    </div><!--/.row-->
   </div><!--/.grid-c4-->
   <div class="col-xs-1 grid-c5 hidden">
     <div class="row grid-r0">
@@ -4438,6 +4440,10 @@
     </div><!--/.row-->
     <div class="row grid-r16">
     </div><!--/.row-->
+    <div class="row grid-r17">
+    </div><!--/.row-->
+    <div class="row grid-r18">
+    </div><!--/.row-->
   </div><!--/.grid-c6-->
   <div class="col-xs-1 grid-c7 hidden">
     <div class="row grid-r0">
@@ -4476,6 +4482,10 @@
     </div><!--/.row-->
     <div class="row grid-r17">
     </div><!--/.row-->
+    <div class="row grid-r18">
+    </div><!--/.row-->
+    <div class="row grid-r19">
+    </div><!--/.row-->
   </div><!--/.grid-c7-->
   <div class="col-xs-1 grid-c8 hidden">
     <div class="row grid-r0">
@@ -4509,6 +4519,12 @@
     <div class="row grid-r14">
     </div><!--/.row-->
     <div class="row grid-r15">
+    </div><!--/.row-->
+    <div class="row grid-r16">
+    </div><!--/.row-->
+    <div class="row grid-r17">
+    </div><!--/.row-->
+    <div class="row grid-r18">
     </div><!--/.row-->
   </div><!--/.grid-c8-->
   <div class="col-xs-1 grid-c9 hidden">
@@ -4547,6 +4563,10 @@
     <div class="row grid-r16">
     </div><!--/.row-->
     <div class="row grid-r17">
+    </div><!--/.row-->
+    <div class="row grid-r18">
+    </div><!--/.row-->
+    <div class="row grid-r19">
     </div><!--/.row-->
   </div><!--/.grid-c9-->
   <div class="col-xs-1 grid-c10 shop-secret hidden">
@@ -4618,7 +4638,7 @@
     </div><!--/.row-->
     <div class="row grid-r17 shop-rosh">
     </div><!--/.row-->
-  </div><!--/.grid-c10-->
+  </div><!--/.grid-c11-->
 </div><!--/.row-->
 </div><!--/.tab-pane.items-->
   <div class="tab-pane text-center fade" id="item-kaya">
@@ -4772,7 +4792,7 @@
             <div class="col-xs-1 attrib">by:<br><img class="avatar" src="img/avatars/avatar_ff.jpg" title="Submitted by: Freelance"></img></div>
           </a></div><!--/.note-->
           <div class="note-spellblade row"><a href="">
-            <div class="col-xs-1 vote"><img class="score" src="img/clear.png"></img><b> 2</b></div>
+            <div class="col-xs-1 vote"><img class="score" src="img/clear.png"></img><b> 4</b></div>
             <div class="col-xs-10 log">
               <img src="img/40px-Spellblade_icon.png"></img> <b>SPELLBLADE: <span style="color:#e84">ITEM REWORKED</span></b><br>
               <ul>
@@ -4787,13 +4807,31 @@
             <div class="col-xs-1 attrib">by:<br><img class="avatar" src="img/avatars/avatar_ff.jpg" title="Submitted by: Freelance"></img></div>
           </a></div><!--/.note-->
           <div class="note-valiance row"><a href="">
-            <div class="col-xs-1 vote"><img class="score" src="img/clear.png"></img><b> 2</b></div>
+            <div class="col-xs-1 vote"><img class="score" src="img/clear.png"></img><b> 3</b></div>
             <div class="col-xs-10 log">
               <img src="img/40px-Valiance_icon.png"></img> <b>VALIANCE: <span style="color:#e84">RECIPE CHANGED</span></b><br>
               <ul>
                 <li>Valiance now requires Talisman of Evasion instead of Locket of Virtue.</li>
                 <li>Now provides +25% evasion.</li>
                 <li>Total cost now lowered from 5,200 to 4,050.</li>
+              </ul>
+            </div><!--/.col-xs-10-->
+            <div class="col-xs-1 attrib">by:<br><img class="avatar" src="img/avatars/avatar_ff.jpg" title="Submitted by: Freelance"></img></div>
+          </a></div><!--/.note-->
+          <div class="note-cc row"><a href="">
+            <div class="col-xs-1 vote"><img class="score" src="img/clear.png"></img><b> 3</b></div>
+            <div class="col-xs-10 log">
+              <img src="img/40px-Carnivore_Claw_icon.png"></img> <b>CARNIVORE CLAW: <span style="color:#e84">ITEM REWORKED</span></b><br>
+              <ul>
+                <li>
+                  Active replaced with a new Active/Passive, <i>Predator's Gaze</i>.
+                  Enemies that target the bearer with a spell or attack lose
+                  shared vision, and may also target an enemy actively. For
+                  each target under this effect gain a stacking buff giving the
+                  benefits Armlet's Unholy Strength, up to 2 stacks. May
+                  self-target to gain a stack and cause vision loss without
+                  using the cooldown.
+                </li>
               </ul>
             </div><!--/.col-xs-10-->
             <div class="col-xs-1 attrib">by:<br><img class="avatar" src="img/avatars/avatar_ff.jpg" title="Submitted by: Freelance"></img></div>
@@ -4853,6 +4891,9 @@
                   increased from 4s to 8s. The first spell cast while toggled gains
                   an increased +20% manacost as well as +100 effect radius in
                   addition to the previous benefit, an instant cast point.
+                </li>
+                <li>
+                  Reduces cast points above 1s by 1s instead of making them instant.
                 </li>
               </ul>
             </div><!--/.col-xs-10-->
@@ -5239,7 +5280,7 @@
         $('.item-box-1#perseverance').detach().appendTo('.grid-c4 .grid-r11');
         $('.item-box-1#midas').detach().appendTo('.grid-c4 .grid-r14');
         $('.item-box-1#bots').detach().appendTo('.grid-c4 .grid-r15');
-        $('.item-box-1#moonsh').detach().appendTo('.grid-c4 .grid-r16');
+        $('.item-box-1#moonsh').detach().appendTo('.grid-c4 .grid-r17');
         $('.item-box-1#basi').detach().appendTo('.grid-c5 .grid-r0');
         $('.item-box-1#headdress').detach().appendTo('.grid-c5 .grid-r2');
         $('.item-box-1#buckler').detach().appendTo('.grid-c5 .grid-r3');
@@ -5263,12 +5304,12 @@
         $('.item-box-1#dagon').detach().appendTo('.grid-c6 .grid-r6');
         $('.item-box-1#euls').detach().appendTo('.grid-c6 .grid-r7');
         $('.item-box-1#atos').detach().appendTo('.grid-c6 .grid-r8');
-        $('.item-box-1#orchid').detach().appendTo('.grid-c6 .grid-r9');
-        $('.item-box-1#aghs').detach().appendTo('.grid-c6 .grid-r10');
-        $('.item-box-1#nullifier').detach().appendTo('.grid-c6 .grid-r11');
-        $('.item-box-1#refresher').detach().appendTo('.grid-c6 .grid-r13');
-        $('.item-box-1#sheep').detach().appendTo('.grid-c6 .grid-r14');
-        $('.item-box-1#ocore').detach().appendTo('.grid-c6 .grid-r16');
+        $('.item-box-1#orchid').detach().appendTo('.grid-c6 .grid-r11');
+        $('.item-box-1#aghs').detach().appendTo('.grid-c6 .grid-r12');
+        $('.item-box-1#nullifier').detach().appendTo('.grid-c6 .grid-r13');
+        $('.item-box-1#refresher').detach().appendTo('.grid-c6 .grid-r15');
+        $('.item-box-1#sheep').detach().appendTo('.grid-c6 .grid-r16');
+        $('.item-box-1#ocore').detach().appendTo('.grid-c6 .grid-r18');
         $('.item-box-1#hood').detach().appendTo('.grid-c7 .grid-r0');
         $('.item-box-1#vanguard').detach().appendTo('.grid-c7 .grid-r1');
         $('.item-box-1#blademail').detach().appendTo('.grid-c7 .grid-r2');
@@ -5277,28 +5318,28 @@
         $('.item-box-1#aeondisk').detach().appendTo('.grid-c7 .grid-r6');
         $('.item-box-1#bkb').detach().appendTo('.grid-c7 .grid-r7');
         $('.item-box-1#lotus').detach().appendTo('.grid-c7 .grid-r8');
-        $('.item-box-1#shiva').detach().appendTo('.grid-c7 .grid-r10');
-        $('.item-box-1#pike').detach().appendTo('.grid-c7 .grid-r11');
-        $('.item-box-1#linkens').detach().appendTo('.grid-c7 .grid-r12');
-        $('.item-box-1#bloodstone').detach().appendTo('.grid-c7 .grid-r13');
-        $('.item-box-1#manta').detach().appendTo('.grid-c7 .grid-r14');
-        $('.item-box-1#heart').detach().appendTo('.grid-c7 .grid-r16');
-        $('.item-box-1#ac').detach().appendTo('.grid-c7 .grid-r17');
+        $('.item-box-1#shiva').detach().appendTo('.grid-c7 .grid-r11');
+        $('.item-box-1#pike').detach().appendTo('.grid-c7 .grid-r12');
+        $('.item-box-1#linkens').detach().appendTo('.grid-c7 .grid-r13');
+        $('.item-box-1#bloodstone').detach().appendTo('.grid-c7 .grid-r14');
+        $('.item-box-1#manta').detach().appendTo('.grid-c7 .grid-r15');
+        $('.item-box-1#heart').detach().appendTo('.grid-c7 .grid-r17');
+        $('.item-box-1#ac').detach().appendTo('.grid-c7 .grid-r18');
         $('.item-box-1#crystal').detach().appendTo('.grid-c8 .grid-r0');
-        $('.item-box-1#armlet').detach().appendTo('.grid-c8 .grid-r1');
-        $('.item-box-1#meteor').detach().appendTo('.grid-c8 .grid-r2');
-        $('.item-box-1#shadowb').detach().appendTo('.grid-c8 .grid-r3');
-        $('.item-box-1#basher').detach().appendTo('.grid-c8 .grid-r4');
-        $('.item-box-1#bfury').detach().appendTo('.grid-c8 .grid-r5');
-        $('.item-box-1#mkb').detach().appendTo('.grid-c8 .grid-r6');
-        $('.item-box-1#eblade').detach().appendTo('.grid-c8 .grid-r7');
-        $('.item-box-1#radiance').detach().appendTo('.grid-c8 .grid-r9');
-        $('.item-box-1#daedalus').detach().appendTo('.grid-c8 .grid-r10');
-        $('.item-box-1#butterfly').detach().appendTo('.grid-c8 .grid-r11');
-        $('.item-box-1#silvedge').detach().appendTo('.grid-c8 .grid-r12');
-        $('.item-box-1#rapier').detach().appendTo('.grid-c8 .grid-r13');
-        $('.item-box-1#ablade').detach().appendTo('.grid-c8 .grid-r14');
-        $('.item-box-1#bloodthorn').detach().appendTo('.grid-c8 .grid-r15');
+        $('.item-box-1#armlet').detach().appendTo('.grid-c8 .grid-r2');
+        $('.item-box-1#meteor').detach().appendTo('.grid-c8 .grid-r3');
+        $('.item-box-1#shadowb').detach().appendTo('.grid-c8 .grid-r4');
+        $('.item-box-1#basher').detach().appendTo('.grid-c8 .grid-r5');
+        $('.item-box-1#bfury').detach().appendTo('.grid-c8 .grid-r6');
+        $('.item-box-1#mkb').detach().appendTo('.grid-c8 .grid-r7');
+        $('.item-box-1#eblade').detach().appendTo('.grid-c8 .grid-r9');
+        $('.item-box-1#radiance').detach().appendTo('.grid-c8 .grid-r11');
+        $('.item-box-1#daedalus').detach().appendTo('.grid-c8 .grid-r12');
+        $('.item-box-1#butterfly').detach().appendTo('.grid-c8 .grid-r13');
+        $('.item-box-1#silvedge').detach().appendTo('.grid-c8 .grid-r14');
+        $('.item-box-1#rapier').detach().appendTo('.grid-c8 .grid-r15');
+        $('.item-box-1#ablade').detach().appendTo('.grid-c8 .grid-r16');
+        $('.item-box-1#bloodthorn').detach().appendTo('.grid-c8 .grid-r17');
         $('.item-box-1#dlance').detach().appendTo('.grid-c9 .grid-r0');
         $('.item-box-1#sange').detach().appendTo('.grid-c9 .grid-r1');
         $('.item-box-1#yasha').detach().appendTo('.grid-c9 .grid-r2');
@@ -5313,7 +5354,7 @@
         $('.item-box-1#sny').detach().appendTo('.grid-c9 .grid-r11');
         $('.item-box-1#skadi').detach().appendTo('.grid-c9 .grid-r14');
         $('.item-box-1#satanic').detach().appendTo('.grid-c9 .grid-r15');
-        $('.item-box-1#mjoll').detach().appendTo('.grid-c9 .grid-r16');
+        $('.item-box-1#mjoll').detach().appendTo('.grid-c9 .grid-r17');
         $('.item-box-1#energy').detach().appendTo('.grid-c10 .grid-r0');
         $('.item-box-1#vit').detach().appendTo('.grid-c10 .grid-r1');
         $('.item-box-1#pb').detach().appendTo('.grid-c10 .grid-r2');
@@ -5326,9 +5367,9 @@
         $('.item-box-1#reaver').detach().appendTo('.grid-c10 .grid-r12');
         $('.item-box-1#eagle').detach().appendTo('.grid-c10 .grid-r13');
         $('.item-box-1#relic').detach().appendTo('.grid-c10 .grid-r14');
-        $('.item-box-1#aegis').detach().appendTo('.grid-c11 .grid-r15');
-        $('.item-box-1#cheese').detach().appendTo('.grid-c11 .grid-r16');
-        $('.item-box-1#shard').detach().appendTo('.grid-c11 .grid-r17');
+        $('.item-box-1#aegis').detach().appendTo('.grid-c11 .grid-r0');
+        $('.item-box-1#cheese').detach().appendTo('.grid-c11 .grid-r1');
+        $('.item-box-1#shard').detach().appendTo('.grid-c11 .grid-r2');
         /* custom items */
         $('.item-box-1#volt').detach().appendTo('.grid-c3 .grid-r4');
         $('.item-box-1#swift').detach().appendTo('.grid-c4 .grid-r4');
@@ -5340,27 +5381,27 @@
         $('.item-box-1#sigil').detach().appendTo('.grid-c5 .grid-r14');
         $('.item-box-1#infernalorb').detach().appendTo('.grid-c5 .grid-r16');
         $('.item-box-1#aoa').detach().appendTo('.grid-c5 .grid-r17');
-        $('.item-box-1#seraph').detach().appendTo('.grid-c6 .grid-r12');
-        $('.item-box-1#spellblade').detach().appendTo('.grid-c6 .grid-r15');
+        $('.item-box-1#sanguine').detach().appendTo('.grid-c6 .grid-r9');
+        $('.item-box-1#fangs').detach().appendTo('.grid-c6 .grid-r10');
+        $('.item-box-1#seraph').detach().appendTo('.grid-c6 .grid-r14');
+        $('.item-box-1#spellblade').detach().appendTo('.grid-c6 .grid-r17');
         $('.item-box-1#prism').detach().appendTo('.grid-c7 .grid-r3');
         $('.item-box-1#valiance').detach().appendTo('.grid-c7 .grid-r9');
-        $('.item-box-1#pauldron').detach().appendTo('.grid-c7 .grid-r15');
-        $('.item-box-1#wkb').detach().appendTo('.grid-c8 .grid-r8');
+        $('.item-box-1#cc').detach().appendTo('.grid-c7 .grid-r10');
+        $('.item-box-1#pauldron').detach().appendTo('.grid-c7 .grid-r16');
+        $('.item-box-1#squire').detach().appendTo('.grid-c8 .grid-r1');
+        $('.item-box-1#hayabusa').detach().appendTo('.grid-c8 .grid-r8');
+        $('.item-box-1#wkb').detach().appendTo('.grid-c8 .grid-r10');
         $('.item-box-1#snk').detach().appendTo('.grid-c9 .grid-r12');
         $('.item-box-1#kny').detach().appendTo('.grid-c9 .grid-r13');
-        $('.item-box-1#trio').detach().appendTo('.grid-c9 .grid-r17');
+        $('.item-box-1#wyrmslayer').detach().appendTo('.grid-c9 .grid-r16');
+        $('.item-box-1#trio').detach().appendTo('.grid-c9 .grid-r18');
+        $('.item-box-1#vermilion').detach().appendTo('.grid-c9 .grid-r19');
         $('.item-box-1#pov').detach().appendTo('.grid-c10 .grid-r8');
         $('.item-box-1#lov').detach().appendTo('.grid-c10 .grid-r9');
         $('.item-box-1#bov').detach().appendTo('.grid-c10 .grid-r10');
-        $('.item-box-1#squire').detach().appendTo('.grid-c11 .grid-r0');
-        $('.item-box-1#sanguine').detach().appendTo('.grid-c11 .grid-r1');
-        $('.item-box-1#chargers').detach().appendTo('.grid-c11 .grid-r2');
-        $('.item-box-1#fangs').detach().appendTo('.grid-c11 .grid-r3');
-        $('.item-box-1#cc').detach().appendTo('.grid-c11 .grid-r4');
-        $('.item-box-1#hayabusa').detach().appendTo('.grid-c11 .grid-r5');
-        $('.item-box-1#gjalla').detach().appendTo('.grid-c11 .grid-r6');
-        $('.item-box-1#wyrmslayer').detach().appendTo('.grid-c11 .grid-r7');
-        $('.item-box-1#vermilion').detach().appendTo('.grid-c11 .grid-r8');
+        $('.item-box-1#chargers').detach().appendTo('.grid-c4 .grid-r16');
+        $('.item-box-1#gjalla').detach().appendTo('.grid-c7 .grid-r19');
         $('div[id^="col-"]').addClass('hidden');
         window.dispatchEvent(new Event('resize'));
       } else if (type.indexOf("layout-def") >= 0) {

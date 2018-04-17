@@ -845,7 +845,7 @@ h3[data-toggle^="collapse"] {
   color: #F9F9F9;
 }
 
-ul {
+.col-lg-12 ul {
   list-style-position: inside;
 }
 
@@ -854,7 +854,16 @@ ul {
   padding: 4px 0;
 }
 
-.changelog li {
+.changelog ul ul {
+  list-style-type: none;
+  padding-left: 24px;
+}
+
+.changelog ul > i {
+  padding: 4px;
+}
+
+.changelog ul > li {
   text-align: left;
   padding: 4px 0;
 }
@@ -1003,10 +1012,19 @@ h3[data-toggle^="collapse"]:hover {
   margin-bottom: 0 !important;
 }
 
+.selected a {
+  color: #40444E;
+}
+.selected {
+  background-color: rgba(214,215,221,0.6);
+}
+.selected:hover a {
+  color: #F9F9F9;
+}
+
 .fb-name .suggest {
   padding: 6px 0 4px;
   font-size: 21px;
-  //color: rgba(32,36,46,0.8);
 }
 
 .price-label {
@@ -1100,6 +1118,10 @@ div[class^='hero-box-'] img {
 
 .notes h4 {
   margin: 0 0 8px;
+}
+
+.notes p {
+  font-style: italic;
 }
 
 .col-xs-1[class*="grid-c"] {

@@ -211,6 +211,7 @@ function connectAll() {
     connectElements($("#svg"), $("#clay-squire"), $("#clay"), $("#squire"));
     connectElements($("#svg"), $("#sage-frost"), $("#sage"), $("#frost"));
     connectElements($("#svg"), $("#qb-woodsman"), $("#qb"), $("#woodsman"));
+    connectElements($("#svg"), $("#ultimateorb-gjalla"), $("#ultimateorb"), $("#gjalla"));
     connectElements($("#svg"), $("#ghost-gjalla"), $("#ghost"), $("#gjalla"));
     connectElements($("#svg"), $("#wand-gjalla"), $("#wand"), $("#gjalla"));
     connectElements($("#svg"), $("#aether-spellblade"), $("#aether"), $("#spellblade"));
@@ -241,7 +242,7 @@ function connectAll() {
     connectElements($("#svg"), $("#boa-fangs"), $("#boa"), $("#fangs"));
     connectElements($("#svg"), $("#armlet-cc"), $("#armlet"), $("#cc"));
     connectElements($("#svg"), $("#seal-cc"), $("#seal"), $("#cc"));
-    connectElements($("#svg"), $("#seal-gjalla"), $("#seal"), $("#gjalla"));
+    connectElements($("#svg"), $("#seal-sanguine"), $("#seal"), $("#sanguine"));
     connectElements($("#svg"), $("#chainmail-blademail"), $("#chainmail"), $("#blademail"));
     connectElements($("#svg"), $("#broad-blademail"), $("#broad"), $("#blademail"));
     connectElements($("#svg"), $("#robe-blademail"), $("#robe"), $("#blademail"));
@@ -334,7 +335,7 @@ function connectAll() {
     connectElements($("#svg"), $("#talisman-valiance"), $("#talisman"), $("#valiance"));
     connectElements($("#svg"), $("#lov-infernalorb"), $("#lov"), $("#infernalorb"));
     connectElements($("#svg"), $("#lantern-infernalorb"), $("#lantern"), $("#infernalorb"));
-    connectElements($("#svg"), $("#ultimateorb-infernalorb"), $("#ultimateorb"), $("#infernalorb"));
+    connectElements($("#svg"), $("#veil-infernalorb"), $("#veil"), $("#infernalorb"));
     connectElements($("#svg"), $("#aeondisk-aoa"), $("#aeondisk"), $("#aoa"));
     connectElements($("#svg"), $("#pov-aoa"), $("#pov"), $("#aoa"));
     connectElements($("#svg"), $("#slippers-swift"), $("#slippers"), $("#swift"));
@@ -357,7 +358,6 @@ $(window).resize(function () {
     // reset svg each time
     $("#svg").attr("height", "0");
     $("#svg").attr("width", "0");
-    connectAll();
     $('div[class*="row-"] div[class^="col-"]').each( function() {
       if (($( this ).height() > 55) || ((this.scrollHeight - this.offsetHeight) > 40)) {
         $( this ).children('.item-box-1').last().children('.price-label').addClass('label-reposition');
@@ -371,6 +371,7 @@ $(window).resize(function () {
         $(this).addClass('label-reposition-'+multiplier);
       }
     });
+    connectAll();
 });
 
 $("#str,#strl").on("click", function() {

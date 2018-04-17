@@ -166,6 +166,7 @@
       <path id="clay-squire" class="custom" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
       <path id="sage-frost" class="custom" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
       <path id="qb-woodsman" class="custom" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
+      <path id="ultimateorb-gjalla" class="custom" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
       <path id="ghost-gjalla" class="custom" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
       <path id="wand-gjalla" class="custom" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
       <path id="aether-spellblade" class="custom" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
@@ -195,7 +196,7 @@
       <path id="oblivion-fangs" class="custom" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
       <path id="boa-fangs" class="custom" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
       <path id="seal-cc" class="custom" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
-      <path id="seal-gjalla" class="custom" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
+      <path id="seal-sanguine" class="custom" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
       <path id="armlet-cc" class="custom" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
       <path id="chainmail-blademail" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
       <path id="broad-blademail" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
@@ -292,7 +293,7 @@
       <path id="branch-lantern" class="custom" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
       <path id="lantern-infernalorb" class="custom" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
       <path id="lov-infernalorb" class="custom" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
-      <path id="ultimateorb-infernalorb" class="custom" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
+      <path id="veil-infernalorb" class="custom" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
       <path id="pov-aoa" class="custom" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
       <path id="aeondisk-aoa" class="custom" d="M0 0" stroke="#20242E" fill="none" stroke-dasharray="8,4" stroke-width="2px";/>
     </svg>
@@ -306,13 +307,13 @@
             Options <span class="caret"></span>
           </button>
           <ul class="dropdown-menu">
-            <li><a href="" id="label-price" class="active">Price Labels</a></li>
-            <li><a href="" id="label-name">Name Labels</a></li>
+            <li><a href="#" id="label-price" class="active">Price Labels</a></li>
+            <li><a href="#" id="label-name">Name Labels</a></li>
             <li role="separator" class="divider"></li>
-            <!--<li><a href="" id="sort-price-a">Sort by Price Ascending</a></li>-->
-            <!--<li><a href="" id="sort-price-d">Sort by Price Descending</a></li>-->
-            <li><a href="" id="layout-col">In-Game/Columns Layout</a></li>
-            <li><a href="" id="layout-def">Default Layout</a></li>
+            <!--<li><a href="#" id="sort-price-a">Sort by Price Ascending</a></li>-->
+            <!--<li><a href="#" id="sort-price-d">Sort by Price Descending</a></li>-->
+            <li><a href="#" id="layout-col">In-Game/Columns Layout</a></li>
+            <li><a href="#" id="layout-def">Default Layout</a></li>
           </ul>
           <button id="submit-btn" type="button" class="btn btn-main dropdown-toggle">
             Submit Concept…</span>
@@ -330,21 +331,21 @@
             Filter <span class="caret"></span>
           </button>
           <ul class="dropdown-menu">
-            <li><a href="" id="all" class="active">All Items</a></li>
+            <li><a href="#" id="all" class="active">All Items</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="" id="tier-1">Tier 1</a></li>
-            <li><a href="" id="tier-2">Tier 2</a></li>
-            <li><a href="" id="tier-3">Tier 3</a></li>
-            <li><a href="" id="tier-4">Tier 4</a></li>
+            <li><a href="#" id="tier-1">Tier 1</a></li>
+            <li><a href="#" id="tier-2">Tier 2</a></li>
+            <li><a href="#" id="tier-3">Tier 3</a></li>
+            <li><a href="#" id="tier-4">Tier 4</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="" id="shop-base">Base Shop</a></li>
-            <li><a href="" id="shop-side">Side Shop</a></li>
-            <li><a href="" id="shop-secret">Secret Shop</a></li>
+            <li><a href="#" id="shop-base">Base Shop</a></li>
+            <li><a href="#" id="shop-side">Side Shop</a></li>
+            <li><a href="#" id="shop-secret">Secret Shop</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="" id="type-upgrade">Upgrades</a></li>
-            <li><a href="" id="type-active">Active Abilities</a></li>
-            <li><a href="" id="type-passive">Passive Effects</a></li>
-            <li><a href="" id="type-aura">Auras</a></li>
+            <li><a href="#" id="type-upgrade">Upgrades</a></li>
+            <li><a href="#" id="type-active">Active Abilities</a></li>
+            <li><a href="#" id="type-passive">Passive Effects</a></li>
+            <li><a href="#" id="type-aura">Auras</a></li>
           </ul>
         </div>
       </div><!--/.col-xs-1-->
@@ -431,7 +432,7 @@
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
             <p>+1 Health Regen</p>
-            <p>Active: <i>Eat Mango</i> – Consume the mango to instantly restore 150 mana. Hold Control to use Enchanted Mango on an allied hero (650 cast range, may not be sold).</p>
+            <p>Active: <i>Eat Mango</i> – Consume the mango to instantly restore 175 mana. Hold Control to use Enchanted Mango on an allied hero (650 cast range, may not be sold).</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-1-->
@@ -470,14 +471,14 @@
       <div class="col-xs-1 shop-base">
         <div id="tango" class="item-box-1 center-block item-cons item-regen tier-1"
              rel="popover" data-title="Tango">
-          <span class="price-label" style="padding-left: 8px;">150</span>
+          <span class="price-label" style="padding-left: 12px;">90</span>
           <img class="name-label" src="img/40px-Tango_text.png">
           <img class="icon" src="img/40px-Tango_icon.png">
           <div id="content-tango" class="hide">
             <p><i>Forage to survive on the battlefield.</i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 150
+                <img src="img/Gold_symbol.png" height="24px"> 90
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
             <p>Active: <i>Eat Tree or Ward</i> – Consume a target tree or ward to gradually restore health. May be used on an allied hero to give them one Tango. Heals double for wards or Ironwood Trees. (5 charges, stackable, 115/230 health restored, ~7.2 health regen for 16/32s, 165 cast range tree/ally, 450 cast range wards).</p>
@@ -960,14 +961,14 @@
       <div class="col-xs-2 shop-base">
         <div id="boots" class="item-box-1 center-block item-mobi shop-side tier-1"
              rel="popover" data-title="Boots of Speed">
-          <span class="price-label" style="padding-left: 8px;">400</span>
+          <span class="price-label" style="padding-left: 8px;">500</span>
           <img class="name-label" src="img/40px-Boots_of_Speed_text.png">
           <img class="icon" src="img/40px-Boots_of_Speed_icon.png">
           <div id="content-boots" class="hide">
             <p><i>Fleet footwear, increasing movement.</i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 400
+                <img src="img/Gold_symbol.png" height="24px"> 500
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
             <p>+45 Movement Speed</p>
@@ -1091,16 +1092,16 @@
       <div class="col-xs-12">
         <div id="bots" class="item-box-1 center-block item-mobi tier-2"
              rel="popover" data-title="Boots of Travel">
-          <span class="price-label" style="padding-left: 2px;">2,400</span>
+          <span class="price-label" style="padding-left: 2px;">2,500</span>
           <img class="name-label" src="img/40px-Boots_of_Travel_text.png">
           <img class="icon" src="img/40px-Boots_of_Travel_icon.png">
           <div id="content-bots" class="hide">
             <p><i>Winged boots that grant omnipresence.</i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
-                <img src="img/40px-Boots_of_Speed_icon.png"> 400 +
+                <img src="img/40px-Boots_of_Speed_icon.png"> 500 +
                 <img src="img/40px-Recipe_Scroll_icon.png"> 2,000
-                = <img src="img/40px-Boots_of_Travel_icon.png"> 2,400
+                = <img src="img/40px-Boots_of_Travel_icon.png"> 2,500
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
             <p>+100 Movement Speed</p>
@@ -1115,17 +1116,17 @@
         </div><!--/.item-box-1-->
         <div id="tranquil" class="item-box-1 center-block item-regen item-mobi tier-2"
              rel="popover" data-title="Tranquil Boots">
-          <span class="price-label" style="padding-left: 8px;">950</span>
+          <span class="price-label" style="padding-left: 2px;">1,050</span>
           <img class="name-label" src="img/40px-Tranquil_Boots_text.png">
           <img class="icon" src="img/40px-Tranquil_Boots_icon.png">
           <div id="content-tranquil" class="hide">
             <p><i>While they increase the longevity of the wearer, this boot is not particularly reliable.</i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
-                <img src="img/40px-Boots_of_Speed_icon.png"> 400 +
+                <img src="img/40px-Boots_of_Speed_icon.png"> 500 +
                 <img src="img/40px-Wind_Lace_icon.png"> 250 +
                 <img src="img/40px-Ring_of_Regen_icon.png"> 300
-                = <img src="img/40px-Tranquil_Boots_icon.png"> 950
+                = <img src="img/40px-Tranquil_Boots_icon.png"> 1,050
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
             <p>+90 Movement Speed</p>
@@ -1135,16 +1136,16 @@
         </div><!--/.item-box-1-->
         <div id="arcane" class="item-box-1 center-block item-stat item-regen item-mobi item-supp tier-2"
              rel="popover" data-title="Arcane Boots">
-          <span class="price-label" style="padding-left: 2px;">1,300</span>
+          <span class="price-label" style="padding-left: 2px;">1,400</span>
           <img class="name-label" src="img/40px-Arcane_Boots_text.png">
           <img class="icon" src="img/40px-Arcane_Boots_icon.png">
           <div id="content-arcane" class="hide">
             <p><i>Magi equipped with these boots are valued in battle.</i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
-                <img src="img/40px-Boots_of_Speed_icon.png"> 400 +
+                <img src="img/40px-Boots_of_Speed_icon.png"> 500 +
                 <img src="img/40px-Energy_Booster_icon.png"> 900
-                = <img src="img/40px-Arcane_Boots_icon.png"> 1,300
+                = <img src="img/40px-Arcane_Boots_icon.png"> 1,400
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
             <p>+250 Mana</p>
@@ -1161,36 +1162,36 @@
             <p><i>A pair of tough-skinned boots that change to meet the demands of the wearer.</i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
-                <img src="img/40px-Boots_of_Speed_icon.png"> 400 +
+                <img src="img/40px-Boots_of_Speed_icon.png"> 500 +
                 (<img src="img/40px-Belt_of_Strength_icon.png"> or
                 <img src="img/40px-Robe_of_the_Magi_icon.png"> or
                 <img src="img/40px-Band_of_Elvenskin_icon.png">) 450 +
                 <img src="img/40px-Gloves_of_Haste_icon.png"> 500
-                = <img src="img/40px-Power_Treads_icon.png"> 1,350
+                = <img src="img/40px-Power_Treads_icon.png"> 1,450
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
             <p>+25 Attack Speed</p>
-            <p>+45 Movement Speed</p>
+            <p>+50 Movement Speed</p>
             <p>Active: <i>Switch Attribute</i> – Switches between +10 Strength, +10 Agility, or +10 Intelligence (starts with attribute matching component used, switches in the order Strength → Intelligence → Agility). <img src="img/cd.png"> 0s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
         <div id="phase" class="item-box-1 center-block item-mobi item-dam tier-2"
              rel="popover" data-title="Phase Boots">
-          <span class="price-label" style="padding-left: 2px;">1,240</span>
+          <span class="price-label" style="padding-left: 2px;">1,340</span>
           <img class="name-label" src="img/40px-Phase_Boots_text.png">
           <img class="icon" src="img/40px-Phase_Boots_icon.png">
           <div id="content-phase" class="hide">
             <p><i>Boots that allow the wearer to travel between the ether.</i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
-                <img src="img/40px-Boots_of_Speed_icon.png"> 400 +
+                <img src="img/40px-Boots_of_Speed_icon.png"> 500 +
                 <img src="img/40px-Blades_of_Attack_icon.png"> 420 +
                 <img src="img/40px-Blades_of_Attack_icon.png"> 420
-                = <img src="img/40px-Phase_Boots_icon.png"> 1,240
+                = <img src="img/40px-Phase_Boots_icon.png"> 1,340
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
             <p>+24 Damage</p>
-            <p>+45 Movement Speed</p>
+            <p>+50 Movement Speed</p>
             <p>Active: <i>Phase</i> – Gives 24% increased movement speed on melee heroes, and 20% on ranged heroes, and lets you move through units for 2.5 seconds.<br><img src="img/cd.png"> 8s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
@@ -1207,8 +1208,8 @@
             <p><i>Regain lost courage.</i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
-                <img src="img/40px-Vitality_Booster_icon.png"> 1,100 +
                 <img src="img/40px-Energy_Booster_icon.png"> 900 +
+                <img src="img/40px-Vitality_Booster_icon.png"> 1,100 +
                 <img src="img/40px-Point_Booster_icon.png"> 1,200
                 = <img src="img/40px-Soul_Booster_icon.png"> 3,200
               </div><!--/.popover-line-->
@@ -1335,9 +1336,9 @@
             <p><i>A talented inventor attached a prism to this shield, finding the device could deflect spells in addition to slings and arrows.</i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
+                <img src="img/40px-Stout_Shield_icon.png"> 200 +
                 <img src="img/40px-Point_Booster_icon.png"> 1,200 +
-                <img src="img/40px-Helm_of_Iron_Will_icon.png"> 900 +
-                <img src="img/40px-Stout_Shield_icon.png"> 200
+                <img src="img/40px-Helm_of_Iron_Will_icon.png"> 900
                 = <img src="img/40px-Deflector_Prism_icon.png"> 2,300
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
@@ -1584,7 +1585,7 @@
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
             <p>+10 Health Regen</p>
-            <p>+5% Status Resistance</p>
+            <p>+20% Magic Resistance</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
         <div id="lov" class="item-box-1 center-block item-regen item-def draft tier-3"
@@ -1599,8 +1600,8 @@
                 <img src="img/Gold_symbol.png" height="24px"> 2,600
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
-            <p>+3 Mana Regen</p>
-            <p>+20% Magic Resistance</p>
+            <p>+4 Mana Regen</p>
+            <p>+5% Spell Amplification</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-5-->
@@ -1665,7 +1666,7 @@
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
             <p>+11 Health Regen</p>
-            <p>+3 Mana Regen</p>
+            <p>+5 Mana Regen</p>
             <p>Active: <i>Reset Cooldowns</i> – Resets the cooldowns of all your items and abilities. <img src="img/cd.png"> 195s <img src="img/mana.png"> 375</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
@@ -1696,17 +1697,17 @@
         </div><!--/.item-box-1-->
         <div id="greaves" class="item-box-1 center-block item-regen item-def item-supp item-stat item-mobi tier-4"
              rel="popover" data-title="Guardian Greaves">
-          <span class="price-label" style="padding-left: 2px;">5,375</span>
+          <span class="price-label" style="padding-left: 2px;">5,475</span>
           <img class="name-label" src="img/40px-Guardian_Greaves_text.png">
           <img class="icon" src="img/40px-Guardian_Greaves_icon.png">
           <div id="content-greaves" class="hide">
             <p><i>One of many holy instruments constructed to honor the Omniscience.</i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
-                <img src="img/40px-Arcane_Boots_icon.png"> 1,300 +
+                <img src="img/40px-Arcane_Boots_icon.png"> 1,400 +
                 <img src="img/40px-Mekansm_icon.png"> 2,375 +
                 <img src="img/40px-Recipe_Scroll_icon.png"> 1,700
-                = <img src="img/40px-Guardian_Greaves_icon.png"> 5,375
+                = <img src="img/40px-Guardian_Greaves_icon.png"> 5,475
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
             <p>+5 All Stats (+100 health, +3.5% health regen, +60 mana, +10% mana regen, +0.35% spell amplification, +0.83 armor, +5 attack speed, +5 damage, +0.75% status resistance for strength/+0.75% magic resistance for intelligence/+0.3% movement speed for agility)</p>
@@ -1762,7 +1763,7 @@
             <p>Active: <i>Echo Shell</i> – Applies a shield to the target unit for 6 seconds which re-casts most targeted spells back to their caster. The shielded unit will still take damage from the spell. <img src="img/cd.png"> 15s <img src="img/mana.png"> 75</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="ac" class="item-box-1 center-block item-def item-dam item-supp"
+        <div id="ac" class="item-box-1 center-block item-def item-dam item-supp tier-3"
              rel="popover" data-title="Assault Cuirass">
           <span class="price-label" style="padding-left: 2px;">5,250</span>
           <img class="name-label" src="img/40px-Assault_Cuirass_text.png">
@@ -1804,14 +1805,15 @@
             <p>+325 Health</p>
             <p>+325 Mana</p>
             <p>+10 Health Regen</p>
-            <p>+20% Status Resistance</p>
+            <p>+30% Magic Resistance</p>
+            <p>+15% Status Resistance</p>
             <p>Aura: <i>Precognition Aura</i> – Grants +10% status resistance to nearby allies (900 radius).</p>
             <p>Active/Passive: <i>Divine Intervention</i> – Places a temporary shield on the target ally after a 2s delay, reducing all damage taken and done to zero as well as applying a strong dispel (500 cast range, 2.5s shield duration). Once every <img src="img/cd.png"> 100s upon taking hero damage while below 80% health, may activate on yourself passively, placing the active portion on cooldown for the standard cooldown and healing yourself to 80%. <img src="img/cd.png"> 25s <img src="img/mana.png"> 275</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="infernalorb" class="item-box-1 center-block item-stat item-regen item-def item-util item-supp wip"
+        <div id="infernalorb" class="item-box-1 center-block item-stat item-regen item-def item-util item-cast item-supp tier-4 wip"
              rel="popover" data-title="Infernal Orb" style="margin-bottom: 12px;">
-          <span class="price-label" style="padding-left: 2px;">5,375</span>
+          <span class="price-label" style="padding-left: 2px;">5,555</span>
           <img class="name-label" src="img/40px-Infernal_Orb_text.png">
           <img class="icon" src="img/40px-Infernal_Orb_icon.png">
           <div id="content-infernalorb" class="hide">
@@ -1819,23 +1821,26 @@
             <div class="popover-inset text-center">
               <div class="popover-line">
                 <img src="img/40px-Lantern_icon.png"> 625 +
-                <img src="img/40px-Locket_of_Virtue_icon.png"> 2,600 +
-                <img src="img/40px-Ultimate_Orb_icon.png"> 2,150
-                = <img src="img/40px-Infernal_Orb_icon.png"> 5,375
+                <img src="img/40px-Veil_of_Discord_icon.png"> 2,330 +
+                <img src="img/40px-Locket_of_Virtue_icon.png"> 2,600
+                = <img src="img/40px-Infernal_Orb_icon.png"> 5,555
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
-            <p>+12 All Stats (+240 health, +8.4% health regen, +144 mana, +24% mana regen, +0.84% spell amplification, +2 armor, +10 attack speed, +10 damage, +1.8% status resistance for strength/+1.8% magic resistance for intelligence/+0.72% movement speed for agility)</p>
-            <p>+4 Mana Regen</p>
-            <p>+30% Magic Resistance</p>
-            <p>Aura: <i>Greater Brightness</i> – Gives +150 day and +300 night vision to allies within direct line of sight (900 radius, multiple instances do not stack)</p>
-            <p>Active: <i>Palantir</i> – Grants flying vision over a target area for a short duration with a global cast range (4.5s total duration including fade time, 600 radius, 1s fade time from the center out/in).<br><img src="img/cd.png"> 24s <img src="img/mana.png"> 80</p>
+            <p>+16 Intelligence (+168 mana, +14% mana regen, +0.98% spell amplification, +2.1% magic resistance for intelligence heroes)</p>
+            <p>+8 Strength (+120 health, +4.2% health regen, +0.9% status resistance for strength heroes)</p>
+            <p>+8 Agility (+1 armor, +6 attack speed, +0.36% movement speed for agility heroes)</p>
+            <p>+6 Health Regen</p>
+            <p>+5 Mana Regen</p>
+            <p>+6 Armor</p>
+            <p>Aura: <i>Greater Brightness</i> – Gives +150 day and +300 night vision to allies within direct line of sight, and reduces the magic resistance of enemies within line of sight by 25% (900 radius, multiple instances do not stack, does not linger when heroes leave LOS)</p>
+            <p>Active: <i>Palantir</i> – Grants flying vision over a target area for a short duration with a global cast range (4.5s total duration including fade time, 600 radius, 1s fade time from the center out/in). Grants line of sight as if the bearer were at the cast point, applying the magic resistance debuff on affected enemies with an extended 16s duration.<img src="img/cd.png"> 20s <img src="img/mana.png"> 80</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-5-->
       <div class="col-xs-2">
         <div id="chargers" class="item-box-1 center-block item-mobi item-def wip tier-4"
              rel="popover" data-title="Shock Chargers" style="margin-bottom: 12px;">
-          <span class="price-label" style="padding-left: 2px;">3,375</span>
+          <span class="price-label" style="padding-left: 2px;">3,475</span>
           <img class="name-label" src="img/40px-Shock_Chargers_text.png">
           <img class="icon" src="img/40px-Shock_Chargers_icon.png">
           <div id="content-chargers" class="hide">
@@ -1843,15 +1848,15 @@
             <div class="popover-inset text-center">
               <div class="popover-line">
                 <img src="img/40px-Volt_Coil_icon.png"> 375 +
-                <img src="img/40px-Boots_of_Speed_icon.png"> 400 +
+                <img src="img/40px-Boots_of_Speed_icon.png"> 500 +
                 <img src="img/40px-Banner_of_Valor_icon.png"> 2,600
-                = <img src="img/40px-Shock_Chargers_icon.png"> 3,375
+                = <img src="img/40px-Shock_Chargers_icon.png"> 3,475
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
             <p>+0.2 Turn Rate</p>
             <p>+80 Movement Speed</p>
             <p>+30% Evasion</p>
-            <p>Active: <i>Shock Charge</i> – Vector target a point, jumping up to 500 units away instantly and turning to face the target direction (still has turn speed to cast). <img src="img/cd.png"> 7s</p>
+            <p>Active: <i>Shock Charge</i> – Vector target a point, jumping up to 500 units away instantly and turning to face the target direction (still has a turn speed to cast). <img src="img/cd.png"> 7s</p>
             <p>Passive: <i>Magnetic Treads</i> – Gain +15% movement speed for 1s after evading an attack (stacks fully with itself and other speed buffs).</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
@@ -1878,7 +1883,7 @@
         </div><!--/.item-box-1-->
         <div id="valiance" class="item-box-1 center-block item-regen item-def wip tier-4"
              rel="popover" data-title="Valiance" style="margin-bottom: 12px;">
-          <span class="price-label" style="padding-left: 2px;">4,050</span>
+          <span class="price-label" style="padding-left: 2px;">4,575</span>
           <img class="name-label" src="img/40px-Valiance_text.png">
           <img class="icon" src="img/40px-Valiance_icon.png">
           <div id="content-valiance" class="hide">
@@ -1886,14 +1891,15 @@
             <div class="popover-inset text-center">
               <div class="popover-line">
                 <img src="img/40px-Pendant_of_Vigor_icon.png"> 2,600 +
-                <img src="img/40px-Talisman_of_Evasion_icon.png"> 1,450
-                = <img src="img/40px-Valiance_icon.png"> 4,050
+                <img src="img/40px-Talisman_of_Evasion_icon.png"> 1,450 +
+                <img src="img/40px-Recipe_Scroll_icon.png"> 525
+                = <img src="img/40px-Valiance_icon.png"> 4,575
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
             <p>+10 Health Regen</p>
             <p>+25% Evasion</p>
-            <p>+5% Status Resistance</p>
-            <p>Active: <i>Unflinching</i> – Gain +45% status resistance (for a total +50%) for 3s. <img src="img/cd.png"> 13s <img src="img/mana.png"> 30</p>
+            <p>+25% Magic Resistance</p>
+            <p>Active: <i>Unflinching</i> – Gain +50% status resistance and +25% magic resistance (for a total +50%) for 4s. <img src="img/cd.png"> 13s <img src="img/mana.png"> 40</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-3-->
@@ -2195,7 +2201,7 @@
             </div><!--/.popover-inset-->
             <p>+16 Strength (320 health, 11.2% health regen, +2.4% status resistance for strength heroes)</p>
             <p>+10 Damage (+26 for strength heroes)</p>
-            <p>Passive: <i>Lesser Maim</i> – 30% chance to apply a 20/10% (melee/ranged) move & attack speed slow for 5s</p>
+            <p>Passive: <i>Lesser Maim</i> – Each attack has a 30% chance to reduce enemy hero movement speed by 20% and attack speed by 20 when used by a melee hero. Reduces enemy hero movement by 10% and attack speed by 10 when used by a ranged hero. Effect lasts 5 seconds.</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
         <div id="kaya" class="item-box-1 center-block official item-int item-cast tier-2"
@@ -2335,7 +2341,7 @@
           <img class="name-label" src="img/40px-Frost_Spike_text.png">
           <img class="icon" src="img/40px-Frost_Spike_icon.png">
           <div id="content-frost" class="hide">
-            <p><i>A permanently frozen pick made of ice, fashioned as an improvised weapon by some icy being or sorcerer.</i></p>
+            <p><i>A perma-frozen pick made of ice, fashioned as an improvised weapon by some icy being or sorcerer.</i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
                 <img src="img/40px-Mantle_of_Intelligence_icon.png"> 135 +
@@ -2348,7 +2354,7 @@
             <p>+6 Intelligence (+72 mana, +12% mana regen, +0.42% spell amplification, +0.9% magic resistance for intelligence heroes)</p>
             <p>+1 Mana Regen</p>
             <p>Active: <i>Throw</i> – Applies a 15% slow to the target enemy hero for 3s (cast range 350 or hero's attack range, whichever is longer).<br><img src="img/cd.png"> 15s <img src="img/mana.png"> 50</p>
-            <p>Passive: <i>Survivalist</i> – Killing an enemy restores 12 mana for a creep, and 120 for a hero (to owner only).</p>
+            <p>Passive: <i>Survivalist</i> – Getting a last hit or deny restores 12 mana for a creep, and 120 for a hero (to owner only).</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
         <div id="swift" class="item-box-1 center-block item-agi item-mobi wip tier-2"
@@ -2374,7 +2380,7 @@
         </div><!--/.item-box-1-->
         <div id="woodsman" class="item-box-1 center-block item-stat item-def item-util tier-2 wip tier-2"
              rel="popover" data-title="Woodsman's Gloves">
-          <span class="price-label" style="padding-left: 8px;">680</span>
+          <span class="price-label" style="padding-left: 8px;">620</span>
           <img class="name-label" src="img/40px-Woodsman's_Gloves_text.png">
           <img class="icon" src="img/40px-Woodsman's_Gloves_icon.png">
           <div id="content-woodsman" class="hide">
@@ -2384,12 +2390,12 @@
                 <img src="img/40px-Circlet_icon.png"> 165 +
                 <img src="img/40px-Circlet_icon.png"> 165 +
                 <img src="img/40px-Quelling_Blade_icon.png"> 200 +
-                <img src="img/40px-Tango_icon.png"> 150
-                = <img src="img/40px-Woodsman's_Gloves_icon.png"> 680
+                <img src="img/40px-Tango_icon.png"> 90
+                = <img src="img/40px-Woodsman's_Gloves_icon.png"> 620
               </div>
             </div><!--/.popover-inset-->
             <p>+4 All Stats (+80 health, +2.8% health regen, +48 mana, +8% mana regen, +0.28% spell amplification, +0.67 armor, +4 attack speed, +4 damage, and +0.6% status resistance for strength/+0.6% magic resistance for intelligence/+0.24% movement speed for agility)</p>
-            <p>Active: <i>Transplant Tree or Ward</i> – May target a tree or ward to pick it up (450 cast range on wards, 165 cast range on trees, removes enemy wards instantly). When targeted on the ground, plants a tree at the target location (165 cast range, 40s duration). Begins with 1-5 charges, holds up to 8, charges are gained by cutting down normal trees by any means, 1 charge per tree removed. Cutting down a ward places it in your inventory but does not reset its duration (wards with less than full duration may not be sold, begins with charges equal to number of Tango charges, may not be built with Shared Tangos). <img src="img/cd.png"> 0s</p>
+            <p>Active: <i>Transplant Tree or Ward</i> – May target a tree or ward to pick it up (450 cast range on wards, 165 cast range on trees, removes enemy wards instantly). When targeted on the ground, plants a tree at the target location (165 cast range, 40s duration). Begins with 1-3 charges, holds up to 8, charges are gained by cutting down normal trees by any means, 1 charge per tree removed. Cutting down a ward places it in your inventory but does not reset its duration (wards with less than full duration may not be sold, begins with charges equal to number of Tango charges, may not be built with Shared Tangos). <img src="img/cd.png"> 0s</p>
             <p>Passive: <i>Quell</i> – Increases attack damage against non-hero units by 40 for melee heroes, and 12 for ranged.</p>
             <p>Passive: <i>Greenthumb</i> – Normal trees you cut down grow back 50% faster, and trees you Transplant or which regrow after you cut them down give increased bonus healing when used with a Tango (trees look normal to enemies but use GG branch model for allies).</p>
           </div><!--/.popover-content-->
@@ -2440,7 +2446,7 @@
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
             <p>+10/15/20 Strength (+200/300/400 health, +7/10.5/14% health regen, +1.5/2.25/3.0% status resistance for strength heroes)</p>
-            <p>+1.0/1.5/2.0 Mana Regen</p>
+            <p>+1/1.5/2 Mana Regen</p>
             <p>Active: <i>Demonic Summoning</i> – Summons a Warrior and an Archer to fight for you for 50 seconds.<br>
               <b>Warrior</b>: Burns mana every hit (30/40/50 burned per hit, 50% burned mana as damage), and deals magical damage to whoever kills it (550/675/800 magical damage). Gains True Sight at level 3 (700/800/900 health, 5 Health Regen, 5 armor, 40% magic resistance, 70-80/90-110/115-135 damage, 100 attack range, 0.75 BAT, 0.56 + 0.44s attack time, 350 move speed, 0.5 turn rate, 1300/1400/1500 day vision, 800 night vision, 100/150/200 gold bounty, 100/150/200 experience bounty, 1000 true sight radius).<br>
               <b>Archer</b>: Has an activated purge ability (slow + dispel, 600 cast range, 0.5 + 0.13/0.2/0.23 cast animation) <img src="img/cd.png"> 15s, and a passive movement and attack speed aura (+5/7/9% move speed and +5/7/9 attack speed aura, 900 radius, 700/800/900 health, 5 health regen, 4 armor, 40% magic resistance, 55-65/85-95/115-125 damage, 1.0 BAT, 0.7 + 0.3 attack animation, 900 projectile speed, 330/360/390 move speed, 0.5 turn rate, 1300/1400/1500 day vision, 800 night vision, 100/150/200 gold bounty, 100/150/200 experience bounty).<br>
@@ -2579,7 +2585,7 @@
             <p>+16 Damage</p>
             <p>+16% Spell Amplification</p>
             <p>+16% Manacost Reduction</p>
-            <p>Passive: <i>Greater Maim</i> – 40% chance to apply a 26/13% (melee/ranged) move & attack speed slow for 5s</p>
+            <p>Passive: <i>Greater Maim</i> – Each attack has a 40% chance to reduce enemy hero movement speed by 26% and attack speed by 26 when used by a melee hero. Reduces enemy hero movement by 13% and attack speed by 13 when used by a ranged hero. Effect lasts 5 seconds.</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
         <div id="sny" class="item-box-1 center-block item-str item-agi item-dam item-mobi tier-3"
@@ -2601,7 +2607,7 @@
             <p>+16 Damage</p>
             <p>+16 Attack Speed (+32 total)</p>
             <p>+16% Movement Speed</p>
-            <p>Passive: <i>Greater Maim</i> – 40% chance to apply a 26/13% (melee/ranged) move & attack speed slow for 5s</p>
+            <p>Passive: <i>Greater Maim</i> – Each attack has a 40% chance to reduce enemy hero movement speed by 26% and attack speed by 26 when used by a melee hero. Reduces enemy hero movement by 13% and attack speed by 13 when used by a ranged hero. Effect lasts 5 seconds.</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
         <div id="kny" class="item-box-1 center-block item-int item-agi item-mobi item-cast item-dam polished tier-3"
@@ -2665,7 +2671,7 @@
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
             <p>+10 Intelligence (+120 mana, +20% mana regen, +0.7% spell amplification, +1.5% magic resistance for intelligence heroes)</p>
-            <p>+2.25 Mana Regen ()</p>
+            <p>+2.25 Mana Regen</p>
             <p>+40 Movement Speed</p>
             <p>Active: <i>Cyclone</i> – Sweeps a target unit up into a cyclone, making them invulnerable for 2.5 seconds. Cyclone can only be cast on enemy units or yourself. Enemy units take 50 magical damage upon landing. (575 cast range, applies a basic dispel when cast on self). <img src="img/cd.png"> 23s <img src="img/mana.png"> 175</p>
           </div><!--/.popover-content-->
@@ -2813,7 +2819,7 @@
             <p>+15 Strength (+300 health, +7% health regen, +2.25% status resistance for strength heroes)</p>
             <p>+13 Intelligence (+156 mana, +26% mana regen, +0.91% spell amplification, +1.95% magic resistance for intelligence heroes)</p>
             <p>+5.5 Health Regen</p>
-            <p>+140 Attack Range (Ranged ONLY)</p>
+            <p>Passive: <i>Dragon's Reach</i> – Increases attack range of ranged heroes by 140.</p>
             <p>Active: <i>Hurricane Thrust</i> – When used on an enemy (400 cast range), pushes you both 450 units away and grants 4 attacks with 100 bonus attack speed and unlimited range (or up to 5 seconds). When used on self or an ally behaves like Force Staff (800 cast range). <img src="img/cd.png"> 18s <img src="img/mana.png"> 25</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
@@ -2841,30 +2847,30 @@
             <p>+25 Damage (+45 for strength heroes)</p>
             <p>+25% Evasion</p>
             <p>Active: <i>Disarm</i> – Prevents the target for attacking for 3s on melee enemies or 5.5s on ranged enemies (600 cast range, not dispellable). <img src="img/cd.png"> 18s <img src="img/mana.png"> 100</p>
-            <p>Passive: <i>Lesser Maim</i> – 35% chance to apply a 20/10% (melee/ranged) move & attack speed slow for 5s</p>
+            <p>Passive: <i>Lesser Maim</i> – Each attack has a 35% chance to reduce enemy hero movement speed by 20% and attack speed by 20 when used by a melee hero. Reduces enemy hero movement by 10% and attack speed by 10 when used by a ranged hero. Effect lasts 5 seconds.</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
         <div id="sanguine" class="item-box-1 center-block item-str item-regen item-dam item-cast wip tier-3" style="margin-left: -6px;"
              rel="popover" data-title="Sanguine Edge">
-          <span class="price-label" style="padding-left: 2px;">3,250</span>
+          <span class="price-label" style="padding-left: 2px;">4,555</span>
           <img class="name-label" src="img/40px-Sanguine_Edge_text.png">
           <img class="icon" src="img/40px-Sanguine_Edge_icon.png">
           <div id="content-sanguine" class="hide">
-            <p><i>The living blade of a reviled cannibal lord.</i></p>
+            <p><i>The living blade of a reviled vampire lord.</i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
-                <img src="img/40px-Soul_Ring_icon.png"> 755 +
                 <img src="img/40px-Sange_icon.png"> 1,950 +
-                <img src="img/40px-Recipe_Scroll_icon.png"> 545
-                = <img src="img/40px-Sanguine_Edge_icon.png"> 3,250
+                <img src="img/40px-Primal_Seal_icon.png"> 1,850 +
+                <img src="img/40px-Soul_Ring_icon.png"> 755
+                = <img src="img/40px-Sanguine_Edge_icon.png"> 4,555
               </div>
             </div><!--/.popover-inset-->
             <p>+22 Strength (+440 health, +15.4% health regen, +3.3% status resistance for strength heroes)</p>
             <p>+10 Damage (+32 for strength heroes)</p>
             <p>+2 Health Regen</p>
-            <p>Active: <i>Dark Ritual</i> – The next spell cast costs health instead of mana, as well as restores a percentage of damage dealt (50% spell lifesteal for one spell, 5% on creeps, 10s buff duration, self-damage is fatal). <img src="img/cd.png"> 10s <img src="img/mana.png"> 25</p>
+            <p>Active: <i>Dark Ritual</i> – The next spell cast costs health instead of mana, as well as restores a percentage of damage dealt (50% spell lifesteal for one spell, 5% on creeps, 10s buff duration, self-damage is fatal). <img src="img/cd.png"> 30s <img src="img/mana.png"> 25</p>
             </p>
-            <p>Passive: <i>Lesser Maim</i> – 35% chance to apply a 20/10% (melee/ranged) move & attack speed slow for 5s</p>
+            <p>Passive: <i>Thirsting Maim</i> – Each attack has a 35% chance to lifesteal for 50% of damage dealt and reduce enemy hero movement/attack speed by 20%/20 when used by a melee hero. Reduces enemy hero movement by 10% and attack speed by 10 when used by a ranged hero. The slow effect lasts 5 seconds.</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-3-->
@@ -2891,7 +2897,7 @@
             <p>+10% Manacost Reduction</p>
             <p>Passive: <i>Greater Aethereal Focus</i> – +300 Cast Range</p>
             <p>Passive: <i>Retribution</i> – Converts 15% of spell damage to heroes and 3% of spell damage to creeps into mana.</p>
-            <p>Toggle/Passive: <i>Spellmastery</i> – The next spell cast costs +20% mana, gains +100 effect radius (if the spell has an AoE radius) and an instant cast point <img src="img/cd.png"> 8s (radius applies to spells only, animation applies to spells with a cast point, reduces cast points above 1s by up to 1s)</p>
+            <p>Toggle/Passive: <i>Spellmastery</i> – The next spell cast costs +20% mana, gains +100 effect radius (if the spell has an AoE radius) and a -1s reduced cast point (does not affect items, cast point reduction applies to spells with a cast point only, reduces cast points above 1s by up to 1s) <img src="img/cd.png"> 8s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
         <div id="seraph" class="item-box-1 center-block item-int item-regen item-cast item-mobi item-supp polished tier-3" style="margin-left: -6px;"
@@ -2980,7 +2986,7 @@
       <div class="col-xs-2">
         <div id="trio" class="item-box-1 center-block item-stat item-dam item-mobi item-cast polished tier-4"
              rel="popover" data-title="Sacred Trio">
-          <span class="price-label" style="padding-left: 2px;">7,400</span>
+          <span class="price-label" style="padding-left: 2px;">7,700</span>
           <img class="name-label" src="img/40px-Sacred_Trio_text.png">
           <img class="icon" src="img/40px-Sacred_Trio_icon.png">
           <div id="content-trio" class="hide">
@@ -2990,8 +2996,8 @@
                 <img src="img/40px-Sange_icon.png"> 1,950 +
                 <img src="img/40px-Kaya_icon.png"> 1,950 +
                 <img src="img/40px-Yasha_icon.png"> 1,950 +
-                <img src="img/40px-Recipe_Scroll_icon.png"> 1,550
-                = <img src="img/40px-Sacred_Trio_icon.png"> 7,400
+                <img src="img/40px-Recipe_Scroll_icon.png"> 1,850
+                = <img src="img/40px-Sacred_Trio_icon.png"> 7,700
               </div>
             </div><!--/.popover-inset-->
             <p>+20 All Stats (+400 health, +14% health regen, +240 mana, +40% mana regen, +1.4% spell amplification, +3.33 armor, +20 attack speed, +20 damage, +3% status resistance for strength/+3% magic resistance for intelligence/+1.2% movement speed for agility)</p>
@@ -3001,61 +3007,23 @@
             <p>+20% Spell Amplification</p>
             <p>+20% Manacost Reduction</p>
             <p>Passive: <i>Sword Dance</i> – Casting a spell grants a boost of 100 attack speed for 2.4 seconds (does not count items, does not stack but refreshes duration)</p>
-            <p>Passive: <i>Greater Maim</i> – 40% chance to apply a 26/13% (melee/ranged) move & attack speed slow for 5s</p>
+            <p>Passive: <i>Great Maim</i> – Each attack has a 40% chance to reduce enemy hero movement speed by 32% and attack speed by 32 when used by a melee hero. Reduces enemy hero movement by 16% and attack speed by 16 when used by a ranged hero. Effect lasts 5 seconds.</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-2-->
-      <div class="col-xs-5">
-        <div id="gjalla" class="item-box-1 center-block item-str item-stat item-def item-supp item-dam wip tier-3"
-             rel="popover" data-title="Gjallarhorn">
-          <span class="price-label" style="padding-left: 2px;">5,250</span>
-          <img class="name-label" src="img/40px-Gjallarhorn_text.png">
-          <img class="icon" src="img/40px-Gjallarhorn_icon.png">
-          <div id="content-gjalla" class="hide">
-            <p><i>When the watcher of winter calls out Ragnarok's approach, the Gjallarhorn's sound is the sane world's last bastion.</i></p>
-            <div class="popover-inset text-center">
-              <div class="popover-line">
-                <img src="img/40px-Primal_Seal_icon.png"> 1,850 +
-                <img src="img/40px-Ghost_Scepter_icon.png"> 1,500 +
-                <img src="img/40px-Magic_Wand_icon.png"> 400 +
-                <img src="img/40px-Recipe_Scroll_icon.png"> 1,500
-                = <img src="img/40px-Gjallarhorn_icon.png"> 5,250
-              </div>
-            </div><!--/.popover-inset-->
-            <p>+20 Strength (+400 health, +14% health regen, +3% status resistance for strength heroes)</p>
-            <p>+7 Intelligence (+84 mana, +14% mana regen, +0.49% spell amplification, +1.05% magic resistance for intelligence heroes)</p>
-            <p>+7 Agility (+1.17 armor, +7 attack speed, +0.42% movement speed for agility heroes)</p>
-            <p>+10 Damage (+17 total, or +30 for strength heroes)</p>
-            <p>+4.5 Health Regen</p>
-            <p>Active/Passive: <i>Bind Souls</i> – Gains charges in a 1200 radius
-              like a Magic Wand, with no limit on the max number of charges
-              stored. When an ally in the same radius takes an instance of
-              fatal damage launches an 1800 speed projectile and makes that
-              ally immune to further damage for the projectile's duration. When
-              it hits the projectile restores 20 mana and health per charge,
-              expending up to 24 charges at a time, and grants the target
-              physical damage immunity (4s duration). The triggering instance
-              of damage is then applied to the Gjallarhorn's bearer. May also
-              be activated to apply physical damage immunity to yourself or an
-              ally manually, restoring health/mana and placing the passive
-              component on cooldown (1200 cast range, may be toggled to disable
-              automatic passive usage by double-clicking).<br><img src="img/cd.png"> 30s
-            </p>
-            <p>Passive: <i>Lifesteal</i> – Heals the attacker for 15% of attack damage dealt.</p>
-          </div><!--/.popover-content-->
-        </div><!--/.item-box-1-->
+      <div class="col-xs-4 col-xs-offset-1">
         <div id="cc" class="item-box-1 center-block item-str item-dam item-regen item-def item-util wip tier-3"
-             rel="popover" data-title="Carnivore Claw">
+             rel="popover" data-title="Carnivore Maw">
           <span class="price-label" style="padding-left: 2px;">4,220</span>
-          <img class="name-label" src="img/40px-Carnivore_Claw_text.png">
-          <img class="icon" src="img/40px-Carnivore_Claw_icon.png">
+          <img class="name-label" src="img/40px-Carnivore_Maw_text.png">
+          <img class="icon" src="img/40px-Carnivore_Maw_icon.png">
           <div id="content-cc" class="hide">
             <p><i>A bladed mask so disturbing that meeting the predator's gaze will transfix the victim with fear.</i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
                 <img src="img/40px-Primal_Seal_icon.png"> 1,850 +
-                <img src="img/40px-Armlet_of_Mordiggian_icon.png"> 2,370 +
-                = <img src="img/40px-Carnivore_Claw_icon.png"> 4,220
+                <img src="img/40px-Armlet_of_Mordiggian_icon.png"> 2,370
+                = <img src="img/40px-Carnivore_Maw_icon.png"> 4,220
               </div>
             </div><!--/.popover-inset-->
             <p>+10 Strength (+200 health, +7% health regen, +1.5% status resistance for strength heroes)</p>
@@ -3063,7 +3031,7 @@
             <p>+25 Attack Speed</p>
             <p>+20 Damage (+30 for strength heroes)</p>
             <p>+5 Armor</p>
-            <p>Active/Passive: <i>Predator's Gaze</i> – Enemies who target the bearer with a spell or attack lose shared vision for a short duration, and may actively target enemies as well (800 cast range, instant vision loss, 6s vision loss/buff duration, <i>terror</i> effect over enemy's head). For each enemy under this effect, gain one stack of <i>Predator's Gaze</i>, granting bonuses equal to Armlet’s Unholy Strength per stack up to 2 stacks (+30 damage, +25 strength, +4 armor, -45 hps). May target self without using the cooldown, causing vision loss but toggling like normal Armlet. <img src="img/cd.png"> 20s</p>
+            <p>Active/Passive: <i>Predator's Gaze</i> – Enemies who target the bearer with a spell or attack lose shared vision for a short duration, and may actively target enemies as well (800 cast range, instant vision loss, 6s vision loss/buff duration, <i>terror</i> effect over enemy's head). For each enemy under this effect, gain one stack of <i>Predator's Gaze</i>, granting bonuses equal to Armlet’s Unholy Strength per stack up to 2 stacks (+30 damage, +25 strength, +4 armor, and -45 hps each). May target self without using the cooldown, causing vision loss but toggling like normal Armlet. <img src="img/cd.png"> 20s</p>
             <p>Passive: <i>Lifesteal</i> – Heals the attacker for 20% of attack damage dealt.</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
@@ -3185,7 +3153,7 @@
             </div><!--/.popover-inset-->
             <p>+25 Strength (+400 health, +17.5% health regen, +3.75% status resistance for strength heroes)</p>
             <p>+50 Damage (+75 for strength heroes)</p>
-            <p>Active: <i>Unholy Rage</i> – Increases Lifesteal percentage to 200% total (+175%) for 4.5 seconds. <img src="img/cd.png"> 35s</p>
+            <p>Active: <i>Unholy Rage</i> – Increases Lifesteal percentage to 200% total (+175%) for 4.5 seconds.<br><img src="img/cd.png"> 35s</p>
             <p>Passive: <i>Lifesteal</i> – Heals the attacker for 25% of attack damage dealt.</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
@@ -3259,7 +3227,7 @@
             <p>Active: <i>Arctic Blast</i> – Emits a 900 radius freezing wave that deals 200 magical damage to enemies and slows their movement by 40% for 4 seconds. <div style="inline-block"><img src="img/cd.png"> 30s <img src="img/mana.png"> 100</div></p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="ocore" class="item-box-1 center-block item-int item-stat item-cast tier-4" style="margin-left: -12px;"
+        <div id="ocore" class="item-box-1 center-block item-int item-stat item-regen item-cast tier-4" style="margin-left: -12px;"
              rel="popover" data-title="Octarine Core">
           <span class="price-label" style="padding-left: 2px;">5,900</span>
           <img class="name-label" src="img/40px-Octarine_Core_text.png">
@@ -3390,7 +3358,7 @@
             <p>+12 Agility (+2 armor, +12 attack speed, +0.72% movement speed for agility heroes)</p>
             <p>+10 Intelligence (+120 mana, +20% mana regen, +0.7% spell amplification, +1.5% magic resistance for intelligence heroes)</p>
             <p>+1.5 Mana Regen</p>
-            <p>+20 Damage (+30 total for intelligence heroes, +32 for agility, and +42 for strength)</p>
+            <p>+20 Damage (+42 total for strength heroes, +32 for agility, and +30 for intelligence)</p>
             <p>+10 Attack Speed (+22 total)</p>
             <p>Passive: <i>Wyrm's Reach</i> – Increases attack range of ranged heroes by 170, and melee heroes by 75.</p>
             <p>Passive: <i>Echo Thrust</i> – Attacks have a 17% chance to echo, attacking again immediately and dealing 100 immunity-piercing magic damage. Melee heroes apply a 100% movement speed slow for 0.6s on each echo strike.</p>
@@ -3733,52 +3701,8 @@
       </div><!--/.col-xs-2-->
     </div><!--/.row-->
     <div class="row row-5">
-      <div class="col-xs-2">
-        <div id="basher" class="item-box-1 center-block item-str item-dam tier-2"
-             rel="popover" data-title="Skull Basher">
-          <span class="price-label" style="padding-left: 2px;">2,700</span>
-          <img class="name-label" src="img/40px-Skull_Basher_text.png">
-          <img class="icon" src="img/40px-Skull_Basher_icon.png">
-          <div id="content-basher" class="hide">
-            <p><i>A feared weapon in the right hands, this maul's ability to shatter the defenses of its opponents should not be underestimated.</i></p>
-            <div class="popover-inset text-center">
-              <div class="popover-line">
-                <img src="img/40px-Belt_of_Strength_icon.png"> 450 +
-                <img src="img/40px-Javelin_icon.png"> 1,100 +
-                <img src="img/40px-Recipe_Scroll_icon.png"> 1,150
-                = <img src="img/40px-Skull_Basher_icon.png"> 2,700
-              </div><!--/.popover-line-->
-            </div><!--/.popover-inset-->
-            <p>+10 Strength (+200 health, +7% health regen, +1.5% status resistance for strength heroes)</p>
-            <p>+10 Damage (+20 for strength heroes)</p>
-            <p>Passive: <i>Bash</i> – Grants melee heroes a 25% chance on hit to stun the target for 1.4 seconds and deal 85 bonus magical damage. Bash chance for ranged heroes is 10%. <img src="img/cd.png"> 2.3s</p>
-          </div><!--/.popover-content-->
-        </div><!--/.item-box-1-->
-      </div><!--/.col-xs-2-->
-      <div class="col-xs-2">
-        <div id="orchid" class="item-box-1 center-block item-int item-dam item-regen item-util tier-3"
-             rel="popover" data-title="Orchid Malevolence">
-          <span class="price-label" style="padding-left: 2px;">4,075</span>
-          <img class="name-label" src="img/40px-Orchid_Malevolence_text.png">
-          <img class="icon" src="img/40px-Orchid_Malevolence_icon.png">
-          <div id="content-orchid" class="hide">
-            <p><i>A garnet rod constructed from the essence of a fire demon.</i></p>
-            <div class="popover-inset text-center">
-              <div class="popover-line">
-                <img src="img/40px-Oblivion_Staff_icon.png"> 1,650 +
-                <img src="img/40px-Oblivion_Staff_icon.png"> 1,650 +
-                <img src="img/40px-Recipe_Scroll_icon.png"> 775
-                = <img src="img/40px-Orchid_Malevolence_icon.png"> 4,075
-              </div><!--/.popover-line-->
-            </div><!--/.popover-inset-->
-            <p>+25 Intelligence (+300 mana, +50% mana regen, +1.75% spell amplification, +3.75% magic resistance for intelligence heroes)</p>
-            <p>+30 Attack Speed</p>
-            <p>+30 Damage (+55 for intelligence heroes)</p>
-            <p>+2.25 Mana Regen</p>
-            <p>Active: <i>Soul Burn</i> – Silences the target unit for 5 seconds. At the end of the silence, 30% of the damage received while silenced is inflicted as bonus magical damage. <img src="img/cd.png"> 18s <img src="img/mana.png"> 100</p>
-          </div><!--/.popover-content-->
-        </div><!--/.item-box-1-->
-      </div><!--/.col-xs-2-->
+      <div class="col-xs-4">
+      </div><!--/.col-xs-4-->
       <div class="col-xs-4">
         <div id="bfury" class="item-box-1 center-block item-dam item-regen tier-3"
              rel="popover" data-title="Battle Fury">
@@ -3920,47 +3844,39 @@
       </div><!--/.col-xs-5-->
     </div><!--/.row-->
     <div class="row row-7">
-      <div class="col-xs-4 fix-margin">
-        <div id="linkens" class="item-box-1 center-block item-stat item-regen item-def item-supp tier-3"
-             rel="popover" data-title="Linken's Sphere">
-          <span class="price-label" style="padding-left: 2px;">5,050</span>
-          <img class="name-label" src="img/40px-Linken's_Sphere_text.png">
-          <img class="icon" src="img/40px-Linken's_Sphere_icon.png">
-          <div id="content-linkens" class="hide">
-            <p><i>This magical sphere once protected one of the most famous heroes in history.</i></p>
+      <div class="col-xs-4">
+        <div id="gjalla" class="item-box-1 center-block item-stat item-regen item-def item-supp item-dam wip tier-3"
+             rel="popover" data-title="Gjallarhorn">
+          <span class="price-label" style="padding-left: 2px;">4,050</span>
+          <img class="name-label" src="img/40px-Gjallarhorn_text.png">
+          <img class="icon" src="img/40px-Gjallarhorn_icon.png">
+          <div id="content-gjalla" class="hide">
+            <p><i>When the watcher of winter calls out Ragnarok's approach, the Gjallarhorn's sound is the sane world's last bastion.</i></p>
             <div class="popover-inset text-center">
               <div class="popover-line">
-                <img src="img/40px-Perseverance_icon.png"> 1,700 +
-                <img src="img/40px-Ultimate_Orb_icon.png"> 2,150 +
-                <img src="img/40px-Recipe_Scroll_icon.png"> 1,200
-                = <img src="img/40px-Linken's_Sphere_icon.png"> 5,050
-              </div><!--/.popover-line-->
-            </div><!--/.popover-inset-->
-            <p>+15 All Stats (+300 health, +10.5% health regen, +180 mana, +30% mana regen, +1.05% spell amplification, +2.5 armor, +15 attack speed, +15 damage, +2.25% status resistance for strength/+2.25% magic resistance for intelligence/+0.9% movement speed for agility)</p>
-            <p>+5.5 Health Regen</p>
-            <p>+2.25 Mana Regen</p>
-            <p>Active/Passive: <i>Spellblock</i> – Blocks most targeted spells once every 13 seconds. Target an ally to temporarily remove Spellblock from the item's owner and transfer it to an allied unit for 13 seconds. <img src="img/cd.png"> 13s</p>
-          </div><!--/.popover-content-->
-        </div><!--/.item-box-1-->
-        <div id="skadi" class="item-box-1 center-block item-stat tier-3"
-             rel="popover" data-title="Eye of Skadi">
-          <span class="price-label" style="padding-left: 2px;">5,500</span>
-          <img class="name-label" src="img/40px-Eye_of_Skadi_text.png">
-          <img class="icon" src="img/40px-Eye_of_Skadi_icon.png">
-          <div id="content-skadi" class="hide">
-            <p><i>Extremely rare artifact, guarded by the azure dragons.</i></p>
-            <div class="popover-inset text-center">
-              <div class="popover-line">
-                <img src="img/40px-Point_Booster_icon.png"> 1,200 +
-                <img src="img/40px-Ultimate_Orb_icon.png"> 2,150 +
+                <img src="img/40px-Ghost_Scepter_icon.png"> 1,500 +
+                <img src="img/40px-Magic_Wand_icon.png"> 400 +
                 <img src="img/40px-Ultimate_Orb_icon.png"> 2,150
-                = <img src="img/40px-Eye_of_Skadi_icon.png"> 5,500
-              </div><!--/.popover-line-->
+                = <img src="img/40px-Gjallarhorn_icon.png"> 4,050
+              </div>
             </div><!--/.popover-inset-->
-            <p>+25 All Stats (+500 health, +17.5% health regen, +300 mana, +50% mana regen, +1.75% spell amplification, +4.17 armor, +25 attack speed, +25 damage, +3.75% status resistance for strength/+3.75% magic resistance for intelligence/+1.5% movement speed for agility)</p>
-            <p>+225 Health (+725 total)</p>
-            <p>+250 Mana (+525 total)</p>
-            <p>Passive: <i>Cold Attack</i> – Attacks lower enemy attack speed by 45 and movement speed by 35%. Lasts 5 seconds when used by melee heroes, and 2.5 seconds when used by ranged.</p>
+            <p>+17 All Stats (+340 health, +11.9% health regen, +204 mana, +34% mana regen, +1.19% spell amplification, +2.83 armor, +17 attack speed, +17 damage, +2.55% status resistance for strength/+2.55% magic resistance for intelligence/+1.02% movement speed for agility)</p>
+            <p>+7 Health Regen</p>
+            <p>Active/Passive: <i>Soul Bind</i> – Gains charges in a 1200 radius
+              like a Magic Wand, with no limit on the max number of charges
+              stored. When an ally in the same radius takes damage while below
+              30% health, launches an 1800 speed projectile that negates the
+              single instance of damage and restores 20 mana and health per charge
+              expended upon landing, up to 24 charges at a time, and grants the
+              target physical damage immunity (2s duration, does not disarm or
+              slow). After the heal is applied, the original triggering
+              instance of damage is then applied to the Gjallarhorn's bearer
+              (but may not be fatal). May activate manually to apply physical
+              damage immunity to yourself or a target ally, restoring
+              health/mana and placing the passive component on cooldown (700
+              cast range, 1800 projectile speed, may be toggled to disable
+              automatic passive usage by double-clicking).<br><img src="img/cd.png"> 7s
+            </p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
@@ -4009,6 +3925,58 @@
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-2-->
       <div class="col-xs-3">
+      </div><!--/.col-xs-3-->
+    </div><!--/.row-->
+    <div class="row row-8">
+      <div class="col-xs-2">
+        <div id="basher" class="item-box-1 center-block item-str item-dam tier-2"
+             rel="popover" data-title="Skull Basher">
+          <span class="price-label" style="padding-left: 2px;">2,700</span>
+          <img class="name-label" src="img/40px-Skull_Basher_text.png">
+          <img class="icon" src="img/40px-Skull_Basher_icon.png">
+          <div id="content-basher" class="hide">
+            <p><i>A feared weapon in the right hands, this maul's ability to shatter the defenses of its opponents should not be underestimated.</i></p>
+            <div class="popover-inset text-center">
+              <div class="popover-line">
+                <img src="img/40px-Belt_of_Strength_icon.png"> 450 +
+                <img src="img/40px-Javelin_icon.png"> 1,100 +
+                <img src="img/40px-Recipe_Scroll_icon.png"> 1,150
+                = <img src="img/40px-Skull_Basher_icon.png"> 2,700
+              </div><!--/.popover-line-->
+            </div><!--/.popover-inset-->
+            <p>+10 Strength (+200 health, +7% health regen, +1.5% status resistance for strength heroes)</p>
+            <p>+10 Damage (+20 for strength heroes)</p>
+            <p>Passive: <i>Bash</i> – Grants melee heroes a 25% chance on hit to stun the target for 1.4 seconds and deal 85 bonus magical damage. Bash chance for ranged heroes is 10%. <img src="img/cd.png"> 2.3s</p>
+          </div><!--/.popover-content-->
+        </div><!--/.item-box-1-->
+      </div><!--/.col-xs-2-->
+      <div class="col-xs-2">
+        <div id="orchid" class="item-box-1 center-block item-int item-dam item-regen item-util tier-3"
+             rel="popover" data-title="Orchid Malevolence">
+          <span class="price-label" style="padding-left: 2px;">4,075</span>
+          <img class="name-label" src="img/40px-Orchid_Malevolence_text.png">
+          <img class="icon" src="img/40px-Orchid_Malevolence_icon.png">
+          <div id="content-orchid" class="hide">
+            <p><i>A garnet rod constructed from the essence of a fire demon.</i></p>
+            <div class="popover-inset text-center">
+              <div class="popover-line">
+                <img src="img/40px-Oblivion_Staff_icon.png"> 1,650 +
+                <img src="img/40px-Oblivion_Staff_icon.png"> 1,650 +
+                <img src="img/40px-Recipe_Scroll_icon.png"> 775
+                = <img src="img/40px-Orchid_Malevolence_icon.png"> 4,075
+              </div><!--/.popover-line-->
+            </div><!--/.popover-inset-->
+            <p>+25 Intelligence (+300 mana, +50% mana regen, +1.75% spell amplification, +3.75% magic resistance for intelligence heroes)</p>
+            <p>+30 Attack Speed</p>
+            <p>+30 Damage (+55 for intelligence heroes)</p>
+            <p>+2.25 Mana Regen</p>
+            <p>Active: <i>Soul Burn</i> – Silences the target unit for 5 seconds. At the end of the silence, 30% of the damage received while silenced is inflicted as bonus magical damage. <img src="img/cd.png"> 18s <img src="img/mana.png"> 100</p>
+          </div><!--/.popover-content-->
+        </div><!--/.item-box-1-->
+      </div><!--/.col-xs-2-->
+      <div class="col-xs-3">
+      </div><!--/.col-xs-3-->
+      <div class="col-xs-5">
         <div id="mkb" class="item-box-1 center-block item-dam tier-3"
              rel="popover" data-title="Monkey King Bar">
           <span class="price-label" style="padding-left: 2px;">4,200</span>
@@ -4028,9 +3996,161 @@
             <p>Passive: <i>Pierce</i> – Grants each attack a 75% chance to pierce through evasion and deal 60 bonus pure damage.</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
+        <div id="moonsh" class="item-box-1 center-block item-dam item-cons tier-3"
+             rel="popover" data-title="Moon Shard">
+          <span class="price-label" style="padding-left: 2px;">4,000</span>
+          <img class="name-label" src="img/40px-Moon_Shard_text.png">
+          <img class="icon" src="img/40px-Moon_Shard_icon.png">
+          <div id="content-moonsh" class="hide">
+            <p><i>Said to be a tear from the lunar goddess Selemene.</i></p>
+            <div class="popover-inset text-center">
+              <div class="popover-line">
+                <img src="img/40px-Hyperstone_icon.png"> 2,000 +
+                <img src="img/40px-Hyperstone_icon.png"> 2,000
+                = <img src="img/40px-Moon_Shard_icon.png"> 4,000
+              </div><!--/.popover-line-->
+            </div><!--/.popover-inset-->
+            <p>+120 Attack Speed</p>
+            <p>Active: <i>Consume</i> – Consume the Moon Shard to permanently gain 60 attack speed and 150 bonus night vision. Max 1 use (global cast range, may target allies).</p>
+            <p>Passive: <i>Shade Sight</i> – Grants 300 bonus night vision.</p>
+          </div><!--/.popover-content-->
+        </div><!--/.item-box-1-->
+      </div><!--/.col-xs-5-->
+    </div><!--/.row-->
+    <div class="row row-9">
+      <div class="col-xs-4">
+        
+      </div><!--/.col-xs-4-->
+      <div class="col-xs-4">
+        <div id="relic" class="item-box-1 center-block item-dam tier-3 shop-secret"
+             rel="popover" data-title="Sacred Relic">
+          <span class="price-label" style="padding-left: 2px;">3,800</span>
+          <img class="name-label" src="img/40px-Sacred_Relic_text.png">
+          <img class="icon" src="img/40px-Sacred_Relic_icon.png">
+          <div id="content-relic" class="hide">
+            <p><i>An ancient weapon that often turns the tides of war.</i></p>
+            <div class="popover-inset text-center">
+              <div class="popover-line">
+                <img src="img/Gold_symbol.png" height="24px"> 3,800
+              </div><!--/.popover-line-->
+            </div><!--/.popover-inset-->
+            <p>+60 Damage</p>
+          </div><!--/.popover-content-->
+        </div><!--/.item-box-1-->
+      </div><!--/.col-xs-4-->
+      <div class="col-xs-3">
       </div><!--/.col-xs-3-->
     </div><!--/.row-->
-    <div class="row row-8">
+    <div class="row row-10">
+      <div class="col-xs-4 fix-margin">
+        <div id="linkens" class="item-box-1 center-block item-stat item-regen item-def item-supp tier-3"
+             rel="popover" data-title="Linken's Sphere">
+          <span class="price-label" style="padding-left: 2px;">5,050</span>
+          <img class="name-label" src="img/40px-Linken's_Sphere_text.png">
+          <img class="icon" src="img/40px-Linken's_Sphere_icon.png">
+          <div id="content-linkens" class="hide">
+            <p><i>This magical sphere once protected one of the most famous heroes in history.</i></p>
+            <div class="popover-inset text-center">
+              <div class="popover-line">
+                <img src="img/40px-Perseverance_icon.png"> 1,700 +
+                <img src="img/40px-Ultimate_Orb_icon.png"> 2,150 +
+                <img src="img/40px-Recipe_Scroll_icon.png"> 1,200
+                = <img src="img/40px-Linken's_Sphere_icon.png"> 5,050
+              </div><!--/.popover-line-->
+            </div><!--/.popover-inset-->
+            <p>+15 All Stats (+300 health, +10.5% health regen, +180 mana, +30% mana regen, +1.05% spell amplification, +2.5 armor, +15 attack speed, +15 damage, +2.25% status resistance for strength/+2.25% magic resistance for intelligence/+0.9% movement speed for agility)</p>
+            <p>+5.5 Health Regen</p>
+            <p>+2.25 Mana Regen</p>
+            <p>Active/Passive: <i>Spellblock</i> – Blocks most targeted spells once every 13 seconds. Target an ally to temporarily remove Spellblock from the item's owner and transfer it to an allied unit for 13 seconds. <img src="img/cd.png"> 13s</p>
+          </div><!--/.popover-content-->
+        </div><!--/.item-box-1-->
+        <div id="skadi" class="item-box-1 center-block item-stat tier-3"
+             rel="popover" data-title="Eye of Skadi">
+          <span class="price-label" style="padding-left: 2px;">5,500</span>
+          <img class="name-label" src="img/40px-Eye_of_Skadi_text.png">
+          <img class="icon" src="img/40px-Eye_of_Skadi_icon.png">
+          <div id="content-skadi" class="hide">
+            <p><i>Extremely rare artifact, guarded by the azure dragons.</i></p>
+            <div class="popover-inset text-center">
+              <div class="popover-line">
+                <img src="img/40px-Point_Booster_icon.png"> 1,200 +
+                <img src="img/40px-Ultimate_Orb_icon.png"> 2,150 +
+                <img src="img/40px-Ultimate_Orb_icon.png"> 2,150
+                = <img src="img/40px-Eye_of_Skadi_icon.png"> 5,500
+              </div><!--/.popover-line-->
+            </div><!--/.popover-inset-->
+            <p>+25 All Stats (+500 health, +17.5% health regen, +300 mana, +50% mana regen, +1.75% spell amplification, +4.17 armor, +25 attack speed, +25 damage, +3.75% status resistance for strength/+3.75% magic resistance for intelligence/+1.5% movement speed for agility)</p>
+            <p>+225 Health (+725 total)</p>
+            <p>+250 Mana (+525 total)</p>
+            <p>Passive: <i>Cold Attack</i> – Attacks lower enemy attack speed by 45 and movement speed by 35%. Lasts 5 seconds when used by melee heroes, and 2.5 seconds when used by ranged.</p>
+          </div><!--/.popover-content-->
+        </div><!--/.item-box-1-->
+      </div><!--/.col-xs-4-->
+      <div class="col-xs-4 fix-margin">
+        <div id="nullifier" class="item-box-1 center-block official item-regen item-dam item-util item-def tier-4"
+             rel="popover" data-title="Nullifier">
+          <span class="price-label" style="padding-left: 2px;">4,700</span>
+          <img class="name-label" src="img/40px-Nullifier_text.png">
+          <img class="icon" src="img/40px-Nullifier_icon.png">
+          <div id="content-nullifier" class="hide">
+            <p><i>A dangerous weapon pilfered from an inverse dimension.</i></p>
+            <div class="popover-inset text-center">
+              <div class="popover-line">
+                <img src="img/40px-Sacred_Relic_icon.png"> 3,800 +
+                <img src="img/40px-Helm_of_Iron_Will_icon.png"> 900
+                = <img src="img/40px-Nullifier_icon.png"> 4,700
+              </div><!--/.popover-line-->
+            </div><!--/.popover-inset-->
+            <p>+65 Damage</p>
+            <p>+5 Health Regen</p>
+            <p>+5 Armor</p>
+            <p>Active: <i>Nullify</i> – Dispels the target and mutes them for 5 seconds. Anytime the muted target is attacked, it will be slowed by 100% for 0.4 seconds. <img src="img/cd.png"> 13s <img src="img/mana.png"> 75</p>
+          </div><!--/.popover-content-->
+        </div><!--/.item-box-1-->
+        <div id="radiance" class="item-box-1 center-block item-dam tier-4"
+             rel="popover" data-title="Radiance">
+          <span class="price-label" style="padding-left: 2px;">5,150</span>
+          <img class="name-label" src="img/40px-Radiance_text.png">
+          <img class="icon" src="img/40px-Radiance_icon.png">
+          <div id="content-radiance" class="hide">
+            <p><i>A divine weapon that causes damage and a bright burning effect that lays waste to nearby enemies.</i></p>
+            <div class="popover-inset text-center">
+              <div class="popover-line">
+                <img src="img/40px-Sacred_Relic_icon.png"> 3,800 +
+                <img src="img/40px-Recipe_Scroll_icon.png"> 1,350
+                = <img src="img/40px-Radiance_icon.png"> 5,150
+              </div><!--/.popover-line-->
+            </div><!--/.popover-inset-->
+            <p>+65 Damage</p>
+            <p>Aura/Toggle: <i>Burn</i> – When active, scorches enemies for 60 damage per second, and causes them to miss 17% of their attacks (700 radius, 35 dps burn for illusions). <img src="img/cd.png"> 0s</p>
+          </div><!--/.popover-content-->
+        </div><!--/.item-box-1-->
+      </div><!--/.col-xs-4-->
+      <div class="col-xs-3">
+        <div id="mjoll" class="item-box-1 center-block item-dam tier-3"
+             rel="popover" data-title="Mjollnir">
+          <span class="price-label" style="padding-left: 2px;">5,700</span>
+          <img class="name-label" src="img/40px-Mjollnir_text.png">
+          <img class="icon" src="img/40px-Mjollnir_icon.png">
+          <div id="content-mjoll" class="hide">
+            <p><i>Thor's magical hammer, made for him by the dwarves Brok and Eitri.</i></p>
+            <div class="popover-inset text-center">
+              <div class="popover-line">
+                <img src="img/40px-Maelstrom_icon.png"> 2,800 +
+                <img src="img/40px-Hyperstone_icon.png"> 2,000 +
+                <img src="img/40px-Recipe_Scroll_icon.png"> 900
+                = <img src="img/40px-Mjollnir_icon.png"> 5,700
+              </div><!--/.popover-line-->
+            </div><!--/.popover-inset-->
+            <p>+80 Attack Speed</p>
+            <p>+24 Damage</p>
+            <p>Active: <i>Static Charge</i> – Places a charged shield on a target unit for 15 seconds which has a 20% chance to release a 200 magical damage shocking bolt at a nearby attacker and 4 additional enemies (800 cast range, 1s proc cooldown, 900 radius, 15s shield duration). <img src="img/cd.png"> 35s <img src="img/mana.png"> 50</p>
+            <p>Passive: <i>Chain Lightning</i> – Grants a 25% chance on attack to release a bolt of electricity that leaps between 4 targets within a 900 radius, dealing 120 magical damage to each (0.25s bounce interval).</p>
+          </div><!--/.popover-content-->
+        </div><!--/.item-box-1-->
+      </div><!--/.col-xs-3-->
+    </div><!--/.row-->
+    <div class="row row-11">
       <div class="col-xs-2">
         <div id="ablade" class="item-box-1 center-block item-str item-dam item-def item-util item-regen tier-3"
              rel="popover" data-title="Abyssal Blade">
@@ -4081,95 +4201,7 @@
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-2-->
-      <div class="col-xs-3">
-      </div><!--/.col-xs-3-->
-      <div class="col-xs-5">
-        <div id="mjoll" class="item-box-1 center-block item-dam tier-3"
-             rel="popover" data-title="Mjollnir">
-          <span class="price-label" style="padding-left: 2px;">5,700</span>
-          <img class="name-label" src="img/40px-Mjollnir_text.png">
-          <img class="icon" src="img/40px-Mjollnir_icon.png">
-          <div id="content-mjoll" class="hide">
-            <p><i>Thor's magical hammer, made for him by the dwarves Brok and Eitri.</i></p>
-            <div class="popover-inset text-center">
-              <div class="popover-line">
-                <img src="img/40px-Maelstrom_icon.png"> 2,800 +
-                <img src="img/40px-Hyperstone_icon.png"> 2,000 +
-                <img src="img/40px-Recipe_Scroll_icon.png"> 900
-                = <img src="img/40px-Mjollnir_icon.png"> 5,700
-              </div><!--/.popover-line-->
-            </div><!--/.popover-inset-->
-            <p>+80 Attack Speed</p>
-            <p>+24 Damage</p>
-            <p>Active: <i>Static Charge</i> – Places a charged shield on a target unit for 15 seconds which has a 20% chance to release a 200 magical damage shocking bolt at a nearby attacker and 4 additional enemies (800 cast range, 1s proc cooldown, 900 radius, 15s shield duration). <img src="img/cd.png"> 35s <img src="img/mana.png"> 50</p>
-            <p>Passive: <i>Chain Lightning</i> – Grants a 25% chance on attack to release a bolt of electricity that leaps between 4 targets within a 900 radius, dealing 120 magical damage to each (0.25s bounce interval).</p>
-          </div><!--/.popover-content-->
-        </div><!--/.item-box-1-->
-        <div id="moonsh" class="item-box-1 center-block item-dam item-cons tier-3"
-             rel="popover" data-title="Moon Shard">
-          <span class="price-label" style="padding-left: 2px;">4,000</span>
-          <img class="name-label" src="img/40px-Moon_Shard_text.png">
-          <img class="icon" src="img/40px-Moon_Shard_icon.png">
-          <div id="content-moonsh" class="hide">
-            <p><i>Said to be a tear from the lunar goddess Selemene.</i></p>
-            <div class="popover-inset text-center">
-              <div class="popover-line">
-                <img src="img/40px-Hyperstone_icon.png"> 2,000 +
-                <img src="img/40px-Hyperstone_icon.png"> 2,000
-                = <img src="img/40px-Moon_Shard_icon.png"> 4,000
-              </div><!--/.popover-line-->
-            </div><!--/.popover-inset-->
-            <p>+120 Attack Speed</p>
-            <p>Active: <i>Consume</i> – Consume the Moon Shard to permanently gain 60 attack speed and 150 bonus night vision. Max 1 use (global cast range, may target allies).</p>
-            <p>Passive: <i>Shade Sight</i> – Grants 300 bonus night vision.</p>
-          </div><!--/.popover-content-->
-        </div><!--/.item-box-1-->
-      </div><!--/.col-xs-5-->
-    </div><!--/.row-->
-    <div class="row row-9">
-      <div class="col-xs-4">
-        
-      </div><!--/.col-xs-4-->
-      <div class="col-xs-4">
-        <div id="relic" class="item-box-1 center-block item-dam tier-3 shop-secret"
-             rel="popover" data-title="Sacred Relic">
-          <span class="price-label" style="padding-left: 2px;">3,800</span>
-          <img class="name-label" src="img/40px-Sacred_Relic_text.png">
-          <img class="icon" src="img/40px-Sacred_Relic_icon.png">
-          <div id="content-relic" class="hide">
-            <p><i>An ancient weapon that often turns the tides of war.</i></p>
-            <div class="popover-inset text-center">
-              <div class="popover-line">
-                <img src="img/Gold_symbol.png" height="24px"> 3,800
-              </div><!--/.popover-line-->
-            </div><!--/.popover-inset-->
-            <p>+60 Damage</p>
-          </div><!--/.popover-content-->
-        </div><!--/.item-box-1-->
-      </div><!--/.col-xs-4-->
-      <div class="col-xs-3">
-      </div><!--/.col-xs-3-->
-    </div><!--/.row-->
-    <div class="row bottom-tall row-10">
-      <div class="col-xs-8 col-xs-offset-2">
-        <div id="radiance" class="item-box-1 center-block item-dam tier-4"
-             rel="popover" data-title="Radiance">
-          <span class="price-label" style="padding-left: 2px;">5,150</span>
-          <img class="name-label" src="img/40px-Radiance_text.png">
-          <img class="icon" src="img/40px-Radiance_icon.png">
-          <div id="content-radiance" class="hide">
-            <p><i>A divine weapon that causes damage and a bright burning effect that lays waste to nearby enemies.</i></p>
-            <div class="popover-inset text-center">
-              <div class="popover-line">
-                <img src="img/40px-Sacred_Relic_icon.png"> 3,800 +
-                <img src="img/40px-Recipe_Scroll_icon.png"> 1,350
-                = <img src="img/40px-Radiance_icon.png"> 5,150
-              </div><!--/.popover-line-->
-            </div><!--/.popover-inset-->
-            <p>+65 Damage</p>
-            <p>Aura/Toggle: <i>Burn</i> – When active, scorches enemies for 60 damage per second, and causes them to miss 17% of their attacks (700 radius, 35 dps burn for illusions). <img src="img/cd.png"> 0s</p>
-          </div><!--/.popover-content-->
-        </div><!--/.item-box-1-->
+      <div class="col-xs-4 tier-4">
         <div id="rapier" class="item-box-1 center-block item-dam tier-4"
              rel="popover" data-title="Divine Rapier">
           <span class="price-label" style="padding-left: 2px;">6,000</span>
@@ -4188,30 +4220,6 @@
             <p><i>Drops on Death</i> (does not drop if the user has reincarnation, may not be sold, becomes free rapier that may be used by enemies after being dropped)</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
-        <div id="nullifier" class="item-box-1 center-block official item-regen item-dam item-util item-def tier-4"
-             rel="popover" data-title="Nullifier">
-          <span class="price-label" style="padding-left: 2px;">4,700</span>
-          <img class="name-label" src="img/40px-Nullifier_text.png">
-          <img class="icon" src="img/40px-Nullifier_icon.png">
-          <div id="content-nullifier" class="hide">
-            <p><i>A dangerous weapon pilfered from an inverse dimension.</i></p>
-            <div class="popover-inset text-center">
-              <div class="popover-line">
-                <img src="img/40px-Sacred_Relic_icon.png"> 3,800 +
-                <img src="img/40px-Helm_of_Iron_Will_icon.png"> 900
-                = <img src="img/40px-Nullifier_icon.png"> 4,700
-              </div><!--/.popover-line-->
-            </div><!--/.popover-inset-->
-            <p>+65 Damage</p>
-            <p>+5 Health Regen</p>
-            <p>+5 Armor</p>
-            <p>Active: <i>Nullify</i> – Dispels the target and mutes them for 5 seconds. Anytime the muted target is attacked, it will be slowed by 100% for 0.4 seconds. <img src="img/cd.png"> 13s <img src="img/mana.png"> 75</p>
-          </div><!--/.popover-content-->
-        </div><!--/.item-box-1-->
-      </div><!--/.col-xs-4-->
-    </div><!--/.row-->
-    <div class="row bottom-wide custom-collapse row-11">
-      <div class="col-xs-4 tier-4">
       </div><!--/.col-xs-4-->
     </div><!--/.row-->
   </div><!--/.col-lg-35-->
@@ -4693,8 +4701,8 @@
         </div><!--/.fill-section-->
         <div class="row notes">
           <h4>Notes:</h4>
-          <p>• Lorem ipsum et dolor amet</p>
-          <p>• Lorem ipsum et dolor amet</p>
+          <p>• Manacost and mana loss reduction from multiple Kayas does not stack.</p>
+          <p>• Stacks additively with other sources of manacost reduction.</p>
         </div><!--/.row-->
       </div><!--/.col-lg-6-->
       <div class="col-xs-3 feedback">
@@ -4702,21 +4710,21 @@
           <h2>Feedback</h2>
           <div class="fb-block row">
             <h3>Name</h3>
-            <div class="fb-name row"><a href="">
-              <div class="col-xs-2 vote"><img class="score" src="img/clear.png"></img><b> 25</b></div>
-              <div class="col-xs-8 suggest"><b>Kaya</b></div><!--/.col-xs-10-->
-              <div class="col-xs-2 attrib pull-right">by: <img class="avatar" src="img/avatars/avatar_icefrog.jpg" title="Submitted by: IceFrog"></img></div>
-            </a></div><!--/.feedback-->
-            <div class="fb-name row"><a href="">
-              <div class="col-xs-2 vote"><img class="score" src="img/vote.png"></img><b> 7</b></div>
-              <div class="col-xs-8 suggest"><b>Lucen</b></div><!--/.col-xs-10-->
-              <div class="col-xs-2 attrib pull-right">by: <img class="avatar" src="img/avatars/avatar_ff.jpg" title="Submitted by: Freelance"></img></div>
-            </a></div><!--/.feedback-->
-            <div class="fb-name row"><a href="">
-              <div class="col-xs-2 vote"><img class="score" src="img/clear.png"></img><b> 5</b></div>
-              <div class="col-xs-8 suggest"><b>Azura</b></div><!--/.col-xs-10-->
-              <div class="col-xs-2 attrib pull-right">by: <img class="avatar" src="img/avatars/avatar_ff.jpg" title="Submitted by: Freelance"></img></div>
-            </a></div><!--/.feedback-->
+            <div class="fb-name row selected">
+              <a href="#"><div class="col-xs-2 vote"><img class="score" src="img/clear_inv.png"><img class="score hidden" src="img/clear.png"></img><b> 25</b></div>
+              <div class="col-xs-8 suggest"><b>Kaya</b></div></a>
+              <a href="#"><div class="col-xs-2 attrib pull-right">by: <img class="avatar" src="img/avatars/avatar_icefrog.jpg" title="Submitted by: IceFrog"></img></div></a>
+            </div><!--/.fb-name-->
+            <div class="fb-name row">
+              <a href="#"><div class="col-xs-2 vote"><img class="score" src="img/vote.png"><img class="score hidden" src="img/vote_inv.png"></img><b> 7</b></div>
+              <div class="col-xs-8 suggest"><b>Lucen</b></div></a>
+              <a href="profile/ff"><div class="col-xs-2 attrib pull-right">by: <img class="avatar" src="img/avatars/avatar_ff.jpg" title="Submitted by: Freelance"></img></div></a>
+            </div><!--/.fb-name-->
+            <div class="fb-name row">
+              <a href="#"><div class="col-xs-2 vote"><img class="score" src="img/clear.png"><img class="score hidden" src="img/clear_inv.png"></img><b> 5</b></div>
+              <div class="col-xs-8 suggest"><b>Azura</b></div></a>
+              <a href="profile/ff"><div class="col-xs-2 attrib pull-right">by: <img class="avatar" src="img/avatars/avatar_ff.jpg" title="Submitted by: Freelance"></img></div></a>
+            </div><!--/.fb-name-->
           </div><!--/.fb-block-->
           <div class="fb-block row">
             <h3>Icon</h3>
@@ -4742,16 +4750,16 @@
         <h3>Official</h3>
         <div class="note-block row">
           <h4>7.07d (19 Dec 2017):</h4>
-          <div class="note-aeondisk row"><a href="">
-            <div class="col-xs-1 vote"><img class="score" src="img/clear.png"></img><b> 4</b></div>
+          <div class="note-aeondisk row">
+            <a href="#"><div class="col-xs-1 vote"><img class="score" src="img/clear.png"></img><b> 4</b></div>
             <div class="col-xs-10 log">
               <img src="img/40px-Aeon_Disk_icon.png"></img> <b>AEON DISK:</b><br>
               <ul>
-                <li>Recipe cost reduced from 1600 to 1350.</li>
+                <li>Recipe cost reduced from 1600 to 1350 (total cost reduced from 3,600 to 3,350)</li>
               </ul>
-            </div><!--/.col-xs-10-->
-            <div class="col-xs-1 attrib">by:<br><img class="avatar" src="img/avatars/avatar_icefrog.jpg" title="Submitted by: IceFrog"></img></div>
-          </a></div><!--/.note-->
+            </div></a><!--/.log-->
+            <a href="#"><div class="col-xs-1 attrib">by:<br><img class="avatar" src="img/avatars/avatar_icefrog.jpg" title="Submitted by: IceFrog"></img></div></a>
+          </div><!--/.note-->
         </div><!--/.note-block-->
         <div class="note-block row">
           <h4>7.07c (19 Dec 2017):</h4>
@@ -4764,141 +4772,153 @@
         </div><!--/.note-block-->
         <div class="note-block row">
           <h4>DUELING FATES — 7.07 (1 Nov 2017):</h4>
-          <div class="note-kaya row"><a href="">
-            <div class="col-xs-1 vote"><img class="score" src="img/vote.png"></img><b> 17</b></div>
+          <div class="note-kaya row">
+            <a href="#"><div class="col-xs-1 vote"><img class="score" src="img/vote.png"></img><b> 17</b></div>
             <div class="col-xs-10 log">
               <img src="img/40px-Kaya_icon.png"></img> <b>KAYA: <span style="color:#4e4">NEW ITEM</span></b><br>
               <ul>
-                <li>Requires Staff of Wizardry (1,000), Robe of the Magi (450) and a Recipe (500).</li>
-                <li>Provides +16 Intelligence, +10% Spell Amp and +10% Manacost Reduction.</li>
+                <li>New item formed from Robe of the Magi (450), Staff of Wizardry (1,000) and a Recipe (500)</li>
+                <li>Provides +16 intelligence, +10% spell amp and +10% manacost reduction</li>
               </ul>
-            </div><!--/.col-xs-10-->
-            <div class="col-xs-1 attrib">by:<br><img class="avatar" src="img/avatars/avatar_icefrog.jpg" title="Submitted by: IceFrog"></img></div>
-          </a></div><!--/.note-->
+            </div></a><!--/.log-->
+            <a href="#"><div class="col-xs-1 attrib">by:<br><img class="avatar" src="img/avatars/avatar_icefrog.jpg" title="Submitted by: IceFrog"></img></div></a>
+          </div><!--/.note-->
         </div><!--/.note-block-->
       </div><!--/.col-lg-6-->
       <div class="col-lg-6">
         <h3>Community</h3>
         <div class="note-block row">
           <h4>1.0.0 (Jan 2018):</h4>
-          <div class="note-wyrmslayer row"><a href="">
-            <div class="col-xs-1 vote"><img class="score" src="img/vote.png"></img><b> 4</b></div>
+          <div class="note-wyrmslayer row">
+            <a href="#"><div class="col-xs-1 vote"><img class="score" src="img/vote.png"></img><b> 4</b></div>
             <div class="col-xs-10 log">
               <img src="img/40px-Wyrmslayer_icon.png"></img> <b>WYRMSLAYER:</b><br>
               <ul>
-                <li>Increased attack range on Ranged heroes (140→170), and decreased on Melee heroes (140→75).</li>
+                <li>Increased attack range on Ranged heroes (140→170), and decreased on Melee heroes (140→75)</li>
               </ul>
-            </div><!--/.col-xs-10-->
-            <div class="col-xs-1 attrib">by:<br><img class="avatar" src="img/avatars/avatar_ff.jpg" title="Submitted by: Freelance"></img></div>
-          </a></div><!--/.note-->
-          <div class="note-spellblade row"><a href="">
-            <div class="col-xs-1 vote"><img class="score" src="img/clear.png"></img><b> 4</b></div>
+            </div></a><!--/.log-->
+            <a href="profile/ff"><div class="col-xs-1 attrib">by:<br><img class="avatar" src="img/avatars/avatar_ff.jpg" title="Submitted by: Freelance"></img></div></a>
+          </div><!--/.note-->
+          <div class="note-spellblade row">
+            <a href="#"><div class="col-xs-1 vote"><img class="score" src="img/clear.png"></img><b> 4</b></div>
             <div class="col-xs-10 log">
               <img src="img/40px-Spellblade_icon.png"></img> <b>SPELLBLADE: <span style="color:#e84">ITEM REWORKED</span></b><br>
               <ul>
                 <li>
                   Spellmastery now toggles, and <img src="img/cd.png"></img>
-                  increased from 4s to 8s. The first spell cast while toggled gains
-                  an increased +20% manacost as well as +100 effect radius in
-                  addition to the previous benefit, an instant cast point.
+                  increased from 4s to 8s
+                </li>
+                <li>
+                  The first spell cast while toggled gains an increased +20%
+                  manacost as well as +100 effect radius in addition to the
+                  previous benefit, an instant cast point
                 </li>
               </ul>
-            </div><!--/.col-xs-10-->
-            <div class="col-xs-1 attrib">by:<br><img class="avatar" src="img/avatars/avatar_ff.jpg" title="Submitted by: Freelance"></img></div>
-          </a></div><!--/.note-->
-          <div class="note-valiance row"><a href="">
-            <div class="col-xs-1 vote"><img class="score" src="img/clear.png"></img><b> 3</b></div>
+            </div></a><!--/.log-->
+            <a href="profile/ff"><div class="col-xs-1 attrib">by:<br><img class="avatar" src="img/avatars/avatar_ff.jpg" title="Submitted by: Freelance"></img></div></a>
+          </div><!--/.note-->
+          <div class="note-valiance row">
+            <a href="#"><div class="col-xs-1 vote"><img class="score" src="img/clear.png"></img><b> 3</b></div>
             <div class="col-xs-10 log">
               <img src="img/40px-Valiance_icon.png"></img> <b>VALIANCE: <span style="color:#e84">RECIPE CHANGED</span></b><br>
               <ul>
-                <li>Valiance now requires Talisman of Evasion instead of Locket of Virtue.</li>
-                <li>Now provides +25% evasion.</li>
-                <li>Total cost now lowered from 5,200 to 4,050.</li>
-              </ul>
-            </div><!--/.col-xs-10-->
-            <div class="col-xs-1 attrib">by:<br><img class="avatar" src="img/avatars/avatar_ff.jpg" title="Submitted by: Freelance"></img></div>
-          </a></div><!--/.note-->
-          <div class="note-cc row"><a href="">
-            <div class="col-xs-1 vote"><img class="score" src="img/clear.png"></img><b> 3</b></div>
-            <div class="col-xs-10 log">
-              <img src="img/40px-Carnivore_Claw_icon.png"></img> <b>CARNIVORE CLAW: <span style="color:#e84">ITEM REWORKED</span></b><br>
-              <ul>
                 <li>
-                  Active replaced with a new Active/Passive, <i>Predator's Gaze</i>.
-                  Enemies that target the bearer with a spell or attack lose
-                  shared vision, and may also target an enemy actively. For
-                  each target under this effect gain a stacking buff giving the
-                  benefits Armlet's Unholy Strength, up to 2 stacks. May
-                  self-target to gain a stack and cause vision loss without
-                  using the cooldown.
+                  Now requires Talisman of Evasion instead of Locket of Virtue
+                  (total cost reduced from 5,200 to 4,050)
+                </li>
+                <li>
+                  Now provides +10 health regen, +25% evasion, and +5% status
+                  resistance (active unchanged)
                 </li>
               </ul>
-            </div><!--/.col-xs-10-->
-            <div class="col-xs-1 attrib">by:<br><img class="avatar" src="img/avatars/avatar_ff.jpg" title="Submitted by: Freelance"></img></div>
-          </a></div><!--/.note-->
-          <div class="note-infernalorb row"><a href="">
-            <div class="col-xs-1 vote"><img class="score" src="img/clear.png"></img><b> 1</b></div>
+            </div></a><!--/.log-->
+            <a href="profile/ff"><div class="col-xs-1 attrib">by:<br><img class="avatar" src="img/avatars/avatar_ff.jpg" title="Submitted by: Freelance"></img></div></a>
+          </div><!--/.note-->
+          <div class="note-trio row">
+            <a href="#"><div class="col-xs-1 vote"><img class="score" src="img/vote.png"></img><b> 3</b></div>
+            <div class="col-xs-10 log">
+              <img src="img/40px-Sacred_Trio_icon.png"></img> <b>SACRED TRIO:</b><br>
+              <ul>
+                <li>
+                  Maim passive now scales to third tier like others: <i>Great Maim</i>
+                  has a 40% proc chance to slow for 32 movement and attack
+                  speed on melee heroes, and 16 on ranged
+                </li>
+                <li>
+                  Recipe cost increased by 300 (1,550→1,850, total price now
+                  back to the old total of 7,700)
+                </li>
+              </ul>
+            </div></a><!--/.log-->
+            <a href="profile/ff"><div class="col-xs-1 attrib">by:<br><img class="avatar" src="img/avatars/avatar_ff.jpg" title="Submitted by: Freelance"></img></div></a>
+          </div><!--/.note-->
+          <div class="note-cc row">
+            <a href="#"><div class="col-xs-1 vote"><img class="score" src="img/clear.png"></img><b> 3</b></div>
+            <div class="col-xs-10 log">
+              <img src="img/40px-Carnivore_Maw_icon.png"></img> <b>CARNIVORE CLAW: <span style="color:#e84">ITEM REWORKED</span></b><br>
+              <ul>
+                <li>
+                  Active replaced with a new Active/Passive, <i>Predator's Gaze</i>:
+                  Enemies that target the bearer with a spell or attack lose
+                  shared vision, and may also target an enemy actively
+                </li>
+                <li>
+                  For each target under this effect gain a stacking buff giving
+                  the benefits Armlet's Unholy Strength, up to 2 stacks
+                </li>
+                <li>
+                  May self-target to gain a stack and cause vision loss without
+                  using the cooldown
+                </li>
+              </ul>
+            </div></a><!--/.log-->
+            <a href="profile/ff"><div class="col-xs-1 attrib">by:<br><img class="avatar" src="img/avatars/avatar_ff.jpg" title="Submitted by: Freelance"></img></div></a>
+          </div><!--/.note-->
+          <div class="note-infernalorb row">
+            <a href="#"><div class="col-xs-1 vote"><img class="score" src="img/clear.png"></img><b> 1</b></div>
             <div class="col-xs-10 log">
               <img src="img/40px-Infernal_Orb_icon.png"></img> <b>INFERNAL ORB:</b><br>
               <ul>
-                <li>Increase magic resistance bonus from +20% to +30%.</li>
+                <li>Increase magic resistance bonus from +20% to +30%</li>
               </ul>
-            </div><!--/.col-xs-10-->
-            <div class="col-xs-1 attrib">by:<br><img class="avatar" src="img/avatars/avatar_ff.jpg" title="Submitted by: Freelance"></img></div>
-          </a></div><!--/.note-->
+            </div></a><!--/.log-->
+            <a href="profile/ff"><div class="col-xs-1 attrib">by:<br><img class="avatar" src="img/avatars/avatar_ff.jpg" title="Submitted by: Freelance"></img></div></a>
+          </div><!--/.note-->
         </div><!--/.note-block-->
         <div class="note-block row">
           <h4>0.9.0 (Dec 2017):</h4>
-          <div class="note-aoa row"><a href="">
-            <div class="col-xs-1 vote"><img class="score" src="img/clear.png"></img><b> 1</b></div>
+          <div class="note-aoa row">
+            <a href="#"><div class="col-xs-1 vote"><img class="score" src="img/clear.png"></img><b> 1</b></div>
             <div class="col-xs-10 log">
               <img src="img/40px-Amulet_of_Aeons_icon.png"></img> <b>AMULET OF AEONS:</b><br>
               <ul>
-                <li>Now provides a +10% status resistance aura.</li>
+                <li>Now provides a +10% status resistance aura</li>
               </ul>
-            </div><!--/.col-xs-10-->
-            <div class="col-xs-1 attrib">by:<br><img class="avatar" src="img/avatars/avatar_ff.jpg" title="Submitted by: Freelance"></img></div>
-          </a></div><!--/.note-->
-          <div class="note-swift row"><a href="">
-            <div class="col-xs-1 vote"><img class="score" src="img/clear.png"></img><b> 1</b></div>
+            </div></a><!--/.log-->
+            <a href="profile/ff"><div class="col-xs-1 attrib">by:<br><img class="avatar" src="img/avatars/avatar_ff.jpg" title="Submitted by: Freelance"></img></div></a>
+          </div><!--/.note-->
+          <div class="note-swift row">
+            <a href="#"><div class="col-xs-1 vote"><img class="score" src="img/clear.png"></img><b> 1</b></div>
             <div class="col-xs-10 log">
               <img src="img/40px-Swift_Soles_icon.png"></img> <b>SWIFT SOLES: <span style="color:#e84">ITEM REWORKED</span></b><br>
               <ul>
                 <li>
                   Instead of providing up to +40 movement speed on successive
                   attacks, now provides up to +80 movement speed while within
-                  1,800 range of an enemy but out of their direct line of sight.
+                  1,800 range of an enemy but out of their direct line of sight
                 </li>
                 <li>
                   Upon entering a visible enemy's line of sight, converts the
                   movement speed bonus to a +primary attribute bonus, up to +8
-                  of the bearer's main stat.
+                  of the bearer's main stat
                 </li>
               </ul>
-            </div><!--/.col-xs-10-->
-            <div class="col-xs-1 attrib">by:<br><img class="avatar" src="img/avatars/avatar_ff.jpg" title="Submitted by: Freelance"></img></div>
-          </a></div><!--/.note-->
+            </div></a><!--/.log-->
+            <a href="profile/ff"><div class="col-xs-1 attrib">by:<br><img class="avatar" src="img/avatars/avatar_ff.jpg" title="Submitted by: Freelance"></img></div></a>
+          </div><!--/.note-->
         </div><!--/.note-block-->
         <div class="note-block row">
           <h4>0.8.0 (Nov 2017):</h4>
-          <div class="note-spellblade row"><a href="">
-            <div class="col-xs-1 vote"><img class="score" src="img/clear.png"></img><b> 2</b></div>
-            <div class="col-xs-10 log">
-              <img src="img/40px-Spellblade_icon.png"></img> <b>SPELLBLADE: <span style="color:#e84">NEW CONCEPT</span></b><br>
-              <ul>
-                <li>
-                  Spellmastery now toggles, and <img src="img/cd.png"></img>
-                  increased from 4s to 8s. The first spell cast while toggled gains
-                  an increased +20% manacost as well as +100 effect radius in
-                  addition to the previous benefit, an instant cast point.
-                </li>
-                <li>
-                  Reduces cast points above 1s by 1s instead of making them instant.
-                </li>
-              </ul>
-            </div><!--/.col-xs-10-->
-            <div class="col-xs-1 attrib">by:<br><img class="avatar" src="img/avatars/avatar_ff.jpg" title="Submitted by: Freelance"></img></div>
-          </a></div><!--/.note-->
         </div><!--/.note-block-->
         <div class="note-block row">
           <h4>0.7.0 (Oct 2017):</h4>
@@ -4909,13 +4929,148 @@
         <div class="note-block row">
           <h4>0.5.0 (Aug 2017):</h4>
         </div><!--/.note-block-->
+        <div class="note-block row">
+          <h4>0.1.0 (Dec 2016):</h4>
+          <div class="note-spellblade row">
+            <a href="#"><div class="col-xs-1 vote"><img class="score" src="img/clear.png"></img><b> 2</b></div>
+            <div class="col-xs-10 log">
+              <img src="img/40px-Spellblade_icon.png"></img> <b>SPELLBLADE: <span style="color:#e84">ITEM REWORKED</span></b><br>
+
+              <ul>
+                <i>A bladed battlestaff crafted for the Sun-god by his most gifted artisan. Said to grant the bearer clarity of mind and near limitless energy.</i>
+                <li>Requires:</li>
+                <ul>
+                  <li>Lucen (2,050)</li>
+                  <li>Aether Lens (2,350)</li>
+                  <li>Oblivion Staff (1,650)</li>
+                  <li>Total Cost 6,050</li>
+                </ul>
+                <li>Provides:</li>
+                <ul>
+                  <li>+25 Intelligence</li>
+                  <li>+250 Mana</li>
+                  <li>+8 Health Regen</li>
+                  <li>+75% Mana Regen</li>
+                  <li>+20 Attack Speed</li>
+                  <li>+20 Damage</li>
+                  <li>+250 Cast Range</li>
+                  <li>+0.5 Turn Rate</li>
+                  <li>+10% Manacost Reduction</li>
+                </ul>
+                <li>Passive: <i>Greater Spellmastery</i> – Cast a spell instantly once every 3s.</li>
+                <li>Passive: <i>Retribution</i> – Returns 15% of spell damage to heroes as mana and 3% of spell damage done to units.</li>
+              </ul>
+            </div></a><!--/.log-->
+            <a href="profile/ff"><div class="col-xs-1 attrib">by:<br><img class="avatar" src="img/avatars/avatar_ff.jpg" title="Submitted by: Freelance"></img></div></a>
+          </div><!--/.note-->
+        </div><!--/.note-block-->
+        <div class="note-block row">
+          <h4>0.0.2 (Mar 2016):</h4>
+          <div class="note-spellblade row">
+            <a href="#"><div class="col-xs-1 vote"><img class="score" src="img/clear.png"></img><b> 2</b></div>
+            <div class="col-xs-10 log">
+              <img src="img/40px-Spellblade_icon.png"></img> <b>DAWN'S LIGHT: <span style="color:#ee4">NEW CONCEPT</span></b><br>
+              <ul>
+                <i>An ancient battlestaff crafted for the Sun-god by his most gifted artisan. Said to grant the bearer a clear mind and near limitless energy.</i>
+                <li>Requires:</li>
+                <ul>
+                  <li>Lucen (2,050)</li>
+                  <li>Oblivion Staff (1,650)</li>
+                  <li>Recipe (950)</li>
+                  <li>Total Cost 4,650</li>
+                </ul>
+                <li>Provides:</li>
+                <ul>
+                  <li>+25 Intelligence</li>
+                  <li>+75% Mana Regen</li>
+                  <li>+10 Attack Speed</li>
+                  <li>+15 Damage</li>
+                  <li>+0.5 Turn Rate</li>
+                </ul>
+                <li>Passive: Reduces mana costs by 10%.</li>
+                <li>Passive: Returns 15% of spell damage to heroes as mana and 3% of spell damage done to units.</li>
+              </ul>
+            </div></a><!--/.log-->
+            <a href="profile/ff"><div class="col-xs-1 attrib">by:<br><img class="avatar" src="img/avatars/avatar_ff.jpg" title="Submitted by: Freelance"></img></div></a>
+          </div><!--/.note-->
+        </div><!--/.note-block-->
+        <div class="note-block row">
+          <h4>0.0.2 (Feb 2016):</h4>
+          <div class="note-kaya row">
+            <a href="#"><div class="col-xs-1 vote"><img class="score" src="img/clear.png"></img><b> 2</b></div>
+            <div class="col-xs-10 log">
+              <img src="img/40px-Lucen_icon.png"></img> <b>LUCEN:</b><br>
+              <ul>
+                <i>A lightweight crescent-shaped sword with a tassled hilt, and a blade studded with fragments of moon crystal.</i>
+                <li>Requires:</li>
+                <ul>
+                  <li>Robe of the Magi (450)</li>
+                  <li>Staff of Wizardry (1,000)</li>
+                  <li>Recipe (600)</li>
+                  <li>Total Cost 2,050</li>
+                </ul>
+                <li>Provides:</li>
+                <ul>
+                  <li>+16 Intelligence</li>
+                  <li>+0.5 Turn Rate</li>
+                </ul>
+                <li>Passive: Reduces mana costs by 10%.</li>
+              </ul>
+            </div></a><!--/.log-->
+            <a href="profile/ff"><div class="col-xs-1 attrib">by:<br><img class="avatar" src="img/avatars/avatar_ff.jpg" title="Submitted by: Freelance"></img></div></a>
+          </div><!--/.note-->
+        </div><!--/.note-block-->
+        <div class="note-block row">
+          <h4>0.0.1 (Jan 2016):</h4>
+          <div class="note-kaya row">
+            <a href="#"><div class="col-xs-1 vote"><img class="score" src="img/clear.png"></img><b> 2</b></div>
+            <div class="col-xs-10 log">
+              <img src="img/40px-Lucen_icon.png"></img> <b>LUCEN: <span style="color:#e84">ITEM REWORKED</span></b><br>
+              <ul>
+                <i>A lightweight crescent-shaped sword, studded with fragments of moon crystal and a tassled hilt.</i>
+                <li>Requires:</li>
+                <ul>
+                  <li>Robe of the Magi (450)</li>
+                  <li>Staff of Wizardry (1,000)</li>
+                  <li>Recipe (600)</li>
+                  <li>Total Cost 2,050</li>
+                </ul>
+                <li>Provides:</li>
+                <ul>
+                  <li>+16 Intelligence</li>
+                  <li>+0.5 Turn Rate</li>
+                </ul>
+                <li>Passive: Reduces attack and cast points by 0.3s on melee heroes, 0.2s for ranged.</li>
+              </ul>
+            </div></a><!--/.log-->
+            <a href="profile/ff"><div class="col-xs-1 attrib">by:<br><img class="avatar" src="img/avatars/avatar_ff.jpg" title="Submitted by: Freelance"></img></div></a>
+          </div><!--/.note-->
+        </div><!--/.note-block-->
+        <div class="note-block row">
+          <h4>0.0.0 (Oct 2015):</h4>
+          <div class="note-kaya row">
+            <a href="#"><div class="col-xs-1 vote"><img class="score" src="img/clear.png"></img><b> 2</b></div>
+            <div class="col-xs-10 log">
+              <img src="img/40px-Lucen_icon.png"></img> <b>LUCEN: <span style="color:#ee4">NEW CONCEPT</span></b><br>
+              <ul>
+                <li>
+                  New item formed from Robe of the Magi (450), Staff of Wizardry (1,000) and a Recipe (600)
+                </li>
+                <li>
+                  Provides +16 intelligence, +50 attack range (ranged and melee), and increases magical damage done by 10%
+                </li>
+              </ul>
+            </div></a><!--/.log-->
+            <a href="profile/ff"><div class="col-xs-1 attrib">by:<br><img class="avatar" src="img/avatars/avatar_ff.jpg" title="Submitted by: Freelance"></img></div></a>
+          </div><!--/.note-->
+        </div><!--/.note-block-->
       </div><!--/.col-lg-6-->
     </div><!--/.row-->
   </div><!--/.row-->
 </div><!--/.container.section-bg-->
 
 <div id="footer" class="row text-center">
-  PAGE IS UNDER CONSTRUCTION • by <a href="https://www.reddit.com/user/freelance_fox/">/u/freelance_fox</a> • <a href="http://www.twitter.com/freelancedota">@freelancedota</a> • Last Updated 18 January 2018
+  PAGE IS UNDER CONSTRUCTION • by <a href="https://www.reddit.com/user/freelance_fox/">/u/freelance_fox</a> • <a href="http://www.twitter.com/freelancedota">@freelancedota</a> • Last Updated 17 April 2018
 </div><!--/.row-->
 
   <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
@@ -5000,6 +5155,7 @@
       var hash = document.location.hash;
       var prefix = "#item-";
       if (hash.indexOf(prefix) >= 0) {
+        $('#'+hash.replace(prefix,"")).popover('show');
         $('#content-'+hash.replace(prefix,"")+' .item-trigger').tab('show');
       }
       window.scrollTo(0,0);
@@ -5222,10 +5378,10 @@
         $('.item-box-1#ff').detach().appendTo('.grid-c0 .grid-r2');
         $('.item-box-1#smoke').detach().appendTo('.grid-c0 .grid-r3');
         $('.item-box-1#obsw').detach().appendTo('.grid-c0 .grid-r4');
-        $('.item-box-1#sentryw').detach().appendTo('.grid-c0 .grid-r5');
-        $('.item-box-1#mango').detach().appendTo('.grid-c0 .grid-r6');
-        $('.item-box-1#salve').detach().appendTo('.grid-c0 .grid-r7');
-        $('.item-box-1#tango').detach().appendTo('.grid-c0 .grid-r8');
+        $('.item-box-1#sentryw').detach().appendTo('.grid-c0 .grid-r6');
+        $('.item-box-1#mango').detach().appendTo('.grid-c0 .grid-r7');
+        $('.item-box-1#salve').detach().appendTo('.grid-c0 .grid-r8');
+        $('.item-box-1#tango').detach().appendTo('.grid-c0 .grid-r5');
         $('.item-box-1#tome').detach().appendTo('.grid-c0 .grid-r9');
         $('.item-box-1#dust').detach().appendTo('.grid-c0 .grid-r10');
         $('.item-box-1#courier').detach().appendTo('.grid-c0 .grid-r11');
@@ -5294,7 +5450,7 @@
         $('.item-box-1#mek').detach().appendTo('.grid-c5 .grid-r11');
         $('.item-box-1#vessel').detach().appendTo('.grid-c5 .grid-r12');
         $('.item-box-1#pipe').detach().appendTo('.grid-c5 .grid-r13');
-        $('.item-box-1#greaves').detach().appendTo('.grid-c5 .grid-r15');
+        $('.item-box-1#greaves').detach().appendTo('.grid-c5 .grid-r16');
         $('.item-box-1#glimmer').detach().appendTo('.grid-c6 .grid-r0');
         $('.item-box-1#veil').detach().appendTo('.grid-c6 .grid-r1');
         $('.item-box-1#aether').detach().appendTo('.grid-c6 .grid-r2');
@@ -5304,8 +5460,8 @@
         $('.item-box-1#dagon').detach().appendTo('.grid-c6 .grid-r6');
         $('.item-box-1#euls').detach().appendTo('.grid-c6 .grid-r7');
         $('.item-box-1#atos').detach().appendTo('.grid-c6 .grid-r8');
-        $('.item-box-1#orchid').detach().appendTo('.grid-c6 .grid-r11');
-        $('.item-box-1#aghs').detach().appendTo('.grid-c6 .grid-r12');
+        $('.item-box-1#orchid').detach().appendTo('.grid-c6 .grid-r10');
+        $('.item-box-1#aghs').detach().appendTo('.grid-c6 .grid-r11');
         $('.item-box-1#nullifier').detach().appendTo('.grid-c6 .grid-r13');
         $('.item-box-1#refresher').detach().appendTo('.grid-c6 .grid-r15');
         $('.item-box-1#sheep').detach().appendTo('.grid-c6 .grid-r16');
@@ -5378,16 +5534,16 @@
         $('.item-box-1#shieldbreaker').detach().appendTo('.grid-c4 .grid-r12');
         $('.item-box-1#seal').detach().appendTo('.grid-c4 .grid-r13');
         $('.item-box-1#lantern').detach().appendTo('.grid-c5 .grid-r1');
-        $('.item-box-1#sigil').detach().appendTo('.grid-c5 .grid-r14');
-        $('.item-box-1#infernalorb').detach().appendTo('.grid-c5 .grid-r16');
-        $('.item-box-1#aoa').detach().appendTo('.grid-c5 .grid-r17');
-        $('.item-box-1#sanguine').detach().appendTo('.grid-c6 .grid-r9');
-        $('.item-box-1#fangs').detach().appendTo('.grid-c6 .grid-r10');
+        $('.item-box-1#sigil').detach().appendTo('.grid-c5 .grid-r15');
+        $('.item-box-1#infernalorb').detach().appendTo('.grid-c5 .grid-r17');
+        $('.item-box-1#aoa').detach().appendTo('.grid-c5 .grid-r18');
+        $('.item-box-1#sanguine').detach().appendTo('.grid-c6 .grid-r12');
+        $('.item-box-1#fangs').detach().appendTo('.grid-c6 .grid-r9');
         $('.item-box-1#seraph').detach().appendTo('.grid-c6 .grid-r14');
         $('.item-box-1#spellblade').detach().appendTo('.grid-c6 .grid-r17');
         $('.item-box-1#prism').detach().appendTo('.grid-c7 .grid-r3');
-        $('.item-box-1#valiance').detach().appendTo('.grid-c7 .grid-r9');
-        $('.item-box-1#cc').detach().appendTo('.grid-c7 .grid-r10');
+        $('.item-box-1#valiance').detach().appendTo('.grid-c7 .grid-r10');
+        $('.item-box-1#cc').detach().appendTo('.grid-c7 .grid-r9');
         $('.item-box-1#pauldron').detach().appendTo('.grid-c7 .grid-r16');
         $('.item-box-1#squire').detach().appendTo('.grid-c8 .grid-r1');
         $('.item-box-1#hayabusa').detach().appendTo('.grid-c8 .grid-r8');
@@ -5401,9 +5557,9 @@
         $('.item-box-1#lov').detach().appendTo('.grid-c10 .grid-r9');
         $('.item-box-1#bov').detach().appendTo('.grid-c10 .grid-r10');
         $('.item-box-1#chargers').detach().appendTo('.grid-c4 .grid-r16');
-        $('.item-box-1#gjalla').detach().appendTo('.grid-c7 .grid-r19');
+        $('.item-box-1#gjalla').detach().appendTo('.grid-c5 .grid-r14');
         $('div[id^="col-"]').addClass('hidden');
-        window.dispatchEvent(new Event('resize'));
+        $(window).trigger('resize');
       } else if (type.indexOf("layout-def") >= 0) {
         $('div[id^="col-"]').removeClass('hidden');
         $('#main').removeClass('grid');
@@ -5670,8 +5826,8 @@
     }, function (e) {
      $('.contest').removeClass('active animated infinite wobble');
     });
-    $('#items').hover(function (e) {
-      $('.popover').popover('hide');
+    $('.selected').hover(function (e) {
+      $(this).find('.score').toggleClass('hidden');
     });
     $('.dropdown-menu li a:not(#all)').hover(function (e) {
       var target = this.id;

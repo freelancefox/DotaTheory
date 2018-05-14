@@ -857,6 +857,7 @@
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
             <p>+0.2 Turn Rate</p>
+            <p>Passive: <i>Quickness</i> – Reduces cast and attack points by up to 0.3s for melee heroes and 0.15s for ranged heroes.</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-2-->
@@ -1191,7 +1192,7 @@
             </div><!--/.popover-inset-->
             <p>+24 Damage</p>
             <p>+50 Movement Speed</p>
-            <p>Active: <i>Phase</i> – Gives 20% increased movement speed on melee heroes, and 16% on ranged heroes, and lets you move through units and turn more quickly for 3 seconds (1.0 turn rate while active).<img src="img/cd.png"> 8s</p>
+            <p>Active: <i>Phase</i> – Gives 20% increased movement speed on melee heroes, and 16% on ranged heroes, and lets you move through units and turn more quickly for 3 seconds (1.0 turn rate while active). <img src="img/cd.png"> 8s</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-12-->
@@ -1854,6 +1855,7 @@
             <p>+0.2 Turn Rate</p>
             <p>+80 Movement Speed</p>
             <p>+30% Evasion</p>
+            <p>Passive: <i>Quickness</i> – Reduces cast and attack points by up to 0.3s for melee heroes and 0.15s for ranged heroes.</p>
             <p>Active: <i>Shock Charge</i> – Vector target a point, jumping up to 500 units away instantly and turning to face the target direction (still has a turn speed to cast). <img src="img/cd.png"> 7s</p>
             <p>Passive: <i>Magnetic Treads</i> – Gain +15% movement speed for 1s after evading an attack (stacks fully with itself and other speed buffs).</p>
           </div><!--/.popover-content-->
@@ -3331,6 +3333,7 @@
               </div><!--/.popover-line-->
             </div><!--/.popover-inset-->
             <p>+25 All Stats (+450 health, +13.75% health regen, +2% magic resistance, +300 mana, +45% mana regen, +1.75% spell amplification, +4 armor, +25 attack speed, +1.25% movement speed, and +25 damage)</p>
+            <p>Passive: <i>Stat Efficiency</i> – +25% Perks from Attributes</p>
             <p>Passive: <i>True Flame</i> – Grants the bearer every opposite talent in the tree for each level of talents they have.</p>
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
@@ -3704,7 +3707,7 @@
       <div class="col-xs-4">
         <div id="bfury" class="item-box-1 center-block item-dam item-regen tier-3"
              rel="popover" data-title="Battle Fury">
-          <span class="price-label" style="padding-left: 2px;">4,100</span>
+          <span class="price-label" style="padding-left: 2px;">4,400</span>
           <img class="name-label" src="img/40px-Battle_Fury_text.png">
           <img class="icon" src="img/40px-Battle_Fury_icon.png">
           <div id="content-bfury" class="hide">
@@ -3844,7 +3847,7 @@
       <div class="col-xs-4">
         <div id="gjalla" class="item-box-1 center-block item-stat item-regen item-def item-supp item-dam wip tier-3"
              rel="popover" data-title="Gjallarhorn">
-          <span class="price-label" style="padding-left: 2px;">4,050</span>
+          <span class="price-label" style="padding-left: 2px;">5,250</span>
           <img class="name-label" src="img/40px-Gjallarhorn_text.png">
           <img class="icon" src="img/40px-Gjallarhorn_icon.png">
           <div id="content-gjalla" class="hide">
@@ -3853,27 +3856,36 @@
               <div class="popover-line">
                 <img src="img/40px-Ghost_Scepter_icon.png"> 1,500 +
                 <img src="img/40px-Magic_Wand_icon.png"> 400 +
-                <img src="img/40px-Ultimate_Orb_icon.png"> 2,150
-                = <img src="img/40px-Gjallarhorn_icon.png"> 4,050
+                <img src="img/40px-Ultimate_Orb_icon.png"> 2,150 +
+                <img src="img/40px-Recipe_Scroll_icon.png"> 1,200
+                = <img src="img/40px-Gjallarhorn_icon.png"> 5,250
               </div>
             </div><!--/.popover-inset-->
-            <p>+17 All Stats (+306 health, +9.35% health regen, +1.36% magic resistance, +204 mana, +30.6% mana regen, +1.19% spell amplification, +2.72 armor, +17 attack speed, +0.85% movement speed, and +17 damage)</p>
+            <p>+12/15/18 All Stats (+216/270/324 health, +6.6/8.25/9.9% health regen, +0.96/1.2/1.44% magic resistance, +144/180/216 mana, +21.6/27.7/32.4% mana regen, +0.841.05/1.26% spell amplification, +1.92/2.4/2.88 armor, +12/15/18 attack speed, +0.6/0.75/0.9% movement speed, and +12/15/18 damage)</p>
             <p>+7 Health Regen</p>
             <p>Active/Passive: <i>Soul Bind</i> – Gains charges in a 1200 radius
               like a Magic Wand, with no limit on the max number of charges
               stored. When an ally in the same radius takes damage while below
-              30% health, launches an 1800 speed projectile that negates the
-              single instance of damage and restores 20 mana and health per charge
+              30% health, launches an 1,800 speed projectile that negates the
+              single instance of damage and restores 20/30/40 mana and health per charge
               expended upon landing, up to 24 charges at a time, and grants the
-              target physical damage immunity (2s duration, does not disarm or
+              target physical damage immunity (2/3/4s duration, does not disarm or
               slow). After the heal is applied, the original triggering
               instance of damage is then applied to the Gjallarhorn's bearer
               (but may not be fatal). May activate manually to apply physical
               damage immunity to yourself or a target ally, restoring
               health/mana and placing the passive component on cooldown (700
-              cast range, 1800 projectile speed, may be toggled to disable
+              cast range, 1,800 projectile speed, may be toggled to disable
               automatic passive usage by double-clicking).<br><img src="img/cd.png"> 7s
             </p>
+            <div class="popover-inset text-center">
+              <div class="popover-line">
+                + <img src="img/40px-Recipe_Scroll_icon.png"> 1,200
+                = <img src="img/40px-Gjallarhorn_2_icon.png"> 6,450<br>
+                + <img src="img/40px-Recipe_Scroll_icon.png"> 1,200
+                = <img src="img/40px-Gjallarhorn_3_icon.png"> 7,650<br>
+              </div><!--/.popover-line-->
+            </div><!--/.popover-inset-->
           </div><!--/.popover-content-->
         </div><!--/.item-box-1-->
       </div><!--/.col-xs-4-->
@@ -5486,8 +5498,8 @@
         $('.item-box-1#meteor').detach().appendTo('.grid-c8 .grid-r3');
         $('.item-box-1#shadowb').detach().appendTo('.grid-c8 .grid-r4');
         $('.item-box-1#basher').detach().appendTo('.grid-c8 .grid-r5');
-        $('.item-box-1#bfury').detach().appendTo('.grid-c8 .grid-r6');
-        $('.item-box-1#mkb').detach().appendTo('.grid-c8 .grid-r7');
+        $('.item-box-1#bfury').detach().appendTo('.grid-c8 .grid-r7');
+        $('.item-box-1#mkb').detach().appendTo('.grid-c8 .grid-r6');
         $('.item-box-1#eblade').detach().appendTo('.grid-c8 .grid-r9');
         $('.item-box-1#radiance').detach().appendTo('.grid-c8 .grid-r11');
         $('.item-box-1#daedalus').detach().appendTo('.grid-c8 .grid-r12');
@@ -5534,7 +5546,7 @@
         $('.item-box-1#shieldbreaker').detach().appendTo('.grid-c4 .grid-r12');
         $('.item-box-1#seal').detach().appendTo('.grid-c4 .grid-r13');
         $('.item-box-1#lantern').detach().appendTo('.grid-c5 .grid-r1');
-        $('.item-box-1#sigil').detach().appendTo('.grid-c5 .grid-r15');
+        $('.item-box-1#sigil').detach().appendTo('.grid-c5 .grid-r14');
         $('.item-box-1#infernalorb').detach().appendTo('.grid-c5 .grid-r17');
         $('.item-box-1#aoa').detach().appendTo('.grid-c5 .grid-r18');
         $('.item-box-1#sanguine').detach().appendTo('.grid-c6 .grid-r13');
@@ -5557,7 +5569,7 @@
         $('.item-box-1#lov').detach().appendTo('.grid-c10 .grid-r9');
         $('.item-box-1#bov').detach().appendTo('.grid-c10 .grid-r10');
         $('.item-box-1#chargers').detach().appendTo('.grid-c4 .grid-r16');
-        $('.item-box-1#gjalla').detach().appendTo('.grid-c5 .grid-r14');
+        $('.item-box-1#gjalla').detach().appendTo('.grid-c5 .grid-r15');
         $('div[id^="col-"]').addClass('hidden');
         $(window).trigger('resize');
       } else if (type.indexOf("layout-def") >= 0) {

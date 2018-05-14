@@ -125,7 +125,6 @@ function connectAll() {
     connectElements($("#svg"), $("#wraith-pike"), $("#wraith"), $("#pike"));
     connectElements($("#svg"), $("#wraith-aquila"), $("#wraith"), $("#aquila"));
     connectElements($("#svg"), $("#wraith-squire"), $("#wraith"), $("#squire"));
-    connectElements($("#svg"), $("#mango-wand"), $("#mango"), $("#wand"));
     connectElements($("#svg"), $("#ror-soulring"), $("#ror"), $("#soulring"));
     connectElements($("#svg"), $("#gauntlets-soulring"), $("#gauntlets"), $("#soulring"));
     connectElements($("#svg"), $("#soulring-sanguine"), $("#soulring"), $("#sanguine"));
@@ -231,10 +230,10 @@ function connectAll() {
     connectElements($("#svg"), $("#circlet-bracer"), $("#circlet"), $("#bracer"));
     connectElements($("#svg"), $("#circlet-nulltal"), $("#circlet"), $("#nulltal"));
     connectElements($("#svg"), $("#circlet-wraith"), $("#circlet"), $("#wraith"));
-    connectElements($("#svg"), $("#roh-force"), $("#roh"), $("#force"));
+    connectElements($("#svg"), $("#ror-force"), $("#ror"), $("#force"));
     connectElements($("#svg"), $("#oblivion-echo"), $("#oblivion"), $("#echo"));
     connectElements($("#svg"), $("#javelin-wyrmslayer"), $("#javelin"), $("#wyrmslayer"));
-    connectElements($("#svg"), $("#javelin-basher"), $("#javelin"), $("#basher"));
+    connectElements($("#svg"), $("#mithham-basher"), $("#mithham"), $("#basher"));
     connectElements($("#svg"), $("#belt-basher"), $("#belt"), $("#basher"));
     connectElements($("#svg"), $("#oblivion-orchid"), $("#oblivion"), $("#orchid"));
     connectElements($("#svg"), $("#shieldbreaker-fangs"), $("#shieldbreaker"), $("#fangs"));
@@ -295,7 +294,7 @@ function connectAll() {
     connectElements($("#svg"), $("#blight-deso"), $("#blight"), $("#deso"));
     connectElements($("#svg"), $("#mithham-deso"), $("#mithham"), $("#deso"));
     connectElements($("#svg"), $("#goh-treads"), $("#goh"), $("#treads"));
-    connectElements($("#svg"), $("#goh-mael"), $("#goh"), $("#mael"));
+    connectElements($("#svg"), $("#javelin-mael"), $("#javelin"), $("#mael"));
     connectElements($("#svg"), $("#mithham-mael"), $("#mithham"), $("#mael"));
     connectElements($("#svg"), $("#goh-armlet"), $("#goh"), $("#armlet"));
     connectElements($("#svg"), $("#boa-armlet"), $("#boa"), $("#armlet"));
@@ -304,8 +303,9 @@ function connectAll() {
     connectElements($("#svg"), $("#demon-daedalus"), $("#demon"), $("#daedalus"));
     connectElements($("#svg"), $("#shadowb-silvedge"), $("#shadowb"), $("#silvedge"));
     connectElements($("#svg"), $("#ultimateorb-silvedge"), $("#ultimateorb"), $("#silvedge"));
-    connectElements($("#svg"), $("#hyper-mkb"), $("#hyper"), $("#mkb"));
+    connectElements($("#svg"), $("#demon-mkb"), $("#demon"), $("#mkb"));
     connectElements($("#svg"), $("#javelin-mkb"), $("#javelin"), $("#mkb"));
+    connectElements($("#svg"), $("#qstaff-mkb"), $("#qstaff"), $("#mkb"));
     connectElements($("#svg"), $("#relic-radiance"), $("#relic"), $("#radiance"));
     connectElements($("#svg"), $("#vanguard-ablade"), $("#vanguard"), $("#ablade"));
     connectElements($("#svg"), $("#basher-ablade"), $("#basher"), $("#ablade"));

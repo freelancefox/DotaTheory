@@ -6,6 +6,13 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/animate.min.css">
   <link rel="stylesheet" href="css/heroes.css">
+
+  <script src="http://code.jquery.com/jquery-1.12.2.js"></script>
+  <script>
+    $(function() {
+      $("#load-a").load("heroes/proteus.html");
+    });
+  </script>
 </head>
 
 <body>
@@ -20,7 +27,7 @@
   </a>
   <div id="controls" class="container" style="padding: 0;">
     <div class="row text-center header-hide">
-      <h1>Custom Heroes Index</h1>
+      <h1>Custom Hero Author Index</h1>
     </div><!--/.row-->
     <div id="navigation" class="row text-center">
       <div class="col-sm-3">
@@ -75,501 +82,7 @@
     <div id="spacer"></div>
     <div id="hero-box" class="row text-center">
       <div class="col-md-10 col-md-offset-1">
-        <div class="section-bg bga">
-          <h2 class="h2a">Proteus, the Kraken Spawn</h2>
-          <h3>Radiant, Intelligence</h3>
-          <h4>Support / Initiator / Escape</h4>
-          <img id="aaa" src="img/proteus.png"></img>
-          <div id="lore" class="row">
-            <div class="row padded">
-              <h4>Description</h4>
-              <p>
-                Proteus is a fast-paced support hero whose abilities allow it
-                to quickly get in and out of combat, using Jet, while also
-                repositioning allies or enemies with Razorwind and providing burst
-                damage or a damage shield with Polyp. Proteus's ultimate,
-                Rarefaction, grants reduced non-ultimate cooldowns to allies
-                nearby, making Proteus a useful pick in strategies that involve
-                grouping up and teamfighting.
-              </p>
-            </div>
-            <h3 id="l1b" type="button" data-toggle="collapse"
-                data-target="#l1">↓ Background Info ↓</h3>
-            <div id="l1" class="row padded collapse">
-              <p><i>"In the deep, I await."</i></p>
-              <h4>Lore</h4>
-              <p>
-                As Maelrawn's tentacle was lopped off by Admiral Kunkka, she
-                screamed in agony and, enraged, discarded the appendage to
-                settle to the barren sea floor. Forgotten as quickly as a
-                replacement grew in, the flesh slowly decayed amongst the ocean
-                detritus. Some spark still coursed through those veins
-                though—an immense life force by any standard—and after many
-                monsoon seasons the limb erupted in a fit of growth; the beast
-                called Proteus emerged, renewed, from its preserved state.
-                Knowing only its current form, but aware that it had barely
-                survived some ordeal, Proteus was now aware of its own
-                mortality and was thus determined to survive in this unfamiliar
-                world.
-              </p>
-              <p>
-                Proteus's wanderings began innocently, but quickly turned to
-                fear and pain. The benevolent beast terrified all that it came
-                across, and, as legend of this sea monster spread from sandy
-                shore to deep city, both man and mer mounted hunting parties to
-                eradicate Proteus, for prize and glory. No harbor was safe as
-                the Merinth trackers and Claddish treasure fleet chased poor
-                Proteus, weaving through knotted mangroves and blackest
-                trenches. Cornered at last in an alcove along the Redwater
-                Reef, Proteus foresaw its own doom. As the harpoons arced down,
-                meant to puncture its mantle and kill Maelrawn's sole
-                offspring, something happened. Involuntarily, Proteus awakened
-                its most powerful reflex—its survival instinct. With one
-                massive blast of water, the murderous host went surging
-                downward, drowned, while Proteus went soaring above the ocean
-                surface.
-              </p>
-              <p>
-                With new power coursing through its veins, Proteus now
-                understood its purpose in life and so emerged from the quiet
-                sea to find the source of its life force. On a journey now to
-                find its mother Maelrawn, Proteus crosses land and sea unafraid
-                and unstoppable.
-              </p>
-              <h4>Appearance</h4>
-              <p>
-                A serpentine sea monster whose appearance is that of a vast
-                octopus, floating above the ground using its jets for
-                propulsion and its tentacles to strike. Its attack animation is
-                a slash with one of the front two tentacles, which sends out a
-                blade-shaped bit of wind. Its skin is covered with mysterious
-                patterns of deep blue dapples and cyan veins that course with
-                power, while its eyes and the aura from its ultimate glow a
-                bright ember orange. (<i>Everything about the hero is
-                intentionally genderless but I anticipate it being voiced by a
-                female and most often referred to as female</i>)
-              </p>
-            </div><!--/.row-->
-          </div><!--/.row-->
-          <div id="attributes" class="row">
-            <h3 class="h3a">Attributes</h3>
-            <div id="stats" class="row padded">
-              <p><img src="img/str.png"></img> 21 + 2.8</p>
-              <p><img src="img/agi.png"></img> 10 + 1.2</p>
-              <p><img src="img/int_p.png"></img> 19 + 2.7</p>
-            </div><!--/.row-->
-            <div class="row padded">
-              <div class="col-md-6">
-                <p><b>Movement Speed</b>: 300</p>
-                <p><b>Turn Rate</b>: 0.7</p>
-                <p><b>Attack Range</b>: 400</p>
-                <p><b>Projectile Speed</b>: 1000</p>
-                <p><b>Vision</b>: 1800/800</p>
-              </div><!--/.row-->
-              <div class="col-md-6">
-                <p><b>BAT</b>: 1.7</p>
-                <p><b>Base Damage</b>: 27-31</p>
-                <p><b>Base Armor</b>: 0.0</p>
-                <p><b>Attack Duration</b>: 0.5 + 0.25s</p>
-                <p><b>Cast Duration</b>: 0.15 + 0.40s</p>
-              </div><!--/.row-->
-            </div><!--/.row-->
-          </div><!--/.row-->
-          <div id="skills" class="row cola">
-            <h3 class="h3a">Skills</h3>
-            <div class="row paddedsm">
-              <h4><b>Talents</b></h4>
-              <div class="col-md-3">
-                <img class="img" src="img/hero_tree_icon.png">
-              </div><!--/.col-md-3-->
-              <div class="col-md-9">
-                <div class="row text-left">
-                  <p><b>Level 10</b>: +10 Health Regen <b>or</b> +25 Movement Speed</p>
-                  <p><b>Level 15</b>: +200 Cast Range <b>or</b> +90 Gold/Min</p>
-                  <p><b>Level 20</b>: +10 Armor <b>or</b> +50 Polyp Regen Rate</p>
-                  <p><b>Level 25</b>: +3 Jet Charges <b>or</b> Double Polyp/+1 Polyp per Hero</p>
-                </div>
-              </div><!--/.col-md-9-->
-            </div><!--/.row-->
-            <div class="row padded">
-              <div class="col-md-3">
-                <img class="img-responsive" src="img/proteus_razorwind.png">
-                <div id="icons" class="row">
-                  <p><img src="img/cd.png"> 6/5.5/5/4.5s</p>
-                  <p><img src="img/mana.png"> 90/100/110/120</p>
-                </div>
-              </div><!--/.col-md-3-->
-              <div class="col-md-9">
-                <div class="row">
-                  <h4><b>Q: RAZORWIND</b> target unit, magical</h4>
-                  <p class="ability">
-                    Delivers a blast of air that pushes the target away from
-                    Proteus, dealing damage to enemies or healing allies. The
-                    target goes farther the closer they are to Proteus, given
-                    by the function: <i>350&nbsp;+&nbsp;.5(range&nbsp;-&nbsp;distance)</i>.
-                  </p>
-                  <p><b>Cast Range</b>: 500/600/700/800</p>
-                  <p><b>Damage/Heal</b>: 50/100/150/200</p>
-                  <p><b>Max Push Distance</b>: 600/650/700/750</p>
-                  <p><b>Push Speed</b>: 750</p>
-                </div>
-                <div class="row notes">
-                  <h5>Notes:</h5>
-                  <ul>
-                    <li>
-                      Targets being pushed by Razorwind destroy any trees
-                      they are thrown into, within a 75 unit radius.
-                    </li>
-                    <li>
-                      The max push distance scales with cast range,
-                      up to 700/750/800/850 with the level 15 cast range
-                      talent and 825/875/925/975 with the talent and
-                      Aether Lens.
-                    </li>
-                  </ul>
-                </div>
-              </div><!--/.col-md-9-->
-            </div><!--/.row-->
-            <div id="aaA" class="row padded">
-              <div class="col-md-3">
-                <img class="img-responsive" src="img/proteus_polyp.png">
-                <div id="icons" class="row">
-                  <p><img src="img/cd.png"> 13/11/9/7s</p>
-                  <p><img src="img/mana.png"> 80/70/60/50</p>
-                </div>
-              </div><!--/.col-md-3-->
-              <div class="col-md-9">
-                <div class="row">
-                  <h4><b>W: POLYP</b> target ally, magical</h4>
-                  <p class="ability">
-                    Proteus attaches a small piece of itself to the target ally
-                    in the form of a Polyp, providing the host ally with a base
-                    amount of bonus health that regenerates until reaching
-                    full. The Polyp remains for a duration, until killed or
-                    until its host attacks, at which point all remaining
-                    Polyp health is added to the host's auto-attack as bonus
-                    magical damage.
-                  </p>
-                  <p><b>Cast Range</b>: 800</p>
-                  <p><b>Polyp Duration</b>: 50s</p>
-                  <p><b>Polyp Base Health</b>: 50/75/100/125</p>
-                  <p><b>Max Polyp Health/Damage</b>: 150/225/300/375</p>
-                  <p><b>Polyp Regen Rate</b>: 5/10/20/25 hp/s (<img src="img/talent.png"></img> 55/60/70/75 hp/s)</p>
-                  <p><b>Duration for Max Charge</b>: 20/15/10/10s (<img src="img/talent.png"></img> 1.81/2.5/2.85/3.33s)</p>
-                  <p><b>Number of Targets</b>: 1 (<img src="img/talent.png"></img> 2)</p>
-                  <p><b>Max Polyps per Hero</b>: 1 (<img src="img/talent.png"></img> 2)</p>
-                </div>
-                <div class="row notes">
-                  <h5>Notes:</h5>
-                  <ul>
-                    <li>
-                      Polyps are indicated visually by an additional light blue
-                      health bar over the target, as well as the model of a
-                      Polyp hovering above the target.
-                    </li>
-                    <li>
-                      Polyps do not stack with each other, unless the level 25
-                      talent is taken. Casting a second Polyp on an ally has no
-                      effect (unless the Polyp's health was at less than its
-                      base health, at which point the new Polyp will override)
-                      but still puts the spell on cooldown. The level 25 talent
-                      prioritizes putting 1 Polyp per ally if there's more than
-                      one within range, but can put 2 Polyps on a single target
-                      if no other heroes (including yourself) are in range and
-                      have less total combined Polyp health.
-                    </li>
-                    <li>
-                      Polyp damage does not work on buildings, but the buff and
-                      damage are NOT expended if the host attacks a structure.
-                    </li>
-                    <li>
-                      At level 1, Proteus can place up to 2 Polyps on allies
-                      and use them to deal maximum damage during a 12 second
-                      window where they're both fully charged. With levels 2,
-                      3 and 4 Polyp this increases to 3 max Polyps in an 8s
-                      window, 4 max Polyps in a 13s window, and 5 max Polyps
-                      in a 12s window respectively.
-                    </li>
-                    <li>
-                      With level 3 ultimate, Proteus can extend this window up
-                      to 28s, although the Polyps lose their ability to regenerate
-                      health upon reaching full capacity. With the level 25
-                      Polyp regen talent and an Octarine core, the window
-                      can reach up to 37.66s.
-                    </li>
-                  </ul>
-                </div>
-              </div><!--/.col-md-9-->
-            </div><!--/.row-->
-            <div class="row padded">
-              <div class="col-md-3">
-                <img class="img-responsive" src="img/proteus_jet.png">
-                <div id="icons" class="row">
-                  <p><img src="img/cd.png"> 6/5/4/3s (<img src="img/talent.png"></img> 0)</p>
-                  <p><img src="img/mana.png"> 20/30/40/50</p>
-                </div>
-              </div><!--/.col-md-3-->
-              <div class="col-md-9">
-                <div class="row">
-                  <h4><b>E: JET</b> no target</h4>
-                  <p class="ability">
-                    Propels Proteus a short distance forward using its water
-                    jets. Proteus's survival instincts are so strong that it
-                    may cast Jet even while stunned, silenced, rooted, or
-                    otherwise affected by any spell which restricts movement.
-                    Jet may only be fully disabled by applying a break effect
-                    on Proteus.
-                  </p>
-                  <p><b>Cast Time</b>: instant</p>
-                  <p><b>Jet Distance</b>: 300/400/500/600</p>
-                  <p><b>Jet Push Speed</b>: 1500</p>
-                  <p><b>Number of Charges</b>: 0 (<img src="img/talent.png"></img> 3)</p>
-                  <p><b>Charge Replenish Time</b>: 0 (<img src="img/talent.png"></img> 6/5/4/3s)</p>
-                </div>
-                <div class="row notes">
-                  <h5>Notes:</h5>
-                  <ul>
-                    <li>
-                      Jet destroys all trees in its path within a 75 unit radius.
-                    </li>
-                  </ul>
-                </div>
-              </div><!--/.col-md-9-->
-            </div><!--/.row-->
-            <div class="row padded">
-              <div class="col-md-3">
-                <img class="img-responsive" src="img/proteus_rarefaction.png">
-                <div id="icons" class="row">
-                  <p><img src="img/cd.png"> 2s</p>
-                  <p><img src="img/mana.png"> 0</p>
-                </div>
-              </div><!--/.col-md-3-->
-              <div class="col-md-9">
-                <div class="row">
-                  <h4><b>R: RAREFACTION</b> ultimate, passive, toggle</h4>
-                  <p class="ability">
-                    Proteus reduces non-ultimate cooldowns by manipulating the
-                    nervous system's acute response to fear, dilating
-                    perception for allies in a radius around Proteus, but
-                    causing itself to take bonus damage from all sources.
-                  </p>
-                  <p><b>Cast Time</b>: instant</p>
-                  <p><b>Cooldown Reduction</b>: 15/25/33%</p>
-                  <p><b>Bonus Damage Taken</b>: 15/25/33%</p>
-                  <p><b>Aura Radius</b>: 900/1200/1500</p>
-                  <h5><b><img src="img/aghs-upgrade.png"></img> Aghanim's Upgrade:</b></h5>
-                  <p class="ability">
-                    Allows Rarefaction to affect allied Ultimates, as well as
-                    increases the aura's radius to 1800/2400/3000.
-                  </p>
-                </div>
-                <div class="row notes">
-                  <h5>Notes:</h5>
-                  <ul>
-                    <li>
-                      Stacks with Octarine Core cooldown reduction, just like
-                      Arcane Rune does. Unlike Octarine Core, however, where
-                      the target must be in the AoE when casting the spell to
-                      receive the effect, Rarefaction simply begins speeding up
-                      any cooldowns when an ally comes in range of the aura.
-                      The effect ends when allies leave the aura's radius.
-                    </li>
-                  </ul>
-                </div>
-              </div><!--/.col-md-9-->
-            </div><!--/.row-->
-          </div><!--/.row-->
-          <div id="changelog" class="row">
-            <h3 id="cl1b" type="button" data-toggle="collapse"
-                data-target="#cl1">↓ Changelog ↓</h3>
-            <div id="cl1" class="row padded collapse">
-              <p id="AAA">v2.8 (Nov 2017):</p>
-              <ul>
-                <li>
-                  Add double Polyp/+1 Polyp per Hero talent at level 25, move
-                  +50 Polyp Regen talent to level 20, replacing the mana regen talent
-                </li>
-                <li>
-                  Heavily rework Poylp notes and mechanics, add talent values to skills
-                </li>
-                <li>
-                  Increase level 10 Movement Speed talent from +20 to +25
-                </li>
-              </ul>
-              <p>v2.7 (May 2017):</p>
-              <ul>
-                <li>
-                  Increase Strength gain by 0.3, from 2.5 to 2.8 (7.06 change to all heroes)
-                </li>
-                <li>
-                  Replace -20s Respawn Time talent at level 10 with +10 Health Regen
-                </li>
-              </ul>
-              <p>v2.6 (Dec 2016):</p>
-              </ul>
-              <ul>
-                <li>
-                  Added Talents
-                </li>
-                <li>
-                  Reduce Razorwind cast range from 700/800/900/1000 to
-                  500/600/700/800, reducing the base max push distance
-                  from 700/750/800/850 to 600/650/700/750.
-                </li>
-              </ul>
-              <p>v2.5 (Nov 2016):</p>
-              <ul>
-                <li>
-                  Title updated from "Kraken Offspring" to "Kraken Spawn"
-                </li>
-                <li>
-                  Update Polyp mechanics after gameplay testing: Polyp now
-                  has a max duration of 50 seconds, leading to a maximum
-                  window for Polyp's damage to take effect, in effect limiting
-                  you to 2/3/4/5 possible max Polyps at a time. Polyps also
-                  now stop regening upon reaching full HP. Polyp bonus damage
-                  explicitly does not affect buildings.
-                </li>
-              </ul>
-              <p>v2.2 (May 2016):</p>
-              <ul>
-                <li>
-                  Added Aghanim's Scepter: Allows Rarefaction to affect allied Ultimates, and doubles the aura radius.
-                </li>
-                <li>Added WIP icons</li>
-              </ul>
-              <p>v2.12 (Dec 2015):</p>
-              <ul>
-                <li>Increased Jet range from 240/360/480/600 to 300/400/500/600</li>
-                <li>
-                  Added clarification to Polyp description, and added
-                  BKB/Linkens/Purgable icons to skills
-                </li>
-                <li>Fixed gender pronouns in Appearance and added note about gender</li>
-              </ul>
-              </ul>
-              <p>v2.11 (Dec 2015):</p>
-              <ul>
-                <li>
-                  Changed Rarefaction bonus damage taken scaling from 33% to
-                  15/25/33%, so the spell isn't quite as punishing to use early on
-                </li>
-                <li>Updated Jet travel speed to a constant 2400</li>
-                <li>Updated Polyp wording</li>
-              </ul>
-              <p>v2.1 (Nov 2015):</p>
-              <ul>
-                <li>
-                  Update Polyp base health scaling from 50 to 50/75/100/125,
-                  Polyp max health from 150/250/350/450 to 150/225/300/375, and
-                  Polyp regen from 5/10/15/20 to 5/10/20/25 (Full charge time
-                  now 20/15/10/10 seconds)
-                </li>
-                <li>
-                  Razorwind cast range improved from 400/500/600/700 to
-                  700/800/900/1000 (Max throw distance now 700/750/800/850)
-                </li>
-                <li>Jet cooldown reduced from 9/7/5/3s to 6/5/4/3s</li>
-                <li>Rarefaction bonus damage taken decreased from 40% to 33%</li>
-              </ul>
-              <p>v2.0 (Nov 2015):</p>
-              <ul>
-                <li>
-                  Updated Polyp mechanism: *previously* used to block no damage
-                  and accumulate slowly until the host attacks or being knocked
-                  off by attacking the host a fixed number of times, *now* the
-                  polyp's health is used to prevent incoming damage or be
-                  expended as a single burst of damage, and the polyp constantly
-                  regens.
-                </li>
-                <li>
-                  Reduced Polyp cast range from 1200 to 800, and restored old
-                  mana/cooldown values
-                </li>
-                <li>
-                  Reverted experimental Jet changes, and increased Jet
-                  distance from 250/300/350/400 to 240/360/480/600
-                </li>
-                <li>
-                  Increased Rarefaction bonus damage taken from 20% to 40%,
-                  and added scaling aura radius from 900 to 900/1200/1500.
-                </li>
-              </ul>
-              <p id="aAA">v1.21 (Sept 2013):</p>
-              <ul>
-                <li>
-                  Adjust Jet to now apply a strong dispel to allies Proteus
-                  passes through, as opposed to Proteus being able to cast it
-                  while CCed. Also increase cooldown and increase manacost to
-                  compensate.
-                </li>
-                <li>
-                  Reworked Polyp to scale from 1 attack to 1/1/2/3 attacks, and
-                  removed the Polyp-knocking-off mechanic.
-                </li>
-                <li>Rescaled Polyp max damage from 200/300/400/500 to 150/250/350/450</li>
-              </ul>
-              <p>v1.2 (May 2013):</p>
-              <ul>
-                <li>Jet manacost from 20 to 20/30/40/50</li>
-                <li>
-                  Polyp can now target allies, instead of just Proteus itself.
-                  Polyps are also no longer removed by attacks but do not
-                  gather damage for 3/2.5/2/1.5 seconds after an instance of
-                  20+ hero damage
-                </li>
-              </ul>
-              <p>v1.10 (April 2013):</p>
-              <ul>
-                <li>
-                  Entered and won the <a href="https://www.reddit.com/r/DotA2/comments/1di7oz/so_finally_its_prizes_time_create_your_own_hero/">r/dota2
-                    Create Your Own Hero Contest</a>
-                </li>
-                <li>Polyp manacost now scales from 80 to 50/60/70/80</li>
-                <li>
-                  Rarefaction changed from -40% damage dealt to +20% damage
-                  taken from all sources
-                </li>
-              </ul>
-              <p>v1.01:</p>
-              <ul>
-                <li>Changed stat growths from 2.5/1.7/2.7 to 2.5/1.2/2.7</li>
-              </ul>
-              <p>v1.0:</p>
-              <ul>
-                <li>
-                  Changed Razorwind damage mechanic from sum of attributes back to
-                  50/100/150/200
-                </li>
-                <li>Razorwind cooldown from 7/6/5/4 to 6/5.5/5/4.5</li>
-                <li>
-                  Adjusted attributes from 21/15/19 to 21/10/19 and growths
-                  from 2.5/1.6/2.7 to 2.5/1.7/2.7
-                </li>
-                <li>
-                  Changed Polyp health from 2/3/4/5 hero/tower attacks or twice
-                  as many from creeps to 2/3/4/5 of any attack, since creeps
-                  will never target the Polyps unless controlled by a hero
-                </li>
-                <li>
-                  Changed Jet from charge system, one charge for each spell
-                  cast up to a maximum of 4, to a cooldown of 3 seconds
-                </li>
-                <li>Added push speed to Jet</li>
-              </ul>
-              <p>v0.9:</p>
-              <ul>
-                <li>Razorwind now scales in cast distance</li>
-                <li>Changed attack range from 550 to 400</li>
-                <li>
-                  Remade Rarefaction from 25/50/75% effect on-self and
-                  always-on, to activable on allies by toggling the aura, with
-                  a 15/25/33% effect
-                </li>
-              </ul>
-            </div><!--/.row-->
-          </div><!--/.row-->
-        </div><!--/.section-bg-->
+        <div id="load-a" class="section-bg bga"></div><!---->
       </div><!--/.col-md-10-->
     </div><!--/.herobox-->
   </div><!--/.container-->
@@ -857,6 +370,7 @@
               <div class="col-md-3">
                 <img class="img-responsive" src="img/place.png">
                 <div id="icons" class="row">
+                  <p><img src="img/cd.png"> 0s</p>
                 </div>
               </div><!--/.col-md-3-->
               <div class="col-md-9">
@@ -1508,7 +1022,7 @@
                 <div class="row text-left">
                   <p><b>Level 10</b>: +10 Agility <b>or</b> +2 Mana Regen</p>
                   <p><b>Level 15</b>: +20% Magic Resistance <b>or</b> +10% Spell Amplification</p>
-                  <p><b>Level 20</b>: No Manacosts in Prismatic Wings <b>or</b> +300 Cast Range</p>
+                  <p><b>Level 20</b>: +100% Manacost Reduction During Prismatic Wings <b>or</b> +300 Cast Range</p>
                   <p><b>Level 25</b>: 3 Broadside Charges <b>or</b> +40% Arc Boost Resistance</p>
                 </div>
               </div><!--/.col-md-9-->
@@ -1919,7 +1433,7 @@
                   <p><b>Cast Time</b>: instant</p>
                   <p><b>Base Damage</b>: 60/80/100/120</p>
                   <p><b>Gold to Damage</b>: 2%</p>
-                  <p><b>Damage Radius</b>: 350/300/450/500</p>
+                  <p><b>Damage Radius</b>: 350/400/450/500</p>
                 </div>
               </div><!--/.col-md-9-->
             </div><!--/.row-->
@@ -2640,7 +2154,6 @@
   by <a href="https://www.reddit.com/user/freelance_fox/">/u/freelance_fox</a> • <a href="http://www.twitter.com/freelancedota">@freelancedota</a> • Updated 17 April 2018
 </div><!--/.row-->
 
-<script src="http://code.jquery.com/jquery-1.12.2.js"></script>
 <script src="http://code.highcharts.com/highcharts.js"></script>
 <script src="js/jquery.inview.js"></script>
 <script src="js/bootstrap.js"></script>
@@ -2686,7 +2199,7 @@ $(document).ready(function()
       $('#authorlist').show();
     }
   });
-  $("#aaa,#aaA,#aAA,#AAA").bind("inview", function(event, visible) {
+  $("#load-a,#aaa,#aaA,#aAA,#AAA").bind("inview", function(event, visible) {
     if (visible == true) {
       document.body.style.backgroundColor = '#1d5081';
       $('.jumpb').attr('href','#sylph');

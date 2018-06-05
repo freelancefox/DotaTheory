@@ -1,0 +1,480 @@
+<h2>Hyperius, the Gravitist</h2>
+<h3>Radiant, Intelligence</h3>
+<h4>Nuker ☆☆ / Durable ☆ / Support ☆ / Disabler ☆ / Pusher ☆</h4>
+<img src="img/portrait.png"></img>
+<div id="lore" class="row">
+  <div class="row padded">
+    <h4>Description</h4>
+    <p>
+      Hyperius is a heavy caster with a short attack range, but his kit features
+      defensive capabilities and mobility that set him apart from other similar
+      heroes. A unique bond with gravity grants Hyperius extreme control over
+      his opponents' turn rates and their ability to deal physical damage,
+      thanks to his ultimate Gravity Shards and sub-ability Gravity Well, which
+      furthermore give Hyperius a unique resource to manage in the form of his
+      Invoker-like floating orbs. Hyperius may choose to expend Shards for
+      convenience and speed, but in doing so trades passive mana regen and
+      evasion. Hyperius's prowess as a magus is well known, yet what he lacks in
+      direct damage he makes up for through prolonging fights thanks to his
+      self-healing nuke Plasma Burst and supportive third skill, Void Shield,
+      which grants spell block while amping spell damage.  Last but not least,
+      Hyperius's main teamfight contribution is undoubtedly his channeled,
+      vector-targeted variable-radius AoE stun, Miasma.  What Miasma lacks in
+      stun duration, it makes up for in its versatility, with the ability to
+      fire off a smaller, faster Invoker-Tornado-like projectile that chases
+      enemies dealing damage over time, while simultaneously being able to cover
+      an entire teamfight with a large storm if channeled long enough.
+    </p>
+  </div>
+  <h3 id="hyperius-lore-btn" type="button" data-toggle="collapse"
+      data-target="#hyperius-lore-body">↓ Background Info ↓</h3>
+  <div id="hyperius-lore-body" class="row padded collapse">
+    <h4>Lore</h4>
+    <p>
+      Originally from a dimension where consciousness is not born but rather
+      discovered, Hyperius stands out among the heroes who defend ancients as a
+      being of both extreme intellect and dramatic contradiction. While he began
+      life as a bodyless impulse dreamt up by the Sun God, Hyperius soon
+      realized that to serve his master would require a suitable physical
+      manifestation—something designed for combat against other beings like
+      himself—and so sought out the gadgeteer Hephaestus in his Celestial Forge.
+    </p>
+    <p>
+      Deep into the volcanic workshop Hyperius delved seeking an artifice to his
+      liking, past automaton after augmented suit of armor, deeper and deeper
+      into the mine's hellish lower branches until reaching the end of his
+      presented options. Coming to the edge of the liquid-metal mantle, glowing
+      burning white and hot, Hyperius kept going—by accident or perhaps out of
+      curiousity. Allowing himself to be drawn in to the ultra-dense solar core,
+      Hyperius's soul instantly fused with the living energy of the star. In the
+      ensuing reaction, a new and perfect body formed, cast out of a molten
+      metal unlike anything to come before it or since.
+    </p>
+    <p>
+      His solar-forged body may appear mortal, but in our reality Hyperius
+      wields the same power in this form as he did before as a bodyless force
+      whose job was to hold the universe together—his shoulders, like the many
+      bodies that hang from that dark framework, bear the weight of all worlds
+      as if Hyperius was a great keystone holding up the sky. It is this part of
+      Hyperius's nature that enables his current form to control gravity with
+      such precision—equally as capable of movements galactic in scale as those
+      local in scale.
+    </p>
+    <p>
+      Venturing in service of the Sun God to the cities of men on many an
+      occasion, Hyperius's encounters with various magi were nothing short of
+      spectacular. Hyperius's affinity for cosmic balance is equally matched by
+      his unwitting penchant for destruction.
+    </p>
+    <p>
+      Now tasked with maintaining the balance between radiant and dire, Hyperius
+      voyages with begrudging loyalty to trifle with mortal matters—and
+      magi—once more. With infinite worlds hanging in the balance, Hyperius
+      serves the very notion of existence as both a bastion against chaos and an
+      arbiter of divine judgment.
+    </p>
+    <h4>Appearance</h4>
+    <p>
+      A magus-like figure with glowing metallic skin and black diamond-shaped
+      floating orbs similar to Invoker's. Light green and cyan bursts of plasma
+      accompany Hyperius's first two spells, while his signature Gravity Wells
+      appear like flattened mini-Black Holes that stretch enemies between
+      dimensions.
+    </p>
+  </div><!--/.row-->
+</div><!--/.row-->
+<div id="attributes" class="row">
+  <h3>Attributes</h3>
+  <div id="stats" class="row padded">
+    <p><img src="img/str_p.png"></img> 19 + 1.6</p>
+    <p><img src="img/agi.png"></img> 22 + 2.6</p>
+    <p><img src="img/int.png"></img> 18 + 3.75</p>
+  </div><!--/.row-->
+  <div class="row padded">
+    <div class="col-md-6">
+      <p><b>Movement Speed</b>: 330</p>
+      <p><b>Turn Rate</b>: 0.6</p>
+      <p><b>Attack Range</b>: 350</p>
+      <p><b>Projectile Speed</b>: 1,750</p>
+      <p><b>Vision</b>: 1800/800</p>
+    </div><!--/.row-->
+    <div class="col-md-6">
+      <p><b>BAT</b>: 1.7</p>
+      <p><b>Base Damage</b>: 41-51 (<i>59-69 at lvl 1</i>)</p>
+      <p><b>Base Armor</b>: -2.0 (<i>1.52 at lvl 1</i>)</p>
+      <p><b>Attack Duration</b>: 0.35 + 0s</p>
+      <p><b>Cast Duration</b>: 0.4 + 0.35s</p>
+    </div><!--/.row-->
+  </div><!--/.row-->
+</div><!--/.row-->
+<div id="skills" class="row">
+  <h3>Skills</h3>
+  <div class="row paddedsm">
+    <h4><b>Talents</b></h4>
+    <div class="col-md-3">
+      <img class="img" src="img/hero_tree_icon.png">
+    </div><!--/.col-md-3-->
+    <div class="col-md-9">
+      <div class="row text-left">
+        <p><b>Level 10</b>: +15% Evasion <b>or</b> +8% Spell Amplification</p>
+        <p><b>Level 15</b>: +150 Cast Range <b>or</b> +150 Attack Range</p>
+        <p><b>Level 20</b>: +30% Magic Resistance <b>or</b> +2 Max Gravity Shards</p>
+        <p><b>Level 25</b>: +1 Void Shield Spells Blocked <b>or</b> -4s Plasma Burst Cooldown</p>
+      </div>
+    </div><!--/.col-md-9-->
+  </div><!--/.row-->
+  <div class="row padded">
+    <div class="col-md-3">
+      <img class="img-responsive" src="img/hyperius_plasma_burst.png">
+      <div id="icons" class="row">
+        <p><img src="img/cd.png"> 7s (<img src="img/talent.png"></img> 3s)</p>
+        <p><img src="img/mana.png"> 100/130/160/190</p>
+      </div>
+    </div><!--/.col-md-3-->
+    <div class="col-md-9">
+      <div class="row">
+        <h4><b>Q: PLASMA BURST</b> target point, magical</h4>
+        <p class="ability">
+          Fires a bolt of energy that bounces through enemies in a 90° cone,
+          then releases a blast of damage in a larger radius. Hyperius gains
+          health for each enemy the bolt bounces to.
+        </p>
+        <p class="ability"><i>
+          At any point while the bolt is in the air, Hyperius may consume a
+          Gravity Shard to activate the ability again, disappearing
+          immediately and reappearing at the bolt's location when it bursts,
+          as well as creating a Gravity Well.
+        </i></p>
+        <p><b>Cast Range</b>: 400/500/600/700</p>
+        <p><b>End Radius</b>: 250/300/350/400</p>
+        <p><b>Bolt Duration</b>: up to 0.4/0.5/0.6/0.7s</p>
+        <p><b>Bolt Speed</b>: 2,800</p>
+        <p><b>Bounce Damage</b>: 40/50/60/70</p>
+        <p><b>Bounce Self-Heal</b>: 100% of damage to heroes, 50% creeps<br>(<i>40/50/60/70 per hero, 20/25/30/35 per creep</i>)</p>
+        <p><b>Blast Damage</b>: 80/140/220/300</p>
+        <p><b>Blast Radius</b>: 450 (<i>Blast Speed: 1,750</i>)</p>
+        <p><i>Hyperius's favorite hex for dueling, mostly for its unpredictable nature.</i></p>
+      </div>
+      <div class="row notes">
+        <h5>Notes:</h5>
+        <ul>
+          <li>
+            The bolt bounces to the nearest target first and has no maximum
+            bounce range, but may only bounce to enemies who were in the target
+            area and received the Bolt Target buff on cast (visible to all
+            players above the targeted enemy's heads like Ember's Sleight of
+            Fist effect, may only hit each enemy once). Enemies who travel more
+            than 1,000 units after the Bolt Target buff is placed on them are
+            removed from the bolt's target list.
+          </li>
+          <li>
+            The secondary blast happens at the end of the bolt's duration or
+            upon running out of targets to bounce to. Any enemies the bolt was
+            unable to bounce to before bursting do not take the bounce damage or
+            give healing to Hyperius.
+          </li>
+          <li>
+            The bolt always heals the listed amount of damage regardless of how
+            much damage is dealt, and may not bounce to spell immune enemies.
+          </li>
+          <li>
+            If there are no visible targets in the cone on cast, the bolt
+            travels straight for a distance equal to the cast range and then
+            bursts.
+          </li>
+        </ul>
+      </div>
+    </div><!--/.col-md-9-->
+  </div><!--/.row-->
+  <div class="row padded">
+    <div class="col-md-3">
+      <img class="img-responsive" src="img/hyperius_miasma.png">
+      <div id="icons" class="row">
+        <p><img src="img/cd.png"> 21/20/19/18s</p>
+        <p><img src="img/mana.png"> 140/160/180/200</p>
+      </div>
+    </div><!--/.col-md-3-->
+    <div class="col-md-9">
+      <div class="row">
+        <h4><b>W: MIASMA</b> vector target, channeling, magical</h4>
+        <p class="ability">
+          Channels for a base duration, gathering electrical energy before
+          releasing a sentient storm in the specified direction. The cloud stuns
+          enemies on contact and deals damage per second while they remain in
+          its radius. The storm will chase an enemy if the storm's eye passes
+          over them. Hyperius may continue channeling longer than the base
+          duration to increase the cloud's radius and duration at the cost of
+          decreasing its speed.
+        </p>
+        <p class="ability"><i>
+          At any point during the storm's duration, Hyperius may consume a
+          Gravity Shard to activate the ability again, ordering the cloud to
+          move in a new direction and placing a Gravity Well the next time the
+          storm touches an enemy hero.
+        </i></p>
+        <p><b>Cast Range</b>: 425/550/675/800</p>
+        <p><b>Base Channel Duration</b>: 1s</p>
+        <p><b>Max Channel Duration</b>: 1s base + 1/3/5/7s (<i>2/4/6/8s total</i>)</p>
+        <p><b>Storm Eye Radius</b>: 150</p>
+        <p><b>Storm Radius</b>: 325 + 50/75/100/125 per sec channeled (<i>Max Radius: 375/550/825/1200</i>)</p>
+        <p><b>Storm Duration</b>: 2s + 1s per sec channeled (<i>Max Duration: 3/5/7/9s</i>)</p>
+        <p><b>Storm Speed</b>: 800 - 100 per sec channeled (<i>Distance: 1600 base, 2100/2500/2100/900 at max duration</i>)</p>
+        <p><b>Storm Damage</b>: 75/100/125/150 (<i>Total Max Damage: 225/500/875/1350</i>)</p>
+        <p><b>Stun Duration</b>: 0.75/1/1.25/1.5s</p>
+        <p><i>A particularly nasty bit of weather can be a great friend to have around.</i></p>
+      </div>
+      <div class="row notes">
+        <h5>Notes:</h5>
+        <ul>
+          <li>
+            May only stun each enemy once per cast.
+          </li>
+          <li>
+            The storm's eye destroys trees it passes over.
+          </li>
+          <li>
+            Once locked on to a hero, the storm attempts to match the speed and
+            direction of the target until the duration ends, unless given a new
+            move order, which resets the storm's aggro and allows the storm to
+            pick a new target. If the current target dies or leaves the radius,
+            the storm continues along its original vector. The storm has flying
+            movement, but provides no vision and may not go above its original
+            starting speed (similar to a Wildkin Cyclone).
+          </li>
+          <li>
+            Consuming a Gravity Shard to give the storm an additional move order
+            causes the cloud to sharply turn in the specified direction. May
+            only manually change direction once. The Gravity Well that is placed
+            from consuming a shard is centered on the hero it touches.
+          </li>
+          <li>
+            Only allies may see the Storm while it is forming.
+          </li>
+        </ul>
+      </div>
+    </div><!--/.col-md-9-->
+  </div><!--/.row-->
+  <div class="row padded">
+    <div class="col-md-3">
+      <img class="img-responsive" src="img/hyperius_void_shield.png">
+      <div id="icons" class="row">
+        <p><img src="img/cd.png"> 60/55/50/45s</p>
+        <p><img src="img/mana.png"> 175</p>
+      </div>
+    </div><!--/.col-md-3-->
+    <div class="col-md-9">
+      <div class="row">
+        <h4><b>E: VOID SHIELD</b> target ally, pure</h4>
+        <p class="ability">
+          Places a shield on the target ally that disappears after blocking a
+          single targeted spell, gives bonus spell amplification to the target
+          ally and has a secondary effect that triggers when any ally within
+          range is targeted, attacked or takes damage. The damaging wave caused
+          when the secondary effect triggers also briefly slows enemies.
+        </p>
+        <p class="ability"><i>
+          At any point during the shield's duration, Hyperius may consume a
+          Gravity Shard by activating the ability again, manually releasing a
+          damaging wave and placing a Gravity Well at the shielded target's
+          location.
+        </i></p>
+        <p><b>Cast Range</b>: 500</p>
+        <p><b>Spells Blocked</b>: 1 (<img src="img/talent.png"></img> 2)</p>
+        <p><b>Shield Bonus Spell Amplification</b>: 8/12/16/20%</p>
+        <p><b>Secondary Effect Ally Radius</b>: 200</p>
+        <p><b>Secondary Effect Damage per Proc</b>: 50/60/70/80</p>
+        <p><b>Secondary Effect Slow</b>: 50/60/70/80%</p>
+        <p><b>Slow Duration</b>: 0.25s</p>
+        <p><b>Slow/Damage Radius</b>: 450</p>
+        <p><b>Shield Max Duration</b>: 12/16/20/24s</p>
+        <p><i>Linken's Nullifying Charm.</i></p>
+      </div>
+      <div class="row notes">
+        <h5>Notes:</h5>
+        <ul>
+          <li>
+            The shield always releases a wave of damage and slow/dispel when the
+            main target is targeted by a spell or dies without the shield
+            popping, regardless of proc cooldown.
+          </li>
+          <li>
+            Manual activation of the secondary purge effect, by consuming a
+            Gravity Shard, does not trigger the internal proc cooldown. Manual
+            activation is limited to once per cast.
+          </li>
+        </ul>
+      </div>
+    </div><!--/.col-md-9-->
+  </div><!--/.row-->
+  <div class="row padded">
+    <div class="col-md-3">
+      <img class="img-responsive" src="img/hyperius_gravity_shards.png">
+      <div id="icons" class="row">
+        <p><img src="img/cd.png"> 0s</p>
+        <p><img src="img/mana.png"> 0</p>
+      </div>
+    </div><!--/.col-md-3-->
+    <div class="col-md-9">
+      <div class="row">
+        <h4><b>R: GRAVITY SHARDS</b> ultimate, passive, toggle</h4>
+        <p class="ability">
+          Casting any of Hyperius's spells has a chance to capture a Gravity
+          Shard—a flying fragment of dark energy that grants bonus mana regen
+          and evasion passively. Shards may be expended three ways:
+        </p>
+        <p class="ability">
+          - While toggled on, casting a spell consumes a shard and grants
+            reduced cooldown, decreases the time needed for channeling and uses
+            an instant cast point if applicable.
+        </p>
+        <p class="ability">
+          - Casting the ground-targeted sub-ability Gravity Well consumes a
+            shard to conjure an anti-particle sphere that slows the turn rate
+            and movement speed of enemies within range at the target point.
+        </p>
+        <p class="ability">
+          - Activating one of Hyperius's base spells again after casting it and
+            before the spell's duration ends consumes a shard to create a
+            Gravity Well and cause an additional secondary effect.
+        </p>
+        <p><b>Spell Shard Chance</b>: 60%</p>
+        <p><b>Max Shards</b>: 2/3/4 (<img src="img/talent.png"></img> 6)</p>
+        <p><b>Mana Regen per Shard</b>: 0.9/1.2/1.5</p>
+        <p><b>Evasion per Shard</b>: 15%</p>
+        <p><b>Cooldown Reduction</b>: 30/40/50%</p>
+        <p><i>Able to annihilate dark matter and direct the energy of resulting blasts, Hyperius's spells are much more potent when he has chunks of the stuff on hand.</i></p>
+      </div>
+      <div class="row notes">
+        <h5>Notes:</h5>
+        <ul>
+          <li>
+            Toggling Gravity Shards does not consume or generate shards, nor
+            does consuming a Gravity Shard to activate the secondary effects of
+            Plasma Burst, Miasma or Void Shield generate shards. Placing a
+            Gravity Well manually may generate a shard, however. Toggling
+            Gravity Shards also does not trigger Magic Wand or other on-spell
+            effects.
+          </li>
+          <li>
+            Hyperius gains two Shards immediately upon leveling the skill for
+            the first time.
+          </li>
+          <li>
+            Expending a Gravity Shard to channel Miasma faster results in a
+            30/40/50% reduction in time needed to channel, allowing the release
+            of the initial projectile after 0.7/0.6/0.5s and the full-size storm
+            to be called forth in a reduced 5.6/4.8/4s.
+          </li>
+        </ul>
+      </div>
+    </div><!--/.col-md-9-->
+  </div><!--/.row-->
+  <div class="row padded">
+    <div class="col-md-3">
+      <img class="img-responsive" src="img/hyperius_gravity_well.png">
+      <div id="icons" class="row">
+        <p><img src="img/cd.png"> 18/12/6s</p>
+        <p><img src="img/mana.png"> 100/90/80</p>
+      </div>
+    </div><!--/.col-md-3-->
+    <div class="col-md-9">
+      <div class="row">
+        <h4><b>D: GRAVITY WELL</b> target point, magical</h4>
+        <p>(<i>Unlocked with Ultimate</i>)</p>
+        <p class="ability">
+          Consumes a Gravity Shard to place a sphere of unstable anti-matter
+          that reduces the turn rate and movement speed of enemies within range.
+        </p>
+        <p><b>Cast Range</b>: 700/800/900</p>
+        <p><b>Max Gravity Wells</b>: 1/2/3 (<img src="img/aghs-upgrade.png"></img> 4/5/6)</p>
+        <p><b>Gravity Well Radius</b>: 375/425/475</p>
+        <p><b>Gravity Well Duration</b>: 5/7/9s</p>
+        <p><b>Turn Rate Slow</b>: 60/75/90%</p>
+        <p><b>Slow</b>: 30/45/60%</p>
+        <p><b>Gravity Well Damage</b>: 0 (<img src="img/aghs-upgrade.png"></img> 100/125/150)</p>
+        <p><b>Gravity Well Pull</b>: 0 (<img src="img/aghs-upgrade.png"></img> 30)</p>
+        <h5><b><img src="img/aghs-upgrade.png"></img> Aghanim's Upgrade:</b></h5>
+        <p class="ability">
+          Gravity Wells now deal magical damage over time (100/125/150 dps), and
+          increases the limit for maximum number of Wells at a time. Manually
+          casting a Gravity Well (by activating D) causes that Well to slowly
+          drag enemies towards its center.
+        </p>
+        <p><i>Creates a small zone where enemies become encumbered by extreme weight.</i></p>
+      </div>
+      <div class="row notes">
+        <h5>Notes:</h5>
+        <ul>
+          <li>
+            When the maximum Gravity Well limit is exceeded, the oldest one disappears.
+          </li>
+          <li>
+            The effects of multiple Gravity Wells do not stack, and the Wells'
+            effects do not linger after leaving its radius.
+          </li>
+          <li>
+            Aghanim's upgraded and manually-casted aghs upgraded Gravity Wells
+            have different visual appearances, with a brighter more colorful
+            center and shimmering/rotation effect respectively.
+          </li>
+        </ul>
+      </div>
+    </div><!--/.col-md-9-->
+  </div><!--/.row-->
+</div><!--/.row-->
+<div id="changelog" class="row">
+  <h3 id="hyperius-cl-btn" type="button" data-toggle="collapse"
+      data-target="#hyperius-cl-body">↓ Changelog ↓</h3>
+  <div id="hyperius-cl-body" class="row padded collapse">
+    <p>v0.6.0 (June 2018):</p>
+    <ul>
+      <li>
+        Gravity Well now slows 30/45/60% instead of applying a 60% miss chance
+      </li>
+      <li>
+        Void Shield no longer purges
+      </li>
+      <li>
+        Void Shield slow duration reduced from 0.5/0.6/0.7/0.8s to 0.25s
+      </li>
+      <li>
+        All ability descriptions reduced and clarified
+      </li>
+    </ul>
+    <p>v0.5.1 (May 2018):</p>
+    <ul>
+      <li>
+        Adjusted starting intelligence and growth from 16 + 3.0 to 18 + 3.75
+        (starting mana at level 1 from 315 to 345 and total int at level 25 from
+        88 to 108)
+      </li>
+      <li>
+        Base damage reduced from 43-53 to 41-51 (damage at level 1 remains 59-69)
+      </li>
+      <li>
+        Reduced strength growth from 1.8 to 1.6 (total strength at 25 from 62.2 to 57.4)
+      </li>
+      <li>
+        Added notes on interactions with spell immunity and purges
+      </li>
+    </ul>
+    <p>v0.5.0 (April 2018):</p>
+    <ul>
+      <li>
+        Added Max Limit to Gravity Wells
+      </li>
+      <li>
+        Added Aghanim's Scepter
+      </li>
+      <li>
+        Rename 'Neural Storm' to 'Miasma'
+      </li>
+      <li>
+        Added mechanic for Gravity Shards to improve Miasma channeling speed
+      </li>
+      <li>
+        Added flavortext
+      </li>
+    </ul>
+  </div><!--/.row-->
+</div><!--/.row-->

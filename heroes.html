@@ -365,6 +365,8 @@
            class="tag- role-"></img>
           <img id="btn-enchantress" rel="popover" data-title="Enchantress" src="img/80px-Enchantress.png"
            class="tag- role-"></img>
+          <img id="btn-hyperius" rel="popover" data-title="Hyperius" src="img/80px-Hyperius.png"
+           class="custom tag- role-"></img>
           <img id="btn-jakiro" rel="popover" data-title="Jakiro" src="img/80px-Jakiro.png"
            class="tag- role-"></img>
           <img id="btn-keeper-of-the-light" rel="popover" data-title="Keeper of the Light" src="img/80px-Keeper_of_the_Light.png"
@@ -832,6 +834,9 @@
   <div class="tab-pane text-center fade col-md-10 col-md-offset-1" id="enchantress">
     <div id="load-if-enchantress" class="section-bg"></div><!--/.section-bg-->
   </div><!--/.hero-tab-->
+  <div class="tab-pane text-center fade col-md-10 col-md-offset-1" id="hyperius">
+    <div id="load-ff-hyperius" class="section-bg"></div><!--/.section-bg-->
+  </div><!--/.hero-tab-->
   <div class="tab-pane text-center fade col-md-10 col-md-offset-1" id="jakiro">
     <div id="load-if-jakiro" class="section-bg"></div><!--/.section-bg-->
   </div><!--/.hero-tab-->
@@ -1091,15 +1096,15 @@
       }
       if (location.hash.length > 0) {
         $('#btn-'+location.hash.replace("#","")).trigger('click');
-      } else if (hash.indexOf('official') >= 0) {
+      } else if (location.hash.indexOf('official') >= 0) {
         $('#wip').trigger('click');
-      } else if (hash.indexOf('wip') >= 0) {
+      } else if (location.hash.indexOf('wip') >= 0) {
         $('#official').trigger('click');
-      } else if (hash.indexOf('polished') >= 0) {
+      } else if (location.hash.indexOf('polished') >= 0) {
         $('#official').trigger('click');
         $('#wip').trigger('click');
         $('#polished').trigger('click');
-      } else if (hash.indexOf('draft') >= 0) {
+      } else if (location.hash.indexOf('draft') >= 0) {
         $('#official').trigger('click');
         $('#wip').trigger('click');
         $('#draft').trigger('click');
@@ -1109,6 +1114,22 @@
       //$('.nav-tabs a').on('shown.bs.tab', function (e) {
           //window.location.hash = e.target.hash.replace("#", "#" + prefix);
       //});
+    });
+    $('h3[id$="-lore-btn"]').click(function() {
+      if ($(this).text() === '↓ Background Info ↓') {
+        $(this).text('↑ Background Info ↑');
+      }
+      else {
+        $(this).text('↓ Background Info ↓');
+      }
+    });
+    $('h3[id$="-cl-btn"]').click(function() {
+      if ($(this).text() === '↓ Changelog ↓') {
+        $(this).text('↑ Changelog ↑');
+      }
+      else {
+        $(this).text('↓ Changelog ↓');
+      }
     });
     $('#tags .dropdown-menu li a').click( function (e) {
       var target = this.text;
@@ -1268,22 +1289,6 @@
         $(this).text('Hide Custom Heroes');
         $('img.custom').show();
         $('#title').text('Custom Hero Concepts');
-      }
-    });
-    $('.lore h3').click(function() {
-      if ($(this).text() === '↓ Background Info ↓') {
-           $(this).text('↑ Background Info ↑');
-      }
-      else {
-          $(this).text('↓ Background Info ↓');
-      }
-    });
-    $('.changelog h3').click(function() {
-      if ($(this).text() === '↓ Changelog ↓') {
-           $(this).text('↑ Changelog ↑');
-      }
-      else {
-          $(this).text('↓ Changelog ↓');
       }
     });
     $("#back, #heroesbtn").click(function() {
@@ -1622,6 +1627,10 @@
     $("#btn-enchantress").click(function() {
       document.body.style.backgroundColor = '';
       $('.footer').css('background-color','rgba(,,,0.85)');
+    });
+    $("#btn-hyperius").click(function() {
+      document.body.style.backgroundColor = '#334C4D';
+      $('.footer').css('background-color','rgba(51,76,77,0.85)');
     });
     $("#btn-jakiro").click(function() {
       document.body.style.backgroundColor = '';

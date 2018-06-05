@@ -25,6 +25,29 @@
   border: 16px outset rgba(0,44,55,0.15);
 }
 
+#hyperius h2,
+.section-bg[id*='ff-hyperius'] h2 {
+  background-color: #373743;
+  border: 4px solid #00FFCC;
+  color: #F9F9F9;
+}
+
+#hyperius #attributes h3, #hyperius #skills h3,
+.section-bg[id*='ff-hyperius'] #attributes h3, .section-bg[id*='ff-hyperius'] #skills h3 {
+  background-color: #373743;
+  border: 2px solid #00FFCC;
+  color: #F9F9F9;
+}
+
+#hyperius > .section-bg,
+.section-bg[id*='ff-hyperius'] {  background-color: #336666; }
+
+#hyperius #skills > .row,
+.section-bg[id*='ff-hyperius'] #skills > .row {
+  margin: 0 5%;
+  border: 16px outset rgba(51,102,102,0.15);
+}
+
 #antares h2,
 .section-bg[id*='ff-antares'] h2 {
   background-color: #26241C;
@@ -40,12 +63,12 @@
 }
 
 #antares > .section-bg,
-.section-bg[id*='ff-antares'] {  background-color: #544f3d; }
+.section-bg[id*='ff-antares'] {  background-color: #374B3B; }
 
 #antares #skills > .row,
 .section-bg[id*='ff-antares'] #skills > .row {
   margin: 0 5%;
-  border: 16px outset rgba(36,38,28,0.15);
+  border: 16px outset rgba(38,36,28,0.15);
 }
 
 #merinth h2,

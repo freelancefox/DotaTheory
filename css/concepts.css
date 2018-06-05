@@ -760,7 +760,7 @@ h4 {
   display: none;
 }
 
-.stats > p {
+#stats > p {
   display: inline-block;
   font-weight: bold;
 }
@@ -825,6 +825,20 @@ h3[data-toggle^="collapse"] {
 
 #skills > .row {
   margin: 0 5%;
+}
+
+.ability {
+  padding: 0 30px 0 30px;
+}
+
+.notes > ul {
+  font-size: 14px;
+  font-style: italic;
+  padding: 0 30px 0 30px;
+}
+
+.notes {
+  padding-left: 15px;
 }
 
 

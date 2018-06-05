@@ -1,0 +1,163 @@
+/* AUTHOR SPECIFIC HERO COLORS */
+
+/* ff - freelance */
+
+#proteus h2,
+.section-bg[id*='ff-proteus'] h2 {
+  background-color: #122436;
+  border: 4px solid #F1BA26;
+  color: #F9F9F9;
+}
+
+#proteus #attributes h3, #proteus #skills h3,
+.section-bg[id*='ff-proteus'] #attributes h3, .section-bg[id*='ff-proteus'] #skills h3 {
+  background-color: #122436;
+  border: 2px solid #F1BA26;
+  color: #F9F9F9;
+}
+
+#proteus > .section-bg,
+.section-bg[id*='ff-proteus'] { background-color: #14A0CD; }
+
+#proteus #skills > .row,
+.section-bg[id*='ff-proteus'] #skills > .row {
+  margin: 0 5%;
+  border: 16px outset rgba(0,44,55,0.15);
+}
+
+#antares h2,
+.section-bg[id*='ff-antares'] h2 {
+  background-color: #26241C;
+  border: 4px solid #199E7B;
+  color: #F9F9F9;
+}
+
+#antares #attributes h3, #antares #skills h3,
+.section-bg[id*='ff-antares'] #attributes h3, .section-bg[id*='ff-antares'] #skills h3 {
+  background-color: #26241C;
+  border: 2px solid #199E7B;
+  color: #F9F9F9;
+}
+
+#antares > .section-bg,
+.section-bg[id*='ff-antares'] {  background-color: #544f3d; }
+
+#antares #skills > .row,
+.section-bg[id*='ff-antares'] #skills > .row {
+  margin: 0 5%;
+  border: 16px outset rgba(36,38,28,0.15);
+}
+
+#merinth h2,
+.section-bg[id*='ff-merinth'] h2 {
+  background-color: #0C292F;
+  border: 4px solid #BBFF4F;
+  color: #F9F9F9;
+}
+
+#merinth #attributes h3, #merinth #skills h3,
+.section-bg[id*='ff-merinth'] #attributes h3, .section-bg[id*='ff-merinth'] #skills h3 {
+  background-color: #0C292F;
+  border: 2px solid #BBFF4F;
+  color: #F9F9F9;
+}
+
+#merinth > .section-bg,
+.section-bg[id*='ff-merinth'] { background-color: #00B8B2; }
+
+#merinth #skills > .row,
+.section-bg[id*='ff-merinth'] #skills > .row {
+  margin: 0 5%;
+  border: 16px outset rgba(12,41,47,0.15);
+}
+
+#arcturyx h2,
+.section-bg[id*='ff-arcturyx'] h2 {
+  background-color: #113d47;
+  border: 4px solid #AB3CA2;
+  color: #F9F9F9;
+}
+
+#arcturyx #attributes h3, #arcturyx #skills h3,
+.section-bg[id*='ff-arcturyx'] #attributes h3, .section-bg[id*='ff-arcturyx'] #skills h3 {
+  background-color: #113d47;
+  border: 2px solid #AB3CA2;
+  color: #F9F9F9;
+}
+
+#arcturyx > .section-bg,
+.section-bg[id*='ff-arcturyx'] { background-color: rgba(204,255,155,0.75); }
+
+#arcturyx #skills > .row,
+.section-bg[id*='ff-arcturyx'] #skills > .row {
+  margin: 0 5%;
+  border: 16px outset rgba(33,116,136,0.15);
+}
+
+#goldwing h2,
+.section-bg[id*='ff-goldwing'] h2 {
+  background-color: #42100E;
+  border: 4px solid #FF9C00;
+  color: #F9F9F9;
+}
+
+#goldwing #attributes h3, #goldwing #skills h3,
+.section-bg[id*='ff-goldwing'] #attributes h3, .section-bg[id*='ff-goldwing'] #skills h3 {
+  background-color: #42100E;
+  border: 2px solid #FF9C00;
+  color: #F9F9F9;
+}
+
+#goldwing > .section-bg,
+.section-bg[id*='ff-goldwing'] { background-color: rgba(255,220,164,0.25); }
+
+#goldwing #skills > .row,
+.section-bg[id*='ff-goldwing'] #skills > .row {
+  margin: 0 5%;
+  border: 16px outset rgba(66,16,14,0.15);
+}
+
+#sylph h2,
+.section-bg[id*='ff-sylph'] h2 {
+  background-color: #3F1D20;
+  border: 4px solid #ff6a9c;
+  color: #F9F9F9;
+}
+
+#sylph #attributes h3, #sylph #skills h3,
+.section-bg[id*='ff-sylph'] #attributes h3, .section-bg[id*='ff-sylph'] #skills h3 {
+  background-color: #3F1D20;
+  border: 2px solid #ff6a9c;
+  color: #F9F9F9;
+}
+
+#sylph > .section-bg,
+.section-bg[id*='ff-sylph'] { background-color: rgba(241,199,219,0.33); }
+
+#sylph #skills > .row,
+.section-bg[id*='ff-sylph'] #skills > .row {
+  margin: 0 5%;
+  border: 16px outset rgba(63,29,32,0.15);
+}
+
+/* OFFICIAL HERO COLORS */
+
+#abaddon #skills > .row {
+  border: 16px outset rgba(119, 107, 187, 0.25);
+}
+
+#abaddon h2 {
+  background-color: #0C141E;
+  border: 4px solid #776BBB;
+  color: #F9F9F9;
+}
+
+#abaddon #attributes h3, #abaddon #skills h3 {
+  background-color: #0C141E;
+  border: 2px solid #776BBB;
+  color: #F9F9F9;
+}
+
+#abaddon .section-bg {
+  background-color: #455D8F;
+}

@@ -1,7 +1,7 @@
-<h2>Proteus, the Kraken Spawn</h2>
-<h3>Radiant, Intelligence</h3>
-<h4>Support / Initiator / Escape</h4>
-<img src="img/proteus.png"></img>
+<h2>Abaddon, the Lord of Avernus</h2>
+<h3>Dire, Strength</h3>
+<h4>Support / Carry / Durable</h4>
+<img src="img/Abaddon.png"></img>
 <div id="lore" class="row">
   <div class="row padded">
     <h4>Description</h4>
@@ -15,9 +15,9 @@
       grouping up and teamfighting.
     </p>
   </div>
-  <h3 id="proteus-lore-btn" type="button" data-toggle="collapse"
-      data-target="#proteus-lore-body">↓ Background Info ↓</h3>
-  <div id="proteus-lore-body" class="row padded collapse">
+  <h3 id="abaddon-lore-btn" type="button" data-toggle="collapse"
+      data-target="#abaddon-lore-body">↓ Background Info ↓</h3>
+  <div id="abaddon-lore-body" class="row padded collapse">
     <p><i>"In the deep, I await."</i></p>
     <h4>Lore</h4>
     <p>
@@ -75,7 +75,7 @@
 </div><!--/.row-->
 <div id="attributes" class="row">
   <h3>Attributes</h3>
-  <div id="stats" class="row padded">
+  <div class="row padded stats">
     <p><img src="img/str.png"></img> 21 + 2.8</p>
     <p><img src="img/agi.png"></img> 10 + 1.2</p>
     <p><img src="img/int_p.png"></img> 19 + 2.7</p>
@@ -106,16 +106,16 @@
     </div><!--/.col-md-3-->
     <div class="col-md-9">
       <div class="row text-left">
-        <p><b>Level 10</b>: +10 Health Regen <b>or</b> +25 Movement Speed</p>
+        <p><b>Level 10</b>: +10 Health Regen <b>or</b> +20 Movement Speed</p>
         <p><b>Level 15</b>: +200 Cast Range <b>or</b> +90 Gold/Min</p>
-        <p><b>Level 20</b>: +10 Armor <b>or</b> +50 Polyp Regen Rate</p>
-        <p><b>Level 25</b>: +3 Jet Charges <b>or</b> Double Polyp/+1 Polyp per Hero</p>
+        <p><b>Level 20</b>: +10 Armor <b>or</b> +12 Mana Regen</p>
+        <p><b>Level 25</b>: +3 Jet Charges <b>or</b> +50 Polyp Regen Rate</p>
       </div>
     </div><!--/.col-md-9-->
   </div><!--/.row-->
   <div class="row padded">
     <div class="col-md-3">
-      <img class="img-responsive" src="img/proteus_razorwind.png">
+      <img class="img-responsive" src="img/abaddon_mist_coil.png">
       <div id="icons" class="row">
         <p><img src="img/cd.png"> 6/5.5/5/4.5s</p>
         <p><img src="img/mana.png"> 90/100/110/120</p>
@@ -123,7 +123,7 @@
     </div><!--/.col-md-3-->
     <div class="col-md-9">
       <div class="row">
-        <h4><b>Q: RAZORWIND</b> target unit, magical</h4>
+        <h4><b>Q: MIST COIL</b> target unit, magical</h4>
         <p class="ability">
           Delivers a blast of air that pushes the target away from
           Proteus, dealing damage to enemies or healing allies. The
@@ -143,10 +143,10 @@
             they are thrown into, within a 75 unit radius.
           </li>
           <li>
-            The max push distance scales with cast range, up to
-            700/750/800/850 with the level 15 cast range talent,
-            725/775/825/875 with Aether Lens and 825/875/925/975 with
-            both.
+            The max push distance scales with cast range,
+            up to 700/750/800/850 with the level 15 cast range
+            talent and 800/850/900/950 with the talent and
+            Aether Lens.
           </li>
         </ul>
       </div>
@@ -154,7 +154,7 @@
   </div><!--/.row-->
   <div class="row padded">
     <div class="col-md-3">
-      <img class="img-responsive" src="img/proteus_polyp.png">
+      <img class="img-responsive" src="img/abaddon_aphotic_shield.png">
       <div id="icons" class="row">
         <p><img src="img/cd.png"> 13/11/9/7s</p>
         <p><img src="img/mana.png"> 80/70/60/50</p>
@@ -162,7 +162,7 @@
     </div><!--/.col-md-3-->
     <div class="col-md-9">
       <div class="row">
-        <h4><b>W: POLYP</b> target ally, magical</h4>
+        <h4><b>W: APHOTIC SHIELD</b> target ally, magical</h4>
         <p class="ability">
           Proteus attaches a small piece of itself to the target ally
           in the form of a Polyp, providing the host ally with a base
@@ -173,37 +173,22 @@
           magical damage.
         </p>
         <p><b>Cast Range</b>: 800</p>
-        <p><b>Polyp Duration</b>: 50s</p>
         <p><b>Polyp Base Health</b>: 50/75/100/125</p>
+        <p><b>Polyp Regen Rate</b>: 5/10/20/25 hp/s</p>
+        <p><b>Duration for Max Charge</b>: 20/15/10/10s</p>
         <p><b>Max Polyp Health/Damage</b>: 150/225/300/375</p>
-        <p><b>Polyp Regen Rate</b>: 5/10/20/25 hp/s (<img src="img/talent.png"></img> 55/60/70/75 hp/s)</p>
-        <p><b>Duration for Max Charge</b>: 20/15/10/10s (<img src="img/talent.png"></img> 1.81/2.5/2.85/3.33s)</p>
-        <p><b>Number of Targets</b>: 1 (<img src="img/talent.png"></img> 2)</p>
-        <p><b>Max Polyps per Hero</b>: 1 (<img src="img/talent.png"></img> 2)</p>
+        <p><b>Max Polyps per Hero</b>: 1</p>
+        <p><b>Polyp Duration</b>: 50s</p>
       </div>
       <div class="row notes">
         <h5>Notes:</h5>
         <ul>
           <li>
-            Polyps are indicated visually by an additional light blue
-            health bar over the target, as well as the model of a
-            Polyp hovering above the target.
-          </li>
-          <li>
-            Polyps do not stack with each other, unless the level 25
-            talent is taken. Casting a second Polyp on an ally has no
-            effect (unless the Polyp's health was at less than its
-            base health or had stopped regenerating, at which point
-            the new Polyp will override) but still puts the spell on
-            cooldown. The level 25 talent prioritizes putting 1 Polyp
-            per ally if there's more than one within range, but can
-            put 2 Polyps on a single target if no other heroes
-            (including yourself) are in range and have less total
-            combined Polyp health.
-          </li>
-          <li>
-            Polyp damage does not work on buildings, but the buff and
-            damage are NOT expended if the host attacks a structure.
+            Polyps do not stack with each other. Casting a second
+            Polyp on an ally has no effect (unless the Polyp's health
+            was at less than its base health, at which point the new
+            Polyp will override) but still puts the spell on
+            cooldown.
           </li>
           <li>
             At level 1, Proteus can place up to 2 Polyps on allies
@@ -212,7 +197,6 @@
             3 and 4 Polyp this increases to 3 max Polyps in an 8s
             window, 4 max Polyps in a 13s window, and 5 max Polyps
             in a 12s window respectively.
-          </li>
           <li>
             With level 3 ultimate, Proteus can extend this window up
             to 28s, although the Polyps lose their ability to regenerate
@@ -220,21 +204,31 @@
             Polyp regen talent and an Octarine core, the window
             can reach up to 37.66s.
           </li>
+          <li>
+            Polyps are indicated visually by an additional light blue
+            health bar over the target, as well as the model of a
+            Polyp hovering above the target.
+          </li>
+          <li>
+            Polyp damage does not work on buildings, though the buff
+            and damage are expended anyway if the host attacks a
+            structure.
+          </li>
         </ul>
       </div>
     </div><!--/.col-md-9-->
   </div><!--/.row-->
   <div class="row padded">
     <div class="col-md-3">
-      <img class="img-responsive" src="img/proteus_jet.png">
+      <img class="img-responsive" src="img/abaddon_curse_of_avernus.png">
       <div id="icons" class="row">
-        <p><img src="img/cd.png"> 6/5/4/3s (<img src="img/talent.png"></img> 0)</p>
+        <p><img src="img/cd.png"> 6/5/4/3s</p>
         <p><img src="img/mana.png"> 20/30/40/50</p>
       </div>
     </div><!--/.col-md-3-->
     <div class="col-md-9">
       <div class="row">
-        <h4><b>E: JET</b> no target, passive</h4>
+        <h4><b>E: CURSE OF AVERNUS</b> passive</h4>
         <p class="ability">
           Propels Proteus a short distance forward using its water
           jets. Proteus's survival instincts are so strong that it
@@ -246,8 +240,6 @@
         <p><b>Cast Time</b>: instant</p>
         <p><b>Jet Distance</b>: 300/400/500/600</p>
         <p><b>Jet Push Speed</b>: 1500</p>
-        <p><b>Number of Charges</b>: 0 (<img src="img/talent.png"></img> 3)</p>
-        <p><b>Charge Replenish Time</b>: 0 (<img src="img/talent.png"></img> 6/5/4/3s)</p>
       </div>
       <div class="row notes">
         <h5>Notes:</h5>
@@ -261,7 +253,7 @@
   </div><!--/.row-->
   <div class="row padded">
     <div class="col-md-3">
-      <img class="img-responsive" src="img/proteus_rarefaction.png">
+      <img class="img-responsive" src="img/abaddon_borrowed_time.png">
       <div id="icons" class="row">
         <p><img src="img/cd.png"> 2s</p>
         <p><img src="img/mana.png"> 0</p>
@@ -269,7 +261,7 @@
     </div><!--/.col-md-3-->
     <div class="col-md-9">
       <div class="row">
-        <h4><b>R: RAREFACTION</b> ultimate, passive, aura, toggle</h4>
+        <h4><b>R: BORROWED TIME</b> ultimate, passive/no target</h4>
         <p class="ability">
           Proteus reduces non-ultimate cooldowns by manipulating the
           nervous system's acute response to fear, dilating
@@ -303,22 +295,9 @@
   </div><!--/.row-->
 </div><!--/.row-->
 <div id="changelog" class="row">
-  <h3 id="proteus-cl-btn" type="button" data-toggle="collapse"
-      data-target="#proteus-cl-body">↓ Changelog ↓</h3>
-  <div id="proteus-cl-body" class="row padded collapse">
-    <p>v2.8 (Nov 2017):</p>
-    <ul>
-      <li>
-        Add double Polyp/+1 Polyp per Hero talent at level 25, move
-        +50 Polyp Regen talent to level 20, replacing the mana regen talent
-      </li>
-      <li>
-        Heavily rework Poylp notes and mechanics, add talent values to skills
-      </li>
-      <li>
-        Increase level 10 Movement Speed talent from +20 to +25
-      </li>
-    </ul>
+  <h3 id="abaddon-cl-btn" type="button" data-toggle="collapse"
+      data-target="#abaddon-cl-body">↓ Changelog ↓</h3>
+  <div id="abaddon-cl-body" class="row padded collapse">
     <p>v2.7 (May 2017):</p>
     <ul>
       <li>

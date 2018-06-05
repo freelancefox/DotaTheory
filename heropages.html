@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Heroes</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/heroes.css">
+  <link rel="stylesheet" href="css/herocolors.css">
+
+  <script src="http://code.jquery.com/jquery-1.12.2.js"></script>
+  <script>
+    $(function() {
+      $('div[id^="load-"]').each(function () {
+        var target_id = $(this).attr('id').split('-');
+        var author = target_id[1];
+        var hero = target_id[2];
+        $(this).load("user/"+author+"/"+hero+".html");
+      });
+    });
+  </script>
+</head>
+
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <a href="index">
+    <button class="btn btn-default pull-left header-hide"
+     style="margin-top: 12px; padding:10px;">◄ Index</button>
+  </a>
+  <a id="top">
+    <button class="btn btn-default pull-right hide-top"
+     style="display: none;">↑ Top</button>
+  </a>
+  <div id="controls" class="container" style="padding: 0;">
+    <div class="row text-center header-hide">
+      <h1>Custom Hero Author Index</h1>
+    </div><!--/.row-->
+    <div id="navigation" class="row text-center">
+      <div class="col-sm-3">
+        <div class="header-hide pull-left">
+          <button id="showhide" class="btn btn-main">Show Author List</button>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <a class="jumpb" href="#sylph" onclick="this.click()">
+          <div><<</div>
+        </a>
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse">
+              <div class="panel-heading">
+                <h4 id="ff-index" class="panel-title">↓ freelance's Heroes ↓</h4>
+              </div>
+            </a>
+            <div class="panel-collapse collapse" id="collapse">
+              <div id="group-ff" class="list-group">
+                <a id="ff-proteus" href="#proteus" class="list-group-item"><img src="img/concept.png"> <img src="img/Intelligence_symbol.png" height="24" width="24"> Proteus, the Kraken Spawn</a>
+                <a id="ff-antares" href="#antares" class="list-group-item"><img src="img/concept.png"> <img src="img/Agility_symbol.png" height="24" width="24"> Antares, the Stag Archer</a>
+                <a id="ff-merinth" href="#merinth" class="list-group-item"><img src="img/concept.png"> <img src="img/Intelligence_symbol.png" height="24" width="24"> Sulliver, the Merinth Tracker</a>
+                <a id="ff-arcturyx" href="#arcturyx" class="list-group-item"><img src="img/concept.png"> <img src="img/Agility_symbol.png" height="24" width="24"> Arcturyx, the Thunderbird</a>
+                <a id="ff-goldwing" href="#goldwing" class="list-group-item"><img src="img/wip.png"> <img src="img/Strength_symbol.png" height="24" width="24"> Goldwing, the Draken Miser</a>
+                <a id="ff-sylph" href="#sylph" class="list-group-item"><img src="img/wip.png"> <img src="img/Agility_symbol.png" height="24" width="24"> Sylph, the Dryad Daemon</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="jumpn" href="#antares" onclick="this.click()">
+          <div>>></div>
+        </a>
+      </div>
+      <div class="col-sm-3">
+        <div class="header-hide pull-right">
+          <button id="nextauth" class="btn btn-main">Next Author >></button>
+        </div>
+      </div>
+    </div><!--/.row-->
+    <div id="authorlist" class="row header-hide text-center" style="display: none;">
+      <button id="author-ff" class="btn btn-main">freelance (6)</button>
+      <a href="#coming-soon"><button id="author-add" class="btn btn-main">Add a Concept...</button></a>
+    </div><!--/.row-->
+  </div><!-- /.container-->
+</nav>
+
+<div class="row page-spacer">
+  <div class="container">
+    <div id="top-spacer"></div>
+    <a id="proteus"></a>
+    <div id="spacer"></div>
+    <div id="hero-box" class="row text-center">
+      <div class="col-md-10 col-md-offset-1">
+        <div id="load-ff-proteus" class="section-bg"></div>
+      </div><!--/.col-md-10-->
+    </div><!--/.herobox-->
+  </div><!--/.container-->
+</div><!--/.row_a-->
+
+<div class="row page-spacer">
+  <div class="container">
+    <a id="antares"></a>
+    <div id="spacer"></div>
+    <div id="hero-box" class="row text-center">
+      <div class="col-md-10 col-md-offset-1">
+        <div id="load-ff-antares" class="section-bg"></div>
+      </div><!--/.col-md-10-->
+    </div><!--/.row-->
+  </div><!--/.container-->
+</div><!--/.row_b-->
+
+<div class="row page-spacer">
+  <div class="container">
+    <a id="merinth"></a>
+    <div id="spacer"></div>
+    <div id="hero-box" class="row text-center">
+      <div class="col-md-10 col-md-offset-1">
+        <div id="load-ff-merinth" class="section-bg"></div>
+      </div><!--/.col-md-6-->
+    </div><!--/.row-->
+  </div><!--/.container-->
+</div><!--/.row_c-->
+
+<div class="row page-spacer">
+  <div class="container">
+    <a id="arcturyx"></a>
+    <div id="spacer"></div>
+    <div id="hero-box" class="row text-center">
+      <div class="col-md-10 col-md-offset-1">
+        <div id="load-ff-arcturyx" class="section-bg"></div>
+      </div><!--/.col-md-6-->
+    </div><!--/.row-->
+  </div><!--/.container-->
+</div><!--/.row_d-->
+
+<div class="row page-spacer">
+  <div class="container">
+    <a id="goldwing"></a>
+    <div id="spacer"></div>
+    <div id="hero-box" class="row text-center"
+      <div class="col-md-10 col-md-offset-1">
+        <div id="load-ff-goldwing" class="section-bg"></div>
+      </div><!--/.col-md-6-->
+    </div><!--/.row-->
+  </div><!--/.container-->
+</div><!--/.row_e-->
+
+<div class="row page-spacer">
+  <div class="container">
+    <a id="sylph"></a>
+    <div id="spacer"></div>
+    <div id="hero-box" class="row text-center" style="padding-bottom: 24px;">
+      <div class="col-md-10 col-md-offset-1">
+        <div id="load-ff-sylph" class="section-bg"></div>
+      </div><!--/.col-md-6-->
+    </div><!--/.row-->
+  </div><!--/.container-->
+</div><!--/.row_f-->
+
+<div id="footer" class="row text-center">
+  by <a href="https://www.reddit.com/user/freelance_fu/freelance_fox</a> • <a href="http://www.twitter.com/freelancedota">@freelancedota</a> • Updated 17 April 2018
+</div><!--/.row-->
+
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="js/jquery.inview.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/bootstrap-popover.js"></script>
+<script src="js/wow.min.js"></script>
+
+<script>
+$(document).ready(function()
+{
+  $(document).ready(function()
+  {
+    $(window).scroll(function()
+    {
+      if ($(window).scrollTop() >= 50) {
+        $('.header-hide').css('display', 'none');
+        $('.hide-top').css('display', 'block');
+      }
+      if ($(window).scrollTop() < 50) {
+        $('.header-hide').css('display', 'block');
+        if ($('#showhide').text() !== 'Hide Author List') {
+          $('#authorlist').css('display', 'none');
+        }
+        $('.hide-top').css('display', 'none');
+      }
+    });
+  });
+  $(document).ready(function()
+  {
+    $('#top').click(function()
+    {
+      $('body,html').animate({
+          scrollTop: 0
+        }, 400);
+    });
+  });
+  $('#showhide').click( function (e) {
+    if ($(this).text() === 'Hide Author List') {
+      $(this).text('Show Author List');
+      $('#authorlist').hide();
+    }
+    else {
+      $(this).text('Hide Author List');
+      $('#authorlist').show();
+    }
+  });
+  $("#load-ff-proteus,h3[id^='proteus-']").bind("inview", function(event, visible) {
+    if (visible == true) {
+      document.body.style.backgroundColor = '#1d5081';
+      $('.jumpb').attr('href','#sylph');
+      $('.jumpb').attr('id','ff-sylph');
+      $('.jumpn').attr('href','#antares');
+      $('.jumpn').attr('id','ff-antares');
+    }
+  });
+  $("#load-ff-antares,h3[id^='antares-']").bind("inview", function(event, visible) {
+    if (visible == true) {
+      document.body.style.backgroundColor = '#0C4637';
+      $('.jumpb').attr('href','#proteus');
+      $('.jumpb').attr('id','ff-proteus');
+      $('.jumpn').attr('href','#merinth');
+      $('.jumpn').attr('id','ff-merinth');
+    }
+  });
+  $("#load-ff-merinth,h3[id^='merinth-']").bind("inview", function(event, visible) {
+    if (visible == true) {
+      document.body.style.backgroundColor = '#00817D';
+      $('.jumpb').attr('href','#antares');
+      $('.jumpb').attr('id','ff-antares');
+      $('.jumpn').attr('href','#arcturyx');
+      $('.jumpn').attr('id','ff-arcturyx');
+    }
+  });
+  $("#load-ff-arcturyx,h3[id^='arcturyx-']").bind("inview", function(event, visible) {
+    if (visible == true) {
+      document.body.style.backgroundColor = '#c3da58';
+      $('.jumpb').attr('href','#merinth');
+      $('.jumpb').attr('id','ff-merinth');
+      $('.jumpn').attr('href','#goldwing');
+      $('.jumpn').attr('id','ff-goldwing');
+    }
+  });
+  $("#load-ff-goldwing,h3[id^='goldwing-']").bind("inview", function(event, visible) {
+    if (visible == true) {
+      document.body.style.backgroundColor = '#5E2328';
+      $('.jumpb').attr('href','#arcturyx');
+      $('.jumpb').attr('id','ff-arcturyx');
+      $('.jumpn').attr('href','#sylph');
+      $('.jumpn').attr('id','ff-sylph');
+    }
+  });
+  $("#load-ff-sylph,h3[id^='sylph-']").bind("inview", function(event, visible) {
+    if (visible == true) {
+      document.body.style.backgroundColor = '#752742';
+      $('.jumpb').attr('href','#goldwing');
+      $('.jumpb').attr('id','ff-goldwing');
+      $('.jumpn').attr('href','#proteus');
+      $('.jumpn').attr('id','ff-proteus');
+    }
+  });
+  $("#ff-proteus").click(function() {
+    document.body.style.backgroundColor = '#1d5081';
+  });
+  $("#ff-antares").click(function() {
+    document.body.style.backgroundColor = '#0C4637';
+  });
+  $("#ff-merinth").click(function() {
+    document.body.style.backgroundColor = '#00817D';
+  });
+  $("#ff-arcturyx").click(function() {
+    document.body.style.backgroundColor = '#c3da58';
+  });
+  $("#ff-goldwing").click(function() {
+    document.body.style.backgroundColor = '#5E2328';
+  });
+  $("#ff-sylph").click(function() {
+    document.body.style.backgroundColor = '#752742';
+  });
+  $('#ff-index').click(function() {
+    if ($(this).text() === '↓ freelance\'s Heroes ↓') {
+         $(this).text('↑ freelance\'s Heroes ↑');
+    }
+    else {
+        $(this).text('↓ freelance\'s Heroes ↓');
+    }
+  });
+  $('h3[id$="-lore-btn"]').click(function() {
+    if ($(this).text() === '↓ Background Info ↓') {
+         $(this).text('↑ Background Info ↑');
+    }
+    else {
+        $(this).text('↓ Background Info ↓');
+    }
+  });
+  $('h3[id$="-cl-btn"]').click(function() {
+    if ($(this).text() === '↓ Changelog ↓') {
+         $(this).text('↑ Changelog ↑');
+    }
+    else {
+        $(this).text('↓ Changelog ↓');
+    }
+  });
+});
+</script>
+<script>
+  $(window).load(function() {
+    // Javascript to enable link to tab
+    var target = location.href;
+    var prefix = "?hero=";
+    if (target.indexOf(prefix) >= 0) {
+      var dest = target.replace(prefix,"#");
+      //location.href = dest;
+      location.replace(dest);
+      //location.hash = dest.substring(dest.indexOf("#"));
+    }
+  });
+</script>
+
+</body>

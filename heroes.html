@@ -1077,6 +1077,18 @@
     });
     $(window).load(function() {
       // Javascript to enable link to tab
+      var target = location.href;
+      var prefix = "?hero=";
+      var prefix1 = "?author=";
+      var prefix2 = "&hero=";
+      if (target.indexOf(prefix) > 0) {
+        var dest = target.replace(prefix,"#");
+        //location.href = dest;
+        location.replace(dest);
+        //location.hash = dest.substring(dest.indexOf("#"));
+      } else if (target.indexOf(prefix1) > 0) {
+        
+      }
       if (location.hash.length > 0) {
         $('#btn-'+location.hash.replace("#","")).trigger('click');
       } else if (hash.indexOf('official') >= 0) {

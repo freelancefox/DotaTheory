@@ -962,7 +962,7 @@
     <li style="margin-left: 4px;"><a id="contributorsbtn" href="#contributors" data-toggle="tab">Contributors</a></li>
     <li style="margin-left: 4px;"><a id="twitter" href="http://www.twitter.com/freelancedota"><img alt="@freelancedota" src="img/twitter.png" height="30" width="30"></img></a></li>
     <li style="margin-left: 4px; margin-right: 12px;"><a id="reddit" href="https://www.reddit.com/user/freelance_fox/"><img alt="/u/freelance_fox" src="img/reddit.png" height="30" width="30"></img></a></li>
-    <li>Updated 4 June 2018</li>
+    <li>Updated 18 June 2018</li>
   </ul>
 </div><!--/.footer-->
 
@@ -973,29 +973,6 @@
   <script src="js/jquery.inview.js"></script>
   <script src="js/scrolldirection.js"></script>
   <script src="js/popover-hero.js"></script>
-  <script src="js/vendor/jquery.ui.widget.js"></script>
-  <script src="js/jquery.iframe-transport.js"></script>
-  <script src="js/jquery.fileupload.js"></script>
-  <script>
-    $(function () {
-        $('#fileupload').fileupload({
-            dataType: 'json',
-            //add: function (e, data) {
-            //data.context = $('<button/>').text('Upload')
-            //  .appendTo('#files')
-            //  .click(function () {
-            //    data.context = $('<p/>').text('Uploading...').replaceAll($(this));
-            //    data.submit();
-            //  });
-            //},
-            done: function (e, data) {
-                $.each(data.result.files, function (index, file) {
-                    $('<p/>').text(file.name).appendTo('#files');
-                });
-            }
-        });
-    });
-  </script>
   <script type="text/javascript">
     $.fn.extend({
       animateCSS: function (animationName) {
@@ -1019,38 +996,6 @@
   <script type="text/javascript">
     jQuery(document).ready(function ($) {
       $('#tabs').tab();
-      /*$('#hero-genji > .fill-section').html('<h3>Skills</h3>'+$('#content-genji > a').html());
-      $('#hero-mccree > .fill-section').html('<h3>Skills</h3>'+$('#content-mccree > a').html());
-      $('#hero-pharah > .fill-section').html('<h3>Skills</h3>'+$('#content-pharah > a').html());
-      $('#hero-reaper > .fill-section').html('<h3>Skills</h3>'+$('#content-reaper > a').html());
-      $('#hero-soldier76 > .fill-section').html('<h3>Skills</h3>'+$('#content-soldier76 > a').html());
-      $('#hero-sombra > .fill-section').html('<h3>Skills</h3>'+$('#content-sombra > a').html());
-      $('#hero-abaddon > .fill-section').html('<h3>Skills</h3>'+$('#content-abaddon > a').html());
-      $('#hero-liao > .fill-section').html('<h3>Skills</h3>'+$('#content-liao > a').html());
-      $('#hero-glitch > .fill-section').html('<h3>Skills</h3>'+$('#content-glitch > a').html());
-      $('#hero-bastion > .fill-section').html('<h3>Skills</h3>'+$('#content-bastion > a').html());
-      $('#hero-hanzo > .fill-section').html('<h3>Skills</h3>'+$('#content-hanzo > a').html());
-      $('#hero-junkrat > .fill-section').html('<h3>Skills</h3>'+$('#content-junkrat > a').html());
-      $('#hero-mei > .fill-section').html('<h3>Skills</h3>'+$('#content-mei > a').html());
-      $('#hero-torbjorn > .fill-section').html('<h3>Skills</h3>'+$('#content-torbjorn > a').html());
-      $('#hero-widowmaker > .fill-section').html('<h3>Skills</h3>'+$('#content-widowmaker > a').html());
-      $('#hero-athena > .fill-section').html('<h3>Skills</h3>'+$('#content-athena > a').html());
-      $('#hero-fusionator > .fill-section').html('<h3>Skills</h3>'+$('#content-fusionator > a').html());
-      $('#hero-dva > .fill-section').html('<h3>Skills</h3>'+$('#content-dva > a').html());
-      $('#hero-orisa > .fill-section').html('<h3>Skills</h3>'+$('#content-orisa > a').html());
-      $('#hero-reinhardt > .fill-section').html('<h3>Skills</h3>'+$('#content-reinhardt > a').html());
-      $('#hero-roadhog > .fill-section').html('<h3>Skills</h3>'+$('#content-roadhog > a').html());
-      $('#hero-winston > .fill-section').html('<h3>Skills</h3>'+$('#content-winston > a').html());
-      $('#hero-zarya > .fill-section').html('<h3>Skills</h3>'+$('#content-zarya > a').html());
-      $('#hero-soundquake > .fill-section').html('<h3>Skills</h3>'+$('#content-soundquake > a').html());
-      $('#hero-doomfist > .fill-section').html('<h3>Skills</h3>'+$('#content-doomfist > a').html());
-      $('#hero-ana > .fill-section').html('<h3>Skills</h3>'+$('#content-ana > a').html());
-      $('#hero-lucio > .fill-section').html('<h3>Skills</h3>'+$('#content-lucio > a').html());
-      $('#hero-mercy > .fill-section').html('<h3>Skills</h3>'+$('#content-mercy > a').html());
-      $('#hero-symmetra > .fill-section').html('<h3>Skills</h3>'+$('#content-symmetra > a').html());
-      $('#hero-zenyatta > .fill-section').html('<h3>Skills</h3>'+$('#content-zenyatta > a').html());
-      $('#hero-cardinal > .fill-section').html('<h3>Skills</h3>'+$('#content-cardinal > a').html());
-      $('#hero-talyx > .fill-section').html('<h3>Skills</h3>'+$('#content-talyx > a').html());*/
       $('.polished').parent().hide(); // initialize filter/grid controller state
       $('.draft').parent().hide();
     });
@@ -1114,22 +1059,6 @@
       //$('.nav-tabs a').on('shown.bs.tab', function (e) {
           //window.location.hash = e.target.hash.replace("#", "#" + prefix);
       //});
-    });
-    $('h3[id$="-lore-btn"]').click(function() {
-      if ($(this).text() === '↓ Background Info ↓') {
-        $(this).text('↑ Background Info ↑');
-      }
-      else {
-        $(this).text('↓ Background Info ↓');
-      }
-    });
-    $('h3[id$="-cl-btn"]').click(function() {
-      if ($(this).text() === '↓ Changelog ↓') {
-        $(this).text('↑ Changelog ↑');
-      }
-      else {
-        $(this).text('↓ Changelog ↓');
-      }
     });
     $('#tags .dropdown-menu li a').click( function (e) {
       var target = this.text;
@@ -1783,6 +1712,26 @@
     $("#btn-witch-doctor").click(function() {
       document.body.style.backgroundColor = '';
       $('.footer').css('background-color','rgba(,,,0.85)');
+    });
+  </script>
+  <script>
+    $(window).load(function() {
+      $('h3[id$="-lore-btn"]').on("click", function() {
+        if ($(this).text() === '↓ Background Info ↓') {
+          $(this).text('↑ Background Info ↑');
+        }
+        else {
+          $(this).text('↓ Background Info ↓');
+        }
+      });
+      $('h3[id$="-cl-btn"]').on("click", function() {
+        if ($(this).text() === '↓ Changelog ↓') {
+          $(this).text('↑ Changelog ↑');
+        }
+        else {
+          $(this).text('↓ Changelog ↓');
+        }
+      });
     });
   </script>
   <script>

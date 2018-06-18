@@ -168,7 +168,7 @@
 </div><!--/.row_e-->
 
 <div id="footer" class="row text-center">
-  by <a href="https://www.reddit.com/user/freelance_fu/freelance_fox"</a> • <a href="http://www.twitter.com/freelancedota">@freelancedota</a> • Updated 17 April 2018
+  by <a href="https://www.reddit.com/user/freelance_fu/freelance_fox"</a> • <a href="http://www.twitter.com/freelancedota">@freelancedota</a> • Updated 18 June 2018
 </div><!--/.row-->
 
 <script src="http://code.highcharts.com/highcharts.js"></script>
@@ -197,14 +197,11 @@ $(document).ready(function()
       }
     });
   });
-  $(document).ready(function()
+  $('#top').click(function()
   {
-    $('#top').click(function()
-    {
-      $('body,html').animate({
-          scrollTop: 0
-        }, 400);
-    });
+    $('body,html').animate({
+        scrollTop: 0
+      }, 400);
   });
   $('#showhide').click( function (e) {
     if ($(this).text() === 'Hide Author List') {
@@ -214,24 +211,6 @@ $(document).ready(function()
     else {
       $(this).text('Hide Author List');
       $('#authorlist').show();
-    }
-  });
-  //$('#proteus-lore-btn,#hyperius-lore-btn,#merinth-lore-btn,#antares-lore-btn,#arcturyx-lore-btn,#sylph-lore-btn,#goldwing-lore-btn').click(function() {
-  $('h3[id$="-lore-btn"]').click(function() {
-    if ($(this).text() === '↓ Background Info ↓') {
-      $(this).text('↑ Background Info ↑');
-    }
-    else {
-      $(this).text('↓ Background Info ↓');
-    }
-  });
-  //$('#proteus-cl-btn,#hyperius-cl-btn,#merinth-cl-btn,#antares-cl-btn,#arcturyx-cl-btn,#sylph-cl-btn,#goldwing-cl-btn').click(function() {
-  $('h3[id$="-cl-btn"]').click(function() {
-    if ($(this).text() === '↓ Changelog ↓') {
-      $(this).text('↑ Changelog ↑');
-    }
-    else {
-      $(this).text('↓ Changelog ↓');
     }
   });
   $("#load-ff-proteus,h3[id^='proteus-']").bind("inview", function(event, visible) {
@@ -339,6 +318,22 @@ $(document).ready(function()
       location.replace(dest);
       //location.hash = dest.substring(dest.indexOf("#"));
     }
+    $('h3[id$="-lore-btn"]').on("click", function() {
+      if ($(this).text() === '↓ Background Info ↓') {
+        $(this).text('↑ Background Info ↑');
+      }
+      else {
+        $(this).text('↓ Background Info ↓');
+      }
+    });
+    $('h3[id$="-cl-btn"]').on("click", function() {
+      if ($(this).text() === '↓ Changelog ↓') {
+        $(this).text('↑ Changelog ↑');
+      }
+      else {
+        $(this).text('↓ Changelog ↓');
+      }
+    });
   });
 </script>
 

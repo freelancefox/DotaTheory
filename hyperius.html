@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Hyperius</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/heroes.css">
+  <link rel="stylesheet" href="css/herocolors.css">
+
+  <script src="http://code.jquery.com/jquery-1.12.2.js"></script>
+  <style>
+    body {
+      background-color: #334C4D;
+      overflow-x: hidden;
+    }
+  </style>
+  <script>
+    $(function() {
+      $('div[id^="load-"]').each(function () {
+        var target_id = $(this).attr('id').split('-');
+        var author = target_id[1];
+        var hero = target_id[2];
+        $(this).load("user/"+author+"/"+hero+".html", function() {
+          $('h3[id$="-lore-btn"]').on("click", function() {
+            if ($(this).text() === '↓ Background Info ↓') {
+              $(this).text('↑ Background Info ↑');
+            }
+            else {
+              $(this).text('↓ Background Info ↓');
+            }
+          });
+          $('h3[id$="-cl-btn"]').on("click", function() {
+            if ($(this).text() === '↓ Changelog ↓') {
+              $(this).text('↑ Changelog ↑');
+            }
+            else {
+              $(this).text('↓ Changelog ↓');
+            }
+          });
+        });
+      });
+    });
+  </script>
+</head>
+
+<body >
+
+<div class="row page-spacer">
+  <div class="container">
+    <a id="hyperius"></a>
+    <div class="row text-center hero-box">
+      <div class="col-md-12">
+        <div id="load-ff-hyperius" class="section-bg"></div>
+      </div><!--/.col-md-12-->
+    </div><!--/.row-->
+  </div><!--/.container-->
+</div><!--/.row-->
+
+<div id="footer" class="row text-center">
+  by <a href="https://old.reddit.com/user/freelance_fox/"</a> • <a href="http://www.twitter.com/freelanceCasts">@freelancedota</a> • Updated 6 April 2021
+</div><!--/.row-->
+
+<script src="js/bootstrap.js"></script>
+
+</body>

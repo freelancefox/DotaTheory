@@ -45,7 +45,7 @@
 #hyperius #skills > .row,
 .section-bg[id*='ff-hyperius'] #skills > .row {
   margin: 0 5%;
-  border: 16px outset rgba(51,102,102,0.15);
+  border: 16px outset rgba(59,59,59,0.15);
 }
 
 #antares h2,
@@ -184,3 +184,2375 @@
 #abaddon .section-bg {
   background-color: #455D8F;
 }
+
+#alchemist #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#alchemist h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#alchemist #attributes h3, #alchemist #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#alchemist .section-bg {
+  background-color: #666666;
+}
+
+#axe #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#axe h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#axe #attributes h3, #axe #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#axe .section-bg {
+  background-color: #666666;
+}
+
+#beastmaster #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#beastmaster h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#beastmaster #attributes h3, #beastmaster #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#beastmaster .section-bg {
+  background-color: #666666;
+}
+
+#brewmaster #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#brewmaster h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#brewmaster #attributes h3, #brewmaster #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#brewmaster .section-bg {
+  background-color: #666666;
+}
+
+#bristleback #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#bristleback h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#bristleback #attributes h3, #bristleback #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#bristleback .section-bg {
+  background-color: #666666;
+}
+
+#centaur-warrunner #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#centaur-warrunner h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#centaur-warrunner #attributes h3, #centaur-warrunner #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#centaur-warrunner .section-bg {
+  background-color: #666666;
+}
+
+#clockwerk #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#clockwerk h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#clockwerk #attributes h3, #clockwerk #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#clockwerk .section-bg {
+  background-color: #666666;
+}
+
+#dragon-knight #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#dragon-knight h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#dragon-knight #attributes h3, #dragon-knight #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#dragon-knight .section-bg {
+  background-color: #666666;
+}
+
+#earth-spirit #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#earth-spirit h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#earth-spirit #attributes h3, #earth-spirit #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#earth-spirit .section-bg {
+  background-color: #666666;
+}
+
+#earthshaker #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#earthshaker h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#earthshaker #attributes h3, #earthshaker #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#earthshaker .section-bg {
+  background-color: #666666;
+}
+
+#elder-titan #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#elder-titan h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#elder-titan #attributes h3, #elder-titan #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#elder-titan .section-bg {
+  background-color: #666666;
+}
+
+#huskar #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#huskar h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#huskar #attributes h3, #huskar #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#huskar .section-bg {
+  background-color: #666666;
+}
+
+#io #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#io h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#io #attributes h3, #io #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#io .section-bg {
+  background-color: #666666;
+}
+
+#kunkka #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#kunkka h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#kunkka #attributes h3, #kunkka #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#kunkka .section-bg {
+  background-color: #666666;
+}
+
+#legion-commander #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#legion-commander h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#legion-commander #attributes h3, #legion-commander #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#legion-commander .section-bg {
+  background-color: #666666;
+}
+
+#omniknight #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#omniknight h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#omniknight #attributes h3, #omniknight #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#omniknight .section-bg {
+  background-color: #666666;
+}
+
+#phoenix #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#phoenix h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#phoenix #attributes h3, #phoenix #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#phoenix .section-bg {
+  background-color: #666666;
+}
+
+#sven #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#sven h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#sven #attributes h3, #sven #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#sven .section-bg {
+  background-color: #666666;
+}
+
+#timbersaw #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#timbersaw h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#timbersaw #attributes h3, #timbersaw #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#timbersaw .section-bg {
+  background-color: #666666;
+}
+
+#tiny #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#tiny h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#tiny #attributes h3, #tiny #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#tiny .section-bg {
+  background-color: #666666;
+}
+
+#treant-protector #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#treant-protector h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#treant-protector #attributes h3, #treant-protector #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#treant-protector .section-bg {
+  background-color: #666666;
+}
+
+#tusk #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#tusk h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#tusk #attributes h3, #tusk #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#tusk .section-bg {
+  background-color: #666666;
+}
+
+#abaddon #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#abaddon h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#abaddon #attributes h3, #abaddon #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#abaddon .section-bg {
+  background-color: #666666;
+}
+
+#chaos-knight #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#chaos-knight h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#chaos-knight #attributes h3, #chaos-knight #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#chaos-knight .section-bg {
+  background-color: #666666;
+}
+
+#doom #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#doom h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#doom #attributes h3, #doom #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#doom .section-bg {
+  background-color: #666666;
+}
+
+#lifestealer #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#lifestealer h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#lifestealer #attributes h3, #lifestealer #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#lifestealer .section-bg {
+  background-color: #666666;
+}
+
+#lycan #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#lycan h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#lycan #attributes h3, #lycan #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#lycan .section-bg {
+  background-color: #666666;
+}
+
+#magnus #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#magnus h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#magnus #attributes h3, #magnus #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#magnus .section-bg {
+  background-color: #666666;
+}
+
+#night-stalker #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#night-stalker h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#night-stalker #attributes h3, #night-stalker #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#night-stalker .section-bg {
+  background-color: #666666;
+}
+
+#pudge #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#pudge h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#pudge #attributes h3, #pudge #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#pudge .section-bg {
+  background-color: #666666;
+}
+
+#sand-king #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#sand-king h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#sand-king #attributes h3, #sand-king #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#sand-king .section-bg {
+  background-color: #666666;
+}
+
+#slardar #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#slardar h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#slardar #attributes h3, #slardar #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#slardar .section-bg {
+  background-color: #666666;
+}
+
+#spirit-breaker #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#spirit-breaker h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#spirit-breaker #attributes h3, #spirit-breaker #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#spirit-breaker .section-bg {
+  background-color: #666666;
+}
+
+#tidehunter #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#tidehunter h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#tidehunter #attributes h3, #tidehunter #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#tidehunter .section-bg {
+  background-color: #666666;
+}
+
+#underlord #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#underlord h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#underlord #attributes h3, #underlord #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#underlord .section-bg {
+  background-color: #666666;
+}
+
+#undying #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#undying h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#undying #attributes h3, #undying #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#undying .section-bg {
+  background-color: #666666;
+}
+
+#wraith-king #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#wraith-king h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#wraith-king #attributes h3, #wraith-king #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#wraith-king .section-bg {
+  background-color: #666666;
+}
+
+#anti-mage #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#anti-mage h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#anti-mage #attributes h3, #anti-mage #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#anti-mage .section-bg {
+  background-color: #666666;
+}
+
+#bounty-hunter #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#bounty-hunter h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#bounty-hunter #attributes h3, #bounty-hunter #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#bounty-hunter .section-bg {
+  background-color: #666666;
+}
+
+#drow-ranger #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#drow-ranger h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#drow-ranger #attributes h3, #drow-ranger #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#drow-ranger .section-bg {
+  background-color: #666666;
+}
+
+#ember-spirit #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#ember-spirit h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#ember-spirit #attributes h3, #ember-spirit #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#ember-spirit .section-bg {
+  background-color: #666666;
+}
+
+#gyrocopter #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#gyrocopter h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#gyrocopter #attributes h3, #gyrocopter #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#gyrocopter .section-bg {
+  background-color: #666666;
+}
+
+#juggernaut #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#juggernaut h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#juggernaut #attributes h3, #juggernaut #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#juggernaut .section-bg {
+  background-color: #666666;
+}
+
+#lone-druid #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#lone-druid h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#lone-druid #attributes h3, #lone-druid #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#lone-druid .section-bg {
+  background-color: #666666;
+}
+
+#luna #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#luna h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#luna #attributes h3, #luna #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#luna .section-bg {
+  background-color: #666666;
+}
+
+#mirana #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#mirana h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#mirana #attributes h3, #mirana #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#mirana .section-bg {
+  background-color: #666666;
+}
+
+#monkey-king #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#monkey-king h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#monkey-king #attributes h3, #monkey-king #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#monkey-king .section-bg {
+  background-color: #666666;
+}
+
+#morphling #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#morphling h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#morphling #attributes h3, #morphling #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#morphling .section-bg {
+  background-color: #666666;
+}
+
+#naga-siren #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#naga-siren h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#naga-siren #attributes h3, #naga-siren #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#naga-siren .section-bg {
+  background-color: #666666;
+}
+
+#pangolier #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#pangolier h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#pangolier #attributes h3, #pangolier #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#pangolier .section-bg {
+  background-color: #666666;
+}
+
+#phantom-lancer #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#phantom-lancer h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#phantom-lancer #attributes h3, #phantom-lancer #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#phantom-lancer .section-bg {
+  background-color: #666666;
+}
+
+#riki #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#riki h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#riki #attributes h3, #riki #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#riki .section-bg {
+  background-color: #666666;
+}
+
+#sniper #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#sniper h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#sniper #attributes h3, #sniper #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#sniper .section-bg {
+  background-color: #666666;
+}
+
+#templar-assassin #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#templar-assassin h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#templar-assassin #attributes h3, #templar-assassin #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#templar-assassin .section-bg {
+  background-color: #666666;
+}
+
+#troll-warlord #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#troll-warlord h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#troll-warlord #attributes h3, #troll-warlord #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#troll-warlord .section-bg {
+  background-color: #666666;
+}
+
+#ursa #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#ursa h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#ursa #attributes h3, #ursa #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#ursa .section-bg {
+  background-color: #666666;
+}
+
+#vengeful-spirit #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#vengeful-spirit h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#vengeful-spirit #attributes h3, #vengeful-spirit #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#vengeful-spirit .section-bg {
+  background-color: #666666;
+}
+
+#arc-warden #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#arc-warden h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#arc-warden #attributes h3, #arc-warden #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#arc-warden .section-bg {
+  background-color: #666666;
+}
+
+#bloodseeker #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#bloodseeker h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#bloodseeker #attributes h3, #bloodseeker #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#bloodseeker .section-bg {
+  background-color: #666666;
+}
+
+#broodmother #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#broodmother h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#broodmother #attributes h3, #broodmother #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#broodmother .section-bg {
+  background-color: #666666;
+}
+
+#clinkz #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#clinkz h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#clinkz #attributes h3, #clinkz #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#clinkz .section-bg {
+  background-color: #666666;
+}
+
+#faceless-void #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#faceless-void h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#faceless-void #attributes h3, #faceless-void #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#faceless-void .section-bg {
+  background-color: #666666;
+}
+
+#medusa #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#medusa h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#medusa #attributes h3, #medusa #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#medusa .section-bg {
+  background-color: #666666;
+}
+
+#meepo #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#meepo h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#meepo #attributes h3, #meepo #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#meepo .section-bg {
+  background-color: #666666;
+}
+
+#nyx-assassin #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#nyx-assassin h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#nyx-assassin #attributes h3, #nyx-assassin #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#nyx-assassin .section-bg {
+  background-color: #666666;
+}
+
+#phantom-assassin #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#phantom-assassin h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#phantom-assassin #attributes h3, #phantom-assassin #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#phantom-assassin .section-bg {
+  background-color: #666666;
+}
+
+#razor #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#razor h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#razor #attributes h3, #razor #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#razor .section-bg {
+  background-color: #666666;
+}
+
+#shadow-fiend #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#shadow-fiend h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#shadow-fiend #attributes h3, #shadow-fiend #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#shadow-fiend .section-bg {
+  background-color: #666666;
+}
+
+#slark #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#slark h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#slark #attributes h3, #slark #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#slark .section-bg {
+  background-color: #666666;
+}
+
+#spectre #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#spectre h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#spectre #attributes h3, #spectre #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#spectre .section-bg {
+  background-color: #666666;
+}
+
+#terrorblade #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#terrorblade h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#terrorblade #attributes h3, #terrorblade #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#terrorblade .section-bg {
+  background-color: #666666;
+}
+
+#venomancer #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#venomancer h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#venomancer #attributes h3, #venomancer #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#venomancer .section-bg {
+  background-color: #666666;
+}
+
+#viper #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#viper h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#viper #attributes h3, #viper #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#viper .section-bg {
+  background-color: #666666;
+}
+
+#weaver #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#weaver h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#weaver #attributes h3, #weaver #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#weaver .section-bg {
+  background-color: #666666;
+}
+
+#chen #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#chen h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#chen #attributes h3, #chen #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#chen .section-bg {
+  background-color: #666666;
+}
+
+#crystal-maiden #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#crystal-maiden h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#crystal-maiden #attributes h3, #crystal-maiden #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#crystal-maiden .section-bg {
+  background-color: #666666;
+}
+
+#dark-willow #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#dark-willow h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#dark-willow #attributes h3, #dark-willow #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#dark-willow .section-bg {
+  background-color: #666666;
+}
+
+#disruptor #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#disruptor h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#disruptor #attributes h3, #disruptor #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#disruptor .section-bg {
+  background-color: #666666;
+}
+
+#enchantress #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#enchantress h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#enchantress #attributes h3, #enchantress #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#enchantress .section-bg {
+  background-color: #666666;
+}
+
+#jakiro #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#jakiro h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#jakiro #attributes h3, #jakiro #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#jakiro .section-bg {
+  background-color: #666666;
+}
+
+#keeper-of-the-light #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#keeper-of-the-light h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#keeper-of-the-light #attributes h3, #keeper-of-the-light #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#keeper-of-the-light .section-bg {
+  background-color: #666666;
+}
+
+#lina #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#lina h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#lina #attributes h3, #lina #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#lina .section-bg {
+  background-color: #666666;
+}
+
+#natures-prophet #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#natures-prophet h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#natures-prophet #attributes h3, #natures-prophet #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#natures-prophet .section-bg {
+  background-color: #666666;
+}
+
+#ogre-magi #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#ogre-magi h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#ogre-magi #attributes h3, #ogre-magi #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#ogre-magi .section-bg {
+  background-color: #666666;
+}
+
+#oracle #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#oracle h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#oracle #attributes h3, #oracle #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#oracle .section-bg {
+  background-color: #666666;
+}
+
+#puck #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#puck h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#puck #attributes h3, #puck #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#puck .section-bg {
+  background-color: #666666;
+}
+
+#rubick #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#rubick h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#rubick #attributes h3, #rubick #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#rubick .section-bg {
+  background-color: #666666;
+}
+
+#shadow-shaman #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#shadow-shaman h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#shadow-shaman #attributes h3, #shadow-shaman #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#shadow-shaman .section-bg {
+  background-color: #666666;
+}
+
+#silencer #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#silencer h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#silencer #attributes h3, #silencer #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#silencer .section-bg {
+  background-color: #666666;
+}
+
+#skywrath-mage #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#skywrath-mage h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#skywrath-mage #attributes h3, #skywrath-mage #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#skywrath-mage .section-bg {
+  background-color: #666666;
+}
+
+#storm-spirit #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#storm-spirit h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#storm-spirit #attributes h3, #storm-spirit #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#storm-spirit .section-bg {
+  background-color: #666666;
+}
+
+#techies #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#techies h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#techies #attributes h3, #techies #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#techies .section-bg {
+  background-color: #666666;
+}
+
+#tinker #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#tinker h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#tinker #attributes h3, #tinker #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#tinker .section-bg {
+  background-color: #666666;
+}
+
+#windranger #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#windranger h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#windranger #attributes h3, #windranger #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#windranger .section-bg {
+  background-color: #666666;
+}
+
+#zeus #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#zeus h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#zeus #attributes h3, #zeus #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#zeus .section-bg {
+  background-color: #666666;
+}
+
+#ancient-apparition #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#ancient-apparition h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#ancient-apparition #attributes h3, #ancient-apparition #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#ancient-apparition .section-bg {
+  background-color: #666666;
+}
+
+#bane #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#bane h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#bane #attributes h3, #bane #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#bane .section-bg {
+  background-color: #666666;
+}
+
+#batrider #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#batrider h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#batrider #attributes h3, #batrider #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#batrider .section-bg {
+  background-color: #666666;
+}
+
+#dark-seer #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#dark-seer h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#dark-seer #attributes h3, #dark-seer #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#dark-seer .section-bg {
+  background-color: #666666;
+}
+
+#dazzle #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#dazzle h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#dazzle #attributes h3, #dazzle #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#dazzle .section-bg {
+  background-color: #666666;
+}
+
+#death-prophet #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#death-prophet h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#death-prophet #attributes h3, #death-prophet #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#death-prophet .section-bg {
+  background-color: #666666;
+}
+
+#enigma #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#enigma h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#enigma #attributes h3, #enigma #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#enigma .section-bg {
+  background-color: #666666;
+}
+
+#invoker #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#invoker h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#invoker #attributes h3, #invoker #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#invoker .section-bg {
+  background-color: #666666;
+}
+
+#leshrac #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#leshrac h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#leshrac #attributes h3, #leshrac #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#leshrac .section-bg {
+  background-color: #666666;
+}
+
+#lich #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#lich h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#lich #attributes h3, #lich #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#lich .section-bg {
+  background-color: #666666;
+}
+
+#lion #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#lion h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#lion #attributes h3, #lion #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#lion .section-bg {
+  background-color: #666666;
+}
+
+#necrophos #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#necrophos h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#necrophos #attributes h3, #necrophos #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#necrophos .section-bg {
+  background-color: #666666;
+}
+
+#outworld-devourer #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#outworld-devourer h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#outworld-devourer #attributes h3, #outworld-devourer #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#outworld-devourer .section-bg {
+  background-color: #666666;
+}
+
+#pugna #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#pugna h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#pugna #attributes h3, #pugna #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#pugna .section-bg {
+  background-color: #666666;
+}
+
+#queen-of-pain #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#queen-of-pain h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#queen-of-pain #attributes h3, #queen-of-pain #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#queen-of-pain .section-bg {
+  background-color: #666666;
+}
+
+#shadow-demon #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#shadow-demon h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#shadow-demon #attributes h3, #shadow-demon #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#shadow-demon .section-bg {
+  background-color: #666666;
+}
+
+#visage #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#visage h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#visage #attributes h3, #visage #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#visage .section-bg {
+  background-color: #666666;
+}
+
+#warlock #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#warlock h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#warlock #attributes h3, #warlock #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#warlock .section-bg {
+  background-color: #666666;
+}
+
+#winter-wyvern #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#winter-wyvern h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#winter-wyvern #attributes h3, #winter-wyvern #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#winter-wyvern .section-bg {
+  background-color: #666666;
+}
+
+#witch-doctor #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#witch-doctor h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#witch-doctor #attributes h3, #witch-doctor #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#witch-doctor .section-bg {
+  background-color: #666666;
+}
+
+#heroname #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#heroname h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#heroname #attributes h3, #heroname #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#heroname .section-bg {
+  background-color: #666666;
+}
+
+#heroname #skills > .row {
+  border: 16px outset rgb(111, 222, 33);
+}
+
+#heroname h2 {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#heroname #attributes h3, #heroname #skills h3 {
+  background-color: #CCCCCC;
+  border: 2px solid #ffffff;
+  color: #F9F9F9;
+}
+
+#heroname .section-bg {
+  background-color: #666666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

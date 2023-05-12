@@ -165,2394 +165,1608 @@
 
 /* OFFICIAL HERO COLORS */
 
-#abaddon #skills > .row {
-  border: 16px outset rgba(119, 107, 187, 0.25);
-}
 
+#abaddon { color: #0C141E; }
+#abaddon #skills > .row { border: 16px outset #776BBB44; }
+#abaddon .section-bg { background-color: #455D8F; }
 #abaddon h2 {
   background-color: #0C141E;
   border: 4px solid #776BBB;
   color: #F9F9F9;
 }
-
 #abaddon #attributes h3, #abaddon #skills h3 {
   background-color: #0C141E;
   border: 2px solid #776BBB;
   color: #F9F9F9;
 }
 
-#abaddon .section-bg {
-  background-color: #455D8F;
-}
-
-#alchemist #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
+#alchemist { color: #45255F; }
+#alchemist #skills > .row { border: 16px outset #9428BE44; }
+#alchemist .section-bg { background-color: #936ABD; }
 #alchemist h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
+  background-color: #45255F;
+  border: 4px solid #9428BE;
   color: #F9F9F9;
 }
-
 #alchemist #attributes h3, #alchemist #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
+  background-color: #45255F;
+  border: 2px solid #9428BE;
   color: #F9F9F9;
 }
 
-#alchemist .section-bg {
-  background-color: #666666;
-}
-
-#axe #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#axe h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#axe #attributes h3, #axe #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#axe .section-bg {
-  background-color: #666666;
-}
-
-#beastmaster #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#beastmaster h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#beastmaster #attributes h3, #beastmaster #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#beastmaster .section-bg {
-  background-color: #666666;
-}
-
-#brewmaster #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#brewmaster h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#brewmaster #attributes h3, #brewmaster #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#brewmaster .section-bg {
-  background-color: #666666;
-}
-
-#bristleback #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#bristleback h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#bristleback #attributes h3, #bristleback #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#bristleback .section-bg {
-  background-color: #666666;
-}
-
-#centaur-warrunner #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#centaur-warrunner h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#centaur-warrunner #attributes h3, #centaur-warrunner #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#centaur-warrunner .section-bg {
-  background-color: #666666;
-}
-
-#clockwerk #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#clockwerk h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#clockwerk #attributes h3, #clockwerk #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#clockwerk .section-bg {
-  background-color: #666666;
-}
-
-#dragon-knight #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#dragon-knight h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#dragon-knight #attributes h3, #dragon-knight #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#dragon-knight .section-bg {
-  background-color: #666666;
-}
-
-#earth-spirit #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#earth-spirit h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#earth-spirit #attributes h3, #earth-spirit #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#earth-spirit .section-bg {
-  background-color: #666666;
-}
-
-#earthshaker #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#earthshaker h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#earthshaker #attributes h3, #earthshaker #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#earthshaker .section-bg {
-  background-color: #666666;
-}
-
-#elder-titan #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#elder-titan h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#elder-titan #attributes h3, #elder-titan #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#elder-titan .section-bg {
-  background-color: #666666;
-}
-
-#huskar #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#huskar h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#huskar #attributes h3, #huskar #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#huskar .section-bg {
-  background-color: #666666;
-}
-
-#io #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#io h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#io #attributes h3, #io #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#io .section-bg {
-  background-color: #666666;
-}
-
-#kunkka #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#kunkka h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#kunkka #attributes h3, #kunkka #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#kunkka .section-bg {
-  background-color: #666666;
-}
-
-#legion-commander #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#legion-commander h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#legion-commander #attributes h3, #legion-commander #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#legion-commander .section-bg {
-  background-color: #666666;
-}
-
-#omniknight #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#omniknight h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#omniknight #attributes h3, #omniknight #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#omniknight .section-bg {
-  background-color: #666666;
-}
-
-#phoenix #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#phoenix h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#phoenix #attributes h3, #phoenix #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#phoenix .section-bg {
-  background-color: #666666;
-}
-
-#sven #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#sven h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#sven #attributes h3, #sven #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#sven .section-bg {
-  background-color: #666666;
-}
-
-#timbersaw #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#timbersaw h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#timbersaw #attributes h3, #timbersaw #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#timbersaw .section-bg {
-  background-color: #666666;
-}
-
-#tiny #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#tiny h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#tiny #attributes h3, #tiny #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#tiny .section-bg {
-  background-color: #666666;
-}
-
-#treant-protector #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#treant-protector h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#treant-protector #attributes h3, #treant-protector #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#treant-protector .section-bg {
-  background-color: #666666;
-}
-
-#tusk #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#tusk h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#tusk #attributes h3, #tusk #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#tusk .section-bg {
-  background-color: #666666;
-}
-
-#abaddon #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#abaddon h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#abaddon #attributes h3, #abaddon #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#abaddon .section-bg {
-  background-color: #666666;
-}
-
-#chaos-knight #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#chaos-knight h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#chaos-knight #attributes h3, #chaos-knight #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#chaos-knight .section-bg {
-  background-color: #666666;
-}
-
-#doom #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#doom h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#doom #attributes h3, #doom #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#doom .section-bg {
-  background-color: #666666;
-}
-
-#lifestealer #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#lifestealer h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#lifestealer #attributes h3, #lifestealer #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#lifestealer .section-bg {
-  background-color: #666666;
-}
-
-#lycan #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#lycan h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#lycan #attributes h3, #lycan #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#lycan .section-bg {
-  background-color: #666666;
-}
-
-#magnus #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#magnus h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#magnus #attributes h3, #magnus #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#magnus .section-bg {
-  background-color: #666666;
-}
-
-#night-stalker #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#night-stalker h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#night-stalker #attributes h3, #night-stalker #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#night-stalker .section-bg {
-  background-color: #666666;
-}
-
-#pudge #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#pudge h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#pudge #attributes h3, #pudge #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#pudge .section-bg {
-  background-color: #666666;
-}
-
-#sand-king #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#sand-king h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#sand-king #attributes h3, #sand-king #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#sand-king .section-bg {
-  background-color: #666666;
-}
-
-#slardar #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#slardar h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#slardar #attributes h3, #slardar #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#slardar .section-bg {
-  background-color: #666666;
-}
-
-#spirit-breaker #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#spirit-breaker h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#spirit-breaker #attributes h3, #spirit-breaker #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#spirit-breaker .section-bg {
-  background-color: #666666;
-}
-
-#tidehunter #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#tidehunter h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#tidehunter #attributes h3, #tidehunter #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#tidehunter .section-bg {
-  background-color: #666666;
-}
-
-#underlord #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#underlord h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#underlord #attributes h3, #underlord #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#underlord .section-bg {
-  background-color: #666666;
-}
-
-#undying #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#undying h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#undying #attributes h3, #undying #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#undying .section-bg {
-  background-color: #666666;
-}
-
-#wraith-king #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#wraith-king h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#wraith-king #attributes h3, #wraith-king #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#wraith-king .section-bg {
-  background-color: #666666;
-}
-
-#anti-mage #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#anti-mage h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#anti-mage #attributes h3, #anti-mage #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#anti-mage .section-bg {
-  background-color: #666666;
-}
-
-#bounty-hunter #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#bounty-hunter h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#bounty-hunter #attributes h3, #bounty-hunter #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#bounty-hunter .section-bg {
-  background-color: #666666;
-}
-
-#drow-ranger #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#drow-ranger h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#drow-ranger #attributes h3, #drow-ranger #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#drow-ranger .section-bg {
-  background-color: #666666;
-}
-
-#ember-spirit #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#ember-spirit h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#ember-spirit #attributes h3, #ember-spirit #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#ember-spirit .section-bg {
-  background-color: #666666;
-}
-
-#gyrocopter #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#gyrocopter h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#gyrocopter #attributes h3, #gyrocopter #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#gyrocopter .section-bg {
-  background-color: #666666;
-}
-
-#juggernaut #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#juggernaut h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#juggernaut #attributes h3, #juggernaut #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#juggernaut .section-bg {
-  background-color: #666666;
-}
-
-#lone-druid #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#lone-druid h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#lone-druid #attributes h3, #lone-druid #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#lone-druid .section-bg {
-  background-color: #666666;
-}
-
-#luna #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#luna h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#luna #attributes h3, #luna #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#luna .section-bg {
-  background-color: #666666;
-}
-
-#mirana #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#mirana h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#mirana #attributes h3, #mirana #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#mirana .section-bg {
-  background-color: #666666;
-}
-
-#monkey-king #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#monkey-king h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#monkey-king #attributes h3, #monkey-king #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#monkey-king .section-bg {
-  background-color: #666666;
-}
-
-#morphling #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#morphling h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#morphling #attributes h3, #morphling #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#morphling .section-bg {
-  background-color: #666666;
-}
-
-#naga-siren #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#naga-siren h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#naga-siren #attributes h3, #naga-siren #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#naga-siren .section-bg {
-  background-color: #666666;
-}
-
-#pangolier #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#pangolier h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#pangolier #attributes h3, #pangolier #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#pangolier .section-bg {
-  background-color: #666666;
-}
-
-#phantom-lancer #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#phantom-lancer h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#phantom-lancer #attributes h3, #phantom-lancer #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#phantom-lancer .section-bg {
-  background-color: #666666;
-}
-
-#riki #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#riki h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#riki #attributes h3, #riki #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#riki .section-bg {
-  background-color: #666666;
-}
-
-#sniper #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#sniper h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#sniper #attributes h3, #sniper #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#sniper .section-bg {
-  background-color: #666666;
-}
-
-#templar-assassin #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#templar-assassin h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#templar-assassin #attributes h3, #templar-assassin #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#templar-assassin .section-bg {
-  background-color: #666666;
-}
-
-#troll-warlord #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#troll-warlord h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#troll-warlord #attributes h3, #troll-warlord #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#troll-warlord .section-bg {
-  background-color: #666666;
-}
-
-#ursa #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#ursa h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#ursa #attributes h3, #ursa #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#ursa .section-bg {
-  background-color: #666666;
-}
-
-#vengeful-spirit #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#vengeful-spirit h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#vengeful-spirit #attributes h3, #vengeful-spirit #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#vengeful-spirit .section-bg {
-  background-color: #666666;
-}
-
-#arc-warden #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#arc-warden h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#arc-warden #attributes h3, #arc-warden #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#arc-warden .section-bg {
-  background-color: #666666;
-}
-
-#bloodseeker #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#bloodseeker h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#bloodseeker #attributes h3, #bloodseeker #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#bloodseeker .section-bg {
-  background-color: #666666;
-}
-
-#broodmother #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#broodmother h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#broodmother #attributes h3, #broodmother #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#broodmother .section-bg {
-  background-color: #666666;
-}
-
-#clinkz #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#clinkz h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#clinkz #attributes h3, #clinkz #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#clinkz .section-bg {
-  background-color: #666666;
-}
-
-#faceless-void #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#faceless-void h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#faceless-void #attributes h3, #faceless-void #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#faceless-void .section-bg {
-  background-color: #666666;
-}
-
-#medusa #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#medusa h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#medusa #attributes h3, #medusa #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#medusa .section-bg {
-  background-color: #666666;
-}
-
-#meepo #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#meepo h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#meepo #attributes h3, #meepo #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#meepo .section-bg {
-  background-color: #666666;
-}
-
-#nyx-assassin #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#nyx-assassin h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#nyx-assassin #attributes h3, #nyx-assassin #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#nyx-assassin .section-bg {
-  background-color: #666666;
-}
-
-#phantom-assassin #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#phantom-assassin h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#phantom-assassin #attributes h3, #phantom-assassin #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#phantom-assassin .section-bg {
-  background-color: #666666;
-}
-
-#razor #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#razor h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#razor #attributes h3, #razor #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#razor .section-bg {
-  background-color: #666666;
-}
-
-#shadow-fiend #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#shadow-fiend h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#shadow-fiend #attributes h3, #shadow-fiend #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#shadow-fiend .section-bg {
-  background-color: #666666;
-}
-
-#slark #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#slark h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#slark #attributes h3, #slark #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#slark .section-bg {
-  background-color: #666666;
-}
-
-#spectre #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#spectre h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#spectre #attributes h3, #spectre #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#spectre .section-bg {
-  background-color: #666666;
-}
-
-#terrorblade #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#terrorblade h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#terrorblade #attributes h3, #terrorblade #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#terrorblade .section-bg {
-  background-color: #666666;
-}
-
-#venomancer #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#venomancer h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#venomancer #attributes h3, #venomancer #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#venomancer .section-bg {
-  background-color: #666666;
-}
-
-#viper #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#viper h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#viper #attributes h3, #viper #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#viper .section-bg {
-  background-color: #666666;
-}
-
-#weaver #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#weaver h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#weaver #attributes h3, #weaver #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#weaver .section-bg {
-  background-color: #666666;
-}
-
-#chen #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#chen h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#chen #attributes h3, #chen #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#chen .section-bg {
-  background-color: #666666;
-}
-
-#crystal-maiden #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#crystal-maiden h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#crystal-maiden #attributes h3, #crystal-maiden #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#crystal-maiden .section-bg {
-  background-color: #666666;
-}
-
-#dark-willow #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#dark-willow h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#dark-willow #attributes h3, #dark-willow #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#dark-willow .section-bg {
-  background-color: #666666;
-}
-
-#disruptor #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#disruptor h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#disruptor #attributes h3, #disruptor #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#disruptor .section-bg {
-  background-color: #666666;
-}
-
-#enchantress #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#enchantress h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#enchantress #attributes h3, #enchantress #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#enchantress .section-bg {
-  background-color: #666666;
-}
-
-#jakiro #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#jakiro h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#jakiro #attributes h3, #jakiro #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#jakiro .section-bg {
-  background-color: #666666;
-}
-
-#keeper-of-the-light #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#keeper-of-the-light h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#keeper-of-the-light #attributes h3, #keeper-of-the-light #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#keeper-of-the-light .section-bg {
-  background-color: #666666;
-}
-
-#lina #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#lina h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#lina #attributes h3, #lina #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#lina .section-bg {
-  background-color: #666666;
-}
-
-#natures-prophet #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#natures-prophet h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#natures-prophet #attributes h3, #natures-prophet #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#natures-prophet .section-bg {
-  background-color: #666666;
-}
-
-#ogre-magi #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#ogre-magi h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#ogre-magi #attributes h3, #ogre-magi #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#ogre-magi .section-bg {
-  background-color: #666666;
-}
-
-#oracle #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#oracle h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#oracle #attributes h3, #oracle #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#oracle .section-bg {
-  background-color: #666666;
-}
-
-#puck #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#puck h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#puck #attributes h3, #puck #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#puck .section-bg {
-  background-color: #666666;
-}
-
-#rubick #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#rubick h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#rubick #attributes h3, #rubick #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#rubick .section-bg {
-  background-color: #666666;
-}
-
-#shadow-shaman #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#shadow-shaman h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#shadow-shaman #attributes h3, #shadow-shaman #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#shadow-shaman .section-bg {
-  background-color: #666666;
-}
-
-#silencer #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#silencer h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#silencer #attributes h3, #silencer #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#silencer .section-bg {
-  background-color: #666666;
-}
-
-#skywrath-mage #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#skywrath-mage h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#skywrath-mage #attributes h3, #skywrath-mage #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#skywrath-mage .section-bg {
-  background-color: #666666;
-}
-
-#storm-spirit #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#storm-spirit h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#storm-spirit #attributes h3, #storm-spirit #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#storm-spirit .section-bg {
-  background-color: #666666;
-}
-
-#techies #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#techies h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#techies #attributes h3, #techies #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#techies .section-bg {
-  background-color: #666666;
-}
-
-#tinker #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#tinker h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#tinker #attributes h3, #tinker #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#tinker .section-bg {
-  background-color: #666666;
-}
-
-#windranger #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#windranger h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#windranger #attributes h3, #windranger #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#windranger .section-bg {
-  background-color: #666666;
-}
-
-#zeus #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#zeus h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#zeus #attributes h3, #zeus #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#zeus .section-bg {
-  background-color: #666666;
-}
-
-#ancient-apparition #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
+#ancient-apparition { color: #164A6A; }
+#ancient-apparition #skills > .row { border: 16px outset #4B94EC44; }
+#ancient-apparition .section-bg { background-color: #7ADBEA; }
 #ancient-apparition h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
+  background-color: #164A6A;
+  border: 4px solid #4B94EC;
   color: #F9F9F9;
 }
-
 #ancient-apparition #attributes h3, #ancient-apparition #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
+  background-color: #164A6A;
+  border: 2px solid #4B94EC;
   color: #F9F9F9;
 }
 
-#ancient-apparition .section-bg {
-  background-color: #666666;
+#anti-mage { color: #0F0A5A; }
+#anti-mage #skills > .row { border: 16px outset #C6C3F644; }
+#anti-mage .section-bg { background-color: #4C3754; }
+#anti-mage h2 {
+  background-color: #0F0A5A;
+  border: 4px solid #C6C3F6;
+  color: #F9F9F9;
+}
+#anti-mage #attributes h3, #anti-mage #skills h3 {
+  background-color: #0F0A5A;
+  border: 2px solid #C6C3F6;
+  color: #F9F9F9;
 }
 
-#bane #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
+#arc-warden { color: #3C1E5C; }
+#arc-warden #skills > .row { border: 16px outset #63F2FC44; }
+#arc-warden .section-bg { background-color: #3F99B8; }
+#arc-warden h2 {
+  background-color: #3C1E5C;
+  border: 4px solid #63F2FC;
+  color: #F9F9F9;
+}
+#arc-warden #attributes h3, #arc-warden #skills h3 {
+  background-color: #3C1E5C;
+  border: 2px solid #63F2FC;
+  color: #F9F9F9;
 }
 
+#axe { color: #731C0C; }
+#axe #skills > .row { border: 16px outset #E9213D44; }
+#axe .section-bg { background-color: #BB8622; }
+#axe h2 {
+  background-color: #731C0C;
+  border: 4px solid #E9213D;
+  color: #F9F9F9;
+}
+#axe #attributes h3, #axe #skills h3 {
+  background-color: #731C0C;
+  border: 2px solid #E9213D;
+  color: #F9F9F9;
+}
+#bane { color: #4E316D; }
+#bane #skills > .row { border: 16px outset #C412B644; }
+#bane .section-bg { background-color: #CC9EDD; }
 #bane h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
+  background-color: #4E316D;
+  border: 4px solid #C412B6;
   color: #F9F9F9;
 }
-
 #bane #attributes h3, #bane #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
+  background-color: #4E316D;
+  border: 2px solid #C412B6;
   color: #F9F9F9;
 }
-
-#bane .section-bg {
-  background-color: #666666;
-}
-
-#batrider #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
+#batrider { color: #662005; }
+#batrider #skills > .row { border: 16px outset #F2401344; }
+#batrider .section-bg { background-color: #F06351; }
 #batrider h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
+  background-color: #662005;
+  border: 4px solid #F24013;
   color: #F9F9F9;
 }
-
 #batrider #attributes h3, #batrider #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
+  background-color: #662005;
+  border: 2px solid #F24013;
   color: #F9F9F9;
 }
-
-#batrider .section-bg {
-  background-color: #666666;
+#beastmaster { color: #634228; }
+#beastmaster #skills > .row { border: 16px outset #C4110E44; }
+#beastmaster .section-bg { background-color: #BC8657; }
+#beastmaster h2 {
+  background-color: #634228;
+  border: 4px solid #C4110E;
+  color: #F9F9F9;
 }
-
-#dark-seer #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
+#beastmaster #attributes h3, #beastmaster #skills h3 {
+  background-color: #634228;
+  border: 2px solid #C4110E;
+  color: #F9F9F9;
 }
-
+#bloodseeker { color: #530C00; }
+#bloodseeker #skills > .row { border: 16px outset #D30A0044; }
+#bloodseeker .section-bg { background-color: #AD5737; }
+#bloodseeker h2 {
+  background-color: #530C00;
+  border: 4px solid #D30A00;
+  color: #F9F9F9;
+}
+#bloodseeker #attributes h3, #bloodseeker #skills h3 {
+  background-color: #530C00;
+  border: 2px solid #D30A00;
+  color: #F9F9F9;
+}
+#bounty-hunter { color: #822615; }
+#bounty-hunter #skills > .row { border: 16px outset #F9D42D44; }
+#bounty-hunter .section-bg { background-color: #B75238; }
+#bounty-hunter h2 {
+  background-color: #822615;
+  border: 4px solid #F9D42D;
+  color: #F9F9F9;
+}
+#bounty-hunter #attributes h3, #bounty-hunter #skills h3 {
+  background-color: #822615;
+  border: 2px solid #F9D42D;
+  color: #F9F9F9;
+}
+#brewmaster { color: #283309; }
+#brewmaster #skills > .row { border: 16px outset #F5B12C44; }
+#brewmaster .section-bg { background-color: #958E41; }
+#brewmaster h2 {
+  background-color: #283309;
+  border: 4px solid #F5B12C;
+  color: #F9F9F9;
+}
+#brewmaster #attributes h3, #brewmaster #skills h3 {
+  background-color: #283309;
+  border: 2px solid #F5B12C;
+  color: #F9F9F9;
+}
+#bristleback { color: #394128; }
+#bristleback #skills > .row { border: 16px outset #96C92544; }
+#bristleback .section-bg { background-color: #D5943D; }
+#bristleback h2 {
+  background-color: #394128;
+  border: 4px solid #96C925;
+  color: #F9F9F9;
+}
+#bristleback #attributes h3, #bristleback #skills h3 {
+  background-color: #394128;
+  border: 2px solid #96C925;
+  color: #F9F9F9;
+}
+#broodmother { color: #1C2230; }
+#broodmother #skills > .row { border: 16px outset #B0000144; }
+#broodmother .section-bg { background-color: #8C9CBA; }
+#broodmother h2 {
+  background-color: #1C2230;
+  border: 4px solid #B00001;
+  color: #F9F9F9;
+}
+#broodmother #attributes h3, #broodmother #skills h3 {
+  background-color: #1C2230;
+  border: 2px solid #B00001;
+  color: #F9F9F9;
+}
+#centaur-warrunner { color: #78160F; }
+#centaur-warrunner #skills > .row { border: 16px outset #E0858444; }
+#centaur-warrunner .section-bg { background-color: #D22E25; }
+#centaur-warrunner h2 {
+  background-color: #78160F;
+  border: 4px solid #E08584;
+  color: #F9F9F9;
+}
+#centaur-warrunner #attributes h3, #centaur-warrunner #skills h3 {
+  background-color: #78160F;
+  border: 2px solid #E08584;
+  color: #F9F9F9;
+}
+#chaos-knight { color: #3B0E1D; }
+#chaos-knight #skills > .row { border: 16px outset #E17E0044; }
+#chaos-knight .section-bg { background-color: #AF4E04; }
+#chaos-knight h2 {
+  background-color: #3B0E1D;
+  border: 4px solid #E17E00;
+  color: #F9F9F9;
+}
+#chaos-knight #attributes h3, #chaos-knight #skills h3 {
+  background-color: #3B0E1D;
+  border: 2px solid #E17E00;
+  color: #F9F9F9;
+}
+#chen { color: #474059; }
+#chen #skills > .row { border: 16px outset #F8EFAF44; }
+#chen .section-bg { background-color: #C8B0B0; }
+#chen h2 {
+  background-color: #474059;
+  border: 4px solid #F8EFAF;
+  color: #F9F9F9;
+}
+#chen #attributes h3, #chen #skills h3 {
+  background-color: #474059;
+  border: 2px solid #F8EFAF;
+  color: #F9F9F9;
+}
+#clinkz { color: #6C1A1E; }
+#clinkz #skills > .row { border: 16px outset #DF5A2544; }
+#clinkz .section-bg { background-color: #EBC57A; }
+#clinkz h2 {
+  background-color: #6C1A1E;
+  border: 4px solid #DF5A25;
+  color: #F9F9F9;
+}
+#clinkz #attributes h3, #clinkz #skills h3 {
+  background-color: #6C1A1E;
+  border: 2px solid #DF5A25;
+  color: #F9F9F9;
+}
+#clockwerk { color: #BD3200; }
+#clockwerk #skills > .row { border: 16px outset #FFEFB344; }
+#clockwerk .section-bg { background-color: #D4A296; }
+#clockwerk h2 {
+  background-color: #BD3200;
+  border: 4px solid #FFEFB3;
+  color: #F9F9F9;
+}
+#clockwerk #attributes h3, #clockwerk #skills h3 {
+  background-color: #BD3200;
+  border: 2px solid #FFEFB3;
+  color: #F9F9F9;
+}
+#crystal-maiden { color: #062453; }
+#crystal-maiden #skills > .row { border: 16px outset #36719C44; }
+#crystal-maiden .section-bg { background-color: #A9D8F1; }
+#crystal-maiden h2 {
+  background-color: #062453;
+  border: 4px solid #36719C;
+  color: #F9F9F9;
+}
+#crystal-maiden #attributes h3, #crystal-maiden #skills h3 {
+  background-color: #062453;
+  border: 2px solid #36719C;
+  color: #F9F9F9;
+}
+#dark-seer { color: #13234A; }
+#dark-seer #skills > .row { border: 16px outset #BE76FE44; }
+#dark-seer .section-bg { background-color: #D2C4F4; }
 #dark-seer h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
+  background-color: #13234A;
+  border: 4px solid #BE76FE;
   color: #F9F9F9;
 }
-
 #dark-seer #attributes h3, #dark-seer #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
+  background-color: #13234A;
+  border: 2px solid #BE76FE;
   color: #F9F9F9;
 }
-
-#dark-seer .section-bg {
-  background-color: #666666;
+#dark-willow { color: #671645; }
+#dark-willow #skills > .row { border: 16px outset #E644CA44; }
+#dark-willow .section-bg { background-color: #CDD6E4; }
+#dark-willow h2 {
+  background-color: #671645;
+  border: 4px solid #E644CA;
+  color: #F9F9F9;
 }
-
-#dazzle #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
+#dark-willow #attributes h3, #dark-willow #skills h3 {
+  background-color: #671645;
+  border: 2px solid #E644CA;
+  color: #F9F9F9;
 }
-
+#dawnbreaker { color: #42300C; }
+#dawnbreaker #skills > .row { border: 16px outset #FFFEC744; }
+#dawnbreaker .section-bg { background-color: #ECC95F; }
+#dawnbreaker h2 {
+  background-color: #42300C;
+  border: 4px solid #FFFEC7;
+  color: #F9F9F9;
+}
+#dawnbreaker #attributes h3, #dawnbreaker #skills h3 {
+  background-color: #42300C;
+  border: 2px solid #FFFEC7;
+  color: #F9F9F9;
+}
+#dazzle { color: #A6185A; }
+#dazzle #skills > .row { border: 16px outset #FED3FA44; }
+#dazzle .section-bg { background-color: #D065AC; }
 #dazzle h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
+  background-color: #A6185A;
+  border: 4px solid #FED3FA;
   color: #F9F9F9;
 }
-
 #dazzle #attributes h3, #dazzle #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
+  background-color: #A6185A;
+  border: 2px solid #FED3FA;
   color: #F9F9F9;
 }
-
-#dazzle .section-bg {
-  background-color: #666666;
-}
-
-#death-prophet #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
+#death-prophet { color: #502231; }
+#death-prophet #skills > .row { border: 16px outset #6DF8AB44; }
+#death-prophet .section-bg { background-color: #CBD1B3; }
 #death-prophet h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
+  background-color: #502231;
+  border: 4px solid #6DF8AB;
   color: #F9F9F9;
 }
-
 #death-prophet #attributes h3, #death-prophet #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
+  background-color: #502231;
+  border: 2px solid #6DF8AB;
   color: #F9F9F9;
 }
-
-#death-prophet .section-bg {
-  background-color: #666666;
+#disruptor { color: #5B1A3F; }
+#disruptor #skills > .row { border: 16px outset #0172FF44; }
+#disruptor .section-bg { background-color: #7BC2D7; }
+#disruptor h2 {
+  background-color: #5B1A3F;
+  border: 4px solid #0172FF;
+  color: #F9F9F9;
 }
-
-#enigma #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
+#disruptor #attributes h3, #disruptor #skills h3 {
+  background-color: #5B1A3F;
+  border: 2px solid #0172FF;
+  color: #F9F9F9;
 }
-
+#doom { color: #430100; }
+#doom #skills > .row { border: 16px outset #FA910744; }
+#doom .section-bg { background-color: #AF1D00; }
+#doom h2 {
+  background-color: #430100;
+  border: 4px solid #FA9107;
+  color: #F9F9F9;
+}
+#doom #attributes h3, #doom #skills h3 {
+  background-color: #430100;
+  border: 2px solid #FA9107;
+  color: #F9F9F9;
+}
+#dragon-knight { color: #471409; }
+#dragon-knight #skills > .row { border: 16px outset #EF5B0244; }
+#dragon-knight .section-bg { background-color: #A191A2; }
+#dragon-knight h2 {
+  background-color: #471409;
+  border: 4px solid #EF5B02;
+  color: #F9F9F9;
+}
+#dragon-knight #attributes h3, #dragon-knight #skills h3 {
+  background-color: #471409;
+  border: 2px solid #EF5B02;
+  color: #F9F9F9;
+}
+#drow-ranger { color: #213A57; }
+#drow-ranger #skills > .row { border: 16px outset #6C90C144; }
+#drow-ranger .section-bg { background-color: #BAD1F5; }
+#drow-ranger h2 {
+  background-color: #213A57;
+  border: 4px solid #6C90C1;
+  color: #F9F9F9;
+}
+#drow-ranger #attributes h3, #drow-ranger #skills h3 {
+  background-color: #213A57;
+  border: 2px solid #6C90C1;
+  color: #F9F9F9;
+}
+#earth-spirit { color: #2A3305; }
+#earth-spirit #skills > .row { border: 16px outset #AAEC0144; }
+#earth-spirit .section-bg { background-color: #8C9F7B; }
+#earth-spirit h2 {
+  background-color: #2A3305;
+  border: 4px solid #AAEC01;
+  color: #F9F9F9;
+}
+#earth-spirit #attributes h3, #earth-spirit #skills h3 {
+  background-color: #2A3305;
+  border: 2px solid #AAEC01;
+  color: #F9F9F9;
+}
+#earthshaker { color: #5C3B21; }
+#earthshaker #skills > .row { border: 16px outset #E13C0044; }
+#earthshaker .section-bg { background-color: #D69C40; }
+#earthshaker h2 {
+  background-color: #5C3B21;
+  border: 4px solid #E13C00;
+  color: #F9F9F9;
+}
+#earthshaker #attributes h3, #earthshaker #skills h3 {
+  background-color: #5C3B21;
+  border: 2px solid #E13C00;
+  color: #F9F9F9;
+}
+#elder-titan { color: #323525; }
+#elder-titan #skills > .row { border: 16px outset #0EECD944; }
+#elder-titan .section-bg { background-color: #3ABC8D; }
+#elder-titan h2 {
+  background-color: #323525;
+  border: 4px solid #0EECD9;
+  color: #F9F9F9;
+}
+#elder-titan #attributes h3, #elder-titan #skills h3 {
+  background-color: #323525;
+  border: 2px solid #0EECD9;
+  color: #F9F9F9;
+}
+#ember-spirit { color: #4C2724; }
+#ember-spirit #skills > .row { border: 16px outset #E4620544; }
+#ember-spirit .section-bg { background-color: #FEC938; }
+#ember-spirit h2 {
+  background-color: #4C2724;
+  border: 4px solid #E46205;
+  color: #F9F9F9;
+}
+#ember-spirit #attributes h3, #ember-spirit #skills h3 {
+  background-color: #4C2724;
+  border: 2px solid #E46205;
+  color: #F9F9F9;
+}
+#enchantress { color: #374D31; }
+#enchantress #skills > .row { border: 16px outset #FCF8B844; }
+#enchantress .section-bg { background-color: #AFCB66; }
+#enchantress h2 {
+  background-color: #374D31;
+  border: 4px solid #FCF8B8;
+  color: #F9F9F9;
+}
+#enchantress #attributes h3, #enchantress #skills h3 {
+  background-color: #374D31;
+  border: 2px solid #FCF8B8;
+  color: #F9F9F9;
+}
+#enigma { color: #18004E; }
+#enigma #skills > .row { border: 16px outset #C7B2F844; }
+#enigma .section-bg { background-color: #9161FA; }
 #enigma h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
+  background-color: #18004E;
+  border: 4px solid #C7B2F8;
   color: #F9F9F9;
 }
-
 #enigma #attributes h3, #enigma #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
+  background-color: #18004E;
+  border: 2px solid #C7B2F8;
   color: #F9F9F9;
 }
-
-#enigma .section-bg {
-  background-color: #666666;
+#faceless-void { color: #331C37; }
+#faceless-void #skills > .row { border: 16px outset #561E7E44; }
+#faceless-void .section-bg { background-color: #8B60A2; }
+#faceless-void h2 {
+  background-color: #331C37;
+  border: 4px solid #561E7E;
+  color: #F9F9F9;
 }
-
-#invoker #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
+#faceless-void #attributes h3, #faceless-void #skills h3 {
+  background-color: #331C37;
+  border: 2px solid #561E7E;
+  color: #F9F9F9;
 }
-
+#grimstroke { color: #420000; }
+#grimstroke #skills > .row { border: 16px outset #3DB79944; }
+#grimstroke .section-bg { background-color: #616464; }
+#grimstroke h2 {
+  background-color: #420000;
+  border: 4px solid #3DB799;
+  color: #F9F9F9;
+}
+#grimstroke #attributes h3, #grimstroke #skills h3 {
+  background-color: #420000;
+  border: 2px solid #3DB799;
+  color: #F9F9F9;
+}
+#gyrocopter { color: #121619; }
+#gyrocopter #skills > .row { border: 16px outset #A4101144; }
+#gyrocopter .section-bg { background-color: #64DCDA; }
+#gyrocopter h2 {
+  background-color: #121619;
+  border: 4px solid #A41011;
+  color: #F9F9F9;
+}
+#gyrocopter #attributes h3, #gyrocopter #skills h3 {
+  background-color: #121619;
+  border: 2px solid #A41011;
+  color: #F9F9F9;
+}
+#hoodwink { color: #192B04; }
+#hoodwink #skills > .row { border: 16px outset #72B65044; }
+#hoodwink .section-bg { background-color: #C2F57D; }
+#hoodwink h2 {
+  background-color: #192B04;
+  border: 4px solid #72B650;
+  color: #F9F9F9;
+}
+#hoodwink #attributes h3, #hoodwink #skills h3 {
+  background-color: #192B04;
+  border: 2px solid #72B650;
+  color: #F9F9F9;
+}
+#huskar { color: #550100; }
+#huskar #skills > .row { border: 16px outset #FFC96E44; }
+#huskar .section-bg { background-color: #327B5B; }
+#huskar h2 {
+  background-color: #550100;
+  border: 4px solid #FFC96E;
+  color: #F9F9F9;
+}
+#huskar #attributes h3, #huskar #skills h3 {
+  background-color: #550100;
+  border: 2px solid #FFC96E;
+  color: #F9F9F9;
+}
+#invoker { color: #4F1D4D; }
+#invoker #skills > .row { border: 16px outset #EFCE8944; }
+#invoker .section-bg { background-color: #DCDADC; }
 #invoker h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
+  background-color: #A6E7FA;
+  border: 4px solid #EFCE89;
   color: #F9F9F9;
 }
-
 #invoker #attributes h3, #invoker #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
+  background-color: #A6E7FA;
+  border: 2px solid #EFCE89;
   color: #F9F9F9;
 }
-
-#invoker .section-bg {
-  background-color: #666666;
+#io { color: #203F78; }
+#io #skills > .row { border: 16px outset #1C5DD844; }
+#io .section-bg { background-color: #BCE2FE; }
+#io h2 {
+  background-color: #203F78;
+  border: 4px solid #1C5DD8;
+  color: #F9F9F9;
 }
-
-#leshrac #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
+#io #attributes h3, #io #skills h3 {
+  background-color: #203F78;
+  border: 2px solid #1C5DD8;
+  color: #F9F9F9;
 }
-
+#jakiro { color: #70382F; }
+#jakiro #skills > .row { border: 16px outset #B4533D44; }
+#jakiro .section-bg { background-color: #6780BB; }
+#jakiro h2 {
+  background-color: #70382F;
+  border: 4px solid #B4533D;
+  color: #F9F9F9;
+}
+#jakiro #attributes h3, #jakiro #skills h3 {
+  background-color: #70382F;
+  border: 2px solid #B4533D;
+  color: #F9F9F9;
+}
+#juggernaut { color: #722A00; }
+#juggernaut #skills > .row { border: 16px outset #FE6C0D44; }
+#juggernaut .section-bg { background-color: #C8B786; }
+#juggernaut h2 {
+  background-color: #722A00;
+  border: 4px solid #FE6C0D;
+  color: #F9F9F9;
+}
+#juggernaut #attributes h3, #juggernaut #skills h3 {
+  background-color: #722A00;
+  border: 2px solid #FE6C0D;
+  color: #F9F9F9;
+}
+#keeper-of-the-light { color: #1B180C; }
+#keeper-of-the-light #skills > .row { border: 16px outset #E8E1AE44; }
+#keeper-of-the-light .section-bg { background-color: #BAC3C9; }
+#keeper-of-the-light h2 {
+  background-color: #1B180C;
+  border: 4px solid #E8E1AE;
+  color: #F9F9F9;
+}
+#keeper-of-the-light #attributes h3, #keeper-of-the-light #skills h3 {
+  background-color: #1B180C;
+  border: 2px solid #E8E1AE;
+  color: #F9F9F9;
+}
+#kunkka { color: #122A32; }
+#kunkka #skills > .row { border: 16px outset #17908A44; }
+#kunkka .section-bg { background-color: #43A2C1; }
+#kunkka h2 {
+  background-color: #122A32;
+  border: 4px solid #17908A;
+  color: #F9F9F9;
+}
+#kunkka #attributes h3, #kunkka #skills h3 {
+  background-color: #122A32;
+  border: 2px solid #17908A;
+  color: #F9F9F9;
+}
+#legion-commander { color: #7C2700; }
+#legion-commander #skills > .row { border: 16px outset #F9D98044; }
+#legion-commander .section-bg { background-color: #F04D3D; }
+#legion-commander h2 {
+  background-color: #7C2700;
+  border: 4px solid #F9D980;
+  color: #F9F9F9;
+}
+#legion-commander #attributes h3, #legion-commander #skills h3 {
+  background-color: #7C2700;
+  border: 2px solid #F9D980;
+  color: #F9F9F9;
+}
+#leshrac { color: #774C83; }
+#leshrac #skills > .row { border: 16px outset #CE6F8C44; }
+#leshrac .section-bg { background-color: #34BFF2; }
 #leshrac h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
+  background-color: #774C83;
+  border: 4px solid #CE6F8C;
   color: #F9F9F9;
 }
-
 #leshrac #attributes h3, #leshrac #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
+  background-color: #774C83;
+  border: 2px solid #CE6F8C;
   color: #F9F9F9;
 }
-
-#leshrac .section-bg {
-  background-color: #666666;
-}
-
-#lich #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
+#lich { color: #0B1D43; }
+#lich #skills > .row { border: 16px outset #125B9544; }
+#lich .section-bg { background-color: #94B8D8; }
 #lich h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
+  background-color: #0B1D43;
+  border: 4px solid #125B95;
   color: #F9F9F9;
 }
-
 #lich #attributes h3, #lich #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
+  background-color: #0B1D43;
+  border: 2px solid #125B95;
   color: #F9F9F9;
 }
-
-#lich .section-bg {
-  background-color: #666666;
+#lifestealer { color: #5F160D; }
+#lifestealer #skills > .row { border: 16px outset #981A0844; }
+#lifestealer .section-bg { background-color: #E3A17E; }
+#lifestealer h2 {
+  background-color: #5F160D;
+  border: 4px solid #981A08;
+  color: #F9F9F9;
 }
-
-#lion #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
+#lifestealer #attributes h3, #lifestealer #skills h3 {
+  background-color: #5F160D;
+  border: 2px solid #981A08;
+  color: #F9F9F9;
 }
-
+#lina { color: #5F0B0E; }
+#lina #skills > .row { border: 16px outset #FFAB0544; }
+#lina .section-bg { background-color: #D17626; }
+#lina h2 {
+  background-color: #5F0B0E;
+  border: 4px solid #FFAB05;
+  color: #F9F9F9;
+}
+#lina #attributes h3, #lina #skills h3 {
+  background-color: #5F0B0E;
+  border: 2px solid #FFAB05;
+  color: #F9F9F9;
+}
+#lion { color: #2E0101; }
+#lion #skills > .row { border: 16px outset #A11C1544; }
+#lion .section-bg { background-color: #A44E58; }
 #lion h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
+  background-color: #2E0101;
+  border: 4px solid #A11C15;
   color: #F9F9F9;
 }
-
 #lion #attributes h3, #lion #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
+  background-color: #2E0101;
+  border: 2px solid #A11C15;
   color: #F9F9F9;
 }
-
-#lion .section-bg {
-  background-color: #666666;
+#lone-druid { color: #1F1C00; }
+#lone-druid #skills > .row { border: 16px outset #43541A44; }
+#lone-druid .section-bg { background-color: #297FA4; }
+#lone-druid h2 {
+  background-color: #1F1C00;
+  border: 4px solid #43541A;
+  color: #F9F9F9;
 }
-
-#necrophos #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
+#lone-druid #attributes h3, #lone-druid #skills h3 {
+  background-color: #1F1C00;
+  border: 2px solid #43541A;
+  color: #F9F9F9;
 }
-
+#luna { color: #5915A1; }
+#luna #skills > .row { border: 16px outset #9354E544; }
+#luna .section-bg { background-color: #8378FF; }
+#luna h2 {
+  background-color: #5915A1;
+  border: 4px solid #9354E5;
+  color: #F9F9F9;
+}
+#luna #attributes h3, #luna #skills h3 {
+  background-color: #5915A1;
+  border: 2px solid #9354E5;
+  color: #F9F9F9;
+}
+#lycan { color: #0B1723; }
+#lycan #skills > .row { border: 16px outset #FDFAA044; }
+#lycan .section-bg { background-color: #B1393E; }
+#lycan h2 {
+  background-color: #0B1723;
+  border: 4px solid #FDFAA0;
+  color: #F9F9F9;
+}
+#lycan #attributes h3, #lycan #skills h3 {
+  background-color: #0B1723;
+  border: 2px solid #FDFAA0;
+  color: #F9F9F9;
+}
+#magnus { color: #28140B; }
+#magnus #skills > .row { border: 16px outset #88D9EA44; }
+#magnus .section-bg { background-color: #8F6B57; }
+#magnus h2 {
+  background-color: #28140B;
+  border: 4px solid #88D9EA;
+  color: #F9F9F9;
+}
+#magnus #attributes h3, #magnus #skills h3 {
+  background-color: #28140B;
+  border: 2px solid #88D9EA;
+  color: #F9F9F9;
+}
+#marci { color: #603D34; }
+#marci #skills > .row { border: 16px outset #FBCC0F44; }
+#marci .section-bg { background-color: #FFE5AA; }
+#marci h2 {
+  background-color: #603D34;
+  border: 4px solid #FBCC0F;
+  color: #F9F9F9;
+}
+#marci #attributes h3, #marci #skills h3 {
+  background-color: #603D34;
+  border: 2px solid #FBCC0F;
+  color: #F9F9F9;
+}
+#mars { color: #8D1E0B; }
+#mars #skills > .row { border: 16px outset #DA380A44; }
+#mars .section-bg { background-color: #FF8826; }
+#mars h2 {
+  background-color: #8D1E0B;
+  border: 4px solid #DA380A;
+  color: #F9F9F9;
+}
+#mars #attributes h3, #mars #skills h3 {
+  background-color: #8D1E0B;
+  border: 2px solid #DA380A;
+  color: #F9F9F9;
+}
+#medusa { color: #0E383D; }
+#medusa #skills > .row { border: 16px outset #DF4C5244; }
+#medusa .section-bg { background-color: #7A9B4A; }
+#medusa h2 {
+  background-color: #0E383D;
+  border: 4px solid #DF4C52;
+  color: #F9F9F9;
+}
+#medusa #attributes h3, #medusa #skills h3 {
+  background-color: #0E383D;
+  border: 2px solid #DF4C52;
+  color: #F9F9F9;
+}
+#meepo { color: #25486E; }
+#meepo #skills > .row { border: 16px outset #B2784544; }
+#meepo .section-bg { background-color: #95CCF8; }
+#meepo h2 {
+  background-color: #25486E;
+  border: 4px solid #B27845;
+  color: #F9F9F9;
+}
+#meepo #attributes h3, #meepo #skills h3 {
+  background-color: #25486E;
+  border: 2px solid #B27845;
+  color: #F9F9F9;
+}
+#mirana { color: #000846; }
+#mirana #skills > .row { border: 16px outset #91DCFE44; }
+#mirana .section-bg { background-color: #3496F3; }
+#mirana h2 {
+  background-color: #000846;
+  border: 4px solid #91DCFE;
+  color: #F9F9F9;
+}
+#mirana #attributes h3, #mirana #skills h3 {
+  background-color: #000846;
+  border: 2px solid #91DCFE;
+  color: #F9F9F9;
+}
+#monkey-king { color: #81262B; }
+#monkey-king #skills > .row { border: 16px outset #BB6B2344; }
+#monkey-king .section-bg { background-color: #88B14F; }
+#monkey-king h2 {
+  background-color: #81262B;
+  border: 4px solid #BB6B23;
+  color: #F9F9F9;
+}
+#monkey-king #attributes h3, #monkey-king #skills h3 {
+  background-color: #81262B;
+  border: 2px solid #BB6B23;
+  color: #F9F9F9;
+}
+#morphling { color: #0A2460; }
+#morphling #skills > .row { border: 16px outset #1384AC44; }
+#morphling .section-bg { background-color: #3DD8D7; }
+#morphling h2 {
+  background-color: #0A2460;
+  border: 4px solid #1384AC;
+  color: #F9F9F9;
+}
+#morphling #attributes h3, #morphling #skills h3 {
+  background-color: #0A2460;
+  border: 2px solid #1384AC;
+  color: #F9F9F9;
+}
+#naga-siren { color: #0C2F39; }
+#naga-siren #skills > .row { border: 16px outset #62DC9F44; }
+#naga-siren .section-bg { background-color: #A1EAEF; }
+#naga-siren h2 {
+  background-color: #0C2F39;
+  border: 4px solid #62DC9F;
+  color: #F9F9F9;
+}
+#naga-siren #attributes h3, #naga-siren #skills h3 {
+  background-color: #0C2F39;
+  border: 2px solid #62DC9F;
+  color: #F9F9F9;
+}
+#natures-prophet { color: #0D2318; }
+#natures-prophet #skills > .row { border: 16px outset #359C7B44; }
+#natures-prophet .section-bg { background-color: #A8B93C; }
+#natures-prophet h2 {
+  background-color: #0D2318;
+  border: 4px solid #359C7B;
+  color: #F9F9F9;
+}
+#natures-prophet #attributes h3, #natures-prophet #skills h3 {
+  background-color: #0D2318;
+  border: 2px solid #359C7B;
+  color: #F9F9F9;
+}
+#necrophos { color: #1A350D; }
+#necrophos #skills > .row { border: 16px outset #4BA98444; }
+#necrophos .section-bg { background-color: #72FFCA; }
 #necrophos h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
+  background-color: #1A350D;
+  border: 4px solid #4BA984;
   color: #F9F9F9;
 }
-
 #necrophos #attributes h3, #necrophos #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
+  background-color: #1A350D;
+  border: 2px solid #4BA984;
   color: #F9F9F9;
 }
-
-#necrophos .section-bg {
-  background-color: #666666;
-}
-
-#outworld-devourer #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#outworld-devourer h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
+#night-stalker { color: #202437; }
+#night-stalker #skills > .row { border: 16px outset #4803D944; }
+#night-stalker .section-bg { background-color: #4474EB; }
+#night-stalker h2 {
+  background-color: #202437;
+  border: 4px solid #4803D9;
   color: #F9F9F9;
 }
-
-#outworld-devourer #attributes h3, #outworld-devourer #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
+#night-stalker #attributes h3, #night-stalker #skills h3 {
+  background-color: #202437;
+  border: 2px solid #4803D9;
   color: #F9F9F9;
 }
-
-#outworld-devourer .section-bg {
-  background-color: #666666;
+#nyx-assassin { color: #33194A; }
+#nyx-assassin #skills > .row { border: 16px outset #F9836544; }
+#nyx-assassin .section-bg { background-color: #C3B6E6; }
+#nyx-assassin h2 {
+  background-color: #33194A;
+  border: 4px solid #F98365;
+  color: #F9F9F9;
 }
-
-#pugna #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
+#nyx-assassin #attributes h3, #nyx-assassin #skills h3 {
+  background-color: #33194A;
+  border: 2px solid #F98365;
+  color: #F9F9F9;
 }
-
+#ogre-magi { color: #4F272F; }
+#ogre-magi #skills > .row { border: 16px outset #F9C17244; }
+#ogre-magi .section-bg { background-color: #FF66AF; }
+#ogre-magi h2 {
+  background-color: #4F272F;
+  border: 4px solid #F9C172;
+  color: #F9F9F9;
+}
+#ogre-magi #attributes h3, #ogre-magi #skills h3 {
+  background-color: #4F272F;
+  border: 2px solid #F9C172;
+  color: #F9F9F9;
+}
+#omniknight { color: #1D1C21; }
+#omniknight #skills > .row { border: 16px outset #E2C23544; }
+#omniknight .section-bg { background-color: #CFE4E5; }
+#omniknight h2 {
+  background-color: #1D1C21;
+  border: 4px solid #E2C235;
+  color: #F9F9F9;
+}
+#omniknight #attributes h3, #omniknight #skills h3 {
+  background-color: #1D1C21;
+  border: 2px solid #E2C235;
+  color: #F9F9F9;
+}
+#oracle { color: #0F3744; }
+#oracle #skills > .row { border: 16px outset #F66B9844; }
+#oracle .section-bg { background-color: #B2FEED; }
+#oracle h2 {
+  background-color: #0F3744;
+  border: 4px solid #F66B98;
+  color: #F9F9F9;
+}
+#oracle #attributes h3, #oracle #skills h3 {
+  background-color: #0F3744;
+  border: 2px solid #F66B98;
+  color: #F9F9F9;
+}
+#outworld-destroyer { color: #0E292B; }
+#outworld-destroyer #skills > .row { border: 16px outset #55EAB044; }
+#outworld-destroyer .section-bg { background-color: #53669B; }
+#outworld-destroyer h2 {
+  background-color: #0E292B;
+  border: 4px solid #55EAB0;
+  color: #F9F9F9;
+}
+#outworld-destroyer #attributes h3, #outworld-destroyer #skills h3 {
+  background-color: #0E292B;
+  border: 2px solid #55EAB0;
+  color: #F9F9F9;
+}
+#pangolier { color: #561D37; }
+#pangolier #skills > .row { border: 16px outset #6F97FE44; }
+#pangolier .section-bg { background-color: #F5BF76; }
+#pangolier h2 {
+  background-color: #561D37;
+  border: 4px solid #6F97FE;
+  color: #F9F9F9;
+}
+#pangolier #attributes h3, #pangolier #skills h3 {
+  background-color: #561D37;
+  border: 2px solid #6F97FE;
+  color: #F9F9F9;
+}
+#phantom-assassin { color: #0F2837; }
+#phantom-assassin #skills > .row { border: 16px outset #83FAF944; }
+#phantom-assassin .section-bg { background-color: #80C0C7; }
+#phantom-assassin h2 {
+  background-color: #0F2837;
+  border: 4px solid #83FAF9;
+  color: #F9F9F9;
+}
+#phantom-assassin #attributes h3, #phantom-assassin #skills h3 {
+  background-color: #0F2837;
+  border: 2px solid #83FAF9;
+  color: #F9F9F9;
+}
+#phantom-lancer { color: #41210B; }
+#phantom-lancer #skills > .row { border: 16px outset #80B2CF44; }
+#phantom-lancer .section-bg { background-color: #FFE07D; }
+#phantom-lancer h2 {
+  background-color: #41210B;
+  border: 4px solid #80B2CF;
+  color: #F9F9F9;
+}
+#phantom-lancer #attributes h3, #phantom-lancer #skills h3 {
+  background-color: #41210B;
+  border: 2px solid #80B2CF;
+  color: #F9F9F9;
+}
+#phoenix { color: #4F1E12; }
+#phoenix #skills > .row { border: 16px outset #E2590044; }
+#phoenix .section-bg { background-color: #F9DF54; }
+#phoenix h2 {
+  background-color: #4F1E12;
+  border: 4px solid #E25900;
+  color: #F9F9F9;
+}
+#phoenix #attributes h3, #phoenix #skills h3 {
+  background-color: #4F1E12;
+  border: 2px solid #E25900;
+  color: #F9F9F9;
+}
+#primal-beast { color: #361C17; }
+#primal-beast #skills > .row { border: 16px outset #FFEE7D44; }
+#primal-beast .section-bg { background-color: #E1A57B; }
+#primal-beast h2 {
+  background-color: #361C17;
+  border: 4px solid #FFEE7D;
+  color: #F9F9F9;
+}
+#primal-beast #attributes h3, #primal-beast #skills h3 {
+  background-color: #361C17;
+  border: 2px solid #FFEE7D;
+  color: #F9F9F9;
+}
+#puck { color: #1B30B5; }
+#puck #skills > .row { border: 16px outset #D16C8344; }
+#puck .section-bg { background-color: #60CEFF; }
+#puck h2 {
+  background-color: #1B30B5;
+  border: 4px solid #D16C83;
+  color: #F9F9F9;
+}
+#puck #attributes h3, #puck #skills h3 {
+  background-color: #1B30B5;
+  border: 2px solid #D16C83;
+  color: #F9F9F9;
+}
+#pudge { color: #470001; }
+#pudge #skills > .row { border: 16px outset #67741B44; }
+#pudge .section-bg { background-color: #BFB29C; }
+#pudge h2 {
+  background-color: #470001;
+  border: 4px solid #67741B;
+  color: #F9F9F9;
+}
+#pudge #attributes h3, #pudge #skills h3 {
+  background-color: #470001;
+  border: 2px solid #67741B;
+  color: #F9F9F9;
+}
+#pugna { color: #352337; }
+#pugna #skills > .row { border: 16px outset #45932144; }
+#pugna .section-bg { background-color: #FFFF99; }
 #pugna h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
+  background-color: #352337;
+  border: 4px solid #459321;
   color: #F9F9F9;
 }
-
 #pugna #attributes h3, #pugna #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
+  background-color: #352337;
+  border: 2px solid #459321;
   color: #F9F9F9;
 }
-
-#pugna .section-bg {
-  background-color: #666666;
-}
-
-#queen-of-pain #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
+#queen-of-pain { color: #13021C; }
+#queen-of-pain #skills > .row { border: 16px outset #CC1D1444; }
+#queen-of-pain .section-bg { background-color: #CB4C68; }
 #queen-of-pain h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
+  background-color: #13021C;
+  border: 4px solid #CC1D14;
   color: #F9F9F9;
 }
-
 #queen-of-pain #attributes h3, #queen-of-pain #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
+  background-color: #13021C;
+  border: 2px solid #CC1D14;
   color: #F9F9F9;
 }
-
-#queen-of-pain .section-bg {
-  background-color: #666666;
+#razor { color: #022F5F; }
+#razor #skills > .row { border: 16px outset #5DD4FC44; }
+#razor .section-bg { background-color: #0684CB; }
+#razor h2 {
+  background-color: #022F5F;
+  border: 4px solid #5DD4FC;
+  color: #F9F9F9;
 }
-
-#shadow-demon #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
+#razor #attributes h3, #razor #skills h3 {
+  background-color: #022F5F;
+  border: 2px solid #5DD4FC;
+  color: #F9F9F9;
 }
-
+#riki { color: #251755; }
+#riki #skills > .row { border: 16px outset #B0BDF444; }
+#riki .section-bg { background-color: #856CA7; }
+#riki h2 {
+  background-color: #251755;
+  border: 4px solid #B0BDF4;
+  color: #F9F9F9;
+}
+#riki #attributes h3, #riki #skills h3 {
+  background-color: #251755;
+  border: 2px solid #B0BDF4;
+  color: #F9F9F9;
+}
+#rubick { color: #2F3E28; }
+#rubick #skills > .row { border: 16px outset #5CF01C44; }
+#rubick .section-bg { background-color: #2AC553; }
+#rubick h2 {
+  background-color: #2F3E28;
+  border: 4px solid #5CF01C;
+  color: #F9F9F9;
+}
+#rubick #attributes h3, #rubick #skills h3 {
+  background-color: #2F3E28;
+  border: 2px solid #5CF01C;
+  color: #F9F9F9;
+}
+#sand-king { color: #292018; }
+#sand-king #skills > .row { border: 16px outset #DCB15844; }
+#sand-king .section-bg { background-color: #9D7242; }
+#sand-king h2 {
+  background-color: #292018;
+  border: 4px solid #DCB158;
+  color: #F9F9F9;
+}
+#sand-king #attributes h3, #sand-king #skills h3 {
+  background-color: #292018;
+  border: 2px solid #DCB158;
+  color: #F9F9F9;
+}
+#shadow-demon { color: #0B0817; }
+#shadow-demon #skills > .row { border: 16px outset #2724AC44; }
+#shadow-demon .section-bg { background-color: #F83835; }
 #shadow-demon h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
+  background-color: #0B0817;
+  border: 4px solid #2724AC;
   color: #F9F9F9;
 }
-
 #shadow-demon #attributes h3, #shadow-demon #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
+  background-color: #0B0817;
+  border: 2px solid #2724AC;
   color: #F9F9F9;
 }
-
-#shadow-demon .section-bg {
-  background-color: #666666;
+#shadow-fiend { color: #0F0C0E; }
+#shadow-fiend #skills > .row { border: 16px outset #E7363A44; }
+#shadow-fiend .section-bg { background-color: #572C2F; }
+#shadow-fiend h2 {
+  background-color: #0F0C0E;
+  border: 4px solid #E7363A;
+  color: #F9F9F9;
 }
-
-#visage #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
+#shadow-fiend #attributes h3, #shadow-fiend #skills h3 {
+  background-color: #0F0C0E;
+  border: 2px solid #E7363A;
+  color: #F9F9F9;
 }
-
+#shadow-shaman { color: #430639; }
+#shadow-shaman #skills > .row { border: 16px outset #93222344; }
+#shadow-shaman .section-bg { background-color: #EEDB48; }
+#shadow-shaman h2 {
+  background-color: #430639;
+  border: 4px solid #932223;
+  color: #F9F9F9;
+}
+#shadow-shaman #attributes h3, #shadow-shaman #skills h3 {
+  background-color: #430639;
+  border: 2px solid #932223;
+  color: #F9F9F9;
+}
+#silencer { color: #220505; }
+#silencer #skills > .row { border: 16px outset #E1AD6044; }
+#silencer .section-bg { background-color: #5B4D7D; }
+#silencer h2 {
+  background-color: #220505;
+  border: 4px solid #E1AD60;
+  color: #F9F9F9;
+}
+#silencer #attributes h3, #silencer #skills h3 {
+  background-color: #220505;
+  border: 2px solid #E1AD60;
+  color: #F9F9F9;
+}
+#skywrath-mage { color: #233E4B; }
+#skywrath-mage #skills > .row { border: 16px outset #9BC1DF44; }
+#skywrath-mage .section-bg { background-color: #ECDEF8; }
+#skywrath-mage h2 {
+  background-color: #233E4B;
+  border: 4px solid #9BC1DF;
+  color: #F9F9F9;
+}
+#skywrath-mage #attributes h3, #skywrath-mage #skills h3 {
+  background-color: #233E4B;
+  border: 2px solid #9BC1DF;
+  color: #F9F9F9;
+}
+#slardar { color: #05060D; }
+#slardar #skills > .row { border: 16px outset #65357944; }
+#slardar .section-bg { background-color: #6595E5; }
+#slardar h2 {
+  background-color: #05060D;
+  border: 4px solid #653579;
+  color: #F9F9F9;
+}
+#slardar #attributes h3, #slardar #skills h3 {
+  background-color: #05060D;
+  border: 2px solid #653579;
+  color: #F9F9F9;
+}
+#slark { color: #0F061A; }
+#slark #skills > .row { border: 16px outset #A39FE544; }
+#slark .section-bg { background-color: #C1E8E8; }
+#slark h2 {
+  background-color: #0F061A;
+  border: 4px solid #A39FE5;
+  color: #F9F9F9;
+}
+#slark #attributes h3, #slark #skills h3 {
+  background-color: #0F061A;
+  border: 2px solid #A39FE5;
+  color: #F9F9F9;
+}
+#snapfire { color: #40190B; }
+#snapfire #skills > .row { border: 16px outset #F7D46344; }
+#snapfire .section-bg { background-color: #F36B1B; }
+#snapfire h2 {
+  background-color: #40190B;
+  border: 4px solid #F7D463;
+  color: #F9F9F9;
+}
+#snapfire #attributes h3, #snapfire #skills h3 {
+  background-color: #40190B;
+  border: 2px solid #F7D463;
+  color: #F9F9F9;
+}
+#sniper { color: #180C0C; }
+#sniper #skills > .row { border: 16px outset #EFE27A44; }
+#sniper .section-bg { background-color: #5D3C3A; }
+#sniper h2 {
+  background-color: #180C0C;
+  border: 4px solid #EFE27A;
+  color: #F9F9F9;
+}
+#sniper #attributes h3, #sniper #skills h3 {
+  background-color: #180C0C;
+  border: 2px solid #EFE27A;
+  color: #F9F9F9;
+}
+#spectre { color: #111329; }
+#spectre #skills > .row { border: 16px outset #C837E944; }
+#spectre .section-bg { background-color: #BCACE3; }
+#spectre h2 {
+  background-color: #111329;
+  border: 4px solid #C837E9;
+  color: #F9F9F9;
+}
+#spectre #attributes h3, #spectre #skills h3 {
+  background-color: #111329;
+  border: 2px solid #C837E9;
+  color: #F9F9F9;
+}
+#spirit-breaker { color: #282F33; }
+#spirit-breaker #skills > .row { border: 16px outset #D6010144; }
+#spirit-breaker .section-bg { background-color: #ADE0E8; }
+#spirit-breaker h2 {
+  background-color: #282F33;
+  border: 4px solid #D60101;
+  color: #F9F9F9;
+}
+#spirit-breaker #attributes h3, #spirit-breaker #skills h3 {
+  background-color: #282F33;
+  border: 2px solid #D60101;
+  color: #F9F9F9;
+}
+#storm-spirit { color: #023366; }
+#storm-spirit #skills > .row { border: 16px outset #D43F4444; }
+#storm-spirit .section-bg { background-color: #20B7ED; }
+#storm-spirit h2 {
+  background-color: #023366;
+  border: 4px solid #D43F44;
+  color: #F9F9F9;
+}
+#storm-spirit #attributes h3, #storm-spirit #skills h3 {
+  background-color: #023366;
+  border: 2px solid #D43F44;
+  color: #F9F9F9;
+}
+#sven { color: #090E21; }
+#sven #skills > .row { border: 16px outset #AEB19944; }
+#sven .section-bg { background-color: #335979; }
+#sven h2 {
+  background-color: #090E21;
+  border: 4px solid #AEB199;
+  color: #F9F9F9;
+}
+#sven #attributes h3, #sven #skills h3 {
+  background-color: #090E21;
+  border: 2px solid #AEB199;
+  color: #F9F9F9;
+}
+#techies { color: #1F1218; }
+#techies #skills > .row { border: 16px outset #FFC35044; }
+#techies .section-bg { background-color: #715B38; }
+#techies h2 {
+  background-color: #1F1218;
+  border: 4px solid #FFC350;
+  color: #F9F9F9;
+}
+#techies #attributes h3, #techies #skills h3 {
+  background-color: #1F1218;
+  border: 2px solid #FFC350;
+  color: #F9F9F9;
+}
+#templar-assassin { color: #2B162C; }
+#templar-assassin #skills > .row { border: 16px outset #EF7BE444; }
+#templar-assassin .section-bg { background-color: #F7DFFA; }
+#templar-assassin h2 {
+  background-color: #2B162C;
+  border: 4px solid #EF7BE4;
+  color: #F9F9F9;
+}
+#templar-assassin #attributes h3, #templar-assassin #skills h3 {
+  background-color: #2B162C;
+  border: 2px solid #EF7BE4;
+  color: #F9F9F9;
+}
+#terrorblade { color: #0E1430; }
+#terrorblade #skills > .row { border: 16px outset #81F5F744; }
+#terrorblade .section-bg { background-color: #73BEFA; }
+#terrorblade h2 {
+  background-color: #0E1430;
+  border: 4px solid #81F5F7;
+  color: #F9F9F9;
+}
+#terrorblade #attributes h3, #terrorblade #skills h3 {
+  background-color: #0E1430;
+  border: 2px solid #81F5F7;
+  color: #F9F9F9;
+}
+#tidehunter { color: #09253C; }
+#tidehunter #skills > .row { border: 16px outset #26B6C844; }
+#tidehunter .section-bg { background-color: #BFE1D1; }
+#tidehunter h2 {
+  background-color: #09253C;
+  border: 4px solid #26B6C8;
+  color: #F9F9F9;
+}
+#tidehunter #attributes h3, #tidehunter #skills h3 {
+  background-color: #09253C;
+  border: 2px solid #26B6C8;
+  color: #F9F9F9;
+}
+#timbersaw { color: #271523; }
+#timbersaw #skills > .row { border: 16px outset #AE5F1E44; }
+#timbersaw .section-bg { background-color: #DEB288; }
+#timbersaw h2 {
+  background-color: #271523;
+  border: 4px solid #AE5F1E;
+  color: #F9F9F9;
+}
+#timbersaw #attributes h3, #timbersaw #skills h3 {
+  background-color: #271523;
+  border: 2px solid #AE5F1E;
+  color: #F9F9F9;
+}
+#tinker { color: #262A4B; }
+#tinker #skills > .row { border: 16px outset #9AE1FB44; }
+#tinker .section-bg { background-color: #A8C9D1; }
+#tinker h2 {
+  background-color: #262A4B;
+  border: 4px solid #9AE1FB;
+  color: #F9F9F9;
+}
+#tinker #attributes h3, #tinker #skills h3 {
+  background-color: #262A4B;
+  border: 2px solid #9AE1FB;
+  color: #F9F9F9;
+}
+#tiny { color: #19200F; }
+#tiny #skills > .row { border: 16px outset #7D9A3244; }
+#tiny .section-bg { background-color: #C6D1DD; }
+#tiny h2 {
+  background-color: #19200F;
+  border: 4px solid #7D9A32;
+  color: #F9F9F9;
+}
+#tiny #attributes h3, #tiny #skills h3 {
+  background-color: #19200F;
+  border: 2px solid #7D9A32;
+  color: #F9F9F9;
+}
+#treant-protector { color: #212507; }
+#treant-protector #skills > .row { border: 16px outset #8E940444; }
+#treant-protector .section-bg { background-color: #ADA876; }
+#treant-protector h2 {
+  background-color: #212507;
+  border: 4px solid #8E9404;
+  color: #F9F9F9;
+}
+#treant-protector #attributes h3, #treant-protector #skills h3 {
+  background-color: #212507;
+  border: 2px solid #8E9404;
+  color: #F9F9F9;
+}
+#troll-warlord { color: #3A1E09; }
+#troll-warlord #skills > .row { border: 16px outset #78E0C844; }
+#troll-warlord .section-bg { background-color: #CD7D4E; }
+#troll-warlord h2 {
+  background-color: #3A1E09;
+  border: 4px solid #78E0C8;
+  color: #F9F9F9;
+}
+#troll-warlord #attributes h3, #troll-warlord #skills h3 {
+  background-color: #3A1E09;
+  border: 2px solid #78E0C8;
+  color: #F9F9F9;
+}
+#tusk { color: #001F3B; }
+#tusk #skills > .row { border: 16px outset #2B8FD844; }
+#tusk .section-bg { background-color: #E5E3E1; }
+#tusk h2 {
+  background-color: #001F3B;
+  border: 4px solid #2B8FD8;
+  color: #F9F9F9;
+}
+#tusk #attributes h3, #tusk #skills h3 {
+  background-color: #001F3B;
+  border: 2px solid #2B8FD8;
+  color: #F9F9F9;
+}
+#underlord { color: #1A200A; }
+#underlord #skills > .row { border: 16px outset #9CF25B44; }
+#underlord .section-bg { background-color: #907859; }
+#underlord h2 {
+  background-color: #1A200A;
+  border: 4px solid #9CF25B;
+  color: #F9F9F9;
+}
+#underlord #attributes h3, #underlord #skills h3 {
+  background-color: #1A200A;
+  border: 2px solid #9CF25B;
+  color: #F9F9F9;
+}
+#undying { color: #1F1D2D; }
+#undying #skills > .row { border: 16px outset #93DCC244; }
+#undying .section-bg { background-color: #AAB063; }
+#undying h2 {
+  background-color: #1F1D2D;
+  border: 4px solid #93DCC2;
+  color: #F9F9F9;
+}
+#undying #attributes h3, #undying #skills h3 {
+  background-color: #1F1D2D;
+  border: 2px solid #93DCC2;
+  color: #F9F9F9;
+}
+#ursa { color: #2B0E0A; }
+#ursa #skills > .row { border: 16px outset #B3592B44; }
+#ursa .section-bg { background-color: #A7B7FE; }
+#ursa h2 {
+  background-color: #2B0E0A;
+  border: 4px solid #B3592B;
+  color: #F9F9F9;
+}
+#ursa #attributes h3, #ursa #skills h3 {
+  background-color: #2B0E0A;
+  border: 2px solid #B3592B;
+  color: #F9F9F9;
+}
+#vengeful-spirit { color: #3E120F; }
+#vengeful-spirit #skills > .row { border: 16px outset #A1295744; }
+#vengeful-spirit .section-bg { background-color: #A497BE; }
+#vengeful-spirit h2 {
+  background-color: #3E120F;
+  border: 4px solid #A12957;
+  color: #F9F9F9;
+}
+#vengeful-spirit #attributes h3, #vengeful-spirit #skills h3 {
+  background-color: #3E120F;
+  border: 2px solid #A12957;
+  color: #F9F9F9;
+}
+#venomancer { color: #22270C; }
+#venomancer #skills > .row { border: 16px outset #33890044; }
+#venomancer .section-bg { background-color: #CACD5E; }
+#venomancer h2 {
+  background-color: #22270C;
+  border: 4px solid #338900;
+  color: #F9F9F9;
+}
+#venomancer #attributes h3, #venomancer #skills h3 {
+  background-color: #22270C;
+  border: 2px solid #338900;
+  color: #F9F9F9;
+}
+#viper { color: #002E23; }
+#viper #skills > .row { border: 16px outset #8CE37844; }
+#viper .section-bg { background-color: #76AD58; }
+#viper h2 {
+  background-color: #002E23;
+  border: 4px solid #8CE378;
+  color: #F9F9F9;
+}
+#viper #attributes h3, #viper #skills h3 {
+  background-color: #002E23;
+  border: 2px solid #8CE378;
+  color: #F9F9F9;
+}
+#visage { color: #051E42; }
+#visage #skills > .row { border: 16px outset #3DE0E144; }
+#visage .section-bg { background-color: #06709F; }
 #visage h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
+  background-color: #051E42;
+  border: 4px solid #3DE0E1;
   color: #F9F9F9;
 }
-
 #visage #attributes h3, #visage #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
+  background-color: #051E42;
+  border: 2px solid #3DE0E1;
   color: #F9F9F9;
 }
-
-#visage .section-bg {
-  background-color: #666666;
+#void-spirit { color: #2A0833; }
+#void-spirit #skills > .row { border: 16px outset #EDA8F844; }
+#void-spirit .section-bg { background-color: #8A3EAA; }
+#void-spirit h2 {
+  background-color: #2A0833;
+  border: 4px solid #EDA8F8;
+  color: #F9F9F9;
 }
-
-#warlock #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
+#void-spirit #attributes h3, #void-spirit #skills h3 {
+  background-color: #2A0833;
+  border: 2px solid #EDA8F8;
+  color: #F9F9F9;
 }
-
+#warlock { color: #570918; }
+#warlock #skills > .row { border: 16px outset #F8D52444; }
+#warlock .section-bg { background-color: #A92C25; }
 #warlock h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
+  background-color: #570918;
+  border: 4px solid #F8D524;
   color: #F9F9F9;
 }
-
 #warlock #attributes h3, #warlock #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
+  background-color: #570918;
+  border: 2px solid #F8D524;
   color: #F9F9F9;
 }
-
-#warlock .section-bg {
-  background-color: #666666;
+#weaver { color: #2C2023; }
+#weaver #skills > .row { border: 16px outset #B24A3544; }
+#weaver .section-bg { background-color: #338181; }
+#weaver h2 {
+  background-color: #2C2023;
+  border: 4px solid #B24A35;
+  color: #F9F9F9;
 }
-
-#winter-wyvern #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
+#weaver #attributes h3, #weaver #skills h3 {
+  background-color: #2C2023;
+  border: 2px solid #B24A35;
+  color: #F9F9F9;
 }
-
+#windranger { color: #162C08; }
+#windranger #skills > .row { border: 16px outset #F0914A44; }
+#windranger .section-bg { background-color: #CFD66F; }
+#windranger h2 {
+  background-color: #162C08;
+  border: 4px solid #F0914A;
+  color: #F9F9F9;
+}
+#windranger #attributes h3, #windranger #skills h3 {
+  background-color: #162C08;
+  border: 2px solid #F0914A;
+  color: #F9F9F9;
+}
+#winter-wyvern { color: #304A46; }
+#winter-wyvern #skills > .row { border: 16px outset #7FB8B944; }
+#winter-wyvern .section-bg { background-color: #C7D8D9; }
 #winter-wyvern h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
+  background-color: #304A46;
+  border: 4px solid #7FB8B9;
   color: #F9F9F9;
 }
-
 #winter-wyvern #attributes h3, #winter-wyvern #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
+  background-color: #304A46;
+  border: 2px solid #7FB8B9;
   color: #F9F9F9;
 }
-
-#winter-wyvern .section-bg {
-  background-color: #666666;
-}
-
-#witch-doctor #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
+#witch-doctor { color: #322537; }
+#witch-doctor #skills > .row { border: 16px outset #F6A8FB44; }
+#witch-doctor .section-bg { background-color: #9894BD; }
 #witch-doctor h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
+  background-color: #322537;
+  border: 4px solid #F6A8FB;
   color: #F9F9F9;
 }
-
 #witch-doctor #attributes h3, #witch-doctor #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
+  background-color: #322537;
+  border: 2px solid #F6A8FB;
   color: #F9F9F9;
 }
-
-#witch-doctor .section-bg {
-  background-color: #666666;
-}
-
-#heroname #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
-}
-
-#heroname h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
+#wraith-king { color: #0B2114; }
+#wraith-king #skills > .row { border: 16px outset #BD443844; }
+#wraith-king .section-bg { background-color: #098E72; }
+#wraith-king h2 {
+  background-color: #0B2114;
+  border: 4px solid #BD4438;
   color: #F9F9F9;
 }
-
-#heroname #attributes h3, #heroname #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
+#wraith-king #attributes h3, #wraith-king #skills h3 {
+  background-color: #0B2114;
+  border: 2px solid #BD4438;
   color: #F9F9F9;
 }
-
-#heroname .section-bg {
-  background-color: #666666;
+#zeus { color: #022032; }
+#zeus #skills > .row { border: 16px outset #CAE9EE44; }
+#zeus .section-bg { background-color: #5FD9FD; }
+#zeus h2 {
+  background-color: #022032;
+  border: 4px solid #CAE9EE;
+  color: #HHEADERTEXT;
 }
-
-#heroname #skills > .row {
-  border: 16px outset rgb(111, 222, 33);
+#zeus #attributes h3, #zeus #skills h3 {
+  background-color: #022032;
+  border: 2px solid #CAE9EE;
+  color: #HHEADERTEXT;
 }
-
-#heroname h2 {
-  background-color: #333333;
-  border: 4px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#heroname #attributes h3, #heroname #skills h3 {
-  background-color: #CCCCCC;
-  border: 2px solid #ffffff;
-  color: #F9F9F9;
-}
-
-#heroname .section-bg {
-  background-color: #666666;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

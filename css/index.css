@@ -113,7 +113,7 @@ ul { padding: 0; margin: 0; }
 }
 
 #heroes {
-  background-image: url('../img/heroes5.png');
+  background-image: url('../img/heroes7.png');
   background-size: cover;
   background-position: 50%;
   background-repeat: no-repeat;
@@ -165,16 +165,20 @@ ul { padding: 0; margin: 0; }
   background-color: #B18961;
 }
 
-#herosynergy {
+#herosynergy, #chc {
   background-color: #202C2F;
 }
 
-#metareport {
+#metareport, #purp {
   background-color: #29202E;
 }
 
 #talents {
   background-color: #292929;
+}
+
+#gray {
+  background-color: #20202C;
 }
 
 #items {
@@ -261,7 +265,7 @@ ul { padding: 0; margin: 0; }
   font-size: 16px;
 }
 
-#twitter, #reddit,
+#twitter, #reddit, #twitch,
 #patreon, #discord, #overwatch {
   padding: 10px 15px;
   background-color: rgba(255,255,255,0.18);
@@ -299,6 +303,8 @@ ul { padding: 0; margin: 0; }
 #patreon:focus,
 #discord:hover,
 #discord:focus,
+#twitch:hover,
+#twitch:focus,
 #twitter:hover,
 #twitter:focus,
 #reddit:hover,

@@ -1,0 +1,71 @@
+body {
+  overflow-x: hidden;
+  background-color: #292929;
+  color: #1F1F1F;
+}
+
+.section-bg {
+  background-color: transparent;
+  width: 96%;
+  padding: 8px;
+  margin: 24px auto 0 auto;
+}
+
+a {
+  color: rgba(235,235,201,0.45);
+}
+
+a:hover, a:focus {
+  color: rgba(255,255,245,0.9);
+  text-decoration: none;
+}
+
+div[id^="tal"] {
+  width: 96%;
+  height: 280px;
+  margin: 12px auto 8px auto;
+}
+
+@media (min-width: 1200px) {
+  .left {
+    padding-right: 0;
+  }
+
+  .inner {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .right {
+    padding-left: 0;
+  }
+}
+
+#footer {
+  padding: 12px 0;
+  height: 48px;
+  font-size: 1.0em;
+  color: rgba(255,255,255,0.5);
+}
+
+h1 {
+  font-size: 54px;
+  font-weight: 800;
+  text-shadow: -1px 0 0.5px rgba(255,255,255,0.375), 0 1px 0.5px rgba(255,255,255,0.375), 1px 0 0.5px rgba(255,255,255,0.375), 0 -1px 0.5px rgba(255,255,255,0.375),
+               -1px -1px 0.5px rgba(255,255,255,0.375), 1px 1px 0.5px rgba(255,255,255,0.375), 1px -1px 0.5px rgba(255,255,255,0.375), -1px 1px 0.5px rgba(255,255,255,0.375);
+  margin: 12px 0;
+}
+
+h2 {
+  margin: 8px 24px 12px 24px;
+  border: 2px solid rgba(255,255,255,0.6);
+  background-color: #292929;
+  color: rgba(255,255,255,0.75);
+  font-weight: 400;
+}
+
+h3 {
+  margin: 4px 0;
+}
+
+

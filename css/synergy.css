@@ -1,0 +1,45 @@
+
+body {
+  overflow-x: hidden;
+  background-color: #202C2F;
+}
+
+.container {
+  margin-top: 24px;
+}
+
+.section-bg {
+  background-color: rgba(230,225,235,0.42);
+  padding: 8px;
+}
+
+div[id^="tal"] {
+  width: 85%;
+  height: 150px;
+  margin: 12px auto;
+}
+
+#footer {
+  padding: 12px 0;
+  height: 48px;
+  font-size: 1.0em;
+  color: #F9F9F9;
+}
+
+h1 {
+  margin: 12px 0;
+}
+
+h2 {
+  margin: 8px 0;
+}
+
+h3 {
+  margin: 4px 0;
+}
+
+.spacer {
+  height: 65vh;
+  margin: 12px 5%;
+  background-color: rgba(33,33,33,0.4);
+}

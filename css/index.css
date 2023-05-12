@@ -330,7 +330,7 @@ ul { padding: 0; margin: 0; }
 #about p,
 #collab p {
   font-size: 17px;
-  padding: 0 20%;
+  padding: 0 12%;
 }
 
 #larrow {
@@ -442,7 +442,7 @@ ul { padding: 0; margin: 0; }
 }
 
 #about {
-  width: 42%;
+  width: 60%;
   min-width: 540px;
   margin: 0 auto;
 }
